@@ -1,18 +1,1834 @@
-exports.id = 443;
-exports.ids = [443];
+exports.id = "component---src-pages-publications-index-js";
+exports.ids = ["component---src-pages-publications-index-js"];
 exports.modules = {
 
-/***/ 982:
+/***/ "./node_modules/@fortawesome/react-fontawesome/index.es.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@fortawesome/react-fontawesome/index.es.js ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FontAwesomeIcon": () => (/* binding */ FontAwesomeIcon)
+/* harmony export */ });
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.mjs");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "G": () => (/* binding */ FontAwesomeIcon)
+
+
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    enumerableOnly && (symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    })), keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = null != arguments[i] ? arguments[i] : {};
+    i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+    });
+  }
+
+  return target;
+}
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, _typeof(obj);
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+// Get CSS class list from a props object
+function classList(props) {
+  var _classes;
+
+  var beat = props.beat,
+      fade = props.fade,
+      beatFade = props.beatFade,
+      bounce = props.bounce,
+      shake = props.shake,
+      flash = props.flash,
+      spin = props.spin,
+      spinPulse = props.spinPulse,
+      spinReverse = props.spinReverse,
+      pulse = props.pulse,
+      fixedWidth = props.fixedWidth,
+      inverse = props.inverse,
+      border = props.border,
+      listItem = props.listItem,
+      flip = props.flip,
+      size = props.size,
+      rotation = props.rotation,
+      pull = props.pull; // map of CSS class names to properties
+
+  var classes = (_classes = {
+    'fa-beat': beat,
+    'fa-fade': fade,
+    'fa-beat-fade': beatFade,
+    'fa-bounce': bounce,
+    'fa-shake': shake,
+    'fa-flash': flash,
+    'fa-spin': spin,
+    'fa-spin-reverse': spinReverse,
+    'fa-spin-pulse': spinPulse,
+    'fa-pulse': pulse,
+    'fa-fw': fixedWidth,
+    'fa-inverse': inverse,
+    'fa-border': border,
+    'fa-li': listItem,
+    'fa-flip': flip === true,
+    'fa-flip-horizontal': flip === 'horizontal' || flip === 'both',
+    'fa-flip-vertical': flip === 'vertical' || flip === 'both'
+  }, _defineProperty(_classes, "fa-".concat(size), typeof size !== 'undefined' && size !== null), _defineProperty(_classes, "fa-rotate-".concat(rotation), typeof rotation !== 'undefined' && rotation !== null && rotation !== 0), _defineProperty(_classes, "fa-pull-".concat(pull), typeof pull !== 'undefined' && pull !== null), _defineProperty(_classes, 'fa-swap-opacity', props.swapOpacity), _classes); // map over all the keys in the classes object
+  // return an array of the keys where the value for the key is not null
+
+  return Object.keys(classes).map(function (key) {
+    return classes[key] ? key : null;
+  }).filter(function (key) {
+    return key;
+  });
+}
+
+// Camelize taken from humps
+// humps is copyright © 2012+ Dom Christie
+// Released under the MIT license.
+// Performant way to determine if object coerces to a number
+function _isNumerical(obj) {
+  obj = obj - 0; // eslint-disable-next-line no-self-compare
+
+  return obj === obj;
+}
+
+function camelize(string) {
+  if (_isNumerical(string)) {
+    return string;
+  } // eslint-disable-next-line no-useless-escape
+
+
+  string = string.replace(/[\-_\s]+(.)?/g, function (match, chr) {
+    return chr ? chr.toUpperCase() : '';
+  }); // Ensure 1st char is always lowercase
+
+  return string.substr(0, 1).toLowerCase() + string.substr(1);
+}
+
+var _excluded = ["style"];
+
+function capitalize(val) {
+  return val.charAt(0).toUpperCase() + val.slice(1);
+}
+
+function styleToObject(style) {
+  return style.split(';').map(function (s) {
+    return s.trim();
+  }).filter(function (s) {
+    return s;
+  }).reduce(function (acc, pair) {
+    var i = pair.indexOf(':');
+    var prop = camelize(pair.slice(0, i));
+    var value = pair.slice(i + 1).trim();
+    prop.startsWith('webkit') ? acc[capitalize(prop)] = value : acc[prop] = value;
+    return acc;
+  }, {});
+}
+
+function convert(createElement, element) {
+  var extraProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+  if (typeof element === 'string') {
+    return element;
+  }
+
+  var children = (element.children || []).map(function (child) {
+    return convert(createElement, child);
+  });
+  /* eslint-disable dot-notation */
+
+  var mixins = Object.keys(element.attributes || {}).reduce(function (acc, key) {
+    var val = element.attributes[key];
+
+    switch (key) {
+      case 'class':
+        acc.attrs['className'] = val;
+        delete element.attributes['class'];
+        break;
+
+      case 'style':
+        acc.attrs['style'] = styleToObject(val);
+        break;
+
+      default:
+        if (key.indexOf('aria-') === 0 || key.indexOf('data-') === 0) {
+          acc.attrs[key.toLowerCase()] = val;
+        } else {
+          acc.attrs[camelize(key)] = val;
+        }
+
+    }
+
+    return acc;
+  }, {
+    attrs: {}
+  });
+
+  var _extraProps$style = extraProps.style,
+      existingStyle = _extraProps$style === void 0 ? {} : _extraProps$style,
+      remaining = _objectWithoutProperties(extraProps, _excluded);
+
+  mixins.attrs['style'] = _objectSpread2(_objectSpread2({}, mixins.attrs['style']), existingStyle);
+  /* eslint-enable */
+
+  return createElement.apply(void 0, [element.tag, _objectSpread2(_objectSpread2({}, mixins.attrs), remaining)].concat(_toConsumableArray(children)));
+}
+
+var PRODUCTION = false;
+
+try {
+  PRODUCTION = "development" === 'production';
+} catch (e) {}
+
+function log () {
+  if (!PRODUCTION && console && typeof console.error === 'function') {
+    var _console;
+
+    (_console = console).error.apply(_console, arguments);
+  }
+}
+
+function normalizeIconArgs(icon) {
+  // this has everything that it needs to be rendered which means it was probably imported
+  // directly from an icon svg package
+  if (icon && _typeof(icon) === 'object' && icon.prefix && icon.iconName && icon.icon) {
+    return icon;
+  }
+
+  if (_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.parse.icon) {
+    return _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.parse.icon(icon);
+  } // if the icon is null, there's nothing to do
+
+
+  if (icon === null) {
+    return null;
+  } // if the icon is an object and has a prefix and an icon name, return it
+
+
+  if (icon && _typeof(icon) === 'object' && icon.prefix && icon.iconName) {
+    return icon;
+  } // if it's an array with length of two
+
+
+  if (Array.isArray(icon) && icon.length === 2) {
+    // use the first item as prefix, second as icon name
+    return {
+      prefix: icon[0],
+      iconName: icon[1]
+    };
+  } // if it's a string, use it as the icon name
+
+
+  if (typeof icon === 'string') {
+    return {
+      prefix: 'fas',
+      iconName: icon
+    };
+  }
+}
+
+// creates an object with a key of key
+// and a value of value
+// if certain conditions are met
+function objectWithKey(key, value) {
+  // if the value is a non-empty array
+  // or it's not an array but it is truthy
+  // then create the object with the key and the value
+  // if not, return an empty array
+  return Array.isArray(value) && value.length > 0 || !Array.isArray(value) && value ? _defineProperty({}, key, value) : {};
+}
+
+var FontAwesomeIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().forwardRef(function (props, ref) {
+  var iconArgs = props.icon,
+      maskArgs = props.mask,
+      symbol = props.symbol,
+      className = props.className,
+      title = props.title,
+      titleId = props.titleId,
+      maskId = props.maskId;
+  var iconLookup = normalizeIconArgs(iconArgs);
+  var classes = objectWithKey('classes', [].concat(_toConsumableArray(classList(props)), _toConsumableArray(className.split(' '))));
+  var transform = objectWithKey('transform', typeof props.transform === 'string' ? _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.parse.transform(props.transform) : props.transform);
+  var mask = objectWithKey('mask', normalizeIconArgs(maskArgs));
+  var renderedIcon = (0,_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.icon)(iconLookup, _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, classes), transform), mask), {}, {
+    symbol: symbol,
+    title: title,
+    titleId: titleId,
+    maskId: maskId
+  }));
+
+  if (!renderedIcon) {
+    log('Could not find icon', iconLookup);
+    return null;
+  }
+
+  var abstract = renderedIcon.abstract;
+  var extraProps = {
+    ref: ref
+  };
+  Object.keys(props).forEach(function (key) {
+    // eslint-disable-next-line no-prototype-builtins
+    if (!FontAwesomeIcon.defaultProps.hasOwnProperty(key)) {
+      extraProps[key] = props[key];
+    }
+  });
+  return convertCurry(abstract[0], extraProps);
 });
+FontAwesomeIcon.displayName = 'FontAwesomeIcon';
+FontAwesomeIcon.propTypes = {
+  beat: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  border: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  beatFade: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  bounce: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  fade: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  flash: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  mask: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
+  maskId: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  fixedWidth: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  inverse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  flip: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf([true, false, 'horizontal', 'vertical', 'both']),
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
+  listItem: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  pull: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['right', 'left']),
+  pulse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  rotation: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf([0, 90, 180, 270]),
+  shake: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  size: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x']),
+  spin: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  spinPulse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  spinReverse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  symbol: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
+  title: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  titleId: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  transform: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)]),
+  swapOpacity: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
+};
+FontAwesomeIcon.defaultProps = {
+  border: false,
+  className: '',
+  mask: null,
+  maskId: null,
+  fixedWidth: false,
+  inverse: false,
+  flip: false,
+  icon: null,
+  listItem: false,
+  pull: null,
+  pulse: false,
+  rotation: null,
+  size: null,
+  spin: false,
+  spinPulse: false,
+  spinReverse: false,
+  beat: false,
+  fade: false,
+  beatFade: false,
+  bounce: false,
+  shake: false,
+  symbol: false,
+  title: '',
+  titleId: null,
+  transform: null,
+  swapOpacity: false
+};
+var convertCurry = convert.bind(null, (react__WEBPACK_IMPORTED_MODULE_1___default().createElement));
 
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.mjs
+
+
+
+/***/ }),
+
+/***/ "./src/components/buttons/button-defaults.js":
+/*!***************************************************!*\
+  !*** ./src/components/buttons/button-defaults.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+const Button = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
+  displayName: "button-defaults__Button"
+})(["background-color:transparent;border-color:transparent;box-sizing:border-box;font-family:var(--font-system);transform-origin:center;transition-duration:0.3s;transition-property:background-color,border-color,color;transition-timing-function:var(--timing-function);&:focus{outline:none;}&::-moz-focus-inner{border:0;}", ";", ";", ";&:active{animation-duration:0.3s;animation-name:click;animation-timing-function:var(--timing-function)}@keyframes click{0%{transform:scale(1);}50%{transform:scale(0.85);}100%{transform:scale(1);}}"], props => props.disabled && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["&{cursor:not-allowed;opacity:0.6;}"]), props => props.shadow && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["&{box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);}"]), props => props.kind === 'primary' && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["&{background-color:var(--color-primary);color:var(--color-background);}&:focus:not([disabled]),&:hover:not([disabled]){background-color:#fff;border-color:var(--color-primary);color:var(--color-primary);}"]));
+Button.defaultProps = {
+  disabled: false,
+  kind: 'primary',
+  shadow: false
+};
+Button.propTypes = {
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
+  kind: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
+  shadow: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./src/components/buttons/icon/button-style.js":
+/*!*****************************************************!*\
+  !*** ./src/components/buttons/icon/button-style.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _button_defaults__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../button-defaults */ "./src/components/buttons/button-defaults.js");
+
+
+
+const Button = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_button_defaults__WEBPACK_IMPORTED_MODULE_0__["default"]).withConfig({
+  displayName: "button-style__Button"
+})(["align-items:center;border-color:transparent;border-radius:50%;border-style:solid;border-width:2px;display:flex;font-size:1em;justify-content:center;height:34px;padding:2px;position:relative;width:34px;z-index:1;&::before{border-radius:50%;content:'';height:100%;left:0;position:absolute;top:0;transition:inherit;transition-property:background-color,border-color,color,opacity,transform;transform:scale(0);transform-origin:center center;width:100%;z-index:-1;}", " ", ""], props => props.kind === 'transparent' && (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["&{background-color:transparent;border:none;}&::before{background-color:var(--color-primary);opacity:0;}&:focus:not([disabled]),&:hover:not([disabled]){box-shadow:none;color:var(--color-font-contrast);}&:focus:not([disabled])::before,&:hover:not([disabled])::before{opacity:1;transform:scale(1);}"]), props => props.square && (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["&{border-radius:0;}&::before{border-radius:0;}"]));
+Button.defaultProps = {
+  disabled: false,
+  kind: 'transparent',
+  square: false
+};
+Button.propTypes = {
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  kind: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  square: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./src/components/buttons/icon/button.js":
+/*!***********************************************!*\
+  !*** ./src/components/buttons/icon/button.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _button_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button-style */ "./src/components/buttons/icon/button-style.js");
+
+
+
+
+const IconButton = ({
+  ariaLabel,
+  icon,
+  pulse,
+  rotation,
+  size,
+  spin,
+  ...props
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_button_style__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({
+  "aria-hidden": false,
+  "aria-label": ariaLabel
+}, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+  icon: icon,
+  pulse: pulse,
+  rotation: rotation,
+  size: size,
+  spin: spin
+}));
+IconButton.defaultProps = {
+  pulse: false,
+  rotation: null,
+  size: '1x',
+  spin: false
+};
+IconButton.propTypes = {
+  ariaLabel: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({}).isRequired,
+  pulse: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  rotation: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  size: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  spin: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconButton);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/filter-links.js":
+/*!******************************************************!*\
+  !*** ./src/components/layout/footer/filter-links.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const filterLinks = links => links && links.length > 0 ? links.filter(link => link.link && link.text) : [];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (filterLinks);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/footer-container.js":
+/*!**********************************************************!*\
+  !*** ./src/components/layout/footer/footer-container.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1440116640_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/1440116640.json */ "./public/page-data/sq/d/1440116640.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ "./src/components/layout/footer/footer.js");
+/* harmony import */ var _filter_links__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./filter-links */ "./src/components/layout/footer/filter-links.js");
+
+
+
+
+const FooterContainer = () => {
+  const {
+    site
+  } = _public_page_data_sq_d_1440116640_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const {
+    author,
+    footerLinks
+  } = site.siteMetadata;
+  const filteredLinks = (0,_filter_links__WEBPACK_IMPORTED_MODULE_3__["default"])(footerLinks);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    author: author,
+    links: filteredLinks
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FooterContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/footer.js":
+/*!************************************************!*\
+  !*** ./src/components/layout/footer/footer.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./links */ "./src/components/layout/footer/links.js");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer.css */ "./src/components/layout/footer/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Footer = ({
+  author,
+  links
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+  className: "footer"
+}, links.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_links__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  links: links
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("small", null, "\xA9", ' ', author, ",", ' ', new Date().getFullYear(), "."));
+Footer.propTypes = {
+  author: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
+  links: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({
+    link: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+    text: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
+  })).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/links.js":
+/*!***********************************************!*\
+  !*** ./src/components/layout/footer/links.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../link/link */ "./src/components/link/link.js");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/logo.inline.svg */ "./src/images/logo.inline.svg");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Links = ({
+  links
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "footer__links"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  "aria-label": "Home",
+  className: "footer__icon",
+  nav: true,
+  to: "/"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "footer__icon-svg-container"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default()), null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, links.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  key: link.text
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  to: link.link
+}, link.text)))));
+Links.propTypes = {
+  links: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({
+    link: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+    text: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
+  })).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Links);
+
+/***/ }),
+
+/***/ "./src/components/layout/layout.js":
+/*!*****************************************!*\
+  !*** ./src/components/layout/layout.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @reach/router */ "./node_modules/@gatsbyjs/reach-router/dist/index.modern.mjs");
+/* harmony import */ var _footer_footer_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer/footer-container */ "./src/components/layout/footer/footer-container.js");
+/* harmony import */ var _navbar_navbar_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar/navbar-container */ "./src/components/layout/navbar/navbar-container.js");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout.css */ "./src/components/layout/layout.css");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_layout_css__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+const Layout = ({
+  children
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_reach_router__WEBPACK_IMPORTED_MODULE_1__.Location, null, ({
+  location
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "layout"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_navbar_navbar_container__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  location: location
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", {
+  className: "noscript-warning"
+}, "This site relies on JavaScript which is currently disabled in your browser. Some functionality will be missing as a result."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_footer_footer_container__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+Layout.propTypes = {
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().node.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/get-menu-state.js":
+/*!********************************************************!*\
+  !*** ./src/components/layout/navbar/get-menu-state.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const getMenuState = (currentState, ref) => {
+  if (!currentState || currentState.isOpen) {
+    return {
+      isOpen: false,
+      transform: 'translateX(0)'
+    };
+  }
+  const {
+    width
+  } = ref.current.getBoundingClientRect();
+  return {
+    isOpen: true,
+    transform: `translateX(-${width}px)`
+  };
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMenuState);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/checkIfHomepage.js":
+/*!**************************************************************!*\
+  !*** ./src/components/layout/navbar/icon/checkIfHomepage.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const checkIfHomepage = (env, href, siteUrl) => env === 'development' && href === 'http://localhost:8000/' || href === siteUrl || href === `${siteUrl}/`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (checkIfHomepage);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/icon-container.js":
+/*!*************************************************************!*\
+  !*** ./src/components/layout/navbar/icon/icon-container.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1271460761_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../public/page-data/sq/d/1271460761.json */ "./public/page-data/sq/d/1271460761.json");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon */ "./src/components/layout/navbar/icon/icon.js");
+/* harmony import */ var _checkIfHomepage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./checkIfHomepage */ "./src/components/layout/navbar/icon/checkIfHomepage.js");
+
+
+
+
+
+const IconContainer = ({
+  location
+}) => {
+  const {
+    site
+  } = _public_page_data_sq_d_1271460761_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const isHomePage = (0,_checkIfHomepage__WEBPACK_IMPORTED_MODULE_3__["default"])("development", location.href, site.siteMetadata.siteUrl);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    isHomePage: isHomePage
+  });
+};
+IconContainer.propTypes = {
+  location: prop_types__WEBPACK_IMPORTED_MODULE_4___default().shape({
+    href: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string.isRequired)
+  }).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/icon.js":
+/*!***************************************************!*\
+  !*** ./src/components/layout/navbar/icon/icon.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../link/link */ "./src/components/link/link.js");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../images/logo.inline.svg */ "./src/images/logo.inline.svg");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _icon_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icon.css */ "./src/components/layout/navbar/icon/icon.css");
+/* harmony import */ var _icon_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+const Icon = ({
+  isHomePage
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  "aria-label": "Home",
+  className: "nav__icon",
+  nav: true,
+  to: "/"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "nav__icon-svg-container"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default()), null)), !isHomePage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Home"));
+Icon.propTypes = {
+  isHomePage: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/links/get-links.js":
+/*!*********************************************************!*\
+  !*** ./src/components/layout/navbar/links/get-links.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../link/link */ "./src/components/link/link.js");
+
+
+
+
+const getLinks = links => {
+  const linkComponents = {
+    people: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: "people",
+      to: "/people"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faUsers
+    }), "Our Team"),
+    publications: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: "publications",
+      to: "/publications"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faBook
+    }), "Publications")
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, links.map(link => linkComponents[link]));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getLinks);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/links/use-links.js":
+/*!*********************************************************!*\
+  !*** ./src/components/layout/navbar/links/use-links.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_536276349_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../public/page-data/sq/d/536276349.json */ "./public/page-data/sq/d/536276349.json");
+
+const useLinks = () => {
+  const query = _public_page_data_sq_d_536276349_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const links = [];
+  if (query.people.edges.length > 0) {
+    links.push('people');
+  }
+  if (query.publications) {
+    links.push('publications');
+  }
+  return links;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useLinks);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/navbar-container.js":
+/*!**********************************************************!*\
+  !*** ./src/components/layout/navbar/navbar-container.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ "./src/components/layout/navbar/navbar.js");
+/* harmony import */ var _get_menu_state__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./get-menu-state */ "./src/components/layout/navbar/get-menu-state.js");
+/* harmony import */ var _utils_hooks_click_outside_use_click_outside__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../utils/hooks/click-outside/use-click-outside */ "./src/utils/hooks/click-outside/use-click-outside.js");
+/* harmony import */ var _links_use_links__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./links/use-links */ "./src/components/layout/navbar/links/use-links.js");
+
+
+
+
+
+
+const NavbarContainer = ({
+  location
+}) => {
+  const {
+    0: menuState,
+    1: toggleMenu
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((0,_get_menu_state__WEBPACK_IMPORTED_MODULE_2__["default"])());
+  const navRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  const links = (0,_links_use_links__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  const closeMenu = () => {
+    if (menuState.isOpen) {
+      toggleMenu((0,_get_menu_state__WEBPACK_IMPORTED_MODULE_2__["default"])(menuState, navRef));
+    }
+  };
+  (0,_utils_hooks_click_outside_use_click_outside__WEBPACK_IMPORTED_MODULE_3__["default"])(navRef, closeMenu);
+  const handleClick = () => {
+    toggleMenu((0,_get_menu_state__WEBPACK_IMPORTED_MODULE_2__["default"])(menuState, navRef));
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    handleClick: handleClick,
+    links: links,
+    location: location,
+    ref: navRef,
+    transform: menuState.transform
+  });
+};
+NavbarContainer.propTypes = {
+  location: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({}).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavbarContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/navbar.js":
+/*!************************************************!*\
+  !*** ./src/components/layout/navbar/navbar.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../buttons/icon/button */ "./src/components/buttons/icon/button.js");
+/* harmony import */ var _icon_icon_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon/icon-container */ "./src/components/layout/navbar/icon/icon-container.js");
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../link/link */ "./src/components/link/link.js");
+/* harmony import */ var _theme_theme_container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./theme/theme-container */ "./src/components/layout/navbar/theme/theme-container.js");
+/* harmony import */ var _links_get_links__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./links/get-links */ "./src/components/layout/navbar/links/get-links.js");
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./navbar.css */ "./src/components/layout/navbar/navbar.css");
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_navbar_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+
+const Navbar = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(({
+  handleClick,
+  links,
+  location,
+  transform
+}, ref) => {
+  const navLinks = (0,_links_get_links__WEBPACK_IMPORTED_MODULE_5__["default"])(links);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_icon_icon_container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    location: location
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav__menu",
+    style: {
+      transform
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ariaLabel: "navigation menu",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faBars,
+    kind: "primary",
+    onClick: handleClick,
+    type: "button"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav__menu-links",
+    ref: ref
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    to: "/"
+  }, "Home"), navLinks, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_theme_theme_container__WEBPACK_IMPORTED_MODULE_4__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav__right"
+  }, navLinks, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_theme_theme_container__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+});
+Navbar.propTypes = {
+  handleClick: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func.isRequired),
+  links: prop_types__WEBPACK_IMPORTED_MODULE_8___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)).isRequired,
+  location: prop_types__WEBPACK_IMPORTED_MODULE_8___default().shape({}).isRequired,
+  transform: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/theme/theme-container.js":
+/*!***************************************************************!*\
+  !*** ./src/components/layout/navbar/theme/theme-container.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme */ "./src/components/layout/navbar/theme/theme.js");
+/* harmony import */ var _use_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./use-theme */ "./src/components/layout/navbar/theme/use-theme.js");
+
+
+
+const ThemeContainer = () => {
+  const theme = (0,_use_theme__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_theme__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    darkMode: theme.darkMode,
+    toggle: theme.toggle
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ThemeContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/theme/theme.js":
+/*!*****************************************************!*\
+  !*** ./src/components/layout/navbar/theme/theme.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../buttons/icon/button */ "./src/components/buttons/icon/button.js");
+
+
+
+
+const Theme = ({
+  darkMode,
+  toggle
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  ariaLabel: `switch to ${darkMode ? 'light' : 'dark'} mode`,
+  icon: darkMode ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faMoon : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faSun,
+  kind: "primary",
+  onClick: toggle,
+  type: "button"
+});
+Theme.propTypes = {
+  darkMode: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool.isRequired),
+  toggle: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Theme);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/theme/use-theme.js":
+/*!*********************************************************!*\
+  !*** ./src/components/layout/navbar/theme/use-theme.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_local_storage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../utils/local-storage */ "./src/utils/local-storage.js");
+
+
+const useTheme = () => {
+  const {
+    0: darkMode,
+    1: toggleState
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const toggle = () => {
+    const newMode = !darkMode;
+    const classToAdd = newMode === true ? 'dark-mode' : 'light-mode';
+    const classToRemove = newMode === true ? 'light-mode' : 'dark-mode';
+    if (document.body.classList.contains(classToRemove)) {
+      document.body.classList.replace(classToRemove, classToAdd);
+    } else {
+      document.body.classList.add(classToAdd);
+    }
+    toggleState(newMode);
+    (0,_utils_local_storage__WEBPACK_IMPORTED_MODULE_1__.setLocalStorage)('darkMode', newMode);
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const updateMode = () => {
+      const storedMode = (0,_utils_local_storage__WEBPACK_IMPORTED_MODULE_1__.getLocalStorage)('darkMode');
+      if (storedMode !== darkMode) {
+        toggleState(storedMode);
+      }
+    };
+    window.addEventListener('storage', updateMode);
+    return window.removeEventListener('storage', updateMode);
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const bodyMode = document.body.className.includes('dark-mode');
+    if (bodyMode !== darkMode) {
+      toggleState(bodyMode);
+    }
+  }, []);
+  return {
+    darkMode,
+    toggle
+  };
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTheme);
+
+/***/ }),
+
+/***/ "./src/components/link/link.js":
+/*!*************************************!*\
+  !*** ./src/components/link/link.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _link_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./link.css */ "./src/components/link/link.css");
+/* harmony import */ var _link_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_link_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const formatClass = classes => classes.length > 0 ? classes.join(' ') : undefined;
+const CustomLink = ({
+  buttonStyle,
+  children,
+  className,
+  nav,
+  outline,
+  to,
+  ...props
+}) => {
+  const classes = className ? [className] : [];
+  if (nav) {
+    classes.push('link_nav');
+  }
+  if (buttonStyle) {
+    classes.push('link_button');
+  }
+  if (outline) {
+    classes.push('link_outline');
+  }
+  if (to.startsWith('/') && /\.[0-9a-z]+$/i.test(to)) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", Object.assign({
+      className: formatClass(classes),
+      href: (0,gatsby__WEBPACK_IMPORTED_MODULE_1__.withPrefix)(to)
+    }, props), children);
+  }
+  if (to.startsWith('/')) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, Object.assign({
+      className: formatClass(classes),
+      to: to
+    }, props), children);
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", Object.assign({
+    className: formatClass(classes),
+    href: to
+  }, props), children);
+};
+CustomLink.defaultProps = {
+  buttonStyle: false,
+  className: '',
+  nav: false,
+  outline: false
+};
+CustomLink.propTypes = {
+  buttonStyle: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node.isRequired),
+  nav: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  outline: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  to: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomLink);
+
+/***/ }),
+
+/***/ "./src/components/publications/list.js":
+/*!*********************************************!*\
+  !*** ./src/components/publications/list.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../link/link */ "./src/components/link/link.js");
+
+
+
+const createAuthorSeparator = (index, numberOfAuthors) => {
+  if (numberOfAuthors === 1 || index === numberOfAuthors - 1) {
+    return '';
+  }
+  if (index < numberOfAuthors - 2) {
+    return ', ';
+  }
+  return ' and ';
+};
+const formatAuthors = (authors, title) => {
+  const numberOfAuthors = authors.length;
+  return authors.map((author, index) => {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+      key: `${author}-${title}`
+    }, author, createAuthorSeparator(index, numberOfAuthors));
+  });
+};
+const formatPages = article => {
+  if (article.volume && article.issue && article.pages) {
+    return `, ${article.volume}(${article.issue}): ${article.pages}`;
+  }
+  if (article.volume && article.pages) {
+    return `, ${article.volume}: ${article.pages}`;
+  }
+  if (article.pages) {
+    return `, ${article.pages}`;
+  }
+  return '';
+};
+const formatTitle = title => title.replace(/&lt;.+?&gt;/g, '');
+const formatItem = article => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  key: article.title
+}, formatAuthors(article.authors, article.title), ".", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("strong", null, formatTitle(article.title)), ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("em", null, article.journal), ".", ' ', article.year, formatPages(article), ".", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  to: `https://www.ncbi.nlm.nih.gov/pubmed/${article.pmid}`
+}, "PMID:", ' ', article.pmid), ".");
+const PublicationList = ({
+  publications
+}) => {
+  const yearOrder = Object.keys(publications).sort((a, b) => Number(a) < Number(b) ? 1 : -1);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "publications__links-year"
+  }, yearOrder.map(year => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    key: year,
+    to: `/publications/#${year}`
+  }, year))), yearOrder.map(year => {
+    const items = publications[year].map(article => formatItem(article));
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      key: year
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", {
+      id: year
+    }, year), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, items));
+  }));
+};
+PublicationList.propTypes = {
+  publications: prop_types__WEBPACK_IMPORTED_MODULE_2___default().shape({}).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PublicationList);
+
+/***/ }),
+
+/***/ "./src/components/publications/publications-container.js":
+/*!***************************************************************!*\
+  !*** ./src/components/publications/publications-container.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_11454138_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/11454138.json */ "./public/page-data/sq/d/11454138.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _publications__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./publications */ "./src/components/publications/publications.js");
+/* harmony import */ var _sort_articles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./sort-articles */ "./src/components/publications/sort-articles.js");
+/* harmony import */ var _sort_articles__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_sort_articles__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+const PublicationsContainer = () => {
+  const query = _public_page_data_sq_d_11454138_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const publicationsByYear = query.publications && query.publications.list.length > 0 ? _sort_articles__WEBPACK_IMPORTED_MODULE_3___default()(query.publications.list) : null;
+  return publicationsByYear && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_publications__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    publications: publicationsByYear
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PublicationsContainer);
+
+/***/ }),
+
+/***/ "./src/components/publications/publications.js":
+/*!*****************************************************!*\
+  !*** ./src/components/publications/publications.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _publications_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./publications.css */ "./src/components/publications/publications.css");
+/* harmony import */ var _publications_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_publications_css__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _list__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./list */ "./src/components/publications/list.js");
+
+
+
+
+
+
+const Publications = ({
+  publications
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "publications"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("header", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Publications"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__.faBook,
+  size: "2x"
+})), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_list__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  publications: publications
+})));
+Publications.propTypes = {
+  publications: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({}).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Publications);
+
+/***/ }),
+
+/***/ "./src/components/publications/sort-articles.js":
+/*!******************************************************!*\
+  !*** ./src/components/publications/sort-articles.js ***!
+  \******************************************************/
+/***/ ((module) => {
+
+const sortByYear = articles => Object.entries(articles).reduce((accum, [year, arr]) => ({
+  ...accum,
+  [year]: arr.sort((a, b) => a.pmid < b.pmid ? 1 : -1)
+}), {});
+const sortArticles = articles => {
+  const articlesByYear = articles.reduce((accum, article) => {
+    if (accum[article.year]) {
+      return {
+        ...accum,
+        [article.year]: [...accum[article.year], article]
+      };
+    }
+    return {
+      ...accum,
+      [article.year]: [article]
+    };
+  }, {});
+  return sortByYear(articlesByYear);
+};
+module.exports = sortArticles;
+
+/***/ }),
+
+/***/ "./src/components/seo/seo.js":
+/*!***********************************!*\
+  !*** ./src/components/seo/seo.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_4123507481_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/4123507481.json */ "./public/page-data/sq/d/4123507481.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+
+
+
+
+function SEO({
+  description,
+  lang,
+  meta,
+  title
+}) {
+  const {
+    site
+  } = _public_page_data_sq_d_4123507481_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const {
+    defaultDescription,
+    defaultTitle,
+    siteUrl
+  } = site.siteMetadata;
+  const seo = {
+    description: description || defaultDescription,
+    title: title || defaultTitle,
+    url: siteUrl
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2__.Helmet, {
+    htmlAttributes: {
+      lang
+    },
+    title: seo.title,
+    titleTemplate: `%s | ${defaultTitle}`,
+    meta: [{
+      name: 'description',
+      content: seo.description
+    }, {
+      property: 'og:title',
+      content: seo.title
+    }, {
+      property: 'og:description',
+      content: seo.description
+    }, {
+      property: 'og:type',
+      content: 'website'
+    }, {
+      property: 'og:url',
+      content: seo.url
+    }, {
+      property: 'twitter:title',
+      content: seo.title
+    }, {
+      property: 'twitter:description',
+      content: seo.description
+    }].concat(meta)
+  });
+}
+SEO.defaultProps = {
+  lang: 'en',
+  meta: [],
+  description: ''
+};
+SEO.propTypes = {
+  description: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  lang: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  meta: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),
+  title: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SEO);
+
+/***/ }),
+
+/***/ "./src/pages/publications/index.js?export=default":
+/*!********************************************************!*\
+  !*** ./src/pages/publications/index.js?export=default ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_layout_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/layout/layout */ "./src/components/layout/layout.js");
+/* harmony import */ var _components_publications_publications_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/publications/publications-container */ "./src/components/publications/publications-container.js");
+/* harmony import */ var _components_seo_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/seo/seo */ "./src/components/seo/seo.js");
+
+
+
+
+const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_layout__WEBPACK_IMPORTED_MODULE_1__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_seo_seo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  title: "Publications"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_publications_publications_container__WEBPACK_IMPORTED_MODULE_2__["default"], null));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
+
+/***/ }),
+
+/***/ "./src/utils/hooks/click-outside/is-visible.js":
+/*!*****************************************************!*\
+  !*** ./src/utils/hooks/click-outside/is-visible.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// An element is considered visible if it has an opacity > 0
+// and either a height or width.
+const isVisible = element => {
+  if (!element) {
+    return false;
+  }
+  const rect = element.getBoundingClientRect();
+  return Boolean(window.getComputedStyle(element).getPropertyValue('opacity') > 0 && (rect.height || rect.width));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (isVisible);
+
+/***/ }),
+
+/***/ "./src/utils/hooks/click-outside/use-click-outside.js":
+/*!************************************************************!*\
+  !*** ./src/utils/hooks/click-outside/use-click-outside.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _is_visible__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./is-visible */ "./src/utils/hooks/click-outside/is-visible.js");
+
+
+
+/* Detect click outside element specified by ref.current. If the visibility
+** of the element is irrelevant, set ignoreVisibility argument to true. The
+** element is considered visible if it has height or width as computed with
+** getBoundingClientRect(). If esc argument is true, pressing the escape
+** key is the same as clicking outside the element. func is called when
+** a click occurs outside the element. */
+const useClickOutside = (ref, func, esc = true, ignoreVisibility = false) => {
+  const clickedOutside = (isOutside, e) => {
+    if (isOutside) {
+      func(e);
+    }
+  };
+  const clickListener = e => {
+    const element = ref.current;
+    const outside = !element.contains(e.target) && (ignoreVisibility || (0,_is_visible__WEBPACK_IMPORTED_MODULE_1__["default"])(element));
+    clickedOutside(outside, e);
+  };
+  const escListener = e => {
+    const element = ref.current;
+    if (e.key === 'Escape' && (0,_is_visible__WEBPACK_IMPORTED_MODULE_1__["default"])(element)) {
+      clickedOutside(true, e);
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    window.addEventListener('click', clickListener);
+    return () => {
+      window.removeEventListener('click', clickListener);
+    };
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (esc) {
+      window.addEventListener('keydown', escListener);
+    }
+    return () => {
+      if (esc) {
+        window.removeEventListener('keydown', escListener);
+      }
+    };
+  });
+  const clear = () => {
+    window.removeEventListener('click', clickListener);
+    if (esc) {
+      window.removeEventListener('keydown', escListener);
+    }
+  };
+  return clear;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useClickOutside);
+
+/***/ }),
+
+/***/ "./src/utils/local-storage.js":
+/*!************************************!*\
+  !*** ./src/utils/local-storage.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getLocalStorage": () => (/* binding */ getLocalStorage),
+/* harmony export */   "setLocalStorage": () => (/* binding */ setLocalStorage)
+/* harmony export */ });
+const windowGlobal = typeof window !== 'undefined' && window;
+const localAdapter = windowGlobal ? windowGlobal.localStorage : {
+  getItem: () => null,
+  removeItem: () => {},
+  setItem: () => {}
+};
+const storageSupport = () => {
+  try {
+    const test = 'test-storage';
+    localAdapter.setItem(test, test);
+    localAdapter.removeItem(test);
+    return true;
+  } catch (error) {
+    return false;
+  }
+};
+const getLocalStorage = key => {
+  if (storageSupport) {
+    return JSON.parse(localAdapter.getItem(key));
+  }
+  return null;
+};
+const setLocalStorage = (key, value) => {
+  if (storageSupport) {
+    return localAdapter.setItem(key, JSON.stringify(value));
+  }
+  return null;
+};
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/footer.css":
+/*!*************************************************!*\
+  !*** ./src/components/layout/footer/footer.css ***!
+  \*************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/layout.css":
+/*!******************************************!*\
+  !*** ./src/components/layout/layout.css ***!
+  \******************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/icon.css":
+/*!****************************************************!*\
+  !*** ./src/components/layout/navbar/icon/icon.css ***!
+  \****************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/navbar.css":
+/*!*************************************************!*\
+  !*** ./src/components/layout/navbar/navbar.css ***!
+  \*************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/link/link.css":
+/*!**************************************!*\
+  !*** ./src/components/link/link.css ***!
+  \**************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/publications/publications.css":
+/*!******************************************************!*\
+  !*** ./src/components/publications/publications.css ***!
+  \******************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/images/logo.inline.svg":
+/*!************************************!*\
+  !*** ./src/images/logo.inline.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var React = __webpack_require__(/*! react */ "react");
+
+function LogoInline (props) {
+    return React.createElement("svg",props,[React.createElement("title",{"key":0},"DNA"),React.createElement("desc",{"key":1},"logo"),React.createElement("path",{"d":"M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z","key":2})]);
+}
+
+LogoInline.defaultProps = {"aria-label":"DNA logo","viewBox":"0 0 448 512"};
+
+module.exports = LogoInline;
+
+LogoInline.default = LogoInline;
+
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/fontawesome-svg-core/index.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/fontawesome-svg-core/index.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "api": () => (/* binding */ api),
+/* harmony export */   "config": () => (/* binding */ config$1),
+/* harmony export */   "counter": () => (/* binding */ counter),
+/* harmony export */   "dom": () => (/* binding */ dom$1),
+/* harmony export */   "findIconDefinition": () => (/* binding */ findIconDefinition$1),
+/* harmony export */   "icon": () => (/* binding */ icon),
+/* harmony export */   "layer": () => (/* binding */ layer),
+/* harmony export */   "library": () => (/* binding */ library$1),
+/* harmony export */   "noAuto": () => (/* binding */ noAuto$1),
+/* harmony export */   "parse": () => (/* binding */ parse$1),
+/* harmony export */   "text": () => (/* binding */ text),
+/* harmony export */   "toHtml": () => (/* binding */ toHtml$1)
+/* harmony export */ });
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
 
@@ -283,7 +2099,7 @@ var MUTATION_APPROACH_ASYNC = 'async';
 var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
 var PRODUCTION = function () {
   try {
-    return "production" === 'production';
+    return "development" === 'production';
   } catch (e) {
     return false;
   }
@@ -3070,653 +4886,1981 @@ var parse$1 = api.parse;
 var findIconDefinition$1 = api.findIconDefinition;
 var toHtml$1 = api.toHtml;
 var icon = api.icon;
-var fontawesome_svg_core_layer = api.layer;
-var fontawesome_svg_core_text = api.text;
+var layer = api.layer;
+var text = api.text;
 var counter = api.counter;
 
 
 
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5697);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: external "/home/rseag/m-3-lab.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(4189);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
-
-
-
-
-function index_es_ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    enumerableOnly && (symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    })), keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function index_es_objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = null != arguments[i] ? arguments[i] : {};
-    i % 2 ? index_es_ownKeys(Object(source), !0).forEach(function (key) {
-      index_es_defineProperty(target, key, source[key]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : index_es_ownKeys(Object(source)).forEach(function (key) {
-      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-    });
-  }
-
-  return target;
-}
-
-function index_es_typeof(obj) {
-  "@babel/helpers - typeof";
-
-  return index_es_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, index_es_typeof(obj);
-}
-
-function index_es_defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-function index_es_toConsumableArray(arr) {
-  return index_es_arrayWithoutHoles(arr) || index_es_iterableToArray(arr) || index_es_unsupportedIterableToArray(arr) || index_es_nonIterableSpread();
-}
-
-function index_es_arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return index_es_arrayLikeToArray(arr);
-}
-
-function index_es_iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-}
-
-function index_es_unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return index_es_arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return index_es_arrayLikeToArray(o, minLen);
-}
-
-function index_es_arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function index_es_nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-// Get CSS class list from a props object
-function classList(props) {
-  var _classes;
-
-  var beat = props.beat,
-      fade = props.fade,
-      beatFade = props.beatFade,
-      bounce = props.bounce,
-      shake = props.shake,
-      flash = props.flash,
-      spin = props.spin,
-      spinPulse = props.spinPulse,
-      spinReverse = props.spinReverse,
-      pulse = props.pulse,
-      fixedWidth = props.fixedWidth,
-      inverse = props.inverse,
-      border = props.border,
-      listItem = props.listItem,
-      flip = props.flip,
-      size = props.size,
-      rotation = props.rotation,
-      pull = props.pull; // map of CSS class names to properties
-
-  var classes = (_classes = {
-    'fa-beat': beat,
-    'fa-fade': fade,
-    'fa-beat-fade': beatFade,
-    'fa-bounce': bounce,
-    'fa-shake': shake,
-    'fa-flash': flash,
-    'fa-spin': spin,
-    'fa-spin-reverse': spinReverse,
-    'fa-spin-pulse': spinPulse,
-    'fa-pulse': pulse,
-    'fa-fw': fixedWidth,
-    'fa-inverse': inverse,
-    'fa-border': border,
-    'fa-li': listItem,
-    'fa-flip': flip === true,
-    'fa-flip-horizontal': flip === 'horizontal' || flip === 'both',
-    'fa-flip-vertical': flip === 'vertical' || flip === 'both'
-  }, index_es_defineProperty(_classes, "fa-".concat(size), typeof size !== 'undefined' && size !== null), index_es_defineProperty(_classes, "fa-rotate-".concat(rotation), typeof rotation !== 'undefined' && rotation !== null && rotation !== 0), index_es_defineProperty(_classes, "fa-pull-".concat(pull), typeof pull !== 'undefined' && pull !== null), index_es_defineProperty(_classes, 'fa-swap-opacity', props.swapOpacity), _classes); // map over all the keys in the classes object
-  // return an array of the keys where the value for the key is not null
-
-  return Object.keys(classes).map(function (key) {
-    return classes[key] ? key : null;
-  }).filter(function (key) {
-    return key;
-  });
-}
-
-// Camelize taken from humps
-// humps is copyright © 2012+ Dom Christie
-// Released under the MIT license.
-// Performant way to determine if object coerces to a number
-function _isNumerical(obj) {
-  obj = obj - 0; // eslint-disable-next-line no-self-compare
-
-  return obj === obj;
-}
-
-function camelize(string) {
-  if (_isNumerical(string)) {
-    return string;
-  } // eslint-disable-next-line no-useless-escape
-
-
-  string = string.replace(/[\-_\s]+(.)?/g, function (match, chr) {
-    return chr ? chr.toUpperCase() : '';
-  }); // Ensure 1st char is always lowercase
-
-  return string.substr(0, 1).toLowerCase() + string.substr(1);
-}
-
-var _excluded = ["style"];
-
-function capitalize(val) {
-  return val.charAt(0).toUpperCase() + val.slice(1);
-}
-
-function styleToObject(style) {
-  return style.split(';').map(function (s) {
-    return s.trim();
-  }).filter(function (s) {
-    return s;
-  }).reduce(function (acc, pair) {
-    var i = pair.indexOf(':');
-    var prop = camelize(pair.slice(0, i));
-    var value = pair.slice(i + 1).trim();
-    prop.startsWith('webkit') ? acc[capitalize(prop)] = value : acc[prop] = value;
-    return acc;
-  }, {});
-}
-
-function convert(createElement, element) {
-  var extraProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-  if (typeof element === 'string') {
-    return element;
-  }
-
-  var children = (element.children || []).map(function (child) {
-    return convert(createElement, child);
-  });
-  /* eslint-disable dot-notation */
-
-  var mixins = Object.keys(element.attributes || {}).reduce(function (acc, key) {
-    var val = element.attributes[key];
-
-    switch (key) {
-      case 'class':
-        acc.attrs['className'] = val;
-        delete element.attributes['class'];
-        break;
-
-      case 'style':
-        acc.attrs['style'] = styleToObject(val);
-        break;
-
-      default:
-        if (key.indexOf('aria-') === 0 || key.indexOf('data-') === 0) {
-          acc.attrs[key.toLowerCase()] = val;
-        } else {
-          acc.attrs[camelize(key)] = val;
-        }
-
-    }
-
-    return acc;
-  }, {
-    attrs: {}
-  });
-
-  var _extraProps$style = extraProps.style,
-      existingStyle = _extraProps$style === void 0 ? {} : _extraProps$style,
-      remaining = _objectWithoutProperties(extraProps, _excluded);
-
-  mixins.attrs['style'] = index_es_objectSpread2(index_es_objectSpread2({}, mixins.attrs['style']), existingStyle);
-  /* eslint-enable */
-
-  return createElement.apply(void 0, [element.tag, index_es_objectSpread2(index_es_objectSpread2({}, mixins.attrs), remaining)].concat(index_es_toConsumableArray(children)));
-}
-
-var index_es_PRODUCTION = false;
-
-try {
-  index_es_PRODUCTION = "production" === 'production';
-} catch (e) {}
-
-function log () {
-  if (!index_es_PRODUCTION && console && typeof console.error === 'function') {
-    var _console;
-
-    (_console = console).error.apply(_console, arguments);
-  }
-}
-
-function normalizeIconArgs(icon) {
-  // this has everything that it needs to be rendered which means it was probably imported
-  // directly from an icon svg package
-  if (icon && index_es_typeof(icon) === 'object' && icon.prefix && icon.iconName && icon.icon) {
-    return icon;
-  }
-
-  if (parse$1.icon) {
-    return parse$1.icon(icon);
-  } // if the icon is null, there's nothing to do
-
-
-  if (icon === null) {
-    return null;
-  } // if the icon is an object and has a prefix and an icon name, return it
-
-
-  if (icon && index_es_typeof(icon) === 'object' && icon.prefix && icon.iconName) {
-    return icon;
-  } // if it's an array with length of two
-
-
-  if (Array.isArray(icon) && icon.length === 2) {
-    // use the first item as prefix, second as icon name
-    return {
-      prefix: icon[0],
-      iconName: icon[1]
-    };
-  } // if it's a string, use it as the icon name
-
-
-  if (typeof icon === 'string') {
-    return {
-      prefix: 'fas',
-      iconName: icon
-    };
-  }
-}
-
-// creates an object with a key of key
-// and a value of value
-// if certain conditions are met
-function objectWithKey(key, value) {
-  // if the value is a non-empty array
-  // or it's not an array but it is truthy
-  // then create the object with the key and the value
-  // if not, return an empty array
-  return Array.isArray(value) && value.length > 0 || !Array.isArray(value) && value ? index_es_defineProperty({}, key, value) : {};
-}
-
-var FontAwesomeIcon = /*#__PURE__*/index_js_default().forwardRef(function (props, ref) {
-  var iconArgs = props.icon,
-      maskArgs = props.mask,
-      symbol = props.symbol,
-      className = props.className,
-      title = props.title,
-      titleId = props.titleId,
-      maskId = props.maskId;
-  var iconLookup = normalizeIconArgs(iconArgs);
-  var classes = objectWithKey('classes', [].concat(index_es_toConsumableArray(classList(props)), index_es_toConsumableArray(className.split(' '))));
-  var transform = objectWithKey('transform', typeof props.transform === 'string' ? parse$1.transform(props.transform) : props.transform);
-  var mask = objectWithKey('mask', normalizeIconArgs(maskArgs));
-  var renderedIcon = icon(iconLookup, index_es_objectSpread2(index_es_objectSpread2(index_es_objectSpread2(index_es_objectSpread2({}, classes), transform), mask), {}, {
-    symbol: symbol,
-    title: title,
-    titleId: titleId,
-    maskId: maskId
-  }));
-
-  if (!renderedIcon) {
-    log('Could not find icon', iconLookup);
-    return null;
-  }
-
-  var abstract = renderedIcon.abstract;
-  var extraProps = {
-    ref: ref
-  };
-  Object.keys(props).forEach(function (key) {
-    // eslint-disable-next-line no-prototype-builtins
-    if (!FontAwesomeIcon.defaultProps.hasOwnProperty(key)) {
-      extraProps[key] = props[key];
-    }
-  });
-  return convertCurry(abstract[0], extraProps);
-});
-FontAwesomeIcon.displayName = 'FontAwesomeIcon';
-FontAwesomeIcon.propTypes = {
-  beat: (prop_types_default()).bool,
-  border: (prop_types_default()).bool,
-  beatFade: (prop_types_default()).bool,
-  bounce: (prop_types_default()).bool,
-  className: (prop_types_default()).string,
-  fade: (prop_types_default()).bool,
-  flash: (prop_types_default()).bool,
-  mask: prop_types_default().oneOfType([(prop_types_default()).object, (prop_types_default()).array, (prop_types_default()).string]),
-  maskId: (prop_types_default()).string,
-  fixedWidth: (prop_types_default()).bool,
-  inverse: (prop_types_default()).bool,
-  flip: prop_types_default().oneOf([true, false, 'horizontal', 'vertical', 'both']),
-  icon: prop_types_default().oneOfType([(prop_types_default()).object, (prop_types_default()).array, (prop_types_default()).string]),
-  listItem: (prop_types_default()).bool,
-  pull: prop_types_default().oneOf(['right', 'left']),
-  pulse: (prop_types_default()).bool,
-  rotation: prop_types_default().oneOf([0, 90, 180, 270]),
-  shake: (prop_types_default()).bool,
-  size: prop_types_default().oneOf(['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x']),
-  spin: (prop_types_default()).bool,
-  spinPulse: (prop_types_default()).bool,
-  spinReverse: (prop_types_default()).bool,
-  symbol: prop_types_default().oneOfType([(prop_types_default()).bool, (prop_types_default()).string]),
-  title: (prop_types_default()).string,
-  titleId: (prop_types_default()).string,
-  transform: prop_types_default().oneOfType([(prop_types_default()).string, (prop_types_default()).object]),
-  swapOpacity: (prop_types_default()).bool
-};
-FontAwesomeIcon.defaultProps = {
-  border: false,
-  className: '',
-  mask: null,
-  maskId: null,
-  fixedWidth: false,
-  inverse: false,
-  flip: false,
-  icon: null,
-  listItem: false,
-  pull: null,
-  pulse: false,
-  rotation: null,
-  size: null,
-  spin: false,
-  spinPulse: false,
-  spinReverse: false,
-  beat: false,
-  fade: false,
-  beatFade: false,
-  bounce: false,
-  shake: false,
-  symbol: false,
-  title: '',
-  titleId: null,
-  transform: null,
-  swapOpacity: false
-};
-var convertCurry = convert.bind(null, (index_js_default()).createElement);
-
-
-
 
 /***/ }),
 
-/***/ 5734:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ layout)
-});
-
-// EXTERNAL MODULE: external "/home/rseag/m-3-lab.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(4189);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5697);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: ./node_modules/@gatsbyjs/reach-router/dist/index.modern.mjs
-var index_modern = __webpack_require__(7896);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 11 modules
-var gatsby_browser_entry = __webpack_require__(7076);
-// EXTERNAL MODULE: ./src/components/link/link.js
-var link_link = __webpack_require__(4904);
-// EXTERNAL MODULE: ./src/images/logo.inline.svg
-var logo_inline = __webpack_require__(5248);
-var logo_inline_default = /*#__PURE__*/__webpack_require__.n(logo_inline);
-;// CONCATENATED MODULE: ./src/components/layout/footer/links.js
-const Links=({links})=>/*#__PURE__*/index_js_default().createElement("div",{className:"footer__links"},/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{"aria-label":"Home",className:"footer__icon",nav:true,to:"/"},/*#__PURE__*/index_js_default().createElement("div",{className:"footer__icon-svg-container"},/*#__PURE__*/index_js_default().createElement((logo_inline_default()),null))),/*#__PURE__*/index_js_default().createElement("ul",null,links.map(link=>/*#__PURE__*/index_js_default().createElement("li",{key:link.text},/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{to:link.link},link.text)))));Links.propTypes={links:prop_types_default().arrayOf(prop_types_default().shape({link:(prop_types_default()).string,text:(prop_types_default()).string})).isRequired};/* harmony default export */ const footer_links = (Links);
-;// CONCATENATED MODULE: ./src/components/layout/footer/footer.js
-const Footer=({author,links})=>/*#__PURE__*/index_js_default().createElement("footer",{className:"footer"},links.length>0&&/*#__PURE__*/index_js_default().createElement(footer_links,{links:links}),/*#__PURE__*/index_js_default().createElement("small",null,"\xA9",' ',author,",",' ',new Date().getFullYear(),"."));Footer.propTypes={author:(prop_types_default()).string.isRequired,links:prop_types_default().arrayOf(prop_types_default().shape({link:(prop_types_default()).string,text:(prop_types_default()).string})).isRequired};/* harmony default export */ const footer = (Footer);
-;// CONCATENATED MODULE: ./src/components/layout/footer/filter-links.js
-const filterLinks=links=>links&&links.length>0?links.filter(link=>link.link&&link.text):[];/* harmony default export */ const filter_links = (filterLinks);
-;// CONCATENATED MODULE: ./src/components/layout/footer/footer-container.js
-const FooterContainer=()=>{const{site}=(0,gatsby_browser_entry.useStaticQuery)("1440116640");const{author,footerLinks}=site.siteMetadata;const filteredLinks=filter_links(footerLinks);return/*#__PURE__*/index_js_default().createElement(footer,{author:author,links:filteredLinks});};/* harmony default export */ const footer_container = (FooterContainer);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
-var free_solid_svg_icons = __webpack_require__(9417);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
-var index_es = __webpack_require__(982);
-// EXTERNAL MODULE: ./node_modules/styled-components/dist/styled-components.esm.js + 4 modules
-var styled_components_esm = __webpack_require__(9550);
-;// CONCATENATED MODULE: ./src/components/buttons/button-defaults.js
-const Button=styled_components_esm["default"].button.withConfig({displayName:"button-defaults__Button",componentId:"sc-c7vns7-0"})(["background-color:transparent;border-color:transparent;box-sizing:border-box;font-family:var(--font-system);transform-origin:center;transition-duration:0.3s;transition-property:background-color,border-color,color;transition-timing-function:var(--timing-function);&:focus{outline:none;}&::-moz-focus-inner{border:0;}",";",";",";&:active{animation-duration:0.3s;animation-name:click;animation-timing-function:var(--timing-function)}@keyframes click{0%{transform:scale(1);}50%{transform:scale(0.85);}100%{transform:scale(1);}}"],props=>props.disabled&&(0,styled_components_esm.css)(["&{cursor:not-allowed;opacity:0.6;}"]),props=>props.shadow&&(0,styled_components_esm.css)(["&{box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);}"]),props=>props.kind==='primary'&&(0,styled_components_esm.css)(["&{background-color:var(--color-primary);color:var(--color-background);}&:focus:not([disabled]),&:hover:not([disabled]){background-color:#fff;border-color:var(--color-primary);color:var(--color-primary);}"]));Button.defaultProps={disabled:false,kind:'primary',shadow:false};Button.propTypes={disabled:(prop_types_default()).bool,kind:(prop_types_default()).string,shadow:(prop_types_default()).bool};/* harmony default export */ const button_defaults = (Button);
-;// CONCATENATED MODULE: ./src/components/buttons/icon/button-style.js
-const button_style_Button=(0,styled_components_esm["default"])(button_defaults).withConfig({displayName:"button-style__Button",componentId:"sc-1aa2vvx-0"})(["align-items:center;border-color:transparent;border-radius:50%;border-style:solid;border-width:2px;display:flex;font-size:1em;justify-content:center;height:34px;padding:2px;position:relative;width:34px;z-index:1;&::before{border-radius:50%;content:'';height:100%;left:0;position:absolute;top:0;transition:inherit;transition-property:background-color,border-color,color,opacity,transform;transform:scale(0);transform-origin:center center;width:100%;z-index:-1;}"," ",""],props=>props.kind==='transparent'&&(0,styled_components_esm.css)(["&{background-color:transparent;border:none;}&::before{background-color:var(--color-primary);opacity:0;}&:focus:not([disabled]),&:hover:not([disabled]){box-shadow:none;color:var(--color-font-contrast);}&:focus:not([disabled])::before,&:hover:not([disabled])::before{opacity:1;transform:scale(1);}"]),props=>props.square&&(0,styled_components_esm.css)(["&{border-radius:0;}&::before{border-radius:0;}"]));button_style_Button.defaultProps={disabled:false,kind:'transparent',square:false};button_style_Button.propTypes={disabled:(prop_types_default()).bool,kind:(prop_types_default()).string,square:(prop_types_default()).bool};/* harmony default export */ const button_style = (button_style_Button);
-;// CONCATENATED MODULE: ./src/components/buttons/icon/button.js
-const IconButton=({ariaLabel,icon,pulse,rotation,size,spin,...props})=>/*#__PURE__*/index_js_default().createElement(button_style,Object.assign({"aria-hidden":false,"aria-label":ariaLabel},props),/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:icon,pulse:pulse,rotation:rotation,size:size,spin:spin}));IconButton.defaultProps={pulse:false,rotation:null,size:'1x',spin:false};IconButton.propTypes={ariaLabel:(prop_types_default()).string.isRequired,icon:prop_types_default().shape({}).isRequired,pulse:(prop_types_default()).bool,rotation:(prop_types_default()).number,size:(prop_types_default()).string,spin:(prop_types_default()).bool};/* harmony default export */ const icon_button = (IconButton);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/icon/icon.js
-const Icon=({isHomePage})=>/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{"aria-label":"Home",className:"nav__icon",nav:true,to:"/"},/*#__PURE__*/index_js_default().createElement("div",{className:"nav__icon-svg-container"},/*#__PURE__*/index_js_default().createElement((logo_inline_default()),null)),!isHomePage&&/*#__PURE__*/index_js_default().createElement("span",null,"Home"));Icon.propTypes={isHomePage:(prop_types_default()).bool.isRequired};/* harmony default export */ const icon = (Icon);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/icon/checkIfHomepage.js
-const checkIfHomepage=(env,href,siteUrl)=>env==='development'&&href==='http://localhost:8000/'||href===siteUrl||href===`${siteUrl}/`;/* harmony default export */ const icon_checkIfHomepage = (checkIfHomepage);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/icon/icon-container.js
-const IconContainer=({location})=>{const{site}=(0,gatsby_browser_entry.useStaticQuery)("1271460761");const isHomePage=icon_checkIfHomepage("production",location.href,site.siteMetadata.siteUrl);return/*#__PURE__*/index_js_default().createElement(icon,{isHomePage:isHomePage});};IconContainer.propTypes={location:prop_types_default().shape({href:(prop_types_default()).string.isRequired}).isRequired};/* harmony default export */ const icon_container = (IconContainer);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/theme/theme.js
-const Theme=({darkMode,toggle})=>/*#__PURE__*/index_js_default().createElement(icon_button,{ariaLabel:`switch to ${darkMode?'light':'dark'} mode`,icon:darkMode?free_solid_svg_icons/* faMoon */.DBF:free_solid_svg_icons/* faSun */.enB,kind:"primary",onClick:toggle,type:"button"});Theme.propTypes={darkMode:(prop_types_default()).bool.isRequired,toggle:(prop_types_default()).func.isRequired};/* harmony default export */ const theme_theme = (Theme);
-;// CONCATENATED MODULE: ./src/utils/local-storage.js
-const windowGlobal=typeof window!=='undefined'&&window;const localAdapter=windowGlobal?windowGlobal.localStorage:{getItem:()=>null,removeItem:()=>{},setItem:()=>{}};const storageSupport=()=>{try{const test='test-storage';localAdapter.setItem(test,test);localAdapter.removeItem(test);return true;}catch(error){return false;}};const getLocalStorage=key=>{if(storageSupport){return JSON.parse(localAdapter.getItem(key));}return null;};const setLocalStorage=(key,value)=>{if(storageSupport){return localAdapter.setItem(key,JSON.stringify(value));}return null;};
-;// CONCATENATED MODULE: ./src/components/layout/navbar/theme/use-theme.js
-const useTheme=()=>{const{0:darkMode,1:toggleState}=(0,index_js_.useState)(false);const toggle=()=>{const newMode=!darkMode;const classToAdd=newMode===true?'dark-mode':'light-mode';const classToRemove=newMode===true?'light-mode':'dark-mode';if(document.body.classList.contains(classToRemove)){document.body.classList.replace(classToRemove,classToAdd);}else{document.body.classList.add(classToAdd);}toggleState(newMode);setLocalStorage('darkMode',newMode);};(0,index_js_.useEffect)(()=>{const updateMode=()=>{const storedMode=getLocalStorage('darkMode');if(storedMode!==darkMode){toggleState(storedMode);}};window.addEventListener('storage',updateMode);return window.removeEventListener('storage',updateMode);});(0,index_js_.useEffect)(()=>{const bodyMode=document.body.className.includes('dark-mode');if(bodyMode!==darkMode){toggleState(bodyMode);}},[]);return{darkMode,toggle};};/* harmony default export */ const use_theme = (useTheme);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/theme/theme-container.js
-const ThemeContainer=()=>{const theme=use_theme();return/*#__PURE__*/index_js_default().createElement(theme_theme,{darkMode:theme.darkMode,toggle:theme.toggle});};/* harmony default export */ const theme_container = (ThemeContainer);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/links/get-links.js
-const getLinks=links=>{const linkComponents={people:/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{key:"people",to:"/people"},/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faUsers */.FVb}),"Our Team"),publications:/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{key:"publications",to:"/publications"},/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faBook */.FL8}),"Publications")};return/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,links.map(link=>linkComponents[link]));};/* harmony default export */ const get_links = (getLinks);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/navbar.js
-const Navbar=/*#__PURE__*/(0,index_js_.forwardRef)(({handleClick,links,location,transform},ref)=>{const navLinks=get_links(links);return/*#__PURE__*/index_js_default().createElement("div",{className:"nav"},/*#__PURE__*/index_js_default().createElement(icon_container,{location:location}),/*#__PURE__*/index_js_default().createElement("div",{className:"nav__menu",style:{transform}},/*#__PURE__*/index_js_default().createElement(icon_button,{ariaLabel:"navigation menu",icon:free_solid_svg_icons/* faBars */.xiG,kind:"primary",onClick:handleClick,type:"button"}),/*#__PURE__*/index_js_default().createElement("div",{className:"nav__menu-links",ref:ref},/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{to:"/"},"Home"),navLinks,/*#__PURE__*/index_js_default().createElement(theme_container,null))),/*#__PURE__*/index_js_default().createElement("div",{className:"nav__right"},navLinks,/*#__PURE__*/index_js_default().createElement(theme_container,null)));});Navbar.propTypes={handleClick:(prop_types_default()).func.isRequired,links:prop_types_default().arrayOf((prop_types_default()).string).isRequired,location:prop_types_default().shape({}).isRequired,transform:(prop_types_default()).string.isRequired};/* harmony default export */ const navbar = (Navbar);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/get-menu-state.js
-const getMenuState=(currentState,ref)=>{if(!currentState||currentState.isOpen){return{isOpen:false,transform:'translateX(0)'};}const{width}=ref.current.getBoundingClientRect();return{isOpen:true,transform:`translateX(-${width}px)`};};/* harmony default export */ const get_menu_state = (getMenuState);
-;// CONCATENATED MODULE: ./src/utils/hooks/click-outside/is-visible.js
-// An element is considered visible if it has an opacity > 0
-// and either a height or width.
-const isVisible=element=>{if(!element){return false;}const rect=element.getBoundingClientRect();return Boolean(window.getComputedStyle(element).getPropertyValue('opacity')>0&&(rect.height||rect.width));};/* harmony default export */ const is_visible = (isVisible);
-;// CONCATENATED MODULE: ./src/utils/hooks/click-outside/use-click-outside.js
-/* Detect click outside element specified by ref.current. If the visibility
-** of the element is irrelevant, set ignoreVisibility argument to true. The
-** element is considered visible if it has height or width as computed with
-** getBoundingClientRect(). If esc argument is true, pressing the escape
-** key is the same as clicking outside the element. func is called when
-** a click occurs outside the element. */const useClickOutside=(ref,func,esc=true,ignoreVisibility=false)=>{const clickedOutside=(isOutside,e)=>{if(isOutside){func(e);}};const clickListener=e=>{const element=ref.current;const outside=!element.contains(e.target)&&(ignoreVisibility||is_visible(element));clickedOutside(outside,e);};const escListener=e=>{const element=ref.current;if(e.key==='Escape'&&is_visible(element)){clickedOutside(true,e);}};(0,index_js_.useEffect)(()=>{window.addEventListener('click',clickListener);return()=>{window.removeEventListener('click',clickListener);};});(0,index_js_.useEffect)(()=>{if(esc){window.addEventListener('keydown',escListener);}return()=>{if(esc){window.removeEventListener('keydown',escListener);}};});const clear=()=>{window.removeEventListener('click',clickListener);if(esc){window.removeEventListener('keydown',escListener);}};return clear;};/* harmony default export */ const use_click_outside = (useClickOutside);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/links/use-links.js
-const useLinks=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("536276349");const links=[];if(query.people.edges.length>0){links.push('people');}if(query.publications){links.push('publications');}return links;};/* harmony default export */ const use_links = (useLinks);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/navbar-container.js
-const NavbarContainer=({location})=>{const{0:menuState,1:toggleMenu}=(0,index_js_.useState)(get_menu_state());const navRef=(0,index_js_.useRef)();const links=use_links();const closeMenu=()=>{if(menuState.isOpen){toggleMenu(get_menu_state(menuState,navRef));}};use_click_outside(navRef,closeMenu);const handleClick=()=>{toggleMenu(get_menu_state(menuState,navRef));};return/*#__PURE__*/index_js_default().createElement(navbar,{handleClick:handleClick,links:links,location:location,ref:navRef,transform:menuState.transform});};NavbarContainer.propTypes={location:prop_types_default().shape({}).isRequired};/* harmony default export */ const navbar_container = (NavbarContainer);
-;// CONCATENATED MODULE: ./src/components/layout/layout.js
-const Layout=({children})=>/*#__PURE__*/index_js_default().createElement(index_modern.Location,null,({location})=>/*#__PURE__*/index_js_default().createElement("div",{className:"layout"},/*#__PURE__*/index_js_default().createElement(navbar_container,{location:location}),/*#__PURE__*/index_js_default().createElement("noscript",{className:"noscript-warning"},"This site relies on JavaScript which is currently disabled in your browser. Some functionality will be missing as a result."),/*#__PURE__*/index_js_default().createElement("main",null,children),/*#__PURE__*/index_js_default().createElement(footer_container,null)));Layout.propTypes={children:(prop_types_default()).node.isRequired};/* harmony default export */ const layout = (Layout);
-
-/***/ }),
-
-/***/ 4904:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5697);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4189);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7076);
-const formatClass=classes=>classes.length>0?classes.join(' '):undefined;const CustomLink=({buttonStyle,children,className,nav,outline,to,...props})=>{const classes=className?[className]:[];if(nav){classes.push('link_nav');}if(buttonStyle){classes.push('link_button');}if(outline){classes.push('link_outline');}if(to.startsWith('/')&&/\.[0-9a-z]+$/i.test(to)){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a",Object.assign({className:formatClass(classes),href:(0,gatsby__WEBPACK_IMPORTED_MODULE_1__.withPrefix)(to)},props),children);}if(to.startsWith('/')){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link,Object.assign({className:formatClass(classes),to:to},props),children);}return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a",Object.assign({className:formatClass(classes),href:to},props),children);};CustomLink.defaultProps={buttonStyle:false,className:'',nav:false,outline:false};CustomLink.propTypes={buttonStyle:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),className:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),children:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().node.isRequired),nav:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),outline:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),to:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomLink);
-
-/***/ }),
-
-/***/ 6926:
-/***/ ((module) => {
-
-const sortByYear=articles=>Object.entries(articles).reduce((accum,[year,arr])=>({...accum,[year]:arr.sort((a,b)=>a.pmid<b.pmid?1:-1)}),{});const sortArticles=articles=>{const articlesByYear=articles.reduce((accum,article)=>{if(accum[article.year]){return{...accum,[article.year]:[...accum[article.year],article]};}return{...accum,[article.year]:[article]};},{});return sortByYear(articlesByYear);};module.exports=sortArticles;
-
-/***/ }),
-
-/***/ 3785:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4189);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5697);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4593);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7076);
-function SEO({description,lang,meta,title}){const{site}=(0,gatsby__WEBPACK_IMPORTED_MODULE_2__.useStaticQuery)("4123507481");const{defaultDescription,defaultTitle,siteUrl}=site.siteMetadata;const seo={description:description||defaultDescription,title:title||defaultTitle,url:siteUrl};return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet,{htmlAttributes:{lang},title:seo.title,titleTemplate:`%s | ${defaultTitle}`,meta:[{name:'description',content:seo.description},{property:'og:title',content:seo.title},{property:'og:description',content:seo.description},{property:'og:type',content:'website'},{property:'og:url',content:seo.url},{property:'twitter:title',content:seo.title},{property:'twitter:description',content:seo.description}].concat(meta)});}SEO.defaultProps={lang:'en',meta:[],description:''};SEO.propTypes={description:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),lang:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),meta:prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),title:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SEO);
-
-/***/ }),
-
-/***/ 8074:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ pages_publications)
-});
-
-// EXTERNAL MODULE: external "/home/rseag/m-3-lab.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(4189);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./src/components/layout/layout.js + 21 modules
-var layout = __webpack_require__(5734);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 11 modules
-var gatsby_browser_entry = __webpack_require__(7076);
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5697);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
-var index_es = __webpack_require__(982);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
-var free_solid_svg_icons = __webpack_require__(9417);
-// EXTERNAL MODULE: ./src/components/link/link.js
-var link_link = __webpack_require__(4904);
-;// CONCATENATED MODULE: ./src/components/publications/list.js
-const createAuthorSeparator=(index,numberOfAuthors)=>{if(numberOfAuthors===1||index===numberOfAuthors-1){return'';}if(index<numberOfAuthors-2){return', ';}return' and ';};const formatAuthors=(authors,title)=>{const numberOfAuthors=authors.length;return authors.map((author,index)=>{return/*#__PURE__*/index_js_default().createElement(index_js_.Fragment,{key:`${author}-${title}`},author,createAuthorSeparator(index,numberOfAuthors));});};const formatPages=article=>{if(article.volume&&article.issue&&article.pages){return`, ${article.volume}(${article.issue}): ${article.pages}`;}if(article.volume&&article.pages){return`, ${article.volume}: ${article.pages}`;}if(article.pages){return`, ${article.pages}`;}return'';};const formatTitle=title=>title.replace(/&lt;.+?&gt;/g,'');const formatItem=article=>/*#__PURE__*/index_js_default().createElement("li",{key:article.title},formatAuthors(article.authors,article.title),".",' ',/*#__PURE__*/index_js_default().createElement("strong",null,formatTitle(article.title)),' ',/*#__PURE__*/index_js_default().createElement("em",null,article.journal),".",' ',article.year,formatPages(article),".",' ',/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{to:`https://www.ncbi.nlm.nih.gov/pubmed/${article.pmid}`},"PMID:",' ',article.pmid),".");const PublicationList=({publications})=>{const yearOrder=Object.keys(publications).sort((a,b)=>Number(a)<Number(b)?1:-1);return/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,/*#__PURE__*/index_js_default().createElement("div",{className:"publications__links-year"},yearOrder.map(year=>/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{key:year,to:`/publications/#${year}`},year))),yearOrder.map(year=>{const items=publications[year].map(article=>formatItem(article));return/*#__PURE__*/index_js_default().createElement("div",{key:year},/*#__PURE__*/index_js_default().createElement("h2",{id:year},year),/*#__PURE__*/index_js_default().createElement("ul",null,items));}));};PublicationList.propTypes={publications:prop_types_default().shape({}).isRequired};/* harmony default export */ const list = (PublicationList);
-;// CONCATENATED MODULE: ./src/components/publications/publications.js
-const Publications=({publications})=>/*#__PURE__*/index_js_default().createElement("div",{className:"publications"},/*#__PURE__*/index_js_default().createElement("section",null,/*#__PURE__*/index_js_default().createElement("header",null,/*#__PURE__*/index_js_default().createElement("h1",null,"Publications"),/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faBook */.FL8,size:"2x"})),/*#__PURE__*/index_js_default().createElement(list,{publications:publications})));Publications.propTypes={publications:prop_types_default().shape({}).isRequired};/* harmony default export */ const publications = (Publications);
-// EXTERNAL MODULE: ./src/components/publications/sort-articles.js
-var sort_articles = __webpack_require__(6926);
-var sort_articles_default = /*#__PURE__*/__webpack_require__.n(sort_articles);
-;// CONCATENATED MODULE: ./src/components/publications/publications-container.js
-const PublicationsContainer=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("11454138");const publicationsByYear=query.publications&&query.publications.list.length>0?sort_articles_default()(query.publications.list):null;return publicationsByYear&&/*#__PURE__*/index_js_default().createElement(publications,{publications:publicationsByYear});};/* harmony default export */ const publications_container = (PublicationsContainer);
-// EXTERNAL MODULE: ./src/components/seo/seo.js
-var seo = __webpack_require__(3785);
-;// CONCATENATED MODULE: ./src/pages/publications/index.js
-const IndexPage=()=>/*#__PURE__*/index_js_default().createElement(layout/* default */.Z,null,/*#__PURE__*/index_js_default().createElement(seo/* default */.Z,{title:"Publications"}),/*#__PURE__*/index_js_default().createElement(publications_container,null));/* harmony default export */ const pages_publications = (IndexPage);
-
-/***/ }),
-
-/***/ 5248:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var React = __webpack_require__(4189);
-
-function LogoInline (props) {
-    return React.createElement("svg",props,[React.createElement("title",{"key":0},"DNA"),React.createElement("desc",{"key":1},"logo"),React.createElement("path",{"d":"M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z","key":2})]);
-}
-
-LogoInline.defaultProps = {"aria-label":"DNA logo","viewBox":"0 0 448 512"};
-
-module.exports = LogoInline;
-
-LogoInline.default = LogoInline;
-
-
-/***/ }),
-
-/***/ 9417:
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs ***!
+  \******************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "DBF": () => (/* binding */ faMoon),
-/* harmony export */   "FL8": () => (/* binding */ faBook),
-/* harmony export */   "FVb": () => (/* binding */ faUsers),
-/* harmony export */   "enB": () => (/* binding */ faSun),
-/* harmony export */   "ntl": () => (/* binding */ faMailBulk),
-/* harmony export */   "r$M": () => (/* binding */ faUserFriends),
-/* harmony export */   "wn1": () => (/* binding */ faSearch),
-/* harmony export */   "xiG": () => (/* binding */ faBars)
+/* harmony export */   "fa0": () => (/* binding */ fa0),
+/* harmony export */   "fa1": () => (/* binding */ fa1),
+/* harmony export */   "fa2": () => (/* binding */ fa2),
+/* harmony export */   "fa3": () => (/* binding */ fa3),
+/* harmony export */   "fa4": () => (/* binding */ fa4),
+/* harmony export */   "fa5": () => (/* binding */ fa5),
+/* harmony export */   "fa6": () => (/* binding */ fa6),
+/* harmony export */   "fa7": () => (/* binding */ fa7),
+/* harmony export */   "fa8": () => (/* binding */ fa8),
+/* harmony export */   "fa9": () => (/* binding */ fa9),
+/* harmony export */   "faA": () => (/* binding */ faA),
+/* harmony export */   "faAd": () => (/* binding */ faAd),
+/* harmony export */   "faAdd": () => (/* binding */ faAdd),
+/* harmony export */   "faAddressBook": () => (/* binding */ faAddressBook),
+/* harmony export */   "faAddressCard": () => (/* binding */ faAddressCard),
+/* harmony export */   "faAdjust": () => (/* binding */ faAdjust),
+/* harmony export */   "faAirFreshener": () => (/* binding */ faAirFreshener),
+/* harmony export */   "faAlignCenter": () => (/* binding */ faAlignCenter),
+/* harmony export */   "faAlignJustify": () => (/* binding */ faAlignJustify),
+/* harmony export */   "faAlignLeft": () => (/* binding */ faAlignLeft),
+/* harmony export */   "faAlignRight": () => (/* binding */ faAlignRight),
+/* harmony export */   "faAllergies": () => (/* binding */ faAllergies),
+/* harmony export */   "faAmbulance": () => (/* binding */ faAmbulance),
+/* harmony export */   "faAmericanSignLanguageInterpreting": () => (/* binding */ faAmericanSignLanguageInterpreting),
+/* harmony export */   "faAnchor": () => (/* binding */ faAnchor),
+/* harmony export */   "faAnchorCircleCheck": () => (/* binding */ faAnchorCircleCheck),
+/* harmony export */   "faAnchorCircleExclamation": () => (/* binding */ faAnchorCircleExclamation),
+/* harmony export */   "faAnchorCircleXmark": () => (/* binding */ faAnchorCircleXmark),
+/* harmony export */   "faAnchorLock": () => (/* binding */ faAnchorLock),
+/* harmony export */   "faAngleDoubleDown": () => (/* binding */ faAngleDoubleDown),
+/* harmony export */   "faAngleDoubleLeft": () => (/* binding */ faAngleDoubleLeft),
+/* harmony export */   "faAngleDoubleRight": () => (/* binding */ faAngleDoubleRight),
+/* harmony export */   "faAngleDoubleUp": () => (/* binding */ faAngleDoubleUp),
+/* harmony export */   "faAngleDown": () => (/* binding */ faAngleDown),
+/* harmony export */   "faAngleLeft": () => (/* binding */ faAngleLeft),
+/* harmony export */   "faAngleRight": () => (/* binding */ faAngleRight),
+/* harmony export */   "faAngleUp": () => (/* binding */ faAngleUp),
+/* harmony export */   "faAnglesDown": () => (/* binding */ faAnglesDown),
+/* harmony export */   "faAnglesLeft": () => (/* binding */ faAnglesLeft),
+/* harmony export */   "faAnglesRight": () => (/* binding */ faAnglesRight),
+/* harmony export */   "faAnglesUp": () => (/* binding */ faAnglesUp),
+/* harmony export */   "faAngry": () => (/* binding */ faAngry),
+/* harmony export */   "faAnkh": () => (/* binding */ faAnkh),
+/* harmony export */   "faAppleAlt": () => (/* binding */ faAppleAlt),
+/* harmony export */   "faAppleWhole": () => (/* binding */ faAppleWhole),
+/* harmony export */   "faArchive": () => (/* binding */ faArchive),
+/* harmony export */   "faArchway": () => (/* binding */ faArchway),
+/* harmony export */   "faAreaChart": () => (/* binding */ faAreaChart),
+/* harmony export */   "faArrowAltCircleDown": () => (/* binding */ faArrowAltCircleDown),
+/* harmony export */   "faArrowAltCircleLeft": () => (/* binding */ faArrowAltCircleLeft),
+/* harmony export */   "faArrowAltCircleRight": () => (/* binding */ faArrowAltCircleRight),
+/* harmony export */   "faArrowAltCircleUp": () => (/* binding */ faArrowAltCircleUp),
+/* harmony export */   "faArrowCircleDown": () => (/* binding */ faArrowCircleDown),
+/* harmony export */   "faArrowCircleLeft": () => (/* binding */ faArrowCircleLeft),
+/* harmony export */   "faArrowCircleRight": () => (/* binding */ faArrowCircleRight),
+/* harmony export */   "faArrowCircleUp": () => (/* binding */ faArrowCircleUp),
+/* harmony export */   "faArrowDown": () => (/* binding */ faArrowDown),
+/* harmony export */   "faArrowDown19": () => (/* binding */ faArrowDown19),
+/* harmony export */   "faArrowDown91": () => (/* binding */ faArrowDown91),
+/* harmony export */   "faArrowDownAZ": () => (/* binding */ faArrowDownAZ),
+/* harmony export */   "faArrowDownLong": () => (/* binding */ faArrowDownLong),
+/* harmony export */   "faArrowDownShortWide": () => (/* binding */ faArrowDownShortWide),
+/* harmony export */   "faArrowDownUpAcrossLine": () => (/* binding */ faArrowDownUpAcrossLine),
+/* harmony export */   "faArrowDownUpLock": () => (/* binding */ faArrowDownUpLock),
+/* harmony export */   "faArrowDownWideShort": () => (/* binding */ faArrowDownWideShort),
+/* harmony export */   "faArrowDownZA": () => (/* binding */ faArrowDownZA),
+/* harmony export */   "faArrowLeft": () => (/* binding */ faArrowLeft),
+/* harmony export */   "faArrowLeftLong": () => (/* binding */ faArrowLeftLong),
+/* harmony export */   "faArrowLeftRotate": () => (/* binding */ faArrowLeftRotate),
+/* harmony export */   "faArrowPointer": () => (/* binding */ faArrowPointer),
+/* harmony export */   "faArrowRight": () => (/* binding */ faArrowRight),
+/* harmony export */   "faArrowRightArrowLeft": () => (/* binding */ faArrowRightArrowLeft),
+/* harmony export */   "faArrowRightFromBracket": () => (/* binding */ faArrowRightFromBracket),
+/* harmony export */   "faArrowRightFromFile": () => (/* binding */ faArrowRightFromFile),
+/* harmony export */   "faArrowRightLong": () => (/* binding */ faArrowRightLong),
+/* harmony export */   "faArrowRightRotate": () => (/* binding */ faArrowRightRotate),
+/* harmony export */   "faArrowRightToBracket": () => (/* binding */ faArrowRightToBracket),
+/* harmony export */   "faArrowRightToCity": () => (/* binding */ faArrowRightToCity),
+/* harmony export */   "faArrowRightToFile": () => (/* binding */ faArrowRightToFile),
+/* harmony export */   "faArrowRotateBack": () => (/* binding */ faArrowRotateBack),
+/* harmony export */   "faArrowRotateBackward": () => (/* binding */ faArrowRotateBackward),
+/* harmony export */   "faArrowRotateForward": () => (/* binding */ faArrowRotateForward),
+/* harmony export */   "faArrowRotateLeft": () => (/* binding */ faArrowRotateLeft),
+/* harmony export */   "faArrowRotateRight": () => (/* binding */ faArrowRotateRight),
+/* harmony export */   "faArrowTrendDown": () => (/* binding */ faArrowTrendDown),
+/* harmony export */   "faArrowTrendUp": () => (/* binding */ faArrowTrendUp),
+/* harmony export */   "faArrowTurnDown": () => (/* binding */ faArrowTurnDown),
+/* harmony export */   "faArrowTurnRight": () => (/* binding */ faArrowTurnRight),
+/* harmony export */   "faArrowTurnUp": () => (/* binding */ faArrowTurnUp),
+/* harmony export */   "faArrowUp": () => (/* binding */ faArrowUp),
+/* harmony export */   "faArrowUp19": () => (/* binding */ faArrowUp19),
+/* harmony export */   "faArrowUp91": () => (/* binding */ faArrowUp91),
+/* harmony export */   "faArrowUpAZ": () => (/* binding */ faArrowUpAZ),
+/* harmony export */   "faArrowUpFromBracket": () => (/* binding */ faArrowUpFromBracket),
+/* harmony export */   "faArrowUpFromGroundWater": () => (/* binding */ faArrowUpFromGroundWater),
+/* harmony export */   "faArrowUpFromWaterPump": () => (/* binding */ faArrowUpFromWaterPump),
+/* harmony export */   "faArrowUpLong": () => (/* binding */ faArrowUpLong),
+/* harmony export */   "faArrowUpRightDots": () => (/* binding */ faArrowUpRightDots),
+/* harmony export */   "faArrowUpRightFromSquare": () => (/* binding */ faArrowUpRightFromSquare),
+/* harmony export */   "faArrowUpShortWide": () => (/* binding */ faArrowUpShortWide),
+/* harmony export */   "faArrowUpWideShort": () => (/* binding */ faArrowUpWideShort),
+/* harmony export */   "faArrowUpZA": () => (/* binding */ faArrowUpZA),
+/* harmony export */   "faArrows": () => (/* binding */ faArrows),
+/* harmony export */   "faArrowsAlt": () => (/* binding */ faArrowsAlt),
+/* harmony export */   "faArrowsAltH": () => (/* binding */ faArrowsAltH),
+/* harmony export */   "faArrowsAltV": () => (/* binding */ faArrowsAltV),
+/* harmony export */   "faArrowsDownToLine": () => (/* binding */ faArrowsDownToLine),
+/* harmony export */   "faArrowsDownToPeople": () => (/* binding */ faArrowsDownToPeople),
+/* harmony export */   "faArrowsH": () => (/* binding */ faArrowsH),
+/* harmony export */   "faArrowsLeftRight": () => (/* binding */ faArrowsLeftRight),
+/* harmony export */   "faArrowsLeftRightToLine": () => (/* binding */ faArrowsLeftRightToLine),
+/* harmony export */   "faArrowsRotate": () => (/* binding */ faArrowsRotate),
+/* harmony export */   "faArrowsSpin": () => (/* binding */ faArrowsSpin),
+/* harmony export */   "faArrowsSplitUpAndLeft": () => (/* binding */ faArrowsSplitUpAndLeft),
+/* harmony export */   "faArrowsToCircle": () => (/* binding */ faArrowsToCircle),
+/* harmony export */   "faArrowsToDot": () => (/* binding */ faArrowsToDot),
+/* harmony export */   "faArrowsToEye": () => (/* binding */ faArrowsToEye),
+/* harmony export */   "faArrowsTurnRight": () => (/* binding */ faArrowsTurnRight),
+/* harmony export */   "faArrowsTurnToDots": () => (/* binding */ faArrowsTurnToDots),
+/* harmony export */   "faArrowsUpDown": () => (/* binding */ faArrowsUpDown),
+/* harmony export */   "faArrowsUpDownLeftRight": () => (/* binding */ faArrowsUpDownLeftRight),
+/* harmony export */   "faArrowsUpToLine": () => (/* binding */ faArrowsUpToLine),
+/* harmony export */   "faArrowsV": () => (/* binding */ faArrowsV),
+/* harmony export */   "faAslInterpreting": () => (/* binding */ faAslInterpreting),
+/* harmony export */   "faAssistiveListeningSystems": () => (/* binding */ faAssistiveListeningSystems),
+/* harmony export */   "faAsterisk": () => (/* binding */ faAsterisk),
+/* harmony export */   "faAt": () => (/* binding */ faAt),
+/* harmony export */   "faAtlas": () => (/* binding */ faAtlas),
+/* harmony export */   "faAtom": () => (/* binding */ faAtom),
+/* harmony export */   "faAudioDescription": () => (/* binding */ faAudioDescription),
+/* harmony export */   "faAustralSign": () => (/* binding */ faAustralSign),
+/* harmony export */   "faAutomobile": () => (/* binding */ faAutomobile),
+/* harmony export */   "faAward": () => (/* binding */ faAward),
+/* harmony export */   "faB": () => (/* binding */ faB),
+/* harmony export */   "faBaby": () => (/* binding */ faBaby),
+/* harmony export */   "faBabyCarriage": () => (/* binding */ faBabyCarriage),
+/* harmony export */   "faBackspace": () => (/* binding */ faBackspace),
+/* harmony export */   "faBackward": () => (/* binding */ faBackward),
+/* harmony export */   "faBackwardFast": () => (/* binding */ faBackwardFast),
+/* harmony export */   "faBackwardStep": () => (/* binding */ faBackwardStep),
+/* harmony export */   "faBacon": () => (/* binding */ faBacon),
+/* harmony export */   "faBacteria": () => (/* binding */ faBacteria),
+/* harmony export */   "faBacterium": () => (/* binding */ faBacterium),
+/* harmony export */   "faBagShopping": () => (/* binding */ faBagShopping),
+/* harmony export */   "faBahai": () => (/* binding */ faBahai),
+/* harmony export */   "faBahtSign": () => (/* binding */ faBahtSign),
+/* harmony export */   "faBalanceScale": () => (/* binding */ faBalanceScale),
+/* harmony export */   "faBalanceScaleLeft": () => (/* binding */ faBalanceScaleLeft),
+/* harmony export */   "faBalanceScaleRight": () => (/* binding */ faBalanceScaleRight),
+/* harmony export */   "faBan": () => (/* binding */ faBan),
+/* harmony export */   "faBanSmoking": () => (/* binding */ faBanSmoking),
+/* harmony export */   "faBandAid": () => (/* binding */ faBandAid),
+/* harmony export */   "faBandage": () => (/* binding */ faBandage),
+/* harmony export */   "faBangladeshiTakaSign": () => (/* binding */ faBangladeshiTakaSign),
+/* harmony export */   "faBank": () => (/* binding */ faBank),
+/* harmony export */   "faBarChart": () => (/* binding */ faBarChart),
+/* harmony export */   "faBarcode": () => (/* binding */ faBarcode),
+/* harmony export */   "faBars": () => (/* binding */ faBars),
+/* harmony export */   "faBarsProgress": () => (/* binding */ faBarsProgress),
+/* harmony export */   "faBarsStaggered": () => (/* binding */ faBarsStaggered),
+/* harmony export */   "faBaseball": () => (/* binding */ faBaseball),
+/* harmony export */   "faBaseballBall": () => (/* binding */ faBaseballBall),
+/* harmony export */   "faBaseballBatBall": () => (/* binding */ faBaseballBatBall),
+/* harmony export */   "faBasketShopping": () => (/* binding */ faBasketShopping),
+/* harmony export */   "faBasketball": () => (/* binding */ faBasketball),
+/* harmony export */   "faBasketballBall": () => (/* binding */ faBasketballBall),
+/* harmony export */   "faBath": () => (/* binding */ faBath),
+/* harmony export */   "faBathtub": () => (/* binding */ faBathtub),
+/* harmony export */   "faBattery": () => (/* binding */ faBattery),
+/* harmony export */   "faBattery0": () => (/* binding */ faBattery0),
+/* harmony export */   "faBattery2": () => (/* binding */ faBattery2),
+/* harmony export */   "faBattery3": () => (/* binding */ faBattery3),
+/* harmony export */   "faBattery4": () => (/* binding */ faBattery4),
+/* harmony export */   "faBattery5": () => (/* binding */ faBattery5),
+/* harmony export */   "faBatteryCar": () => (/* binding */ faBatteryCar),
+/* harmony export */   "faBatteryEmpty": () => (/* binding */ faBatteryEmpty),
+/* harmony export */   "faBatteryFull": () => (/* binding */ faBatteryFull),
+/* harmony export */   "faBatteryHalf": () => (/* binding */ faBatteryHalf),
+/* harmony export */   "faBatteryQuarter": () => (/* binding */ faBatteryQuarter),
+/* harmony export */   "faBatteryThreeQuarters": () => (/* binding */ faBatteryThreeQuarters),
+/* harmony export */   "faBed": () => (/* binding */ faBed),
+/* harmony export */   "faBedPulse": () => (/* binding */ faBedPulse),
+/* harmony export */   "faBeer": () => (/* binding */ faBeer),
+/* harmony export */   "faBeerMugEmpty": () => (/* binding */ faBeerMugEmpty),
+/* harmony export */   "faBell": () => (/* binding */ faBell),
+/* harmony export */   "faBellConcierge": () => (/* binding */ faBellConcierge),
+/* harmony export */   "faBellSlash": () => (/* binding */ faBellSlash),
+/* harmony export */   "faBezierCurve": () => (/* binding */ faBezierCurve),
+/* harmony export */   "faBible": () => (/* binding */ faBible),
+/* harmony export */   "faBicycle": () => (/* binding */ faBicycle),
+/* harmony export */   "faBiking": () => (/* binding */ faBiking),
+/* harmony export */   "faBinoculars": () => (/* binding */ faBinoculars),
+/* harmony export */   "faBiohazard": () => (/* binding */ faBiohazard),
+/* harmony export */   "faBirthdayCake": () => (/* binding */ faBirthdayCake),
+/* harmony export */   "faBitcoinSign": () => (/* binding */ faBitcoinSign),
+/* harmony export */   "faBlackboard": () => (/* binding */ faBlackboard),
+/* harmony export */   "faBlender": () => (/* binding */ faBlender),
+/* harmony export */   "faBlenderPhone": () => (/* binding */ faBlenderPhone),
+/* harmony export */   "faBlind": () => (/* binding */ faBlind),
+/* harmony export */   "faBlog": () => (/* binding */ faBlog),
+/* harmony export */   "faBold": () => (/* binding */ faBold),
+/* harmony export */   "faBolt": () => (/* binding */ faBolt),
+/* harmony export */   "faBoltLightning": () => (/* binding */ faBoltLightning),
+/* harmony export */   "faBomb": () => (/* binding */ faBomb),
+/* harmony export */   "faBone": () => (/* binding */ faBone),
+/* harmony export */   "faBong": () => (/* binding */ faBong),
+/* harmony export */   "faBook": () => (/* binding */ faBook),
+/* harmony export */   "faBookAtlas": () => (/* binding */ faBookAtlas),
+/* harmony export */   "faBookBible": () => (/* binding */ faBookBible),
+/* harmony export */   "faBookBookmark": () => (/* binding */ faBookBookmark),
+/* harmony export */   "faBookDead": () => (/* binding */ faBookDead),
+/* harmony export */   "faBookJournalWhills": () => (/* binding */ faBookJournalWhills),
+/* harmony export */   "faBookMedical": () => (/* binding */ faBookMedical),
+/* harmony export */   "faBookOpen": () => (/* binding */ faBookOpen),
+/* harmony export */   "faBookOpenReader": () => (/* binding */ faBookOpenReader),
+/* harmony export */   "faBookQuran": () => (/* binding */ faBookQuran),
+/* harmony export */   "faBookReader": () => (/* binding */ faBookReader),
+/* harmony export */   "faBookSkull": () => (/* binding */ faBookSkull),
+/* harmony export */   "faBookTanakh": () => (/* binding */ faBookTanakh),
+/* harmony export */   "faBookmark": () => (/* binding */ faBookmark),
+/* harmony export */   "faBorderAll": () => (/* binding */ faBorderAll),
+/* harmony export */   "faBorderNone": () => (/* binding */ faBorderNone),
+/* harmony export */   "faBorderStyle": () => (/* binding */ faBorderStyle),
+/* harmony export */   "faBorderTopLeft": () => (/* binding */ faBorderTopLeft),
+/* harmony export */   "faBoreHole": () => (/* binding */ faBoreHole),
+/* harmony export */   "faBottleDroplet": () => (/* binding */ faBottleDroplet),
+/* harmony export */   "faBottleWater": () => (/* binding */ faBottleWater),
+/* harmony export */   "faBowlFood": () => (/* binding */ faBowlFood),
+/* harmony export */   "faBowlRice": () => (/* binding */ faBowlRice),
+/* harmony export */   "faBowlingBall": () => (/* binding */ faBowlingBall),
+/* harmony export */   "faBox": () => (/* binding */ faBox),
+/* harmony export */   "faBoxArchive": () => (/* binding */ faBoxArchive),
+/* harmony export */   "faBoxOpen": () => (/* binding */ faBoxOpen),
+/* harmony export */   "faBoxTissue": () => (/* binding */ faBoxTissue),
+/* harmony export */   "faBoxes": () => (/* binding */ faBoxes),
+/* harmony export */   "faBoxesAlt": () => (/* binding */ faBoxesAlt),
+/* harmony export */   "faBoxesPacking": () => (/* binding */ faBoxesPacking),
+/* harmony export */   "faBoxesStacked": () => (/* binding */ faBoxesStacked),
+/* harmony export */   "faBraille": () => (/* binding */ faBraille),
+/* harmony export */   "faBrain": () => (/* binding */ faBrain),
+/* harmony export */   "faBrazilianRealSign": () => (/* binding */ faBrazilianRealSign),
+/* harmony export */   "faBreadSlice": () => (/* binding */ faBreadSlice),
+/* harmony export */   "faBridge": () => (/* binding */ faBridge),
+/* harmony export */   "faBridgeCircleCheck": () => (/* binding */ faBridgeCircleCheck),
+/* harmony export */   "faBridgeCircleExclamation": () => (/* binding */ faBridgeCircleExclamation),
+/* harmony export */   "faBridgeCircleXmark": () => (/* binding */ faBridgeCircleXmark),
+/* harmony export */   "faBridgeLock": () => (/* binding */ faBridgeLock),
+/* harmony export */   "faBridgeWater": () => (/* binding */ faBridgeWater),
+/* harmony export */   "faBriefcase": () => (/* binding */ faBriefcase),
+/* harmony export */   "faBriefcaseClock": () => (/* binding */ faBriefcaseClock),
+/* harmony export */   "faBriefcaseMedical": () => (/* binding */ faBriefcaseMedical),
+/* harmony export */   "faBroadcastTower": () => (/* binding */ faBroadcastTower),
+/* harmony export */   "faBroom": () => (/* binding */ faBroom),
+/* harmony export */   "faBroomBall": () => (/* binding */ faBroomBall),
+/* harmony export */   "faBrush": () => (/* binding */ faBrush),
+/* harmony export */   "faBucket": () => (/* binding */ faBucket),
+/* harmony export */   "faBug": () => (/* binding */ faBug),
+/* harmony export */   "faBugSlash": () => (/* binding */ faBugSlash),
+/* harmony export */   "faBugs": () => (/* binding */ faBugs),
+/* harmony export */   "faBuilding": () => (/* binding */ faBuilding),
+/* harmony export */   "faBuildingCircleArrowRight": () => (/* binding */ faBuildingCircleArrowRight),
+/* harmony export */   "faBuildingCircleCheck": () => (/* binding */ faBuildingCircleCheck),
+/* harmony export */   "faBuildingCircleExclamation": () => (/* binding */ faBuildingCircleExclamation),
+/* harmony export */   "faBuildingCircleXmark": () => (/* binding */ faBuildingCircleXmark),
+/* harmony export */   "faBuildingColumns": () => (/* binding */ faBuildingColumns),
+/* harmony export */   "faBuildingFlag": () => (/* binding */ faBuildingFlag),
+/* harmony export */   "faBuildingLock": () => (/* binding */ faBuildingLock),
+/* harmony export */   "faBuildingNgo": () => (/* binding */ faBuildingNgo),
+/* harmony export */   "faBuildingShield": () => (/* binding */ faBuildingShield),
+/* harmony export */   "faBuildingUn": () => (/* binding */ faBuildingUn),
+/* harmony export */   "faBuildingUser": () => (/* binding */ faBuildingUser),
+/* harmony export */   "faBuildingWheat": () => (/* binding */ faBuildingWheat),
+/* harmony export */   "faBullhorn": () => (/* binding */ faBullhorn),
+/* harmony export */   "faBullseye": () => (/* binding */ faBullseye),
+/* harmony export */   "faBurger": () => (/* binding */ faBurger),
+/* harmony export */   "faBurn": () => (/* binding */ faBurn),
+/* harmony export */   "faBurst": () => (/* binding */ faBurst),
+/* harmony export */   "faBus": () => (/* binding */ faBus),
+/* harmony export */   "faBusAlt": () => (/* binding */ faBusAlt),
+/* harmony export */   "faBusSimple": () => (/* binding */ faBusSimple),
+/* harmony export */   "faBusinessTime": () => (/* binding */ faBusinessTime),
+/* harmony export */   "faC": () => (/* binding */ faC),
+/* harmony export */   "faCab": () => (/* binding */ faCab),
+/* harmony export */   "faCableCar": () => (/* binding */ faCableCar),
+/* harmony export */   "faCake": () => (/* binding */ faCake),
+/* harmony export */   "faCakeCandles": () => (/* binding */ faCakeCandles),
+/* harmony export */   "faCalculator": () => (/* binding */ faCalculator),
+/* harmony export */   "faCalendar": () => (/* binding */ faCalendar),
+/* harmony export */   "faCalendarAlt": () => (/* binding */ faCalendarAlt),
+/* harmony export */   "faCalendarCheck": () => (/* binding */ faCalendarCheck),
+/* harmony export */   "faCalendarDay": () => (/* binding */ faCalendarDay),
+/* harmony export */   "faCalendarDays": () => (/* binding */ faCalendarDays),
+/* harmony export */   "faCalendarMinus": () => (/* binding */ faCalendarMinus),
+/* harmony export */   "faCalendarPlus": () => (/* binding */ faCalendarPlus),
+/* harmony export */   "faCalendarTimes": () => (/* binding */ faCalendarTimes),
+/* harmony export */   "faCalendarWeek": () => (/* binding */ faCalendarWeek),
+/* harmony export */   "faCalendarXmark": () => (/* binding */ faCalendarXmark),
+/* harmony export */   "faCamera": () => (/* binding */ faCamera),
+/* harmony export */   "faCameraAlt": () => (/* binding */ faCameraAlt),
+/* harmony export */   "faCameraRetro": () => (/* binding */ faCameraRetro),
+/* harmony export */   "faCameraRotate": () => (/* binding */ faCameraRotate),
+/* harmony export */   "faCampground": () => (/* binding */ faCampground),
+/* harmony export */   "faCancel": () => (/* binding */ faCancel),
+/* harmony export */   "faCandyCane": () => (/* binding */ faCandyCane),
+/* harmony export */   "faCannabis": () => (/* binding */ faCannabis),
+/* harmony export */   "faCapsules": () => (/* binding */ faCapsules),
+/* harmony export */   "faCar": () => (/* binding */ faCar),
+/* harmony export */   "faCarAlt": () => (/* binding */ faCarAlt),
+/* harmony export */   "faCarBattery": () => (/* binding */ faCarBattery),
+/* harmony export */   "faCarBurst": () => (/* binding */ faCarBurst),
+/* harmony export */   "faCarCrash": () => (/* binding */ faCarCrash),
+/* harmony export */   "faCarOn": () => (/* binding */ faCarOn),
+/* harmony export */   "faCarRear": () => (/* binding */ faCarRear),
+/* harmony export */   "faCarSide": () => (/* binding */ faCarSide),
+/* harmony export */   "faCarTunnel": () => (/* binding */ faCarTunnel),
+/* harmony export */   "faCaravan": () => (/* binding */ faCaravan),
+/* harmony export */   "faCaretDown": () => (/* binding */ faCaretDown),
+/* harmony export */   "faCaretLeft": () => (/* binding */ faCaretLeft),
+/* harmony export */   "faCaretRight": () => (/* binding */ faCaretRight),
+/* harmony export */   "faCaretSquareDown": () => (/* binding */ faCaretSquareDown),
+/* harmony export */   "faCaretSquareLeft": () => (/* binding */ faCaretSquareLeft),
+/* harmony export */   "faCaretSquareRight": () => (/* binding */ faCaretSquareRight),
+/* harmony export */   "faCaretSquareUp": () => (/* binding */ faCaretSquareUp),
+/* harmony export */   "faCaretUp": () => (/* binding */ faCaretUp),
+/* harmony export */   "faCarriageBaby": () => (/* binding */ faCarriageBaby),
+/* harmony export */   "faCarrot": () => (/* binding */ faCarrot),
+/* harmony export */   "faCartArrowDown": () => (/* binding */ faCartArrowDown),
+/* harmony export */   "faCartFlatbed": () => (/* binding */ faCartFlatbed),
+/* harmony export */   "faCartFlatbedSuitcase": () => (/* binding */ faCartFlatbedSuitcase),
+/* harmony export */   "faCartPlus": () => (/* binding */ faCartPlus),
+/* harmony export */   "faCartShopping": () => (/* binding */ faCartShopping),
+/* harmony export */   "faCashRegister": () => (/* binding */ faCashRegister),
+/* harmony export */   "faCat": () => (/* binding */ faCat),
+/* harmony export */   "faCediSign": () => (/* binding */ faCediSign),
+/* harmony export */   "faCentSign": () => (/* binding */ faCentSign),
+/* harmony export */   "faCertificate": () => (/* binding */ faCertificate),
+/* harmony export */   "faChain": () => (/* binding */ faChain),
+/* harmony export */   "faChainBroken": () => (/* binding */ faChainBroken),
+/* harmony export */   "faChainSlash": () => (/* binding */ faChainSlash),
+/* harmony export */   "faChair": () => (/* binding */ faChair),
+/* harmony export */   "faChalkboard": () => (/* binding */ faChalkboard),
+/* harmony export */   "faChalkboardTeacher": () => (/* binding */ faChalkboardTeacher),
+/* harmony export */   "faChalkboardUser": () => (/* binding */ faChalkboardUser),
+/* harmony export */   "faChampagneGlasses": () => (/* binding */ faChampagneGlasses),
+/* harmony export */   "faChargingStation": () => (/* binding */ faChargingStation),
+/* harmony export */   "faChartArea": () => (/* binding */ faChartArea),
+/* harmony export */   "faChartBar": () => (/* binding */ faChartBar),
+/* harmony export */   "faChartColumn": () => (/* binding */ faChartColumn),
+/* harmony export */   "faChartGantt": () => (/* binding */ faChartGantt),
+/* harmony export */   "faChartLine": () => (/* binding */ faChartLine),
+/* harmony export */   "faChartPie": () => (/* binding */ faChartPie),
+/* harmony export */   "faChartSimple": () => (/* binding */ faChartSimple),
+/* harmony export */   "faCheck": () => (/* binding */ faCheck),
+/* harmony export */   "faCheckCircle": () => (/* binding */ faCheckCircle),
+/* harmony export */   "faCheckDouble": () => (/* binding */ faCheckDouble),
+/* harmony export */   "faCheckSquare": () => (/* binding */ faCheckSquare),
+/* harmony export */   "faCheckToSlot": () => (/* binding */ faCheckToSlot),
+/* harmony export */   "faCheese": () => (/* binding */ faCheese),
+/* harmony export */   "faChess": () => (/* binding */ faChess),
+/* harmony export */   "faChessBishop": () => (/* binding */ faChessBishop),
+/* harmony export */   "faChessBoard": () => (/* binding */ faChessBoard),
+/* harmony export */   "faChessKing": () => (/* binding */ faChessKing),
+/* harmony export */   "faChessKnight": () => (/* binding */ faChessKnight),
+/* harmony export */   "faChessPawn": () => (/* binding */ faChessPawn),
+/* harmony export */   "faChessQueen": () => (/* binding */ faChessQueen),
+/* harmony export */   "faChessRook": () => (/* binding */ faChessRook),
+/* harmony export */   "faChevronCircleDown": () => (/* binding */ faChevronCircleDown),
+/* harmony export */   "faChevronCircleLeft": () => (/* binding */ faChevronCircleLeft),
+/* harmony export */   "faChevronCircleRight": () => (/* binding */ faChevronCircleRight),
+/* harmony export */   "faChevronCircleUp": () => (/* binding */ faChevronCircleUp),
+/* harmony export */   "faChevronDown": () => (/* binding */ faChevronDown),
+/* harmony export */   "faChevronLeft": () => (/* binding */ faChevronLeft),
+/* harmony export */   "faChevronRight": () => (/* binding */ faChevronRight),
+/* harmony export */   "faChevronUp": () => (/* binding */ faChevronUp),
+/* harmony export */   "faChild": () => (/* binding */ faChild),
+/* harmony export */   "faChildCombatant": () => (/* binding */ faChildCombatant),
+/* harmony export */   "faChildDress": () => (/* binding */ faChildDress),
+/* harmony export */   "faChildReaching": () => (/* binding */ faChildReaching),
+/* harmony export */   "faChildRifle": () => (/* binding */ faChildRifle),
+/* harmony export */   "faChildren": () => (/* binding */ faChildren),
+/* harmony export */   "faChurch": () => (/* binding */ faChurch),
+/* harmony export */   "faCircle": () => (/* binding */ faCircle),
+/* harmony export */   "faCircleArrowDown": () => (/* binding */ faCircleArrowDown),
+/* harmony export */   "faCircleArrowLeft": () => (/* binding */ faCircleArrowLeft),
+/* harmony export */   "faCircleArrowRight": () => (/* binding */ faCircleArrowRight),
+/* harmony export */   "faCircleArrowUp": () => (/* binding */ faCircleArrowUp),
+/* harmony export */   "faCircleCheck": () => (/* binding */ faCircleCheck),
+/* harmony export */   "faCircleChevronDown": () => (/* binding */ faCircleChevronDown),
+/* harmony export */   "faCircleChevronLeft": () => (/* binding */ faCircleChevronLeft),
+/* harmony export */   "faCircleChevronRight": () => (/* binding */ faCircleChevronRight),
+/* harmony export */   "faCircleChevronUp": () => (/* binding */ faCircleChevronUp),
+/* harmony export */   "faCircleDollarToSlot": () => (/* binding */ faCircleDollarToSlot),
+/* harmony export */   "faCircleDot": () => (/* binding */ faCircleDot),
+/* harmony export */   "faCircleDown": () => (/* binding */ faCircleDown),
+/* harmony export */   "faCircleExclamation": () => (/* binding */ faCircleExclamation),
+/* harmony export */   "faCircleH": () => (/* binding */ faCircleH),
+/* harmony export */   "faCircleHalfStroke": () => (/* binding */ faCircleHalfStroke),
+/* harmony export */   "faCircleInfo": () => (/* binding */ faCircleInfo),
+/* harmony export */   "faCircleLeft": () => (/* binding */ faCircleLeft),
+/* harmony export */   "faCircleMinus": () => (/* binding */ faCircleMinus),
+/* harmony export */   "faCircleNodes": () => (/* binding */ faCircleNodes),
+/* harmony export */   "faCircleNotch": () => (/* binding */ faCircleNotch),
+/* harmony export */   "faCirclePause": () => (/* binding */ faCirclePause),
+/* harmony export */   "faCirclePlay": () => (/* binding */ faCirclePlay),
+/* harmony export */   "faCirclePlus": () => (/* binding */ faCirclePlus),
+/* harmony export */   "faCircleQuestion": () => (/* binding */ faCircleQuestion),
+/* harmony export */   "faCircleRadiation": () => (/* binding */ faCircleRadiation),
+/* harmony export */   "faCircleRight": () => (/* binding */ faCircleRight),
+/* harmony export */   "faCircleStop": () => (/* binding */ faCircleStop),
+/* harmony export */   "faCircleUp": () => (/* binding */ faCircleUp),
+/* harmony export */   "faCircleUser": () => (/* binding */ faCircleUser),
+/* harmony export */   "faCircleXmark": () => (/* binding */ faCircleXmark),
+/* harmony export */   "faCity": () => (/* binding */ faCity),
+/* harmony export */   "faClapperboard": () => (/* binding */ faClapperboard),
+/* harmony export */   "faClinicMedical": () => (/* binding */ faClinicMedical),
+/* harmony export */   "faClipboard": () => (/* binding */ faClipboard),
+/* harmony export */   "faClipboardCheck": () => (/* binding */ faClipboardCheck),
+/* harmony export */   "faClipboardList": () => (/* binding */ faClipboardList),
+/* harmony export */   "faClipboardQuestion": () => (/* binding */ faClipboardQuestion),
+/* harmony export */   "faClipboardUser": () => (/* binding */ faClipboardUser),
+/* harmony export */   "faClock": () => (/* binding */ faClock),
+/* harmony export */   "faClockFour": () => (/* binding */ faClockFour),
+/* harmony export */   "faClockRotateLeft": () => (/* binding */ faClockRotateLeft),
+/* harmony export */   "faClone": () => (/* binding */ faClone),
+/* harmony export */   "faClose": () => (/* binding */ faClose),
+/* harmony export */   "faClosedCaptioning": () => (/* binding */ faClosedCaptioning),
+/* harmony export */   "faCloud": () => (/* binding */ faCloud),
+/* harmony export */   "faCloudArrowDown": () => (/* binding */ faCloudArrowDown),
+/* harmony export */   "faCloudArrowUp": () => (/* binding */ faCloudArrowUp),
+/* harmony export */   "faCloudBolt": () => (/* binding */ faCloudBolt),
+/* harmony export */   "faCloudDownload": () => (/* binding */ faCloudDownload),
+/* harmony export */   "faCloudDownloadAlt": () => (/* binding */ faCloudDownloadAlt),
+/* harmony export */   "faCloudMeatball": () => (/* binding */ faCloudMeatball),
+/* harmony export */   "faCloudMoon": () => (/* binding */ faCloudMoon),
+/* harmony export */   "faCloudMoonRain": () => (/* binding */ faCloudMoonRain),
+/* harmony export */   "faCloudRain": () => (/* binding */ faCloudRain),
+/* harmony export */   "faCloudShowersHeavy": () => (/* binding */ faCloudShowersHeavy),
+/* harmony export */   "faCloudShowersWater": () => (/* binding */ faCloudShowersWater),
+/* harmony export */   "faCloudSun": () => (/* binding */ faCloudSun),
+/* harmony export */   "faCloudSunRain": () => (/* binding */ faCloudSunRain),
+/* harmony export */   "faCloudUpload": () => (/* binding */ faCloudUpload),
+/* harmony export */   "faCloudUploadAlt": () => (/* binding */ faCloudUploadAlt),
+/* harmony export */   "faClover": () => (/* binding */ faClover),
+/* harmony export */   "faCny": () => (/* binding */ faCny),
+/* harmony export */   "faCocktail": () => (/* binding */ faCocktail),
+/* harmony export */   "faCode": () => (/* binding */ faCode),
+/* harmony export */   "faCodeBranch": () => (/* binding */ faCodeBranch),
+/* harmony export */   "faCodeCommit": () => (/* binding */ faCodeCommit),
+/* harmony export */   "faCodeCompare": () => (/* binding */ faCodeCompare),
+/* harmony export */   "faCodeFork": () => (/* binding */ faCodeFork),
+/* harmony export */   "faCodeMerge": () => (/* binding */ faCodeMerge),
+/* harmony export */   "faCodePullRequest": () => (/* binding */ faCodePullRequest),
+/* harmony export */   "faCoffee": () => (/* binding */ faCoffee),
+/* harmony export */   "faCog": () => (/* binding */ faCog),
+/* harmony export */   "faCogs": () => (/* binding */ faCogs),
+/* harmony export */   "faCoins": () => (/* binding */ faCoins),
+/* harmony export */   "faColonSign": () => (/* binding */ faColonSign),
+/* harmony export */   "faColumns": () => (/* binding */ faColumns),
+/* harmony export */   "faComment": () => (/* binding */ faComment),
+/* harmony export */   "faCommentAlt": () => (/* binding */ faCommentAlt),
+/* harmony export */   "faCommentDollar": () => (/* binding */ faCommentDollar),
+/* harmony export */   "faCommentDots": () => (/* binding */ faCommentDots),
+/* harmony export */   "faCommentMedical": () => (/* binding */ faCommentMedical),
+/* harmony export */   "faCommentSlash": () => (/* binding */ faCommentSlash),
+/* harmony export */   "faCommentSms": () => (/* binding */ faCommentSms),
+/* harmony export */   "faCommenting": () => (/* binding */ faCommenting),
+/* harmony export */   "faComments": () => (/* binding */ faComments),
+/* harmony export */   "faCommentsDollar": () => (/* binding */ faCommentsDollar),
+/* harmony export */   "faCompactDisc": () => (/* binding */ faCompactDisc),
+/* harmony export */   "faCompass": () => (/* binding */ faCompass),
+/* harmony export */   "faCompassDrafting": () => (/* binding */ faCompassDrafting),
+/* harmony export */   "faCompress": () => (/* binding */ faCompress),
+/* harmony export */   "faCompressAlt": () => (/* binding */ faCompressAlt),
+/* harmony export */   "faCompressArrowsAlt": () => (/* binding */ faCompressArrowsAlt),
+/* harmony export */   "faComputer": () => (/* binding */ faComputer),
+/* harmony export */   "faComputerMouse": () => (/* binding */ faComputerMouse),
+/* harmony export */   "faConciergeBell": () => (/* binding */ faConciergeBell),
+/* harmony export */   "faContactBook": () => (/* binding */ faContactBook),
+/* harmony export */   "faContactCard": () => (/* binding */ faContactCard),
+/* harmony export */   "faCookie": () => (/* binding */ faCookie),
+/* harmony export */   "faCookieBite": () => (/* binding */ faCookieBite),
+/* harmony export */   "faCopy": () => (/* binding */ faCopy),
+/* harmony export */   "faCopyright": () => (/* binding */ faCopyright),
+/* harmony export */   "faCouch": () => (/* binding */ faCouch),
+/* harmony export */   "faCow": () => (/* binding */ faCow),
+/* harmony export */   "faCreditCard": () => (/* binding */ faCreditCard),
+/* harmony export */   "faCreditCardAlt": () => (/* binding */ faCreditCardAlt),
+/* harmony export */   "faCrop": () => (/* binding */ faCrop),
+/* harmony export */   "faCropAlt": () => (/* binding */ faCropAlt),
+/* harmony export */   "faCropSimple": () => (/* binding */ faCropSimple),
+/* harmony export */   "faCross": () => (/* binding */ faCross),
+/* harmony export */   "faCrosshairs": () => (/* binding */ faCrosshairs),
+/* harmony export */   "faCrow": () => (/* binding */ faCrow),
+/* harmony export */   "faCrown": () => (/* binding */ faCrown),
+/* harmony export */   "faCrutch": () => (/* binding */ faCrutch),
+/* harmony export */   "faCruzeiroSign": () => (/* binding */ faCruzeiroSign),
+/* harmony export */   "faCube": () => (/* binding */ faCube),
+/* harmony export */   "faCubes": () => (/* binding */ faCubes),
+/* harmony export */   "faCubesStacked": () => (/* binding */ faCubesStacked),
+/* harmony export */   "faCut": () => (/* binding */ faCut),
+/* harmony export */   "faCutlery": () => (/* binding */ faCutlery),
+/* harmony export */   "faD": () => (/* binding */ faD),
+/* harmony export */   "faDashboard": () => (/* binding */ faDashboard),
+/* harmony export */   "faDatabase": () => (/* binding */ faDatabase),
+/* harmony export */   "faDeaf": () => (/* binding */ faDeaf),
+/* harmony export */   "faDeafness": () => (/* binding */ faDeafness),
+/* harmony export */   "faDedent": () => (/* binding */ faDedent),
+/* harmony export */   "faDeleteLeft": () => (/* binding */ faDeleteLeft),
+/* harmony export */   "faDemocrat": () => (/* binding */ faDemocrat),
+/* harmony export */   "faDesktop": () => (/* binding */ faDesktop),
+/* harmony export */   "faDesktopAlt": () => (/* binding */ faDesktopAlt),
+/* harmony export */   "faDharmachakra": () => (/* binding */ faDharmachakra),
+/* harmony export */   "faDiagnoses": () => (/* binding */ faDiagnoses),
+/* harmony export */   "faDiagramNext": () => (/* binding */ faDiagramNext),
+/* harmony export */   "faDiagramPredecessor": () => (/* binding */ faDiagramPredecessor),
+/* harmony export */   "faDiagramProject": () => (/* binding */ faDiagramProject),
+/* harmony export */   "faDiagramSuccessor": () => (/* binding */ faDiagramSuccessor),
+/* harmony export */   "faDiamond": () => (/* binding */ faDiamond),
+/* harmony export */   "faDiamondTurnRight": () => (/* binding */ faDiamondTurnRight),
+/* harmony export */   "faDice": () => (/* binding */ faDice),
+/* harmony export */   "faDiceD20": () => (/* binding */ faDiceD20),
+/* harmony export */   "faDiceD6": () => (/* binding */ faDiceD6),
+/* harmony export */   "faDiceFive": () => (/* binding */ faDiceFive),
+/* harmony export */   "faDiceFour": () => (/* binding */ faDiceFour),
+/* harmony export */   "faDiceOne": () => (/* binding */ faDiceOne),
+/* harmony export */   "faDiceSix": () => (/* binding */ faDiceSix),
+/* harmony export */   "faDiceThree": () => (/* binding */ faDiceThree),
+/* harmony export */   "faDiceTwo": () => (/* binding */ faDiceTwo),
+/* harmony export */   "faDigging": () => (/* binding */ faDigging),
+/* harmony export */   "faDigitalTachograph": () => (/* binding */ faDigitalTachograph),
+/* harmony export */   "faDirections": () => (/* binding */ faDirections),
+/* harmony export */   "faDisease": () => (/* binding */ faDisease),
+/* harmony export */   "faDisplay": () => (/* binding */ faDisplay),
+/* harmony export */   "faDivide": () => (/* binding */ faDivide),
+/* harmony export */   "faDizzy": () => (/* binding */ faDizzy),
+/* harmony export */   "faDna": () => (/* binding */ faDna),
+/* harmony export */   "faDog": () => (/* binding */ faDog),
+/* harmony export */   "faDollar": () => (/* binding */ faDollar),
+/* harmony export */   "faDollarSign": () => (/* binding */ faDollarSign),
+/* harmony export */   "faDolly": () => (/* binding */ faDolly),
+/* harmony export */   "faDollyBox": () => (/* binding */ faDollyBox),
+/* harmony export */   "faDollyFlatbed": () => (/* binding */ faDollyFlatbed),
+/* harmony export */   "faDonate": () => (/* binding */ faDonate),
+/* harmony export */   "faDongSign": () => (/* binding */ faDongSign),
+/* harmony export */   "faDoorClosed": () => (/* binding */ faDoorClosed),
+/* harmony export */   "faDoorOpen": () => (/* binding */ faDoorOpen),
+/* harmony export */   "faDotCircle": () => (/* binding */ faDotCircle),
+/* harmony export */   "faDove": () => (/* binding */ faDove),
+/* harmony export */   "faDownLeftAndUpRightToCenter": () => (/* binding */ faDownLeftAndUpRightToCenter),
+/* harmony export */   "faDownLong": () => (/* binding */ faDownLong),
+/* harmony export */   "faDownload": () => (/* binding */ faDownload),
+/* harmony export */   "faDraftingCompass": () => (/* binding */ faDraftingCompass),
+/* harmony export */   "faDragon": () => (/* binding */ faDragon),
+/* harmony export */   "faDrawPolygon": () => (/* binding */ faDrawPolygon),
+/* harmony export */   "faDriversLicense": () => (/* binding */ faDriversLicense),
+/* harmony export */   "faDroplet": () => (/* binding */ faDroplet),
+/* harmony export */   "faDropletSlash": () => (/* binding */ faDropletSlash),
+/* harmony export */   "faDrum": () => (/* binding */ faDrum),
+/* harmony export */   "faDrumSteelpan": () => (/* binding */ faDrumSteelpan),
+/* harmony export */   "faDrumstickBite": () => (/* binding */ faDrumstickBite),
+/* harmony export */   "faDumbbell": () => (/* binding */ faDumbbell),
+/* harmony export */   "faDumpster": () => (/* binding */ faDumpster),
+/* harmony export */   "faDumpsterFire": () => (/* binding */ faDumpsterFire),
+/* harmony export */   "faDungeon": () => (/* binding */ faDungeon),
+/* harmony export */   "faE": () => (/* binding */ faE),
+/* harmony export */   "faEarDeaf": () => (/* binding */ faEarDeaf),
+/* harmony export */   "faEarListen": () => (/* binding */ faEarListen),
+/* harmony export */   "faEarth": () => (/* binding */ faEarth),
+/* harmony export */   "faEarthAfrica": () => (/* binding */ faEarthAfrica),
+/* harmony export */   "faEarthAmerica": () => (/* binding */ faEarthAmerica),
+/* harmony export */   "faEarthAmericas": () => (/* binding */ faEarthAmericas),
+/* harmony export */   "faEarthAsia": () => (/* binding */ faEarthAsia),
+/* harmony export */   "faEarthEurope": () => (/* binding */ faEarthEurope),
+/* harmony export */   "faEarthOceania": () => (/* binding */ faEarthOceania),
+/* harmony export */   "faEdit": () => (/* binding */ faEdit),
+/* harmony export */   "faEgg": () => (/* binding */ faEgg),
+/* harmony export */   "faEject": () => (/* binding */ faEject),
+/* harmony export */   "faElevator": () => (/* binding */ faElevator),
+/* harmony export */   "faEllipsis": () => (/* binding */ faEllipsis),
+/* harmony export */   "faEllipsisH": () => (/* binding */ faEllipsisH),
+/* harmony export */   "faEllipsisV": () => (/* binding */ faEllipsisV),
+/* harmony export */   "faEllipsisVertical": () => (/* binding */ faEllipsisVertical),
+/* harmony export */   "faEnvelope": () => (/* binding */ faEnvelope),
+/* harmony export */   "faEnvelopeCircleCheck": () => (/* binding */ faEnvelopeCircleCheck),
+/* harmony export */   "faEnvelopeOpen": () => (/* binding */ faEnvelopeOpen),
+/* harmony export */   "faEnvelopeOpenText": () => (/* binding */ faEnvelopeOpenText),
+/* harmony export */   "faEnvelopeSquare": () => (/* binding */ faEnvelopeSquare),
+/* harmony export */   "faEnvelopesBulk": () => (/* binding */ faEnvelopesBulk),
+/* harmony export */   "faEquals": () => (/* binding */ faEquals),
+/* harmony export */   "faEraser": () => (/* binding */ faEraser),
+/* harmony export */   "faEthernet": () => (/* binding */ faEthernet),
+/* harmony export */   "faEur": () => (/* binding */ faEur),
+/* harmony export */   "faEuro": () => (/* binding */ faEuro),
+/* harmony export */   "faEuroSign": () => (/* binding */ faEuroSign),
+/* harmony export */   "faExchange": () => (/* binding */ faExchange),
+/* harmony export */   "faExchangeAlt": () => (/* binding */ faExchangeAlt),
+/* harmony export */   "faExclamation": () => (/* binding */ faExclamation),
+/* harmony export */   "faExclamationCircle": () => (/* binding */ faExclamationCircle),
+/* harmony export */   "faExclamationTriangle": () => (/* binding */ faExclamationTriangle),
+/* harmony export */   "faExpand": () => (/* binding */ faExpand),
+/* harmony export */   "faExpandAlt": () => (/* binding */ faExpandAlt),
+/* harmony export */   "faExpandArrowsAlt": () => (/* binding */ faExpandArrowsAlt),
+/* harmony export */   "faExplosion": () => (/* binding */ faExplosion),
+/* harmony export */   "faExternalLink": () => (/* binding */ faExternalLink),
+/* harmony export */   "faExternalLinkAlt": () => (/* binding */ faExternalLinkAlt),
+/* harmony export */   "faExternalLinkSquare": () => (/* binding */ faExternalLinkSquare),
+/* harmony export */   "faExternalLinkSquareAlt": () => (/* binding */ faExternalLinkSquareAlt),
+/* harmony export */   "faEye": () => (/* binding */ faEye),
+/* harmony export */   "faEyeDropper": () => (/* binding */ faEyeDropper),
+/* harmony export */   "faEyeDropperEmpty": () => (/* binding */ faEyeDropperEmpty),
+/* harmony export */   "faEyeLowVision": () => (/* binding */ faEyeLowVision),
+/* harmony export */   "faEyeSlash": () => (/* binding */ faEyeSlash),
+/* harmony export */   "faEyedropper": () => (/* binding */ faEyedropper),
+/* harmony export */   "faF": () => (/* binding */ faF),
+/* harmony export */   "faFaceAngry": () => (/* binding */ faFaceAngry),
+/* harmony export */   "faFaceDizzy": () => (/* binding */ faFaceDizzy),
+/* harmony export */   "faFaceFlushed": () => (/* binding */ faFaceFlushed),
+/* harmony export */   "faFaceFrown": () => (/* binding */ faFaceFrown),
+/* harmony export */   "faFaceFrownOpen": () => (/* binding */ faFaceFrownOpen),
+/* harmony export */   "faFaceGrimace": () => (/* binding */ faFaceGrimace),
+/* harmony export */   "faFaceGrin": () => (/* binding */ faFaceGrin),
+/* harmony export */   "faFaceGrinBeam": () => (/* binding */ faFaceGrinBeam),
+/* harmony export */   "faFaceGrinBeamSweat": () => (/* binding */ faFaceGrinBeamSweat),
+/* harmony export */   "faFaceGrinHearts": () => (/* binding */ faFaceGrinHearts),
+/* harmony export */   "faFaceGrinSquint": () => (/* binding */ faFaceGrinSquint),
+/* harmony export */   "faFaceGrinSquintTears": () => (/* binding */ faFaceGrinSquintTears),
+/* harmony export */   "faFaceGrinStars": () => (/* binding */ faFaceGrinStars),
+/* harmony export */   "faFaceGrinTears": () => (/* binding */ faFaceGrinTears),
+/* harmony export */   "faFaceGrinTongue": () => (/* binding */ faFaceGrinTongue),
+/* harmony export */   "faFaceGrinTongueSquint": () => (/* binding */ faFaceGrinTongueSquint),
+/* harmony export */   "faFaceGrinTongueWink": () => (/* binding */ faFaceGrinTongueWink),
+/* harmony export */   "faFaceGrinWide": () => (/* binding */ faFaceGrinWide),
+/* harmony export */   "faFaceGrinWink": () => (/* binding */ faFaceGrinWink),
+/* harmony export */   "faFaceKiss": () => (/* binding */ faFaceKiss),
+/* harmony export */   "faFaceKissBeam": () => (/* binding */ faFaceKissBeam),
+/* harmony export */   "faFaceKissWinkHeart": () => (/* binding */ faFaceKissWinkHeart),
+/* harmony export */   "faFaceLaugh": () => (/* binding */ faFaceLaugh),
+/* harmony export */   "faFaceLaughBeam": () => (/* binding */ faFaceLaughBeam),
+/* harmony export */   "faFaceLaughSquint": () => (/* binding */ faFaceLaughSquint),
+/* harmony export */   "faFaceLaughWink": () => (/* binding */ faFaceLaughWink),
+/* harmony export */   "faFaceMeh": () => (/* binding */ faFaceMeh),
+/* harmony export */   "faFaceMehBlank": () => (/* binding */ faFaceMehBlank),
+/* harmony export */   "faFaceRollingEyes": () => (/* binding */ faFaceRollingEyes),
+/* harmony export */   "faFaceSadCry": () => (/* binding */ faFaceSadCry),
+/* harmony export */   "faFaceSadTear": () => (/* binding */ faFaceSadTear),
+/* harmony export */   "faFaceSmile": () => (/* binding */ faFaceSmile),
+/* harmony export */   "faFaceSmileBeam": () => (/* binding */ faFaceSmileBeam),
+/* harmony export */   "faFaceSmileWink": () => (/* binding */ faFaceSmileWink),
+/* harmony export */   "faFaceSurprise": () => (/* binding */ faFaceSurprise),
+/* harmony export */   "faFaceTired": () => (/* binding */ faFaceTired),
+/* harmony export */   "faFan": () => (/* binding */ faFan),
+/* harmony export */   "faFastBackward": () => (/* binding */ faFastBackward),
+/* harmony export */   "faFastForward": () => (/* binding */ faFastForward),
+/* harmony export */   "faFaucet": () => (/* binding */ faFaucet),
+/* harmony export */   "faFaucetDrip": () => (/* binding */ faFaucetDrip),
+/* harmony export */   "faFax": () => (/* binding */ faFax),
+/* harmony export */   "faFeather": () => (/* binding */ faFeather),
+/* harmony export */   "faFeatherAlt": () => (/* binding */ faFeatherAlt),
+/* harmony export */   "faFeatherPointed": () => (/* binding */ faFeatherPointed),
+/* harmony export */   "faFeed": () => (/* binding */ faFeed),
+/* harmony export */   "faFemale": () => (/* binding */ faFemale),
+/* harmony export */   "faFerry": () => (/* binding */ faFerry),
+/* harmony export */   "faFighterJet": () => (/* binding */ faFighterJet),
+/* harmony export */   "faFile": () => (/* binding */ faFile),
+/* harmony export */   "faFileAlt": () => (/* binding */ faFileAlt),
+/* harmony export */   "faFileArchive": () => (/* binding */ faFileArchive),
+/* harmony export */   "faFileArrowDown": () => (/* binding */ faFileArrowDown),
+/* harmony export */   "faFileArrowUp": () => (/* binding */ faFileArrowUp),
+/* harmony export */   "faFileAudio": () => (/* binding */ faFileAudio),
+/* harmony export */   "faFileCircleCheck": () => (/* binding */ faFileCircleCheck),
+/* harmony export */   "faFileCircleExclamation": () => (/* binding */ faFileCircleExclamation),
+/* harmony export */   "faFileCircleMinus": () => (/* binding */ faFileCircleMinus),
+/* harmony export */   "faFileCirclePlus": () => (/* binding */ faFileCirclePlus),
+/* harmony export */   "faFileCircleQuestion": () => (/* binding */ faFileCircleQuestion),
+/* harmony export */   "faFileCircleXmark": () => (/* binding */ faFileCircleXmark),
+/* harmony export */   "faFileClipboard": () => (/* binding */ faFileClipboard),
+/* harmony export */   "faFileCode": () => (/* binding */ faFileCode),
+/* harmony export */   "faFileContract": () => (/* binding */ faFileContract),
+/* harmony export */   "faFileCsv": () => (/* binding */ faFileCsv),
+/* harmony export */   "faFileDownload": () => (/* binding */ faFileDownload),
+/* harmony export */   "faFileEdit": () => (/* binding */ faFileEdit),
+/* harmony export */   "faFileExcel": () => (/* binding */ faFileExcel),
+/* harmony export */   "faFileExport": () => (/* binding */ faFileExport),
+/* harmony export */   "faFileImage": () => (/* binding */ faFileImage),
+/* harmony export */   "faFileImport": () => (/* binding */ faFileImport),
+/* harmony export */   "faFileInvoice": () => (/* binding */ faFileInvoice),
+/* harmony export */   "faFileInvoiceDollar": () => (/* binding */ faFileInvoiceDollar),
+/* harmony export */   "faFileLines": () => (/* binding */ faFileLines),
+/* harmony export */   "faFileMedical": () => (/* binding */ faFileMedical),
+/* harmony export */   "faFileMedicalAlt": () => (/* binding */ faFileMedicalAlt),
+/* harmony export */   "faFilePdf": () => (/* binding */ faFilePdf),
+/* harmony export */   "faFilePen": () => (/* binding */ faFilePen),
+/* harmony export */   "faFilePowerpoint": () => (/* binding */ faFilePowerpoint),
+/* harmony export */   "faFilePrescription": () => (/* binding */ faFilePrescription),
+/* harmony export */   "faFileShield": () => (/* binding */ faFileShield),
+/* harmony export */   "faFileSignature": () => (/* binding */ faFileSignature),
+/* harmony export */   "faFileText": () => (/* binding */ faFileText),
+/* harmony export */   "faFileUpload": () => (/* binding */ faFileUpload),
+/* harmony export */   "faFileVideo": () => (/* binding */ faFileVideo),
+/* harmony export */   "faFileWaveform": () => (/* binding */ faFileWaveform),
+/* harmony export */   "faFileWord": () => (/* binding */ faFileWord),
+/* harmony export */   "faFileZipper": () => (/* binding */ faFileZipper),
+/* harmony export */   "faFill": () => (/* binding */ faFill),
+/* harmony export */   "faFillDrip": () => (/* binding */ faFillDrip),
+/* harmony export */   "faFilm": () => (/* binding */ faFilm),
+/* harmony export */   "faFilter": () => (/* binding */ faFilter),
+/* harmony export */   "faFilterCircleDollar": () => (/* binding */ faFilterCircleDollar),
+/* harmony export */   "faFilterCircleXmark": () => (/* binding */ faFilterCircleXmark),
+/* harmony export */   "faFingerprint": () => (/* binding */ faFingerprint),
+/* harmony export */   "faFire": () => (/* binding */ faFire),
+/* harmony export */   "faFireAlt": () => (/* binding */ faFireAlt),
+/* harmony export */   "faFireBurner": () => (/* binding */ faFireBurner),
+/* harmony export */   "faFireExtinguisher": () => (/* binding */ faFireExtinguisher),
+/* harmony export */   "faFireFlameCurved": () => (/* binding */ faFireFlameCurved),
+/* harmony export */   "faFireFlameSimple": () => (/* binding */ faFireFlameSimple),
+/* harmony export */   "faFirstAid": () => (/* binding */ faFirstAid),
+/* harmony export */   "faFish": () => (/* binding */ faFish),
+/* harmony export */   "faFishFins": () => (/* binding */ faFishFins),
+/* harmony export */   "faFistRaised": () => (/* binding */ faFistRaised),
+/* harmony export */   "faFlag": () => (/* binding */ faFlag),
+/* harmony export */   "faFlagCheckered": () => (/* binding */ faFlagCheckered),
+/* harmony export */   "faFlagUsa": () => (/* binding */ faFlagUsa),
+/* harmony export */   "faFlask": () => (/* binding */ faFlask),
+/* harmony export */   "faFlaskVial": () => (/* binding */ faFlaskVial),
+/* harmony export */   "faFloppyDisk": () => (/* binding */ faFloppyDisk),
+/* harmony export */   "faFlorinSign": () => (/* binding */ faFlorinSign),
+/* harmony export */   "faFlushed": () => (/* binding */ faFlushed),
+/* harmony export */   "faFolder": () => (/* binding */ faFolder),
+/* harmony export */   "faFolderBlank": () => (/* binding */ faFolderBlank),
+/* harmony export */   "faFolderClosed": () => (/* binding */ faFolderClosed),
+/* harmony export */   "faFolderMinus": () => (/* binding */ faFolderMinus),
+/* harmony export */   "faFolderOpen": () => (/* binding */ faFolderOpen),
+/* harmony export */   "faFolderPlus": () => (/* binding */ faFolderPlus),
+/* harmony export */   "faFolderTree": () => (/* binding */ faFolderTree),
+/* harmony export */   "faFont": () => (/* binding */ faFont),
+/* harmony export */   "faFontAwesome": () => (/* binding */ faFontAwesome),
+/* harmony export */   "faFontAwesomeFlag": () => (/* binding */ faFontAwesomeFlag),
+/* harmony export */   "faFontAwesomeLogoFull": () => (/* binding */ faFontAwesomeLogoFull),
+/* harmony export */   "faFootball": () => (/* binding */ faFootball),
+/* harmony export */   "faFootballBall": () => (/* binding */ faFootballBall),
+/* harmony export */   "faForward": () => (/* binding */ faForward),
+/* harmony export */   "faForwardFast": () => (/* binding */ faForwardFast),
+/* harmony export */   "faForwardStep": () => (/* binding */ faForwardStep),
+/* harmony export */   "faFrancSign": () => (/* binding */ faFrancSign),
+/* harmony export */   "faFrog": () => (/* binding */ faFrog),
+/* harmony export */   "faFrown": () => (/* binding */ faFrown),
+/* harmony export */   "faFrownOpen": () => (/* binding */ faFrownOpen),
+/* harmony export */   "faFunnelDollar": () => (/* binding */ faFunnelDollar),
+/* harmony export */   "faFutbol": () => (/* binding */ faFutbol),
+/* harmony export */   "faFutbolBall": () => (/* binding */ faFutbolBall),
+/* harmony export */   "faG": () => (/* binding */ faG),
+/* harmony export */   "faGamepad": () => (/* binding */ faGamepad),
+/* harmony export */   "faGasPump": () => (/* binding */ faGasPump),
+/* harmony export */   "faGauge": () => (/* binding */ faGauge),
+/* harmony export */   "faGaugeHigh": () => (/* binding */ faGaugeHigh),
+/* harmony export */   "faGaugeMed": () => (/* binding */ faGaugeMed),
+/* harmony export */   "faGaugeSimple": () => (/* binding */ faGaugeSimple),
+/* harmony export */   "faGaugeSimpleHigh": () => (/* binding */ faGaugeSimpleHigh),
+/* harmony export */   "faGaugeSimpleMed": () => (/* binding */ faGaugeSimpleMed),
+/* harmony export */   "faGavel": () => (/* binding */ faGavel),
+/* harmony export */   "faGbp": () => (/* binding */ faGbp),
+/* harmony export */   "faGear": () => (/* binding */ faGear),
+/* harmony export */   "faGears": () => (/* binding */ faGears),
+/* harmony export */   "faGem": () => (/* binding */ faGem),
+/* harmony export */   "faGenderless": () => (/* binding */ faGenderless),
+/* harmony export */   "faGhost": () => (/* binding */ faGhost),
+/* harmony export */   "faGift": () => (/* binding */ faGift),
+/* harmony export */   "faGifts": () => (/* binding */ faGifts),
+/* harmony export */   "faGlassCheers": () => (/* binding */ faGlassCheers),
+/* harmony export */   "faGlassMartini": () => (/* binding */ faGlassMartini),
+/* harmony export */   "faGlassMartiniAlt": () => (/* binding */ faGlassMartiniAlt),
+/* harmony export */   "faGlassWater": () => (/* binding */ faGlassWater),
+/* harmony export */   "faGlassWaterDroplet": () => (/* binding */ faGlassWaterDroplet),
+/* harmony export */   "faGlassWhiskey": () => (/* binding */ faGlassWhiskey),
+/* harmony export */   "faGlasses": () => (/* binding */ faGlasses),
+/* harmony export */   "faGlobe": () => (/* binding */ faGlobe),
+/* harmony export */   "faGlobeAfrica": () => (/* binding */ faGlobeAfrica),
+/* harmony export */   "faGlobeAmericas": () => (/* binding */ faGlobeAmericas),
+/* harmony export */   "faGlobeAsia": () => (/* binding */ faGlobeAsia),
+/* harmony export */   "faGlobeEurope": () => (/* binding */ faGlobeEurope),
+/* harmony export */   "faGlobeOceania": () => (/* binding */ faGlobeOceania),
+/* harmony export */   "faGolfBall": () => (/* binding */ faGolfBall),
+/* harmony export */   "faGolfBallTee": () => (/* binding */ faGolfBallTee),
+/* harmony export */   "faGopuram": () => (/* binding */ faGopuram),
+/* harmony export */   "faGraduationCap": () => (/* binding */ faGraduationCap),
+/* harmony export */   "faGreaterThan": () => (/* binding */ faGreaterThan),
+/* harmony export */   "faGreaterThanEqual": () => (/* binding */ faGreaterThanEqual),
+/* harmony export */   "faGrimace": () => (/* binding */ faGrimace),
+/* harmony export */   "faGrin": () => (/* binding */ faGrin),
+/* harmony export */   "faGrinAlt": () => (/* binding */ faGrinAlt),
+/* harmony export */   "faGrinBeam": () => (/* binding */ faGrinBeam),
+/* harmony export */   "faGrinBeamSweat": () => (/* binding */ faGrinBeamSweat),
+/* harmony export */   "faGrinHearts": () => (/* binding */ faGrinHearts),
+/* harmony export */   "faGrinSquint": () => (/* binding */ faGrinSquint),
+/* harmony export */   "faGrinSquintTears": () => (/* binding */ faGrinSquintTears),
+/* harmony export */   "faGrinStars": () => (/* binding */ faGrinStars),
+/* harmony export */   "faGrinTears": () => (/* binding */ faGrinTears),
+/* harmony export */   "faGrinTongue": () => (/* binding */ faGrinTongue),
+/* harmony export */   "faGrinTongueSquint": () => (/* binding */ faGrinTongueSquint),
+/* harmony export */   "faGrinTongueWink": () => (/* binding */ faGrinTongueWink),
+/* harmony export */   "faGrinWink": () => (/* binding */ faGrinWink),
+/* harmony export */   "faGrip": () => (/* binding */ faGrip),
+/* harmony export */   "faGripHorizontal": () => (/* binding */ faGripHorizontal),
+/* harmony export */   "faGripLines": () => (/* binding */ faGripLines),
+/* harmony export */   "faGripLinesVertical": () => (/* binding */ faGripLinesVertical),
+/* harmony export */   "faGripVertical": () => (/* binding */ faGripVertical),
+/* harmony export */   "faGroupArrowsRotate": () => (/* binding */ faGroupArrowsRotate),
+/* harmony export */   "faGuaraniSign": () => (/* binding */ faGuaraniSign),
+/* harmony export */   "faGuitar": () => (/* binding */ faGuitar),
+/* harmony export */   "faGun": () => (/* binding */ faGun),
+/* harmony export */   "faH": () => (/* binding */ faH),
+/* harmony export */   "faHSquare": () => (/* binding */ faHSquare),
+/* harmony export */   "faHamburger": () => (/* binding */ faHamburger),
+/* harmony export */   "faHammer": () => (/* binding */ faHammer),
+/* harmony export */   "faHamsa": () => (/* binding */ faHamsa),
+/* harmony export */   "faHand": () => (/* binding */ faHand),
+/* harmony export */   "faHandBackFist": () => (/* binding */ faHandBackFist),
+/* harmony export */   "faHandDots": () => (/* binding */ faHandDots),
+/* harmony export */   "faHandFist": () => (/* binding */ faHandFist),
+/* harmony export */   "faHandHolding": () => (/* binding */ faHandHolding),
+/* harmony export */   "faHandHoldingDollar": () => (/* binding */ faHandHoldingDollar),
+/* harmony export */   "faHandHoldingDroplet": () => (/* binding */ faHandHoldingDroplet),
+/* harmony export */   "faHandHoldingHand": () => (/* binding */ faHandHoldingHand),
+/* harmony export */   "faHandHoldingHeart": () => (/* binding */ faHandHoldingHeart),
+/* harmony export */   "faHandHoldingMedical": () => (/* binding */ faHandHoldingMedical),
+/* harmony export */   "faHandHoldingUsd": () => (/* binding */ faHandHoldingUsd),
+/* harmony export */   "faHandHoldingWater": () => (/* binding */ faHandHoldingWater),
+/* harmony export */   "faHandLizard": () => (/* binding */ faHandLizard),
+/* harmony export */   "faHandMiddleFinger": () => (/* binding */ faHandMiddleFinger),
+/* harmony export */   "faHandPaper": () => (/* binding */ faHandPaper),
+/* harmony export */   "faHandPeace": () => (/* binding */ faHandPeace),
+/* harmony export */   "faHandPointDown": () => (/* binding */ faHandPointDown),
+/* harmony export */   "faHandPointLeft": () => (/* binding */ faHandPointLeft),
+/* harmony export */   "faHandPointRight": () => (/* binding */ faHandPointRight),
+/* harmony export */   "faHandPointUp": () => (/* binding */ faHandPointUp),
+/* harmony export */   "faHandPointer": () => (/* binding */ faHandPointer),
+/* harmony export */   "faHandRock": () => (/* binding */ faHandRock),
+/* harmony export */   "faHandScissors": () => (/* binding */ faHandScissors),
+/* harmony export */   "faHandSparkles": () => (/* binding */ faHandSparkles),
+/* harmony export */   "faHandSpock": () => (/* binding */ faHandSpock),
+/* harmony export */   "faHandcuffs": () => (/* binding */ faHandcuffs),
+/* harmony export */   "faHands": () => (/* binding */ faHands),
+/* harmony export */   "faHandsAmericanSignLanguageInterpreting": () => (/* binding */ faHandsAmericanSignLanguageInterpreting),
+/* harmony export */   "faHandsAslInterpreting": () => (/* binding */ faHandsAslInterpreting),
+/* harmony export */   "faHandsBound": () => (/* binding */ faHandsBound),
+/* harmony export */   "faHandsBubbles": () => (/* binding */ faHandsBubbles),
+/* harmony export */   "faHandsClapping": () => (/* binding */ faHandsClapping),
+/* harmony export */   "faHandsHelping": () => (/* binding */ faHandsHelping),
+/* harmony export */   "faHandsHolding": () => (/* binding */ faHandsHolding),
+/* harmony export */   "faHandsHoldingChild": () => (/* binding */ faHandsHoldingChild),
+/* harmony export */   "faHandsHoldingCircle": () => (/* binding */ faHandsHoldingCircle),
+/* harmony export */   "faHandsPraying": () => (/* binding */ faHandsPraying),
+/* harmony export */   "faHandsWash": () => (/* binding */ faHandsWash),
+/* harmony export */   "faHandshake": () => (/* binding */ faHandshake),
+/* harmony export */   "faHandshakeAlt": () => (/* binding */ faHandshakeAlt),
+/* harmony export */   "faHandshakeAltSlash": () => (/* binding */ faHandshakeAltSlash),
+/* harmony export */   "faHandshakeAngle": () => (/* binding */ faHandshakeAngle),
+/* harmony export */   "faHandshakeSimple": () => (/* binding */ faHandshakeSimple),
+/* harmony export */   "faHandshakeSimpleSlash": () => (/* binding */ faHandshakeSimpleSlash),
+/* harmony export */   "faHandshakeSlash": () => (/* binding */ faHandshakeSlash),
+/* harmony export */   "faHanukiah": () => (/* binding */ faHanukiah),
+/* harmony export */   "faHardDrive": () => (/* binding */ faHardDrive),
+/* harmony export */   "faHardHat": () => (/* binding */ faHardHat),
+/* harmony export */   "faHardOfHearing": () => (/* binding */ faHardOfHearing),
+/* harmony export */   "faHashtag": () => (/* binding */ faHashtag),
+/* harmony export */   "faHatCowboy": () => (/* binding */ faHatCowboy),
+/* harmony export */   "faHatCowboySide": () => (/* binding */ faHatCowboySide),
+/* harmony export */   "faHatHard": () => (/* binding */ faHatHard),
+/* harmony export */   "faHatWizard": () => (/* binding */ faHatWizard),
+/* harmony export */   "faHaykal": () => (/* binding */ faHaykal),
+/* harmony export */   "faHdd": () => (/* binding */ faHdd),
+/* harmony export */   "faHeadSideCough": () => (/* binding */ faHeadSideCough),
+/* harmony export */   "faHeadSideCoughSlash": () => (/* binding */ faHeadSideCoughSlash),
+/* harmony export */   "faHeadSideMask": () => (/* binding */ faHeadSideMask),
+/* harmony export */   "faHeadSideVirus": () => (/* binding */ faHeadSideVirus),
+/* harmony export */   "faHeader": () => (/* binding */ faHeader),
+/* harmony export */   "faHeading": () => (/* binding */ faHeading),
+/* harmony export */   "faHeadphones": () => (/* binding */ faHeadphones),
+/* harmony export */   "faHeadphonesAlt": () => (/* binding */ faHeadphonesAlt),
+/* harmony export */   "faHeadphonesSimple": () => (/* binding */ faHeadphonesSimple),
+/* harmony export */   "faHeadset": () => (/* binding */ faHeadset),
+/* harmony export */   "faHeart": () => (/* binding */ faHeart),
+/* harmony export */   "faHeartBroken": () => (/* binding */ faHeartBroken),
+/* harmony export */   "faHeartCircleBolt": () => (/* binding */ faHeartCircleBolt),
+/* harmony export */   "faHeartCircleCheck": () => (/* binding */ faHeartCircleCheck),
+/* harmony export */   "faHeartCircleExclamation": () => (/* binding */ faHeartCircleExclamation),
+/* harmony export */   "faHeartCircleMinus": () => (/* binding */ faHeartCircleMinus),
+/* harmony export */   "faHeartCirclePlus": () => (/* binding */ faHeartCirclePlus),
+/* harmony export */   "faHeartCircleXmark": () => (/* binding */ faHeartCircleXmark),
+/* harmony export */   "faHeartCrack": () => (/* binding */ faHeartCrack),
+/* harmony export */   "faHeartMusicCameraBolt": () => (/* binding */ faHeartMusicCameraBolt),
+/* harmony export */   "faHeartPulse": () => (/* binding */ faHeartPulse),
+/* harmony export */   "faHeartbeat": () => (/* binding */ faHeartbeat),
+/* harmony export */   "faHelicopter": () => (/* binding */ faHelicopter),
+/* harmony export */   "faHelicopterSymbol": () => (/* binding */ faHelicopterSymbol),
+/* harmony export */   "faHelmetSafety": () => (/* binding */ faHelmetSafety),
+/* harmony export */   "faHelmetUn": () => (/* binding */ faHelmetUn),
+/* harmony export */   "faHighlighter": () => (/* binding */ faHighlighter),
+/* harmony export */   "faHiking": () => (/* binding */ faHiking),
+/* harmony export */   "faHillAvalanche": () => (/* binding */ faHillAvalanche),
+/* harmony export */   "faHillRockslide": () => (/* binding */ faHillRockslide),
+/* harmony export */   "faHippo": () => (/* binding */ faHippo),
+/* harmony export */   "faHistory": () => (/* binding */ faHistory),
+/* harmony export */   "faHockeyPuck": () => (/* binding */ faHockeyPuck),
+/* harmony export */   "faHollyBerry": () => (/* binding */ faHollyBerry),
+/* harmony export */   "faHome": () => (/* binding */ faHome),
+/* harmony export */   "faHomeAlt": () => (/* binding */ faHomeAlt),
+/* harmony export */   "faHomeLg": () => (/* binding */ faHomeLg),
+/* harmony export */   "faHomeLgAlt": () => (/* binding */ faHomeLgAlt),
+/* harmony export */   "faHomeUser": () => (/* binding */ faHomeUser),
+/* harmony export */   "faHorse": () => (/* binding */ faHorse),
+/* harmony export */   "faHorseHead": () => (/* binding */ faHorseHead),
+/* harmony export */   "faHospital": () => (/* binding */ faHospital),
+/* harmony export */   "faHospitalAlt": () => (/* binding */ faHospitalAlt),
+/* harmony export */   "faHospitalSymbol": () => (/* binding */ faHospitalSymbol),
+/* harmony export */   "faHospitalUser": () => (/* binding */ faHospitalUser),
+/* harmony export */   "faHospitalWide": () => (/* binding */ faHospitalWide),
+/* harmony export */   "faHotTub": () => (/* binding */ faHotTub),
+/* harmony export */   "faHotTubPerson": () => (/* binding */ faHotTubPerson),
+/* harmony export */   "faHotdog": () => (/* binding */ faHotdog),
+/* harmony export */   "faHotel": () => (/* binding */ faHotel),
+/* harmony export */   "faHourglass": () => (/* binding */ faHourglass),
+/* harmony export */   "faHourglass1": () => (/* binding */ faHourglass1),
+/* harmony export */   "faHourglass2": () => (/* binding */ faHourglass2),
+/* harmony export */   "faHourglass3": () => (/* binding */ faHourglass3),
+/* harmony export */   "faHourglassEmpty": () => (/* binding */ faHourglassEmpty),
+/* harmony export */   "faHourglassEnd": () => (/* binding */ faHourglassEnd),
+/* harmony export */   "faHourglassHalf": () => (/* binding */ faHourglassHalf),
+/* harmony export */   "faHourglassStart": () => (/* binding */ faHourglassStart),
+/* harmony export */   "faHouse": () => (/* binding */ faHouse),
+/* harmony export */   "faHouseChimney": () => (/* binding */ faHouseChimney),
+/* harmony export */   "faHouseChimneyCrack": () => (/* binding */ faHouseChimneyCrack),
+/* harmony export */   "faHouseChimneyMedical": () => (/* binding */ faHouseChimneyMedical),
+/* harmony export */   "faHouseChimneyUser": () => (/* binding */ faHouseChimneyUser),
+/* harmony export */   "faHouseChimneyWindow": () => (/* binding */ faHouseChimneyWindow),
+/* harmony export */   "faHouseCircleCheck": () => (/* binding */ faHouseCircleCheck),
+/* harmony export */   "faHouseCircleExclamation": () => (/* binding */ faHouseCircleExclamation),
+/* harmony export */   "faHouseCircleXmark": () => (/* binding */ faHouseCircleXmark),
+/* harmony export */   "faHouseCrack": () => (/* binding */ faHouseCrack),
+/* harmony export */   "faHouseDamage": () => (/* binding */ faHouseDamage),
+/* harmony export */   "faHouseFire": () => (/* binding */ faHouseFire),
+/* harmony export */   "faHouseFlag": () => (/* binding */ faHouseFlag),
+/* harmony export */   "faHouseFloodWater": () => (/* binding */ faHouseFloodWater),
+/* harmony export */   "faHouseFloodWaterCircleArrowRight": () => (/* binding */ faHouseFloodWaterCircleArrowRight),
+/* harmony export */   "faHouseLaptop": () => (/* binding */ faHouseLaptop),
+/* harmony export */   "faHouseLock": () => (/* binding */ faHouseLock),
+/* harmony export */   "faHouseMedical": () => (/* binding */ faHouseMedical),
+/* harmony export */   "faHouseMedicalCircleCheck": () => (/* binding */ faHouseMedicalCircleCheck),
+/* harmony export */   "faHouseMedicalCircleExclamation": () => (/* binding */ faHouseMedicalCircleExclamation),
+/* harmony export */   "faHouseMedicalCircleXmark": () => (/* binding */ faHouseMedicalCircleXmark),
+/* harmony export */   "faHouseMedicalFlag": () => (/* binding */ faHouseMedicalFlag),
+/* harmony export */   "faHouseSignal": () => (/* binding */ faHouseSignal),
+/* harmony export */   "faHouseTsunami": () => (/* binding */ faHouseTsunami),
+/* harmony export */   "faHouseUser": () => (/* binding */ faHouseUser),
+/* harmony export */   "faHryvnia": () => (/* binding */ faHryvnia),
+/* harmony export */   "faHryvniaSign": () => (/* binding */ faHryvniaSign),
+/* harmony export */   "faHurricane": () => (/* binding */ faHurricane),
+/* harmony export */   "faI": () => (/* binding */ faI),
+/* harmony export */   "faICursor": () => (/* binding */ faICursor),
+/* harmony export */   "faIceCream": () => (/* binding */ faIceCream),
+/* harmony export */   "faIcicles": () => (/* binding */ faIcicles),
+/* harmony export */   "faIcons": () => (/* binding */ faIcons),
+/* harmony export */   "faIdBadge": () => (/* binding */ faIdBadge),
+/* harmony export */   "faIdCard": () => (/* binding */ faIdCard),
+/* harmony export */   "faIdCardAlt": () => (/* binding */ faIdCardAlt),
+/* harmony export */   "faIdCardClip": () => (/* binding */ faIdCardClip),
+/* harmony export */   "faIgloo": () => (/* binding */ faIgloo),
+/* harmony export */   "faIls": () => (/* binding */ faIls),
+/* harmony export */   "faImage": () => (/* binding */ faImage),
+/* harmony export */   "faImagePortrait": () => (/* binding */ faImagePortrait),
+/* harmony export */   "faImages": () => (/* binding */ faImages),
+/* harmony export */   "faInbox": () => (/* binding */ faInbox),
+/* harmony export */   "faIndent": () => (/* binding */ faIndent),
+/* harmony export */   "faIndianRupee": () => (/* binding */ faIndianRupee),
+/* harmony export */   "faIndianRupeeSign": () => (/* binding */ faIndianRupeeSign),
+/* harmony export */   "faIndustry": () => (/* binding */ faIndustry),
+/* harmony export */   "faInfinity": () => (/* binding */ faInfinity),
+/* harmony export */   "faInfo": () => (/* binding */ faInfo),
+/* harmony export */   "faInfoCircle": () => (/* binding */ faInfoCircle),
+/* harmony export */   "faInr": () => (/* binding */ faInr),
+/* harmony export */   "faInstitution": () => (/* binding */ faInstitution),
+/* harmony export */   "faItalic": () => (/* binding */ faItalic),
+/* harmony export */   "faJ": () => (/* binding */ faJ),
+/* harmony export */   "faJar": () => (/* binding */ faJar),
+/* harmony export */   "faJarWheat": () => (/* binding */ faJarWheat),
+/* harmony export */   "faJedi": () => (/* binding */ faJedi),
+/* harmony export */   "faJetFighter": () => (/* binding */ faJetFighter),
+/* harmony export */   "faJetFighterUp": () => (/* binding */ faJetFighterUp),
+/* harmony export */   "faJoint": () => (/* binding */ faJoint),
+/* harmony export */   "faJournalWhills": () => (/* binding */ faJournalWhills),
+/* harmony export */   "faJpy": () => (/* binding */ faJpy),
+/* harmony export */   "faJugDetergent": () => (/* binding */ faJugDetergent),
+/* harmony export */   "faK": () => (/* binding */ faK),
+/* harmony export */   "faKaaba": () => (/* binding */ faKaaba),
+/* harmony export */   "faKey": () => (/* binding */ faKey),
+/* harmony export */   "faKeyboard": () => (/* binding */ faKeyboard),
+/* harmony export */   "faKhanda": () => (/* binding */ faKhanda),
+/* harmony export */   "faKipSign": () => (/* binding */ faKipSign),
+/* harmony export */   "faKiss": () => (/* binding */ faKiss),
+/* harmony export */   "faKissBeam": () => (/* binding */ faKissBeam),
+/* harmony export */   "faKissWinkHeart": () => (/* binding */ faKissWinkHeart),
+/* harmony export */   "faKitMedical": () => (/* binding */ faKitMedical),
+/* harmony export */   "faKitchenSet": () => (/* binding */ faKitchenSet),
+/* harmony export */   "faKiwiBird": () => (/* binding */ faKiwiBird),
+/* harmony export */   "faKrw": () => (/* binding */ faKrw),
+/* harmony export */   "faL": () => (/* binding */ faL),
+/* harmony export */   "faLadderWater": () => (/* binding */ faLadderWater),
+/* harmony export */   "faLandMineOn": () => (/* binding */ faLandMineOn),
+/* harmony export */   "faLandmark": () => (/* binding */ faLandmark),
+/* harmony export */   "faLandmarkAlt": () => (/* binding */ faLandmarkAlt),
+/* harmony export */   "faLandmarkDome": () => (/* binding */ faLandmarkDome),
+/* harmony export */   "faLandmarkFlag": () => (/* binding */ faLandmarkFlag),
+/* harmony export */   "faLanguage": () => (/* binding */ faLanguage),
+/* harmony export */   "faLaptop": () => (/* binding */ faLaptop),
+/* harmony export */   "faLaptopCode": () => (/* binding */ faLaptopCode),
+/* harmony export */   "faLaptopFile": () => (/* binding */ faLaptopFile),
+/* harmony export */   "faLaptopHouse": () => (/* binding */ faLaptopHouse),
+/* harmony export */   "faLaptopMedical": () => (/* binding */ faLaptopMedical),
+/* harmony export */   "faLariSign": () => (/* binding */ faLariSign),
+/* harmony export */   "faLaugh": () => (/* binding */ faLaugh),
+/* harmony export */   "faLaughBeam": () => (/* binding */ faLaughBeam),
+/* harmony export */   "faLaughSquint": () => (/* binding */ faLaughSquint),
+/* harmony export */   "faLaughWink": () => (/* binding */ faLaughWink),
+/* harmony export */   "faLayerGroup": () => (/* binding */ faLayerGroup),
+/* harmony export */   "faLeaf": () => (/* binding */ faLeaf),
+/* harmony export */   "faLeftLong": () => (/* binding */ faLeftLong),
+/* harmony export */   "faLeftRight": () => (/* binding */ faLeftRight),
+/* harmony export */   "faLegal": () => (/* binding */ faLegal),
+/* harmony export */   "faLemon": () => (/* binding */ faLemon),
+/* harmony export */   "faLessThan": () => (/* binding */ faLessThan),
+/* harmony export */   "faLessThanEqual": () => (/* binding */ faLessThanEqual),
+/* harmony export */   "faLevelDown": () => (/* binding */ faLevelDown),
+/* harmony export */   "faLevelDownAlt": () => (/* binding */ faLevelDownAlt),
+/* harmony export */   "faLevelUp": () => (/* binding */ faLevelUp),
+/* harmony export */   "faLevelUpAlt": () => (/* binding */ faLevelUpAlt),
+/* harmony export */   "faLifeRing": () => (/* binding */ faLifeRing),
+/* harmony export */   "faLightbulb": () => (/* binding */ faLightbulb),
+/* harmony export */   "faLineChart": () => (/* binding */ faLineChart),
+/* harmony export */   "faLinesLeaning": () => (/* binding */ faLinesLeaning),
+/* harmony export */   "faLink": () => (/* binding */ faLink),
+/* harmony export */   "faLinkSlash": () => (/* binding */ faLinkSlash),
+/* harmony export */   "faLiraSign": () => (/* binding */ faLiraSign),
+/* harmony export */   "faList": () => (/* binding */ faList),
+/* harmony export */   "faList12": () => (/* binding */ faList12),
+/* harmony export */   "faListAlt": () => (/* binding */ faListAlt),
+/* harmony export */   "faListCheck": () => (/* binding */ faListCheck),
+/* harmony export */   "faListDots": () => (/* binding */ faListDots),
+/* harmony export */   "faListNumeric": () => (/* binding */ faListNumeric),
+/* harmony export */   "faListOl": () => (/* binding */ faListOl),
+/* harmony export */   "faListSquares": () => (/* binding */ faListSquares),
+/* harmony export */   "faListUl": () => (/* binding */ faListUl),
+/* harmony export */   "faLitecoinSign": () => (/* binding */ faLitecoinSign),
+/* harmony export */   "faLocation": () => (/* binding */ faLocation),
+/* harmony export */   "faLocationArrow": () => (/* binding */ faLocationArrow),
+/* harmony export */   "faLocationCrosshairs": () => (/* binding */ faLocationCrosshairs),
+/* harmony export */   "faLocationDot": () => (/* binding */ faLocationDot),
+/* harmony export */   "faLocationPin": () => (/* binding */ faLocationPin),
+/* harmony export */   "faLocationPinLock": () => (/* binding */ faLocationPinLock),
+/* harmony export */   "faLock": () => (/* binding */ faLock),
+/* harmony export */   "faLockOpen": () => (/* binding */ faLockOpen),
+/* harmony export */   "faLocust": () => (/* binding */ faLocust),
+/* harmony export */   "faLongArrowAltDown": () => (/* binding */ faLongArrowAltDown),
+/* harmony export */   "faLongArrowAltLeft": () => (/* binding */ faLongArrowAltLeft),
+/* harmony export */   "faLongArrowAltRight": () => (/* binding */ faLongArrowAltRight),
+/* harmony export */   "faLongArrowAltUp": () => (/* binding */ faLongArrowAltUp),
+/* harmony export */   "faLongArrowDown": () => (/* binding */ faLongArrowDown),
+/* harmony export */   "faLongArrowLeft": () => (/* binding */ faLongArrowLeft),
+/* harmony export */   "faLongArrowRight": () => (/* binding */ faLongArrowRight),
+/* harmony export */   "faLongArrowUp": () => (/* binding */ faLongArrowUp),
+/* harmony export */   "faLowVision": () => (/* binding */ faLowVision),
+/* harmony export */   "faLuggageCart": () => (/* binding */ faLuggageCart),
+/* harmony export */   "faLungs": () => (/* binding */ faLungs),
+/* harmony export */   "faLungsVirus": () => (/* binding */ faLungsVirus),
+/* harmony export */   "faM": () => (/* binding */ faM),
+/* harmony export */   "faMagic": () => (/* binding */ faMagic),
+/* harmony export */   "faMagicWandSparkles": () => (/* binding */ faMagicWandSparkles),
+/* harmony export */   "faMagnet": () => (/* binding */ faMagnet),
+/* harmony export */   "faMagnifyingGlass": () => (/* binding */ faMagnifyingGlass),
+/* harmony export */   "faMagnifyingGlassArrowRight": () => (/* binding */ faMagnifyingGlassArrowRight),
+/* harmony export */   "faMagnifyingGlassChart": () => (/* binding */ faMagnifyingGlassChart),
+/* harmony export */   "faMagnifyingGlassDollar": () => (/* binding */ faMagnifyingGlassDollar),
+/* harmony export */   "faMagnifyingGlassLocation": () => (/* binding */ faMagnifyingGlassLocation),
+/* harmony export */   "faMagnifyingGlassMinus": () => (/* binding */ faMagnifyingGlassMinus),
+/* harmony export */   "faMagnifyingGlassPlus": () => (/* binding */ faMagnifyingGlassPlus),
+/* harmony export */   "faMailBulk": () => (/* binding */ faMailBulk),
+/* harmony export */   "faMailForward": () => (/* binding */ faMailForward),
+/* harmony export */   "faMailReply": () => (/* binding */ faMailReply),
+/* harmony export */   "faMailReplyAll": () => (/* binding */ faMailReplyAll),
+/* harmony export */   "faMale": () => (/* binding */ faMale),
+/* harmony export */   "faManatSign": () => (/* binding */ faManatSign),
+/* harmony export */   "faMap": () => (/* binding */ faMap),
+/* harmony export */   "faMapLocation": () => (/* binding */ faMapLocation),
+/* harmony export */   "faMapLocationDot": () => (/* binding */ faMapLocationDot),
+/* harmony export */   "faMapMarked": () => (/* binding */ faMapMarked),
+/* harmony export */   "faMapMarkedAlt": () => (/* binding */ faMapMarkedAlt),
+/* harmony export */   "faMapMarker": () => (/* binding */ faMapMarker),
+/* harmony export */   "faMapMarkerAlt": () => (/* binding */ faMapMarkerAlt),
+/* harmony export */   "faMapPin": () => (/* binding */ faMapPin),
+/* harmony export */   "faMapSigns": () => (/* binding */ faMapSigns),
+/* harmony export */   "faMarker": () => (/* binding */ faMarker),
+/* harmony export */   "faMars": () => (/* binding */ faMars),
+/* harmony export */   "faMarsAndVenus": () => (/* binding */ faMarsAndVenus),
+/* harmony export */   "faMarsAndVenusBurst": () => (/* binding */ faMarsAndVenusBurst),
+/* harmony export */   "faMarsDouble": () => (/* binding */ faMarsDouble),
+/* harmony export */   "faMarsStroke": () => (/* binding */ faMarsStroke),
+/* harmony export */   "faMarsStrokeH": () => (/* binding */ faMarsStrokeH),
+/* harmony export */   "faMarsStrokeRight": () => (/* binding */ faMarsStrokeRight),
+/* harmony export */   "faMarsStrokeUp": () => (/* binding */ faMarsStrokeUp),
+/* harmony export */   "faMarsStrokeV": () => (/* binding */ faMarsStrokeV),
+/* harmony export */   "faMartiniGlass": () => (/* binding */ faMartiniGlass),
+/* harmony export */   "faMartiniGlassCitrus": () => (/* binding */ faMartiniGlassCitrus),
+/* harmony export */   "faMartiniGlassEmpty": () => (/* binding */ faMartiniGlassEmpty),
+/* harmony export */   "faMask": () => (/* binding */ faMask),
+/* harmony export */   "faMaskFace": () => (/* binding */ faMaskFace),
+/* harmony export */   "faMaskVentilator": () => (/* binding */ faMaskVentilator),
+/* harmony export */   "faMasksTheater": () => (/* binding */ faMasksTheater),
+/* harmony export */   "faMattressPillow": () => (/* binding */ faMattressPillow),
+/* harmony export */   "faMaximize": () => (/* binding */ faMaximize),
+/* harmony export */   "faMedal": () => (/* binding */ faMedal),
+/* harmony export */   "faMedkit": () => (/* binding */ faMedkit),
+/* harmony export */   "faMeh": () => (/* binding */ faMeh),
+/* harmony export */   "faMehBlank": () => (/* binding */ faMehBlank),
+/* harmony export */   "faMehRollingEyes": () => (/* binding */ faMehRollingEyes),
+/* harmony export */   "faMemory": () => (/* binding */ faMemory),
+/* harmony export */   "faMenorah": () => (/* binding */ faMenorah),
+/* harmony export */   "faMercury": () => (/* binding */ faMercury),
+/* harmony export */   "faMessage": () => (/* binding */ faMessage),
+/* harmony export */   "faMeteor": () => (/* binding */ faMeteor),
+/* harmony export */   "faMicrochip": () => (/* binding */ faMicrochip),
+/* harmony export */   "faMicrophone": () => (/* binding */ faMicrophone),
+/* harmony export */   "faMicrophoneAlt": () => (/* binding */ faMicrophoneAlt),
+/* harmony export */   "faMicrophoneAltSlash": () => (/* binding */ faMicrophoneAltSlash),
+/* harmony export */   "faMicrophoneLines": () => (/* binding */ faMicrophoneLines),
+/* harmony export */   "faMicrophoneLinesSlash": () => (/* binding */ faMicrophoneLinesSlash),
+/* harmony export */   "faMicrophoneSlash": () => (/* binding */ faMicrophoneSlash),
+/* harmony export */   "faMicroscope": () => (/* binding */ faMicroscope),
+/* harmony export */   "faMillSign": () => (/* binding */ faMillSign),
+/* harmony export */   "faMinimize": () => (/* binding */ faMinimize),
+/* harmony export */   "faMinus": () => (/* binding */ faMinus),
+/* harmony export */   "faMinusCircle": () => (/* binding */ faMinusCircle),
+/* harmony export */   "faMinusSquare": () => (/* binding */ faMinusSquare),
+/* harmony export */   "faMitten": () => (/* binding */ faMitten),
+/* harmony export */   "faMobile": () => (/* binding */ faMobile),
+/* harmony export */   "faMobileAlt": () => (/* binding */ faMobileAlt),
+/* harmony export */   "faMobileAndroid": () => (/* binding */ faMobileAndroid),
+/* harmony export */   "faMobileAndroidAlt": () => (/* binding */ faMobileAndroidAlt),
+/* harmony export */   "faMobileButton": () => (/* binding */ faMobileButton),
+/* harmony export */   "faMobilePhone": () => (/* binding */ faMobilePhone),
+/* harmony export */   "faMobileRetro": () => (/* binding */ faMobileRetro),
+/* harmony export */   "faMobileScreen": () => (/* binding */ faMobileScreen),
+/* harmony export */   "faMobileScreenButton": () => (/* binding */ faMobileScreenButton),
+/* harmony export */   "faMoneyBill": () => (/* binding */ faMoneyBill),
+/* harmony export */   "faMoneyBill1": () => (/* binding */ faMoneyBill1),
+/* harmony export */   "faMoneyBill1Wave": () => (/* binding */ faMoneyBill1Wave),
+/* harmony export */   "faMoneyBillAlt": () => (/* binding */ faMoneyBillAlt),
+/* harmony export */   "faMoneyBillTransfer": () => (/* binding */ faMoneyBillTransfer),
+/* harmony export */   "faMoneyBillTrendUp": () => (/* binding */ faMoneyBillTrendUp),
+/* harmony export */   "faMoneyBillWave": () => (/* binding */ faMoneyBillWave),
+/* harmony export */   "faMoneyBillWaveAlt": () => (/* binding */ faMoneyBillWaveAlt),
+/* harmony export */   "faMoneyBillWheat": () => (/* binding */ faMoneyBillWheat),
+/* harmony export */   "faMoneyBills": () => (/* binding */ faMoneyBills),
+/* harmony export */   "faMoneyCheck": () => (/* binding */ faMoneyCheck),
+/* harmony export */   "faMoneyCheckAlt": () => (/* binding */ faMoneyCheckAlt),
+/* harmony export */   "faMoneyCheckDollar": () => (/* binding */ faMoneyCheckDollar),
+/* harmony export */   "faMonument": () => (/* binding */ faMonument),
+/* harmony export */   "faMoon": () => (/* binding */ faMoon),
+/* harmony export */   "faMortarBoard": () => (/* binding */ faMortarBoard),
+/* harmony export */   "faMortarPestle": () => (/* binding */ faMortarPestle),
+/* harmony export */   "faMosque": () => (/* binding */ faMosque),
+/* harmony export */   "faMosquito": () => (/* binding */ faMosquito),
+/* harmony export */   "faMosquitoNet": () => (/* binding */ faMosquitoNet),
+/* harmony export */   "faMotorcycle": () => (/* binding */ faMotorcycle),
+/* harmony export */   "faMound": () => (/* binding */ faMound),
+/* harmony export */   "faMountain": () => (/* binding */ faMountain),
+/* harmony export */   "faMountainCity": () => (/* binding */ faMountainCity),
+/* harmony export */   "faMountainSun": () => (/* binding */ faMountainSun),
+/* harmony export */   "faMouse": () => (/* binding */ faMouse),
+/* harmony export */   "faMousePointer": () => (/* binding */ faMousePointer),
+/* harmony export */   "faMugHot": () => (/* binding */ faMugHot),
+/* harmony export */   "faMugSaucer": () => (/* binding */ faMugSaucer),
+/* harmony export */   "faMultiply": () => (/* binding */ faMultiply),
+/* harmony export */   "faMuseum": () => (/* binding */ faMuseum),
+/* harmony export */   "faMusic": () => (/* binding */ faMusic),
+/* harmony export */   "faN": () => (/* binding */ faN),
+/* harmony export */   "faNairaSign": () => (/* binding */ faNairaSign),
+/* harmony export */   "faNavicon": () => (/* binding */ faNavicon),
+/* harmony export */   "faNetworkWired": () => (/* binding */ faNetworkWired),
+/* harmony export */   "faNeuter": () => (/* binding */ faNeuter),
+/* harmony export */   "faNewspaper": () => (/* binding */ faNewspaper),
+/* harmony export */   "faNotEqual": () => (/* binding */ faNotEqual),
+/* harmony export */   "faNotdef": () => (/* binding */ faNotdef),
+/* harmony export */   "faNoteSticky": () => (/* binding */ faNoteSticky),
+/* harmony export */   "faNotesMedical": () => (/* binding */ faNotesMedical),
+/* harmony export */   "faO": () => (/* binding */ faO),
+/* harmony export */   "faObjectGroup": () => (/* binding */ faObjectGroup),
+/* harmony export */   "faObjectUngroup": () => (/* binding */ faObjectUngroup),
+/* harmony export */   "faOilCan": () => (/* binding */ faOilCan),
+/* harmony export */   "faOilWell": () => (/* binding */ faOilWell),
+/* harmony export */   "faOm": () => (/* binding */ faOm),
+/* harmony export */   "faOtter": () => (/* binding */ faOtter),
+/* harmony export */   "faOutdent": () => (/* binding */ faOutdent),
+/* harmony export */   "faP": () => (/* binding */ faP),
+/* harmony export */   "faPager": () => (/* binding */ faPager),
+/* harmony export */   "faPaintBrush": () => (/* binding */ faPaintBrush),
+/* harmony export */   "faPaintRoller": () => (/* binding */ faPaintRoller),
+/* harmony export */   "faPaintbrush": () => (/* binding */ faPaintbrush),
+/* harmony export */   "faPalette": () => (/* binding */ faPalette),
+/* harmony export */   "faPallet": () => (/* binding */ faPallet),
+/* harmony export */   "faPanorama": () => (/* binding */ faPanorama),
+/* harmony export */   "faPaperPlane": () => (/* binding */ faPaperPlane),
+/* harmony export */   "faPaperclip": () => (/* binding */ faPaperclip),
+/* harmony export */   "faParachuteBox": () => (/* binding */ faParachuteBox),
+/* harmony export */   "faParagraph": () => (/* binding */ faParagraph),
+/* harmony export */   "faParking": () => (/* binding */ faParking),
+/* harmony export */   "faPassport": () => (/* binding */ faPassport),
+/* harmony export */   "faPastafarianism": () => (/* binding */ faPastafarianism),
+/* harmony export */   "faPaste": () => (/* binding */ faPaste),
+/* harmony export */   "faPause": () => (/* binding */ faPause),
+/* harmony export */   "faPauseCircle": () => (/* binding */ faPauseCircle),
+/* harmony export */   "faPaw": () => (/* binding */ faPaw),
+/* harmony export */   "faPeace": () => (/* binding */ faPeace),
+/* harmony export */   "faPen": () => (/* binding */ faPen),
+/* harmony export */   "faPenAlt": () => (/* binding */ faPenAlt),
+/* harmony export */   "faPenClip": () => (/* binding */ faPenClip),
+/* harmony export */   "faPenFancy": () => (/* binding */ faPenFancy),
+/* harmony export */   "faPenNib": () => (/* binding */ faPenNib),
+/* harmony export */   "faPenRuler": () => (/* binding */ faPenRuler),
+/* harmony export */   "faPenSquare": () => (/* binding */ faPenSquare),
+/* harmony export */   "faPenToSquare": () => (/* binding */ faPenToSquare),
+/* harmony export */   "faPencil": () => (/* binding */ faPencil),
+/* harmony export */   "faPencilAlt": () => (/* binding */ faPencilAlt),
+/* harmony export */   "faPencilRuler": () => (/* binding */ faPencilRuler),
+/* harmony export */   "faPencilSquare": () => (/* binding */ faPencilSquare),
+/* harmony export */   "faPeopleArrows": () => (/* binding */ faPeopleArrows),
+/* harmony export */   "faPeopleArrowsLeftRight": () => (/* binding */ faPeopleArrowsLeftRight),
+/* harmony export */   "faPeopleCarry": () => (/* binding */ faPeopleCarry),
+/* harmony export */   "faPeopleCarryBox": () => (/* binding */ faPeopleCarryBox),
+/* harmony export */   "faPeopleGroup": () => (/* binding */ faPeopleGroup),
+/* harmony export */   "faPeopleLine": () => (/* binding */ faPeopleLine),
+/* harmony export */   "faPeoplePulling": () => (/* binding */ faPeoplePulling),
+/* harmony export */   "faPeopleRobbery": () => (/* binding */ faPeopleRobbery),
+/* harmony export */   "faPeopleRoof": () => (/* binding */ faPeopleRoof),
+/* harmony export */   "faPepperHot": () => (/* binding */ faPepperHot),
+/* harmony export */   "faPercent": () => (/* binding */ faPercent),
+/* harmony export */   "faPercentage": () => (/* binding */ faPercentage),
+/* harmony export */   "faPerson": () => (/* binding */ faPerson),
+/* harmony export */   "faPersonArrowDownToLine": () => (/* binding */ faPersonArrowDownToLine),
+/* harmony export */   "faPersonArrowUpFromLine": () => (/* binding */ faPersonArrowUpFromLine),
+/* harmony export */   "faPersonBiking": () => (/* binding */ faPersonBiking),
+/* harmony export */   "faPersonBooth": () => (/* binding */ faPersonBooth),
+/* harmony export */   "faPersonBreastfeeding": () => (/* binding */ faPersonBreastfeeding),
+/* harmony export */   "faPersonBurst": () => (/* binding */ faPersonBurst),
+/* harmony export */   "faPersonCane": () => (/* binding */ faPersonCane),
+/* harmony export */   "faPersonChalkboard": () => (/* binding */ faPersonChalkboard),
+/* harmony export */   "faPersonCircleCheck": () => (/* binding */ faPersonCircleCheck),
+/* harmony export */   "faPersonCircleExclamation": () => (/* binding */ faPersonCircleExclamation),
+/* harmony export */   "faPersonCircleMinus": () => (/* binding */ faPersonCircleMinus),
+/* harmony export */   "faPersonCirclePlus": () => (/* binding */ faPersonCirclePlus),
+/* harmony export */   "faPersonCircleQuestion": () => (/* binding */ faPersonCircleQuestion),
+/* harmony export */   "faPersonCircleXmark": () => (/* binding */ faPersonCircleXmark),
+/* harmony export */   "faPersonDigging": () => (/* binding */ faPersonDigging),
+/* harmony export */   "faPersonDotsFromLine": () => (/* binding */ faPersonDotsFromLine),
+/* harmony export */   "faPersonDress": () => (/* binding */ faPersonDress),
+/* harmony export */   "faPersonDressBurst": () => (/* binding */ faPersonDressBurst),
+/* harmony export */   "faPersonDrowning": () => (/* binding */ faPersonDrowning),
+/* harmony export */   "faPersonFalling": () => (/* binding */ faPersonFalling),
+/* harmony export */   "faPersonFallingBurst": () => (/* binding */ faPersonFallingBurst),
+/* harmony export */   "faPersonHalfDress": () => (/* binding */ faPersonHalfDress),
+/* harmony export */   "faPersonHarassing": () => (/* binding */ faPersonHarassing),
+/* harmony export */   "faPersonHiking": () => (/* binding */ faPersonHiking),
+/* harmony export */   "faPersonMilitaryPointing": () => (/* binding */ faPersonMilitaryPointing),
+/* harmony export */   "faPersonMilitaryRifle": () => (/* binding */ faPersonMilitaryRifle),
+/* harmony export */   "faPersonMilitaryToPerson": () => (/* binding */ faPersonMilitaryToPerson),
+/* harmony export */   "faPersonPraying": () => (/* binding */ faPersonPraying),
+/* harmony export */   "faPersonPregnant": () => (/* binding */ faPersonPregnant),
+/* harmony export */   "faPersonRays": () => (/* binding */ faPersonRays),
+/* harmony export */   "faPersonRifle": () => (/* binding */ faPersonRifle),
+/* harmony export */   "faPersonRunning": () => (/* binding */ faPersonRunning),
+/* harmony export */   "faPersonShelter": () => (/* binding */ faPersonShelter),
+/* harmony export */   "faPersonSkating": () => (/* binding */ faPersonSkating),
+/* harmony export */   "faPersonSkiing": () => (/* binding */ faPersonSkiing),
+/* harmony export */   "faPersonSkiingNordic": () => (/* binding */ faPersonSkiingNordic),
+/* harmony export */   "faPersonSnowboarding": () => (/* binding */ faPersonSnowboarding),
+/* harmony export */   "faPersonSwimming": () => (/* binding */ faPersonSwimming),
+/* harmony export */   "faPersonThroughWindow": () => (/* binding */ faPersonThroughWindow),
+/* harmony export */   "faPersonWalking": () => (/* binding */ faPersonWalking),
+/* harmony export */   "faPersonWalkingArrowLoopLeft": () => (/* binding */ faPersonWalkingArrowLoopLeft),
+/* harmony export */   "faPersonWalkingArrowRight": () => (/* binding */ faPersonWalkingArrowRight),
+/* harmony export */   "faPersonWalkingDashedLineArrowRight": () => (/* binding */ faPersonWalkingDashedLineArrowRight),
+/* harmony export */   "faPersonWalkingLuggage": () => (/* binding */ faPersonWalkingLuggage),
+/* harmony export */   "faPersonWalkingWithCane": () => (/* binding */ faPersonWalkingWithCane),
+/* harmony export */   "faPesetaSign": () => (/* binding */ faPesetaSign),
+/* harmony export */   "faPesoSign": () => (/* binding */ faPesoSign),
+/* harmony export */   "faPhone": () => (/* binding */ faPhone),
+/* harmony export */   "faPhoneAlt": () => (/* binding */ faPhoneAlt),
+/* harmony export */   "faPhoneFlip": () => (/* binding */ faPhoneFlip),
+/* harmony export */   "faPhoneSlash": () => (/* binding */ faPhoneSlash),
+/* harmony export */   "faPhoneSquare": () => (/* binding */ faPhoneSquare),
+/* harmony export */   "faPhoneSquareAlt": () => (/* binding */ faPhoneSquareAlt),
+/* harmony export */   "faPhoneVolume": () => (/* binding */ faPhoneVolume),
+/* harmony export */   "faPhotoFilm": () => (/* binding */ faPhotoFilm),
+/* harmony export */   "faPhotoVideo": () => (/* binding */ faPhotoVideo),
+/* harmony export */   "faPieChart": () => (/* binding */ faPieChart),
+/* harmony export */   "faPiggyBank": () => (/* binding */ faPiggyBank),
+/* harmony export */   "faPills": () => (/* binding */ faPills),
+/* harmony export */   "faPingPongPaddleBall": () => (/* binding */ faPingPongPaddleBall),
+/* harmony export */   "faPizzaSlice": () => (/* binding */ faPizzaSlice),
+/* harmony export */   "faPlaceOfWorship": () => (/* binding */ faPlaceOfWorship),
+/* harmony export */   "faPlane": () => (/* binding */ faPlane),
+/* harmony export */   "faPlaneArrival": () => (/* binding */ faPlaneArrival),
+/* harmony export */   "faPlaneCircleCheck": () => (/* binding */ faPlaneCircleCheck),
+/* harmony export */   "faPlaneCircleExclamation": () => (/* binding */ faPlaneCircleExclamation),
+/* harmony export */   "faPlaneCircleXmark": () => (/* binding */ faPlaneCircleXmark),
+/* harmony export */   "faPlaneDeparture": () => (/* binding */ faPlaneDeparture),
+/* harmony export */   "faPlaneLock": () => (/* binding */ faPlaneLock),
+/* harmony export */   "faPlaneSlash": () => (/* binding */ faPlaneSlash),
+/* harmony export */   "faPlaneUp": () => (/* binding */ faPlaneUp),
+/* harmony export */   "faPlantWilt": () => (/* binding */ faPlantWilt),
+/* harmony export */   "faPlateWheat": () => (/* binding */ faPlateWheat),
+/* harmony export */   "faPlay": () => (/* binding */ faPlay),
+/* harmony export */   "faPlayCircle": () => (/* binding */ faPlayCircle),
+/* harmony export */   "faPlug": () => (/* binding */ faPlug),
+/* harmony export */   "faPlugCircleBolt": () => (/* binding */ faPlugCircleBolt),
+/* harmony export */   "faPlugCircleCheck": () => (/* binding */ faPlugCircleCheck),
+/* harmony export */   "faPlugCircleExclamation": () => (/* binding */ faPlugCircleExclamation),
+/* harmony export */   "faPlugCircleMinus": () => (/* binding */ faPlugCircleMinus),
+/* harmony export */   "faPlugCirclePlus": () => (/* binding */ faPlugCirclePlus),
+/* harmony export */   "faPlugCircleXmark": () => (/* binding */ faPlugCircleXmark),
+/* harmony export */   "faPlus": () => (/* binding */ faPlus),
+/* harmony export */   "faPlusCircle": () => (/* binding */ faPlusCircle),
+/* harmony export */   "faPlusMinus": () => (/* binding */ faPlusMinus),
+/* harmony export */   "faPlusSquare": () => (/* binding */ faPlusSquare),
+/* harmony export */   "faPodcast": () => (/* binding */ faPodcast),
+/* harmony export */   "faPoll": () => (/* binding */ faPoll),
+/* harmony export */   "faPollH": () => (/* binding */ faPollH),
+/* harmony export */   "faPoo": () => (/* binding */ faPoo),
+/* harmony export */   "faPooBolt": () => (/* binding */ faPooBolt),
+/* harmony export */   "faPooStorm": () => (/* binding */ faPooStorm),
+/* harmony export */   "faPoop": () => (/* binding */ faPoop),
+/* harmony export */   "faPortrait": () => (/* binding */ faPortrait),
+/* harmony export */   "faPoundSign": () => (/* binding */ faPoundSign),
+/* harmony export */   "faPowerOff": () => (/* binding */ faPowerOff),
+/* harmony export */   "faPray": () => (/* binding */ faPray),
+/* harmony export */   "faPrayingHands": () => (/* binding */ faPrayingHands),
+/* harmony export */   "faPrescription": () => (/* binding */ faPrescription),
+/* harmony export */   "faPrescriptionBottle": () => (/* binding */ faPrescriptionBottle),
+/* harmony export */   "faPrescriptionBottleAlt": () => (/* binding */ faPrescriptionBottleAlt),
+/* harmony export */   "faPrescriptionBottleMedical": () => (/* binding */ faPrescriptionBottleMedical),
+/* harmony export */   "faPrint": () => (/* binding */ faPrint),
+/* harmony export */   "faProcedures": () => (/* binding */ faProcedures),
+/* harmony export */   "faProjectDiagram": () => (/* binding */ faProjectDiagram),
+/* harmony export */   "faPumpMedical": () => (/* binding */ faPumpMedical),
+/* harmony export */   "faPumpSoap": () => (/* binding */ faPumpSoap),
+/* harmony export */   "faPuzzlePiece": () => (/* binding */ faPuzzlePiece),
+/* harmony export */   "faQ": () => (/* binding */ faQ),
+/* harmony export */   "faQrcode": () => (/* binding */ faQrcode),
+/* harmony export */   "faQuestion": () => (/* binding */ faQuestion),
+/* harmony export */   "faQuestionCircle": () => (/* binding */ faQuestionCircle),
+/* harmony export */   "faQuidditch": () => (/* binding */ faQuidditch),
+/* harmony export */   "faQuidditchBroomBall": () => (/* binding */ faQuidditchBroomBall),
+/* harmony export */   "faQuoteLeft": () => (/* binding */ faQuoteLeft),
+/* harmony export */   "faQuoteLeftAlt": () => (/* binding */ faQuoteLeftAlt),
+/* harmony export */   "faQuoteRight": () => (/* binding */ faQuoteRight),
+/* harmony export */   "faQuoteRightAlt": () => (/* binding */ faQuoteRightAlt),
+/* harmony export */   "faQuran": () => (/* binding */ faQuran),
+/* harmony export */   "faR": () => (/* binding */ faR),
+/* harmony export */   "faRadiation": () => (/* binding */ faRadiation),
+/* harmony export */   "faRadiationAlt": () => (/* binding */ faRadiationAlt),
+/* harmony export */   "faRadio": () => (/* binding */ faRadio),
+/* harmony export */   "faRainbow": () => (/* binding */ faRainbow),
+/* harmony export */   "faRandom": () => (/* binding */ faRandom),
+/* harmony export */   "faRankingStar": () => (/* binding */ faRankingStar),
+/* harmony export */   "faReceipt": () => (/* binding */ faReceipt),
+/* harmony export */   "faRecordVinyl": () => (/* binding */ faRecordVinyl),
+/* harmony export */   "faRectangleAd": () => (/* binding */ faRectangleAd),
+/* harmony export */   "faRectangleList": () => (/* binding */ faRectangleList),
+/* harmony export */   "faRectangleTimes": () => (/* binding */ faRectangleTimes),
+/* harmony export */   "faRectangleXmark": () => (/* binding */ faRectangleXmark),
+/* harmony export */   "faRecycle": () => (/* binding */ faRecycle),
+/* harmony export */   "faRedo": () => (/* binding */ faRedo),
+/* harmony export */   "faRedoAlt": () => (/* binding */ faRedoAlt),
+/* harmony export */   "faRefresh": () => (/* binding */ faRefresh),
+/* harmony export */   "faRegistered": () => (/* binding */ faRegistered),
+/* harmony export */   "faRemove": () => (/* binding */ faRemove),
+/* harmony export */   "faRemoveFormat": () => (/* binding */ faRemoveFormat),
+/* harmony export */   "faReorder": () => (/* binding */ faReorder),
+/* harmony export */   "faRepeat": () => (/* binding */ faRepeat),
+/* harmony export */   "faReply": () => (/* binding */ faReply),
+/* harmony export */   "faReplyAll": () => (/* binding */ faReplyAll),
+/* harmony export */   "faRepublican": () => (/* binding */ faRepublican),
+/* harmony export */   "faRestroom": () => (/* binding */ faRestroom),
+/* harmony export */   "faRetweet": () => (/* binding */ faRetweet),
+/* harmony export */   "faRibbon": () => (/* binding */ faRibbon),
+/* harmony export */   "faRightFromBracket": () => (/* binding */ faRightFromBracket),
+/* harmony export */   "faRightLeft": () => (/* binding */ faRightLeft),
+/* harmony export */   "faRightLong": () => (/* binding */ faRightLong),
+/* harmony export */   "faRightToBracket": () => (/* binding */ faRightToBracket),
+/* harmony export */   "faRing": () => (/* binding */ faRing),
+/* harmony export */   "faRmb": () => (/* binding */ faRmb),
+/* harmony export */   "faRoad": () => (/* binding */ faRoad),
+/* harmony export */   "faRoadBarrier": () => (/* binding */ faRoadBarrier),
+/* harmony export */   "faRoadBridge": () => (/* binding */ faRoadBridge),
+/* harmony export */   "faRoadCircleCheck": () => (/* binding */ faRoadCircleCheck),
+/* harmony export */   "faRoadCircleExclamation": () => (/* binding */ faRoadCircleExclamation),
+/* harmony export */   "faRoadCircleXmark": () => (/* binding */ faRoadCircleXmark),
+/* harmony export */   "faRoadLock": () => (/* binding */ faRoadLock),
+/* harmony export */   "faRoadSpikes": () => (/* binding */ faRoadSpikes),
+/* harmony export */   "faRobot": () => (/* binding */ faRobot),
+/* harmony export */   "faRocket": () => (/* binding */ faRocket),
+/* harmony export */   "faRodAsclepius": () => (/* binding */ faRodAsclepius),
+/* harmony export */   "faRodSnake": () => (/* binding */ faRodSnake),
+/* harmony export */   "faRotate": () => (/* binding */ faRotate),
+/* harmony export */   "faRotateBack": () => (/* binding */ faRotateBack),
+/* harmony export */   "faRotateBackward": () => (/* binding */ faRotateBackward),
+/* harmony export */   "faRotateForward": () => (/* binding */ faRotateForward),
+/* harmony export */   "faRotateLeft": () => (/* binding */ faRotateLeft),
+/* harmony export */   "faRotateRight": () => (/* binding */ faRotateRight),
+/* harmony export */   "faRouble": () => (/* binding */ faRouble),
+/* harmony export */   "faRoute": () => (/* binding */ faRoute),
+/* harmony export */   "faRss": () => (/* binding */ faRss),
+/* harmony export */   "faRssSquare": () => (/* binding */ faRssSquare),
+/* harmony export */   "faRub": () => (/* binding */ faRub),
+/* harmony export */   "faRuble": () => (/* binding */ faRuble),
+/* harmony export */   "faRubleSign": () => (/* binding */ faRubleSign),
+/* harmony export */   "faRug": () => (/* binding */ faRug),
+/* harmony export */   "faRuler": () => (/* binding */ faRuler),
+/* harmony export */   "faRulerCombined": () => (/* binding */ faRulerCombined),
+/* harmony export */   "faRulerHorizontal": () => (/* binding */ faRulerHorizontal),
+/* harmony export */   "faRulerVertical": () => (/* binding */ faRulerVertical),
+/* harmony export */   "faRunning": () => (/* binding */ faRunning),
+/* harmony export */   "faRupee": () => (/* binding */ faRupee),
+/* harmony export */   "faRupeeSign": () => (/* binding */ faRupeeSign),
+/* harmony export */   "faRupiahSign": () => (/* binding */ faRupiahSign),
+/* harmony export */   "faS": () => (/* binding */ faS),
+/* harmony export */   "faSackDollar": () => (/* binding */ faSackDollar),
+/* harmony export */   "faSackXmark": () => (/* binding */ faSackXmark),
+/* harmony export */   "faSadCry": () => (/* binding */ faSadCry),
+/* harmony export */   "faSadTear": () => (/* binding */ faSadTear),
+/* harmony export */   "faSailboat": () => (/* binding */ faSailboat),
+/* harmony export */   "faSatellite": () => (/* binding */ faSatellite),
+/* harmony export */   "faSatelliteDish": () => (/* binding */ faSatelliteDish),
+/* harmony export */   "faSave": () => (/* binding */ faSave),
+/* harmony export */   "faScaleBalanced": () => (/* binding */ faScaleBalanced),
+/* harmony export */   "faScaleUnbalanced": () => (/* binding */ faScaleUnbalanced),
+/* harmony export */   "faScaleUnbalancedFlip": () => (/* binding */ faScaleUnbalancedFlip),
+/* harmony export */   "faSchool": () => (/* binding */ faSchool),
+/* harmony export */   "faSchoolCircleCheck": () => (/* binding */ faSchoolCircleCheck),
+/* harmony export */   "faSchoolCircleExclamation": () => (/* binding */ faSchoolCircleExclamation),
+/* harmony export */   "faSchoolCircleXmark": () => (/* binding */ faSchoolCircleXmark),
+/* harmony export */   "faSchoolFlag": () => (/* binding */ faSchoolFlag),
+/* harmony export */   "faSchoolLock": () => (/* binding */ faSchoolLock),
+/* harmony export */   "faScissors": () => (/* binding */ faScissors),
+/* harmony export */   "faScrewdriver": () => (/* binding */ faScrewdriver),
+/* harmony export */   "faScrewdriverWrench": () => (/* binding */ faScrewdriverWrench),
+/* harmony export */   "faScroll": () => (/* binding */ faScroll),
+/* harmony export */   "faScrollTorah": () => (/* binding */ faScrollTorah),
+/* harmony export */   "faSdCard": () => (/* binding */ faSdCard),
+/* harmony export */   "faSearch": () => (/* binding */ faSearch),
+/* harmony export */   "faSearchDollar": () => (/* binding */ faSearchDollar),
+/* harmony export */   "faSearchLocation": () => (/* binding */ faSearchLocation),
+/* harmony export */   "faSearchMinus": () => (/* binding */ faSearchMinus),
+/* harmony export */   "faSearchPlus": () => (/* binding */ faSearchPlus),
+/* harmony export */   "faSection": () => (/* binding */ faSection),
+/* harmony export */   "faSeedling": () => (/* binding */ faSeedling),
+/* harmony export */   "faServer": () => (/* binding */ faServer),
+/* harmony export */   "faShapes": () => (/* binding */ faShapes),
+/* harmony export */   "faShare": () => (/* binding */ faShare),
+/* harmony export */   "faShareAlt": () => (/* binding */ faShareAlt),
+/* harmony export */   "faShareAltSquare": () => (/* binding */ faShareAltSquare),
+/* harmony export */   "faShareFromSquare": () => (/* binding */ faShareFromSquare),
+/* harmony export */   "faShareNodes": () => (/* binding */ faShareNodes),
+/* harmony export */   "faShareSquare": () => (/* binding */ faShareSquare),
+/* harmony export */   "faSheetPlastic": () => (/* binding */ faSheetPlastic),
+/* harmony export */   "faShekel": () => (/* binding */ faShekel),
+/* harmony export */   "faShekelSign": () => (/* binding */ faShekelSign),
+/* harmony export */   "faSheqel": () => (/* binding */ faSheqel),
+/* harmony export */   "faSheqelSign": () => (/* binding */ faSheqelSign),
+/* harmony export */   "faShield": () => (/* binding */ faShield),
+/* harmony export */   "faShieldAlt": () => (/* binding */ faShieldAlt),
+/* harmony export */   "faShieldBlank": () => (/* binding */ faShieldBlank),
+/* harmony export */   "faShieldCat": () => (/* binding */ faShieldCat),
+/* harmony export */   "faShieldDog": () => (/* binding */ faShieldDog),
+/* harmony export */   "faShieldHalved": () => (/* binding */ faShieldHalved),
+/* harmony export */   "faShieldHeart": () => (/* binding */ faShieldHeart),
+/* harmony export */   "faShieldVirus": () => (/* binding */ faShieldVirus),
+/* harmony export */   "faShip": () => (/* binding */ faShip),
+/* harmony export */   "faShippingFast": () => (/* binding */ faShippingFast),
+/* harmony export */   "faShirt": () => (/* binding */ faShirt),
+/* harmony export */   "faShoePrints": () => (/* binding */ faShoePrints),
+/* harmony export */   "faShop": () => (/* binding */ faShop),
+/* harmony export */   "faShopLock": () => (/* binding */ faShopLock),
+/* harmony export */   "faShopSlash": () => (/* binding */ faShopSlash),
+/* harmony export */   "faShoppingBag": () => (/* binding */ faShoppingBag),
+/* harmony export */   "faShoppingBasket": () => (/* binding */ faShoppingBasket),
+/* harmony export */   "faShoppingCart": () => (/* binding */ faShoppingCart),
+/* harmony export */   "faShower": () => (/* binding */ faShower),
+/* harmony export */   "faShrimp": () => (/* binding */ faShrimp),
+/* harmony export */   "faShuffle": () => (/* binding */ faShuffle),
+/* harmony export */   "faShuttleSpace": () => (/* binding */ faShuttleSpace),
+/* harmony export */   "faShuttleVan": () => (/* binding */ faShuttleVan),
+/* harmony export */   "faSign": () => (/* binding */ faSign),
+/* harmony export */   "faSignHanging": () => (/* binding */ faSignHanging),
+/* harmony export */   "faSignIn": () => (/* binding */ faSignIn),
+/* harmony export */   "faSignInAlt": () => (/* binding */ faSignInAlt),
+/* harmony export */   "faSignLanguage": () => (/* binding */ faSignLanguage),
+/* harmony export */   "faSignOut": () => (/* binding */ faSignOut),
+/* harmony export */   "faSignOutAlt": () => (/* binding */ faSignOutAlt),
+/* harmony export */   "faSignal": () => (/* binding */ faSignal),
+/* harmony export */   "faSignal5": () => (/* binding */ faSignal5),
+/* harmony export */   "faSignalPerfect": () => (/* binding */ faSignalPerfect),
+/* harmony export */   "faSignature": () => (/* binding */ faSignature),
+/* harmony export */   "faSigning": () => (/* binding */ faSigning),
+/* harmony export */   "faSignsPost": () => (/* binding */ faSignsPost),
+/* harmony export */   "faSimCard": () => (/* binding */ faSimCard),
+/* harmony export */   "faSink": () => (/* binding */ faSink),
+/* harmony export */   "faSitemap": () => (/* binding */ faSitemap),
+/* harmony export */   "faSkating": () => (/* binding */ faSkating),
+/* harmony export */   "faSkiing": () => (/* binding */ faSkiing),
+/* harmony export */   "faSkiingNordic": () => (/* binding */ faSkiingNordic),
+/* harmony export */   "faSkull": () => (/* binding */ faSkull),
+/* harmony export */   "faSkullCrossbones": () => (/* binding */ faSkullCrossbones),
+/* harmony export */   "faSlash": () => (/* binding */ faSlash),
+/* harmony export */   "faSleigh": () => (/* binding */ faSleigh),
+/* harmony export */   "faSliders": () => (/* binding */ faSliders),
+/* harmony export */   "faSlidersH": () => (/* binding */ faSlidersH),
+/* harmony export */   "faSmile": () => (/* binding */ faSmile),
+/* harmony export */   "faSmileBeam": () => (/* binding */ faSmileBeam),
+/* harmony export */   "faSmileWink": () => (/* binding */ faSmileWink),
+/* harmony export */   "faSmog": () => (/* binding */ faSmog),
+/* harmony export */   "faSmoking": () => (/* binding */ faSmoking),
+/* harmony export */   "faSmokingBan": () => (/* binding */ faSmokingBan),
+/* harmony export */   "faSms": () => (/* binding */ faSms),
+/* harmony export */   "faSnowboarding": () => (/* binding */ faSnowboarding),
+/* harmony export */   "faSnowflake": () => (/* binding */ faSnowflake),
+/* harmony export */   "faSnowman": () => (/* binding */ faSnowman),
+/* harmony export */   "faSnowplow": () => (/* binding */ faSnowplow),
+/* harmony export */   "faSoap": () => (/* binding */ faSoap),
+/* harmony export */   "faSoccerBall": () => (/* binding */ faSoccerBall),
+/* harmony export */   "faSocks": () => (/* binding */ faSocks),
+/* harmony export */   "faSolarPanel": () => (/* binding */ faSolarPanel),
+/* harmony export */   "faSort": () => (/* binding */ faSort),
+/* harmony export */   "faSortAlphaAsc": () => (/* binding */ faSortAlphaAsc),
+/* harmony export */   "faSortAlphaDesc": () => (/* binding */ faSortAlphaDesc),
+/* harmony export */   "faSortAlphaDown": () => (/* binding */ faSortAlphaDown),
+/* harmony export */   "faSortAlphaDownAlt": () => (/* binding */ faSortAlphaDownAlt),
+/* harmony export */   "faSortAlphaUp": () => (/* binding */ faSortAlphaUp),
+/* harmony export */   "faSortAlphaUpAlt": () => (/* binding */ faSortAlphaUpAlt),
+/* harmony export */   "faSortAmountAsc": () => (/* binding */ faSortAmountAsc),
+/* harmony export */   "faSortAmountDesc": () => (/* binding */ faSortAmountDesc),
+/* harmony export */   "faSortAmountDown": () => (/* binding */ faSortAmountDown),
+/* harmony export */   "faSortAmountDownAlt": () => (/* binding */ faSortAmountDownAlt),
+/* harmony export */   "faSortAmountUp": () => (/* binding */ faSortAmountUp),
+/* harmony export */   "faSortAmountUpAlt": () => (/* binding */ faSortAmountUpAlt),
+/* harmony export */   "faSortAsc": () => (/* binding */ faSortAsc),
+/* harmony export */   "faSortDesc": () => (/* binding */ faSortDesc),
+/* harmony export */   "faSortDown": () => (/* binding */ faSortDown),
+/* harmony export */   "faSortNumericAsc": () => (/* binding */ faSortNumericAsc),
+/* harmony export */   "faSortNumericDesc": () => (/* binding */ faSortNumericDesc),
+/* harmony export */   "faSortNumericDown": () => (/* binding */ faSortNumericDown),
+/* harmony export */   "faSortNumericDownAlt": () => (/* binding */ faSortNumericDownAlt),
+/* harmony export */   "faSortNumericUp": () => (/* binding */ faSortNumericUp),
+/* harmony export */   "faSortNumericUpAlt": () => (/* binding */ faSortNumericUpAlt),
+/* harmony export */   "faSortUp": () => (/* binding */ faSortUp),
+/* harmony export */   "faSpa": () => (/* binding */ faSpa),
+/* harmony export */   "faSpaceShuttle": () => (/* binding */ faSpaceShuttle),
+/* harmony export */   "faSpaghettiMonsterFlying": () => (/* binding */ faSpaghettiMonsterFlying),
+/* harmony export */   "faSpellCheck": () => (/* binding */ faSpellCheck),
+/* harmony export */   "faSpider": () => (/* binding */ faSpider),
+/* harmony export */   "faSpinner": () => (/* binding */ faSpinner),
+/* harmony export */   "faSplotch": () => (/* binding */ faSplotch),
+/* harmony export */   "faSpoon": () => (/* binding */ faSpoon),
+/* harmony export */   "faSprayCan": () => (/* binding */ faSprayCan),
+/* harmony export */   "faSprayCanSparkles": () => (/* binding */ faSprayCanSparkles),
+/* harmony export */   "faSprout": () => (/* binding */ faSprout),
+/* harmony export */   "faSquare": () => (/* binding */ faSquare),
+/* harmony export */   "faSquareArrowUpRight": () => (/* binding */ faSquareArrowUpRight),
+/* harmony export */   "faSquareCaretDown": () => (/* binding */ faSquareCaretDown),
+/* harmony export */   "faSquareCaretLeft": () => (/* binding */ faSquareCaretLeft),
+/* harmony export */   "faSquareCaretRight": () => (/* binding */ faSquareCaretRight),
+/* harmony export */   "faSquareCaretUp": () => (/* binding */ faSquareCaretUp),
+/* harmony export */   "faSquareCheck": () => (/* binding */ faSquareCheck),
+/* harmony export */   "faSquareEnvelope": () => (/* binding */ faSquareEnvelope),
+/* harmony export */   "faSquareFull": () => (/* binding */ faSquareFull),
+/* harmony export */   "faSquareH": () => (/* binding */ faSquareH),
+/* harmony export */   "faSquareMinus": () => (/* binding */ faSquareMinus),
+/* harmony export */   "faSquareNfi": () => (/* binding */ faSquareNfi),
+/* harmony export */   "faSquareParking": () => (/* binding */ faSquareParking),
+/* harmony export */   "faSquarePen": () => (/* binding */ faSquarePen),
+/* harmony export */   "faSquarePersonConfined": () => (/* binding */ faSquarePersonConfined),
+/* harmony export */   "faSquarePhone": () => (/* binding */ faSquarePhone),
+/* harmony export */   "faSquarePhoneFlip": () => (/* binding */ faSquarePhoneFlip),
+/* harmony export */   "faSquarePlus": () => (/* binding */ faSquarePlus),
+/* harmony export */   "faSquarePollHorizontal": () => (/* binding */ faSquarePollHorizontal),
+/* harmony export */   "faSquarePollVertical": () => (/* binding */ faSquarePollVertical),
+/* harmony export */   "faSquareRootAlt": () => (/* binding */ faSquareRootAlt),
+/* harmony export */   "faSquareRootVariable": () => (/* binding */ faSquareRootVariable),
+/* harmony export */   "faSquareRss": () => (/* binding */ faSquareRss),
+/* harmony export */   "faSquareShareNodes": () => (/* binding */ faSquareShareNodes),
+/* harmony export */   "faSquareUpRight": () => (/* binding */ faSquareUpRight),
+/* harmony export */   "faSquareVirus": () => (/* binding */ faSquareVirus),
+/* harmony export */   "faSquareXmark": () => (/* binding */ faSquareXmark),
+/* harmony export */   "faStaffAesculapius": () => (/* binding */ faStaffAesculapius),
+/* harmony export */   "faStaffSnake": () => (/* binding */ faStaffSnake),
+/* harmony export */   "faStairs": () => (/* binding */ faStairs),
+/* harmony export */   "faStamp": () => (/* binding */ faStamp),
+/* harmony export */   "faStapler": () => (/* binding */ faStapler),
+/* harmony export */   "faStar": () => (/* binding */ faStar),
+/* harmony export */   "faStarAndCrescent": () => (/* binding */ faStarAndCrescent),
+/* harmony export */   "faStarHalf": () => (/* binding */ faStarHalf),
+/* harmony export */   "faStarHalfAlt": () => (/* binding */ faStarHalfAlt),
+/* harmony export */   "faStarHalfStroke": () => (/* binding */ faStarHalfStroke),
+/* harmony export */   "faStarOfDavid": () => (/* binding */ faStarOfDavid),
+/* harmony export */   "faStarOfLife": () => (/* binding */ faStarOfLife),
+/* harmony export */   "faStepBackward": () => (/* binding */ faStepBackward),
+/* harmony export */   "faStepForward": () => (/* binding */ faStepForward),
+/* harmony export */   "faSterlingSign": () => (/* binding */ faSterlingSign),
+/* harmony export */   "faStethoscope": () => (/* binding */ faStethoscope),
+/* harmony export */   "faStickyNote": () => (/* binding */ faStickyNote),
+/* harmony export */   "faStop": () => (/* binding */ faStop),
+/* harmony export */   "faStopCircle": () => (/* binding */ faStopCircle),
+/* harmony export */   "faStopwatch": () => (/* binding */ faStopwatch),
+/* harmony export */   "faStopwatch20": () => (/* binding */ faStopwatch20),
+/* harmony export */   "faStore": () => (/* binding */ faStore),
+/* harmony export */   "faStoreAlt": () => (/* binding */ faStoreAlt),
+/* harmony export */   "faStoreAltSlash": () => (/* binding */ faStoreAltSlash),
+/* harmony export */   "faStoreSlash": () => (/* binding */ faStoreSlash),
+/* harmony export */   "faStream": () => (/* binding */ faStream),
+/* harmony export */   "faStreetView": () => (/* binding */ faStreetView),
+/* harmony export */   "faStrikethrough": () => (/* binding */ faStrikethrough),
+/* harmony export */   "faStroopwafel": () => (/* binding */ faStroopwafel),
+/* harmony export */   "faSubscript": () => (/* binding */ faSubscript),
+/* harmony export */   "faSubtract": () => (/* binding */ faSubtract),
+/* harmony export */   "faSubway": () => (/* binding */ faSubway),
+/* harmony export */   "faSuitcase": () => (/* binding */ faSuitcase),
+/* harmony export */   "faSuitcaseMedical": () => (/* binding */ faSuitcaseMedical),
+/* harmony export */   "faSuitcaseRolling": () => (/* binding */ faSuitcaseRolling),
+/* harmony export */   "faSun": () => (/* binding */ faSun),
+/* harmony export */   "faSunPlantWilt": () => (/* binding */ faSunPlantWilt),
+/* harmony export */   "faSuperscript": () => (/* binding */ faSuperscript),
+/* harmony export */   "faSurprise": () => (/* binding */ faSurprise),
+/* harmony export */   "faSwatchbook": () => (/* binding */ faSwatchbook),
+/* harmony export */   "faSwimmer": () => (/* binding */ faSwimmer),
+/* harmony export */   "faSwimmingPool": () => (/* binding */ faSwimmingPool),
+/* harmony export */   "faSynagogue": () => (/* binding */ faSynagogue),
+/* harmony export */   "faSync": () => (/* binding */ faSync),
+/* harmony export */   "faSyncAlt": () => (/* binding */ faSyncAlt),
+/* harmony export */   "faSyringe": () => (/* binding */ faSyringe),
+/* harmony export */   "faT": () => (/* binding */ faT),
+/* harmony export */   "faTShirt": () => (/* binding */ faTShirt),
+/* harmony export */   "faTable": () => (/* binding */ faTable),
+/* harmony export */   "faTableCells": () => (/* binding */ faTableCells),
+/* harmony export */   "faTableCellsLarge": () => (/* binding */ faTableCellsLarge),
+/* harmony export */   "faTableColumns": () => (/* binding */ faTableColumns),
+/* harmony export */   "faTableList": () => (/* binding */ faTableList),
+/* harmony export */   "faTableTennis": () => (/* binding */ faTableTennis),
+/* harmony export */   "faTableTennisPaddleBall": () => (/* binding */ faTableTennisPaddleBall),
+/* harmony export */   "faTablet": () => (/* binding */ faTablet),
+/* harmony export */   "faTabletAlt": () => (/* binding */ faTabletAlt),
+/* harmony export */   "faTabletAndroid": () => (/* binding */ faTabletAndroid),
+/* harmony export */   "faTabletButton": () => (/* binding */ faTabletButton),
+/* harmony export */   "faTabletScreenButton": () => (/* binding */ faTabletScreenButton),
+/* harmony export */   "faTablets": () => (/* binding */ faTablets),
+/* harmony export */   "faTachographDigital": () => (/* binding */ faTachographDigital),
+/* harmony export */   "faTachometer": () => (/* binding */ faTachometer),
+/* harmony export */   "faTachometerAlt": () => (/* binding */ faTachometerAlt),
+/* harmony export */   "faTachometerAltAverage": () => (/* binding */ faTachometerAltAverage),
+/* harmony export */   "faTachometerAltFast": () => (/* binding */ faTachometerAltFast),
+/* harmony export */   "faTachometerAverage": () => (/* binding */ faTachometerAverage),
+/* harmony export */   "faTachometerFast": () => (/* binding */ faTachometerFast),
+/* harmony export */   "faTag": () => (/* binding */ faTag),
+/* harmony export */   "faTags": () => (/* binding */ faTags),
+/* harmony export */   "faTanakh": () => (/* binding */ faTanakh),
+/* harmony export */   "faTape": () => (/* binding */ faTape),
+/* harmony export */   "faTarp": () => (/* binding */ faTarp),
+/* harmony export */   "faTarpDroplet": () => (/* binding */ faTarpDroplet),
+/* harmony export */   "faTasks": () => (/* binding */ faTasks),
+/* harmony export */   "faTasksAlt": () => (/* binding */ faTasksAlt),
+/* harmony export */   "faTaxi": () => (/* binding */ faTaxi),
+/* harmony export */   "faTeeth": () => (/* binding */ faTeeth),
+/* harmony export */   "faTeethOpen": () => (/* binding */ faTeethOpen),
+/* harmony export */   "faTeletype": () => (/* binding */ faTeletype),
+/* harmony export */   "faTelevision": () => (/* binding */ faTelevision),
+/* harmony export */   "faTemperature0": () => (/* binding */ faTemperature0),
+/* harmony export */   "faTemperature1": () => (/* binding */ faTemperature1),
+/* harmony export */   "faTemperature2": () => (/* binding */ faTemperature2),
+/* harmony export */   "faTemperature3": () => (/* binding */ faTemperature3),
+/* harmony export */   "faTemperature4": () => (/* binding */ faTemperature4),
+/* harmony export */   "faTemperatureArrowDown": () => (/* binding */ faTemperatureArrowDown),
+/* harmony export */   "faTemperatureArrowUp": () => (/* binding */ faTemperatureArrowUp),
+/* harmony export */   "faTemperatureDown": () => (/* binding */ faTemperatureDown),
+/* harmony export */   "faTemperatureEmpty": () => (/* binding */ faTemperatureEmpty),
+/* harmony export */   "faTemperatureFull": () => (/* binding */ faTemperatureFull),
+/* harmony export */   "faTemperatureHalf": () => (/* binding */ faTemperatureHalf),
+/* harmony export */   "faTemperatureHigh": () => (/* binding */ faTemperatureHigh),
+/* harmony export */   "faTemperatureLow": () => (/* binding */ faTemperatureLow),
+/* harmony export */   "faTemperatureQuarter": () => (/* binding */ faTemperatureQuarter),
+/* harmony export */   "faTemperatureThreeQuarters": () => (/* binding */ faTemperatureThreeQuarters),
+/* harmony export */   "faTemperatureUp": () => (/* binding */ faTemperatureUp),
+/* harmony export */   "faTenge": () => (/* binding */ faTenge),
+/* harmony export */   "faTengeSign": () => (/* binding */ faTengeSign),
+/* harmony export */   "faTent": () => (/* binding */ faTent),
+/* harmony export */   "faTentArrowDownToLine": () => (/* binding */ faTentArrowDownToLine),
+/* harmony export */   "faTentArrowLeftRight": () => (/* binding */ faTentArrowLeftRight),
+/* harmony export */   "faTentArrowTurnLeft": () => (/* binding */ faTentArrowTurnLeft),
+/* harmony export */   "faTentArrowsDown": () => (/* binding */ faTentArrowsDown),
+/* harmony export */   "faTents": () => (/* binding */ faTents),
+/* harmony export */   "faTerminal": () => (/* binding */ faTerminal),
+/* harmony export */   "faTextHeight": () => (/* binding */ faTextHeight),
+/* harmony export */   "faTextSlash": () => (/* binding */ faTextSlash),
+/* harmony export */   "faTextWidth": () => (/* binding */ faTextWidth),
+/* harmony export */   "faTh": () => (/* binding */ faTh),
+/* harmony export */   "faThLarge": () => (/* binding */ faThLarge),
+/* harmony export */   "faThList": () => (/* binding */ faThList),
+/* harmony export */   "faTheaterMasks": () => (/* binding */ faTheaterMasks),
+/* harmony export */   "faThermometer": () => (/* binding */ faThermometer),
+/* harmony export */   "faThermometer0": () => (/* binding */ faThermometer0),
+/* harmony export */   "faThermometer1": () => (/* binding */ faThermometer1),
+/* harmony export */   "faThermometer2": () => (/* binding */ faThermometer2),
+/* harmony export */   "faThermometer3": () => (/* binding */ faThermometer3),
+/* harmony export */   "faThermometer4": () => (/* binding */ faThermometer4),
+/* harmony export */   "faThermometerEmpty": () => (/* binding */ faThermometerEmpty),
+/* harmony export */   "faThermometerFull": () => (/* binding */ faThermometerFull),
+/* harmony export */   "faThermometerHalf": () => (/* binding */ faThermometerHalf),
+/* harmony export */   "faThermometerQuarter": () => (/* binding */ faThermometerQuarter),
+/* harmony export */   "faThermometerThreeQuarters": () => (/* binding */ faThermometerThreeQuarters),
+/* harmony export */   "faThumbTack": () => (/* binding */ faThumbTack),
+/* harmony export */   "faThumbsDown": () => (/* binding */ faThumbsDown),
+/* harmony export */   "faThumbsUp": () => (/* binding */ faThumbsUp),
+/* harmony export */   "faThumbtack": () => (/* binding */ faThumbtack),
+/* harmony export */   "faThunderstorm": () => (/* binding */ faThunderstorm),
+/* harmony export */   "faTicket": () => (/* binding */ faTicket),
+/* harmony export */   "faTicketAlt": () => (/* binding */ faTicketAlt),
+/* harmony export */   "faTicketSimple": () => (/* binding */ faTicketSimple),
+/* harmony export */   "faTimeline": () => (/* binding */ faTimeline),
+/* harmony export */   "faTimes": () => (/* binding */ faTimes),
+/* harmony export */   "faTimesCircle": () => (/* binding */ faTimesCircle),
+/* harmony export */   "faTimesRectangle": () => (/* binding */ faTimesRectangle),
+/* harmony export */   "faTimesSquare": () => (/* binding */ faTimesSquare),
+/* harmony export */   "faTint": () => (/* binding */ faTint),
+/* harmony export */   "faTintSlash": () => (/* binding */ faTintSlash),
+/* harmony export */   "faTired": () => (/* binding */ faTired),
+/* harmony export */   "faToggleOff": () => (/* binding */ faToggleOff),
+/* harmony export */   "faToggleOn": () => (/* binding */ faToggleOn),
+/* harmony export */   "faToilet": () => (/* binding */ faToilet),
+/* harmony export */   "faToiletPaper": () => (/* binding */ faToiletPaper),
+/* harmony export */   "faToiletPaperSlash": () => (/* binding */ faToiletPaperSlash),
+/* harmony export */   "faToiletPortable": () => (/* binding */ faToiletPortable),
+/* harmony export */   "faToiletsPortable": () => (/* binding */ faToiletsPortable),
+/* harmony export */   "faToolbox": () => (/* binding */ faToolbox),
+/* harmony export */   "faTools": () => (/* binding */ faTools),
+/* harmony export */   "faTooth": () => (/* binding */ faTooth),
+/* harmony export */   "faTorah": () => (/* binding */ faTorah),
+/* harmony export */   "faToriiGate": () => (/* binding */ faToriiGate),
+/* harmony export */   "faTornado": () => (/* binding */ faTornado),
+/* harmony export */   "faTowerBroadcast": () => (/* binding */ faTowerBroadcast),
+/* harmony export */   "faTowerCell": () => (/* binding */ faTowerCell),
+/* harmony export */   "faTowerObservation": () => (/* binding */ faTowerObservation),
+/* harmony export */   "faTractor": () => (/* binding */ faTractor),
+/* harmony export */   "faTrademark": () => (/* binding */ faTrademark),
+/* harmony export */   "faTrafficLight": () => (/* binding */ faTrafficLight),
+/* harmony export */   "faTrailer": () => (/* binding */ faTrailer),
+/* harmony export */   "faTrain": () => (/* binding */ faTrain),
+/* harmony export */   "faTrainSubway": () => (/* binding */ faTrainSubway),
+/* harmony export */   "faTrainTram": () => (/* binding */ faTrainTram),
+/* harmony export */   "faTram": () => (/* binding */ faTram),
+/* harmony export */   "faTransgender": () => (/* binding */ faTransgender),
+/* harmony export */   "faTransgenderAlt": () => (/* binding */ faTransgenderAlt),
+/* harmony export */   "faTrash": () => (/* binding */ faTrash),
+/* harmony export */   "faTrashAlt": () => (/* binding */ faTrashAlt),
+/* harmony export */   "faTrashArrowUp": () => (/* binding */ faTrashArrowUp),
+/* harmony export */   "faTrashCan": () => (/* binding */ faTrashCan),
+/* harmony export */   "faTrashCanArrowUp": () => (/* binding */ faTrashCanArrowUp),
+/* harmony export */   "faTrashRestore": () => (/* binding */ faTrashRestore),
+/* harmony export */   "faTrashRestoreAlt": () => (/* binding */ faTrashRestoreAlt),
+/* harmony export */   "faTree": () => (/* binding */ faTree),
+/* harmony export */   "faTreeCity": () => (/* binding */ faTreeCity),
+/* harmony export */   "faTriangleCircleSquare": () => (/* binding */ faTriangleCircleSquare),
+/* harmony export */   "faTriangleExclamation": () => (/* binding */ faTriangleExclamation),
+/* harmony export */   "faTrophy": () => (/* binding */ faTrophy),
+/* harmony export */   "faTrowel": () => (/* binding */ faTrowel),
+/* harmony export */   "faTrowelBricks": () => (/* binding */ faTrowelBricks),
+/* harmony export */   "faTruck": () => (/* binding */ faTruck),
+/* harmony export */   "faTruckArrowRight": () => (/* binding */ faTruckArrowRight),
+/* harmony export */   "faTruckDroplet": () => (/* binding */ faTruckDroplet),
+/* harmony export */   "faTruckFast": () => (/* binding */ faTruckFast),
+/* harmony export */   "faTruckField": () => (/* binding */ faTruckField),
+/* harmony export */   "faTruckFieldUn": () => (/* binding */ faTruckFieldUn),
+/* harmony export */   "faTruckFront": () => (/* binding */ faTruckFront),
+/* harmony export */   "faTruckLoading": () => (/* binding */ faTruckLoading),
+/* harmony export */   "faTruckMedical": () => (/* binding */ faTruckMedical),
+/* harmony export */   "faTruckMonster": () => (/* binding */ faTruckMonster),
+/* harmony export */   "faTruckMoving": () => (/* binding */ faTruckMoving),
+/* harmony export */   "faTruckPickup": () => (/* binding */ faTruckPickup),
+/* harmony export */   "faTruckPlane": () => (/* binding */ faTruckPlane),
+/* harmony export */   "faTruckRampBox": () => (/* binding */ faTruckRampBox),
+/* harmony export */   "faTry": () => (/* binding */ faTry),
+/* harmony export */   "faTshirt": () => (/* binding */ faTshirt),
+/* harmony export */   "faTty": () => (/* binding */ faTty),
+/* harmony export */   "faTurkishLira": () => (/* binding */ faTurkishLira),
+/* harmony export */   "faTurkishLiraSign": () => (/* binding */ faTurkishLiraSign),
+/* harmony export */   "faTurnDown": () => (/* binding */ faTurnDown),
+/* harmony export */   "faTurnUp": () => (/* binding */ faTurnUp),
+/* harmony export */   "faTv": () => (/* binding */ faTv),
+/* harmony export */   "faTvAlt": () => (/* binding */ faTvAlt),
+/* harmony export */   "faU": () => (/* binding */ faU),
+/* harmony export */   "faUmbrella": () => (/* binding */ faUmbrella),
+/* harmony export */   "faUmbrellaBeach": () => (/* binding */ faUmbrellaBeach),
+/* harmony export */   "faUnderline": () => (/* binding */ faUnderline),
+/* harmony export */   "faUndo": () => (/* binding */ faUndo),
+/* harmony export */   "faUndoAlt": () => (/* binding */ faUndoAlt),
+/* harmony export */   "faUniversalAccess": () => (/* binding */ faUniversalAccess),
+/* harmony export */   "faUniversity": () => (/* binding */ faUniversity),
+/* harmony export */   "faUnlink": () => (/* binding */ faUnlink),
+/* harmony export */   "faUnlock": () => (/* binding */ faUnlock),
+/* harmony export */   "faUnlockAlt": () => (/* binding */ faUnlockAlt),
+/* harmony export */   "faUnlockKeyhole": () => (/* binding */ faUnlockKeyhole),
+/* harmony export */   "faUnsorted": () => (/* binding */ faUnsorted),
+/* harmony export */   "faUpDown": () => (/* binding */ faUpDown),
+/* harmony export */   "faUpDownLeftRight": () => (/* binding */ faUpDownLeftRight),
+/* harmony export */   "faUpLong": () => (/* binding */ faUpLong),
+/* harmony export */   "faUpRightAndDownLeftFromCenter": () => (/* binding */ faUpRightAndDownLeftFromCenter),
+/* harmony export */   "faUpRightFromSquare": () => (/* binding */ faUpRightFromSquare),
+/* harmony export */   "faUpload": () => (/* binding */ faUpload),
+/* harmony export */   "faUsd": () => (/* binding */ faUsd),
+/* harmony export */   "faUser": () => (/* binding */ faUser),
+/* harmony export */   "faUserAlt": () => (/* binding */ faUserAlt),
+/* harmony export */   "faUserAltSlash": () => (/* binding */ faUserAltSlash),
+/* harmony export */   "faUserAstronaut": () => (/* binding */ faUserAstronaut),
+/* harmony export */   "faUserCheck": () => (/* binding */ faUserCheck),
+/* harmony export */   "faUserCircle": () => (/* binding */ faUserCircle),
+/* harmony export */   "faUserClock": () => (/* binding */ faUserClock),
+/* harmony export */   "faUserCog": () => (/* binding */ faUserCog),
+/* harmony export */   "faUserDoctor": () => (/* binding */ faUserDoctor),
+/* harmony export */   "faUserEdit": () => (/* binding */ faUserEdit),
+/* harmony export */   "faUserFriends": () => (/* binding */ faUserFriends),
+/* harmony export */   "faUserGear": () => (/* binding */ faUserGear),
+/* harmony export */   "faUserGraduate": () => (/* binding */ faUserGraduate),
+/* harmony export */   "faUserGroup": () => (/* binding */ faUserGroup),
+/* harmony export */   "faUserInjured": () => (/* binding */ faUserInjured),
+/* harmony export */   "faUserLarge": () => (/* binding */ faUserLarge),
+/* harmony export */   "faUserLargeSlash": () => (/* binding */ faUserLargeSlash),
+/* harmony export */   "faUserLock": () => (/* binding */ faUserLock),
+/* harmony export */   "faUserMd": () => (/* binding */ faUserMd),
+/* harmony export */   "faUserMinus": () => (/* binding */ faUserMinus),
+/* harmony export */   "faUserNinja": () => (/* binding */ faUserNinja),
+/* harmony export */   "faUserNurse": () => (/* binding */ faUserNurse),
+/* harmony export */   "faUserPen": () => (/* binding */ faUserPen),
+/* harmony export */   "faUserPlus": () => (/* binding */ faUserPlus),
+/* harmony export */   "faUserSecret": () => (/* binding */ faUserSecret),
+/* harmony export */   "faUserShield": () => (/* binding */ faUserShield),
+/* harmony export */   "faUserSlash": () => (/* binding */ faUserSlash),
+/* harmony export */   "faUserTag": () => (/* binding */ faUserTag),
+/* harmony export */   "faUserTie": () => (/* binding */ faUserTie),
+/* harmony export */   "faUserTimes": () => (/* binding */ faUserTimes),
+/* harmony export */   "faUserXmark": () => (/* binding */ faUserXmark),
+/* harmony export */   "faUsers": () => (/* binding */ faUsers),
+/* harmony export */   "faUsersBetweenLines": () => (/* binding */ faUsersBetweenLines),
+/* harmony export */   "faUsersCog": () => (/* binding */ faUsersCog),
+/* harmony export */   "faUsersGear": () => (/* binding */ faUsersGear),
+/* harmony export */   "faUsersLine": () => (/* binding */ faUsersLine),
+/* harmony export */   "faUsersRays": () => (/* binding */ faUsersRays),
+/* harmony export */   "faUsersRectangle": () => (/* binding */ faUsersRectangle),
+/* harmony export */   "faUsersSlash": () => (/* binding */ faUsersSlash),
+/* harmony export */   "faUsersViewfinder": () => (/* binding */ faUsersViewfinder),
+/* harmony export */   "faUtensilSpoon": () => (/* binding */ faUtensilSpoon),
+/* harmony export */   "faUtensils": () => (/* binding */ faUtensils),
+/* harmony export */   "faV": () => (/* binding */ faV),
+/* harmony export */   "faVanShuttle": () => (/* binding */ faVanShuttle),
+/* harmony export */   "faVault": () => (/* binding */ faVault),
+/* harmony export */   "faVcard": () => (/* binding */ faVcard),
+/* harmony export */   "faVectorSquare": () => (/* binding */ faVectorSquare),
+/* harmony export */   "faVenus": () => (/* binding */ faVenus),
+/* harmony export */   "faVenusDouble": () => (/* binding */ faVenusDouble),
+/* harmony export */   "faVenusMars": () => (/* binding */ faVenusMars),
+/* harmony export */   "faVest": () => (/* binding */ faVest),
+/* harmony export */   "faVestPatches": () => (/* binding */ faVestPatches),
+/* harmony export */   "faVial": () => (/* binding */ faVial),
+/* harmony export */   "faVialCircleCheck": () => (/* binding */ faVialCircleCheck),
+/* harmony export */   "faVialVirus": () => (/* binding */ faVialVirus),
+/* harmony export */   "faVials": () => (/* binding */ faVials),
+/* harmony export */   "faVideo": () => (/* binding */ faVideo),
+/* harmony export */   "faVideoCamera": () => (/* binding */ faVideoCamera),
+/* harmony export */   "faVideoSlash": () => (/* binding */ faVideoSlash),
+/* harmony export */   "faVihara": () => (/* binding */ faVihara),
+/* harmony export */   "faVirus": () => (/* binding */ faVirus),
+/* harmony export */   "faVirusCovid": () => (/* binding */ faVirusCovid),
+/* harmony export */   "faVirusCovidSlash": () => (/* binding */ faVirusCovidSlash),
+/* harmony export */   "faVirusSlash": () => (/* binding */ faVirusSlash),
+/* harmony export */   "faViruses": () => (/* binding */ faViruses),
+/* harmony export */   "faVoicemail": () => (/* binding */ faVoicemail),
+/* harmony export */   "faVolcano": () => (/* binding */ faVolcano),
+/* harmony export */   "faVolleyball": () => (/* binding */ faVolleyball),
+/* harmony export */   "faVolleyballBall": () => (/* binding */ faVolleyballBall),
+/* harmony export */   "faVolumeControlPhone": () => (/* binding */ faVolumeControlPhone),
+/* harmony export */   "faVolumeDown": () => (/* binding */ faVolumeDown),
+/* harmony export */   "faVolumeHigh": () => (/* binding */ faVolumeHigh),
+/* harmony export */   "faVolumeLow": () => (/* binding */ faVolumeLow),
+/* harmony export */   "faVolumeMute": () => (/* binding */ faVolumeMute),
+/* harmony export */   "faVolumeOff": () => (/* binding */ faVolumeOff),
+/* harmony export */   "faVolumeTimes": () => (/* binding */ faVolumeTimes),
+/* harmony export */   "faVolumeUp": () => (/* binding */ faVolumeUp),
+/* harmony export */   "faVolumeXmark": () => (/* binding */ faVolumeXmark),
+/* harmony export */   "faVoteYea": () => (/* binding */ faVoteYea),
+/* harmony export */   "faVrCardboard": () => (/* binding */ faVrCardboard),
+/* harmony export */   "faW": () => (/* binding */ faW),
+/* harmony export */   "faWalkieTalkie": () => (/* binding */ faWalkieTalkie),
+/* harmony export */   "faWalking": () => (/* binding */ faWalking),
+/* harmony export */   "faWallet": () => (/* binding */ faWallet),
+/* harmony export */   "faWandMagic": () => (/* binding */ faWandMagic),
+/* harmony export */   "faWandMagicSparkles": () => (/* binding */ faWandMagicSparkles),
+/* harmony export */   "faWandSparkles": () => (/* binding */ faWandSparkles),
+/* harmony export */   "faWarehouse": () => (/* binding */ faWarehouse),
+/* harmony export */   "faWarning": () => (/* binding */ faWarning),
+/* harmony export */   "faWater": () => (/* binding */ faWater),
+/* harmony export */   "faWaterLadder": () => (/* binding */ faWaterLadder),
+/* harmony export */   "faWaveSquare": () => (/* binding */ faWaveSquare),
+/* harmony export */   "faWeight": () => (/* binding */ faWeight),
+/* harmony export */   "faWeightHanging": () => (/* binding */ faWeightHanging),
+/* harmony export */   "faWeightScale": () => (/* binding */ faWeightScale),
+/* harmony export */   "faWheatAlt": () => (/* binding */ faWheatAlt),
+/* harmony export */   "faWheatAwn": () => (/* binding */ faWheatAwn),
+/* harmony export */   "faWheatAwnCircleExclamation": () => (/* binding */ faWheatAwnCircleExclamation),
+/* harmony export */   "faWheelchair": () => (/* binding */ faWheelchair),
+/* harmony export */   "faWheelchairAlt": () => (/* binding */ faWheelchairAlt),
+/* harmony export */   "faWheelchairMove": () => (/* binding */ faWheelchairMove),
+/* harmony export */   "faWhiskeyGlass": () => (/* binding */ faWhiskeyGlass),
+/* harmony export */   "faWifi": () => (/* binding */ faWifi),
+/* harmony export */   "faWifi3": () => (/* binding */ faWifi3),
+/* harmony export */   "faWifiStrong": () => (/* binding */ faWifiStrong),
+/* harmony export */   "faWind": () => (/* binding */ faWind),
+/* harmony export */   "faWindowClose": () => (/* binding */ faWindowClose),
+/* harmony export */   "faWindowMaximize": () => (/* binding */ faWindowMaximize),
+/* harmony export */   "faWindowMinimize": () => (/* binding */ faWindowMinimize),
+/* harmony export */   "faWindowRestore": () => (/* binding */ faWindowRestore),
+/* harmony export */   "faWineBottle": () => (/* binding */ faWineBottle),
+/* harmony export */   "faWineGlass": () => (/* binding */ faWineGlass),
+/* harmony export */   "faWineGlassAlt": () => (/* binding */ faWineGlassAlt),
+/* harmony export */   "faWineGlassEmpty": () => (/* binding */ faWineGlassEmpty),
+/* harmony export */   "faWon": () => (/* binding */ faWon),
+/* harmony export */   "faWonSign": () => (/* binding */ faWonSign),
+/* harmony export */   "faWorm": () => (/* binding */ faWorm),
+/* harmony export */   "faWrench": () => (/* binding */ faWrench),
+/* harmony export */   "faX": () => (/* binding */ faX),
+/* harmony export */   "faXRay": () => (/* binding */ faXRay),
+/* harmony export */   "faXmark": () => (/* binding */ faXmark),
+/* harmony export */   "faXmarkCircle": () => (/* binding */ faXmarkCircle),
+/* harmony export */   "faXmarkSquare": () => (/* binding */ faXmarkSquare),
+/* harmony export */   "faXmarksLines": () => (/* binding */ faXmarksLines),
+/* harmony export */   "faY": () => (/* binding */ faY),
+/* harmony export */   "faYen": () => (/* binding */ faYen),
+/* harmony export */   "faYenSign": () => (/* binding */ faYenSign),
+/* harmony export */   "faYinYang": () => (/* binding */ faYinYang),
+/* harmony export */   "faZ": () => (/* binding */ faZ),
+/* harmony export */   "faZap": () => (/* binding */ faZap),
+/* harmony export */   "fas": () => (/* binding */ icons),
+/* harmony export */   "prefix": () => (/* binding */ prefix)
 /* harmony export */ });
-/* unused harmony exports fas, prefix, fa0, fa1, fa2, fa3, fa4, fa5, fa6, fa7, fa8, fa9, faFillDrip, faArrowsToCircle, faCircleChevronRight, faChevronCircleRight, faAt, faTrashCan, faTrashAlt, faTextHeight, faUserXmark, faUserTimes, faStethoscope, faMessage, faCommentAlt, faInfo, faDownLeftAndUpRightToCenter, faCompressAlt, faExplosion, faFileLines, faFileAlt, faFileText, faWaveSquare, faRing, faBuildingUn, faDiceThree, faCalendarDays, faCalendarAlt, faAnchorCircleCheck, faBuildingCircleArrowRight, faVolleyball, faVolleyballBall, faArrowsUpToLine, faSortDown, faSortDesc, faCircleMinus, faMinusCircle, faDoorOpen, faRightFromBracket, faSignOutAlt, faAtom, faSoap, faIcons, faHeartMusicCameraBolt, faMicrophoneLinesSlash, faMicrophoneAltSlash, faBridgeCircleCheck, faPumpMedical, faFingerprint, faHandPointRight, faMagnifyingGlassLocation, faSearchLocation, faForwardStep, faStepForward, faFaceSmileBeam, faSmileBeam, faFlagCheckered, faFootball, faFootballBall, faSchoolCircleExclamation, faCrop, faAnglesDown, faAngleDoubleDown, faUsersRectangle, faPeopleRoof, faPeopleLine, faBeerMugEmpty, faBeer, faDiagramPredecessor, faArrowUpLong, faLongArrowUp, faFireFlameSimple, faBurn, faPerson, faMale, faLaptop, faFileCsv, faMenorah, faTruckPlane, faRecordVinyl, faFaceGrinStars, faGrinStars, faBong, faSpaghettiMonsterFlying, faPastafarianism, faArrowDownUpAcrossLine, faSpoon, faUtensilSpoon, faJarWheat, faEnvelopesBulk, faFileCircleExclamation, faCircleH, faHospitalSymbol, faPager, faAddressBook, faContactBook, faStrikethrough, faK, faLandmarkFlag, faPencil, faPencilAlt, faBackward, faCaretRight, faComments, faPaste, faFileClipboard, faCodePullRequest, faClipboardList, faTruckRampBox, faTruckLoading, faUserCheck, faVialVirus, faSheetPlastic, faBlog, faUserNinja, faPersonArrowUpFromLine, faScrollTorah, faTorah, faBroomBall, faQuidditch, faQuidditchBroomBall, faToggleOff, faBoxArchive, faArchive, faPersonDrowning, faArrowDown91, faSortNumericDesc, faSortNumericDownAlt, faFaceGrinTongueSquint, faGrinTongueSquint, faSprayCan, faTruckMonster, faW, faEarthAfrica, faGlobeAfrica, faRainbow, faCircleNotch, faTabletScreenButton, faTabletAlt, faPaw, faCloud, faTrowelBricks, faFaceFlushed, faFlushed, faHospitalUser, faTentArrowLeftRight, faGavel, faLegal, faBinoculars, faMicrophoneSlash, faBoxTissue, faMotorcycle, faBellConcierge, faConciergeBell, faPenRuler, faPencilRuler, faPeopleArrows, faPeopleArrowsLeftRight, faMarsAndVenusBurst, faSquareCaretRight, faCaretSquareRight, faScissors, faCut, faSunPlantWilt, faToiletsPortable, faHockeyPuck, faTable, faMagnifyingGlassArrowRight, faTachographDigital, faDigitalTachograph, faUsersSlash, faClover, faReply, faMailReply, faStarAndCrescent, faHouseFire, faSquareMinus, faMinusSquare, faHelicopter, faCompass, faSquareCaretDown, faCaretSquareDown, faFileCircleQuestion, faLaptopCode, faSwatchbook, faPrescriptionBottle, faNavicon, faPeopleGroup, faHourglassEnd, faHourglass3, faHeartCrack, faHeartBroken, faSquareUpRight, faExternalLinkSquareAlt, faFaceKissBeam, faKissBeam, faFilm, faRulerHorizontal, faPeopleRobbery, faLightbulb, faCaretLeft, faCircleExclamation, faExclamationCircle, faSchoolCircleXmark, faArrowRightFromBracket, faSignOut, faCircleChevronDown, faChevronCircleDown, faUnlockKeyhole, faUnlockAlt, faCloudShowersHeavy, faHeadphonesSimple, faHeadphonesAlt, faSitemap, faCircleDollarToSlot, faDonate, faMemory, faRoadSpikes, faFireBurner, faFlag, faHanukiah, faFeather, faVolumeLow, faVolumeDown, faCommentSlash, faCloudSunRain, faCompress, faWheatAwn, faWheatAlt, faAnkh, faHandsHoldingChild, faAsterisk, faSquareCheck, faCheckSquare, faPesetaSign, faHeading, faHeader, faGhost, faList, faListSquares, faSquarePhoneFlip, faPhoneSquareAlt, faCartPlus, faGamepad, faCircleDot, faDotCircle, faFaceDizzy, faDizzy, faEgg, faHouseMedicalCircleXmark, faCampground, faFolderPlus, faFutbol, faFutbolBall, faSoccerBall, faPaintbrush, faPaintBrush, faLock, faGasPump, faHotTubPerson, faHotTub, faMapLocation, faMapMarked, faHouseFloodWater, faTree, faBridgeLock, faSackDollar, faPenToSquare, faEdit, faCarSide, faShareNodes, faShareAlt, faHeartCircleMinus, faHourglassHalf, faHourglass2, faMicroscope, faSink, faBagShopping, faShoppingBag, faArrowDownZA, faSortAlphaDesc, faSortAlphaDownAlt, faMitten, faPersonRays, faEyeSlash, faFlaskVial, faHand, faHandPaper, faOm, faWorm, faHouseCircleXmark, faPlug, faChevronUp, faHandSpock, faStopwatch, faFaceKiss, faKiss, faBridgeCircleXmark, faFaceGrinTongue, faGrinTongue, faChessBishop, faFaceGrinWink, faGrinWink, faEarDeaf, faDeaf, faDeafness, faHardOfHearing, faRoadCircleCheck, faDiceFive, faSquareRss, faRssSquare, faLandMineOn, faICursor, faStamp, faStairs, faI, faHryvniaSign, faHryvnia, faPills, faFaceGrinWide, faGrinAlt, faTooth, faV, faBangladeshiTakaSign, faBicycle, faStaffSnake, faRodAsclepius, faRodSnake, faStaffAesculapius, faHeadSideCoughSlash, faTruckMedical, faAmbulance, faWheatAwnCircleExclamation, faSnowman, faMortarPestle, faRoadBarrier, faSchool, faIgloo, faJoint, faAngleRight, faHorse, faQ, faG, faNotesMedical, faTemperatureHalf, faTemperature2, faThermometer2, faThermometerHalf, faDongSign, faCapsules, faPooStorm, faPooBolt, faFaceFrownOpen, faFrownOpen, faHandPointUp, faMoneyBill, faBookmark, faAlignJustify, faUmbrellaBeach, faHelmetUn, faBullseye, faBacon, faHandPointDown, faArrowUpFromBracket, faFolder, faFolderBlank, faFileWaveform, faFileMedicalAlt, faRadiation, faChartSimple, faMarsStroke, faVial, faGauge, faDashboard, faGaugeMed, faTachometerAltAverage, faWandMagicSparkles, faMagicWandSparkles, faE, faPenClip, faPenAlt, faBridgeCircleExclamation, faUser, faSchoolCircleCheck, faDumpster, faVanShuttle, faShuttleVan, faBuildingUser, faSquareCaretLeft, faCaretSquareLeft, faHighlighter, faKey, faBullhorn, faGlobe, faSynagogue, faPersonHalfDress, faRoadBridge, faLocationArrow, faC, faTabletButton, faBuildingLock, faPizzaSlice, faMoneyBillWave, faChartArea, faAreaChart, faHouseFlag, faPersonCircleMinus, faBan, faCancel, faCameraRotate, faSprayCanSparkles, faAirFreshener, faStar, faRepeat, faCross, faBox, faVenusMars, faArrowPointer, faMousePointer, faMaximize, faExpandArrowsAlt, faChargingStation, faShapes, faTriangleCircleSquare, faShuffle, faRandom, faPersonRunning, faRunning, faMobileRetro, faGripLinesVertical, faSpider, faHandsBound, faFileInvoiceDollar, faPlaneCircleExclamation, faXRay, faSpellCheck, faSlash, faComputerMouse, faMouse, faArrowRightToBracket, faSignIn, faShopSlash, faStoreAltSlash, faServer, faVirusCovidSlash, faShopLock, faHourglassStart, faHourglass1, faBlenderPhone, faBuildingWheat, faPersonBreastfeeding, faRightToBracket, faSignInAlt, faVenus, faPassport, faHeartPulse, faHeartbeat, faPeopleCarryBox, faPeopleCarry, faTemperatureHigh, faMicrochip, faCrown, faWeightHanging, faXmarksLines, faFilePrescription, faWeightScale, faWeight, faUserGroup, faArrowUpAZ, faSortAlphaUp, faChessKnight, faFaceLaughSquint, faLaughSquint, faWheelchair, faCircleArrowUp, faArrowCircleUp, faToggleOn, faPersonWalking, faWalking, faL, faFire, faBedPulse, faProcedures, faShuttleSpace, faSpaceShuttle, faFaceLaugh, faLaugh, faFolderOpen, faHeartCirclePlus, faCodeFork, faCity, faMicrophoneLines, faMicrophoneAlt, faPepperHot, faUnlock, faColonSign, faHeadset, faStoreSlash, faRoadCircleXmark, faUserMinus, faMarsStrokeUp, faMarsStrokeV, faChampagneGlasses, faGlassCheers, faClipboard, faHouseCircleExclamation, faFileArrowUp, faFileUpload, faWifi, faWifi3, faWifiStrong, faBath, faBathtub, faUnderline, faUserPen, faUserEdit, faSignature, faStroopwafel, faBold, faAnchorLock, faBuildingNgo, faManatSign, faNotEqual, faBorderTopLeft, faBorderStyle, faMapLocationDot, faMapMarkedAlt, faJedi, faSquarePollVertical, faPoll, faMugHot, faCarBattery, faBatteryCar, faGift, faDiceTwo, faChessQueen, faGlasses, faChessBoard, faBuildingCircleCheck, faPersonChalkboard, faMarsStrokeRight, faMarsStrokeH, faHandBackFist, faHandRock, faSquareCaretUp, faCaretSquareUp, faCloudShowersWater, faChartBar, faBarChart, faHandsBubbles, faHandsWash, faLessThanEqual, faTrain, faEyeLowVision, faLowVision, faCrow, faSailboat, faWindowRestore, faSquarePlus, faPlusSquare, faToriiGate, faFrog, faBucket, faImage, faMicrophone, faCow, faCaretUp, faScrewdriver, faFolderClosed, faHouseTsunami, faSquareNfi, faArrowUpFromGroundWater, faMartiniGlass, faGlassMartiniAlt, faRotateLeft, faRotateBack, faRotateBackward, faUndoAlt, faTableColumns, faColumns, faLemon, faHeadSideMask, faHandshake, faGem, faDolly, faDollyBox, faSmoking, faMinimize, faCompressArrowsAlt, faMonument, faSnowplow, faAnglesRight, faAngleDoubleRight, faCannabis, faCirclePlay, faPlayCircle, faTablets, faEthernet, faEuroSign, faEur, faEuro, faChair, faCircleCheck, faCheckCircle, faCircleStop, faStopCircle, faCompassDrafting, faDraftingCompass, faPlateWheat, faIcicles, faPersonShelter, faNeuter, faIdBadge, faMarker, faFaceLaughBeam, faLaughBeam, faHelicopterSymbol, faUniversalAccess, faCircleChevronUp, faChevronCircleUp, faLariSign, faVolcano, faPersonWalkingDashedLineArrowRight, faSterlingSign, faGbp, faPoundSign, faViruses, faSquarePersonConfined, faUserTie, faArrowDownLong, faLongArrowDown, faTentArrowDownToLine, faCertificate, faReplyAll, faMailReplyAll, faSuitcase, faPersonSkating, faSkating, faFilterCircleDollar, faFunnelDollar, faCameraRetro, faCircleArrowDown, faArrowCircleDown, faFileImport, faArrowRightToFile, faSquareArrowUpRight, faExternalLinkSquare, faBoxOpen, faScroll, faSpa, faLocationPinLock, faPause, faHillAvalanche, faTemperatureEmpty, faTemperature0, faThermometer0, faThermometerEmpty, faBomb, faRegistered, faAddressCard, faContactCard, faVcard, faScaleUnbalancedFlip, faBalanceScaleRight, faSubscript, faDiamondTurnRight, faDirections, faBurst, faHouseLaptop, faLaptopHouse, faFaceTired, faTired, faMoneyBills, faSmog, faCrutch, faFontAwesome, faFontAwesomeFlag, faFontAwesomeLogoFull, faCloudArrowUp, faCloudUpload, faCloudUploadAlt, faPalette, faArrowsTurnRight, faVest, faFerry, faArrowsDownToPeople, faSeedling, faSprout, faLeftRight, faArrowsAltH, faBoxesPacking, faCircleArrowLeft, faArrowCircleLeft, faGroupArrowsRotate, faBowlFood, faCandyCane, faArrowDownWideShort, faSortAmountAsc, faSortAmountDown, faCloudBolt, faThunderstorm, faTextSlash, faRemoveFormat, faFaceSmileWink, faSmileWink, faFileWord, faFilePowerpoint, faArrowsLeftRight, faArrowsH, faHouseLock, faCloudArrowDown, faCloudDownload, faCloudDownloadAlt, faChildren, faChalkboard, faBlackboard, faUserLargeSlash, faUserAltSlash, faEnvelopeOpen, faHandshakeSimpleSlash, faHandshakeAltSlash, faMattressPillow, faGuaraniSign, faArrowsRotate, faRefresh, faSync, faFireExtinguisher, faCruzeiroSign, faGreaterThanEqual, faShieldHalved, faShieldAlt, faBookAtlas, faAtlas, faVirus, faEnvelopeCircleCheck, faLayerGroup, faArrowsToDot, faArchway, faHeartCircleCheck, faHouseChimneyCrack, faHouseDamage, faFileZipper, faFileArchive, faSquare, faMartiniGlassEmpty, faGlassMartini, faCouch, faCediSign, faItalic, faChurch, faCommentsDollar, faDemocrat, faZ, faPersonSkiing, faSkiing, faRoadLock, faA, faTemperatureArrowDown, faTemperatureDown, faFeatherPointed, faFeatherAlt, faP, faSnowflake, faNewspaper, faRectangleAd, faAd, faCircleArrowRight, faArrowCircleRight, faFilterCircleXmark, faLocust, faSort, faUnsorted, faListOl, faList12, faListNumeric, faPersonDressBurst, faMoneyCheckDollar, faMoneyCheckAlt, faVectorSquare, faBreadSlice, faLanguage, faFaceKissWinkHeart, faKissWinkHeart, faFilter, faQuestion, faFileSignature, faUpDownLeftRight, faArrowsAlt, faHouseChimneyUser, faHandHoldingHeart, faPuzzlePiece, faMoneyCheck, faStarHalfStroke, faStarHalfAlt, faCode, faWhiskeyGlass, faGlassWhiskey, faBuildingCircleExclamation, faMagnifyingGlassChart, faArrowUpRightFromSquare, faExternalLink, faCubesStacked, faWonSign, faKrw, faWon, faVirusCovid, faAustralSign, faF, faLeaf, faRoad, faTaxi, faCab, faPersonCirclePlus, faChartPie, faPieChart, faBoltLightning, faSackXmark, faFileExcel, faFileContract, faFishFins, faBuildingFlag, faFaceGrinBeam, faGrinBeam, faObjectUngroup, faPoop, faLocationPin, faMapMarker, faKaaba, faToiletPaper, faHelmetSafety, faHardHat, faHatHard, faEject, faCircleRight, faArrowAltCircleRight, faPlaneCircleCheck, faFaceRollingEyes, faMehRollingEyes, faObjectGroup, faChartLine, faLineChart, faMaskVentilator, faArrowRight, faSignsPost, faMapSigns, faCashRegister, faPersonCircleQuestion, faH, faTarp, faScrewdriverWrench, faTools, faArrowsToEye, faPlugCircleBolt, faHeart, faMarsAndVenus, faHouseUser, faHomeUser, faDumpsterFire, faHouseCrack, faMartiniGlassCitrus, faCocktail, faFaceSurprise, faSurprise, faBottleWater, faCirclePause, faPauseCircle, faToiletPaperSlash, faAppleWhole, faAppleAlt, faKitchenSet, faR, faTemperatureQuarter, faTemperature1, faThermometer1, faThermometerQuarter, faCube, faBitcoinSign, faShieldDog, faSolarPanel, faLockOpen, faElevator, faMoneyBillTransfer, faMoneyBillTrendUp, faHouseFloodWaterCircleArrowRight, faSquarePollHorizontal, faPollH, faCircle, faBackwardFast, faFastBackward, faRecycle, faUserAstronaut, faPlaneSlash, faTrademark, faBasketball, faBasketballBall, faSatelliteDish, faCircleUp, faArrowAltCircleUp, faMobileScreenButton, faMobileAlt, faVolumeHigh, faVolumeUp, faUsersRays, faWallet, faClipboardCheck, faFileAudio, faBurger, faHamburger, faWrench, faBugs, faRupeeSign, faRupee, faFileImage, faCircleQuestion, faQuestionCircle, faPlaneDeparture, faHandshakeSlash, faBookBookmark, faCodeBranch, faHatCowboy, faBridge, faPhoneFlip, faPhoneAlt, faTruckFront, faCat, faAnchorCircleExclamation, faTruckField, faRoute, faClipboardQuestion, faPanorama, faCommentMedical, faTeethOpen, faFileCircleMinus, faTags, faWineGlass, faForwardFast, faFastForward, faFaceMehBlank, faMehBlank, faSquareParking, faParking, faHouseSignal, faBarsProgress, faTasksAlt, faFaucetDrip, faCartFlatbed, faDollyFlatbed, faBanSmoking, faSmokingBan, faTerminal, faMobileButton, faHouseMedicalFlag, faBasketShopping, faShoppingBasket, faTape, faBusSimple, faBusAlt, faEye, faFaceSadCry, faSadCry, faAudioDescription, faPersonMilitaryToPerson, faFileShield, faUserSlash, faPen, faTowerObservation, faFileCode, faSignal, faSignal5, faSignalPerfect, faBus, faHeartCircleXmark, faHouseChimney, faHomeLg, faWindowMaximize, faFaceFrown, faFrown, faPrescription, faShop, faStoreAlt, faFloppyDisk, faSave, faVihara, faScaleUnbalanced, faBalanceScaleLeft, faSortUp, faSortAsc, faCommentDots, faCommenting, faPlantWilt, faDiamond, faFaceGrinSquint, faGrinSquint, faHandHoldingDollar, faHandHoldingUsd, faBacterium, faHandPointer, faDrumSteelpan, faHandScissors, faHandsPraying, faPrayingHands, faArrowRotateRight, faArrowRightRotate, faArrowRotateForward, faRedo, faBiohazard, faLocationCrosshairs, faLocation, faMarsDouble, faChildDress, faUsersBetweenLines, faLungsVirus, faFaceGrinTears, faGrinTears, faPhone, faCalendarXmark, faCalendarTimes, faChildReaching, faHeadSideVirus, faUserGear, faUserCog, faArrowUp19, faSortNumericUp, faDoorClosed, faShieldVirus, faDiceSix, faMosquitoNet, faBridgeWater, faPersonBooth, faTextWidth, faHatWizard, faPenFancy, faPersonDigging, faDigging, faTrash, faGaugeSimple, faGaugeSimpleMed, faTachometerAverage, faBookMedical, faPoo, faQuoteRight, faQuoteRightAlt, faShirt, faTShirt, faTshirt, faCubes, faDivide, faTengeSign, faTenge, faHeadphones, faHandsHolding, faHandsClapping, faRepublican, faArrowLeft, faPersonCircleXmark, faRuler, faAlignLeft, faDiceD6, faRestroom, faJ, faUsersViewfinder, faFileVideo, faUpRightFromSquare, faExternalLinkAlt, faTableCells, faTh, faFilePdf, faBookBible, faBible, faO, faSuitcaseMedical, faMedkit, faUserSecret, faOtter, faPersonDress, faFemale, faCommentDollar, faBusinessTime, faBriefcaseClock, faTableCellsLarge, faThLarge, faBookTanakh, faTanakh, faPhoneVolume, faVolumeControlPhone, faHatCowboySide, faClipboardUser, faChild, faLiraSign, faSatellite, faPlaneLock, faTag, faComment, faCakeCandles, faBirthdayCake, faCake, faEnvelope, faAnglesUp, faAngleDoubleUp, faPaperclip, faArrowRightToCity, faRibbon, faLungs, faArrowUp91, faSortNumericUpAlt, faLitecoinSign, faBorderNone, faCircleNodes, faParachuteBox, faIndent, faTruckFieldUn, faHourglass, faHourglassEmpty, faMountain, faUserDoctor, faUserMd, faCircleInfo, faInfoCircle, faCloudMeatball, faCamera, faCameraAlt, faSquareVirus, faMeteor, faCarOn, faSleigh, faArrowDown19, faSortNumericAsc, faSortNumericDown, faHandHoldingDroplet, faHandHoldingWater, faWater, faCalendarCheck, faBraille, faPrescriptionBottleMedical, faPrescriptionBottleAlt, faLandmark, faTruck, faCrosshairs, faPersonCane, faTent, faVestPatches, faCheckDouble, faArrowDownAZ, faSortAlphaAsc, faSortAlphaDown, faMoneyBillWheat, faCookie, faArrowRotateLeft, faArrowLeftRotate, faArrowRotateBack, faArrowRotateBackward, faUndo, faHardDrive, faHdd, faFaceGrinSquintTears, faGrinSquintTears, faDumbbell, faRectangleList, faListAlt, faTarpDroplet, faHouseMedicalCircleCheck, faPersonSkiingNordic, faSkiingNordic, faCalendarPlus, faPlaneArrival, faCircleLeft, faArrowAltCircleLeft, faTrainSubway, faSubway, faChartGantt, faIndianRupeeSign, faIndianRupee, faInr, faCropSimple, faCropAlt, faMoneyBill1, faMoneyBillAlt, faLeftLong, faLongArrowAltLeft, faDna, faVirusSlash, faMinus, faSubtract, faChess, faArrowLeftLong, faLongArrowLeft, faPlugCircleCheck, faStreetView, faFrancSign, faVolumeOff, faHandsAslInterpreting, faAmericanSignLanguageInterpreting, faAslInterpreting, faHandsAmericanSignLanguageInterpreting, faGear, faCog, faDropletSlash, faTintSlash, faMosque, faMosquito, faStarOfDavid, faPersonMilitaryRifle, faCartShopping, faShoppingCart, faVials, faPlugCirclePlus, faPlaceOfWorship, faGripVertical, faArrowTurnUp, faLevelUp, faU, faSquareRootVariable, faSquareRootAlt, faClock, faClockFour, faBackwardStep, faStepBackward, faPallet, faFaucet, faBaseballBatBall, faS, faTimeline, faKeyboard, faCaretDown, faHouseChimneyMedical, faClinicMedical, faTemperatureThreeQuarters, faTemperature3, faThermometer3, faThermometerThreeQuarters, faMobileScreen, faMobileAndroidAlt, faPlaneUp, faPiggyBank, faBatteryHalf, faBattery3, faMountainCity, faCoins, faKhanda, faSliders, faSlidersH, faFolderTree, faNetworkWired, faMapPin, faHamsa, faCentSign, faFlask, faPersonPregnant, faWandSparkles, faEllipsisVertical, faEllipsisV, faTicket, faPowerOff, faRightLong, faLongArrowAltRight, faFlagUsa, faLaptopFile, faTty, faTeletype, faDiagramNext, faPersonRifle, faHouseMedicalCircleExclamation, faClosedCaptioning, faPersonHiking, faHiking, faVenusDouble, faImages, faCalculator, faPeoplePulling, faN, faCableCar, faTram, faCloudRain, faBuildingCircleXmark, faShip, faArrowsDownToLine, faDownload, faFaceGrin, faGrin, faDeleteLeft, faBackspace, faEyeDropper, faEyeDropperEmpty, faEyedropper, faFileCircleCheck, faForward, faMobile, faMobileAndroid, faMobilePhone, faFaceMeh, faMeh, faAlignCenter, faBookSkull, faBookDead, faIdCard, faDriversLicense, faOutdent, faDedent, faHeartCircleExclamation, faHouse, faHome, faHomeAlt, faHomeLgAlt, faCalendarWeek, faLaptopMedical, faB, faFileMedical, faDiceOne, faKiwiBird, faArrowRightArrowLeft, faExchange, faRotateRight, faRedoAlt, faRotateForward, faUtensils, faCutlery, faArrowUpWideShort, faSortAmountUp, faMillSign, faBowlRice, faSkull, faTowerBroadcast, faBroadcastTower, faTruckPickup, faUpLong, faLongArrowAltUp, faStop, faCodeMerge, faUpload, faHurricane, faMound, faToiletPortable, faCompactDisc, faFileArrowDown, faFileDownload, faCaravan, faShieldCat, faBolt, faZap, faGlassWater, faOilWell, faVault, faMars, faToilet, faPlaneCircleXmark, faYenSign, faCny, faJpy, faRmb, faYen, faRubleSign, faRouble, faRub, faRuble, faGuitar, faFaceLaughWink, faLaughWink, faHorseHead, faBoreHole, faIndustry, faCircleDown, faArrowAltCircleDown, faArrowsTurnToDots, faFlorinSign, faArrowDownShortWide, faSortAmountDesc, faSortAmountDownAlt, faLessThan, faAngleDown, faCarTunnel, faHeadSideCough, faGripLines, faThumbsDown, faUserLock, faArrowRightLong, faLongArrowRight, faAnchorCircleXmark, faEllipsis, faEllipsisH, faChessPawn, faKitMedical, faFirstAid, faPersonThroughWindow, faToolbox, faHandsHoldingCircle, faBug, faCreditCard, faCreditCardAlt, faCar, faAutomobile, faHandHoldingHand, faBookOpenReader, faBookReader, faMountainSun, faArrowsLeftRightToLine, faDiceD20, faTruckDroplet, faFileCircleXmark, faTemperatureArrowUp, faTemperatureUp, faMedal, faBed, faSquareH, faHSquare, faPodcast, faTemperatureFull, faTemperature4, faThermometer4, faThermometerFull, faBell, faSuperscript, faPlugCircleXmark, faStarOfLife, faPhoneSlash, faPaintRoller, faHandshakeAngle, faHandsHelping, faLocationDot, faMapMarkerAlt, faFile, faGreaterThan, faPersonSwimming, faSwimmer, faArrowDown, faDroplet, faTint, faEraser, faEarthAmericas, faEarth, faEarthAmerica, faGlobeAmericas, faPersonBurst, faDove, faBatteryEmpty, faBattery0, faSocks, faInbox, faSection, faGaugeHigh, faTachometerAlt, faTachometerAltFast, faEnvelopeOpenText, faHospital, faHospitalAlt, faHospitalWide, faWineBottle, faChessRook, faBarsStaggered, faReorder, faStream, faDharmachakra, faHotdog, faPersonWalkingWithCane, faBlind, faDrum, faIceCream, faHeartCircleBolt, faFax, faParagraph, faCheckToSlot, faVoteYea, faStarHalf, faBoxesStacked, faBoxes, faBoxesAlt, faLink, faChain, faEarListen, faAssistiveListeningSystems, faTreeCity, faPlay, faFont, faRupiahSign, faMagnifyingGlass, faTableTennisPaddleBall, faPingPongPaddleBall, faTableTennis, faPersonDotsFromLine, faDiagnoses, faTrashCanArrowUp, faTrashRestoreAlt, faNairaSign, faCartArrowDown, faWalkieTalkie, faFilePen, faFileEdit, faReceipt, faSquarePen, faPenSquare, faPencilSquare, faSuitcaseRolling, faPersonCircleExclamation, faChevronDown, faBatteryFull, faBattery, faBattery5, faSkullCrossbones, faCodeCompare, faListUl, faListDots, faSchoolLock, faTowerCell, faDownLong, faLongArrowAltDown, faRankingStar, faChessKing, faPersonHarassing, faBrazilianRealSign, faLandmarkDome, faLandmarkAlt, faArrowUp, faTv, faTelevision, faTvAlt, faShrimp, faListCheck, faTasks, faJugDetergent, faCircleUser, faUserCircle, faUserShield, faWind, faCarBurst, faCarCrash, faY, faPersonSnowboarding, faSnowboarding, faTruckFast, faShippingFast, faFish, faUserGraduate, faCircleHalfStroke, faAdjust, faClapperboard, faCircleRadiation, faRadiationAlt, faBaseball, faBaseballBall, faJetFighterUp, faDiagramProject, faProjectDiagram, faCopy, faVolumeXmark, faVolumeMute, faVolumeTimes, faHandSparkles, faGrip, faGripHorizontal, faShareFromSquare, faShareSquare, faChildCombatant, faChildRifle, faGun, faSquarePhone, faPhoneSquare, faPlus, faAdd, faExpand, faComputer, faXmark, faClose, faMultiply, faRemove, faTimes, faArrowsUpDownLeftRight, faArrows, faChalkboardUser, faChalkboardTeacher, faPesoSign, faBuildingShield, faBaby, faUsersLine, faQuoteLeft, faQuoteLeftAlt, faTractor, faTrashArrowUp, faTrashRestore, faArrowDownUpLock, faLinesLeaning, faRulerCombined, faCopyright, faEquals, faBlender, faTeeth, faShekelSign, faIls, faShekel, faSheqel, faSheqelSign, faMap, faRocket, faPhotoFilm, faPhotoVideo, faFolderMinus, faStore, faArrowTrendUp, faPlugCircleMinus, faSignHanging, faSign, faBezierCurve, faBellSlash, faTablet, faTabletAndroid, faSchoolFlag, faFill, faAngleUp, faDrumstickBite, faHollyBerry, faChevronLeft, faBacteria, faHandLizard, faNotdef, faDisease, faBriefcaseMedical, faGenderless, faChevronRight, faRetweet, faCarRear, faCarAlt, faPumpSoap, faVideoSlash, faBatteryQuarter, faBattery2, faRadio, faBabyCarriage, faCarriageBaby, faTrafficLight, faThermometer, faVrCardboard, faHandMiddleFinger, faPercent, faPercentage, faTruckMoving, faGlassWaterDroplet, faDisplay, faFaceSmile, faSmile, faThumbtack, faThumbTack, faTrophy, faPersonPraying, faPray, faHammer, faHandPeace, faRotate, faSyncAlt, faSpinner, faRobot, faPeace, faGears, faCogs, faWarehouse, faArrowUpRightDots, faSplotch, faFaceGrinHearts, faGrinHearts, faDiceFour, faSimCard, faTransgender, faTransgenderAlt, faMercury, faArrowTurnDown, faLevelDown, faPersonFallingBurst, faAward, faTicketSimple, faTicketAlt, faBuilding, faAnglesLeft, faAngleDoubleLeft, faQrcode, faClockRotateLeft, faHistory, faFaceGrinBeamSweat, faGrinBeamSweat, faFileExport, faArrowRightFromFile, faShield, faShieldBlank, faArrowUpShortWide, faSortAmountUpAlt, faHouseMedical, faGolfBallTee, faGolfBall, faCircleChevronLeft, faChevronCircleLeft, faHouseChimneyWindow, faPenNib, faTentArrowTurnLeft, faTents, faWandMagic, faMagic, faDog, faCarrot, faWineGlassEmpty, faWineGlassAlt, faCheese, faYinYang, faMusic, faCodeCommit, faTemperatureLow, faPersonBiking, faBiking, faBroom, faShieldHeart, faGopuram, faEarthOceania, faGlobeOceania, faSquareXmark, faTimesSquare, faXmarkSquare, faHashtag, faUpRightAndDownLeftFromCenter, faExpandAlt, faOilCan, faT, faHippo, faChartColumn, faInfinity, faVialCircleCheck, faPersonArrowDownToLine, faVoicemail, faFan, faPersonWalkingLuggage, faUpDown, faArrowsAltV, faCloudMoonRain, faCalendar, faTrailer, faBahai, faHaykal, faSdCard, faDragon, faShoePrints, faCirclePlus, faPlusCircle, faFaceGrinTongueWink, faGrinTongueWink, faHandHolding, faPlugCircleExclamation, faLinkSlash, faChainBroken, faChainSlash, faUnlink, faClone, faPersonWalkingArrowLoopLeft, faArrowUpZA, faSortAlphaUpAlt, faFireFlameCurved, faFireAlt, faTornado, faFileCirclePlus, faBookQuran, faQuran, faAnchor, faBorderAll, faFaceAngry, faAngry, faCookieBite, faArrowTrendDown, faRss, faFeed, faDrawPolygon, faScaleBalanced, faBalanceScale, faGaugeSimpleHigh, faTachometer, faTachometerFast, faShower, faDesktop, faDesktopAlt, faM, faTableList, faThList, faCommentSms, faSms, faUserPlus, faCheck, faBatteryThreeQuarters, faBattery4, faHouseCircleCheck, faAngleLeft, faDiagramSuccessor, faTruckArrowRight, faArrowsSplitUpAndLeft, faHandFist, faFistRaised, faCloudMoon, faBriefcase, faPersonFalling, faImagePortrait, faPortrait, faUserTag, faRug, faEarthEurope, faGlobeEurope, faCartFlatbedSuitcase, faLuggageCart, faRectangleXmark, faRectangleTimes, faTimesRectangle, faWindowClose, faBahtSign, faBookOpen, faBookJournalWhills, faJournalWhills, faHandcuffs, faTriangleExclamation, faExclamationTriangle, faWarning, faDatabase, faShare, faArrowTurnRight, faMailForward, faBottleDroplet, faMaskFace, faHillRockslide, faRightLeft, faExchangeAlt, faPaperPlane, faRoadCircleExclamation, faDungeon, faAlignRight, faMoneyBill1Wave, faMoneyBillWaveAlt, faLifeRing, faHands, faSignLanguage, faSigning, faCalendarDay, faWaterLadder, faLadderWater, faSwimmingPool, faArrowsUpDown, faArrowsV, faFaceGrimace, faGrimace, faWheelchairMove, faWheelchairAlt, faTurnDown, faLevelDownAlt, faPersonWalkingArrowRight, faSquareEnvelope, faEnvelopeSquare, faDice, faBowlingBall, faBrain, faBandage, faBandAid, faCalendarMinus, faCircleXmark, faTimesCircle, faXmarkCircle, faGifts, faHotel, faEarthAsia, faGlobeAsia, faIdCardClip, faIdCardAlt, faMagnifyingGlassPlus, faSearchPlus, faThumbsUp, faUserClock, faHandDots, faAllergies, faFileInvoice, faWindowMinimize, faMugSaucer, faCoffee, faBrush, faMask, faMagnifyingGlassMinus, faSearchMinus, faRulerVertical, faUserLarge, faUserAlt, faTrainTram, faUserNurse, faSyringe, faCloudSun, faStopwatch20, faSquareFull, faMagnet, faJar, faNoteSticky, faStickyNote, faBugSlash, faArrowUpFromWaterPump, faBone, faUserInjured, faFaceSadTear, faSadTear, faPlane, faTentArrowsDown, faExclamation, faArrowsSpin, faPrint, faTurkishLiraSign, faTry, faTurkishLira, faDollarSign, faDollar, faUsd, faX, faMagnifyingGlassDollar, faSearchDollar, faUsersGear, faUsersCog, faPersonMilitaryPointing, faBuildingColumns, faBank, faInstitution, faMuseum, faUniversity, faUmbrella, faTrowel, faD, faStapler, faMasksTheater, faTheaterMasks, faKipSign, faHandPointLeft, faHandshakeSimple, faHandshakeAlt, faJetFighter, faFighterJet, faSquareShareNodes, faShareAltSquare, faBarcode, faPlusMinus, faVideo, faVideoCamera, faGraduationCap, faMortarBoard, faHandHoldingMedical, faPersonCircleCheck, faTurnUp, faLevelUpAlt */
 var prefix = "fas";
 var fa0 = {
   prefix: 'fas',
@@ -13191,6 +16335,61 @@ var icons = {
 
 
 
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/11454138.json":
+/*!*********************************************!*\
+  !*** ./public/page-data/sq/d/11454138.json ***!
+  \*********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"publications":{"list":[{"authors":["Bernstein DB","Sulheim S","Almaas E","Segrè D"],"journal":"Genome Biol","issue":"1","pages":"64","pmid":33602294,"title":"Addressing uncertainty in genome-scale metabolic model reconstruction and analysis.","volume":"22","year":2021},{"authors":["Ankrah NYD","Bernstein DB","Biggs M","Carey M","Engevik M","García-Jiménez B","Lakshmanan M","Pacheco AR","Sulheim S","Medlock GL"],"journal":"mSystems","issue":"6","pages":"e0059921","pmid":34904863,"title":"Enhancing Microbiome Research through Genome-Scale Metabolic Modeling.","volume":"6","year":2021},{"authors":["Jo C","Bernstein DB","Vaisman N","Frydman HM","Segrè D"],"journal":"mSystems","issue":"2","pages":"e0001721","pmid":36802169,"title":"Construction and Modeling of a Coculture Microplate for Real-Time Measurement of Microbial Interactions.","volume":"8","year":2023},{"authors":["Bernstein DB","Akkas B","Price MN","Arkin AP"],"journal":"Mol Syst Biol","issue":"12","pages":"e11566","pmid":37888487,"title":"Evaluating E. coli genome-scale metabolic model accuracy with high-throughput mutant fitness data.","volume":"19","year":2023}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1271460761.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1271460761.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"siteUrl":"https://m-3-lab.github.io"}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1440116640.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1440116640.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":"David Bernstein","footerLinks":[{"link":"https://github.com/m-3-lab","text":"GitHub"},{"link":"https://www.uvm.edu/cems/ebe/profile/david-bernstein","text":"University of Vermont"},{"link":"https://www.linkedin.com/in/james-knight-174996156","text":"LinkedIn"}]}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/4123507481.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/4123507481.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"defaultDescription":"Modeling and Analysis of the Human Gut Microbiome","defaultTitle":"Microbiome Metabolic Modeling Lab","siteUrl":"https://m-3-lab.github.io"}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/536276349.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/536276349.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"people":{"edges":[{"node":{"frontmatter":{"title":""}}},{"node":{"frontmatter":{"title":""}}},{"node":{"frontmatter":{"title":"Graduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Principal Investigator"}}},{"node":{"frontmatter":{"title":"Undergraduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Graduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Graduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Undergraduate Research Assistant"}}}]},"publications":{"list":[{"title":"Addressing uncertainty in genome-scale metabolic model reconstruction and analysis."},{"title":"Enhancing Microbiome Research through Genome-Scale Metabolic Modeling."},{"title":"Construction and Modeling of a Coculture Microplate for Real-Time Measurement of Microbial Interactions."},{"title":"Evaluating E. coli genome-scale metabolic model accuracy with high-throughput mutant fitness data."}]}}}');
 
 /***/ })
 

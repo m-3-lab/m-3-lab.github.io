@@ -1,18 +1,6011 @@
-exports.id = 678;
-exports.ids = [678];
+exports.id = "component---src-pages-index-js";
+exports.ids = ["component---src-pages-index-js"];
 exports.modules = {
 
-/***/ 982:
+/***/ "./node_modules/@fortawesome/react-fontawesome/index.es.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/@fortawesome/react-fontawesome/index.es.js ***!
+  \*****************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "FontAwesomeIcon": () => (/* binding */ FontAwesomeIcon)
+/* harmony export */ });
+/* harmony import */ var _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @fortawesome/fontawesome-svg-core */ "./node_modules/@fortawesome/fontawesome-svg-core/index.mjs");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "G": () => (/* binding */ FontAwesomeIcon)
+
+
+
+function ownKeys(object, enumerableOnly) {
+  var keys = Object.keys(object);
+
+  if (Object.getOwnPropertySymbols) {
+    var symbols = Object.getOwnPropertySymbols(object);
+    enumerableOnly && (symbols = symbols.filter(function (sym) {
+      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+    })), keys.push.apply(keys, symbols);
+  }
+
+  return keys;
+}
+
+function _objectSpread2(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = null != arguments[i] ? arguments[i] : {};
+    i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      _defineProperty(target, key, source[key]);
+    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
+      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+    });
+  }
+
+  return target;
+}
+
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return typeof obj;
+  } : function (obj) {
+    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+  }, _typeof(obj);
+}
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    Object.defineProperty(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+
+  return target;
+}
+
+function _objectWithoutProperties(source, excluded) {
+  if (source == null) return {};
+
+  var target = _objectWithoutPropertiesLoose(source, excluded);
+
+  var key, i;
+
+  if (Object.getOwnPropertySymbols) {
+    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
+
+    for (i = 0; i < sourceSymbolKeys.length; i++) {
+      key = sourceSymbolKeys[i];
+      if (excluded.indexOf(key) >= 0) continue;
+      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
+      target[key] = source[key];
+    }
+  }
+
+  return target;
+}
+
+function _toConsumableArray(arr) {
+  return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread();
+}
+
+function _arrayWithoutHoles(arr) {
+  if (Array.isArray(arr)) return _arrayLikeToArray(arr);
+}
+
+function _iterableToArray(iter) {
+  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
+}
+
+function _unsupportedIterableToArray(o, minLen) {
+  if (!o) return;
+  if (typeof o === "string") return _arrayLikeToArray(o, minLen);
+  var n = Object.prototype.toString.call(o).slice(8, -1);
+  if (n === "Object" && o.constructor) n = o.constructor.name;
+  if (n === "Map" || n === "Set") return Array.from(o);
+  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen);
+}
+
+function _arrayLikeToArray(arr, len) {
+  if (len == null || len > arr.length) len = arr.length;
+
+  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
+
+  return arr2;
+}
+
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
+}
+
+// Get CSS class list from a props object
+function classList(props) {
+  var _classes;
+
+  var beat = props.beat,
+      fade = props.fade,
+      beatFade = props.beatFade,
+      bounce = props.bounce,
+      shake = props.shake,
+      flash = props.flash,
+      spin = props.spin,
+      spinPulse = props.spinPulse,
+      spinReverse = props.spinReverse,
+      pulse = props.pulse,
+      fixedWidth = props.fixedWidth,
+      inverse = props.inverse,
+      border = props.border,
+      listItem = props.listItem,
+      flip = props.flip,
+      size = props.size,
+      rotation = props.rotation,
+      pull = props.pull; // map of CSS class names to properties
+
+  var classes = (_classes = {
+    'fa-beat': beat,
+    'fa-fade': fade,
+    'fa-beat-fade': beatFade,
+    'fa-bounce': bounce,
+    'fa-shake': shake,
+    'fa-flash': flash,
+    'fa-spin': spin,
+    'fa-spin-reverse': spinReverse,
+    'fa-spin-pulse': spinPulse,
+    'fa-pulse': pulse,
+    'fa-fw': fixedWidth,
+    'fa-inverse': inverse,
+    'fa-border': border,
+    'fa-li': listItem,
+    'fa-flip': flip === true,
+    'fa-flip-horizontal': flip === 'horizontal' || flip === 'both',
+    'fa-flip-vertical': flip === 'vertical' || flip === 'both'
+  }, _defineProperty(_classes, "fa-".concat(size), typeof size !== 'undefined' && size !== null), _defineProperty(_classes, "fa-rotate-".concat(rotation), typeof rotation !== 'undefined' && rotation !== null && rotation !== 0), _defineProperty(_classes, "fa-pull-".concat(pull), typeof pull !== 'undefined' && pull !== null), _defineProperty(_classes, 'fa-swap-opacity', props.swapOpacity), _classes); // map over all the keys in the classes object
+  // return an array of the keys where the value for the key is not null
+
+  return Object.keys(classes).map(function (key) {
+    return classes[key] ? key : null;
+  }).filter(function (key) {
+    return key;
+  });
+}
+
+// Camelize taken from humps
+// humps is copyright © 2012+ Dom Christie
+// Released under the MIT license.
+// Performant way to determine if object coerces to a number
+function _isNumerical(obj) {
+  obj = obj - 0; // eslint-disable-next-line no-self-compare
+
+  return obj === obj;
+}
+
+function camelize(string) {
+  if (_isNumerical(string)) {
+    return string;
+  } // eslint-disable-next-line no-useless-escape
+
+
+  string = string.replace(/[\-_\s]+(.)?/g, function (match, chr) {
+    return chr ? chr.toUpperCase() : '';
+  }); // Ensure 1st char is always lowercase
+
+  return string.substr(0, 1).toLowerCase() + string.substr(1);
+}
+
+var _excluded = ["style"];
+
+function capitalize(val) {
+  return val.charAt(0).toUpperCase() + val.slice(1);
+}
+
+function styleToObject(style) {
+  return style.split(';').map(function (s) {
+    return s.trim();
+  }).filter(function (s) {
+    return s;
+  }).reduce(function (acc, pair) {
+    var i = pair.indexOf(':');
+    var prop = camelize(pair.slice(0, i));
+    var value = pair.slice(i + 1).trim();
+    prop.startsWith('webkit') ? acc[capitalize(prop)] = value : acc[prop] = value;
+    return acc;
+  }, {});
+}
+
+function convert(createElement, element) {
+  var extraProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+
+  if (typeof element === 'string') {
+    return element;
+  }
+
+  var children = (element.children || []).map(function (child) {
+    return convert(createElement, child);
+  });
+  /* eslint-disable dot-notation */
+
+  var mixins = Object.keys(element.attributes || {}).reduce(function (acc, key) {
+    var val = element.attributes[key];
+
+    switch (key) {
+      case 'class':
+        acc.attrs['className'] = val;
+        delete element.attributes['class'];
+        break;
+
+      case 'style':
+        acc.attrs['style'] = styleToObject(val);
+        break;
+
+      default:
+        if (key.indexOf('aria-') === 0 || key.indexOf('data-') === 0) {
+          acc.attrs[key.toLowerCase()] = val;
+        } else {
+          acc.attrs[camelize(key)] = val;
+        }
+
+    }
+
+    return acc;
+  }, {
+    attrs: {}
+  });
+
+  var _extraProps$style = extraProps.style,
+      existingStyle = _extraProps$style === void 0 ? {} : _extraProps$style,
+      remaining = _objectWithoutProperties(extraProps, _excluded);
+
+  mixins.attrs['style'] = _objectSpread2(_objectSpread2({}, mixins.attrs['style']), existingStyle);
+  /* eslint-enable */
+
+  return createElement.apply(void 0, [element.tag, _objectSpread2(_objectSpread2({}, mixins.attrs), remaining)].concat(_toConsumableArray(children)));
+}
+
+var PRODUCTION = false;
+
+try {
+  PRODUCTION = "development" === 'production';
+} catch (e) {}
+
+function log () {
+  if (!PRODUCTION && console && typeof console.error === 'function') {
+    var _console;
+
+    (_console = console).error.apply(_console, arguments);
+  }
+}
+
+function normalizeIconArgs(icon) {
+  // this has everything that it needs to be rendered which means it was probably imported
+  // directly from an icon svg package
+  if (icon && _typeof(icon) === 'object' && icon.prefix && icon.iconName && icon.icon) {
+    return icon;
+  }
+
+  if (_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.parse.icon) {
+    return _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.parse.icon(icon);
+  } // if the icon is null, there's nothing to do
+
+
+  if (icon === null) {
+    return null;
+  } // if the icon is an object and has a prefix and an icon name, return it
+
+
+  if (icon && _typeof(icon) === 'object' && icon.prefix && icon.iconName) {
+    return icon;
+  } // if it's an array with length of two
+
+
+  if (Array.isArray(icon) && icon.length === 2) {
+    // use the first item as prefix, second as icon name
+    return {
+      prefix: icon[0],
+      iconName: icon[1]
+    };
+  } // if it's a string, use it as the icon name
+
+
+  if (typeof icon === 'string') {
+    return {
+      prefix: 'fas',
+      iconName: icon
+    };
+  }
+}
+
+// creates an object with a key of key
+// and a value of value
+// if certain conditions are met
+function objectWithKey(key, value) {
+  // if the value is a non-empty array
+  // or it's not an array but it is truthy
+  // then create the object with the key and the value
+  // if not, return an empty array
+  return Array.isArray(value) && value.length > 0 || !Array.isArray(value) && value ? _defineProperty({}, key, value) : {};
+}
+
+var FontAwesomeIcon = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().forwardRef(function (props, ref) {
+  var iconArgs = props.icon,
+      maskArgs = props.mask,
+      symbol = props.symbol,
+      className = props.className,
+      title = props.title,
+      titleId = props.titleId,
+      maskId = props.maskId;
+  var iconLookup = normalizeIconArgs(iconArgs);
+  var classes = objectWithKey('classes', [].concat(_toConsumableArray(classList(props)), _toConsumableArray(className.split(' '))));
+  var transform = objectWithKey('transform', typeof props.transform === 'string' ? _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.parse.transform(props.transform) : props.transform);
+  var mask = objectWithKey('mask', normalizeIconArgs(maskArgs));
+  var renderedIcon = (0,_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_0__.icon)(iconLookup, _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({}, classes), transform), mask), {}, {
+    symbol: symbol,
+    title: title,
+    titleId: titleId,
+    maskId: maskId
+  }));
+
+  if (!renderedIcon) {
+    log('Could not find icon', iconLookup);
+    return null;
+  }
+
+  var abstract = renderedIcon.abstract;
+  var extraProps = {
+    ref: ref
+  };
+  Object.keys(props).forEach(function (key) {
+    // eslint-disable-next-line no-prototype-builtins
+    if (!FontAwesomeIcon.defaultProps.hasOwnProperty(key)) {
+      extraProps[key] = props[key];
+    }
+  });
+  return convertCurry(abstract[0], extraProps);
+});
+FontAwesomeIcon.displayName = 'FontAwesomeIcon';
+FontAwesomeIcon.propTypes = {
+  beat: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  border: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  beatFade: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  bounce: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  fade: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  flash: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  mask: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
+  maskId: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  fixedWidth: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  inverse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  flip: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf([true, false, 'horizontal', 'vertical', 'both']),
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
+  listItem: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  pull: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['right', 'left']),
+  pulse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  rotation: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf([0, 90, 180, 270]),
+  shake: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  size: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOf(['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x']),
+  spin: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  spinPulse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  spinReverse: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  symbol: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)]),
+  title: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  titleId: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  transform: prop_types__WEBPACK_IMPORTED_MODULE_2___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)]),
+  swapOpacity: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
+};
+FontAwesomeIcon.defaultProps = {
+  border: false,
+  className: '',
+  mask: null,
+  maskId: null,
+  fixedWidth: false,
+  inverse: false,
+  flip: false,
+  icon: null,
+  listItem: false,
+  pull: null,
+  pulse: false,
+  rotation: null,
+  size: null,
+  spin: false,
+  spinPulse: false,
+  spinReverse: false,
+  beat: false,
+  fade: false,
+  beatFade: false,
+  bounce: false,
+  shake: false,
+  symbol: false,
+  title: '',
+  titleId: null,
+  transform: null,
+  swapOpacity: false
+};
+var convertCurry = convert.bind(null, (react__WEBPACK_IMPORTED_MODULE_1___default().createElement));
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/any-base/index.js":
+/*!****************************************!*\
+  !*** ./node_modules/any-base/index.js ***!
+  \****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var Converter = __webpack_require__(/*! ./src/converter */ "./node_modules/any-base/src/converter.js");
+
+/**
+ * Function get source and destination alphabet and return convert function
+ *
+ * @param {string|Array} srcAlphabet
+ * @param {string|Array} dstAlphabet
+ *
+ * @returns {function(number|Array)}
+ */
+function anyBase(srcAlphabet, dstAlphabet) {
+    var converter = new Converter(srcAlphabet, dstAlphabet);
+    /**
+     * Convert function
+     *
+     * @param {string|Array} number
+     *
+     * @return {string|Array} number
+     */
+    return function (number) {
+        return converter.convert(number);
+    }
+};
+
+anyBase.BIN = '01';
+anyBase.OCT = '01234567';
+anyBase.DEC = '0123456789';
+anyBase.HEX = '0123456789abcdef';
+
+module.exports = anyBase;
+
+/***/ }),
+
+/***/ "./node_modules/any-base/src/converter.js":
+/*!************************************************!*\
+  !*** ./node_modules/any-base/src/converter.js ***!
+  \************************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+/**
+ * Converter
+ *
+ * @param {string|Array} srcAlphabet
+ * @param {string|Array} dstAlphabet
+ * @constructor
+ */
+function Converter(srcAlphabet, dstAlphabet) {
+    if (!srcAlphabet || !dstAlphabet || !srcAlphabet.length || !dstAlphabet.length) {
+        throw new Error('Bad alphabet');
+    }
+    this.srcAlphabet = srcAlphabet;
+    this.dstAlphabet = dstAlphabet;
+}
+
+/**
+ * Convert number from source alphabet to destination alphabet
+ *
+ * @param {string|Array} number - number represented as a string or array of points
+ *
+ * @returns {string|Array}
+ */
+Converter.prototype.convert = function(number) {
+    var i, divide, newlen,
+    numberMap = {},
+    fromBase = this.srcAlphabet.length,
+    toBase = this.dstAlphabet.length,
+    length = number.length,
+    result = typeof number === 'string' ? '' : [];
+
+    if (!this.isValid(number)) {
+        throw new Error('Number "' + number + '" contains of non-alphabetic digits (' + this.srcAlphabet + ')');
+    }
+
+    if (this.srcAlphabet === this.dstAlphabet) {
+        return number;
+    }
+
+    for (i = 0; i < length; i++) {
+        numberMap[i] = this.srcAlphabet.indexOf(number[i]);
+    }
+    do {
+        divide = 0;
+        newlen = 0;
+        for (i = 0; i < length; i++) {
+            divide = divide * fromBase + numberMap[i];
+            if (divide >= toBase) {
+                numberMap[newlen++] = parseInt(divide / toBase, 10);
+                divide = divide % toBase;
+            } else if (newlen > 0) {
+                numberMap[newlen++] = 0;
+            }
+        }
+        length = newlen;
+        result = this.dstAlphabet.slice(divide, divide + 1).concat(result);
+    } while (newlen !== 0);
+
+    return result;
+};
+
+/**
+ * Valid number with source alphabet
+ *
+ * @param {number} number
+ *
+ * @returns {boolean}
+ */
+Converter.prototype.isValid = function(number) {
+    var i = 0;
+    for (; i < number.length; ++i) {
+        if (this.srcAlphabet.indexOf(number[i]) === -1) {
+            return false;
+        }
+    }
+    return true;
+};
+
+module.exports = Converter;
+
+/***/ }),
+
+/***/ "./node_modules/camelcase/index.js":
+/*!*****************************************!*\
+  !*** ./node_modules/camelcase/index.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+"use strict";
+
+
+const preserveCamelCase = string => {
+	let isLastCharLower = false;
+	let isLastCharUpper = false;
+	let isLastLastCharUpper = false;
+
+	for (let i = 0; i < string.length; i++) {
+		const character = string[i];
+
+		if (isLastCharLower && /[a-zA-Z]/.test(character) && character.toUpperCase() === character) {
+			string = string.slice(0, i) + '-' + string.slice(i);
+			isLastCharLower = false;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = true;
+			i++;
+		} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(character) && character.toLowerCase() === character) {
+			string = string.slice(0, i - 1) + '-' + string.slice(i - 1);
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = false;
+			isLastCharLower = true;
+		} else {
+			isLastCharLower = character.toLowerCase() === character && character.toUpperCase() !== character;
+			isLastLastCharUpper = isLastCharUpper;
+			isLastCharUpper = character.toUpperCase() === character && character.toLowerCase() !== character;
+		}
+	}
+
+	return string;
+};
+
+const camelCase = (input, options) => {
+	if (!(typeof input === 'string' || Array.isArray(input))) {
+		throw new TypeError('Expected the input to be `string | string[]`');
+	}
+
+	options = Object.assign({
+		pascalCase: false
+	}, options);
+
+	const postProcess = x => options.pascalCase ? x.charAt(0).toUpperCase() + x.slice(1) : x;
+
+	if (Array.isArray(input)) {
+		input = input.map(x => x.trim())
+			.filter(x => x.length)
+			.join('-');
+	} else {
+		input = input.trim();
+	}
+
+	if (input.length === 0) {
+		return '';
+	}
+
+	if (input.length === 1) {
+		return options.pascalCase ? input.toUpperCase() : input.toLowerCase();
+	}
+
+	const hasUpperCase = input !== input.toLowerCase();
+
+	if (hasUpperCase) {
+		input = preserveCamelCase(input);
+	}
+
+	input = input
+		.replace(/^[_.\- ]+/, '')
+		.toLowerCase()
+		.replace(/[_.\- ]+(\w|$)/g, (_, p1) => p1.toUpperCase())
+		.replace(/\d+(\w|$)/g, m => m.toUpperCase());
+
+	return postProcess(input);
+};
+
+module.exports = camelCase;
+// TODO: Remove this for the next major release
+module.exports["default"] = camelCase;
+
+
+/***/ }),
+
+/***/ "./node_modules/filter-invalid-dom-props/dist/index.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/filter-invalid-dom-props/dist/index.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", ({
+	value: true
+}));
+exports["default"] = filterInvalidDOMProps;
+
+var _htmlAttributes = __webpack_require__(/*! html-attributes */ "./node_modules/html-attributes/lib/html-attributes.js");
+
+var _htmlAttributes2 = _interopRequireDefault(_htmlAttributes);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var eventProps = {
+	onCopy: true,
+	onCut: true,
+	onPaste: true,
+	onLoad: true,
+	onError: true,
+	onWheel: true,
+	onScroll: true,
+	onCompositionEnd: true,
+	onCompositionStart: true,
+	onCompositionUpdate: true,
+	onKeyDown: true,
+	onKeyPress: true,
+	onKeyUp: true,
+	onFocus: true,
+	onBlur: true,
+	onChange: true,
+	onInput: true,
+	onSubmit: true,
+	onClick: true,
+	onContextMenu: true,
+	onDoubleClick: true,
+	onDrag: true,
+	onDragEnd: true,
+	onDragEnter: true,
+	onDragExit: true,
+	onDragLeave: true,
+	onDragOver: true,
+	onDragStart: true,
+	onDrop: true,
+	onMouseDown: true,
+	onMouseEnter: true,
+	onMouseLeave: true,
+	onMouseMove: true,
+	onMouseOut: true,
+	onMouseOver: true,
+	onMouseUp: true,
+	onSelect: true,
+	onTouchCancel: true,
+	onTouchEnd: true,
+	onTouchMove: true,
+	onTouchStart: true,
+	onAnimationStart: true,
+	onAnimationEnd: true,
+	onAnimationIteration: true,
+	onTransitionEnd: true
+};
+
+function isValidDOMProp(prop) {
+	return eventProps[prop] || _htmlAttributes2.default[prop] || /^(data|aria)-/.test(prop);
+}
+
+function filterInvalidDOMProps(props) {
+	var domProps = {};
+	for (var prop in props) {
+		if (props.hasOwnProperty(prop) && isValidDOMProp(prop)) {
+			domProps[prop] = props[prop];
+		}
+	}
+	return domProps;
+}
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/index.js":
+/*!*******************************************************!*\
+  !*** ./node_modules/gatsby-background-image/index.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+exports.__esModule = true;
+exports["default"] = void 0;
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+var _assertThisInitialized2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/assertThisInitialized.js"));
+var _inheritsLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/inheritsLoose */ "./node_modules/@babel/runtime/helpers/inheritsLoose.js"));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+var _BackgroundUtils = _interopRequireDefault(__webpack_require__(/*! ./lib/BackgroundUtils */ "./node_modules/gatsby-background-image/lib/BackgroundUtils.js"));
+var _HelperUtils = __webpack_require__(/*! ./lib/HelperUtils */ "./node_modules/gatsby-background-image/lib/HelperUtils.js");
+var _ImageUtils = __webpack_require__(/*! ./lib/ImageUtils */ "./node_modules/gatsby-background-image/lib/ImageUtils.js");
+var _ImageCache = __webpack_require__(/*! ./lib/ImageCache */ "./node_modules/gatsby-background-image/lib/ImageCache.js");
+var _ImageRef = __webpack_require__(/*! ./lib/ImageRef */ "./node_modules/gatsby-background-image/lib/ImageRef.js");
+var _ImageHandling = __webpack_require__(/*! ./lib/ImageHandling */ "./node_modules/gatsby-background-image/lib/ImageHandling.js");
+var _StyleUtils = __webpack_require__(/*! ./lib/StyleUtils */ "./node_modules/gatsby-background-image/lib/StyleUtils.js");
+var _StyleCreation = __webpack_require__(/*! ./lib/StyleCreation */ "./node_modules/gatsby-background-image/lib/StyleCreation.js");
+var _IntersectionObserverUtils = __webpack_require__(/*! ./lib/IntersectionObserverUtils */ "./node_modules/gatsby-background-image/lib/IntersectionObserverUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./lib/SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var _excluded = ["className", "style", "fluid", "fixed", "backgroundColor", "durationFadeIn", "Tag", "children", "keepStatic"];
+var BackgroundImage = function (_React$Component) {
+  (0, _inheritsLoose2.default)(BackgroundImage, _React$Component);
+  function BackgroundImage(props) {
+    var _this;
+    _this = _React$Component.call(this, props) || this;
+    _this.intersectionListener = function () {
+      var imageInCache = (0, _ImageCache.inImageCache)(_this.props);
+      if (!_this.state.isVisible && typeof _this.props.onStartLoad === "function") {
+        _this.props.onStartLoad({
+          wasCached: imageInCache
+        });
+      }
+      _this.imageRef = (0, _ImageRef.activatePictureRef)(_this.imageRef, _this.props, _this.selfRef);
+      _this.setState(function (state) {
+        return {
+          isVisible: true,
+          imageState: state.imageState + 1
+        };
+      }, function () {
+        _this.setState(function (state) {
+          return {
+            imgLoaded: imageInCache,
+            imgCached: (0, _ImageRef.hasActivatedPictureRefs)(_this.imageRef),
+            imageState: state.imageState + 1
+          };
+        });
+      });
+    };
+    var convertedProps = (0, _HelperUtils.convertProps)(props);
+    var isVisible = true;
+    var imgLoaded = false;
+    var IOSupported = false;
+    var fadeIn = convertedProps.fadeIn;
+    var seenBefore = (0, _ImageCache.inImageCache)(convertedProps);
+    if (!seenBefore && (0, _SimpleUtils.isBrowser)() && window.IntersectionObserver) {
+      isVisible = false;
+      IOSupported = true;
+    }
+    if (!(0, _SimpleUtils.isBrowser)()) {
+      isVisible = false;
+    }
+    if (convertedProps.critical) {
+      isVisible = true;
+      IOSupported = false;
+    }
+    var hasNoScript = !(convertedProps.critical && !fadeIn) && !(0, _SimpleUtils.isBrowser)();
+    var imageState = 0;
+    var _fixClassName = (0, _StyleUtils.fixClassName)(convertedProps),
+      currentClassNames = _fixClassName[0];
+    _this.backgroundStyles = (0, _StyleUtils.presetBackgroundStyles)((0, _BackgroundUtils.default)(convertedProps.className));
+    _this.handleImageLoaded = _this.handleImageLoaded.bind((0, _assertThisInitialized2.default)(_this));
+    _this.handleRef = _this.handleRef.bind((0, _assertThisInitialized2.default)(_this));
+    _this.imageRef = (0, _ImageRef.createPictureRef)((0, _extends2.default)({}, convertedProps, {
+      isVisible: isVisible
+    }), _this.handleImageLoaded);
+    _this.selfRef = null;
+    _this.state = {
+      isVisible: isVisible,
+      imgLoaded: imgLoaded,
+      IOSupported: IOSupported,
+      fadeIn: fadeIn,
+      hasNoScript: hasNoScript,
+      seenBefore: seenBefore,
+      imageState: imageState,
+      currentClassNames: currentClassNames
+    };
+    return _this;
+  }
+  var _proto = BackgroundImage.prototype;
+  _proto.componentDidMount = function componentDidMount() {
+    this.backgroundStyles = (0, _StyleUtils.presetBackgroundStyles)((0, _BackgroundUtils.default)(this.props.className));
+    if (this.state.isVisible && typeof this.props.onStartLoad === "function") {
+      this.props.onStartLoad({
+        wasCached: (0, _ImageCache.inImageCache)(this.props)
+      });
+    }
+    if (this.props.critical || this.state.seenBefore) {
+      if ((0, _ImageRef.imageReferenceCompleted)(this.imageRef, this.props)) {
+        this.handleImageLoaded();
+      }
+    }
+    var _fixClassName2 = (0, _StyleUtils.fixClassName)(this.props),
+      currentClassNames = _fixClassName2[0];
+    this.setState({
+      currentClassNames: currentClassNames
+    });
+  };
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+    var _this2 = this;
+    if ((0, _ImageUtils.imagePropsChanged)(this.props, prevProps)) {
+      var convertedProps = (0, _HelperUtils.convertProps)(this.props);
+      var imageInCache = (0, _ImageCache.inImageCache)(convertedProps);
+      var _fixClassName3 = (0, _StyleUtils.fixClassName)(convertedProps),
+        currentClassNames = _fixClassName3[0];
+      this.setState({
+        isVisible: imageInCache || convertedProps.critical,
+        imgLoaded: imageInCache,
+        seenBefore: imageInCache,
+        currentClassNames: currentClassNames
+      }, function () {
+        _this2.bgImage = (0, _ImageUtils.getCurrentFromData)({
+          data: _this2.imageRef,
+          propName: "currentSrc",
+          returnArray: true
+        }) || (0, _ImageUtils.getCurrentFromData)({
+          data: _this2.imageRef,
+          propName: "src",
+          returnArray: true
+        });
+        _this2.imageRef = (0, _ImageRef.createPictureRef)((0, _extends2.default)({}, convertedProps, {
+          isVisible: _this2.state.isVisible
+        }), _this2.handleImageLoaded);
+      });
+    }
+  };
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    if (this.imageRef) {
+      if (Array.isArray(this.imageRef)) {
+        this.imageRef.forEach(function (currentImageRef) {
+          if (!!currentImageRef && !(0, _SimpleUtils.isString)(currentImageRef)) {
+            currentImageRef.onload = null;
+          }
+        });
+      } else {
+        this.imageRef.onload = null;
+      }
+    }
+    if (this.cleanUpListeners) {
+      this.cleanUpListeners();
+    }
+  };
+  _proto.handleRef = function handleRef(ref) {
+    this.selfRef = ref;
+    if (this.state.IOSupported && ref) {
+      this.cleanUpListeners = (0, _IntersectionObserverUtils.listenToIntersections)(ref, this.intersectionListener, this.props.rootMargin);
+    }
+  };
+  _proto.handleImageLoaded = function handleImageLoaded() {
+    (0, _ImageCache.activateCacheForImage)(this.props);
+    this.setState(function (state) {
+      return {
+        imgLoaded: true,
+        imageState: state.imageState + 1
+      };
+    });
+    if (this.state.seenBefore) {
+      this.setState({
+        fadeIn: false
+      });
+    }
+    if (this.props.onLoad) {
+      this.props.onLoad();
+    }
+  };
+  _proto.render = function render() {
+    var _fixOpacity = (0, _StyleUtils.fixOpacity)((0, _HelperUtils.convertProps)(this.props), this.props.preserveStackingContext),
+      className = _fixOpacity.className,
+      _fixOpacity$style = _fixOpacity.style,
+      style = _fixOpacity$style === void 0 ? {} : _fixOpacity$style,
+      fluid = _fixOpacity.fluid,
+      fixed = _fixOpacity.fixed,
+      backgroundColor = _fixOpacity.backgroundColor,
+      durationFadeIn = _fixOpacity.durationFadeIn,
+      Tag = _fixOpacity.Tag,
+      children = _fixOpacity.children,
+      keepStatic = _fixOpacity.keepStatic,
+      props = (0, _objectWithoutPropertiesLoose2.default)(_fixOpacity, _excluded);
+    var remainingProps = (0, _HelperUtils.stripRemainingProps)(props);
+    var bgColor = typeof backgroundColor === "boolean" ? "lightgray" : typeof backgroundColor !== "undefined" ? backgroundColor : "";
+    var shouldFadeIn = this.state.fadeIn === true && !this.state.imgCached || this.props.fadeIn === "soft";
+    var transitionDelay = shouldFadeIn ? durationFadeIn / 2 + "ms" : "none";
+    var divStyle = (0, _extends2.default)({
+      position: "relative"
+    }, style);
+    if (!this.props.preserveStackingContext) divStyle.opacity = 0.99;
+    var image = (0, _ImageUtils.getCurrentSrcData)({
+      fluid: fluid,
+      fixed: fixed,
+      returnArray: true
+    });
+    var noScriptImageData = (0, _ImageUtils.getCurrentSrcData)({
+      fluid: fluid,
+      fixed: fixed
+    }) || {};
+    if (fluid || fixed) {
+      if (fixed) {
+        divStyle.width = style.width || image.width;
+        divStyle.height = style.height || image.height;
+        divStyle.display = "inline-block";
+        if (style.display === "inherit") {
+          delete divStyle.display;
+        }
+      }
+    } else if (keepStatic) {
+      noScriptImageData.srcSet = '';
+    } else {
+      return null;
+    }
+    var newImageSettings = (0, _ImageHandling.switchImageSettings)({
+      image: image,
+      bgImage: this.bgImage,
+      imageRef: this.imageRef,
+      state: this.state
+    });
+    this.bgImage = newImageSettings.nextImageArray || newImageSettings.nextImage || this.bgImage;
+    var pseudoStyles = (0, _StyleCreation.createPseudoStyles)((0, _extends2.default)({
+      className: this.state.currentClassNames,
+      transitionDelay: transitionDelay,
+      bgColor: bgColor,
+      backgroundStyles: this.backgroundStyles,
+      style: style,
+      fadeIn: shouldFadeIn
+    }, newImageSettings, {
+      originalData: fluid || fixed
+    }));
+    var noScriptPseudoStyles = (0, _StyleCreation.createNoScriptStyles)({
+      image: image,
+      bgColor: bgColor,
+      className: this.state.currentClassNames,
+      backgroundStyles: this.backgroundStyles,
+      style: style
+    });
+    var componentKey = "" + (fluid ? "fluid" : "") + (fixed ? "fixed" : "") + "-" + JSON.stringify(noScriptImageData.srcSet);
+    var currentStyles = (0, _extends2.default)({}, this.backgroundStyles, divStyle);
+    return _react.default.createElement(Tag, (0, _extends2.default)({
+      className: this.state.currentClassNames,
+      style: currentStyles,
+      ref: this.handleRef,
+      key: componentKey
+    }, remainingProps), _react.default.createElement("style", {
+      dangerouslySetInnerHTML: {
+        __html: pseudoStyles
+      }
+    }), this.state.hasNoScript && _react.default.createElement("noscript", null, _react.default.createElement("style", {
+      dangerouslySetInnerHTML: {
+        __html: noScriptPseudoStyles
+      }
+    })), children);
+  };
+  return BackgroundImage;
+}(_react.default.Component);
+BackgroundImage.defaultProps = {
+  critical: false,
+  fadeIn: true,
+  durationFadeIn: 500,
+  Tag: "div",
+  preserveStackingContext: false,
+  rootMargin: "200px",
+  keepStatic: false
+};
+var fixedObject = _propTypes.default.shape({
+  width: _propTypes.default.number.isRequired,
+  height: _propTypes.default.number.isRequired,
+  src: _propTypes.default.string.isRequired,
+  srcSet: _propTypes.default.string.isRequired,
+  base64: _propTypes.default.string,
+  tracedSVG: _propTypes.default.string,
+  srcWebp: _propTypes.default.string,
+  srcSetWebp: _propTypes.default.string,
+  srcAvif: _propTypes.default.string,
+  srcSetAvif: _propTypes.default.string,
+  media: _propTypes.default.string
+});
+var fluidObject = _propTypes.default.shape({
+  aspectRatio: _propTypes.default.number.isRequired,
+  src: _propTypes.default.string.isRequired,
+  srcSet: _propTypes.default.string.isRequired,
+  sizes: _propTypes.default.string,
+  base64: _propTypes.default.string,
+  tracedSVG: _propTypes.default.string,
+  srcWebp: _propTypes.default.string,
+  srcSetWebp: _propTypes.default.string,
+  srcAvif: _propTypes.default.string,
+  srcSetAvif: _propTypes.default.string,
+  media: _propTypes.default.string
+});
+BackgroundImage.propTypes = {
+  fixed: _propTypes.default.oneOfType([fixedObject, _propTypes.default.arrayOf(fixedObject), _propTypes.default.arrayOf(_propTypes.default.oneOfType([fixedObject, _propTypes.default.string]))]),
+  fluid: _propTypes.default.oneOfType([fluidObject, _propTypes.default.arrayOf(fluidObject), _propTypes.default.arrayOf(_propTypes.default.oneOfType([fluidObject, _propTypes.default.string]))]),
+  fadeIn: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
+  durationFadeIn: _propTypes.default.number,
+  className: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object]),
+  critical: _propTypes.default.bool,
+  crossOrigin: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
+  style: _propTypes.default.oneOfType([_propTypes.default.object, _propTypes.default.array]),
+  backgroundColor: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.bool]),
+  onLoad: _propTypes.default.func,
+  onError: _propTypes.default.func,
+  onStartLoad: _propTypes.default.func,
+  Tag: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.func]),
+  preserveStackingContext: _propTypes.default.bool,
+  rootMargin: _propTypes.default.string,
+  keepStatic: _propTypes.default.bool
+};
+var _default = BackgroundImage;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/BackgroundUtils.js":
+/*!*********************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/BackgroundUtils.js ***!
+  \*********************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.getStyleRulesForClassName = exports.getStyleRules = exports.getBackgroundStylesForSingleClass = exports["default"] = void 0;
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var getStyleRulesForClassName = function getStyleRulesForClassName(className) {
+  var styleSheets = (0, _SimpleUtils.isBrowser)() ? window.document.styleSheets : [];
+  for (var i = 0; i < styleSheets.length; i++) {
+    var classes = void 0;
+    try {
+      classes = typeof styleSheets[i].rules !== 'undefined' ? styleSheets[i].rules : typeof styleSheets[i].cssRules !== 'undefined' ? styleSheets[i].cssRules : '';
+    } catch (e) {}
+    if (classes) {
+      var foundClass = Array.prototype.slice.call(classes).reduce(function (foundAcc, styleRule) {
+        if (styleRule.selectorText === className) {
+          foundAcc.push(styleRule);
+        }
+        return foundAcc;
+      }, []);
+      if (foundClass.length) {
+        return foundClass;
+      }
+    }
+  }
+  return [];
+};
+exports.getStyleRulesForClassName = getStyleRulesForClassName;
+var getStyleRules = function getStyleRules(cssStyleRules) {
+  var styles = {};
+  if (cssStyleRules.length > 0 && typeof cssStyleRules[0].style !== 'undefined') {
+    var constructorName = cssStyleRules[0].style.constructor.name || cssStyleRules[0].style.constructor.toString();
+    switch (constructorName) {
+      case 'CSS2Properties':
+      case '[object MSStyleCSSProperties]':
+        Object.values(cssStyleRules[0].style).forEach(function (prop) {
+          styles[(0, _SimpleUtils.toCamelCase)(prop)] = cssStyleRules[0].style[prop];
+        });
+        break;
+      case 'CSSStyleDeclaration':
+        styles = cssStyleRules[0].style;
+        break;
+      default:
+        console.error('Unknown style object prototype');
+        break;
+    }
+  }
+  return styles;
+};
+exports.getStyleRules = getStyleRules;
+var getBackgroundStylesForSingleClass = function getBackgroundStylesForSingleClass(className) {
+  if (className && (0, _SimpleUtils.isString)(className)) {
+    var cssStyleRules = getStyleRulesForClassName("." + className);
+    if ((cssStyleRules === null || cssStyleRules === void 0 ? void 0 : cssStyleRules.length) > 0 && typeof cssStyleRules[0].style !== 'undefined') {
+      return Object.keys(getStyleRules(cssStyleRules)).filter(function (key) {
+        return key.indexOf('background') === 0 && cssStyleRules[0].style[key] !== '';
+      }).reduce(function (newData, key) {
+        newData[(0, _SimpleUtils.toCamelCase)(key)] = cssStyleRules[0].style[key];
+        return newData;
+      }, {});
+    }
+  }
+  return {};
+};
+exports.getBackgroundStylesForSingleClass = getBackgroundStylesForSingleClass;
+var getBackgroundStyles = function getBackgroundStyles(className) {
+  if ((0, _SimpleUtils.isBrowser)()) {
+    var classes = (0, _SimpleUtils.stringToArray)(className);
+    if (classes instanceof Array) {
+      var classObjects = [];
+      classes.forEach(function (item) {
+        return classObjects.push(getBackgroundStylesForSingleClass(item));
+      });
+      return Object.assign.apply(Object, classObjects);
+    }
+    return getBackgroundStylesForSingleClass(className);
+  }
+  return {};
+};
+var _default = getBackgroundStyles;
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/ClassCache.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/ClassCache.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.resetComponentClassCache = exports.inComponentClassCache = exports.activateCacheForComponentClass = void 0;
+var componentClassCache = Object.create({});
+var inComponentClassCache = function inComponentClassCache(className) {
+  return componentClassCache[className] || false;
+};
+exports.inComponentClassCache = inComponentClassCache;
+var activateCacheForComponentClass = function activateCacheForComponentClass(className) {
+  if (className) {
+    componentClassCache[className] = true;
+  }
+};
+exports.activateCacheForComponentClass = activateCacheForComponentClass;
+var resetComponentClassCache = function resetComponentClassCache() {
+  for (var className in componentClassCache) {
+    delete componentClassCache[className];
+  }
+};
+exports.resetComponentClassCache = resetComponentClassCache;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/HelperUtils.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/HelperUtils.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+exports.__esModule = true;
+exports.stripRemainingProps = exports.convertProps = void 0;
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+var _filterInvalidDomProps = _interopRequireDefault(__webpack_require__(/*! filter-invalid-dom-props */ "./node_modules/filter-invalid-dom-props/dist/index.js"));
+var _MediaUtils = __webpack_require__(/*! ./MediaUtils */ "./node_modules/gatsby-background-image/lib/MediaUtils.js");
+var stripRemainingProps = function stripRemainingProps(props) {
+  return (0, _filterInvalidDomProps.default)(props);
+};
+exports.stripRemainingProps = stripRemainingProps;
+var convertProps = function convertProps(props) {
+  var convertedProps = (0, _extends2.default)({}, props);
+  var fixed = convertedProps.fixed,
+    fluid = convertedProps.fluid;
+  if (fluid && (0, _MediaUtils.hasArtDirectionSupport)(props, 'fluid')) {
+    convertedProps.fluid = (0, _MediaUtils.groupByMedia)(convertedProps.fluid);
+  }
+  if (fixed && (0, _MediaUtils.hasArtDirectionSupport)(props, 'fixed')) {
+    convertedProps.fixed = (0, _MediaUtils.groupByMedia)(convertedProps.fixed);
+  }
+  return convertedProps;
+};
+exports.convertProps = convertProps;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/ImageCache.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/ImageCache.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.resetImageCache = exports.inImageCache = exports.allInImageCache = exports.activateCacheForMultipleImages = exports.activateCacheForImage = void 0;
+var _HelperUtils = __webpack_require__(/*! ./HelperUtils */ "./node_modules/gatsby-background-image/lib/HelperUtils.js");
+var _MediaUtils = __webpack_require__(/*! ./MediaUtils */ "./node_modules/gatsby-background-image/lib/MediaUtils.js");
+var _ImageUtils = __webpack_require__(/*! ./ImageUtils */ "./node_modules/gatsby-background-image/lib/ImageUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var imageCache = Object.create({});
+var inImageCache = function inImageCache(props, index, isLoop) {
+  if (index === void 0) {
+    index = 0;
+  }
+  if (isLoop === void 0) {
+    isLoop = false;
+  }
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  var isImageStack = (0, _ImageUtils.hasImageArray)(convertedProps) && !(0, _MediaUtils.hasArtDirectionArray)(convertedProps);
+  if (isImageStack && !isLoop) {
+    return allInImageCache(props);
+  }
+  var src = isImageStack ? (0, _ImageUtils.getSelectedImage)(convertedProps, index) : (0, _ImageUtils.getImageSrcKey)(convertedProps);
+  if ((0, _SimpleUtils.isObject)(src)) {
+    var objectSrc = (0, _ImageUtils.getImageSrcKey)({
+      fluid: src,
+      fixed: src
+    });
+    return imageCache[objectSrc] || false;
+  }
+  return imageCache[src] || false;
+};
+exports.inImageCache = inImageCache;
+var allInImageCache = function allInImageCache(props) {
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  var imageStack = convertedProps.fluid || convertedProps.fixed;
+  return imageStack.every(function (imageData, index) {
+    return inImageCache(convertedProps, index, true);
+  });
+};
+exports.allInImageCache = allInImageCache;
+var activateCacheForImage = function activateCacheForImage(props, index, isLoop) {
+  if (index === void 0) {
+    index = 0;
+  }
+  if (isLoop === void 0) {
+    isLoop = false;
+  }
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  var isImageStack = (0, _ImageUtils.hasImageArray)(convertedProps) && !(0, _MediaUtils.hasArtDirectionArray)(convertedProps);
+  if (isImageStack && !isLoop) {
+    return activateCacheForMultipleImages(props);
+  }
+  var src = isImageStack ? (0, _ImageUtils.getSelectedImage)(convertedProps, index) : (0, _ImageUtils.getImageSrcKey)(convertedProps);
+  if (src) {
+    if ((0, _SimpleUtils.isObject)(src)) {
+      var objectSrc = (0, _ImageUtils.getImageSrcKey)({
+        fluid: src,
+        fixed: src
+      });
+      imageCache[objectSrc] = true;
+    } else {
+      imageCache[src] = true;
+    }
+  }
+};
+exports.activateCacheForImage = activateCacheForImage;
+var activateCacheForMultipleImages = function activateCacheForMultipleImages(props) {
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  var imageStack = convertedProps.fluid || convertedProps.fixed;
+  imageStack.forEach(function (imageData, index) {
+    return activateCacheForImage(convertedProps, index, true);
+  });
+};
+exports.activateCacheForMultipleImages = activateCacheForMultipleImages;
+var resetImageCache = function resetImageCache() {
+  for (var prop in imageCache) {
+    delete imageCache[prop];
+  }
+};
+exports.resetImageCache = resetImageCache;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/ImageHandling.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/ImageHandling.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.switchImageSettings = void 0;
+var _ImageUtils = __webpack_require__(/*! ./ImageUtils */ "./node_modules/gatsby-background-image/lib/ImageUtils.js");
+var _MediaUtils = __webpack_require__(/*! ./MediaUtils */ "./node_modules/gatsby-background-image/lib/MediaUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var switchImageSettings = function switchImageSettings(_ref) {
+  var image = _ref.image,
+    bgImage = _ref.bgImage,
+    imageRef = _ref.imageRef,
+    state = _ref.state;
+  var currentSources = (0, _ImageUtils.getCurrentFromData)({
+    data: imageRef,
+    propName: "currentSrc"
+  });
+  var returnArray = Array.isArray(image) && !(0, _MediaUtils.hasArtDirectionArray)({
+    fluid: image
+  });
+  var lastImage = Array.isArray(bgImage) ? (0, _SimpleUtils.filteredJoin)(bgImage) : bgImage;
+  var nextImage;
+  var nextImageArray;
+  var finalImage = returnArray && state.seenBefore && !!currentSources;
+  if (returnArray) {
+    if (!currentSources) {
+      nextImage = (0, _ImageUtils.getCurrentFromData)({
+        data: image,
+        propName: "tracedSVG",
+        returnArray: returnArray
+      });
+      nextImage = (0, _SimpleUtils.combineArray)((0, _ImageUtils.getCurrentFromData)({
+        data: image,
+        propName: "base64",
+        returnArray: returnArray
+      }), nextImage);
+    }
+    nextImage = (0, _SimpleUtils.combineArray)((0, _ImageUtils.getCurrentFromData)({
+      data: image,
+      propName: "CSS_STRING",
+      addUrl: false,
+      returnArray: returnArray
+    }), nextImage);
+    if ((state.imgLoaded || !!currentSources) && state.isVisible) {
+      if (currentSources) {
+        nextImage = (0, _SimpleUtils.combineArray)((0, _ImageUtils.getCurrentFromData)({
+          data: imageRef,
+          propName: "currentSrc",
+          returnArray: returnArray
+        }), nextImage);
+        finalImage = true;
+      } else {
+        nextImage = (0, _SimpleUtils.combineArray)((0, _ImageUtils.getCurrentFromData)({
+          data: imageRef,
+          propName: "src",
+          returnArray: returnArray
+        }), nextImage);
+        finalImage = true;
+      }
+    }
+    nextImage = (0, _SimpleUtils.combineArray)(nextImage, bgImage);
+    var dummyArray = (0, _ImageUtils.createDummyImageArray)(image.length);
+    nextImage = (0, _SimpleUtils.combineArray)(nextImage, dummyArray);
+    nextImageArray = nextImage;
+    nextImage = (0, _SimpleUtils.filteredJoin)(nextImage);
+  } else {
+    nextImage = "";
+    nextImage = (0, _ImageUtils.getCurrentFromData)({
+      data: image,
+      propName: "tracedSVG"
+    }) || (0, _ImageUtils.getCurrentFromData)({
+      data: image,
+      propName: "base64"
+    });
+    if (state.imgLoaded && state.isVisible) {
+      nextImage = currentSources;
+      finalImage = true;
+    }
+  }
+  var afterOpacity = state.imageState % 2;
+  if (!returnArray && nextImage === "" && state.imgLoaded && state.isVisible && imageRef && !imageRef.currentSrc) {
+    nextImage = (0, _ImageUtils.getCurrentFromData)({
+      data: imageRef,
+      propName: "src",
+      checkLoaded: false
+    });
+    finalImage = true;
+  }
+  if (!nextImage) nextImage = lastImage;
+  var newImageSettings = {
+    lastImage: lastImage,
+    nextImage: nextImage,
+    afterOpacity: afterOpacity,
+    finalImage: finalImage
+  };
+  if (nextImageArray) newImageSettings.nextImageArray = nextImageArray;
+  return newImageSettings;
+};
+exports.switchImageSettings = switchImageSettings;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/ImageRef.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/ImageRef.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.imageReferenceCompleted = exports.hasPictureRef = exports.hasActivatedPictureRefs = exports.createPictureRef = exports.createMultiplePictureRefs = exports.activatePictureRef = exports.activateMultiplePictureRefs = void 0;
+var _HelperUtils = __webpack_require__(/*! ./HelperUtils */ "./node_modules/gatsby-background-image/lib/HelperUtils.js");
+var _ImageUtils = __webpack_require__(/*! ./ImageUtils */ "./node_modules/gatsby-background-image/lib/ImageUtils.js");
+var _MediaUtils = __webpack_require__(/*! ./MediaUtils */ "./node_modules/gatsby-background-image/lib/MediaUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var _ImageCache = __webpack_require__(/*! ./ImageCache */ "./node_modules/gatsby-background-image/lib/ImageCache.js");
+var createPictureRef = function createPictureRef(props, onLoad, index, isLoop) {
+  if (isLoop === void 0) {
+    isLoop = false;
+  }
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  if ((0, _SimpleUtils.isBrowser)() && (typeof convertedProps.fluid !== "undefined" || typeof convertedProps.fixed !== "undefined")) {
+    var isImageStack = (0, _ImageUtils.hasImageArray)(convertedProps) && !(0, _MediaUtils.hasArtDirectionArray)(convertedProps);
+    if (isImageStack && !isLoop) {
+      return createMultiplePictureRefs(props, onLoad);
+    }
+    var img = new Image();
+    img.onload = function () {
+      return onLoad();
+    };
+    if (!img.complete && typeof convertedProps.onLoad === "function") {
+      img.addEventListener('load', convertedProps.onLoad);
+    }
+    if (typeof convertedProps.onError === "function") {
+      img.addEventListener('error', convertedProps.onError);
+    }
+    if (convertedProps.crossOrigin) {
+      img.crossOrigin = convertedProps.crossOrigin;
+    }
+    if ((convertedProps.critical || convertedProps.isVisible) && !isLoop) {
+      return activatePictureRef(img, convertedProps, index, isLoop);
+    }
+    return img;
+  }
+  return null;
+};
+exports.createPictureRef = createPictureRef;
+var createMultiplePictureRefs = function createMultiplePictureRefs(props, onLoad) {
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  var imageStack = convertedProps.fluid || convertedProps.fixed;
+  var imageRefs = imageStack.map(function (imageData, index) {
+    return createPictureRef(convertedProps, onLoad, index, true);
+  });
+  if (convertedProps.critical || convertedProps.isVisible) {
+    return activatePictureRef(imageRefs, convertedProps);
+  }
+  return imageRefs;
+};
+exports.createMultiplePictureRefs = createMultiplePictureRefs;
+var activatePictureRef = function activatePictureRef(imageRef, props, selfRef, index, isLoop) {
+  if (selfRef === void 0) {
+    selfRef = null;
+  }
+  if (index === void 0) {
+    index = 0;
+  }
+  if (isLoop === void 0) {
+    isLoop = false;
+  }
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  if ((0, _SimpleUtils.isBrowser)() && (typeof convertedProps.fluid !== "undefined" || typeof convertedProps.fixed !== "undefined")) {
+    var isImageStack = (0, _ImageUtils.hasImageArray)(convertedProps) && !(0, _MediaUtils.hasArtDirectionArray)(convertedProps);
+    if (isImageStack && !isLoop) {
+      return activateMultiplePictureRefs(imageRef, props, selfRef);
+    }
+    var bodyClone = document.createElement('body');
+    var imageData = isImageStack ? (0, _ImageUtils.getSelectedImage)(convertedProps, index) : (0, _ImageUtils.getCurrentSrcData)(convertedProps);
+    if (!imageData) {
+      return null;
+    }
+    if ((0, _SimpleUtils.isString)(imageData)) {
+      return imageData;
+    }
+    if (selfRef) {
+      imageRef.width = selfRef.offsetWidth;
+      imageRef.height = selfRef.offsetHeight;
+    }
+    if ((0, _ImageUtils.hasPictureElement)()) {
+      var pic = document.createElement('picture');
+      if (selfRef) {
+        pic.width = imageRef.width;
+        pic.height = imageRef.height;
+      }
+      if ((0, _MediaUtils.hasArtDirectionArray)(convertedProps)) {
+        var sources = (0, _MediaUtils.createArtDirectionSources)(convertedProps).reverse();
+        sources.forEach(function (currentSource) {
+          return pic.appendChild(currentSource);
+        });
+      }
+      var sourcesAvif = (0, _MediaUtils.createSourceElementForSrcSet)(imageData, 'avif');
+      sourcesAvif && pic.appendChild(sourcesAvif);
+      var sourcesWebp = (0, _MediaUtils.createSourceElementForSrcSet)(imageData, 'webp');
+      sourcesWebp && pic.appendChild(sourcesWebp);
+      pic.appendChild(imageRef);
+      bodyClone.appendChild(pic);
+    }
+    imageRef.sizes = imageData.sizes || "";
+    imageRef.srcset = imageData.srcSet || "";
+    imageRef.src = imageData.src || "";
+    return imageRef;
+  }
+  return null;
+};
+exports.activatePictureRef = activatePictureRef;
+var activateMultiplePictureRefs = function activateMultiplePictureRefs(imageRefs, props, selfRef) {
+  return imageRefs.map(function (imageRef, index) {
+    return activatePictureRef(imageRef, props, selfRef, index, true);
+  });
+};
+exports.activateMultiplePictureRefs = activateMultiplePictureRefs;
+var hasActivatedPictureRefs = function hasActivatedPictureRefs(imageRefs) {
+  return Array.isArray(imageRefs) ? imageRefs.every(function (imageRef) {
+    return hasPictureRef(imageRef);
+  }) : hasPictureRef(imageRefs);
+};
+exports.hasActivatedPictureRefs = hasActivatedPictureRefs;
+var hasPictureRef = function hasPictureRef(imageRef) {
+  return (0, _SimpleUtils.isString)(imageRef) || !!imageRef && !!imageRef.currentSrc;
+};
+exports.hasPictureRef = hasPictureRef;
+var imageReferenceCompleted = function imageReferenceCompleted(imageRef, props) {
+  return imageRef ? Array.isArray(imageRef) ? imageRef.every(function (singleImageRef) {
+    return (0, _ImageUtils.imageLoaded)(singleImageRef);
+  }) || (0, _ImageCache.inImageCache)(props) : (0, _ImageUtils.imageLoaded)(imageRef) || (0, _ImageCache.inImageCache)(props) : (0, _SimpleUtils.isString)(imageRef);
+};
+exports.imageReferenceCompleted = imageReferenceCompleted;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/ImageUtils.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/ImageUtils.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.isBase64 = exports.imagePropsChanged = exports.imageLoaded = exports.imageArrayPropsChanged = exports.hasPictureElement = exports.hasImageUrl = exports.hasImageArray = exports.getUrlString = exports.getSelectedImage = exports.getImageSrcKey = exports.getCurrentSrcData = exports.getCurrentFromData = exports.createDummyImageArray = void 0;
+var _MediaUtils = __webpack_require__(/*! ./MediaUtils */ "./node_modules/gatsby-background-image/lib/MediaUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var hasPictureElement = function hasPictureElement() {
+  return typeof HTMLPictureElement !== "undefined" || (0, _SimpleUtils.isBrowser)();
+};
+exports.hasPictureElement = hasPictureElement;
+var hasImageArray = function hasImageArray(props) {
+  return Boolean(props.fluid && Array.isArray(props.fluid) || props.fixed && Array.isArray(props.fixed));
+};
+exports.hasImageArray = hasImageArray;
+var getCurrentFromData = function getCurrentFromData(_ref) {
+  var data = _ref.data,
+    propName = _ref.propName,
+    _ref$addUrl = _ref.addUrl,
+    addUrl = _ref$addUrl === void 0 ? true : _ref$addUrl,
+    _ref$returnArray = _ref.returnArray,
+    returnArray = _ref$returnArray === void 0 ? false : _ref$returnArray,
+    _ref$checkLoaded = _ref.checkLoaded,
+    checkLoaded = _ref$checkLoaded === void 0 ? true : _ref$checkLoaded;
+  if (!data || !propName) return "";
+  var tracedSVG = propName === "tracedSVG";
+  if (Array.isArray(data) && !(0, _MediaUtils.hasArtDirectionArray)({
+    fluid: data
+  })) {
+    var imageString = data.map(function (dataElement) {
+      if (propName === "currentSrc" || propName === 'src') {
+        return checkLoaded ? imageLoaded(dataElement) && dataElement[propName] || "" : dataElement[propName];
+      }
+      if (propName === "CSS_STRING" && (0, _SimpleUtils.isString)(dataElement)) {
+        return dataElement;
+      }
+      return (0, _SimpleUtils.isString)(dataElement) ? dataElement : dataElement && propName in dataElement ? dataElement[propName] : "";
+    });
+    return getUrlString({
+      imageString: imageString,
+      tracedSVG: tracedSVG,
+      addUrl: addUrl,
+      returnArray: returnArray
+    });
+  }
+  if ((0, _MediaUtils.hasArtDirectionArray)({
+    fluid: data
+  }) && (propName === "currentSrc" || propName === "src" || propName === "base64" || tracedSVG)) {
+    var currentData = getCurrentSrcData({
+      fluid: data
+    });
+    return propName in currentData ? getUrlString({
+      imageString: currentData[propName],
+      tracedSVG: tracedSVG,
+      addUrl: addUrl
+    }) : "";
+  }
+  if (typeof data !== 'object') {
+    return '';
+  }
+  if ((propName === "currentSrc" || propName === 'src') && propName in data) {
+    return getUrlString({
+      imageString: checkLoaded ? imageLoaded(data) && data[propName] || "" : data[propName],
+      addUrl: addUrl
+    });
+  }
+  return propName in data ? getUrlString({
+    imageString: data[propName],
+    tracedSVG: tracedSVG,
+    addUrl: addUrl
+  }) : "";
+};
+exports.getCurrentFromData = getCurrentFromData;
+var getImageSrcKey = function getImageSrcKey(_ref2) {
+  var fluid = _ref2.fluid,
+    fixed = _ref2.fixed;
+  var data = getCurrentSrcData({
+    fluid: fluid,
+    fixed: fixed
+  });
+  return data ? data.src || null : null;
+};
+exports.getImageSrcKey = getImageSrcKey;
+var getCurrentSrcData = function getCurrentSrcData(_ref3, index) {
+  var fluid = _ref3.fluid,
+    fixed = _ref3.fixed,
+    returnArray = _ref3.returnArray;
+  if (index === void 0) {
+    index = 0;
+  }
+  var currentData = fluid || fixed;
+  if (hasImageArray({
+    fluid: fluid,
+    fixed: fixed
+  })) {
+    if (returnArray) {
+      return currentData;
+    }
+    if ((0, _SimpleUtils.isBrowser)() && (0, _MediaUtils.hasArtDirectionArray)({
+      fluid: fluid,
+      fixed: fixed
+    })) {
+      var mediaData = currentData.slice().reverse();
+      var foundMedia = mediaData.findIndex(_MediaUtils.matchesMedia);
+      if (foundMedia !== -1) {
+        return mediaData[foundMedia];
+      }
+    }
+    return currentData[index];
+  }
+  return currentData;
+};
+exports.getCurrentSrcData = getCurrentSrcData;
+var getSelectedImage = function getSelectedImage(_ref4, index) {
+  var fluid = _ref4.fluid,
+    fixed = _ref4.fixed;
+  if (index === void 0) {
+    index = 0;
+  }
+  var currentData = fluid || fixed;
+  if (hasImageArray({
+    fluid: fluid,
+    fixed: fixed
+  })) {
+    return currentData[index] || currentData[0];
+  }
+  return currentData;
+};
+exports.getSelectedImage = getSelectedImage;
+var getUrlString = function getUrlString(_ref5) {
+  var imageString = _ref5.imageString,
+    _ref5$tracedSVG = _ref5.tracedSVG,
+    tracedSVG = _ref5$tracedSVG === void 0 ? false : _ref5$tracedSVG,
+    _ref5$addUrl = _ref5.addUrl,
+    addUrl = _ref5$addUrl === void 0 ? true : _ref5$addUrl,
+    _ref5$returnArray = _ref5.returnArray,
+    returnArray = _ref5$returnArray === void 0 ? false : _ref5$returnArray,
+    _ref5$hasImageUrls = _ref5.hasImageUrls,
+    hasImageUrls = _ref5$hasImageUrls === void 0 ? false : _ref5$hasImageUrls;
+  if (Array.isArray(imageString)) {
+    var stringArray = imageString.map(function (currentString) {
+      if (currentString) {
+        var _base = isBase64(currentString);
+        var _imageUrl = hasImageUrls || hasImageUrl(currentString);
+        var currentReturnString = currentString && tracedSVG ? "\"" + currentString + "\"" : currentString && !_base && !tracedSVG && _imageUrl ? "'" + currentString + "'" : currentString;
+        return addUrl && currentString ? "url(" + currentReturnString + ")" : currentReturnString;
+      }
+      return currentString;
+    });
+    return returnArray ? stringArray : (0, _SimpleUtils.filteredJoin)(stringArray);
+  }
+  var base64 = isBase64(imageString);
+  var imageUrl = hasImageUrls || hasImageUrl(imageString);
+  var returnString = imageString && tracedSVG ? "\"" + imageString + "\"" : imageString && !base64 && !tracedSVG && imageUrl ? "'" + imageString + "'" : imageString;
+  return imageString ? addUrl ? "url(" + returnString + ")" : returnString : "";
+};
+exports.getUrlString = getUrlString;
+var isBase64 = function isBase64(base64String) {
+  return (0, _SimpleUtils.isString)(base64String) && base64String.indexOf("base64") !== -1;
+};
+exports.isBase64 = isBase64;
+var hasImageUrl = function hasImageUrl(imageString) {
+  return (0, _SimpleUtils.isString)(imageString) && imageString.substr(0, 4) === "http";
+};
+exports.hasImageUrl = hasImageUrl;
+var imagePropsChanged = function imagePropsChanged(props, prevProps) {
+  return props.fluid && !prevProps.fluid || props.fixed && !prevProps.fixed || imageArrayPropsChanged(props, prevProps) || props.fluid && prevProps.fluid && props.fluid.src !== prevProps.fluid.src || props.fixed && prevProps.fixed && props.fixed.src !== prevProps.fixed.src;
+};
+exports.imagePropsChanged = imagePropsChanged;
+var imageArrayPropsChanged = function imageArrayPropsChanged(props, prevProps) {
+  var isPropsFluidArray = Array.isArray(props.fluid);
+  var isPrevPropsFluidArray = Array.isArray(prevProps.fluid);
+  var isPropsFixedArray = Array.isArray(props.fixed);
+  var isPrevPropsFixedArray = Array.isArray(prevProps.fixed);
+  if (isPropsFluidArray && !isPrevPropsFluidArray || isPropsFixedArray && !isPrevPropsFixedArray || !isPropsFluidArray && isPrevPropsFluidArray || !isPropsFixedArray && isPrevPropsFixedArray) {
+    return true;
+  }
+  if (isPropsFluidArray && isPrevPropsFluidArray) {
+    if (props.fluid.length === prevProps.fluid.length) {
+      return props.fluid.some(function (image, index) {
+        return image.src !== prevProps.fluid[index].src;
+      });
+    }
+    return true;
+  }
+  if (isPropsFixedArray && isPrevPropsFixedArray) {
+    if (props.fixed.length === prevProps.fixed.length) {
+      return props.fixed.some(function (image, index) {
+        return image.src !== prevProps.fixed[index].src;
+      });
+    }
+    return true;
+  }
+};
+exports.imageArrayPropsChanged = imageArrayPropsChanged;
+var createDummyImageArray = function createDummyImageArray(length) {
+  var DUMMY_IMG = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+  var dummyImageURI = getUrlString({
+    imageString: DUMMY_IMG
+  });
+  return Array(length).fill(dummyImageURI);
+};
+exports.createDummyImageArray = createDummyImageArray;
+var imageLoaded = function imageLoaded(imageRef) {
+  return imageRef ? (0, _SimpleUtils.isString)(imageRef) || imageRef.complete && imageRef.naturalWidth !== 0 && imageRef.naturalHeight !== 0 : false;
+};
+exports.imageLoaded = imageLoaded;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/IntersectionObserverUtils.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/IntersectionObserverUtils.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.listenToIntersections = exports.getIO = exports.callbackIO = void 0;
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var io;
+var listeners = new WeakMap();
+var callbackIO = function callbackIO(entries) {
+  entries.forEach(function (entry) {
+    if (listeners.has(entry.target)) {
+      var callback = listeners.get(entry.target);
+      if (entry.isIntersecting || entry.intersectionRatio > 0) {
+        io.unobserve(entry.target);
+        listeners.delete(entry.target);
+        callback();
+      }
+    }
+  });
+};
+exports.callbackIO = callbackIO;
+var getIO = function getIO(rootMargin) {
+  if (typeof io === "undefined" && (0, _SimpleUtils.isBrowser)() && window.IntersectionObserver) {
+    io = new window.IntersectionObserver(callbackIO, {
+      rootMargin: rootMargin
+    });
+  }
+  return io;
+};
+exports.getIO = getIO;
+var listenToIntersections = function listenToIntersections(element, callback, rootMargin) {
+  if (rootMargin === void 0) {
+    rootMargin = "200px";
+  }
+  var observer = getIO(rootMargin);
+  if (observer) {
+    observer.observe(element);
+    listeners.set(element, callback);
+    return function () {
+      observer.unobserve(element);
+      listeners.delete(element);
+    };
+  }
+  return function () {};
+};
+exports.listenToIntersections = listenToIntersections;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/MediaUtils.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/MediaUtils.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+exports.__esModule = true;
+exports.matchesMedia = exports.hasArtDirectionSupport = exports.hasArtDirectionArray = exports.groupByMedia = exports.createSourceElementForSrcSet = exports.createArtDirectionSources = void 0;
+var _sortMediaQueries = _interopRequireDefault(__webpack_require__(/*! sort-media-queries */ "./node_modules/sort-media-queries/lib/index.js"));
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var groupByMedia = function groupByMedia(imageVariants) {
+  var without = [];
+  var sortedVariants = (0, _sortMediaQueries.default)(imageVariants, 'media');
+  sortedVariants.forEach(function (variant) {
+    return !variant.media && without.push(variant);
+  });
+  if (without.length > 1 && "development" !== "production") {
+    console.warn("We've found " + without.length + " sources without a media property. They might be ignored by the browser, see: https://www.gatsbyjs.org/packages/gatsby-image/#art-directing-multiple-images");
+  }
+  return sortedVariants;
+};
+exports.groupByMedia = groupByMedia;
+var createSourceElementForSrcSet = function createSourceElementForSrcSet(image, type) {
+  var source = document.createElement('source');
+  var srcSetName = "srcSet" + (0, _SimpleUtils.capitalize)(type);
+  if (srcSetName in image) {
+    source.type = "image/" + type;
+    source.srcset = image[srcSetName];
+  }
+  if (image.sizes) {
+    source.sizes = image.sizes;
+  }
+  if (image.media) {
+    source.media = image.media;
+  }
+  return source.srcset ? source : null;
+};
+exports.createSourceElementForSrcSet = createSourceElementForSrcSet;
+var createArtDirectionSources = function createArtDirectionSources(_ref) {
+  var fluid = _ref.fluid,
+    fixed = _ref.fixed;
+  var currentSource = fluid || fixed;
+  return currentSource.reduce(function (sources, image) {
+    if (!image.media) {
+      return sources;
+    }
+    var sourceWebp = createSourceElementForSrcSet(image, 'webp');
+    var sourceAvif = createSourceElementForSrcSet(image, 'avif');
+    sourceWebp && sources.push(sourceWebp);
+    sourceAvif && sources.push(sourceAvif);
+    return sources;
+  }, []);
+};
+exports.createArtDirectionSources = createArtDirectionSources;
+var hasArtDirectionSupport = function hasArtDirectionSupport(props, prop) {
+  return props[prop] && Array.isArray(props[prop]) && props[prop].some(function (image) {
+    return !!image && typeof image.media !== 'undefined';
+  });
+};
+exports.hasArtDirectionSupport = hasArtDirectionSupport;
+var hasArtDirectionArray = function hasArtDirectionArray(props) {
+  return hasArtDirectionSupport(props, 'fluid') || hasArtDirectionSupport(props, 'fixed');
+};
+exports.hasArtDirectionArray = hasArtDirectionArray;
+var matchesMedia = function matchesMedia(_ref2) {
+  var media = _ref2.media;
+  return media ? (0, _SimpleUtils.isBrowser)() && typeof window.matchMedia !== "undefined" && !!window.matchMedia(media).matches : false;
+};
+exports.matchesMedia = matchesMedia;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/SimpleUtils.js":
+/*!*****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/SimpleUtils.js ***!
+  \*****************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+
+exports.__esModule = true;
+exports.toKebabCase = exports.toCamelCase = exports.stringToArray = exports.isString = exports.isObject = exports.isBrowser = exports.hashString = exports.filteredJoin = exports.combineArray = exports.capitalize = void 0;
+var isBrowser = function isBrowser() {
+  return typeof window !== "undefined" && typeof window.document !== "undefined";
+};
+exports.isBrowser = isBrowser;
+var isString = function isString(value) {
+  return Object.prototype.toString.call(value) === '[object String]';
+};
+exports.isString = isString;
+var isObject = function isObject(value) {
+  return Object.prototype.toString.call(value) === '[object Object]';
+};
+exports.isObject = isObject;
+var toCamelCase = function toCamelCase(str) {
+  return isString(str) && str.indexOf('-') !== -1 && str.toLowerCase().replace(/(?:^\w|-|[A-Z]|\b\w)/g, function (letter, index) {
+    return index === 0 ? letter.toLowerCase() : letter.toUpperCase();
+  }).replace(/\s|\W+/g, '') || str;
+};
+exports.toCamelCase = toCamelCase;
+var toKebabCase = function toKebabCase(str) {
+  return isString(str) && str.replace(/\s|\W+/g, '').replace(/[A-Z]/g, function (match) {
+    return "-" + match.toLowerCase();
+  });
+};
+exports.toKebabCase = toKebabCase;
+var capitalize = function capitalize(str) {
+  return (str === null || str === void 0 ? void 0 : str.charAt(0).toUpperCase()) + str.slice(1);
+};
+exports.capitalize = capitalize;
+var stringToArray = function stringToArray(str, delimiter) {
+  if (delimiter === void 0) {
+    delimiter = " ";
+  }
+  if (str instanceof Array) {
+    return str;
+  }
+  if (isString(str)) {
+    if (str.includes(delimiter)) {
+      return str.split(delimiter);
+    }
+    return [str];
+  }
+  return false;
+};
+exports.stringToArray = stringToArray;
+var hashString = function hashString(str) {
+  return isString(str) && [].reduce.call(str, function (hash, item) {
+    hash = (hash << 5) - hash + item.charCodeAt(0);
+    return hash | 0;
+  }, 0);
+};
+exports.hashString = hashString;
+var filteredJoin = function filteredJoin(arrayToJoin) {
+  return arrayToJoin.filter(function (item) {
+    return item !== "";
+  }).join();
+};
+exports.filteredJoin = filteredJoin;
+var combineArray = function combineArray(fromArray, toArray) {
+  if (!Array.isArray(fromArray)) {
+    return [fromArray];
+  }
+  return fromArray.map(function (item, index) {
+    return item || toArray && toArray[index];
+  });
+};
+exports.combineArray = combineArray;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/StyleCreation.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/StyleCreation.js ***!
+  \*******************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+exports.__esModule = true;
+exports.createStyleImage = exports.createPseudoStyles = exports.createPseudoElementWithContent = exports.createPseudoElementMediaQuery = exports.createPseudoElement = exports.createNoScriptStyles = void 0;
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+var _StyleUtils = __webpack_require__(/*! ./StyleUtils */ "./node_modules/gatsby-background-image/lib/StyleUtils.js");
+var _ImageUtils = __webpack_require__(/*! ./ImageUtils */ "./node_modules/gatsby-background-image/lib/ImageUtils.js");
+var _MediaUtils = __webpack_require__(/*! ./MediaUtils */ "./node_modules/gatsby-background-image/lib/MediaUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var createPseudoElement = function createPseudoElement(className, appendix) {
+  if (appendix === void 0) {
+    appendix = ":before";
+  }
+  var escapedClassName = (0, _StyleUtils.escapeClassNames)(className);
+  var classes = (0, _SimpleUtils.stringToArray)(escapedClassName);
+  var pseudoClasses = "";
+  if (Array.isArray(classes)) {
+    classes = classes.filter(function (c) {
+      return c !== '';
+    });
+    if (classes.length > 0) {
+      pseudoClasses = "." + classes.join('.') + appendix;
+    }
+  }
+  return pseudoClasses;
+};
+exports.createPseudoElement = createPseudoElement;
+var createPseudoElementWithContent = function createPseudoElementWithContent(pseudoElementString, imageSource) {
+  return "\n    " + pseudoElementString + " {\n      opacity: 1;\n      background-image: " + imageSource + ";\n    }";
+};
+exports.createPseudoElementWithContent = createPseudoElementWithContent;
+var createPseudoElementMediaQuery = function createPseudoElementMediaQuery(pseudoElementString, media, imageSource, imageSourceWebP) {
+  return "\n      @media " + media + " {\n        " + createPseudoElementWithContent(pseudoElementString, imageSource) + "\n      }\n      " + (imageSourceWebP && "@media " + media + " {\n          " + createPseudoElementWithContent(pseudoElementString, imageSourceWebP) + "\n        }") + "\n    ";
+};
+exports.createPseudoElementMediaQuery = createPseudoElementMediaQuery;
+var createPseudoStyles = function createPseudoStyles(_ref) {
+  var className = _ref.className,
+    transitionDelay = _ref.transitionDelay,
+    lastImage = _ref.lastImage,
+    nextImage = _ref.nextImage,
+    afterOpacity = _ref.afterOpacity,
+    bgColor = _ref.bgColor,
+    fadeIn = _ref.fadeIn,
+    backgroundStyles = _ref.backgroundStyles,
+    style = _ref.style,
+    finalImage = _ref.finalImage,
+    originalData = _ref.originalData;
+  var pseudoBefore = createPseudoElement(className);
+  var pseudoAfter = createPseudoElement(className, ":after");
+  var currentBackgroundStyles = (0, _extends2.default)({}, backgroundStyles, style);
+  return "\n          " + pseudoBefore + ",\n          " + pseudoAfter + " {\n            content: '';\n            display: block;\n            position: absolute;\n            width: 100%;\n            height: 100%;\n            top: 0;\n            left: 0;\n            " + (bgColor && "background-color: " + bgColor + ";") + "\n            " + (0, _StyleUtils.setTransitionStyles)(transitionDelay, fadeIn) + "\n            " + (0, _StyleUtils.kebabifyBackgroundStyles)(currentBackgroundStyles) + "\n          }\n          " + pseudoBefore + " {\n            z-index: -100;\n            " + ((!afterOpacity || finalImage) && createStyleImage(nextImage, originalData) || "") + "\n            " + (afterOpacity && lastImage && createStyleImage(lastImage, originalData) || "") + "\n            opacity: " + Number(!afterOpacity) + "; \n          }\n          " + pseudoAfter + " {\n            z-index: -101;\n            " + ((afterOpacity || finalImage) && createStyleImage(nextImage, originalData) || "") + "\n            " + (!afterOpacity && lastImage && createStyleImage(lastImage, originalData) || "") + "\n            " + (finalImage ? "opacity: " + Number(afterOpacity) + ";" : "") + "\n          }\n        ";
+};
+exports.createPseudoStyles = createPseudoStyles;
+var createStyleImage = function createStyleImage(image, originalData) {
+  var hasStackedImages = (0, _ImageUtils.hasImageArray)({
+    fluid: originalData
+  }) && !(0, _MediaUtils.hasArtDirectionArray)({
+    fluid: originalData
+  });
+  if ((0, _SimpleUtils.isBrowser)() || hasStackedImages) {
+    return image ? "background-image: " + image + ";" : "";
+  }
+  return "";
+};
+exports.createStyleImage = createStyleImage;
+var createNoScriptStyles = function createNoScriptStyles(_ref2) {
+  var className = _ref2.className,
+    image = _ref2.image;
+  if (image) {
+    var returnArray = Array.isArray(image) && !(0, _MediaUtils.hasArtDirectionArray)({
+      fluid: image
+    });
+    var addUrl = false;
+    var allSources = (0, _ImageUtils.getCurrentFromData)({
+      data: image,
+      propName: "src",
+      checkLoaded: false,
+      addUrl: addUrl,
+      returnArray: returnArray
+    });
+    var sourcesAsUrl = (0, _ImageUtils.getUrlString)({
+      imageString: allSources,
+      hasImageUrls: true,
+      returnArray: returnArray
+    });
+    var sourcesAsUrlWithCSS = "";
+    if (returnArray) {
+      var cssStrings = (0, _ImageUtils.getCurrentFromData)({
+        data: image,
+        propName: "CSS_STRING",
+        addUrl: false,
+        returnArray: returnArray
+      });
+      sourcesAsUrlWithCSS = (0, _SimpleUtils.filteredJoin)((0, _SimpleUtils.combineArray)(sourcesAsUrl, cssStrings));
+    }
+    var pseudoBefore = createPseudoElement(className);
+    if ((0, _MediaUtils.hasArtDirectionArray)({
+      fluid: image
+    })) {
+      return image.map(function (currentMedia) {
+        var sourceString = (0, _ImageUtils.getUrlString)({
+          imageString: currentMedia.src
+        });
+        var webPString = (0, _ImageUtils.getUrlString)({
+          imageString: currentMedia.srcWebp || ""
+        });
+        if (currentMedia.media) {
+          return createPseudoElementMediaQuery(pseudoBefore, currentMedia.media, sourceString, webPString);
+        }
+        return createPseudoElementMediaQuery(pseudoBefore, 'screen', sourceString, webPString);
+      }).join('');
+    }
+    return createPseudoElementWithContent(pseudoBefore, sourcesAsUrlWithCSS || sourcesAsUrl);
+  }
+  return "";
+};
+exports.createNoScriptStyles = createNoScriptStyles;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-background-image/lib/StyleUtils.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/gatsby-background-image/lib/StyleUtils.js ***!
+  \****************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+exports.__esModule = true;
+exports.setTransitionStyles = exports.presetBackgroundStyles = exports.kebabifyBackgroundStyles = exports.fixOpacity = exports.fixClassName = exports.escapeClassNames = void 0;
+var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/extends.js"));
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js"));
+var _shortUuid = _interopRequireDefault(__webpack_require__(/*! short-uuid */ "./node_modules/short-uuid/index.js"));
+var _HelperUtils = __webpack_require__(/*! ./HelperUtils */ "./node_modules/gatsby-background-image/lib/HelperUtils.js");
+var _ClassCache = __webpack_require__(/*! ./ClassCache */ "./node_modules/gatsby-background-image/lib/ClassCache.js");
+var _ImageUtils = __webpack_require__(/*! ./ImageUtils */ "./node_modules/gatsby-background-image/lib/ImageUtils.js");
+var _SimpleUtils = __webpack_require__(/*! ./SimpleUtils */ "./node_modules/gatsby-background-image/lib/SimpleUtils.js");
+var _excluded = ["className"];
+var fixClassName = function fixClassName(_ref) {
+  var className = _ref.className,
+    props = (0, _objectWithoutPropertiesLoose2.default)(_ref, _excluded);
+  var convertedProps = (0, _HelperUtils.convertProps)(props);
+  var elementExists = (0, _ClassCache.inComponentClassCache)(className);
+  var imageData = (0, _ImageUtils.getCurrentSrcData)(convertedProps);
+  var additionalClassname = _shortUuid.default.generate();
+  var randomClass = " gbi-" + (0, _SimpleUtils.hashString)(imageData && imageData.srcSet || className || "noclass") + "-" + additionalClassname;
+  var additionalClass = elementExists || !className ? randomClass : "";
+  var componentClassNames = ("" + (className || "") + (additionalClass || "")).trim();
+  if (!elementExists) (0, _ClassCache.activateCacheForComponentClass)(className);
+  return [componentClassNames];
+};
+exports.fixClassName = fixClassName;
+var escapeClassNames = function escapeClassNames(classNames) {
+  if (classNames) {
+    var specialChars = (0, _SimpleUtils.isBrowser)() && window._gbiSpecialChars ? window._gbiSpecialChars : typeof __GBI_SPECIAL_CHARS__ !== "undefined" ? __GBI_SPECIAL_CHARS__ : ':/';
+    var specialCharRegEx = new RegExp("[" + specialChars + "]", 'g');
+    return classNames.replace(specialCharRegEx, '\\$&');
+  }
+  return classNames;
+};
+exports.escapeClassNames = escapeClassNames;
+var kebabifyBackgroundStyles = function kebabifyBackgroundStyles(styles) {
+  if ((0, _SimpleUtils.isString)(styles)) {
+    return styles;
+  }
+  if (styles instanceof Object) {
+    return Object.keys(styles).filter(function (key) {
+      return key.indexOf('background') === 0 && styles[key] !== '';
+    }).reduce(function (resultingStyles, key) {
+      return "" + resultingStyles + (0, _SimpleUtils.toKebabCase)(key) + ": " + styles[key] + ";\n";
+    }, "");
+  }
+  return "";
+};
+exports.kebabifyBackgroundStyles = kebabifyBackgroundStyles;
+var setTransitionStyles = function setTransitionStyles(transitionDelay, fadeIn) {
+  if (transitionDelay === void 0) {
+    transitionDelay = "0.25s";
+  }
+  if (fadeIn === void 0) {
+    fadeIn = true;
+  }
+  return fadeIn ? "transition: opacity 0.5s ease " + transitionDelay + ";" : "transition: none;";
+};
+exports.setTransitionStyles = setTransitionStyles;
+var fixOpacity = function fixOpacity(props) {
+  var styledProps = (0, _extends2.default)({}, props);
+  if (!styledProps.preserveStackingContext) {
+    try {
+      if (styledProps.style && styledProps.style.opacity) {
+        if (isNaN(styledProps.style.opacity) || styledProps.style.opacity > 0.99) {
+          styledProps.style.opacity = 0.99;
+        }
+      }
+    } catch (e) {}
+  }
+  return styledProps;
+};
+exports.fixOpacity = fixOpacity;
+var presetBackgroundStyles = function presetBackgroundStyles(backgroundStyles) {
+  var defaultBackgroundStyles = {
+    backgroundPosition: "center",
+    backgroundRepeat: "no-repeat",
+    backgroundSize: "cover"
+  };
+  return (0, _extends2.default)({}, defaultBackgroundStyles, backgroundStyles);
+};
+exports.presetBackgroundStyles = presetBackgroundStyles;
+
+/***/ }),
+
+/***/ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GatsbyImage": () => (/* binding */ B),
+/* harmony export */   "MainImage": () => (/* binding */ z),
+/* harmony export */   "Placeholder": () => (/* binding */ T),
+/* harmony export */   "StaticImage": () => (/* binding */ V),
+/* harmony export */   "generateImageData": () => (/* binding */ f),
+/* harmony export */   "getImage": () => (/* binding */ M),
+/* harmony export */   "getImageData": () => (/* binding */ x),
+/* harmony export */   "getLowResolutionImageURL": () => (/* binding */ m),
+/* harmony export */   "getSrc": () => (/* binding */ S),
+/* harmony export */   "getSrcSet": () => (/* binding */ N),
+/* harmony export */   "withArtDirection": () => (/* binding */ I)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! camelcase */ "./node_modules/camelcase/index.js");
+/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(camelcase__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+function n() {
+  return n = Object.assign ? Object.assign.bind() : function (e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var a = arguments[t];
+      for (var i in a) Object.prototype.hasOwnProperty.call(a, i) && (e[i] = a[i]);
+    }
+    return e;
+  }, n.apply(this, arguments);
+}
+function o(e, t) {
+  if (null == e) return {};
+  var a,
+    i,
+    r = {},
+    n = Object.keys(e);
+  for (i = 0; i < n.length; i++) t.indexOf(a = n[i]) >= 0 || (r[a] = e[a]);
+  return r;
+}
+var s = [.25, .5, 1, 2],
+  l = [750, 1080, 1366, 1920],
+  u = [320, 654, 768, 1024, 1366, 1600, 1920, 2048, 2560, 3440, 3840, 4096],
+  d = function (e) {
+    return console.warn(e);
+  },
+  c = function (e, t) {
+    return e - t;
+  },
+  h = function (e) {
+    return e.map(function (e) {
+      return e.src + " " + e.width + "w";
+    }).join(",\n");
+  };
+function g(e) {
+  var t = e.lastIndexOf(".");
+  if (-1 !== t) {
+    var a = e.slice(t + 1);
+    if ("jpeg" === a) return "jpg";
+    if (3 === a.length || 4 === a.length) return a;
+  }
+}
+function p(e) {
+  var t = e.layout,
+    i = void 0 === t ? "constrained" : t,
+    r = e.width,
+    o = e.height,
+    s = e.sourceMetadata,
+    l = e.breakpoints,
+    u = e.aspectRatio,
+    d = e.formats,
+    c = void 0 === d ? ["auto", "webp"] : d;
+  return c = c.map(function (e) {
+    return e.toLowerCase();
+  }), i = camelcase__WEBPACK_IMPORTED_MODULE_1___default()(i), r && o ? n({}, e, {
+    formats: c,
+    layout: i,
+    aspectRatio: r / o
+  }) : (s.width && s.height && !u && (u = s.width / s.height), "fullWidth" === i ? (r = r || s.width || l[l.length - 1], o = o || Math.round(r / (u || 1.3333333333333333))) : (r || (r = o && u ? o * u : s.width ? s.width : o ? Math.round(o / 1.3333333333333333) : 800), u && !o ? o = Math.round(r / u) : u || (u = r / o)), n({}, e, {
+    width: r,
+    height: o,
+    aspectRatio: u,
+    layout: i,
+    formats: c
+  }));
+}
+function m(e, t) {
+  var a;
+  return void 0 === t && (t = 20), null == (a = (0, (e = p(e)).generateImageSource)(e.filename, t, Math.round(t / e.aspectRatio), e.sourceMetadata.format || "jpg", e.fit, e.options)) ? void 0 : a.src;
+}
+function f(e) {
+  var t,
+    a = (e = p(e)).pluginName,
+    i = e.sourceMetadata,
+    r = e.generateImageSource,
+    o = e.layout,
+    u = e.fit,
+    c = e.options,
+    m = e.width,
+    f = e.height,
+    b = e.filename,
+    k = e.reporter,
+    E = void 0 === k ? {
+      warn: d
+    } : k,
+    M = e.backgroundColor,
+    S = e.placeholderURL;
+  if (a || E.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'), "function" != typeof r) throw new Error("generateImageSource must be a function");
+  i && (i.width || i.height) ? i.format || (i.format = g(b)) : i = {
+    width: m,
+    height: f,
+    format: (null == (t = i) ? void 0 : t.format) || g(b) || "auto"
+  };
+  var N = new Set(e.formats);
+  (0 === N.size || N.has("auto") || N.has("")) && (N.delete("auto"), N.delete(""), N.add(i.format)), N.has("jpg") && N.has("png") && (E.warn("[" + a + "] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"), N.delete("jpg" === i.format ? "png" : "jpg"));
+  var x = function (e) {
+      var t = e.filename,
+        a = e.layout,
+        i = void 0 === a ? "constrained" : a,
+        r = e.sourceMetadata,
+        o = e.reporter,
+        u = void 0 === o ? {
+          warn: d
+        } : o,
+        c = e.breakpoints,
+        h = void 0 === c ? l : c,
+        g = Object.entries({
+          width: e.width,
+          height: e.height
+        }).filter(function (e) {
+          var t = e[1];
+          return "number" == typeof t && t < 1;
+        });
+      if (g.length) throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are " + g.map(function (e) {
+        return e.join(": ");
+      }).join(", "));
+      return "fixed" === i ? function (e) {
+        var t = e.filename,
+          a = e.sourceMetadata,
+          i = e.width,
+          r = e.height,
+          n = e.fit,
+          o = void 0 === n ? "cover" : n,
+          l = e.outputPixelDensities,
+          u = e.reporter,
+          c = void 0 === u ? {
+            warn: d
+          } : u,
+          h = a.width / a.height,
+          g = v(void 0 === l ? s : l);
+        if (i && r) {
+          var p = y(a, {
+            width: i,
+            height: r,
+            fit: o
+          });
+          i = p.width, r = p.height, h = p.aspectRatio;
+        }
+        i ? r || (r = Math.round(i / h)) : i = r ? Math.round(r * h) : 800;
+        var m = i;
+        if (a.width < i || a.height < r) {
+          var f = a.width < i ? "width" : "height";
+          c.warn("\nThe requested " + f + ' "' + ("width" === f ? i : r) + 'px" for the image ' + t + " was larger than the actual image " + f + " of " + a[f] + "px. If possible, replace the current image with a larger one."), "width" === f ? (i = a.width, r = Math.round(i / h)) : i = (r = a.height) * h;
+        }
+        return {
+          sizes: g.filter(function (e) {
+            return e >= 1;
+          }).map(function (e) {
+            return Math.round(e * i);
+          }).filter(function (e) {
+            return e <= a.width;
+          }),
+          aspectRatio: h,
+          presentationWidth: m,
+          presentationHeight: Math.round(m / h),
+          unscaledWidth: i
+        };
+      }(e) : "constrained" === i ? w(e) : "fullWidth" === i ? w(n({
+        breakpoints: h
+      }, e)) : (u.warn("No valid layout was provided for the image at " + t + ". Valid image layouts are fixed, fullWidth, and constrained. Found " + i), {
+        sizes: [r.width],
+        presentationWidth: r.width,
+        presentationHeight: r.height,
+        aspectRatio: r.width / r.height,
+        unscaledWidth: r.width
+      });
+    }(n({}, e, {
+      sourceMetadata: i
+    })),
+    I = {
+      sources: []
+    },
+    W = e.sizes;
+  W || (W = function (e, t) {
+    switch (t) {
+      case "constrained":
+        return "(min-width: " + e + "px) " + e + "px, 100vw";
+      case "fixed":
+        return e + "px";
+      case "fullWidth":
+        return "100vw";
+      default:
+        return;
+    }
+  }(x.presentationWidth, o)), N.forEach(function (e) {
+    var t = x.sizes.map(function (t) {
+      var i = r(b, t, Math.round(t / x.aspectRatio), e, u, c);
+      if (null != i && i.width && i.height && i.src && i.format) return i;
+      E.warn("[" + a + "] The resolver for image " + b + " returned an invalid value.");
+    }).filter(Boolean);
+    if ("jpg" === e || "png" === e || "auto" === e) {
+      var i = t.find(function (e) {
+        return e.width === x.unscaledWidth;
+      }) || t[0];
+      i && (I.fallback = {
+        src: i.src,
+        srcSet: h(t),
+        sizes: W
+      });
+    } else {
+      var n;
+      null == (n = I.sources) || n.push({
+        srcSet: h(t),
+        sizes: W,
+        type: "image/" + e
+      });
+    }
+  });
+  var j = {
+    images: I,
+    layout: o,
+    backgroundColor: M
+  };
+  switch (S && (j.placeholder = {
+    fallback: S
+  }), o) {
+    case "fixed":
+      j.width = x.presentationWidth, j.height = x.presentationHeight;
+      break;
+    case "fullWidth":
+      j.width = 1, j.height = 1 / x.aspectRatio;
+      break;
+    case "constrained":
+      j.width = e.width || x.presentationWidth || 1, j.height = (j.width || 1) / x.aspectRatio;
+  }
+  return j;
+}
+var v = function (e) {
+  return Array.from(new Set([1].concat(e))).sort(c);
+};
+function w(e) {
+  var t,
+    a = e.sourceMetadata,
+    i = e.width,
+    r = e.height,
+    n = e.fit,
+    o = void 0 === n ? "cover" : n,
+    l = e.outputPixelDensities,
+    u = e.breakpoints,
+    d = e.layout,
+    h = a.width / a.height,
+    g = v(void 0 === l ? s : l);
+  if (i && r) {
+    var p = y(a, {
+      width: i,
+      height: r,
+      fit: o
+    });
+    i = p.width, r = p.height, h = p.aspectRatio;
+  }
+  i = i && Math.min(i, a.width), r = r && Math.min(r, a.height), i || r || (r = (i = Math.min(800, a.width)) / h), i || (i = r * h);
+  var m = i;
+  return (a.width < i || a.height < r) && (i = a.width, r = a.height), i = Math.round(i), (null == u ? void 0 : u.length) > 0 ? (t = u.filter(function (e) {
+    return e <= a.width;
+  })).length < u.length && !t.includes(a.width) && t.push(a.width) : t = (t = g.map(function (e) {
+    return Math.round(e * i);
+  })).filter(function (e) {
+    return e <= a.width;
+  }), "constrained" !== d || t.includes(i) || t.push(i), {
+    sizes: t = t.sort(c),
+    aspectRatio: h,
+    presentationWidth: m,
+    presentationHeight: Math.round(m / h),
+    unscaledWidth: i
+  };
+}
+function y(e, t) {
+  var a = e.width / e.height,
+    i = t.width,
+    r = t.height;
+  switch (t.fit) {
+    case "fill":
+      i = t.width ? t.width : e.width, r = t.height ? t.height : e.height;
+      break;
+    case "inside":
+      var n = t.width ? t.width : Number.MAX_SAFE_INTEGER,
+        o = t.height ? t.height : Number.MAX_SAFE_INTEGER;
+      i = Math.min(n, Math.round(o * a)), r = Math.min(o, Math.round(n / a));
+      break;
+    case "outside":
+      var s = t.width ? t.width : 0,
+        l = t.height ? t.height : 0;
+      i = Math.max(s, Math.round(l * a)), r = Math.max(l, Math.round(s / a));
+      break;
+    default:
+      t.width && !t.height && (i = t.width, r = Math.round(t.width / a)), t.height && !t.width && (i = Math.round(t.height * a), r = t.height);
+  }
+  return {
+    width: i,
+    height: r,
+    aspectRatio: i / r
+  };
+}
+var b = ["baseUrl", "urlBuilder", "sourceWidth", "sourceHeight", "pluginName", "formats", "breakpoints", "options"],
+  k = ["images", "placeholder"];
+function E() {
+  return "undefined" != typeof GATSBY___IMAGE && GATSBY___IMAGE;
+}
+var M = function (e) {
+    var t;
+    return function (e) {
+      var t, a;
+      return Boolean(null == e || null == (t = e.images) || null == (a = t.fallback) ? void 0 : a.src);
+    }(e) ? e : function (e) {
+      return Boolean(null == e ? void 0 : e.gatsbyImageData);
+    }(e) ? e.gatsbyImageData : function (e) {
+      return Boolean(null == e ? void 0 : e.gatsbyImage);
+    }(e) ? e.gatsbyImage : null == e || null == (t = e.childImageSharp) ? void 0 : t.gatsbyImageData;
+  },
+  S = function (e) {
+    var t, a, i;
+    return null == (t = M(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.src;
+  },
+  N = function (e) {
+    var t, a, i;
+    return null == (t = M(e)) || null == (a = t.images) || null == (i = a.fallback) ? void 0 : i.srcSet;
+  };
+function x(e) {
+  var t,
+    a = e.baseUrl,
+    i = e.urlBuilder,
+    r = e.sourceWidth,
+    s = e.sourceHeight,
+    l = e.pluginName,
+    d = void 0 === l ? "getImageData" : l,
+    c = e.formats,
+    h = void 0 === c ? ["auto"] : c,
+    g = e.breakpoints,
+    p = e.options,
+    m = o(e, b);
+  return null != (t = g) && t.length || "fullWidth" !== m.layout && "FULL_WIDTH" !== m.layout || (g = u), f(n({}, m, {
+    pluginName: d,
+    generateImageSource: function (e, t, a, r) {
+      return {
+        width: t,
+        height: a,
+        format: r,
+        src: i({
+          baseUrl: e,
+          width: t,
+          height: a,
+          options: p,
+          format: r
+        })
+      };
+    },
+    filename: a,
+    formats: h,
+    breakpoints: g,
+    sourceMetadata: {
+      width: r,
+      height: s,
+      format: "auto"
+    }
+  }));
+}
+function I(e, t) {
+  var a,
+    i,
+    r,
+    s = e.images,
+    l = e.placeholder,
+    u = n({}, o(e, k), {
+      images: n({}, s, {
+        sources: []
+      }),
+      placeholder: l && n({}, l, {
+        sources: []
+      })
+    });
+  return t.forEach(function (t) {
+    var a,
+      i = t.media,
+      r = t.image;
+    i ? (r.layout !== e.layout && "development" === "development" && console.warn('[gatsby-plugin-image] Mismatched image layout: expected "' + e.layout + '" but received "' + r.layout + '". All art-directed images use the same layout as the default image'), (a = u.images.sources).push.apply(a, r.images.sources.map(function (e) {
+      return n({}, e, {
+        media: i
+      });
+    }).concat([{
+      media: i,
+      srcSet: r.images.fallback.srcSet
+    }])), u.placeholder && u.placeholder.sources.push({
+      media: i,
+      srcSet: r.placeholder.fallback
+    })) :  true && console.warn("[gatsby-plugin-image] All art-directed images passed to must have a value set for `media`. Skipping.");
+  }), (a = u.images.sources).push.apply(a, s.sources), null != l && l.sources && (null == (i = u.placeholder) || (r = i.sources).push.apply(r, l.sources)), u;
+}
+var W,
+  j = ["src", "srcSet", "loading", "alt", "shouldLoad"],
+  R = ["fallback", "sources", "shouldLoad"],
+  _ = function (t) {
+    var a = t.src,
+      i = t.srcSet,
+      r = t.loading,
+      s = t.alt,
+      l = void 0 === s ? "" : s,
+      u = t.shouldLoad,
+      d = o(t, j);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", n({}, d, {
+      decoding: "async",
+      loading: r,
+      src: u ? a : void 0,
+      "data-src": u ? void 0 : a,
+      srcSet: u ? i : void 0,
+      "data-srcset": u ? void 0 : i,
+      alt: l
+    }));
+  },
+  A = function (t) {
+    var a = t.fallback,
+      i = t.sources,
+      r = void 0 === i ? [] : i,
+      s = t.shouldLoad,
+      l = void 0 === s || s,
+      u = o(t, R),
+      d = u.sizes || (null == a ? void 0 : a.sizes),
+      c = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_, n({}, u, a, {
+        sizes: d,
+        shouldLoad: l
+      }));
+    return r.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture", null, r.map(function (t) {
+      var a = t.media,
+        i = t.srcSet,
+        r = t.type;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source", {
+        key: a + "-" + r + "-" + i,
+        type: r,
+        media: a,
+        srcSet: l ? i : void 0,
+        "data-srcset": l ? void 0 : i,
+        sizes: d
+      });
+    }), c) : c;
+  };
+_.propTypes = {
+  src: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,
+  sizes: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+  srcSet: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_2__.bool
+}, A.displayName = "Picture", A.propTypes = {
+  alt: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,
+  shouldLoad: prop_types__WEBPACK_IMPORTED_MODULE_2__.bool,
+  fallback: prop_types__WEBPACK_IMPORTED_MODULE_2__.exact({
+    src: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_2__.string
+  }),
+  sources: prop_types__WEBPACK_IMPORTED_MODULE_2__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_2__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2__.exact({
+    media: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,
+    type: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired
+  }), prop_types__WEBPACK_IMPORTED_MODULE_2__.exact({
+    media: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+    type: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,
+    sizes: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+    srcSet: prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired
+  })]))
+};
+var O = ["fallback"],
+  T = function (t) {
+    var a = t.fallback,
+      i = o(t, O);
+    return a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(A, n({}, i, {
+      fallback: {
+        src: a
+      },
+      "aria-hidden": !0,
+      alt: ""
+    })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", n({}, i));
+  };
+T.displayName = "Placeholder", T.propTypes = {
+  fallback: prop_types__WEBPACK_IMPORTED_MODULE_2__.string,
+  sources: null == (W = A.propTypes) ? void 0 : W.sources,
+  alt: function (e, t, a) {
+    return e[t] ? new Error("Invalid prop `" + t + "` supplied to `" + a + "`. Validation failed.") : null;
+  }
+};
+var z = function (t) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(A, n({}, t)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(A, n({}, t, {
+    shouldLoad: !0
+  }))));
+};
+z.displayName = "MainImage", z.propTypes = A.propTypes;
+var L = ["children"],
+  q = function () {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script", {
+      type: "module",
+      dangerouslySetInnerHTML: {
+        __html: 'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}'
+      }
+    });
+  },
+  C = function (t) {
+    var a = t.layout,
+      i = t.width,
+      r = t.height;
+    return "fullWidth" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      "aria-hidden": !0,
+      style: {
+        paddingTop: r / i * 100 + "%"
+      }
+    }) : "constrained" === a ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+      style: {
+        maxWidth: i,
+        display: "block"
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img", {
+      alt: "",
+      role: "presentation",
+      "aria-hidden": "true",
+      src: "data:image/svg+xml;charset=utf-8,%3Csvg height='" + r + "' width='" + i + "' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",
+      style: {
+        maxWidth: "100%",
+        display: "block",
+        position: "static"
+      }
+    })) : null;
+  },
+  D = function (a) {
+    var i = a.children,
+      r = o(a, L);
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C, n({}, r)), i, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q, null));
+  },
+  P = ["as", "className", "class", "style", "image", "loading", "imgClassName", "imgStyle", "backgroundColor", "objectFit", "objectPosition"],
+  H = ["style", "className"],
+  F = function (e) {
+    return e.replace(/\n/g, "");
+  },
+  B = function (t) {
+    var a = t.as,
+      i = void 0 === a ? "div" : a,
+      r = t.className,
+      s = t.class,
+      l = t.style,
+      u = t.image,
+      d = t.loading,
+      c = void 0 === d ? "lazy" : d,
+      h = t.imgClassName,
+      g = t.imgStyle,
+      p = t.backgroundColor,
+      m = t.objectFit,
+      f = t.objectPosition,
+      v = o(t, P);
+    if (!u) return console.warn("[gatsby-plugin-image] Missing image prop"), null;
+    s && (r = s), g = n({
+      objectFit: m,
+      objectPosition: f,
+      backgroundColor: p
+    }, g);
+    var w = u.width,
+      y = u.height,
+      b = u.layout,
+      k = u.images,
+      M = u.placeholder,
+      S = u.backgroundColor,
+      N = function (e, t, a) {
+        var i = {},
+          r = "gatsby-image-wrapper";
+        return E() || (i.position = "relative", i.overflow = "hidden"), "fixed" === a ? (i.width = e, i.height = t) : "constrained" === a && (E() || (i.display = "inline-block", i.verticalAlign = "top"), r = "gatsby-image-wrapper gatsby-image-wrapper-constrained"), {
+          className: r,
+          "data-gatsby-image-wrapper": "",
+          style: i
+        };
+      }(w, y, b),
+      x = N.style,
+      I = N.className,
+      W = o(N, H),
+      j = {
+        fallback: void 0,
+        sources: []
+      };
+    return k.fallback && (j.fallback = n({}, k.fallback, {
+      srcSet: k.fallback.srcSet ? F(k.fallback.srcSet) : void 0
+    })), k.sources && (j.sources = k.sources.map(function (e) {
+      return n({}, e, {
+        srcSet: F(e.srcSet)
+      });
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i, n({}, W, {
+      style: n({}, x, l, {
+        backgroundColor: p
+      }),
+      className: I + (r ? " " + r : "")
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(D, {
+      layout: b,
+      width: w,
+      height: y
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(T, n({}, function (e, t, a, i, r, o, s, l) {
+      var u = {};
+      o && (u.backgroundColor = o, "fixed" === a ? (u.width = i, u.height = r, u.backgroundColor = o, u.position = "relative") : ("constrained" === a || "fullWidth" === a) && (u.position = "absolute", u.top = 0, u.left = 0, u.bottom = 0, u.right = 0)), s && (u.objectFit = s), l && (u.objectPosition = l);
+      var d = n({}, e, {
+        "aria-hidden": !0,
+        "data-placeholder-image": "",
+        style: n({
+          opacity: 1,
+          transition: "opacity 500ms linear"
+        }, u)
+      });
+      return E() || (d.style = {
+        height: "100%",
+        left: 0,
+        position: "absolute",
+        top: 0,
+        width: "100%"
+      }), d;
+    }(M, 0, b, w, y, S, m, f))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z, n({
+      "data-gatsby-image-ssr": "",
+      className: h
+    }, v, function (e, t, a, i, r) {
+      return void 0 === r && (r = {}), E() || (r = n({
+        height: "100%",
+        left: 0,
+        position: "absolute",
+        top: 0,
+        transform: "translateZ(0)",
+        transition: "opacity 250ms linear",
+        width: "100%",
+        willChange: "opacity"
+      }, r)), n({}, a, {
+        loading: i,
+        shouldLoad: e,
+        "data-main-image": "",
+        style: n({}, r, {
+          opacity: 0
+        })
+      });
+    }("eager" === c, 0, j, c, g)))));
+  },
+  G = ["src", "__imageData", "__error", "width", "height", "aspectRatio", "tracedSVGOptions", "placeholder", "formats", "quality", "transformOptions", "jpgOptions", "pngOptions", "webpOptions", "avifOptions", "blurredOptions", "breakpoints", "outputPixelDensities"],
+  V = function (t) {
+    return function (a) {
+      var i = a.src,
+        r = a.__imageData,
+        s = a.__error,
+        l = o(a, G);
+      return s && console.warn(s), r ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t, n({
+        image: r
+      }, l)) : (console.warn("Image not loaded", i), s || "development" !== "development" || console.warn('Please ensure that "gatsby-plugin-image" is included in the plugins array in gatsby-config.js, and that your version of gatsby is at least 2.24.78'), null);
+    };
+  }(B),
+  U = function (e, t) {
+    return "fullWidth" !== e.layout || "width" !== t && "height" !== t || !e[t] ? prop_types__WEBPACK_IMPORTED_MODULE_2___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_2___default()), [e, t].concat([].slice.call(arguments, 2))) : new Error('"' + t + '" ' + e[t] + " may not be passed when layout is fullWidth.");
+  },
+  X = new Set(["fixed", "fullWidth", "constrained"]),
+  Y = {
+    src: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.isRequired),
+    alt: function (e, t, a) {
+      return e.alt || "" === e.alt ? prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_2___default()), [e, t, a].concat([].slice.call(arguments, 3))) : new Error('The "alt" prop is required in ' + a + '. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');
+    },
+    width: U,
+    height: U,
+    sizes: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+    layout: function (e) {
+      if (void 0 !== e.layout && !X.has(e.layout)) return new Error("Invalid value " + e.layout + '" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');
+    }
+  };
+V.displayName = "StaticImage", V.propTypes = Y;
+
+
+/***/ }),
+
+/***/ "./src/components/buttons/button-defaults.js":
+/*!***************************************************!*\
+  !*** ./src/components/buttons/button-defaults.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+
+
+const Button = styled_components__WEBPACK_IMPORTED_MODULE_0__["default"].button.withConfig({
+  displayName: "button-defaults__Button"
+})(["background-color:transparent;border-color:transparent;box-sizing:border-box;font-family:var(--font-system);transform-origin:center;transition-duration:0.3s;transition-property:background-color,border-color,color;transition-timing-function:var(--timing-function);&:focus{outline:none;}&::-moz-focus-inner{border:0;}", ";", ";", ";&:active{animation-duration:0.3s;animation-name:click;animation-timing-function:var(--timing-function)}@keyframes click{0%{transform:scale(1);}50%{transform:scale(0.85);}100%{transform:scale(1);}}"], props => props.disabled && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["&{cursor:not-allowed;opacity:0.6;}"]), props => props.shadow && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["&{box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);}"]), props => props.kind === 'primary' && (0,styled_components__WEBPACK_IMPORTED_MODULE_0__.css)(["&{background-color:var(--color-primary);color:var(--color-background);}&:focus:not([disabled]),&:hover:not([disabled]){background-color:#fff;border-color:var(--color-primary);color:var(--color-primary);}"]));
+Button.defaultProps = {
+  disabled: false,
+  kind: 'primary',
+  shadow: false
+};
+Button.propTypes = {
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool),
+  kind: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
+  shadow: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().bool)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./src/components/buttons/icon/button-style.js":
+/*!*****************************************************!*\
+  !*** ./src/components/buttons/icon/button-style.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! styled-components */ "./node_modules/styled-components/dist/styled-components.esm.js");
+/* harmony import */ var _button_defaults__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../button-defaults */ "./src/components/buttons/button-defaults.js");
+
+
+
+const Button = (0,styled_components__WEBPACK_IMPORTED_MODULE_1__["default"])(_button_defaults__WEBPACK_IMPORTED_MODULE_0__["default"]).withConfig({
+  displayName: "button-style__Button"
+})(["align-items:center;border-color:transparent;border-radius:50%;border-style:solid;border-width:2px;display:flex;font-size:1em;justify-content:center;height:34px;padding:2px;position:relative;width:34px;z-index:1;&::before{border-radius:50%;content:'';height:100%;left:0;position:absolute;top:0;transition:inherit;transition-property:background-color,border-color,color,opacity,transform;transform:scale(0);transform-origin:center center;width:100%;z-index:-1;}", " ", ""], props => props.kind === 'transparent' && (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["&{background-color:transparent;border:none;}&::before{background-color:var(--color-primary);opacity:0;}&:focus:not([disabled]),&:hover:not([disabled]){box-shadow:none;color:var(--color-font-contrast);}&:focus:not([disabled])::before,&:hover:not([disabled])::before{opacity:1;transform:scale(1);}"]), props => props.square && (0,styled_components__WEBPACK_IMPORTED_MODULE_1__.css)(["&{border-radius:0;}&::before{border-radius:0;}"]));
+Button.defaultProps = {
+  disabled: false,
+  kind: 'transparent',
+  square: false
+};
+Button.propTypes = {
+  disabled: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
+  kind: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),
+  square: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Button);
+
+/***/ }),
+
+/***/ "./src/components/buttons/icon/button.js":
+/*!***********************************************!*\
+  !*** ./src/components/buttons/icon/button.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _button_style__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./button-style */ "./src/components/buttons/icon/button-style.js");
+
+
+
+
+const IconButton = ({
+  ariaLabel,
+  icon,
+  pulse,
+  rotation,
+  size,
+  spin,
+  ...props
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_button_style__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({
+  "aria-hidden": false,
+  "aria-label": ariaLabel
+}, props), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+  icon: icon,
+  pulse: pulse,
+  rotation: rotation,
+  size: size,
+  spin: spin
+}));
+IconButton.defaultProps = {
+  pulse: false,
+  rotation: null,
+  size: '1x',
+  spin: false
+};
+IconButton.propTypes = {
+  ariaLabel: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
+  icon: prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({}).isRequired,
+  pulse: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  rotation: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  size: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  spin: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconButton);
+
+/***/ }),
+
+/***/ "./src/components/home/about/about-container.js":
+/*!******************************************************!*\
+  !*** ./src/components/home/about/about-container.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1025990139_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/1025990139.json */ "./public/page-data/sq/d/1025990139.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./about */ "./src/components/home/about/about.js");
+
+
+
+const AboutContainer = () => {
+  const query = _public_page_data_sq_d_1025990139_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  return query.markdown ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_about__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    html: query.markdown.html,
+    image: query.markdown.frontmatter.image.childImageSharp.gatsbyImageData,
+    title: query.markdown.frontmatter.title
+  }) : null;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (AboutContainer);
+
+/***/ }),
+
+/***/ "./src/components/home/about/about.js":
+/*!********************************************!*\
+  !*** ./src/components/home/about/about.js ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about.css */ "./src/components/home/about/about.css");
+/* harmony import */ var _about_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_about_css__WEBPACK_IMPORTED_MODULE_1__);
+/* eslint-disable react/no-danger */
+
+
+
+
+
+const About = ({
+  html,
+  image,
+  title
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "about"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "about__inner"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_2__.GatsbyImage, {
+  alt: title,
+  className: "about__portrait",
+  image: image
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  dangerouslySetInnerHTML: {
+    __html: html
+  }
+})));
+About.propTypes = {
+  html: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node.isRequired),
+  image: prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({}).isRequired,
+  title: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (About);
+
+/***/ }),
+
+/***/ "./src/components/home/contact/contact-container.js":
+/*!**********************************************************!*\
+  !*** ./src/components/home/contact/contact-container.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_3980000209_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/3980000209.json */ "./public/page-data/sq/d/3980000209.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact */ "./src/components/home/contact/contact.js");
+
+
+
+const ContactContainer = () => {
+  const query = _public_page_data_sq_d_3980000209_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  return query.markdown === null || query.markdown.html === '' ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_contact__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    html: query.markdown.html
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ContactContainer);
+
+/***/ }),
+
+/***/ "./src/components/home/contact/contact.js":
+/*!************************************************!*\
+  !*** ./src/components/home/contact/contact.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact.css */ "./src/components/home/contact/contact.css");
+/* harmony import */ var _contact_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_contact_css__WEBPACK_IMPORTED_MODULE_2__);
+/* eslint-disable react/no-danger */
+
+
+
+
+
+
+const Contact = ({
+  html
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "contact",
+  id: "contact"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faMailBulk
+}), "Contact"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  dangerouslySetInnerHTML: {
+    __html: html
+  }
+}));
+Contact.propTypes = {
+  html: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Contact);
+
+/***/ }),
+
+/***/ "./src/components/home/gutter/gutter.js":
+/*!**********************************************!*\
+  !*** ./src/components/home/gutter/gutter.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GutterLeft": () => (/* binding */ GutterLeft),
+/* harmony export */   "GutterRight": () => (/* binding */ GutterRight)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _gutter_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gutter.css */ "./src/components/home/gutter/gutter.css");
+/* harmony import */ var _gutter_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_gutter_css__WEBPACK_IMPORTED_MODULE_1__);
+
+
+const GutterLeft = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "gutter gutter_left"
+});
+const GutterRight = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "gutter gutter_right"
 });
 
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/fontawesome-svg-core/index.mjs
+/***/ }),
+
+/***/ "./src/components/home/home.js":
+/*!*************************************!*\
+  !*** ./src/components/home/home.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _about_about_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./about/about-container */ "./src/components/home/about/about-container.js");
+/* harmony import */ var _contact_contact_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./contact/contact-container */ "./src/components/home/contact/contact-container.js");
+/* harmony import */ var _landing_landing_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./landing/landing-container */ "./src/components/home/landing/landing-container.js");
+/* harmony import */ var _opportunities_opportunities_container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./opportunities/opportunities-container */ "./src/components/home/opportunities/opportunities-container.js");
+/* harmony import */ var _research_research_container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./research/research-container */ "./src/components/home/research/research-container.js");
+/* harmony import */ var _gutter_gutter__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./gutter/gutter */ "./src/components/home/gutter/gutter.js");
+/* harmony import */ var _home_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home.css */ "./src/components/home/home.css");
+/* harmony import */ var _home_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_home_css__WEBPACK_IMPORTED_MODULE_7__);
+
+
+
+
+
+
+
+
+const Home = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_landing_landing_container__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "home__layout"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_gutter_gutter__WEBPACK_IMPORTED_MODULE_6__.GutterLeft, null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "home__inner"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_about_about_container__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_research_research_container__WEBPACK_IMPORTED_MODULE_5__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_opportunities_opportunities_container__WEBPACK_IMPORTED_MODULE_4__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_contact_contact_container__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_gutter_gutter__WEBPACK_IMPORTED_MODULE_6__.GutterRight, null)));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Home);
+
+/***/ }),
+
+/***/ "./src/components/home/landing/hero-container.js":
+/*!*******************************************************!*\
+  !*** ./src/components/home/landing/hero-container.js ***!
+  \*******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_563261565_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/563261565.json */ "./public/page-data/sq/d/563261565.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _hero__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./hero */ "./src/components/home/landing/hero.js");
+
+
+
+
+const HeroContainer = ({
+  ...props
+}) => {
+  const query = _public_page_data_sq_d_563261565_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const image = (0,gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_3__.getImage)(query.hero);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_hero__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({
+    image: image
+  }, props));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HeroContainer);
+
+/***/ }),
+
+/***/ "./src/components/home/landing/hero.js":
+/*!*********************************************!*\
+  !*** ./src/components/home/landing/hero.js ***!
+  \*********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gbimage_bridge__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gbimage-bridge */ "./node_modules/gbimage-bridge/dist/index.modern.js");
+
+
+
+const Hero = ({
+  children,
+  image,
+  ...props
+}) => {
+  const backgroundFluidImageStack = [image, 'linear-gradient(rgba(0, 126, 0, 0.5), rgba(0, 0, 126, 0.5))'].reverse();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gbimage_bridge__WEBPACK_IMPORTED_MODULE_1__.BgImage, Object.assign({
+    image: backgroundFluidImageStack
+  }, props), children);
+};
+Hero.propTypes = {
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().node.isRequired),
+  image: prop_types__WEBPACK_IMPORTED_MODULE_2___default().shape({}).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Hero);
+
+/***/ }),
+
+/***/ "./src/components/home/landing/landing-container.js":
+/*!**********************************************************!*\
+  !*** ./src/components/home/landing/landing-container.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_2353648138_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/2353648138.json */ "./public/page-data/sq/d/2353648138.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _landing__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./landing */ "./src/components/home/landing/landing.js");
+
+
+
+const LandingContainer = () => {
+  const {
+    site
+  } = _public_page_data_sq_d_2353648138_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const {
+    author,
+    description,
+    primaryLinks
+  } = site.siteMetadata;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_landing__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    author: author,
+    description: description,
+    links: primaryLinks
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (LandingContainer);
+
+/***/ }),
+
+/***/ "./src/components/home/landing/landing.js":
+/*!************************************************!*\
+  !*** ./src/components/home/landing/landing.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _hero_container__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./hero-container */ "./src/components/home/landing/hero-container.js");
+/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./links */ "./src/components/home/landing/links.js");
+/* harmony import */ var _landing_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./landing.css */ "./src/components/home/landing/landing.css");
+/* harmony import */ var _landing_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_landing_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+const Landing = ({
+  author,
+  description,
+  links
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_hero_container__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  className: "home__landing",
+  Tag: "section"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h1", null, "Microbiome Metabolic Modeling Lab"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("p", {
+  className: "home__landing-description"
+}, description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_links__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  links: links
+})));
+Landing.propTypes = {
+  author: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string.isRequired),
+  description: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string.isRequired),
+  links: prop_types__WEBPACK_IMPORTED_MODULE_4___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_4___default().string)).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Landing);
+
+/***/ }),
+
+/***/ "./src/components/home/landing/links.js":
+/*!**********************************************!*\
+  !*** ./src/components/home/landing/links.js ***!
+  \**********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../link/link */ "./src/components/link/link.js");
+
+
+
+const routes = {
+  contact: '/#contact',
+  opportunities: '/#opportunities',
+  people: '/our-team',
+  publications: '/publications',
+  research: '/#research'
+};
+const Links = ({
+  links
+}) => links.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "home__landing-links"
+}, links.map(link => routes[link] && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  buttonStyle: true,
+  key: link,
+  nav: true,
+  to: routes[link]
+}, link)));
+Links.propTypes = {
+  links: prop_types__WEBPACK_IMPORTED_MODULE_2___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Links);
+
+/***/ }),
+
+/***/ "./src/components/home/opportunities/opportunities-container.js":
+/*!**********************************************************************!*\
+  !*** ./src/components/home/opportunities/opportunities-container.js ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1371446413_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/1371446413.json */ "./public/page-data/sq/d/1371446413.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _opportunities__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./opportunities */ "./src/components/home/opportunities/opportunities.js");
+
+
+
+const OpportunitiesContainer = () => {
+  const query = _public_page_data_sq_d_1371446413_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  return query.markdown === null || query.markdown.html === '' ? null : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_opportunities__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    html: query.markdown.html
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (OpportunitiesContainer);
+
+/***/ }),
+
+/***/ "./src/components/home/opportunities/opportunities.js":
+/*!************************************************************!*\
+  !*** ./src/components/home/opportunities/opportunities.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _opportunities_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./opportunities.css */ "./src/components/home/opportunities/opportunities.css");
+/* harmony import */ var _opportunities_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_opportunities_css__WEBPACK_IMPORTED_MODULE_2__);
+/* eslint-disable react/no-danger */
+
+
+
+
+
+
+const Opportunities = ({
+  html
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "opportunities",
+  id: "opportunities"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faUserFriends
+}), "Opportunities"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  dangerouslySetInnerHTML: {
+    __html: html
+  }
+}));
+Opportunities.propTypes = {
+  html: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().node.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Opportunities);
+
+/***/ }),
+
+/***/ "./src/components/home/research/research-container.js":
+/*!************************************************************!*\
+  !*** ./src/components/home/research/research-container.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1791518792_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/1791518792.json */ "./public/page-data/sq/d/1791518792.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _research__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./research */ "./src/components/home/research/research.js");
+/* harmony import */ var _utils_sort_markdown__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../utils/sort-markdown */ "./src/utils/sort-markdown.js");
+
+
+
+
+const ResearchContainer = () => {
+  const query = _public_page_data_sq_d_1791518792_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const markdown = (0,_utils_sort_markdown__WEBPACK_IMPORTED_MODULE_3__["default"])(query.markdown.edges, ['order', 'title']);
+  return markdown.length > 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_research__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    markdown: markdown
+  }) : null;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ResearchContainer);
+
+/***/ }),
+
+/***/ "./src/components/home/research/research.js":
+/*!**************************************************!*\
+  !*** ./src/components/home/research/research.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! gatsby-plugin-image */ "./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js");
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _research_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./research.css */ "./src/components/home/research/research.css");
+/* harmony import */ var _research_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_research_css__WEBPACK_IMPORTED_MODULE_2__);
+/* eslint-disable react/no-danger */
+
+
+
+
+
+
+
+const Research = ({
+  markdown
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
+  className: "research",
+  id: "research"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h2", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+  icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faSearch
+}), "Research"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", {
+  className: "research__list"
+}, markdown.map(research => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  key: research.node.frontmatter.title
+}, research.node.frontmatter.title && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("h3", null, research.node.frontmatter.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", null, research.node.frontmatter.image && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby_plugin_image__WEBPACK_IMPORTED_MODULE_4__.GatsbyImage, {
+  alt: research.node.frontmatter.title,
+  className: "research__list-image",
+  image: research.node.frontmatter.image.childImageSharp.gatsbyImageData
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  dangerouslySetInnerHTML: {
+    __html: research.node.html
+  }
+}))))));
+Research.propTypes = {
+  markdown: prop_types__WEBPACK_IMPORTED_MODULE_5___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({
+    node: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({
+      frontmatter: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({
+        image: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({}),
+        title: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().string)
+      }),
+      html: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().node)
+    })
+  })).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Research);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/filter-links.js":
+/*!******************************************************!*\
+  !*** ./src/components/layout/footer/filter-links.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const filterLinks = links => links && links.length > 0 ? links.filter(link => link.link && link.text) : [];
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (filterLinks);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/footer-container.js":
+/*!**********************************************************!*\
+  !*** ./src/components/layout/footer/footer-container.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1440116640_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../public/page-data/sq/d/1440116640.json */ "./public/page-data/sq/d/1440116640.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ "./src/components/layout/footer/footer.js");
+/* harmony import */ var _filter_links__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./filter-links */ "./src/components/layout/footer/filter-links.js");
+
+
+
+
+const FooterContainer = () => {
+  const {
+    site
+  } = _public_page_data_sq_d_1440116640_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const {
+    author,
+    footerLinks
+  } = site.siteMetadata;
+  const filteredLinks = (0,_filter_links__WEBPACK_IMPORTED_MODULE_3__["default"])(footerLinks);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_footer__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    author: author,
+    links: filteredLinks
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FooterContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/footer.js":
+/*!************************************************!*\
+  !*** ./src/components/layout/footer/footer.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _links__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./links */ "./src/components/layout/footer/links.js");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer.css */ "./src/components/layout/footer/footer.css");
+/* harmony import */ var _footer_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_footer_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Footer = ({
+  author,
+  links
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("footer", {
+  className: "footer"
+}, links.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_links__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  links: links
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("small", null, "\xA9", ' ', author, ",", ' ', new Date().getFullYear(), "."));
+Footer.propTypes = {
+  author: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired),
+  links: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({
+    link: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+    text: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
+  })).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/links.js":
+/*!***********************************************!*\
+  !*** ./src/components/layout/footer/links.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../link/link */ "./src/components/link/link.js");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../images/logo.inline.svg */ "./src/images/logo.inline.svg");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Links = ({
+  links
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "footer__links"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  "aria-label": "Home",
+  className: "footer__icon",
+  nav: true,
+  to: "/"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "footer__icon-svg-container"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default()), null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("ul", null, links.map(link => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("li", {
+  key: link.text
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  to: link.link
+}, link.text)))));
+Links.propTypes = {
+  links: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({
+    link: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+    text: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
+  })).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Links);
+
+/***/ }),
+
+/***/ "./src/components/layout/layout.js":
+/*!*****************************************!*\
+  !*** ./src/components/layout/layout.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _reach_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @reach/router */ "./node_modules/@gatsbyjs/reach-router/dist/index.modern.mjs");
+/* harmony import */ var _footer_footer_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer/footer-container */ "./src/components/layout/footer/footer-container.js");
+/* harmony import */ var _navbar_navbar_container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar/navbar-container */ "./src/components/layout/navbar/navbar-container.js");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layout.css */ "./src/components/layout/layout.css");
+/* harmony import */ var _layout_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_layout_css__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+
+const Layout = ({
+  children
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_reach_router__WEBPACK_IMPORTED_MODULE_1__.Location, null, ({
+  location
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "layout"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_navbar_navbar_container__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  location: location
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript", {
+  className: "noscript-warning"
+}, "This site relies on JavaScript which is currently disabled in your browser. Some functionality will be missing as a result."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("main", null, children), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_footer_footer_container__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+Layout.propTypes = {
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().node.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/get-menu-state.js":
+/*!********************************************************!*\
+  !*** ./src/components/layout/navbar/get-menu-state.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const getMenuState = (currentState, ref) => {
+  if (!currentState || currentState.isOpen) {
+    return {
+      isOpen: false,
+      transform: 'translateX(0)'
+    };
+  }
+  const {
+    width
+  } = ref.current.getBoundingClientRect();
+  return {
+    isOpen: true,
+    transform: `translateX(-${width}px)`
+  };
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getMenuState);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/checkIfHomepage.js":
+/*!**************************************************************!*\
+  !*** ./src/components/layout/navbar/icon/checkIfHomepage.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const checkIfHomepage = (env, href, siteUrl) => env === 'development' && href === 'http://localhost:8000/' || href === siteUrl || href === `${siteUrl}/`;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (checkIfHomepage);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/icon-container.js":
+/*!*************************************************************!*\
+  !*** ./src/components/layout/navbar/icon/icon-container.js ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_1271460761_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../public/page-data/sq/d/1271460761.json */ "./public/page-data/sq/d/1271460761.json");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _icon__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon */ "./src/components/layout/navbar/icon/icon.js");
+/* harmony import */ var _checkIfHomepage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./checkIfHomepage */ "./src/components/layout/navbar/icon/checkIfHomepage.js");
+
+
+
+
+
+const IconContainer = ({
+  location
+}) => {
+  const {
+    site
+  } = _public_page_data_sq_d_1271460761_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const isHomePage = (0,_checkIfHomepage__WEBPACK_IMPORTED_MODULE_3__["default"])("development", location.href, site.siteMetadata.siteUrl);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(_icon__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    isHomePage: isHomePage
+  });
+};
+IconContainer.propTypes = {
+  location: prop_types__WEBPACK_IMPORTED_MODULE_4___default().shape({
+    href: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().string.isRequired)
+  }).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IconContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/icon.js":
+/*!***************************************************!*\
+  !*** ./src/components/layout/navbar/icon/icon.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../link/link */ "./src/components/link/link.js");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../images/logo.inline.svg */ "./src/images/logo.inline.svg");
+/* harmony import */ var _images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _icon_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./icon.css */ "./src/components/layout/navbar/icon/icon.css");
+/* harmony import */ var _icon_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_icon_css__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+const Icon = ({
+  isHomePage
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  "aria-label": "Home",
+  className: "nav__icon",
+  nav: true,
+  to: "/"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+  className: "nav__icon-svg-container"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((_images_logo_inline_svg__WEBPACK_IMPORTED_MODULE_2___default()), null)), !isHomePage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", null, "Home"));
+Icon.propTypes = {
+  isHomePage: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().bool.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/links/get-links.js":
+/*!*********************************************************!*\
+  !*** ./src/components/layout/navbar/links/get-links.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @fortawesome/react-fontawesome */ "./node_modules/@fortawesome/react-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../link/link */ "./src/components/link/link.js");
+
+
+
+
+const getLinks = links => {
+  const linkComponents = {
+    people: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: "people",
+      to: "/people"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faUsers
+    }), "Our Team"),
+    publications: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: "publications",
+      to: "/publications"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_1__.FontAwesomeIcon, {
+      icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_3__.faBook
+    }), "Publications")
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment), null, links.map(link => linkComponents[link]));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getLinks);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/links/use-links.js":
+/*!*********************************************************!*\
+  !*** ./src/components/layout/navbar/links/use-links.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_536276349_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../../../public/page-data/sq/d/536276349.json */ "./public/page-data/sq/d/536276349.json");
+
+const useLinks = () => {
+  const query = _public_page_data_sq_d_536276349_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const links = [];
+  if (query.people.edges.length > 0) {
+    links.push('people');
+  }
+  if (query.publications) {
+    links.push('publications');
+  }
+  return links;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useLinks);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/navbar-container.js":
+/*!**********************************************************!*\
+  !*** ./src/components/layout/navbar/navbar-container.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _navbar__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./navbar */ "./src/components/layout/navbar/navbar.js");
+/* harmony import */ var _get_menu_state__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./get-menu-state */ "./src/components/layout/navbar/get-menu-state.js");
+/* harmony import */ var _utils_hooks_click_outside_use_click_outside__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../utils/hooks/click-outside/use-click-outside */ "./src/utils/hooks/click-outside/use-click-outside.js");
+/* harmony import */ var _links_use_links__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./links/use-links */ "./src/components/layout/navbar/links/use-links.js");
+
+
+
+
+
+
+const NavbarContainer = ({
+  location
+}) => {
+  const {
+    0: menuState,
+    1: toggleMenu
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)((0,_get_menu_state__WEBPACK_IMPORTED_MODULE_2__["default"])());
+  const navRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  const links = (0,_links_use_links__WEBPACK_IMPORTED_MODULE_4__["default"])();
+  const closeMenu = () => {
+    if (menuState.isOpen) {
+      toggleMenu((0,_get_menu_state__WEBPACK_IMPORTED_MODULE_2__["default"])(menuState, navRef));
+    }
+  };
+  (0,_utils_hooks_click_outside_use_click_outside__WEBPACK_IMPORTED_MODULE_3__["default"])(navRef, closeMenu);
+  const handleClick = () => {
+    toggleMenu((0,_get_menu_state__WEBPACK_IMPORTED_MODULE_2__["default"])(menuState, navRef));
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_navbar__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    handleClick: handleClick,
+    links: links,
+    location: location,
+    ref: navRef,
+    transform: menuState.transform
+  });
+};
+NavbarContainer.propTypes = {
+  location: prop_types__WEBPACK_IMPORTED_MODULE_5___default().shape({}).isRequired
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (NavbarContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/navbar.js":
+/*!************************************************!*\
+  !*** ./src/components/layout/navbar/navbar.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../buttons/icon/button */ "./src/components/buttons/icon/button.js");
+/* harmony import */ var _icon_icon_container__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./icon/icon-container */ "./src/components/layout/navbar/icon/icon-container.js");
+/* harmony import */ var _link_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../link/link */ "./src/components/link/link.js");
+/* harmony import */ var _theme_theme_container__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./theme/theme-container */ "./src/components/layout/navbar/theme/theme-container.js");
+/* harmony import */ var _links_get_links__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./links/get-links */ "./src/components/layout/navbar/links/get-links.js");
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./navbar.css */ "./src/components/layout/navbar/navbar.css");
+/* harmony import */ var _navbar_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_navbar_css__WEBPACK_IMPORTED_MODULE_6__);
+
+
+
+
+
+
+
+
+
+const Navbar = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(({
+  handleClick,
+  links,
+  location,
+  transform
+}, ref) => {
+  const navLinks = (0,_links_get_links__WEBPACK_IMPORTED_MODULE_5__["default"])(links);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_icon_icon_container__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    location: location
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav__menu",
+    style: {
+      transform
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    ariaLabel: "navigation menu",
+    icon: _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_7__.faBars,
+    kind: "primary",
+    onClick: handleClick,
+    type: "button"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav__menu-links",
+    ref: ref
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_link_link__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    to: "/"
+  }, "Home"), navLinks, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_theme_theme_container__WEBPACK_IMPORTED_MODULE_4__["default"], null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
+    className: "nav__right"
+  }, navLinks, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_theme_theme_container__WEBPACK_IMPORTED_MODULE_4__["default"], null)));
+});
+Navbar.propTypes = {
+  handleClick: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().func.isRequired),
+  links: prop_types__WEBPACK_IMPORTED_MODULE_8___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)).isRequired,
+  location: prop_types__WEBPACK_IMPORTED_MODULE_8___default().shape({}).isRequired,
+  transform: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Navbar);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/theme/theme-container.js":
+/*!***************************************************************!*\
+  !*** ./src/components/layout/navbar/theme/theme-container.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _theme__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./theme */ "./src/components/layout/navbar/theme/theme.js");
+/* harmony import */ var _use_theme__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./use-theme */ "./src/components/layout/navbar/theme/use-theme.js");
+
+
+
+const ThemeContainer = () => {
+  const theme = (0,_use_theme__WEBPACK_IMPORTED_MODULE_2__["default"])();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_theme__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    darkMode: theme.darkMode,
+    toggle: theme.toggle
+  });
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ThemeContainer);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/theme/theme.js":
+/*!*****************************************************!*\
+  !*** ./src/components/layout/navbar/theme/theme.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons */ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs");
+/* harmony import */ var _buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../buttons/icon/button */ "./src/components/buttons/icon/button.js");
+
+
+
+
+const Theme = ({
+  darkMode,
+  toggle
+}) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_buttons_icon_button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  ariaLabel: `switch to ${darkMode ? 'light' : 'dark'} mode`,
+  icon: darkMode ? _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faMoon : _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__.faSun,
+  kind: "primary",
+  onClick: toggle,
+  type: "button"
+});
+Theme.propTypes = {
+  darkMode: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool.isRequired),
+  toggle: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().func.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Theme);
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/theme/use-theme.js":
+/*!*********************************************************!*\
+  !*** ./src/components/layout/navbar/theme/use-theme.js ***!
+  \*********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _utils_local_storage__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../utils/local-storage */ "./src/utils/local-storage.js");
+
+
+const useTheme = () => {
+  const {
+    0: darkMode,
+    1: toggleState
+  } = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
+  const toggle = () => {
+    const newMode = !darkMode;
+    const classToAdd = newMode === true ? 'dark-mode' : 'light-mode';
+    const classToRemove = newMode === true ? 'light-mode' : 'dark-mode';
+    if (document.body.classList.contains(classToRemove)) {
+      document.body.classList.replace(classToRemove, classToAdd);
+    } else {
+      document.body.classList.add(classToAdd);
+    }
+    toggleState(newMode);
+    (0,_utils_local_storage__WEBPACK_IMPORTED_MODULE_1__.setLocalStorage)('darkMode', newMode);
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const updateMode = () => {
+      const storedMode = (0,_utils_local_storage__WEBPACK_IMPORTED_MODULE_1__.getLocalStorage)('darkMode');
+      if (storedMode !== darkMode) {
+        toggleState(storedMode);
+      }
+    };
+    window.addEventListener('storage', updateMode);
+    return window.removeEventListener('storage', updateMode);
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    const bodyMode = document.body.className.includes('dark-mode');
+    if (bodyMode !== darkMode) {
+      toggleState(bodyMode);
+    }
+  }, []);
+  return {
+    darkMode,
+    toggle
+  };
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useTheme);
+
+/***/ }),
+
+/***/ "./src/components/link/link.js":
+/*!*************************************!*\
+  !*** ./src/components/link/link.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! gatsby */ "./.cache/gatsby-browser-entry.js");
+/* harmony import */ var _link_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./link.css */ "./src/components/link/link.css");
+/* harmony import */ var _link_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_link_css__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const formatClass = classes => classes.length > 0 ? classes.join(' ') : undefined;
+const CustomLink = ({
+  buttonStyle,
+  children,
+  className,
+  nav,
+  outline,
+  to,
+  ...props
+}) => {
+  const classes = className ? [className] : [];
+  if (nav) {
+    classes.push('link_nav');
+  }
+  if (buttonStyle) {
+    classes.push('link_button');
+  }
+  if (outline) {
+    classes.push('link_outline');
+  }
+  if (to.startsWith('/') && /\.[0-9a-z]+$/i.test(to)) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", Object.assign({
+      className: formatClass(classes),
+      href: (0,gatsby__WEBPACK_IMPORTED_MODULE_1__.withPrefix)(to)
+    }, props), children);
+  }
+  if (to.startsWith('/')) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link, Object.assign({
+      className: formatClass(classes),
+      to: to
+    }, props), children);
+  }
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a", Object.assign({
+    className: formatClass(classes),
+    href: to
+  }, props), children);
+};
+CustomLink.defaultProps = {
+  buttonStyle: false,
+  className: '',
+  nav: false,
+  outline: false
+};
+CustomLink.propTypes = {
+  buttonStyle: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  className: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().node.isRequired),
+  nav: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  outline: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
+  to: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomLink);
+
+/***/ }),
+
+/***/ "./src/components/seo/seo.js":
+/*!***********************************!*\
+  !*** ./src/components/seo/seo.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _public_page_data_sq_d_4123507481_json__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../public/page-data/sq/d/4123507481.json */ "./public/page-data/sq/d/4123507481.json");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-helmet */ "./node_modules/react-helmet/es/Helmet.js");
+
+
+
+
+function SEO({
+  description,
+  lang,
+  meta,
+  title
+}) {
+  const {
+    site
+  } = _public_page_data_sq_d_4123507481_json__WEBPACK_IMPORTED_MODULE_0__.data;
+  const {
+    defaultDescription,
+    defaultTitle,
+    siteUrl
+  } = site.siteMetadata;
+  const seo = {
+    description: description || defaultDescription,
+    title: title || defaultTitle,
+    url: siteUrl
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_2__.Helmet, {
+    htmlAttributes: {
+      lang
+    },
+    title: seo.title,
+    titleTemplate: `%s | ${defaultTitle}`,
+    meta: [{
+      name: 'description',
+      content: seo.description
+    }, {
+      property: 'og:title',
+      content: seo.title
+    }, {
+      property: 'og:description',
+      content: seo.description
+    }, {
+      property: 'og:type',
+      content: 'website'
+    }, {
+      property: 'og:url',
+      content: seo.url
+    }, {
+      property: 'twitter:title',
+      content: seo.title
+    }, {
+      property: 'twitter:description',
+      content: seo.description
+    }].concat(meta)
+  });
+}
+SEO.defaultProps = {
+  lang: 'en',
+  meta: [],
+  description: ''
+};
+SEO.propTypes = {
+  description: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  lang: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  meta: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),
+  title: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SEO);
+
+/***/ }),
+
+/***/ "./src/pages/index.js?export=default":
+/*!*******************************************!*\
+  !*** ./src/pages/index.js?export=default ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_home_home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/home/home */ "./src/components/home/home.js");
+/* harmony import */ var _components_layout_layout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/layout/layout */ "./src/components/layout/layout.js");
+/* harmony import */ var _components_seo_seo__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/seo/seo */ "./src/components/seo/seo.js");
+
+
+
+
+const IndexPage = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_layout_layout__WEBPACK_IMPORTED_MODULE_2__["default"], null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_seo_seo__WEBPACK_IMPORTED_MODULE_3__["default"], {
+  title: "Home"
+}), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_home_home__WEBPACK_IMPORTED_MODULE_1__["default"], null));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (IndexPage);
+
+/***/ }),
+
+/***/ "./src/utils/hooks/click-outside/is-visible.js":
+/*!*****************************************************!*\
+  !*** ./src/utils/hooks/click-outside/is-visible.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+// An element is considered visible if it has an opacity > 0
+// and either a height or width.
+const isVisible = element => {
+  if (!element) {
+    return false;
+  }
+  const rect = element.getBoundingClientRect();
+  return Boolean(window.getComputedStyle(element).getPropertyValue('opacity') > 0 && (rect.height || rect.width));
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (isVisible);
+
+/***/ }),
+
+/***/ "./src/utils/hooks/click-outside/use-click-outside.js":
+/*!************************************************************!*\
+  !*** ./src/utils/hooks/click-outside/use-click-outside.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _is_visible__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./is-visible */ "./src/utils/hooks/click-outside/is-visible.js");
+
+
+
+/* Detect click outside element specified by ref.current. If the visibility
+** of the element is irrelevant, set ignoreVisibility argument to true. The
+** element is considered visible if it has height or width as computed with
+** getBoundingClientRect(). If esc argument is true, pressing the escape
+** key is the same as clicking outside the element. func is called when
+** a click occurs outside the element. */
+const useClickOutside = (ref, func, esc = true, ignoreVisibility = false) => {
+  const clickedOutside = (isOutside, e) => {
+    if (isOutside) {
+      func(e);
+    }
+  };
+  const clickListener = e => {
+    const element = ref.current;
+    const outside = !element.contains(e.target) && (ignoreVisibility || (0,_is_visible__WEBPACK_IMPORTED_MODULE_1__["default"])(element));
+    clickedOutside(outside, e);
+  };
+  const escListener = e => {
+    const element = ref.current;
+    if (e.key === 'Escape' && (0,_is_visible__WEBPACK_IMPORTED_MODULE_1__["default"])(element)) {
+      clickedOutside(true, e);
+    }
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    window.addEventListener('click', clickListener);
+    return () => {
+      window.removeEventListener('click', clickListener);
+    };
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(() => {
+    if (esc) {
+      window.addEventListener('keydown', escListener);
+    }
+    return () => {
+      if (esc) {
+        window.removeEventListener('keydown', escListener);
+      }
+    };
+  });
+  const clear = () => {
+    window.removeEventListener('click', clickListener);
+    if (esc) {
+      window.removeEventListener('keydown', escListener);
+    }
+  };
+  return clear;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useClickOutside);
+
+/***/ }),
+
+/***/ "./src/utils/local-storage.js":
+/*!************************************!*\
+  !*** ./src/utils/local-storage.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getLocalStorage": () => (/* binding */ getLocalStorage),
+/* harmony export */   "setLocalStorage": () => (/* binding */ setLocalStorage)
+/* harmony export */ });
+const windowGlobal = typeof window !== 'undefined' && window;
+const localAdapter = windowGlobal ? windowGlobal.localStorage : {
+  getItem: () => null,
+  removeItem: () => {},
+  setItem: () => {}
+};
+const storageSupport = () => {
+  try {
+    const test = 'test-storage';
+    localAdapter.setItem(test, test);
+    localAdapter.removeItem(test);
+    return true;
+  } catch (error) {
+    return false;
+  }
+};
+const getLocalStorage = key => {
+  if (storageSupport) {
+    return JSON.parse(localAdapter.getItem(key));
+  }
+  return null;
+};
+const setLocalStorage = (key, value) => {
+  if (storageSupport) {
+    return localAdapter.setItem(key, JSON.stringify(value));
+  }
+  return null;
+};
+
+/***/ }),
+
+/***/ "./src/utils/sort-markdown.js":
+/*!************************************!*\
+  !*** ./src/utils/sort-markdown.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+const sortMarkdown = (entries, sortFields = []) => {
+  if (sortFields.length === 0) {
+    return entries;
+  }
+  const compare = (a, b) => {
+    if (a.node.frontmatter[sortFields[0]] < b.node.frontmatter[sortFields[0]]) {
+      return -1;
+    }
+    if (a.node.frontmatter[sortFields[0]] > b.node.frontmatter[sortFields[0]]) {
+      return 1;
+    }
+    if (sortFields.length >= 2 && a.node.frontmatter[sortFields[1]] < b.node.frontmatter[sortFields[1]]) {
+      return -1;
+    }
+    if (sortFields.length >= 2 && a.node.frontmatter[sortFields[1]] > b.node.frontmatter[sortFields[1]]) {
+      return 1;
+    }
+    return 0;
+  };
+  entries.sort(compare);
+  return entries;
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sortMarkdown);
+
+/***/ }),
+
+/***/ "./node_modules/gbimage-bridge/dist/index.modern.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/gbimage-bridge/dist/index.modern.js ***!
+  \**********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BgImage": () => (/* binding */ f),
+/* harmony export */   "convertSingleBgImage": () => (/* binding */ s),
+/* harmony export */   "convertToBgImage": () => (/* binding */ d),
+/* harmony export */   "getAllExtraSrcSets": () => (/* binding */ o),
+/* harmony export */   "getAspectRatio": () => (/* binding */ u),
+/* harmony export */   "getBgImageType": () => (/* binding */ n),
+/* harmony export */   "getPlaceholder": () => (/* binding */ a),
+/* harmony export */   "getSingleImage": () => (/* binding */ i),
+/* harmony export */   "getSrc": () => (/* binding */ c),
+/* harmony export */   "isString": () => (/* binding */ t)
+/* harmony export */ });
+/* harmony import */ var gatsby_background_image__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! gatsby-background-image */ "./node_modules/gatsby-background-image/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+function l(){return(l=Object.assign||function(r){for(var e=1;e<arguments.length;e++){var l=arguments[e];for(var t in l)Object.prototype.hasOwnProperty.call(l,t)&&(r[t]=l[t])}return r}).apply(this,arguments)}const t=r=>"[object String]"===Object.prototype.toString.call(r),n=r=>"fixed"===r.layout?"fixed":"fluid",i=r=>{let e;for(e=0;e<r.length;e++)if(!t(r[e]))return r[e];return null},u=r=>r.width/r.height,a=r=>{var e,l,t,n;return r.placeholder?null!=(e=r.placeholder)&&null!=(l=e.fallback)&&l.includes("base64")?{base64:null==(t=r.placeholder)?void 0:t.fallback}:{tracedSVG:null==(n=r.placeholder)?void 0:n.fallback}:{}},c=r=>{if(r.srcSet){var e;const l=[...r.srcSet.matchAll(/(?:([^"'\s,]+)\s*(?:\s+\d+[wx])(?:,\s*)?)/gm)],t=r.sizes.replace("px",""),n=l.filter(r=>(null==r?void 0:r[0].includes("100w"))||(null==r?void 0:r[0].includes("1x"))||(null==r?void 0:r[0].includes(`${t}w`)));return(null==n||null==(e=n[0])?void 0:e[1])||""}return""},o=r=>{var e,l,t;return null!=(e=r.images)&&e.sources&&Array.isArray(null==(l=r.images)?void 0:l.sources)?null==(t=r.images)?void 0:t.sources.reduce((r,e)=>{var l;const t=(null==e||null==(l=e.type)?void 0:l.split("/")[1])||"",n=(null==t?void 0:t.charAt(0).toUpperCase())+t.slice(1),i=`srcSet${n}`,u=`src${n}`;return n&&(!(i in r)&&null!=e&&e.srcSet&&(r[i]=e.srcSet),!(u in r)&&null!=e&&e.srcSet&&(r[u]=c(e))),r},{}):{}},s=r=>{if(r&&r.layout){const e={},t=n(r),i=u(r),c=a(r),s=o(r);return e[t]=l({},r.images.fallback,s,c,"fluid"===t?{aspectRatio:i}:{},"fixed"===t?{width:r.width,height:r.height}:{}),e}return null};function d(r){if(r){if(Array.isArray(r)){const[e,u]=(r=>{const e=i(r);if(e){const i=n(e),u=r.map(r=>{if(t(r))return r;const e=s(r);return l({},e&&e[i],null!=r&&r.media?{media:r.media}:{})});return[i,u]}return[]})(r);return e?{[e]:u}:null}return s(r)}return null}const f=t=>{const{image:n,children:i}=t,u=function(r,e){if(null==r)return{};var l,t,n={},i=Object.keys(r);for(t=0;t<i.length;t++)e.indexOf(l=i[t])>=0||(n[l]=r[l]);return n}(t,["image","children"]),a=n&&d(n);return a?react__WEBPACK_IMPORTED_MODULE_1___default().createElement(gatsby_background_image__WEBPACK_IMPORTED_MODULE_0__["default"],l({},a,u),i):react__WEBPACK_IMPORTED_MODULE_1___default().createElement("div",null,i)};
+//# sourceMappingURL=index.modern.js.map
+
+
+/***/ }),
+
+/***/ "./node_modules/html-attributes/lib/html-attributes.js":
+/*!*************************************************************!*\
+  !*** ./node_modules/html-attributes/lib/html-attributes.js ***!
+  \*************************************************************/
+/***/ ((module) => {
+
+"use strict";
+/*!
+ * html-attributes
+ * https://github.com/alexmingoia/html-attributes
+ */
+
+
+
+/**
+ * @module html-attributes
+ */
+
+module.exports = {
+  "abbr": "abbr",
+  "accept": "accept",
+  "acceptCharset": "accept-charset",
+  "accessKey": "accesskey",
+  "action": "action",
+  "allowFullScreen": "allowfullscreen",
+  "allowTransparency": "allowtransparency",
+  "alt": "alt",
+  "async": "async",
+  "autoComplete": "autocomplete",
+  "autoFocus": "autofocus",
+  "autoPlay": "autoplay",
+  "cellPadding": "cellpadding",
+  "cellSpacing": "cellspacing",
+  "challenge": "challenge",
+  "charset": "charset",
+  "checked": "checked",
+  "cite": "cite",
+  "class": "class",
+  "className": "class",
+  "cols": "cols",
+  "colSpan": "colspan",
+  "command": "command",
+  "content": "content",
+  "contentEditable": "contenteditable",
+  "contextMenu": "contextmenu",
+  "controls": "controls",
+  "coords": "coords",
+  "crossOrigin": "crossorigin",
+  "data": "data",
+  "dateTime": "datetime",
+  "default": "default",
+  "defer": "defer",
+  "dir": "dir",
+  "disabled": "disabled",
+  "download": "download",
+  "draggable": "draggable",
+  "dropzone": "dropzone",
+  "encType": "enctype",
+  "for": "for",
+  "form": "form",
+  "formAction": "formaction",
+  "formEncType": "formenctype",
+  "formMethod": "formmethod",
+  "formNoValidate": "formnovalidate",
+  "formTarget": "formtarget",
+  "frameBorder": "frameBorder",
+  "headers": "headers",
+  "height": "height",
+  "hidden": "hidden",
+  "high": "high",
+  "href": "href",
+  "hrefLang": "hreflang",
+  "htmlFor": "for",
+  "httpEquiv": "http-equiv",
+  "icon": "icon",
+  "id": "id",
+  "inputMode": "inputmode",
+  "isMap": "ismap",
+  "itemId": "itemid",
+  "itemProp": "itemprop",
+  "itemRef": "itemref",
+  "itemScope": "itemscope",
+  "itemType": "itemtype",
+  "kind": "kind",
+  "label": "label",
+  "lang": "lang",
+  "list": "list",
+  "loop": "loop",
+  "manifest": "manifest",
+  "max": "max",
+  "maxLength": "maxlength",
+  "media": "media",
+  "mediaGroup": "mediagroup",
+  "method": "method",
+  "min": "min",
+  "minLength": "minlength",
+  "multiple": "multiple",
+  "muted": "muted",
+  "name": "name",
+  "noValidate": "novalidate",
+  "open": "open",
+  "optimum": "optimum",
+  "pattern": "pattern",
+  "ping": "ping",
+  "placeholder": "placeholder",
+  "poster": "poster",
+  "preload": "preload",
+  "radioGroup": "radiogroup",
+  "readOnly": "readonly",
+  "rel": "rel",
+  "required": "required",
+  "role": "role",
+  "rows": "rows",
+  "rowSpan": "rowspan",
+  "sandbox": "sandbox",
+  "scope": "scope",
+  "scoped": "scoped",
+  "scrolling": "scrolling",
+  "seamless": "seamless",
+  "selected": "selected",
+  "shape": "shape",
+  "size": "size",
+  "sizes": "sizes",
+  "sortable": "sortable",
+  "span": "span",
+  "spellCheck": "spellcheck",
+  "src": "src",
+  "srcDoc": "srcdoc",
+  "srcSet": "srcset",
+  "start": "start",
+  "step": "step",
+  "style": "style",
+  "tabIndex": "tabindex",
+  "target": "target",
+  "title": "title",
+  "translate": "translate",
+  "type": "type",
+  "typeMustMatch": "typemustmatch",
+  "useMap": "usemap",
+  "value": "value",
+  "width": "width",
+  "wmode": "wmode",
+  "wrap": "wrap"
+};
+
+
+/***/ }),
+
+/***/ "./src/components/home/about/about.css":
+/*!*********************************************!*\
+  !*** ./src/components/home/about/about.css ***!
+  \*********************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/home/contact/contact.css":
+/*!*************************************************!*\
+  !*** ./src/components/home/contact/contact.css ***!
+  \*************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/home/gutter/gutter.css":
+/*!***********************************************!*\
+  !*** ./src/components/home/gutter/gutter.css ***!
+  \***********************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/home/home.css":
+/*!**************************************!*\
+  !*** ./src/components/home/home.css ***!
+  \**************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/home/landing/landing.css":
+/*!*************************************************!*\
+  !*** ./src/components/home/landing/landing.css ***!
+  \*************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/home/opportunities/opportunities.css":
+/*!*************************************************************!*\
+  !*** ./src/components/home/opportunities/opportunities.css ***!
+  \*************************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/home/research/research.css":
+/*!***************************************************!*\
+  !*** ./src/components/home/research/research.css ***!
+  \***************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/footer/footer.css":
+/*!*************************************************!*\
+  !*** ./src/components/layout/footer/footer.css ***!
+  \*************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/layout.css":
+/*!******************************************!*\
+  !*** ./src/components/layout/layout.css ***!
+  \******************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/icon/icon.css":
+/*!****************************************************!*\
+  !*** ./src/components/layout/navbar/icon/icon.css ***!
+  \****************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/layout/navbar/navbar.css":
+/*!*************************************************!*\
+  !*** ./src/components/layout/navbar/navbar.css ***!
+  \*************************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./src/components/link/link.css":
+/*!**************************************!*\
+  !*** ./src/components/link/link.css ***!
+  \**************************************/
+/***/ (() => {
+
+
+
+/***/ }),
+
+/***/ "./node_modules/short-uuid/index.js":
+/*!******************************************!*\
+  !*** ./node_modules/short-uuid/index.js ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+/**
+ * Created by Samuel on 6/4/2016.
+ * Simple wrapper functions to produce shorter UUIDs for cookies, maybe everything?
+ */
+
+const { v4: uuidv4 } = __webpack_require__(/*! uuid */ "./node_modules/uuid/dist/esm-node/index.js");
+const anyBase = __webpack_require__(/*! any-base */ "./node_modules/any-base/index.js");
+
+const flickrBase58 = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';
+const cookieBase90 = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+-./:<=>?@[]^_`{|}~";
+
+const baseOptions = {
+  consistentLength: true,
+};
+
+// A default generator, instantiated only if used.
+let toFlickr;
+
+/**
+ * Takes a UUID, strips the dashes, and translates.
+ * @param {string} longId
+ * @param {function(string)} translator
+ * @param {Object} [paddingParams]
+ * @returns {string}
+ */
+const shortenUUID = (longId, translator, paddingParams) => {
+  const translated = translator(longId.toLowerCase().replace(/-/g, ''));
+
+  if (!paddingParams || !paddingParams.consistentLength) return translated;
+
+  return translated.padStart(
+    paddingParams.shortIdLength,
+    paddingParams.paddingChar,
+  );
+};
+
+/**
+ * Translate back to hex and turn back into UUID format, with dashes
+ * @param {string} shortId
+ * @param {function(string)} translator
+ * @returns {string}
+ */
+const enlargeUUID = (shortId, translator) => {
+  const uu1 = translator(shortId).padStart(32, '0');
+
+  // Join the zero padding and the UUID and then slice it up with match
+  const m = uu1.match(/(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})/);
+
+  // Accumulate the matches and join them.
+  return [m[1], m[2], m[3], m[4], m[5]].join('-');
+};
+
+// Calculate length for the shortened ID
+const getShortIdLength = (alphabetLength) => (
+  Math.ceil(Math.log(2 ** 128) / Math.log(alphabetLength)));
+
+module.exports = (() => {
+  /**
+   * @param {string} toAlphabet - Defaults to flickrBase58 if not provided
+   * @param {Object} [options]
+   *
+   * @returns {{new: (function()),
+   *  uuid: (function()),
+   *  fromUUID: (function(string)),
+   *  toUUID: (function(string)),
+   *  alphabet: (string)}}
+   */
+  const makeConvertor = (toAlphabet, options) => {
+    // Default to Flickr 58
+    const useAlphabet = toAlphabet || flickrBase58;
+
+    // Default to baseOptions
+    const selectedOptions = { ...baseOptions, ...options };
+
+    // Check alphabet for duplicate entries
+    if ([...new Set(Array.from(useAlphabet))].length !== useAlphabet.length) {
+      throw new Error('The provided Alphabet has duplicate characters resulting in unreliable results');
+    }
+
+    const shortIdLength = getShortIdLength(useAlphabet.length);
+
+    // Padding Params
+    const paddingParams = {
+      shortIdLength,
+      consistentLength: selectedOptions.consistentLength,
+      paddingChar: useAlphabet[0],
+    };
+
+    // UUIDs are in hex, so we translate to and from.
+    const fromHex = anyBase(anyBase.HEX, useAlphabet);
+    const toHex = anyBase(useAlphabet, anyBase.HEX);
+    const generate = () => shortenUUID(uuidv4(), fromHex, paddingParams);
+
+    const translator = {
+      new: generate,
+      generate,
+      uuid: uuidv4,
+      fromUUID: (uuid) => shortenUUID(uuid, fromHex, paddingParams),
+      toUUID: (shortUuid) => enlargeUUID(shortUuid, toHex),
+      alphabet: useAlphabet,
+      maxLength: shortIdLength,
+    };
+
+    Object.freeze(translator);
+
+    return translator;
+  };
+
+  // Expose the constants for other purposes.
+  makeConvertor.constants = {
+    flickrBase58,
+    cookieBase90,
+  };
+
+  // Expose the generic v4 UUID generator for convenience
+  makeConvertor.uuid = uuidv4;
+
+  // Provide a generic generator
+  makeConvertor.generate = () => {
+    if (!toFlickr) {
+      // Generate on first use;
+      toFlickr = makeConvertor(flickrBase58).generate;
+    }
+    return toFlickr();
+  };
+
+  return makeConvertor;
+})();
+
+
+/***/ }),
+
+/***/ "./node_modules/sort-media-queries/lib/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/sort-media-queries/lib/index.js ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var extend = __webpack_require__(/*! xtend */ "./node_modules/xtend/immutable.js");
+var mqTypes = ['blank','all','minWidth','minHeight','maxWidth','maxHeight','print'];
+
+/**
+ * @param  {Array} rules
+ * @param  {String} type
+ * @param  {String} prop
+ *
+ * @return {Boolean}
+ */
+function itemsValid ( rules, type, prop ) {
+	var flag = true;
+	for ( var i = 0, rulesLength = rules.length; i < rulesLength; i++ ) {
+		if ( typeof(rules[i]) !== type || ( prop && !rules[i].hasOwnProperty(prop) ) ) {
+			flag = false;
+			break;
+		}
+	}
+	return flag;
+}
+
+/**
+ * @param  {Array} rules
+ * @param  {String} type
+ * @param  {String} prop
+ *
+ * @return {Boolean}
+ */
+function allValid ( rules, type, prop ) {
+	if (
+		!rules || !rules.length || typeof(rules) === 'string'
+	) {
+		return 'none';
+	}
+	if (
+		(type === 'object' && (!prop || typeof(prop) !== 'string')) ||
+		!itemsValid(rules, type, prop)
+	) {
+		return 'some';
+	}
+	return 'all';
+}
+
+/**
+ * Normalize between array with strings and array with objects
+ *
+ * @param  {Array} rules
+ * @param  {String} type
+ * @param  {String} prop
+ *
+ * @return {Object}
+ */
+function prepareRules ( rules, type, prop ) {
+	var collection = [];
+	var o = {};
+	for ( var i = 0, rulesLength = rules.length; i < rulesLength; i++ ) {
+		if ( type === 'string' ) {
+			o = extend({}, {
+				__media: rules[i]
+			});
+		} else {
+			o = extend({}, rules[i]);
+			o.__media = rules[i][prop];
+		}
+		collection.push(o);
+	}
+	return collection;
+}
+
+/**
+ * @param  {Boolean} isMax
+ *
+ * @return {Function}
+ */
+function determineSortOrder ( isMax ) {
+
+	/**
+	 * Determine sort order based on provided arguments
+	 *
+	 * @param  {Object} a
+	 * @param  {Object} b
+	 *
+	 * @return {Integer}
+	 */
+	return function ( a, b ) {
+
+		var sortValA = a.sortVal;
+		var sortValB = b.sortVal;
+		var ruleA = a.item.__media;
+		var ruleB = b.item.__media;
+		isMax = typeof(isMax) !== 'undefined' ? isMax : false;
+
+		// Consider print for sorting if sortVals are equal
+		if ( sortValA === sortValB ) {
+			if ( ruleA.match(/print/) ) {
+				// a contains print and should be sorted after b
+				return 1;
+			}
+			if ( ruleB.match(/print/) ) {
+				// b contains print and should be sorted after a
+				return -1;
+			}
+		}
+
+		// Return descending sort order for max-(width|height) media queries
+		if ( isMax ) {
+			return sortValB - sortValA;
+		}
+
+		// Return ascending sort order
+		return sortValA - sortValB;
+	};
+}
+
+/**
+ * @return {Object}
+ */
+function createCollection () {
+	var mqCollection = {};
+	for ( var i = 0, mqTypesLength = mqTypes.length; i < mqTypesLength; i++ ) {
+		mqCollection[mqTypes[i]] = [];
+	}
+	return mqCollection;
+}
+
+/**
+ * @param {Object} collection
+ * @param {Array} rules
+ *
+ * @return {Object}
+ */
+function addRulesToCollection ( collection, rules ) {
+
+	// Sort media queries by kind, this is needed to output them in the right order
+	for ( var i = 0, rulesLength = rules.length; i < rulesLength; i++ ) {
+
+		var item = rules[i];
+		var rule = item.__media;
+		var collectionType = 'blank';
+		var valMatch = rule.match(/\d+/g);
+
+		if ( rule.match(/min-width/) ) {
+			collectionType = 'minWidth';
+		} else if ( rule.match(/min-height/) ) {
+			collectionType = 'minHeight';
+		} else if ( rule.match(/max-width/) ) {
+			collectionType = 'maxWidth';
+		} else if ( rule.match(/max-height/) ) {
+			collectionType = 'maxHeight';
+		} else if ( rule.match(/print/) ) {
+			collectionType = 'print';
+		} else if ( rule.match(/all/) ) {
+			collectionType = 'all';
+		}
+
+		collection[collectionType].push({
+			item: item,
+			sortVal: valMatch ? valMatch[0] : 0
+		});
+
+	}
+	return collection;
+}
+
+/**
+ * @param  {Object} collection
+ *
+ * @return {Object}
+ */
+function sortCollection ( collection ) {
+	var sorter;
+	for ( var collectionType in collection ) {
+		if ( collection.hasOwnProperty(collectionType) ) {
+			sorter = determineSortOrder(false);
+			if ( collectionType === 'maxWidth' || collectionType === 'maxHeight' ) {
+				sorter = determineSortOrder(true);
+			}
+			collection[collectionType].sort(sorter);
+		}
+	}
+	return collection;
+}
+
+/**
+ * @param  {Object} collection
+ * @param  {String} type
+ * @param  {String} prop
+ *
+ * @return {Array}
+ */
+function transformCollection ( collection, type, prop ) {
+	var transformed = [];
+	var collectionItem;
+
+	function iterateCollectionItem ( collectionItem ) {
+		var resultVal;
+		for ( var i = 0, typeLength = collectionItem.length; i < typeLength; i++ ) {
+			if ( type === 'string' ) {
+				resultVal = collectionItem[i].item.__media;
+			} else {
+				resultVal = collectionItem[i].item;
+				delete resultVal.__media;
+			}
+			transformed.push(resultVal);
+		}
+	}
+
+	for ( var i = 0, mqTypesLength = mqTypes.length; i < mqTypesLength; i++ ) {
+		iterateCollectionItem(collection[mqTypes[i]]);
+	}
+
+	return transformed;
+}
+
+/**
+ * @param  {Array} rules
+ * @param  {String} type
+ * @param  {String} prop
+ *
+ * @return {Array}
+ */
+function sortInit ( rules, type, prop ) {
+
+	switch ( allValid(rules, type, prop) ) {
+		case 'none':
+			return [];
+		case 'some':
+			return rules;
+	}
+
+	var collection = createCollection();
+	rules = prepareRules(rules, type, prop);
+	addRulesToCollection(collection, rules);
+	sortCollection(collection);
+	return transformCollection(collection, type, prop);
+}
+
+/**
+ * @param  {Array} rules
+ * @param  {String} prop
+ *
+ * @return {Array}
+ */
+module.exports = function ( rules, prop ) {
+	if ( rules ) {
+		if ( prop ) {
+			return sortInit(rules, 'object', prop);
+		}
+		return sortInit(rules, 'string');
+	}
+	return [];
+};
+
+
+/***/ }),
+
+/***/ "./src/images/logo.inline.svg":
+/*!************************************!*\
+  !*** ./src/images/logo.inline.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var React = __webpack_require__(/*! react */ "react");
+
+function LogoInline (props) {
+    return React.createElement("svg",props,[React.createElement("title",{"key":0},"DNA"),React.createElement("desc",{"key":1},"logo"),React.createElement("path",{"d":"M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z","key":2})]);
+}
+
+LogoInline.defaultProps = {"aria-label":"DNA logo","viewBox":"0 0 448 512"};
+
+module.exports = LogoInline;
+
+LogoInline.default = LogoInline;
+
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/index.js":
+/*!**************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/index.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "NIL": () => (/* reexport safe */ _nil_js__WEBPACK_IMPORTED_MODULE_4__["default"]),
+/* harmony export */   "parse": () => (/* reexport safe */ _parse_js__WEBPACK_IMPORTED_MODULE_8__["default"]),
+/* harmony export */   "stringify": () => (/* reexport safe */ _stringify_js__WEBPACK_IMPORTED_MODULE_7__["default"]),
+/* harmony export */   "v1": () => (/* reexport safe */ _v1_js__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "v3": () => (/* reexport safe */ _v3_js__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "v4": () => (/* reexport safe */ _v4_js__WEBPACK_IMPORTED_MODULE_2__["default"]),
+/* harmony export */   "v5": () => (/* reexport safe */ _v5_js__WEBPACK_IMPORTED_MODULE_3__["default"]),
+/* harmony export */   "validate": () => (/* reexport safe */ _validate_js__WEBPACK_IMPORTED_MODULE_6__["default"]),
+/* harmony export */   "version": () => (/* reexport safe */ _version_js__WEBPACK_IMPORTED_MODULE_5__["default"])
+/* harmony export */ });
+/* harmony import */ var _v1_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./v1.js */ "./node_modules/uuid/dist/esm-node/v1.js");
+/* harmony import */ var _v3_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./v3.js */ "./node_modules/uuid/dist/esm-node/v3.js");
+/* harmony import */ var _v4_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./v4.js */ "./node_modules/uuid/dist/esm-node/v4.js");
+/* harmony import */ var _v5_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./v5.js */ "./node_modules/uuid/dist/esm-node/v5.js");
+/* harmony import */ var _nil_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./nil.js */ "./node_modules/uuid/dist/esm-node/nil.js");
+/* harmony import */ var _version_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./version.js */ "./node_modules/uuid/dist/esm-node/version.js");
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./validate.js */ "./node_modules/uuid/dist/esm-node/validate.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./stringify.js */ "./node_modules/uuid/dist/esm-node/stringify.js");
+/* harmony import */ var _parse_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./parse.js */ "./node_modules/uuid/dist/esm-node/parse.js");
+
+
+
+
+
+
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/md5.js":
+/*!************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/md5.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crypto */ "crypto");
+/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function md5(bytes) {
+  if (Array.isArray(bytes)) {
+    bytes = Buffer.from(bytes);
+  } else if (typeof bytes === 'string') {
+    bytes = Buffer.from(bytes, 'utf8');
+  }
+
+  return crypto__WEBPACK_IMPORTED_MODULE_0___default().createHash('md5').update(bytes).digest();
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (md5);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/nil.js":
+/*!************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/nil.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ('00000000-0000-0000-0000-000000000000');
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/parse.js":
+/*!**************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/parse.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validate.js */ "./node_modules/uuid/dist/esm-node/validate.js");
+
+
+function parse(uuid) {
+  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__["default"])(uuid)) {
+    throw TypeError('Invalid UUID');
+  }
+
+  let v;
+  const arr = new Uint8Array(16); // Parse ########-....-....-....-............
+
+  arr[0] = (v = parseInt(uuid.slice(0, 8), 16)) >>> 24;
+  arr[1] = v >>> 16 & 0xff;
+  arr[2] = v >>> 8 & 0xff;
+  arr[3] = v & 0xff; // Parse ........-####-....-....-............
+
+  arr[4] = (v = parseInt(uuid.slice(9, 13), 16)) >>> 8;
+  arr[5] = v & 0xff; // Parse ........-....-####-....-............
+
+  arr[6] = (v = parseInt(uuid.slice(14, 18), 16)) >>> 8;
+  arr[7] = v & 0xff; // Parse ........-....-....-####-............
+
+  arr[8] = (v = parseInt(uuid.slice(19, 23), 16)) >>> 8;
+  arr[9] = v & 0xff; // Parse ........-....-....-....-############
+  // (Use "/" to avoid 32-bit truncation when bit-shifting high-order bytes)
+
+  arr[10] = (v = parseInt(uuid.slice(24, 36), 16)) / 0x10000000000 & 0xff;
+  arr[11] = v / 0x100000000 & 0xff;
+  arr[12] = v >>> 24 & 0xff;
+  arr[13] = v >>> 16 & 0xff;
+  arr[14] = v >>> 8 & 0xff;
+  arr[15] = v & 0xff;
+  return arr;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (parse);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/regex.js":
+/*!**************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/regex.js ***!
+  \**************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/rng.js":
+/*!************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/rng.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ rng)
+/* harmony export */ });
+/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crypto */ "crypto");
+/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);
+
+const rnds8Pool = new Uint8Array(256); // # of random values to pre-allocate
+
+let poolPtr = rnds8Pool.length;
+function rng() {
+  if (poolPtr > rnds8Pool.length - 16) {
+    crypto__WEBPACK_IMPORTED_MODULE_0___default().randomFillSync(rnds8Pool);
+    poolPtr = 0;
+  }
+
+  return rnds8Pool.slice(poolPtr, poolPtr += 16);
+}
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/sha1.js":
+/*!*************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/sha1.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! crypto */ "crypto");
+/* harmony import */ var crypto__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(crypto__WEBPACK_IMPORTED_MODULE_0__);
+
+
+function sha1(bytes) {
+  if (Array.isArray(bytes)) {
+    bytes = Buffer.from(bytes);
+  } else if (typeof bytes === 'string') {
+    bytes = Buffer.from(bytes, 'utf8');
+  }
+
+  return crypto__WEBPACK_IMPORTED_MODULE_0___default().createHash('sha1').update(bytes).digest();
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sha1);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/stringify.js":
+/*!******************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/stringify.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validate.js */ "./node_modules/uuid/dist/esm-node/validate.js");
+
+/**
+ * Convert array of 16 byte values to UUID string format of the form:
+ * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+ */
+
+const byteToHex = [];
+
+for (let i = 0; i < 256; ++i) {
+  byteToHex.push((i + 0x100).toString(16).substr(1));
+}
+
+function stringify(arr, offset = 0) {
+  // Note: Be careful editing this code!  It's been tuned for performance
+  // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
+  const uuid = (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase(); // Consistency check for valid UUID.  If this throws, it's likely due to one
+  // of the following:
+  // - One or more input array values don't map to a hex octet (leading to
+  // "undefined" in the uuid)
+  // - Invalid input values for the RFC `version` or `variant` fields
+
+  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__["default"])(uuid)) {
+    throw TypeError('Stringified UUID is invalid');
+  }
+
+  return uuid;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (stringify);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/v1.js":
+/*!***********************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/v1.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rng.js */ "./node_modules/uuid/dist/esm-node/rng.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stringify.js */ "./node_modules/uuid/dist/esm-node/stringify.js");
+
+ // **`v1()` - Generate time-based UUID**
+//
+// Inspired by https://github.com/LiosK/UUID.js
+// and http://docs.python.org/library/uuid.html
+
+let _nodeId;
+
+let _clockseq; // Previous uuid creation time
+
+
+let _lastMSecs = 0;
+let _lastNSecs = 0; // See https://github.com/uuidjs/uuid for API details
+
+function v1(options, buf, offset) {
+  let i = buf && offset || 0;
+  const b = buf || new Array(16);
+  options = options || {};
+  let node = options.node || _nodeId;
+  let clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq; // node and clockseq need to be initialized to random values if they're not
+  // specified.  We do this lazily to minimize issues related to insufficient
+  // system entropy.  See #189
+
+  if (node == null || clockseq == null) {
+    const seedBytes = options.random || (options.rng || _rng_js__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+    if (node == null) {
+      // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
+      node = _nodeId = [seedBytes[0] | 0x01, seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]];
+    }
+
+    if (clockseq == null) {
+      // Per 4.2.2, randomize (14 bit) clockseq
+      clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
+    }
+  } // UUID timestamps are 100 nano-second units since the Gregorian epoch,
+  // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
+  // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
+  // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
+
+
+  let msecs = options.msecs !== undefined ? options.msecs : Date.now(); // Per 4.2.1.2, use count of uuid's generated during the current clock
+  // cycle to simulate higher resolution clock
+
+  let nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1; // Time since last uuid creation (in msecs)
+
+  const dt = msecs - _lastMSecs + (nsecs - _lastNSecs) / 10000; // Per 4.2.1.2, Bump clockseq on clock regression
+
+  if (dt < 0 && options.clockseq === undefined) {
+    clockseq = clockseq + 1 & 0x3fff;
+  } // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
+  // time interval
+
+
+  if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
+    nsecs = 0;
+  } // Per 4.2.1.2 Throw error if too many uuids are requested
+
+
+  if (nsecs >= 10000) {
+    throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
+  }
+
+  _lastMSecs = msecs;
+  _lastNSecs = nsecs;
+  _clockseq = clockseq; // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
+
+  msecs += 12219292800000; // `time_low`
+
+  const tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
+  b[i++] = tl >>> 24 & 0xff;
+  b[i++] = tl >>> 16 & 0xff;
+  b[i++] = tl >>> 8 & 0xff;
+  b[i++] = tl & 0xff; // `time_mid`
+
+  const tmh = msecs / 0x100000000 * 10000 & 0xfffffff;
+  b[i++] = tmh >>> 8 & 0xff;
+  b[i++] = tmh & 0xff; // `time_high_and_version`
+
+  b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
+
+  b[i++] = tmh >>> 16 & 0xff; // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
+
+  b[i++] = clockseq >>> 8 | 0x80; // `clock_seq_low`
+
+  b[i++] = clockseq & 0xff; // `node`
+
+  for (let n = 0; n < 6; ++n) {
+    b[i + n] = node[n];
+  }
+
+  return buf || (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__["default"])(b);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v1);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/v3.js":
+/*!***********************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/v3.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./v35.js */ "./node_modules/uuid/dist/esm-node/v35.js");
+/* harmony import */ var _md5_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./md5.js */ "./node_modules/uuid/dist/esm-node/md5.js");
+
+
+const v3 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__["default"])('v3', 0x30, _md5_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v3);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/v35.js":
+/*!************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/v35.js ***!
+  \************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DNS": () => (/* binding */ DNS),
+/* harmony export */   "URL": () => (/* binding */ URL),
+/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stringify.js */ "./node_modules/uuid/dist/esm-node/stringify.js");
+/* harmony import */ var _parse_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./parse.js */ "./node_modules/uuid/dist/esm-node/parse.js");
+
+
+
+function stringToBytes(str) {
+  str = unescape(encodeURIComponent(str)); // UTF8 escape
+
+  const bytes = [];
+
+  for (let i = 0; i < str.length; ++i) {
+    bytes.push(str.charCodeAt(i));
+  }
+
+  return bytes;
+}
+
+const DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
+const URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(name, version, hashfunc) {
+  function generateUUID(value, namespace, buf, offset) {
+    if (typeof value === 'string') {
+      value = stringToBytes(value);
+    }
+
+    if (typeof namespace === 'string') {
+      namespace = (0,_parse_js__WEBPACK_IMPORTED_MODULE_0__["default"])(namespace);
+    }
+
+    if (namespace.length !== 16) {
+      throw TypeError('Namespace must be array-like (16 iterable integer values, 0-255)');
+    } // Compute hash of namespace and value, Per 4.3
+    // Future: Use spread syntax when supported on all platforms, e.g. `bytes =
+    // hashfunc([...namespace, ... value])`
+
+
+    let bytes = new Uint8Array(16 + value.length);
+    bytes.set(namespace);
+    bytes.set(value, namespace.length);
+    bytes = hashfunc(bytes);
+    bytes[6] = bytes[6] & 0x0f | version;
+    bytes[8] = bytes[8] & 0x3f | 0x80;
+
+    if (buf) {
+      offset = offset || 0;
+
+      for (let i = 0; i < 16; ++i) {
+        buf[offset + i] = bytes[i];
+      }
+
+      return buf;
+    }
+
+    return (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__["default"])(bytes);
+  } // Function#name is not settable on some platforms (#270)
+
+
+  try {
+    generateUUID.name = name; // eslint-disable-next-line no-empty
+  } catch (err) {} // For CommonJS default export support
+
+
+  generateUUID.DNS = DNS;
+  generateUUID.URL = URL;
+  return generateUUID;
+}
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/v4.js":
+/*!***********************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/v4.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _rng_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./rng.js */ "./node_modules/uuid/dist/esm-node/rng.js");
+/* harmony import */ var _stringify_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./stringify.js */ "./node_modules/uuid/dist/esm-node/stringify.js");
+
+
+
+function v4(options, buf, offset) {
+  options = options || {};
+  const rnds = options.random || (options.rng || _rng_js__WEBPACK_IMPORTED_MODULE_0__["default"])(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
+
+  rnds[6] = rnds[6] & 0x0f | 0x40;
+  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
+
+  if (buf) {
+    offset = offset || 0;
+
+    for (let i = 0; i < 16; ++i) {
+      buf[offset + i] = rnds[i];
+    }
+
+    return buf;
+  }
+
+  return (0,_stringify_js__WEBPACK_IMPORTED_MODULE_1__["default"])(rnds);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v4);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/v5.js":
+/*!***********************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/v5.js ***!
+  \***********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _v35_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./v35.js */ "./node_modules/uuid/dist/esm-node/v35.js");
+/* harmony import */ var _sha1_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./sha1.js */ "./node_modules/uuid/dist/esm-node/sha1.js");
+
+
+const v5 = (0,_v35_js__WEBPACK_IMPORTED_MODULE_0__["default"])('v5', 0x50, _sha1_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (v5);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/validate.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/validate.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _regex_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./regex.js */ "./node_modules/uuid/dist/esm-node/regex.js");
+
+
+function validate(uuid) {
+  return typeof uuid === 'string' && _regex_js__WEBPACK_IMPORTED_MODULE_0__["default"].test(uuid);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (validate);
+
+/***/ }),
+
+/***/ "./node_modules/uuid/dist/esm-node/version.js":
+/*!****************************************************!*\
+  !*** ./node_modules/uuid/dist/esm-node/version.js ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _validate_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./validate.js */ "./node_modules/uuid/dist/esm-node/validate.js");
+
+
+function version(uuid) {
+  if (!(0,_validate_js__WEBPACK_IMPORTED_MODULE_0__["default"])(uuid)) {
+    throw TypeError('Invalid UUID');
+  }
+
+  return parseInt(uuid.substr(14, 1), 16);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (version);
+
+/***/ }),
+
+/***/ "./node_modules/xtend/immutable.js":
+/*!*****************************************!*\
+  !*** ./node_modules/xtend/immutable.js ***!
+  \*****************************************/
+/***/ ((module) => {
+
+module.exports = extend
+
+var hasOwnProperty = Object.prototype.hasOwnProperty;
+
+function extend() {
+    var target = {}
+
+    for (var i = 0; i < arguments.length; i++) {
+        var source = arguments[i]
+
+        for (var key in source) {
+            if (hasOwnProperty.call(source, key)) {
+                target[key] = source[key]
+            }
+        }
+    }
+
+    return target
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/extends.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/extends.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+function _extends() {
+  module.exports = _extends = Object.assign ? Object.assign.bind() : function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+    return target;
+  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
+  return _extends.apply(this, arguments);
+}
+module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/objectWithoutPropertiesLoose.js ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+function _objectWithoutPropertiesLoose(source, excluded) {
+  if (source == null) return {};
+  var target = {};
+  var sourceKeys = Object.keys(source);
+  var key, i;
+  for (i = 0; i < sourceKeys.length; i++) {
+    key = sourceKeys[i];
+    if (excluded.indexOf(key) >= 0) continue;
+    target[key] = source[key];
+  }
+  return target;
+}
+module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/fontawesome-svg-core/index.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/fontawesome-svg-core/index.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "api": () => (/* binding */ api),
+/* harmony export */   "config": () => (/* binding */ config$1),
+/* harmony export */   "counter": () => (/* binding */ counter),
+/* harmony export */   "dom": () => (/* binding */ dom$1),
+/* harmony export */   "findIconDefinition": () => (/* binding */ findIconDefinition$1),
+/* harmony export */   "icon": () => (/* binding */ icon),
+/* harmony export */   "layer": () => (/* binding */ layer),
+/* harmony export */   "library": () => (/* binding */ library$1),
+/* harmony export */   "noAuto": () => (/* binding */ noAuto$1),
+/* harmony export */   "parse": () => (/* binding */ parse$1),
+/* harmony export */   "text": () => (/* binding */ text),
+/* harmony export */   "toHtml": () => (/* binding */ toHtml$1)
+/* harmony export */ });
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
 
@@ -283,7 +6276,7 @@ var MUTATION_APPROACH_ASYNC = 'async';
 var TAGNAMES_TO_SKIP_FOR_PSEUDOELEMENTS = ['HTML', 'HEAD', 'STYLE', 'SCRIPT'];
 var PRODUCTION = function () {
   try {
-    return "production" === 'production';
+    return "development" === 'production';
   } catch (e) {
     return false;
   }
@@ -3070,2068 +9063,1981 @@ var parse$1 = api.parse;
 var findIconDefinition$1 = api.findIconDefinition;
 var toHtml$1 = api.toHtml;
 var icon = api.icon;
-var fontawesome_svg_core_layer = api.layer;
-var fontawesome_svg_core_text = api.text;
+var layer = api.layer;
+var text = api.text;
 var counter = api.counter;
 
 
 
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5697);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: external "/home/rseag/m-3-lab.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(4189);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-;// CONCATENATED MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js
-
-
-
-
-function index_es_ownKeys(object, enumerableOnly) {
-  var keys = Object.keys(object);
-
-  if (Object.getOwnPropertySymbols) {
-    var symbols = Object.getOwnPropertySymbols(object);
-    enumerableOnly && (symbols = symbols.filter(function (sym) {
-      return Object.getOwnPropertyDescriptor(object, sym).enumerable;
-    })), keys.push.apply(keys, symbols);
-  }
-
-  return keys;
-}
-
-function index_es_objectSpread2(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = null != arguments[i] ? arguments[i] : {};
-    i % 2 ? index_es_ownKeys(Object(source), !0).forEach(function (key) {
-      index_es_defineProperty(target, key, source[key]);
-    }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : index_es_ownKeys(Object(source)).forEach(function (key) {
-      Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
-    });
-  }
-
-  return target;
-}
-
-function index_es_typeof(obj) {
-  "@babel/helpers - typeof";
-
-  return index_es_typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
-    return typeof obj;
-  } : function (obj) {
-    return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-  }, index_es_typeof(obj);
-}
-
-function index_es_defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-
-  return target;
-}
-
-function _objectWithoutProperties(source, excluded) {
-  if (source == null) return {};
-
-  var target = _objectWithoutPropertiesLoose(source, excluded);
-
-  var key, i;
-
-  if (Object.getOwnPropertySymbols) {
-    var sourceSymbolKeys = Object.getOwnPropertySymbols(source);
-
-    for (i = 0; i < sourceSymbolKeys.length; i++) {
-      key = sourceSymbolKeys[i];
-      if (excluded.indexOf(key) >= 0) continue;
-      if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue;
-      target[key] = source[key];
-    }
-  }
-
-  return target;
-}
-
-function index_es_toConsumableArray(arr) {
-  return index_es_arrayWithoutHoles(arr) || index_es_iterableToArray(arr) || index_es_unsupportedIterableToArray(arr) || index_es_nonIterableSpread();
-}
-
-function index_es_arrayWithoutHoles(arr) {
-  if (Array.isArray(arr)) return index_es_arrayLikeToArray(arr);
-}
-
-function index_es_iterableToArray(iter) {
-  if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter);
-}
-
-function index_es_unsupportedIterableToArray(o, minLen) {
-  if (!o) return;
-  if (typeof o === "string") return index_es_arrayLikeToArray(o, minLen);
-  var n = Object.prototype.toString.call(o).slice(8, -1);
-  if (n === "Object" && o.constructor) n = o.constructor.name;
-  if (n === "Map" || n === "Set") return Array.from(o);
-  if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return index_es_arrayLikeToArray(o, minLen);
-}
-
-function index_es_arrayLikeToArray(arr, len) {
-  if (len == null || len > arr.length) len = arr.length;
-
-  for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i];
-
-  return arr2;
-}
-
-function index_es_nonIterableSpread() {
-  throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
-}
-
-// Get CSS class list from a props object
-function classList(props) {
-  var _classes;
-
-  var beat = props.beat,
-      fade = props.fade,
-      beatFade = props.beatFade,
-      bounce = props.bounce,
-      shake = props.shake,
-      flash = props.flash,
-      spin = props.spin,
-      spinPulse = props.spinPulse,
-      spinReverse = props.spinReverse,
-      pulse = props.pulse,
-      fixedWidth = props.fixedWidth,
-      inverse = props.inverse,
-      border = props.border,
-      listItem = props.listItem,
-      flip = props.flip,
-      size = props.size,
-      rotation = props.rotation,
-      pull = props.pull; // map of CSS class names to properties
-
-  var classes = (_classes = {
-    'fa-beat': beat,
-    'fa-fade': fade,
-    'fa-beat-fade': beatFade,
-    'fa-bounce': bounce,
-    'fa-shake': shake,
-    'fa-flash': flash,
-    'fa-spin': spin,
-    'fa-spin-reverse': spinReverse,
-    'fa-spin-pulse': spinPulse,
-    'fa-pulse': pulse,
-    'fa-fw': fixedWidth,
-    'fa-inverse': inverse,
-    'fa-border': border,
-    'fa-li': listItem,
-    'fa-flip': flip === true,
-    'fa-flip-horizontal': flip === 'horizontal' || flip === 'both',
-    'fa-flip-vertical': flip === 'vertical' || flip === 'both'
-  }, index_es_defineProperty(_classes, "fa-".concat(size), typeof size !== 'undefined' && size !== null), index_es_defineProperty(_classes, "fa-rotate-".concat(rotation), typeof rotation !== 'undefined' && rotation !== null && rotation !== 0), index_es_defineProperty(_classes, "fa-pull-".concat(pull), typeof pull !== 'undefined' && pull !== null), index_es_defineProperty(_classes, 'fa-swap-opacity', props.swapOpacity), _classes); // map over all the keys in the classes object
-  // return an array of the keys where the value for the key is not null
-
-  return Object.keys(classes).map(function (key) {
-    return classes[key] ? key : null;
-  }).filter(function (key) {
-    return key;
-  });
-}
-
-// Camelize taken from humps
-// humps is copyright © 2012+ Dom Christie
-// Released under the MIT license.
-// Performant way to determine if object coerces to a number
-function _isNumerical(obj) {
-  obj = obj - 0; // eslint-disable-next-line no-self-compare
-
-  return obj === obj;
-}
-
-function camelize(string) {
-  if (_isNumerical(string)) {
-    return string;
-  } // eslint-disable-next-line no-useless-escape
-
-
-  string = string.replace(/[\-_\s]+(.)?/g, function (match, chr) {
-    return chr ? chr.toUpperCase() : '';
-  }); // Ensure 1st char is always lowercase
-
-  return string.substr(0, 1).toLowerCase() + string.substr(1);
-}
-
-var _excluded = ["style"];
-
-function capitalize(val) {
-  return val.charAt(0).toUpperCase() + val.slice(1);
-}
-
-function styleToObject(style) {
-  return style.split(';').map(function (s) {
-    return s.trim();
-  }).filter(function (s) {
-    return s;
-  }).reduce(function (acc, pair) {
-    var i = pair.indexOf(':');
-    var prop = camelize(pair.slice(0, i));
-    var value = pair.slice(i + 1).trim();
-    prop.startsWith('webkit') ? acc[capitalize(prop)] = value : acc[prop] = value;
-    return acc;
-  }, {});
-}
-
-function convert(createElement, element) {
-  var extraProps = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
-
-  if (typeof element === 'string') {
-    return element;
-  }
-
-  var children = (element.children || []).map(function (child) {
-    return convert(createElement, child);
-  });
-  /* eslint-disable dot-notation */
-
-  var mixins = Object.keys(element.attributes || {}).reduce(function (acc, key) {
-    var val = element.attributes[key];
-
-    switch (key) {
-      case 'class':
-        acc.attrs['className'] = val;
-        delete element.attributes['class'];
-        break;
-
-      case 'style':
-        acc.attrs['style'] = styleToObject(val);
-        break;
-
-      default:
-        if (key.indexOf('aria-') === 0 || key.indexOf('data-') === 0) {
-          acc.attrs[key.toLowerCase()] = val;
-        } else {
-          acc.attrs[camelize(key)] = val;
-        }
-
-    }
-
-    return acc;
-  }, {
-    attrs: {}
-  });
-
-  var _extraProps$style = extraProps.style,
-      existingStyle = _extraProps$style === void 0 ? {} : _extraProps$style,
-      remaining = _objectWithoutProperties(extraProps, _excluded);
-
-  mixins.attrs['style'] = index_es_objectSpread2(index_es_objectSpread2({}, mixins.attrs['style']), existingStyle);
-  /* eslint-enable */
-
-  return createElement.apply(void 0, [element.tag, index_es_objectSpread2(index_es_objectSpread2({}, mixins.attrs), remaining)].concat(index_es_toConsumableArray(children)));
-}
-
-var index_es_PRODUCTION = false;
-
-try {
-  index_es_PRODUCTION = "production" === 'production';
-} catch (e) {}
-
-function log () {
-  if (!index_es_PRODUCTION && console && typeof console.error === 'function') {
-    var _console;
-
-    (_console = console).error.apply(_console, arguments);
-  }
-}
-
-function normalizeIconArgs(icon) {
-  // this has everything that it needs to be rendered which means it was probably imported
-  // directly from an icon svg package
-  if (icon && index_es_typeof(icon) === 'object' && icon.prefix && icon.iconName && icon.icon) {
-    return icon;
-  }
-
-  if (parse$1.icon) {
-    return parse$1.icon(icon);
-  } // if the icon is null, there's nothing to do
-
-
-  if (icon === null) {
-    return null;
-  } // if the icon is an object and has a prefix and an icon name, return it
-
-
-  if (icon && index_es_typeof(icon) === 'object' && icon.prefix && icon.iconName) {
-    return icon;
-  } // if it's an array with length of two
-
-
-  if (Array.isArray(icon) && icon.length === 2) {
-    // use the first item as prefix, second as icon name
-    return {
-      prefix: icon[0],
-      iconName: icon[1]
-    };
-  } // if it's a string, use it as the icon name
-
-
-  if (typeof icon === 'string') {
-    return {
-      prefix: 'fas',
-      iconName: icon
-    };
-  }
-}
-
-// creates an object with a key of key
-// and a value of value
-// if certain conditions are met
-function objectWithKey(key, value) {
-  // if the value is a non-empty array
-  // or it's not an array but it is truthy
-  // then create the object with the key and the value
-  // if not, return an empty array
-  return Array.isArray(value) && value.length > 0 || !Array.isArray(value) && value ? index_es_defineProperty({}, key, value) : {};
-}
-
-var FontAwesomeIcon = /*#__PURE__*/index_js_default().forwardRef(function (props, ref) {
-  var iconArgs = props.icon,
-      maskArgs = props.mask,
-      symbol = props.symbol,
-      className = props.className,
-      title = props.title,
-      titleId = props.titleId,
-      maskId = props.maskId;
-  var iconLookup = normalizeIconArgs(iconArgs);
-  var classes = objectWithKey('classes', [].concat(index_es_toConsumableArray(classList(props)), index_es_toConsumableArray(className.split(' '))));
-  var transform = objectWithKey('transform', typeof props.transform === 'string' ? parse$1.transform(props.transform) : props.transform);
-  var mask = objectWithKey('mask', normalizeIconArgs(maskArgs));
-  var renderedIcon = icon(iconLookup, index_es_objectSpread2(index_es_objectSpread2(index_es_objectSpread2(index_es_objectSpread2({}, classes), transform), mask), {}, {
-    symbol: symbol,
-    title: title,
-    titleId: titleId,
-    maskId: maskId
-  }));
-
-  if (!renderedIcon) {
-    log('Could not find icon', iconLookup);
-    return null;
-  }
-
-  var abstract = renderedIcon.abstract;
-  var extraProps = {
-    ref: ref
-  };
-  Object.keys(props).forEach(function (key) {
-    // eslint-disable-next-line no-prototype-builtins
-    if (!FontAwesomeIcon.defaultProps.hasOwnProperty(key)) {
-      extraProps[key] = props[key];
-    }
-  });
-  return convertCurry(abstract[0], extraProps);
-});
-FontAwesomeIcon.displayName = 'FontAwesomeIcon';
-FontAwesomeIcon.propTypes = {
-  beat: (prop_types_default()).bool,
-  border: (prop_types_default()).bool,
-  beatFade: (prop_types_default()).bool,
-  bounce: (prop_types_default()).bool,
-  className: (prop_types_default()).string,
-  fade: (prop_types_default()).bool,
-  flash: (prop_types_default()).bool,
-  mask: prop_types_default().oneOfType([(prop_types_default()).object, (prop_types_default()).array, (prop_types_default()).string]),
-  maskId: (prop_types_default()).string,
-  fixedWidth: (prop_types_default()).bool,
-  inverse: (prop_types_default()).bool,
-  flip: prop_types_default().oneOf([true, false, 'horizontal', 'vertical', 'both']),
-  icon: prop_types_default().oneOfType([(prop_types_default()).object, (prop_types_default()).array, (prop_types_default()).string]),
-  listItem: (prop_types_default()).bool,
-  pull: prop_types_default().oneOf(['right', 'left']),
-  pulse: (prop_types_default()).bool,
-  rotation: prop_types_default().oneOf([0, 90, 180, 270]),
-  shake: (prop_types_default()).bool,
-  size: prop_types_default().oneOf(['2xs', 'xs', 'sm', 'lg', 'xl', '2xl', '1x', '2x', '3x', '4x', '5x', '6x', '7x', '8x', '9x', '10x']),
-  spin: (prop_types_default()).bool,
-  spinPulse: (prop_types_default()).bool,
-  spinReverse: (prop_types_default()).bool,
-  symbol: prop_types_default().oneOfType([(prop_types_default()).bool, (prop_types_default()).string]),
-  title: (prop_types_default()).string,
-  titleId: (prop_types_default()).string,
-  transform: prop_types_default().oneOfType([(prop_types_default()).string, (prop_types_default()).object]),
-  swapOpacity: (prop_types_default()).bool
-};
-FontAwesomeIcon.defaultProps = {
-  border: false,
-  className: '',
-  mask: null,
-  maskId: null,
-  fixedWidth: false,
-  inverse: false,
-  flip: false,
-  icon: null,
-  listItem: false,
-  pull: null,
-  pulse: false,
-  rotation: null,
-  size: null,
-  spin: false,
-  spinPulse: false,
-  spinReverse: false,
-  beat: false,
-  fade: false,
-  beatFade: false,
-  bounce: false,
-  shake: false,
-  symbol: false,
-  title: '',
-  titleId: null,
-  transform: null,
-  swapOpacity: false
-};
-var convertCurry = convert.bind(null, (index_js_default()).createElement);
-
-
-
 
 /***/ }),
 
-/***/ 964:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var Converter = __webpack_require__(2661);
-
-/**
- * Function get source and destination alphabet and return convert function
- *
- * @param {string|Array} srcAlphabet
- * @param {string|Array} dstAlphabet
- *
- * @returns {function(number|Array)}
- */
-function anyBase(srcAlphabet, dstAlphabet) {
-    var converter = new Converter(srcAlphabet, dstAlphabet);
-    /**
-     * Convert function
-     *
-     * @param {string|Array} number
-     *
-     * @return {string|Array} number
-     */
-    return function (number) {
-        return converter.convert(number);
-    }
-};
-
-anyBase.BIN = '01';
-anyBase.OCT = '01234567';
-anyBase.DEC = '0123456789';
-anyBase.HEX = '0123456789abcdef';
-
-module.exports = anyBase;
-
-/***/ }),
-
-/***/ 2661:
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * Converter
- *
- * @param {string|Array} srcAlphabet
- * @param {string|Array} dstAlphabet
- * @constructor
- */
-function Converter(srcAlphabet, dstAlphabet) {
-    if (!srcAlphabet || !dstAlphabet || !srcAlphabet.length || !dstAlphabet.length) {
-        throw new Error('Bad alphabet');
-    }
-    this.srcAlphabet = srcAlphabet;
-    this.dstAlphabet = dstAlphabet;
-}
-
-/**
- * Convert number from source alphabet to destination alphabet
- *
- * @param {string|Array} number - number represented as a string or array of points
- *
- * @returns {string|Array}
- */
-Converter.prototype.convert = function(number) {
-    var i, divide, newlen,
-    numberMap = {},
-    fromBase = this.srcAlphabet.length,
-    toBase = this.dstAlphabet.length,
-    length = number.length,
-    result = typeof number === 'string' ? '' : [];
-
-    if (!this.isValid(number)) {
-        throw new Error('Number "' + number + '" contains of non-alphabetic digits (' + this.srcAlphabet + ')');
-    }
-
-    if (this.srcAlphabet === this.dstAlphabet) {
-        return number;
-    }
-
-    for (i = 0; i < length; i++) {
-        numberMap[i] = this.srcAlphabet.indexOf(number[i]);
-    }
-    do {
-        divide = 0;
-        newlen = 0;
-        for (i = 0; i < length; i++) {
-            divide = divide * fromBase + numberMap[i];
-            if (divide >= toBase) {
-                numberMap[newlen++] = parseInt(divide / toBase, 10);
-                divide = divide % toBase;
-            } else if (newlen > 0) {
-                numberMap[newlen++] = 0;
-            }
-        }
-        length = newlen;
-        result = this.dstAlphabet.slice(divide, divide + 1).concat(result);
-    } while (newlen !== 0);
-
-    return result;
-};
-
-/**
- * Valid number with source alphabet
- *
- * @param {number} number
- *
- * @returns {boolean}
- */
-Converter.prototype.isValid = function(number) {
-    var i = 0;
-    for (; i < number.length; ++i) {
-        if (this.srcAlphabet.indexOf(number[i]) === -1) {
-            return false;
-        }
-    }
-    return true;
-};
-
-module.exports = Converter;
-
-/***/ }),
-
-/***/ 3204:
-/***/ ((module) => {
-
-"use strict";
-
-
-const preserveCamelCase = string => {
-	let isLastCharLower = false;
-	let isLastCharUpper = false;
-	let isLastLastCharUpper = false;
-
-	for (let i = 0; i < string.length; i++) {
-		const character = string[i];
-
-		if (isLastCharLower && /[a-zA-Z]/.test(character) && character.toUpperCase() === character) {
-			string = string.slice(0, i) + '-' + string.slice(i);
-			isLastCharLower = false;
-			isLastLastCharUpper = isLastCharUpper;
-			isLastCharUpper = true;
-			i++;
-		} else if (isLastCharUpper && isLastLastCharUpper && /[a-zA-Z]/.test(character) && character.toLowerCase() === character) {
-			string = string.slice(0, i - 1) + '-' + string.slice(i - 1);
-			isLastLastCharUpper = isLastCharUpper;
-			isLastCharUpper = false;
-			isLastCharLower = true;
-		} else {
-			isLastCharLower = character.toLowerCase() === character && character.toUpperCase() !== character;
-			isLastLastCharUpper = isLastCharUpper;
-			isLastCharUpper = character.toUpperCase() === character && character.toLowerCase() !== character;
-		}
-	}
-
-	return string;
-};
-
-const camelCase = (input, options) => {
-	if (!(typeof input === 'string' || Array.isArray(input))) {
-		throw new TypeError('Expected the input to be `string | string[]`');
-	}
-
-	options = Object.assign({
-		pascalCase: false
-	}, options);
-
-	const postProcess = x => options.pascalCase ? x.charAt(0).toUpperCase() + x.slice(1) : x;
-
-	if (Array.isArray(input)) {
-		input = input.map(x => x.trim())
-			.filter(x => x.length)
-			.join('-');
-	} else {
-		input = input.trim();
-	}
-
-	if (input.length === 0) {
-		return '';
-	}
-
-	if (input.length === 1) {
-		return options.pascalCase ? input.toUpperCase() : input.toLowerCase();
-	}
-
-	const hasUpperCase = input !== input.toLowerCase();
-
-	if (hasUpperCase) {
-		input = preserveCamelCase(input);
-	}
-
-	input = input
-		.replace(/^[_.\- ]+/, '')
-		.toLowerCase()
-		.replace(/[_.\- ]+(\w|$)/g, (_, p1) => p1.toUpperCase())
-		.replace(/\d+(\w|$)/g, m => m.toUpperCase());
-
-	return postProcess(input);
-};
-
-module.exports = camelCase;
-// TODO: Remove this for the next major release
-module.exports["default"] = camelCase;
-
-
-/***/ }),
-
-/***/ 7280:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-	value: true
-}));
-exports["default"] = filterInvalidDOMProps;
-
-var _htmlAttributes = __webpack_require__(2047);
-
-var _htmlAttributes2 = _interopRequireDefault(_htmlAttributes);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var eventProps = {
-	onCopy: true,
-	onCut: true,
-	onPaste: true,
-	onLoad: true,
-	onError: true,
-	onWheel: true,
-	onScroll: true,
-	onCompositionEnd: true,
-	onCompositionStart: true,
-	onCompositionUpdate: true,
-	onKeyDown: true,
-	onKeyPress: true,
-	onKeyUp: true,
-	onFocus: true,
-	onBlur: true,
-	onChange: true,
-	onInput: true,
-	onSubmit: true,
-	onClick: true,
-	onContextMenu: true,
-	onDoubleClick: true,
-	onDrag: true,
-	onDragEnd: true,
-	onDragEnter: true,
-	onDragExit: true,
-	onDragLeave: true,
-	onDragOver: true,
-	onDragStart: true,
-	onDrop: true,
-	onMouseDown: true,
-	onMouseEnter: true,
-	onMouseLeave: true,
-	onMouseMove: true,
-	onMouseOut: true,
-	onMouseOver: true,
-	onMouseUp: true,
-	onSelect: true,
-	onTouchCancel: true,
-	onTouchEnd: true,
-	onTouchMove: true,
-	onTouchStart: true,
-	onAnimationStart: true,
-	onAnimationEnd: true,
-	onAnimationIteration: true,
-	onTransitionEnd: true
-};
-
-function isValidDOMProp(prop) {
-	return eventProps[prop] || _htmlAttributes2.default[prop] || /^(data|aria)-/.test(prop);
-}
-
-function filterInvalidDOMProps(props) {
-	var domProps = {};
-	for (var prop in props) {
-		if (props.hasOwnProperty(prop) && isValidDOMProp(prop)) {
-			domProps[prop] = props[prop];
-		}
-	}
-	return domProps;
-}
-
-/***/ }),
-
-/***/ 8738:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var __webpack_unused_export__;
-var _interopRequireDefault=__webpack_require__(4836);__webpack_unused_export__=true;exports.Z=void 0;var _objectWithoutPropertiesLoose2=_interopRequireDefault(__webpack_require__(7071));var _extends2=_interopRequireDefault(__webpack_require__(434));var _assertThisInitialized2=_interopRequireDefault(__webpack_require__(6115));var _inheritsLoose2=_interopRequireDefault(__webpack_require__(7867));var _react=_interopRequireDefault(__webpack_require__(4189));var _propTypes=_interopRequireDefault(__webpack_require__(5697));var _BackgroundUtils=_interopRequireDefault(__webpack_require__(5010));var _HelperUtils=__webpack_require__(1645);var _ImageUtils=__webpack_require__(2202);var _ImageCache=__webpack_require__(3229);var _ImageRef=__webpack_require__(1921);var _ImageHandling=__webpack_require__(6636);var _StyleUtils=__webpack_require__(7125);var _StyleCreation=__webpack_require__(1496);var _IntersectionObserverUtils=__webpack_require__(5812);var _SimpleUtils=__webpack_require__(4061);var _excluded=["className","style","fluid","fixed","backgroundColor","durationFadeIn","Tag","children","keepStatic"];var BackgroundImage=function(_React$Component){(0,_inheritsLoose2.default)(BackgroundImage,_React$Component);function BackgroundImage(props){var _this;_this=_React$Component.call(this,props)||this;_this.intersectionListener=function(){var imageInCache=(0,_ImageCache.inImageCache)(_this.props);if(!_this.state.isVisible&&typeof _this.props.onStartLoad==="function"){_this.props.onStartLoad({wasCached:imageInCache});}_this.imageRef=(0,_ImageRef.activatePictureRef)(_this.imageRef,_this.props,_this.selfRef);_this.setState(function(state){return{isVisible:true,imageState:state.imageState+1};},function(){_this.setState(function(state){return{imgLoaded:imageInCache,imgCached:(0,_ImageRef.hasActivatedPictureRefs)(_this.imageRef),imageState:state.imageState+1};});});};var convertedProps=(0,_HelperUtils.convertProps)(props);var isVisible=true;var imgLoaded=false;var IOSupported=false;var fadeIn=convertedProps.fadeIn;var seenBefore=(0,_ImageCache.inImageCache)(convertedProps);if(!seenBefore&&(0,_SimpleUtils.isBrowser)()&&window.IntersectionObserver){isVisible=false;IOSupported=true;}if(!(0,_SimpleUtils.isBrowser)()){isVisible=false;}if(convertedProps.critical){isVisible=true;IOSupported=false;}var hasNoScript=!(convertedProps.critical&&!fadeIn)&&!(0,_SimpleUtils.isBrowser)();var imageState=0;var _fixClassName=(0,_StyleUtils.fixClassName)(convertedProps),currentClassNames=_fixClassName[0];_this.backgroundStyles=(0,_StyleUtils.presetBackgroundStyles)((0,_BackgroundUtils.default)(convertedProps.className));_this.handleImageLoaded=_this.handleImageLoaded.bind((0,_assertThisInitialized2.default)(_this));_this.handleRef=_this.handleRef.bind((0,_assertThisInitialized2.default)(_this));_this.imageRef=(0,_ImageRef.createPictureRef)((0,_extends2.default)({},convertedProps,{isVisible:isVisible}),_this.handleImageLoaded);_this.selfRef=null;_this.state={isVisible:isVisible,imgLoaded:imgLoaded,IOSupported:IOSupported,fadeIn:fadeIn,hasNoScript:hasNoScript,seenBefore:seenBefore,imageState:imageState,currentClassNames:currentClassNames};return _this;}var _proto=BackgroundImage.prototype;_proto.componentDidMount=function componentDidMount(){this.backgroundStyles=(0,_StyleUtils.presetBackgroundStyles)((0,_BackgroundUtils.default)(this.props.className));if(this.state.isVisible&&typeof this.props.onStartLoad==="function"){this.props.onStartLoad({wasCached:(0,_ImageCache.inImageCache)(this.props)});}if(this.props.critical||this.state.seenBefore){if((0,_ImageRef.imageReferenceCompleted)(this.imageRef,this.props)){this.handleImageLoaded();}}var _fixClassName2=(0,_StyleUtils.fixClassName)(this.props),currentClassNames=_fixClassName2[0];this.setState({currentClassNames:currentClassNames});};_proto.componentDidUpdate=function componentDidUpdate(prevProps){var _this2=this;if((0,_ImageUtils.imagePropsChanged)(this.props,prevProps)){var convertedProps=(0,_HelperUtils.convertProps)(this.props);var imageInCache=(0,_ImageCache.inImageCache)(convertedProps);var _fixClassName3=(0,_StyleUtils.fixClassName)(convertedProps),currentClassNames=_fixClassName3[0];this.setState({isVisible:imageInCache||convertedProps.critical,imgLoaded:imageInCache,seenBefore:imageInCache,currentClassNames:currentClassNames},function(){_this2.bgImage=(0,_ImageUtils.getCurrentFromData)({data:_this2.imageRef,propName:"currentSrc",returnArray:true})||(0,_ImageUtils.getCurrentFromData)({data:_this2.imageRef,propName:"src",returnArray:true});_this2.imageRef=(0,_ImageRef.createPictureRef)((0,_extends2.default)({},convertedProps,{isVisible:_this2.state.isVisible}),_this2.handleImageLoaded);});}};_proto.componentWillUnmount=function componentWillUnmount(){if(this.imageRef){if(Array.isArray(this.imageRef)){this.imageRef.forEach(function(currentImageRef){if(!!currentImageRef&&!(0,_SimpleUtils.isString)(currentImageRef)){currentImageRef.onload=null;}});}else{this.imageRef.onload=null;}}if(this.cleanUpListeners){this.cleanUpListeners();}};_proto.handleRef=function handleRef(ref){this.selfRef=ref;if(this.state.IOSupported&&ref){this.cleanUpListeners=(0,_IntersectionObserverUtils.listenToIntersections)(ref,this.intersectionListener,this.props.rootMargin);}};_proto.handleImageLoaded=function handleImageLoaded(){(0,_ImageCache.activateCacheForImage)(this.props);this.setState(function(state){return{imgLoaded:true,imageState:state.imageState+1};});if(this.state.seenBefore){this.setState({fadeIn:false});}if(this.props.onLoad){this.props.onLoad();}};_proto.render=function render(){var _fixOpacity=(0,_StyleUtils.fixOpacity)((0,_HelperUtils.convertProps)(this.props),this.props.preserveStackingContext),className=_fixOpacity.className,_fixOpacity$style=_fixOpacity.style,style=_fixOpacity$style===void 0?{}:_fixOpacity$style,fluid=_fixOpacity.fluid,fixed=_fixOpacity.fixed,backgroundColor=_fixOpacity.backgroundColor,durationFadeIn=_fixOpacity.durationFadeIn,Tag=_fixOpacity.Tag,children=_fixOpacity.children,keepStatic=_fixOpacity.keepStatic,props=(0,_objectWithoutPropertiesLoose2.default)(_fixOpacity,_excluded);var remainingProps=(0,_HelperUtils.stripRemainingProps)(props);var bgColor=typeof backgroundColor==="boolean"?"lightgray":typeof backgroundColor!=="undefined"?backgroundColor:"";var shouldFadeIn=this.state.fadeIn===true&&!this.state.imgCached||this.props.fadeIn==="soft";var transitionDelay=shouldFadeIn?durationFadeIn/2+"ms":"none";var divStyle=(0,_extends2.default)({position:"relative"},style);if(!this.props.preserveStackingContext)divStyle.opacity=0.99;var image=(0,_ImageUtils.getCurrentSrcData)({fluid:fluid,fixed:fixed,returnArray:true});var noScriptImageData=(0,_ImageUtils.getCurrentSrcData)({fluid:fluid,fixed:fixed})||{};if(fluid||fixed){if(fixed){divStyle.width=style.width||image.width;divStyle.height=style.height||image.height;divStyle.display="inline-block";if(style.display==="inherit"){delete divStyle.display;}}}else if(keepStatic){noScriptImageData.srcSet='';}else{return null;}var newImageSettings=(0,_ImageHandling.switchImageSettings)({image:image,bgImage:this.bgImage,imageRef:this.imageRef,state:this.state});this.bgImage=newImageSettings.nextImageArray||newImageSettings.nextImage||this.bgImage;var pseudoStyles=(0,_StyleCreation.createPseudoStyles)((0,_extends2.default)({className:this.state.currentClassNames,transitionDelay:transitionDelay,bgColor:bgColor,backgroundStyles:this.backgroundStyles,style:style,fadeIn:shouldFadeIn},newImageSettings,{originalData:fluid||fixed}));var noScriptPseudoStyles=(0,_StyleCreation.createNoScriptStyles)({image:image,bgColor:bgColor,className:this.state.currentClassNames,backgroundStyles:this.backgroundStyles,style:style});var componentKey=""+(fluid?"fluid":"")+(fixed?"fixed":"")+"-"+JSON.stringify(noScriptImageData.srcSet);var currentStyles=(0,_extends2.default)({},this.backgroundStyles,divStyle);return _react.default.createElement(Tag,(0,_extends2.default)({className:this.state.currentClassNames,style:currentStyles,ref:this.handleRef,key:componentKey},remainingProps),_react.default.createElement("style",{dangerouslySetInnerHTML:{__html:pseudoStyles}}),this.state.hasNoScript&&_react.default.createElement("noscript",null,_react.default.createElement("style",{dangerouslySetInnerHTML:{__html:noScriptPseudoStyles}})),children);};return BackgroundImage;}(_react.default.Component);BackgroundImage.defaultProps={critical:false,fadeIn:true,durationFadeIn:500,Tag:"div",preserveStackingContext:false,rootMargin:"200px",keepStatic:false};var fixedObject=_propTypes.default.shape({width:_propTypes.default.number.isRequired,height:_propTypes.default.number.isRequired,src:_propTypes.default.string.isRequired,srcSet:_propTypes.default.string.isRequired,base64:_propTypes.default.string,tracedSVG:_propTypes.default.string,srcWebp:_propTypes.default.string,srcSetWebp:_propTypes.default.string,srcAvif:_propTypes.default.string,srcSetAvif:_propTypes.default.string,media:_propTypes.default.string});var fluidObject=_propTypes.default.shape({aspectRatio:_propTypes.default.number.isRequired,src:_propTypes.default.string.isRequired,srcSet:_propTypes.default.string.isRequired,sizes:_propTypes.default.string,base64:_propTypes.default.string,tracedSVG:_propTypes.default.string,srcWebp:_propTypes.default.string,srcSetWebp:_propTypes.default.string,srcAvif:_propTypes.default.string,srcSetAvif:_propTypes.default.string,media:_propTypes.default.string});BackgroundImage.propTypes={fixed:_propTypes.default.oneOfType([fixedObject,_propTypes.default.arrayOf(fixedObject),_propTypes.default.arrayOf(_propTypes.default.oneOfType([fixedObject,_propTypes.default.string]))]),fluid:_propTypes.default.oneOfType([fluidObject,_propTypes.default.arrayOf(fluidObject),_propTypes.default.arrayOf(_propTypes.default.oneOfType([fluidObject,_propTypes.default.string]))]),fadeIn:_propTypes.default.oneOfType([_propTypes.default.string,_propTypes.default.bool]),durationFadeIn:_propTypes.default.number,className:_propTypes.default.oneOfType([_propTypes.default.string,_propTypes.default.object]),critical:_propTypes.default.bool,crossOrigin:_propTypes.default.oneOfType([_propTypes.default.string,_propTypes.default.bool]),style:_propTypes.default.oneOfType([_propTypes.default.object,_propTypes.default.array]),backgroundColor:_propTypes.default.oneOfType([_propTypes.default.string,_propTypes.default.bool]),onLoad:_propTypes.default.func,onError:_propTypes.default.func,onStartLoad:_propTypes.default.func,Tag:_propTypes.default.oneOfType([_propTypes.default.string,_propTypes.default.func]),preserveStackingContext:_propTypes.default.bool,rootMargin:_propTypes.default.string,keepStatic:_propTypes.default.bool};var _default=BackgroundImage;exports.Z=_default;
-
-/***/ }),
-
-/***/ 5010:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-exports.__esModule=true;exports.getStyleRulesForClassName=exports.getStyleRules=exports.getBackgroundStylesForSingleClass=exports["default"]=void 0;var _SimpleUtils=__webpack_require__(4061);var getStyleRulesForClassName=function getStyleRulesForClassName(className){var styleSheets=(0,_SimpleUtils.isBrowser)()?window.document.styleSheets:[];for(var i=0;i<styleSheets.length;i++){var classes=void 0;try{classes=typeof styleSheets[i].rules!=='undefined'?styleSheets[i].rules:typeof styleSheets[i].cssRules!=='undefined'?styleSheets[i].cssRules:'';}catch(e){}if(classes){var foundClass=Array.prototype.slice.call(classes).reduce(function(foundAcc,styleRule){if(styleRule.selectorText===className){foundAcc.push(styleRule);}return foundAcc;},[]);if(foundClass.length){return foundClass;}}}return[];};exports.getStyleRulesForClassName=getStyleRulesForClassName;var getStyleRules=function getStyleRules(cssStyleRules){var styles={};if(cssStyleRules.length>0&&typeof cssStyleRules[0].style!=='undefined'){var constructorName=cssStyleRules[0].style.constructor.name||cssStyleRules[0].style.constructor.toString();switch(constructorName){case'CSS2Properties':case'[object MSStyleCSSProperties]':Object.values(cssStyleRules[0].style).forEach(function(prop){styles[(0,_SimpleUtils.toCamelCase)(prop)]=cssStyleRules[0].style[prop];});break;case'CSSStyleDeclaration':styles=cssStyleRules[0].style;break;default:console.error('Unknown style object prototype');break;}}return styles;};exports.getStyleRules=getStyleRules;var getBackgroundStylesForSingleClass=function getBackgroundStylesForSingleClass(className){if(className&&(0,_SimpleUtils.isString)(className)){var cssStyleRules=getStyleRulesForClassName("."+className);if((cssStyleRules===null||cssStyleRules===void 0?void 0:cssStyleRules.length)>0&&typeof cssStyleRules[0].style!=='undefined'){return Object.keys(getStyleRules(cssStyleRules)).filter(function(key){return key.indexOf('background')===0&&cssStyleRules[0].style[key]!=='';}).reduce(function(newData,key){newData[(0,_SimpleUtils.toCamelCase)(key)]=cssStyleRules[0].style[key];return newData;},{});}}return{};};exports.getBackgroundStylesForSingleClass=getBackgroundStylesForSingleClass;var getBackgroundStyles=function getBackgroundStyles(className){if((0,_SimpleUtils.isBrowser)()){var classes=(0,_SimpleUtils.stringToArray)(className);if(classes instanceof Array){var classObjects=[];classes.forEach(function(item){return classObjects.push(getBackgroundStylesForSingleClass(item));});return Object.assign.apply(Object,classObjects);}return getBackgroundStylesForSingleClass(className);}return{};};var _default=getBackgroundStyles;exports["default"]=_default;
-
-/***/ }),
-
-/***/ 8839:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-exports.__esModule=true;exports.resetComponentClassCache=exports.inComponentClassCache=exports.activateCacheForComponentClass=void 0;var componentClassCache=Object.create({});var inComponentClassCache=function inComponentClassCache(className){return componentClassCache[className]||false;};exports.inComponentClassCache=inComponentClassCache;var activateCacheForComponentClass=function activateCacheForComponentClass(className){if(className){componentClassCache[className]=true;}};exports.activateCacheForComponentClass=activateCacheForComponentClass;var resetComponentClassCache=function resetComponentClassCache(){for(var className in componentClassCache){delete componentClassCache[className];}};exports.resetComponentClassCache=resetComponentClassCache;
-
-/***/ }),
-
-/***/ 1645:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var _interopRequireDefault=__webpack_require__(4836);exports.__esModule=true;exports.stripRemainingProps=exports.convertProps=void 0;var _extends2=_interopRequireDefault(__webpack_require__(434));var _filterInvalidDomProps=_interopRequireDefault(__webpack_require__(7280));var _MediaUtils=__webpack_require__(8250);var stripRemainingProps=function stripRemainingProps(props){return(0,_filterInvalidDomProps.default)(props);};exports.stripRemainingProps=stripRemainingProps;var convertProps=function convertProps(props){var convertedProps=(0,_extends2.default)({},props);var fixed=convertedProps.fixed,fluid=convertedProps.fluid;if(fluid&&(0,_MediaUtils.hasArtDirectionSupport)(props,'fluid')){convertedProps.fluid=(0,_MediaUtils.groupByMedia)(convertedProps.fluid);}if(fixed&&(0,_MediaUtils.hasArtDirectionSupport)(props,'fixed')){convertedProps.fixed=(0,_MediaUtils.groupByMedia)(convertedProps.fixed);}return convertedProps;};exports.convertProps=convertProps;
-
-/***/ }),
-
-/***/ 3229:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-exports.__esModule=true;exports.resetImageCache=exports.inImageCache=exports.allInImageCache=exports.activateCacheForMultipleImages=exports.activateCacheForImage=void 0;var _HelperUtils=__webpack_require__(1645);var _MediaUtils=__webpack_require__(8250);var _ImageUtils=__webpack_require__(2202);var _SimpleUtils=__webpack_require__(4061);var imageCache=Object.create({});var inImageCache=function inImageCache(props,index,isLoop){if(index===void 0){index=0;}if(isLoop===void 0){isLoop=false;}var convertedProps=(0,_HelperUtils.convertProps)(props);var isImageStack=(0,_ImageUtils.hasImageArray)(convertedProps)&&!(0,_MediaUtils.hasArtDirectionArray)(convertedProps);if(isImageStack&&!isLoop){return allInImageCache(props);}var src=isImageStack?(0,_ImageUtils.getSelectedImage)(convertedProps,index):(0,_ImageUtils.getImageSrcKey)(convertedProps);if((0,_SimpleUtils.isObject)(src)){var objectSrc=(0,_ImageUtils.getImageSrcKey)({fluid:src,fixed:src});return imageCache[objectSrc]||false;}return imageCache[src]||false;};exports.inImageCache=inImageCache;var allInImageCache=function allInImageCache(props){var convertedProps=(0,_HelperUtils.convertProps)(props);var imageStack=convertedProps.fluid||convertedProps.fixed;return imageStack.every(function(imageData,index){return inImageCache(convertedProps,index,true);});};exports.allInImageCache=allInImageCache;var activateCacheForImage=function activateCacheForImage(props,index,isLoop){if(index===void 0){index=0;}if(isLoop===void 0){isLoop=false;}var convertedProps=(0,_HelperUtils.convertProps)(props);var isImageStack=(0,_ImageUtils.hasImageArray)(convertedProps)&&!(0,_MediaUtils.hasArtDirectionArray)(convertedProps);if(isImageStack&&!isLoop){return activateCacheForMultipleImages(props);}var src=isImageStack?(0,_ImageUtils.getSelectedImage)(convertedProps,index):(0,_ImageUtils.getImageSrcKey)(convertedProps);if(src){if((0,_SimpleUtils.isObject)(src)){var objectSrc=(0,_ImageUtils.getImageSrcKey)({fluid:src,fixed:src});imageCache[objectSrc]=true;}else{imageCache[src]=true;}}};exports.activateCacheForImage=activateCacheForImage;var activateCacheForMultipleImages=function activateCacheForMultipleImages(props){var convertedProps=(0,_HelperUtils.convertProps)(props);var imageStack=convertedProps.fluid||convertedProps.fixed;imageStack.forEach(function(imageData,index){return activateCacheForImage(convertedProps,index,true);});};exports.activateCacheForMultipleImages=activateCacheForMultipleImages;var resetImageCache=function resetImageCache(){for(var prop in imageCache){delete imageCache[prop];}};exports.resetImageCache=resetImageCache;
-
-/***/ }),
-
-/***/ 6636:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-exports.__esModule=true;exports.switchImageSettings=void 0;var _ImageUtils=__webpack_require__(2202);var _MediaUtils=__webpack_require__(8250);var _SimpleUtils=__webpack_require__(4061);var switchImageSettings=function switchImageSettings(_ref){var image=_ref.image,bgImage=_ref.bgImage,imageRef=_ref.imageRef,state=_ref.state;var currentSources=(0,_ImageUtils.getCurrentFromData)({data:imageRef,propName:"currentSrc"});var returnArray=Array.isArray(image)&&!(0,_MediaUtils.hasArtDirectionArray)({fluid:image});var lastImage=Array.isArray(bgImage)?(0,_SimpleUtils.filteredJoin)(bgImage):bgImage;var nextImage;var nextImageArray;var finalImage=returnArray&&state.seenBefore&&!!currentSources;if(returnArray){if(!currentSources){nextImage=(0,_ImageUtils.getCurrentFromData)({data:image,propName:"tracedSVG",returnArray:returnArray});nextImage=(0,_SimpleUtils.combineArray)((0,_ImageUtils.getCurrentFromData)({data:image,propName:"base64",returnArray:returnArray}),nextImage);}nextImage=(0,_SimpleUtils.combineArray)((0,_ImageUtils.getCurrentFromData)({data:image,propName:"CSS_STRING",addUrl:false,returnArray:returnArray}),nextImage);if((state.imgLoaded||!!currentSources)&&state.isVisible){if(currentSources){nextImage=(0,_SimpleUtils.combineArray)((0,_ImageUtils.getCurrentFromData)({data:imageRef,propName:"currentSrc",returnArray:returnArray}),nextImage);finalImage=true;}else{nextImage=(0,_SimpleUtils.combineArray)((0,_ImageUtils.getCurrentFromData)({data:imageRef,propName:"src",returnArray:returnArray}),nextImage);finalImage=true;}}nextImage=(0,_SimpleUtils.combineArray)(nextImage,bgImage);var dummyArray=(0,_ImageUtils.createDummyImageArray)(image.length);nextImage=(0,_SimpleUtils.combineArray)(nextImage,dummyArray);nextImageArray=nextImage;nextImage=(0,_SimpleUtils.filteredJoin)(nextImage);}else{nextImage="";nextImage=(0,_ImageUtils.getCurrentFromData)({data:image,propName:"tracedSVG"})||(0,_ImageUtils.getCurrentFromData)({data:image,propName:"base64"});if(state.imgLoaded&&state.isVisible){nextImage=currentSources;finalImage=true;}}var afterOpacity=state.imageState%2;if(!returnArray&&nextImage===""&&state.imgLoaded&&state.isVisible&&imageRef&&!imageRef.currentSrc){nextImage=(0,_ImageUtils.getCurrentFromData)({data:imageRef,propName:"src",checkLoaded:false});finalImage=true;}if(!nextImage)nextImage=lastImage;var newImageSettings={lastImage:lastImage,nextImage:nextImage,afterOpacity:afterOpacity,finalImage:finalImage};if(nextImageArray)newImageSettings.nextImageArray=nextImageArray;return newImageSettings;};exports.switchImageSettings=switchImageSettings;
-
-/***/ }),
-
-/***/ 1921:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-exports.__esModule=true;exports.imageReferenceCompleted=exports.hasPictureRef=exports.hasActivatedPictureRefs=exports.createPictureRef=exports.createMultiplePictureRefs=exports.activatePictureRef=exports.activateMultiplePictureRefs=void 0;var _HelperUtils=__webpack_require__(1645);var _ImageUtils=__webpack_require__(2202);var _MediaUtils=__webpack_require__(8250);var _SimpleUtils=__webpack_require__(4061);var _ImageCache=__webpack_require__(3229);var createPictureRef=function createPictureRef(props,onLoad,index,isLoop){if(isLoop===void 0){isLoop=false;}var convertedProps=(0,_HelperUtils.convertProps)(props);if((0,_SimpleUtils.isBrowser)()&&(typeof convertedProps.fluid!=="undefined"||typeof convertedProps.fixed!=="undefined")){var isImageStack=(0,_ImageUtils.hasImageArray)(convertedProps)&&!(0,_MediaUtils.hasArtDirectionArray)(convertedProps);if(isImageStack&&!isLoop){return createMultiplePictureRefs(props,onLoad);}var img=new Image();img.onload=function(){return onLoad();};if(!img.complete&&typeof convertedProps.onLoad==="function"){img.addEventListener('load',convertedProps.onLoad);}if(typeof convertedProps.onError==="function"){img.addEventListener('error',convertedProps.onError);}if(convertedProps.crossOrigin){img.crossOrigin=convertedProps.crossOrigin;}if((convertedProps.critical||convertedProps.isVisible)&&!isLoop){return activatePictureRef(img,convertedProps,index,isLoop);}return img;}return null;};exports.createPictureRef=createPictureRef;var createMultiplePictureRefs=function createMultiplePictureRefs(props,onLoad){var convertedProps=(0,_HelperUtils.convertProps)(props);var imageStack=convertedProps.fluid||convertedProps.fixed;var imageRefs=imageStack.map(function(imageData,index){return createPictureRef(convertedProps,onLoad,index,true);});if(convertedProps.critical||convertedProps.isVisible){return activatePictureRef(imageRefs,convertedProps);}return imageRefs;};exports.createMultiplePictureRefs=createMultiplePictureRefs;var activatePictureRef=function activatePictureRef(imageRef,props,selfRef,index,isLoop){if(selfRef===void 0){selfRef=null;}if(index===void 0){index=0;}if(isLoop===void 0){isLoop=false;}var convertedProps=(0,_HelperUtils.convertProps)(props);if((0,_SimpleUtils.isBrowser)()&&(typeof convertedProps.fluid!=="undefined"||typeof convertedProps.fixed!=="undefined")){var isImageStack=(0,_ImageUtils.hasImageArray)(convertedProps)&&!(0,_MediaUtils.hasArtDirectionArray)(convertedProps);if(isImageStack&&!isLoop){return activateMultiplePictureRefs(imageRef,props,selfRef);}var bodyClone=document.createElement('body');var imageData=isImageStack?(0,_ImageUtils.getSelectedImage)(convertedProps,index):(0,_ImageUtils.getCurrentSrcData)(convertedProps);if(!imageData){return null;}if((0,_SimpleUtils.isString)(imageData)){return imageData;}if(selfRef){imageRef.width=selfRef.offsetWidth;imageRef.height=selfRef.offsetHeight;}if((0,_ImageUtils.hasPictureElement)()){var pic=document.createElement('picture');if(selfRef){pic.width=imageRef.width;pic.height=imageRef.height;}if((0,_MediaUtils.hasArtDirectionArray)(convertedProps)){var sources=(0,_MediaUtils.createArtDirectionSources)(convertedProps).reverse();sources.forEach(function(currentSource){return pic.appendChild(currentSource);});}var sourcesAvif=(0,_MediaUtils.createSourceElementForSrcSet)(imageData,'avif');sourcesAvif&&pic.appendChild(sourcesAvif);var sourcesWebp=(0,_MediaUtils.createSourceElementForSrcSet)(imageData,'webp');sourcesWebp&&pic.appendChild(sourcesWebp);pic.appendChild(imageRef);bodyClone.appendChild(pic);}imageRef.sizes=imageData.sizes||"";imageRef.srcset=imageData.srcSet||"";imageRef.src=imageData.src||"";return imageRef;}return null;};exports.activatePictureRef=activatePictureRef;var activateMultiplePictureRefs=function activateMultiplePictureRefs(imageRefs,props,selfRef){return imageRefs.map(function(imageRef,index){return activatePictureRef(imageRef,props,selfRef,index,true);});};exports.activateMultiplePictureRefs=activateMultiplePictureRefs;var hasActivatedPictureRefs=function hasActivatedPictureRefs(imageRefs){return Array.isArray(imageRefs)?imageRefs.every(function(imageRef){return hasPictureRef(imageRef);}):hasPictureRef(imageRefs);};exports.hasActivatedPictureRefs=hasActivatedPictureRefs;var hasPictureRef=function hasPictureRef(imageRef){return(0,_SimpleUtils.isString)(imageRef)||!!imageRef&&!!imageRef.currentSrc;};exports.hasPictureRef=hasPictureRef;var imageReferenceCompleted=function imageReferenceCompleted(imageRef,props){return imageRef?Array.isArray(imageRef)?imageRef.every(function(singleImageRef){return(0,_ImageUtils.imageLoaded)(singleImageRef);})||(0,_ImageCache.inImageCache)(props):(0,_ImageUtils.imageLoaded)(imageRef)||(0,_ImageCache.inImageCache)(props):(0,_SimpleUtils.isString)(imageRef);};exports.imageReferenceCompleted=imageReferenceCompleted;
-
-/***/ }),
-
-/***/ 2202:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-exports.__esModule=true;exports.isBase64=exports.imagePropsChanged=exports.imageLoaded=exports.imageArrayPropsChanged=exports.hasPictureElement=exports.hasImageUrl=exports.hasImageArray=exports.getUrlString=exports.getSelectedImage=exports.getImageSrcKey=exports.getCurrentSrcData=exports.getCurrentFromData=exports.createDummyImageArray=void 0;var _MediaUtils=__webpack_require__(8250);var _SimpleUtils=__webpack_require__(4061);var hasPictureElement=function hasPictureElement(){return typeof HTMLPictureElement!=="undefined"||(0,_SimpleUtils.isBrowser)();};exports.hasPictureElement=hasPictureElement;var hasImageArray=function hasImageArray(props){return Boolean(props.fluid&&Array.isArray(props.fluid)||props.fixed&&Array.isArray(props.fixed));};exports.hasImageArray=hasImageArray;var getCurrentFromData=function getCurrentFromData(_ref){var data=_ref.data,propName=_ref.propName,_ref$addUrl=_ref.addUrl,addUrl=_ref$addUrl===void 0?true:_ref$addUrl,_ref$returnArray=_ref.returnArray,returnArray=_ref$returnArray===void 0?false:_ref$returnArray,_ref$checkLoaded=_ref.checkLoaded,checkLoaded=_ref$checkLoaded===void 0?true:_ref$checkLoaded;if(!data||!propName)return"";var tracedSVG=propName==="tracedSVG";if(Array.isArray(data)&&!(0,_MediaUtils.hasArtDirectionArray)({fluid:data})){var imageString=data.map(function(dataElement){if(propName==="currentSrc"||propName==='src'){return checkLoaded?imageLoaded(dataElement)&&dataElement[propName]||"":dataElement[propName];}if(propName==="CSS_STRING"&&(0,_SimpleUtils.isString)(dataElement)){return dataElement;}return(0,_SimpleUtils.isString)(dataElement)?dataElement:dataElement&&propName in dataElement?dataElement[propName]:"";});return getUrlString({imageString:imageString,tracedSVG:tracedSVG,addUrl:addUrl,returnArray:returnArray});}if((0,_MediaUtils.hasArtDirectionArray)({fluid:data})&&(propName==="currentSrc"||propName==="src"||propName==="base64"||tracedSVG)){var currentData=getCurrentSrcData({fluid:data});return propName in currentData?getUrlString({imageString:currentData[propName],tracedSVG:tracedSVG,addUrl:addUrl}):"";}if(typeof data!=='object'){return'';}if((propName==="currentSrc"||propName==='src')&&propName in data){return getUrlString({imageString:checkLoaded?imageLoaded(data)&&data[propName]||"":data[propName],addUrl:addUrl});}return propName in data?getUrlString({imageString:data[propName],tracedSVG:tracedSVG,addUrl:addUrl}):"";};exports.getCurrentFromData=getCurrentFromData;var getImageSrcKey=function getImageSrcKey(_ref2){var fluid=_ref2.fluid,fixed=_ref2.fixed;var data=getCurrentSrcData({fluid:fluid,fixed:fixed});return data?data.src||null:null;};exports.getImageSrcKey=getImageSrcKey;var getCurrentSrcData=function getCurrentSrcData(_ref3,index){var fluid=_ref3.fluid,fixed=_ref3.fixed,returnArray=_ref3.returnArray;if(index===void 0){index=0;}var currentData=fluid||fixed;if(hasImageArray({fluid:fluid,fixed:fixed})){if(returnArray){return currentData;}if((0,_SimpleUtils.isBrowser)()&&(0,_MediaUtils.hasArtDirectionArray)({fluid:fluid,fixed:fixed})){var mediaData=currentData.slice().reverse();var foundMedia=mediaData.findIndex(_MediaUtils.matchesMedia);if(foundMedia!==-1){return mediaData[foundMedia];}}return currentData[index];}return currentData;};exports.getCurrentSrcData=getCurrentSrcData;var getSelectedImage=function getSelectedImage(_ref4,index){var fluid=_ref4.fluid,fixed=_ref4.fixed;if(index===void 0){index=0;}var currentData=fluid||fixed;if(hasImageArray({fluid:fluid,fixed:fixed})){return currentData[index]||currentData[0];}return currentData;};exports.getSelectedImage=getSelectedImage;var getUrlString=function getUrlString(_ref5){var imageString=_ref5.imageString,_ref5$tracedSVG=_ref5.tracedSVG,tracedSVG=_ref5$tracedSVG===void 0?false:_ref5$tracedSVG,_ref5$addUrl=_ref5.addUrl,addUrl=_ref5$addUrl===void 0?true:_ref5$addUrl,_ref5$returnArray=_ref5.returnArray,returnArray=_ref5$returnArray===void 0?false:_ref5$returnArray,_ref5$hasImageUrls=_ref5.hasImageUrls,hasImageUrls=_ref5$hasImageUrls===void 0?false:_ref5$hasImageUrls;if(Array.isArray(imageString)){var stringArray=imageString.map(function(currentString){if(currentString){var _base=isBase64(currentString);var _imageUrl=hasImageUrls||hasImageUrl(currentString);var currentReturnString=currentString&&tracedSVG?"\""+currentString+"\"":currentString&&!_base&&!tracedSVG&&_imageUrl?"'"+currentString+"'":currentString;return addUrl&&currentString?"url("+currentReturnString+")":currentReturnString;}return currentString;});return returnArray?stringArray:(0,_SimpleUtils.filteredJoin)(stringArray);}var base64=isBase64(imageString);var imageUrl=hasImageUrls||hasImageUrl(imageString);var returnString=imageString&&tracedSVG?"\""+imageString+"\"":imageString&&!base64&&!tracedSVG&&imageUrl?"'"+imageString+"'":imageString;return imageString?addUrl?"url("+returnString+")":returnString:"";};exports.getUrlString=getUrlString;var isBase64=function isBase64(base64String){return(0,_SimpleUtils.isString)(base64String)&&base64String.indexOf("base64")!==-1;};exports.isBase64=isBase64;var hasImageUrl=function hasImageUrl(imageString){return(0,_SimpleUtils.isString)(imageString)&&imageString.substr(0,4)==="http";};exports.hasImageUrl=hasImageUrl;var imagePropsChanged=function imagePropsChanged(props,prevProps){return props.fluid&&!prevProps.fluid||props.fixed&&!prevProps.fixed||imageArrayPropsChanged(props,prevProps)||props.fluid&&prevProps.fluid&&props.fluid.src!==prevProps.fluid.src||props.fixed&&prevProps.fixed&&props.fixed.src!==prevProps.fixed.src;};exports.imagePropsChanged=imagePropsChanged;var imageArrayPropsChanged=function imageArrayPropsChanged(props,prevProps){var isPropsFluidArray=Array.isArray(props.fluid);var isPrevPropsFluidArray=Array.isArray(prevProps.fluid);var isPropsFixedArray=Array.isArray(props.fixed);var isPrevPropsFixedArray=Array.isArray(prevProps.fixed);if(isPropsFluidArray&&!isPrevPropsFluidArray||isPropsFixedArray&&!isPrevPropsFixedArray||!isPropsFluidArray&&isPrevPropsFluidArray||!isPropsFixedArray&&isPrevPropsFixedArray){return true;}if(isPropsFluidArray&&isPrevPropsFluidArray){if(props.fluid.length===prevProps.fluid.length){return props.fluid.some(function(image,index){return image.src!==prevProps.fluid[index].src;});}return true;}if(isPropsFixedArray&&isPrevPropsFixedArray){if(props.fixed.length===prevProps.fixed.length){return props.fixed.some(function(image,index){return image.src!==prevProps.fixed[index].src;});}return true;}};exports.imageArrayPropsChanged=imageArrayPropsChanged;var createDummyImageArray=function createDummyImageArray(length){var DUMMY_IMG="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";var dummyImageURI=getUrlString({imageString:DUMMY_IMG});return Array(length).fill(dummyImageURI);};exports.createDummyImageArray=createDummyImageArray;var imageLoaded=function imageLoaded(imageRef){return imageRef?(0,_SimpleUtils.isString)(imageRef)||imageRef.complete&&imageRef.naturalWidth!==0&&imageRef.naturalHeight!==0:false;};exports.imageLoaded=imageLoaded;
-
-/***/ }),
-
-/***/ 5812:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-exports.__esModule=true;exports.listenToIntersections=exports.getIO=exports.callbackIO=void 0;var _SimpleUtils=__webpack_require__(4061);var io;var listeners=new WeakMap();var callbackIO=function callbackIO(entries){entries.forEach(function(entry){if(listeners.has(entry.target)){var callback=listeners.get(entry.target);if(entry.isIntersecting||entry.intersectionRatio>0){io.unobserve(entry.target);listeners.delete(entry.target);callback();}}});};exports.callbackIO=callbackIO;var getIO=function getIO(rootMargin){if(typeof io==="undefined"&&(0,_SimpleUtils.isBrowser)()&&window.IntersectionObserver){io=new window.IntersectionObserver(callbackIO,{rootMargin:rootMargin});}return io;};exports.getIO=getIO;var listenToIntersections=function listenToIntersections(element,callback,rootMargin){if(rootMargin===void 0){rootMargin="200px";}var observer=getIO(rootMargin);if(observer){observer.observe(element);listeners.set(element,callback);return function(){observer.unobserve(element);listeners.delete(element);};}return function(){};};exports.listenToIntersections=listenToIntersections;
-
-/***/ }),
-
-/***/ 8250:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var _interopRequireDefault=__webpack_require__(4836);exports.__esModule=true;exports.matchesMedia=exports.hasArtDirectionSupport=exports.hasArtDirectionArray=exports.groupByMedia=exports.createSourceElementForSrcSet=exports.createArtDirectionSources=void 0;var _sortMediaQueries=_interopRequireDefault(__webpack_require__(2580));var _SimpleUtils=__webpack_require__(4061);var groupByMedia=function groupByMedia(imageVariants){var without=[];var sortedVariants=(0,_sortMediaQueries.default)(imageVariants,'media');sortedVariants.forEach(function(variant){return!variant.media&&without.push(variant);});if(without.length>1&&"production"!=="production"){}return sortedVariants;};exports.groupByMedia=groupByMedia;var createSourceElementForSrcSet=function createSourceElementForSrcSet(image,type){var source=document.createElement('source');var srcSetName="srcSet"+(0,_SimpleUtils.capitalize)(type);if(srcSetName in image){source.type="image/"+type;source.srcset=image[srcSetName];}if(image.sizes){source.sizes=image.sizes;}if(image.media){source.media=image.media;}return source.srcset?source:null;};exports.createSourceElementForSrcSet=createSourceElementForSrcSet;var createArtDirectionSources=function createArtDirectionSources(_ref){var fluid=_ref.fluid,fixed=_ref.fixed;var currentSource=fluid||fixed;return currentSource.reduce(function(sources,image){if(!image.media){return sources;}var sourceWebp=createSourceElementForSrcSet(image,'webp');var sourceAvif=createSourceElementForSrcSet(image,'avif');sourceWebp&&sources.push(sourceWebp);sourceAvif&&sources.push(sourceAvif);return sources;},[]);};exports.createArtDirectionSources=createArtDirectionSources;var hasArtDirectionSupport=function hasArtDirectionSupport(props,prop){return props[prop]&&Array.isArray(props[prop])&&props[prop].some(function(image){return!!image&&typeof image.media!=='undefined';});};exports.hasArtDirectionSupport=hasArtDirectionSupport;var hasArtDirectionArray=function hasArtDirectionArray(props){return hasArtDirectionSupport(props,'fluid')||hasArtDirectionSupport(props,'fixed');};exports.hasArtDirectionArray=hasArtDirectionArray;var matchesMedia=function matchesMedia(_ref2){var media=_ref2.media;return media?(0,_SimpleUtils.isBrowser)()&&typeof window.matchMedia!=="undefined"&&!!window.matchMedia(media).matches:false;};exports.matchesMedia=matchesMedia;
-
-/***/ }),
-
-/***/ 4061:
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-exports.__esModule=true;exports.toKebabCase=exports.toCamelCase=exports.stringToArray=exports.isString=exports.isObject=exports.isBrowser=exports.hashString=exports.filteredJoin=exports.combineArray=exports.capitalize=void 0;var isBrowser=function isBrowser(){return typeof window!=="undefined"&&typeof window.document!=="undefined";};exports.isBrowser=isBrowser;var isString=function isString(value){return Object.prototype.toString.call(value)==='[object String]';};exports.isString=isString;var isObject=function isObject(value){return Object.prototype.toString.call(value)==='[object Object]';};exports.isObject=isObject;var toCamelCase=function toCamelCase(str){return isString(str)&&str.indexOf('-')!==-1&&str.toLowerCase().replace(/(?:^\w|-|[A-Z]|\b\w)/g,function(letter,index){return index===0?letter.toLowerCase():letter.toUpperCase();}).replace(/\s|\W+/g,'')||str;};exports.toCamelCase=toCamelCase;var toKebabCase=function toKebabCase(str){return isString(str)&&str.replace(/\s|\W+/g,'').replace(/[A-Z]/g,function(match){return"-"+match.toLowerCase();});};exports.toKebabCase=toKebabCase;var capitalize=function capitalize(str){return(str===null||str===void 0?void 0:str.charAt(0).toUpperCase())+str.slice(1);};exports.capitalize=capitalize;var stringToArray=function stringToArray(str,delimiter){if(delimiter===void 0){delimiter=" ";}if(str instanceof Array){return str;}if(isString(str)){if(str.includes(delimiter)){return str.split(delimiter);}return[str];}return false;};exports.stringToArray=stringToArray;var hashString=function hashString(str){return isString(str)&&[].reduce.call(str,function(hash,item){hash=(hash<<5)-hash+item.charCodeAt(0);return hash|0;},0);};exports.hashString=hashString;var filteredJoin=function filteredJoin(arrayToJoin){return arrayToJoin.filter(function(item){return item!=="";}).join();};exports.filteredJoin=filteredJoin;var combineArray=function combineArray(fromArray,toArray){if(!Array.isArray(fromArray)){return[fromArray];}return fromArray.map(function(item,index){return item||toArray&&toArray[index];});};exports.combineArray=combineArray;
-
-/***/ }),
-
-/***/ 1496:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var _interopRequireDefault=__webpack_require__(4836);exports.__esModule=true;exports.createStyleImage=exports.createPseudoStyles=exports.createPseudoElementWithContent=exports.createPseudoElementMediaQuery=exports.createPseudoElement=exports.createNoScriptStyles=void 0;var _extends2=_interopRequireDefault(__webpack_require__(434));var _StyleUtils=__webpack_require__(7125);var _ImageUtils=__webpack_require__(2202);var _MediaUtils=__webpack_require__(8250);var _SimpleUtils=__webpack_require__(4061);var createPseudoElement=function createPseudoElement(className,appendix){if(appendix===void 0){appendix=":before";}var escapedClassName=(0,_StyleUtils.escapeClassNames)(className);var classes=(0,_SimpleUtils.stringToArray)(escapedClassName);var pseudoClasses="";if(Array.isArray(classes)){classes=classes.filter(function(c){return c!=='';});if(classes.length>0){pseudoClasses="."+classes.join('.')+appendix;}}return pseudoClasses;};exports.createPseudoElement=createPseudoElement;var createPseudoElementWithContent=function createPseudoElementWithContent(pseudoElementString,imageSource){return"\n    "+pseudoElementString+" {\n      opacity: 1;\n      background-image: "+imageSource+";\n    }";};exports.createPseudoElementWithContent=createPseudoElementWithContent;var createPseudoElementMediaQuery=function createPseudoElementMediaQuery(pseudoElementString,media,imageSource,imageSourceWebP){return"\n      @media "+media+" {\n        "+createPseudoElementWithContent(pseudoElementString,imageSource)+"\n      }\n      "+(imageSourceWebP&&"@media "+media+" {\n          "+createPseudoElementWithContent(pseudoElementString,imageSourceWebP)+"\n        }")+"\n    ";};exports.createPseudoElementMediaQuery=createPseudoElementMediaQuery;var createPseudoStyles=function createPseudoStyles(_ref){var className=_ref.className,transitionDelay=_ref.transitionDelay,lastImage=_ref.lastImage,nextImage=_ref.nextImage,afterOpacity=_ref.afterOpacity,bgColor=_ref.bgColor,fadeIn=_ref.fadeIn,backgroundStyles=_ref.backgroundStyles,style=_ref.style,finalImage=_ref.finalImage,originalData=_ref.originalData;var pseudoBefore=createPseudoElement(className);var pseudoAfter=createPseudoElement(className,":after");var currentBackgroundStyles=(0,_extends2.default)({},backgroundStyles,style);return"\n          "+pseudoBefore+",\n          "+pseudoAfter+" {\n            content: '';\n            display: block;\n            position: absolute;\n            width: 100%;\n            height: 100%;\n            top: 0;\n            left: 0;\n            "+(bgColor&&"background-color: "+bgColor+";")+"\n            "+(0,_StyleUtils.setTransitionStyles)(transitionDelay,fadeIn)+"\n            "+(0,_StyleUtils.kebabifyBackgroundStyles)(currentBackgroundStyles)+"\n          }\n          "+pseudoBefore+" {\n            z-index: -100;\n            "+((!afterOpacity||finalImage)&&createStyleImage(nextImage,originalData)||"")+"\n            "+(afterOpacity&&lastImage&&createStyleImage(lastImage,originalData)||"")+"\n            opacity: "+Number(!afterOpacity)+"; \n          }\n          "+pseudoAfter+" {\n            z-index: -101;\n            "+((afterOpacity||finalImage)&&createStyleImage(nextImage,originalData)||"")+"\n            "+(!afterOpacity&&lastImage&&createStyleImage(lastImage,originalData)||"")+"\n            "+(finalImage?"opacity: "+Number(afterOpacity)+";":"")+"\n          }\n        ";};exports.createPseudoStyles=createPseudoStyles;var createStyleImage=function createStyleImage(image,originalData){var hasStackedImages=(0,_ImageUtils.hasImageArray)({fluid:originalData})&&!(0,_MediaUtils.hasArtDirectionArray)({fluid:originalData});if((0,_SimpleUtils.isBrowser)()||hasStackedImages){return image?"background-image: "+image+";":"";}return"";};exports.createStyleImage=createStyleImage;var createNoScriptStyles=function createNoScriptStyles(_ref2){var className=_ref2.className,image=_ref2.image;if(image){var returnArray=Array.isArray(image)&&!(0,_MediaUtils.hasArtDirectionArray)({fluid:image});var addUrl=false;var allSources=(0,_ImageUtils.getCurrentFromData)({data:image,propName:"src",checkLoaded:false,addUrl:addUrl,returnArray:returnArray});var sourcesAsUrl=(0,_ImageUtils.getUrlString)({imageString:allSources,hasImageUrls:true,returnArray:returnArray});var sourcesAsUrlWithCSS="";if(returnArray){var cssStrings=(0,_ImageUtils.getCurrentFromData)({data:image,propName:"CSS_STRING",addUrl:false,returnArray:returnArray});sourcesAsUrlWithCSS=(0,_SimpleUtils.filteredJoin)((0,_SimpleUtils.combineArray)(sourcesAsUrl,cssStrings));}var pseudoBefore=createPseudoElement(className);if((0,_MediaUtils.hasArtDirectionArray)({fluid:image})){return image.map(function(currentMedia){var sourceString=(0,_ImageUtils.getUrlString)({imageString:currentMedia.src});var webPString=(0,_ImageUtils.getUrlString)({imageString:currentMedia.srcWebp||""});if(currentMedia.media){return createPseudoElementMediaQuery(pseudoBefore,currentMedia.media,sourceString,webPString);}return createPseudoElementMediaQuery(pseudoBefore,'screen',sourceString,webPString);}).join('');}return createPseudoElementWithContent(pseudoBefore,sourcesAsUrlWithCSS||sourcesAsUrl);}return"";};exports.createNoScriptStyles=createNoScriptStyles;
-
-/***/ }),
-
-/***/ 7125:
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-var _interopRequireDefault=__webpack_require__(4836);exports.__esModule=true;exports.setTransitionStyles=exports.presetBackgroundStyles=exports.kebabifyBackgroundStyles=exports.fixOpacity=exports.fixClassName=exports.escapeClassNames=void 0;var _extends2=_interopRequireDefault(__webpack_require__(434));var _objectWithoutPropertiesLoose2=_interopRequireDefault(__webpack_require__(7071));var _shortUuid=_interopRequireDefault(__webpack_require__(7597));var _HelperUtils=__webpack_require__(1645);var _ClassCache=__webpack_require__(8839);var _ImageUtils=__webpack_require__(2202);var _SimpleUtils=__webpack_require__(4061);var _excluded=["className"];var fixClassName=function fixClassName(_ref){var className=_ref.className,props=(0,_objectWithoutPropertiesLoose2.default)(_ref,_excluded);var convertedProps=(0,_HelperUtils.convertProps)(props);var elementExists=(0,_ClassCache.inComponentClassCache)(className);var imageData=(0,_ImageUtils.getCurrentSrcData)(convertedProps);var additionalClassname=_shortUuid.default.generate();var randomClass=" gbi-"+(0,_SimpleUtils.hashString)(imageData&&imageData.srcSet||className||"noclass")+"-"+additionalClassname;var additionalClass=elementExists||!className?randomClass:"";var componentClassNames=(""+(className||"")+(additionalClass||"")).trim();if(!elementExists)(0,_ClassCache.activateCacheForComponentClass)(className);return[componentClassNames];};exports.fixClassName=fixClassName;var escapeClassNames=function escapeClassNames(classNames){if(classNames){var specialChars=(0,_SimpleUtils.isBrowser)()&&window._gbiSpecialChars?window._gbiSpecialChars:typeof __GBI_SPECIAL_CHARS__!=="undefined"?__GBI_SPECIAL_CHARS__:':/';var specialCharRegEx=new RegExp("["+specialChars+"]",'g');return classNames.replace(specialCharRegEx,'\\$&');}return classNames;};exports.escapeClassNames=escapeClassNames;var kebabifyBackgroundStyles=function kebabifyBackgroundStyles(styles){if((0,_SimpleUtils.isString)(styles)){return styles;}if(styles instanceof Object){return Object.keys(styles).filter(function(key){return key.indexOf('background')===0&&styles[key]!=='';}).reduce(function(resultingStyles,key){return""+resultingStyles+(0,_SimpleUtils.toKebabCase)(key)+": "+styles[key]+";\n";},"");}return"";};exports.kebabifyBackgroundStyles=kebabifyBackgroundStyles;var setTransitionStyles=function setTransitionStyles(transitionDelay,fadeIn){if(transitionDelay===void 0){transitionDelay="0.25s";}if(fadeIn===void 0){fadeIn=true;}return fadeIn?"transition: opacity 0.5s ease "+transitionDelay+";":"transition: none;";};exports.setTransitionStyles=setTransitionStyles;var fixOpacity=function fixOpacity(props){var styledProps=(0,_extends2.default)({},props);if(!styledProps.preserveStackingContext){try{if(styledProps.style&&styledProps.style.opacity){if(isNaN(styledProps.style.opacity)||styledProps.style.opacity>0.99){styledProps.style.opacity=0.99;}}}catch(e){}}return styledProps;};exports.fixOpacity=fixOpacity;var presetBackgroundStyles=function presetBackgroundStyles(backgroundStyles){var defaultBackgroundStyles={backgroundPosition:"center",backgroundRepeat:"no-repeat",backgroundSize:"cover"};return(0,_extends2.default)({},defaultBackgroundStyles,backgroundStyles);};exports.presetBackgroundStyles=presetBackgroundStyles;
-
-/***/ }),
-
-/***/ 3040:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "HN": () => (/* binding */ B),
-/* harmony export */   "gJ": () => (/* binding */ M)
-/* harmony export */ });
-/* unused harmony exports MainImage, Placeholder, StaticImage, generateImageData, getImageData, getLowResolutionImageURL, getSrc, getSrcSet, withArtDirection */
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4189);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3204);
-/* harmony import */ var camelcase__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(camelcase__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5697);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-function n(){return n=Object.assign?Object.assign.bind():function(e){for(var t=1;t<arguments.length;t++){var a=arguments[t];for(var i in a)Object.prototype.hasOwnProperty.call(a,i)&&(e[i]=a[i]);}return e;},n.apply(this,arguments);}function o(e,t){if(null==e)return{};var a,i,r={},n=Object.keys(e);for(i=0;i<n.length;i++)t.indexOf(a=n[i])>=0||(r[a]=e[a]);return r;}var s=(/* unused pure expression or super */ null && ([.25,.5,1,2])),l=(/* unused pure expression or super */ null && ([750,1080,1366,1920])),u=(/* unused pure expression or super */ null && ([320,654,768,1024,1366,1600,1920,2048,2560,3440,3840,4096])),d=function(e){return console.warn(e);},c=function(e,t){return e-t;},h=function(e){return e.map(function(e){return e.src+" "+e.width+"w";}).join(",\n");};function g(e){var t=e.lastIndexOf(".");if(-1!==t){var a=e.slice(t+1);if("jpeg"===a)return"jpg";if(3===a.length||4===a.length)return a;}}function p(e){var t=e.layout,i=void 0===t?"constrained":t,r=e.width,o=e.height,s=e.sourceMetadata,l=e.breakpoints,u=e.aspectRatio,d=e.formats,c=void 0===d?["auto","webp"]:d;return c=c.map(function(e){return e.toLowerCase();}),i=a(i),r&&o?n({},e,{formats:c,layout:i,aspectRatio:r/o}):(s.width&&s.height&&!u&&(u=s.width/s.height),"fullWidth"===i?(r=r||s.width||l[l.length-1],o=o||Math.round(r/(u||1.3333333333333333))):(r||(r=o&&u?o*u:s.width?s.width:o?Math.round(o/1.3333333333333333):800),u&&!o?o=Math.round(r/u):u||(u=r/o)),n({},e,{width:r,height:o,aspectRatio:u,layout:i,formats:c}));}function m(e,t){var a;return void 0===t&&(t=20),null==(a=(0,(e=p(e)).generateImageSource)(e.filename,t,Math.round(t/e.aspectRatio),e.sourceMetadata.format||"jpg",e.fit,e.options))?void 0:a.src;}function f(e){var t,a=(e=p(e)).pluginName,i=e.sourceMetadata,r=e.generateImageSource,o=e.layout,u=e.fit,c=e.options,m=e.width,f=e.height,b=e.filename,k=e.reporter,E=void 0===k?{warn:d}:k,M=e.backgroundColor,S=e.placeholderURL;if(a||E.warn('[gatsby-plugin-image] "generateImageData" was not passed a plugin name'),"function"!=typeof r)throw new Error("generateImageSource must be a function");i&&(i.width||i.height)?i.format||(i.format=g(b)):i={width:m,height:f,format:(null==(t=i)?void 0:t.format)||g(b)||"auto"};var N=new Set(e.formats);(0===N.size||N.has("auto")||N.has(""))&&(N.delete("auto"),N.delete(""),N.add(i.format)),N.has("jpg")&&N.has("png")&&(E.warn("["+a+"] Specifying both 'jpg' and 'png' formats is not supported. Using 'auto' instead"),N.delete("jpg"===i.format?"png":"jpg"));var x=function(e){var t=e.filename,a=e.layout,i=void 0===a?"constrained":a,r=e.sourceMetadata,o=e.reporter,u=void 0===o?{warn:d}:o,c=e.breakpoints,h=void 0===c?l:c,g=Object.entries({width:e.width,height:e.height}).filter(function(e){var t=e[1];return"number"==typeof t&&t<1;});if(g.length)throw new Error("Specified dimensions for images must be positive numbers (> 0). Problem dimensions you have are "+g.map(function(e){return e.join(": ");}).join(", "));return"fixed"===i?function(e){var t=e.filename,a=e.sourceMetadata,i=e.width,r=e.height,n=e.fit,o=void 0===n?"cover":n,l=e.outputPixelDensities,u=e.reporter,c=void 0===u?{warn:d}:u,h=a.width/a.height,g=v(void 0===l?s:l);if(i&&r){var p=y(a,{width:i,height:r,fit:o});i=p.width,r=p.height,h=p.aspectRatio;}i?r||(r=Math.round(i/h)):i=r?Math.round(r*h):800;var m=i;if(a.width<i||a.height<r){var f=a.width<i?"width":"height";c.warn("\nThe requested "+f+' "'+("width"===f?i:r)+'px" for the image '+t+" was larger than the actual image "+f+" of "+a[f]+"px. If possible, replace the current image with a larger one."),"width"===f?(i=a.width,r=Math.round(i/h)):i=(r=a.height)*h;}return{sizes:g.filter(function(e){return e>=1;}).map(function(e){return Math.round(e*i);}).filter(function(e){return e<=a.width;}),aspectRatio:h,presentationWidth:m,presentationHeight:Math.round(m/h),unscaledWidth:i};}(e):"constrained"===i?w(e):"fullWidth"===i?w(n({breakpoints:h},e)):(u.warn("No valid layout was provided for the image at "+t+". Valid image layouts are fixed, fullWidth, and constrained. Found "+i),{sizes:[r.width],presentationWidth:r.width,presentationHeight:r.height,aspectRatio:r.width/r.height,unscaledWidth:r.width});}(n({},e,{sourceMetadata:i})),I={sources:[]},W=e.sizes;W||(W=function(e,t){switch(t){case"constrained":return"(min-width: "+e+"px) "+e+"px, 100vw";case"fixed":return e+"px";case"fullWidth":return"100vw";default:return;}}(x.presentationWidth,o)),N.forEach(function(e){var t=x.sizes.map(function(t){var i=r(b,t,Math.round(t/x.aspectRatio),e,u,c);if(null!=i&&i.width&&i.height&&i.src&&i.format)return i;E.warn("["+a+"] The resolver for image "+b+" returned an invalid value.");}).filter(Boolean);if("jpg"===e||"png"===e||"auto"===e){var i=t.find(function(e){return e.width===x.unscaledWidth;})||t[0];i&&(I.fallback={src:i.src,srcSet:h(t),sizes:W});}else{var n;null==(n=I.sources)||n.push({srcSet:h(t),sizes:W,type:"image/"+e});}});var j={images:I,layout:o,backgroundColor:M};switch(S&&(j.placeholder={fallback:S}),o){case"fixed":j.width=x.presentationWidth,j.height=x.presentationHeight;break;case"fullWidth":j.width=1,j.height=1/x.aspectRatio;break;case"constrained":j.width=e.width||x.presentationWidth||1,j.height=(j.width||1)/x.aspectRatio;}return j;}var v=function(e){return Array.from(new Set([1].concat(e))).sort(c);};function w(e){var t,a=e.sourceMetadata,i=e.width,r=e.height,n=e.fit,o=void 0===n?"cover":n,l=e.outputPixelDensities,u=e.breakpoints,d=e.layout,h=a.width/a.height,g=v(void 0===l?s:l);if(i&&r){var p=y(a,{width:i,height:r,fit:o});i=p.width,r=p.height,h=p.aspectRatio;}i=i&&Math.min(i,a.width),r=r&&Math.min(r,a.height),i||r||(r=(i=Math.min(800,a.width))/h),i||(i=r*h);var m=i;return(a.width<i||a.height<r)&&(i=a.width,r=a.height),i=Math.round(i),(null==u?void 0:u.length)>0?(t=u.filter(function(e){return e<=a.width;})).length<u.length&&!t.includes(a.width)&&t.push(a.width):t=(t=g.map(function(e){return Math.round(e*i);})).filter(function(e){return e<=a.width;}),"constrained"!==d||t.includes(i)||t.push(i),{sizes:t=t.sort(c),aspectRatio:h,presentationWidth:m,presentationHeight:Math.round(m/h),unscaledWidth:i};}function y(e,t){var a=e.width/e.height,i=t.width,r=t.height;switch(t.fit){case"fill":i=t.width?t.width:e.width,r=t.height?t.height:e.height;break;case"inside":var n=t.width?t.width:Number.MAX_SAFE_INTEGER,o=t.height?t.height:Number.MAX_SAFE_INTEGER;i=Math.min(n,Math.round(o*a)),r=Math.min(o,Math.round(n/a));break;case"outside":var s=t.width?t.width:0,l=t.height?t.height:0;i=Math.max(s,Math.round(l*a)),r=Math.max(l,Math.round(s/a));break;default:t.width&&!t.height&&(i=t.width,r=Math.round(t.width/a)),t.height&&!t.width&&(i=Math.round(t.height*a),r=t.height);}return{width:i,height:r,aspectRatio:i/r};}var b=(/* unused pure expression or super */ null && (["baseUrl","urlBuilder","sourceWidth","sourceHeight","pluginName","formats","breakpoints","options"])),k=(/* unused pure expression or super */ null && (["images","placeholder"]));function E(){return true&&true;}var M=function(e){var t;return function(e){var t,a;return Boolean(null==e||null==(t=e.images)||null==(a=t.fallback)?void 0:a.src);}(e)?e:function(e){return Boolean(null==e?void 0:e.gatsbyImageData);}(e)?e.gatsbyImageData:function(e){return Boolean(null==e?void 0:e.gatsbyImage);}(e)?e.gatsbyImage:null==e||null==(t=e.childImageSharp)?void 0:t.gatsbyImageData;},S=function(e){var t,a,i;return null==(t=M(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.src;},N=function(e){var t,a,i;return null==(t=M(e))||null==(a=t.images)||null==(i=a.fallback)?void 0:i.srcSet;};function x(e){var t,a=e.baseUrl,i=e.urlBuilder,r=e.sourceWidth,s=e.sourceHeight,l=e.pluginName,d=void 0===l?"getImageData":l,c=e.formats,h=void 0===c?["auto"]:c,g=e.breakpoints,p=e.options,m=o(e,b);return null!=(t=g)&&t.length||"fullWidth"!==m.layout&&"FULL_WIDTH"!==m.layout||(g=u),f(n({},m,{pluginName:d,generateImageSource:function(e,t,a,r){return{width:t,height:a,format:r,src:i({baseUrl:e,width:t,height:a,options:p,format:r})};},filename:a,formats:h,breakpoints:g,sourceMetadata:{width:r,height:s,format:"auto"}}));}function I(e,t){var a,i,r,s=e.images,l=e.placeholder,u=n({},o(e,k),{images:n({},s,{sources:[]}),placeholder:l&&n({},l,{sources:[]})});return t.forEach(function(t){var a,i=t.media,r=t.image;i?(r.layout!==e.layout&&"development"==="production"&&0,(a=u.images.sources).push.apply(a,r.images.sources.map(function(e){return n({},e,{media:i});}).concat([{media:i,srcSet:r.images.fallback.srcSet}])),u.placeholder&&u.placeholder.sources.push({media:i,srcSet:r.placeholder.fallback})): false&&0;}),(a=u.images.sources).push.apply(a,s.sources),null!=l&&l.sources&&(null==(i=u.placeholder)||(r=i.sources).push.apply(r,l.sources)),u;}var W,j=["src","srcSet","loading","alt","shouldLoad"],R=["fallback","sources","shouldLoad"],_=function(t){var a=t.src,i=t.srcSet,r=t.loading,s=t.alt,l=void 0===s?"":s,u=t.shouldLoad,d=o(t,j);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img",n({},d,{decoding:"async",loading:r,src:u?a:void 0,"data-src":u?void 0:a,srcSet:u?i:void 0,"data-srcset":u?void 0:i,alt:l}));},A=function(t){var a=t.fallback,i=t.sources,r=void 0===i?[]:i,s=t.shouldLoad,l=void 0===s||s,u=o(t,R),d=u.sizes||(null==a?void 0:a.sizes),c=/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_,n({},u,a,{sizes:d,shouldLoad:l}));return r.length?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("picture",null,r.map(function(t){var a=t.media,i=t.srcSet,r=t.type;return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("source",{key:a+"-"+r+"-"+i,type:r,media:a,srcSet:l?i:void 0,"data-srcset":l?void 0:i,sizes:d});}),c):c;};_.propTypes={src:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,alt:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,sizes:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,shouldLoad:prop_types__WEBPACK_IMPORTED_MODULE_2__.bool},A.displayName="Picture",A.propTypes={alt:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,shouldLoad:prop_types__WEBPACK_IMPORTED_MODULE_2__.bool,fallback:prop_types__WEBPACK_IMPORTED_MODULE_2__.exact({src:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,sizes:prop_types__WEBPACK_IMPORTED_MODULE_2__.string}),sources:prop_types__WEBPACK_IMPORTED_MODULE_2__.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_2__.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_2__.exact({media:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,type:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,sizes:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired}),prop_types__WEBPACK_IMPORTED_MODULE_2__.exact({media:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,type:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired,sizes:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,srcSet:prop_types__WEBPACK_IMPORTED_MODULE_2__.string.isRequired})]))};var O=["fallback"],T=function(t){var a=t.fallback,i=o(t,O);return a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(A,n({},i,{fallback:{src:a},"aria-hidden":!0,alt:""})):/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",n({},i));};T.displayName="Placeholder",T.propTypes={fallback:prop_types__WEBPACK_IMPORTED_MODULE_2__.string,sources:null==(W=A.propTypes)?void 0:W.sources,alt:function(e,t,a){return e[t]?new Error("Invalid prop `"+t+"` supplied to `"+a+"`. Validation failed."):null;}};var z=function(t){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement((react__WEBPACK_IMPORTED_MODULE_0___default().Fragment),null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(A,n({},t)),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("noscript",null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(A,n({},t,{shouldLoad:!0}))));};z.displayName="MainImage",z.propTypes=A.propTypes;var L=["children"],q=function(){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("script",{type:"module",dangerouslySetInnerHTML:{__html:'const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}'}});},C=function(t){var a=t.layout,i=t.width,r=t.height;return"fullWidth"===a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{"aria-hidden":!0,style:{paddingTop:r/i*100+"%"}}):"constrained"===a?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div",{style:{maxWidth:i,display:"block"}},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("img",{alt:"",role:"presentation","aria-hidden":"true",src:"data:image/svg+xml;charset=utf-8,%3Csvg height='"+r+"' width='"+i+"' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E",style:{maxWidth:"100%",display:"block",position:"static"}})):null;},D=function(a){var i=a.children,r=o(a,L);return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment,null,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(C,n({},r)),i,/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(q,null));},P=["as","className","class","style","image","loading","imgClassName","imgStyle","backgroundColor","objectFit","objectPosition"],H=["style","className"],F=function(e){return e.replace(/\n/g,"");},B=function(t){var a=t.as,i=void 0===a?"div":a,r=t.className,s=t.class,l=t.style,u=t.image,d=t.loading,c=void 0===d?"lazy":d,h=t.imgClassName,g=t.imgStyle,p=t.backgroundColor,m=t.objectFit,f=t.objectPosition,v=o(t,P);if(!u)return console.warn("[gatsby-plugin-image] Missing image prop"),null;s&&(r=s),g=n({objectFit:m,objectPosition:f,backgroundColor:p},g);var w=u.width,y=u.height,b=u.layout,k=u.images,M=u.placeholder,S=u.backgroundColor,N=function(e,t,a){var i={},r="gatsby-image-wrapper";return E()||(i.position="relative",i.overflow="hidden"),"fixed"===a?(i.width=e,i.height=t):"constrained"===a&&(E()||(i.display="inline-block",i.verticalAlign="top"),r="gatsby-image-wrapper gatsby-image-wrapper-constrained"),{className:r,"data-gatsby-image-wrapper":"",style:i};}(w,y,b),x=N.style,I=N.className,W=o(N,H),j={fallback:void 0,sources:[]};return k.fallback&&(j.fallback=n({},k.fallback,{srcSet:k.fallback.srcSet?F(k.fallback.srcSet):void 0})),k.sources&&(j.sources=k.sources.map(function(e){return n({},e,{srcSet:F(e.srcSet)});})),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(i,n({},W,{style:n({},x,l,{backgroundColor:p}),className:I+(r?" "+r:"")}),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(D,{layout:b,width:w,height:y},/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(T,n({},function(e,t,a,i,r,o,s,l){var u={};o&&(u.backgroundColor=o,"fixed"===a?(u.width=i,u.height=r,u.backgroundColor=o,u.position="relative"):("constrained"===a||"fullWidth"===a)&&(u.position="absolute",u.top=0,u.left=0,u.bottom=0,u.right=0)),s&&(u.objectFit=s),l&&(u.objectPosition=l);var d=n({},e,{"aria-hidden":!0,"data-placeholder-image":"",style:n({opacity:1,transition:"opacity 500ms linear"},u)});return E()||(d.style={height:"100%",left:0,position:"absolute",top:0,width:"100%"}),d;}(M,0,b,w,y,S,m,f))),/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(z,n({"data-gatsby-image-ssr":"",className:h},v,function(e,t,a,i,r){return void 0===r&&(r={}),E()||(r=n({height:"100%",left:0,position:"absolute",top:0,transform:"translateZ(0)",transition:"opacity 250ms linear",width:"100%",willChange:"opacity"},r)),n({},a,{loading:i,shouldLoad:e,"data-main-image":"",style:n({},r,{opacity:0})});}("eager"===c,0,j,c,g)))));},G=["src","__imageData","__error","width","height","aspectRatio","tracedSVGOptions","placeholder","formats","quality","transformOptions","jpgOptions","pngOptions","webpOptions","avifOptions","blurredOptions","breakpoints","outputPixelDensities"],V=function(t){return function(a){var i=a.src,r=a.__imageData,s=a.__error,l=o(a,G);return s&&console.warn(s),r?/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(t,n({image:r},l)):(console.warn("Image not loaded",i),s||"development"!=="production"||0,null);};}(B),U=function(e,t){return"fullWidth"!==e.layout||"width"!==t&&"height"!==t||!e[t]?prop_types__WEBPACK_IMPORTED_MODULE_2___default().number.apply((prop_types__WEBPACK_IMPORTED_MODULE_2___default()),[e,t].concat([].slice.call(arguments,2))):new Error('"'+t+'" '+e[t]+" may not be passed when layout is fullWidth.");},X=new Set(["fixed","fullWidth","constrained"]),Y={src:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.isRequired),alt:function(e,t,a){return e.alt||""===e.alt?prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.apply((prop_types__WEBPACK_IMPORTED_MODULE_2___default()),[e,t,a].concat([].slice.call(arguments,3))):new Error('The "alt" prop is required in '+a+'. If the image is purely presentational then pass an empty string: e.g. alt="". Learn more: https://a11y-style-guide.com/style-guide/section-media.html');},width:U,height:U,sizes:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),layout:function(e){if(void 0!==e.layout&&!X.has(e.layout))return new Error("Invalid value "+e.layout+'" provided for prop "layout". Defaulting to "constrained". Valid values are "fixed", "fullWidth" or "constrained".');}};V.displayName="StaticImage",V.propTypes=Y;
-
-/***/ }),
-
-/***/ 5734:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "Z": () => (/* binding */ layout)
-});
-
-// EXTERNAL MODULE: external "/home/rseag/m-3-lab.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(4189);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5697);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: ./node_modules/@gatsbyjs/reach-router/dist/index.modern.mjs
-var index_modern = __webpack_require__(7896);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 11 modules
-var gatsby_browser_entry = __webpack_require__(7076);
-// EXTERNAL MODULE: ./src/components/link/link.js
-var link_link = __webpack_require__(4904);
-// EXTERNAL MODULE: ./src/images/logo.inline.svg
-var logo_inline = __webpack_require__(5248);
-var logo_inline_default = /*#__PURE__*/__webpack_require__.n(logo_inline);
-;// CONCATENATED MODULE: ./src/components/layout/footer/links.js
-const Links=({links})=>/*#__PURE__*/index_js_default().createElement("div",{className:"footer__links"},/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{"aria-label":"Home",className:"footer__icon",nav:true,to:"/"},/*#__PURE__*/index_js_default().createElement("div",{className:"footer__icon-svg-container"},/*#__PURE__*/index_js_default().createElement((logo_inline_default()),null))),/*#__PURE__*/index_js_default().createElement("ul",null,links.map(link=>/*#__PURE__*/index_js_default().createElement("li",{key:link.text},/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{to:link.link},link.text)))));Links.propTypes={links:prop_types_default().arrayOf(prop_types_default().shape({link:(prop_types_default()).string,text:(prop_types_default()).string})).isRequired};/* harmony default export */ const footer_links = (Links);
-;// CONCATENATED MODULE: ./src/components/layout/footer/footer.js
-const Footer=({author,links})=>/*#__PURE__*/index_js_default().createElement("footer",{className:"footer"},links.length>0&&/*#__PURE__*/index_js_default().createElement(footer_links,{links:links}),/*#__PURE__*/index_js_default().createElement("small",null,"\xA9",' ',author,",",' ',new Date().getFullYear(),"."));Footer.propTypes={author:(prop_types_default()).string.isRequired,links:prop_types_default().arrayOf(prop_types_default().shape({link:(prop_types_default()).string,text:(prop_types_default()).string})).isRequired};/* harmony default export */ const footer = (Footer);
-;// CONCATENATED MODULE: ./src/components/layout/footer/filter-links.js
-const filterLinks=links=>links&&links.length>0?links.filter(link=>link.link&&link.text):[];/* harmony default export */ const filter_links = (filterLinks);
-;// CONCATENATED MODULE: ./src/components/layout/footer/footer-container.js
-const FooterContainer=()=>{const{site}=(0,gatsby_browser_entry.useStaticQuery)("1440116640");const{author,footerLinks}=site.siteMetadata;const filteredLinks=filter_links(footerLinks);return/*#__PURE__*/index_js_default().createElement(footer,{author:author,links:filteredLinks});};/* harmony default export */ const footer_container = (FooterContainer);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
-var free_solid_svg_icons = __webpack_require__(9417);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
-var index_es = __webpack_require__(982);
-// EXTERNAL MODULE: ./node_modules/styled-components/dist/styled-components.esm.js + 4 modules
-var styled_components_esm = __webpack_require__(9550);
-;// CONCATENATED MODULE: ./src/components/buttons/button-defaults.js
-const Button=styled_components_esm["default"].button.withConfig({displayName:"button-defaults__Button",componentId:"sc-c7vns7-0"})(["background-color:transparent;border-color:transparent;box-sizing:border-box;font-family:var(--font-system);transform-origin:center;transition-duration:0.3s;transition-property:background-color,border-color,color;transition-timing-function:var(--timing-function);&:focus{outline:none;}&::-moz-focus-inner{border:0;}",";",";",";&:active{animation-duration:0.3s;animation-name:click;animation-timing-function:var(--timing-function)}@keyframes click{0%{transform:scale(1);}50%{transform:scale(0.85);}100%{transform:scale(1);}}"],props=>props.disabled&&(0,styled_components_esm.css)(["&{cursor:not-allowed;opacity:0.6;}"]),props=>props.shadow&&(0,styled_components_esm.css)(["&{box-shadow:0 2px 5px 0 rgba(0,0,0,0.26);}"]),props=>props.kind==='primary'&&(0,styled_components_esm.css)(["&{background-color:var(--color-primary);color:var(--color-background);}&:focus:not([disabled]),&:hover:not([disabled]){background-color:#fff;border-color:var(--color-primary);color:var(--color-primary);}"]));Button.defaultProps={disabled:false,kind:'primary',shadow:false};Button.propTypes={disabled:(prop_types_default()).bool,kind:(prop_types_default()).string,shadow:(prop_types_default()).bool};/* harmony default export */ const button_defaults = (Button);
-;// CONCATENATED MODULE: ./src/components/buttons/icon/button-style.js
-const button_style_Button=(0,styled_components_esm["default"])(button_defaults).withConfig({displayName:"button-style__Button",componentId:"sc-1aa2vvx-0"})(["align-items:center;border-color:transparent;border-radius:50%;border-style:solid;border-width:2px;display:flex;font-size:1em;justify-content:center;height:34px;padding:2px;position:relative;width:34px;z-index:1;&::before{border-radius:50%;content:'';height:100%;left:0;position:absolute;top:0;transition:inherit;transition-property:background-color,border-color,color,opacity,transform;transform:scale(0);transform-origin:center center;width:100%;z-index:-1;}"," ",""],props=>props.kind==='transparent'&&(0,styled_components_esm.css)(["&{background-color:transparent;border:none;}&::before{background-color:var(--color-primary);opacity:0;}&:focus:not([disabled]),&:hover:not([disabled]){box-shadow:none;color:var(--color-font-contrast);}&:focus:not([disabled])::before,&:hover:not([disabled])::before{opacity:1;transform:scale(1);}"]),props=>props.square&&(0,styled_components_esm.css)(["&{border-radius:0;}&::before{border-radius:0;}"]));button_style_Button.defaultProps={disabled:false,kind:'transparent',square:false};button_style_Button.propTypes={disabled:(prop_types_default()).bool,kind:(prop_types_default()).string,square:(prop_types_default()).bool};/* harmony default export */ const button_style = (button_style_Button);
-;// CONCATENATED MODULE: ./src/components/buttons/icon/button.js
-const IconButton=({ariaLabel,icon,pulse,rotation,size,spin,...props})=>/*#__PURE__*/index_js_default().createElement(button_style,Object.assign({"aria-hidden":false,"aria-label":ariaLabel},props),/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:icon,pulse:pulse,rotation:rotation,size:size,spin:spin}));IconButton.defaultProps={pulse:false,rotation:null,size:'1x',spin:false};IconButton.propTypes={ariaLabel:(prop_types_default()).string.isRequired,icon:prop_types_default().shape({}).isRequired,pulse:(prop_types_default()).bool,rotation:(prop_types_default()).number,size:(prop_types_default()).string,spin:(prop_types_default()).bool};/* harmony default export */ const icon_button = (IconButton);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/icon/icon.js
-const Icon=({isHomePage})=>/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{"aria-label":"Home",className:"nav__icon",nav:true,to:"/"},/*#__PURE__*/index_js_default().createElement("div",{className:"nav__icon-svg-container"},/*#__PURE__*/index_js_default().createElement((logo_inline_default()),null)),!isHomePage&&/*#__PURE__*/index_js_default().createElement("span",null,"Home"));Icon.propTypes={isHomePage:(prop_types_default()).bool.isRequired};/* harmony default export */ const icon = (Icon);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/icon/checkIfHomepage.js
-const checkIfHomepage=(env,href,siteUrl)=>env==='development'&&href==='http://localhost:8000/'||href===siteUrl||href===`${siteUrl}/`;/* harmony default export */ const icon_checkIfHomepage = (checkIfHomepage);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/icon/icon-container.js
-const IconContainer=({location})=>{const{site}=(0,gatsby_browser_entry.useStaticQuery)("1271460761");const isHomePage=icon_checkIfHomepage("production",location.href,site.siteMetadata.siteUrl);return/*#__PURE__*/index_js_default().createElement(icon,{isHomePage:isHomePage});};IconContainer.propTypes={location:prop_types_default().shape({href:(prop_types_default()).string.isRequired}).isRequired};/* harmony default export */ const icon_container = (IconContainer);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/theme/theme.js
-const Theme=({darkMode,toggle})=>/*#__PURE__*/index_js_default().createElement(icon_button,{ariaLabel:`switch to ${darkMode?'light':'dark'} mode`,icon:darkMode?free_solid_svg_icons/* faMoon */.DBF:free_solid_svg_icons/* faSun */.enB,kind:"primary",onClick:toggle,type:"button"});Theme.propTypes={darkMode:(prop_types_default()).bool.isRequired,toggle:(prop_types_default()).func.isRequired};/* harmony default export */ const theme_theme = (Theme);
-;// CONCATENATED MODULE: ./src/utils/local-storage.js
-const windowGlobal=typeof window!=='undefined'&&window;const localAdapter=windowGlobal?windowGlobal.localStorage:{getItem:()=>null,removeItem:()=>{},setItem:()=>{}};const storageSupport=()=>{try{const test='test-storage';localAdapter.setItem(test,test);localAdapter.removeItem(test);return true;}catch(error){return false;}};const getLocalStorage=key=>{if(storageSupport){return JSON.parse(localAdapter.getItem(key));}return null;};const setLocalStorage=(key,value)=>{if(storageSupport){return localAdapter.setItem(key,JSON.stringify(value));}return null;};
-;// CONCATENATED MODULE: ./src/components/layout/navbar/theme/use-theme.js
-const useTheme=()=>{const{0:darkMode,1:toggleState}=(0,index_js_.useState)(false);const toggle=()=>{const newMode=!darkMode;const classToAdd=newMode===true?'dark-mode':'light-mode';const classToRemove=newMode===true?'light-mode':'dark-mode';if(document.body.classList.contains(classToRemove)){document.body.classList.replace(classToRemove,classToAdd);}else{document.body.classList.add(classToAdd);}toggleState(newMode);setLocalStorage('darkMode',newMode);};(0,index_js_.useEffect)(()=>{const updateMode=()=>{const storedMode=getLocalStorage('darkMode');if(storedMode!==darkMode){toggleState(storedMode);}};window.addEventListener('storage',updateMode);return window.removeEventListener('storage',updateMode);});(0,index_js_.useEffect)(()=>{const bodyMode=document.body.className.includes('dark-mode');if(bodyMode!==darkMode){toggleState(bodyMode);}},[]);return{darkMode,toggle};};/* harmony default export */ const use_theme = (useTheme);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/theme/theme-container.js
-const ThemeContainer=()=>{const theme=use_theme();return/*#__PURE__*/index_js_default().createElement(theme_theme,{darkMode:theme.darkMode,toggle:theme.toggle});};/* harmony default export */ const theme_container = (ThemeContainer);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/links/get-links.js
-const getLinks=links=>{const linkComponents={people:/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{key:"people",to:"/people"},/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faUsers */.FVb}),"Our Team"),publications:/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{key:"publications",to:"/publications"},/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faBook */.FL8}),"Publications")};return/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,links.map(link=>linkComponents[link]));};/* harmony default export */ const get_links = (getLinks);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/navbar.js
-const Navbar=/*#__PURE__*/(0,index_js_.forwardRef)(({handleClick,links,location,transform},ref)=>{const navLinks=get_links(links);return/*#__PURE__*/index_js_default().createElement("div",{className:"nav"},/*#__PURE__*/index_js_default().createElement(icon_container,{location:location}),/*#__PURE__*/index_js_default().createElement("div",{className:"nav__menu",style:{transform}},/*#__PURE__*/index_js_default().createElement(icon_button,{ariaLabel:"navigation menu",icon:free_solid_svg_icons/* faBars */.xiG,kind:"primary",onClick:handleClick,type:"button"}),/*#__PURE__*/index_js_default().createElement("div",{className:"nav__menu-links",ref:ref},/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{to:"/"},"Home"),navLinks,/*#__PURE__*/index_js_default().createElement(theme_container,null))),/*#__PURE__*/index_js_default().createElement("div",{className:"nav__right"},navLinks,/*#__PURE__*/index_js_default().createElement(theme_container,null)));});Navbar.propTypes={handleClick:(prop_types_default()).func.isRequired,links:prop_types_default().arrayOf((prop_types_default()).string).isRequired,location:prop_types_default().shape({}).isRequired,transform:(prop_types_default()).string.isRequired};/* harmony default export */ const navbar = (Navbar);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/get-menu-state.js
-const getMenuState=(currentState,ref)=>{if(!currentState||currentState.isOpen){return{isOpen:false,transform:'translateX(0)'};}const{width}=ref.current.getBoundingClientRect();return{isOpen:true,transform:`translateX(-${width}px)`};};/* harmony default export */ const get_menu_state = (getMenuState);
-;// CONCATENATED MODULE: ./src/utils/hooks/click-outside/is-visible.js
-// An element is considered visible if it has an opacity > 0
-// and either a height or width.
-const isVisible=element=>{if(!element){return false;}const rect=element.getBoundingClientRect();return Boolean(window.getComputedStyle(element).getPropertyValue('opacity')>0&&(rect.height||rect.width));};/* harmony default export */ const is_visible = (isVisible);
-;// CONCATENATED MODULE: ./src/utils/hooks/click-outside/use-click-outside.js
-/* Detect click outside element specified by ref.current. If the visibility
-** of the element is irrelevant, set ignoreVisibility argument to true. The
-** element is considered visible if it has height or width as computed with
-** getBoundingClientRect(). If esc argument is true, pressing the escape
-** key is the same as clicking outside the element. func is called when
-** a click occurs outside the element. */const useClickOutside=(ref,func,esc=true,ignoreVisibility=false)=>{const clickedOutside=(isOutside,e)=>{if(isOutside){func(e);}};const clickListener=e=>{const element=ref.current;const outside=!element.contains(e.target)&&(ignoreVisibility||is_visible(element));clickedOutside(outside,e);};const escListener=e=>{const element=ref.current;if(e.key==='Escape'&&is_visible(element)){clickedOutside(true,e);}};(0,index_js_.useEffect)(()=>{window.addEventListener('click',clickListener);return()=>{window.removeEventListener('click',clickListener);};});(0,index_js_.useEffect)(()=>{if(esc){window.addEventListener('keydown',escListener);}return()=>{if(esc){window.removeEventListener('keydown',escListener);}};});const clear=()=>{window.removeEventListener('click',clickListener);if(esc){window.removeEventListener('keydown',escListener);}};return clear;};/* harmony default export */ const use_click_outside = (useClickOutside);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/links/use-links.js
-const useLinks=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("536276349");const links=[];if(query.people.edges.length>0){links.push('people');}if(query.publications){links.push('publications');}return links;};/* harmony default export */ const use_links = (useLinks);
-;// CONCATENATED MODULE: ./src/components/layout/navbar/navbar-container.js
-const NavbarContainer=({location})=>{const{0:menuState,1:toggleMenu}=(0,index_js_.useState)(get_menu_state());const navRef=(0,index_js_.useRef)();const links=use_links();const closeMenu=()=>{if(menuState.isOpen){toggleMenu(get_menu_state(menuState,navRef));}};use_click_outside(navRef,closeMenu);const handleClick=()=>{toggleMenu(get_menu_state(menuState,navRef));};return/*#__PURE__*/index_js_default().createElement(navbar,{handleClick:handleClick,links:links,location:location,ref:navRef,transform:menuState.transform});};NavbarContainer.propTypes={location:prop_types_default().shape({}).isRequired};/* harmony default export */ const navbar_container = (NavbarContainer);
-;// CONCATENATED MODULE: ./src/components/layout/layout.js
-const Layout=({children})=>/*#__PURE__*/index_js_default().createElement(index_modern.Location,null,({location})=>/*#__PURE__*/index_js_default().createElement("div",{className:"layout"},/*#__PURE__*/index_js_default().createElement(navbar_container,{location:location}),/*#__PURE__*/index_js_default().createElement("noscript",{className:"noscript-warning"},"This site relies on JavaScript which is currently disabled in your browser. Some functionality will be missing as a result."),/*#__PURE__*/index_js_default().createElement("main",null,children),/*#__PURE__*/index_js_default().createElement(footer_container,null)));Layout.propTypes={children:(prop_types_default()).node.isRequired};/* harmony default export */ const layout = (Layout);
-
-/***/ }),
-
-/***/ 4904:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5697);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4189);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7076);
-const formatClass=classes=>classes.length>0?classes.join(' '):undefined;const CustomLink=({buttonStyle,children,className,nav,outline,to,...props})=>{const classes=className?[className]:[];if(nav){classes.push('link_nav');}if(buttonStyle){classes.push('link_button');}if(outline){classes.push('link_outline');}if(to.startsWith('/')&&/\.[0-9a-z]+$/i.test(to)){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a",Object.assign({className:formatClass(classes),href:(0,gatsby__WEBPACK_IMPORTED_MODULE_1__.withPrefix)(to)},props),children);}if(to.startsWith('/')){return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(gatsby__WEBPACK_IMPORTED_MODULE_1__.Link,Object.assign({className:formatClass(classes),to:to},props),children);}return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("a",Object.assign({className:formatClass(classes),href:to},props),children);};CustomLink.defaultProps={buttonStyle:false,className:'',nav:false,outline:false};CustomLink.propTypes={buttonStyle:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),className:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string),children:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().node.isRequired),nav:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),outline:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),to:(prop_types__WEBPACK_IMPORTED_MODULE_2___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CustomLink);
-
-/***/ }),
-
-/***/ 3785:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4189);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5697);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var react_helmet__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4593);
-/* harmony import */ var gatsby__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7076);
-function SEO({description,lang,meta,title}){const{site}=(0,gatsby__WEBPACK_IMPORTED_MODULE_2__.useStaticQuery)("4123507481");const{defaultDescription,defaultTitle,siteUrl}=site.siteMetadata;const seo={description:description||defaultDescription,title:title||defaultTitle,url:siteUrl};return/*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_helmet__WEBPACK_IMPORTED_MODULE_1__.Helmet,{htmlAttributes:{lang},title:seo.title,titleTemplate:`%s | ${defaultTitle}`,meta:[{name:'description',content:seo.description},{property:'og:title',content:seo.title},{property:'og:description',content:seo.description},{property:'og:type',content:'website'},{property:'og:url',content:seo.url},{property:'twitter:title',content:seo.title},{property:'twitter:description',content:seo.description}].concat(meta)});}SEO.defaultProps={lang:'en',meta:[],description:''};SEO.propTypes={description:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),lang:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),meta:prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)),title:(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string.isRequired)};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SEO);
-
-/***/ }),
-
-/***/ 4875:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ pages)
-});
-
-// EXTERNAL MODULE: external "/home/rseag/m-3-lab.github.io/node_modules/react/index.js"
-var index_js_ = __webpack_require__(4189);
-var index_js_default = /*#__PURE__*/__webpack_require__.n(index_js_);
-// EXTERNAL MODULE: ./.cache/gatsby-browser-entry.js + 11 modules
-var gatsby_browser_entry = __webpack_require__(7076);
-// EXTERNAL MODULE: ./node_modules/prop-types/index.js
-var prop_types = __webpack_require__(5697);
-var prop_types_default = /*#__PURE__*/__webpack_require__.n(prop_types);
-// EXTERNAL MODULE: ./node_modules/gatsby-plugin-image/dist/gatsby-image.module.js
-var gatsby_image_module = __webpack_require__(3040);
-;// CONCATENATED MODULE: ./src/components/home/about/about.js
-/* eslint-disable react/no-danger */const About=({html,image,title})=>/*#__PURE__*/index_js_default().createElement("section",{className:"about"},/*#__PURE__*/index_js_default().createElement("h2",null,title),/*#__PURE__*/index_js_default().createElement("div",{className:"about__inner"},/*#__PURE__*/index_js_default().createElement(gatsby_image_module/* GatsbyImage */.HN,{alt:title,className:"about__portrait",image:image}),/*#__PURE__*/index_js_default().createElement("div",{dangerouslySetInnerHTML:{__html:html}})));About.propTypes={html:(prop_types_default()).node.isRequired,image:prop_types_default().shape({}).isRequired,title:(prop_types_default()).string.isRequired};/* harmony default export */ const about = (About);
-;// CONCATENATED MODULE: ./src/components/home/about/about-container.js
-const AboutContainer=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("1025990139");return query.markdown?/*#__PURE__*/index_js_default().createElement(about,{html:query.markdown.html,image:query.markdown.frontmatter.image.childImageSharp.gatsbyImageData,title:query.markdown.frontmatter.title}):null;};/* harmony default export */ const about_container = (AboutContainer);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/react-fontawesome/index.es.js + 1 modules
-var index_es = __webpack_require__(982);
-// EXTERNAL MODULE: ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs
-var free_solid_svg_icons = __webpack_require__(9417);
-;// CONCATENATED MODULE: ./src/components/home/contact/contact.js
-/* eslint-disable react/no-danger */const Contact=({html})=>/*#__PURE__*/index_js_default().createElement("section",{className:"contact",id:"contact"},/*#__PURE__*/index_js_default().createElement("h2",null,/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faMailBulk */.ntl}),"Contact"),/*#__PURE__*/index_js_default().createElement("div",{dangerouslySetInnerHTML:{__html:html}}));Contact.propTypes={html:(prop_types_default()).node.isRequired};/* harmony default export */ const contact = (Contact);
-;// CONCATENATED MODULE: ./src/components/home/contact/contact-container.js
-const ContactContainer=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("3980000209");return query.markdown===null||query.markdown.html===''?null:/*#__PURE__*/index_js_default().createElement(contact,{html:query.markdown.html});};/* harmony default export */ const contact_container = (ContactContainer);
-// EXTERNAL MODULE: ./node_modules/gatsby-background-image/index.js
-var gatsby_background_image = __webpack_require__(8738);
-;// CONCATENATED MODULE: ./node_modules/gbimage-bridge/dist/index.modern.js
-function l(){return(l=Object.assign||function(r){for(var e=1;e<arguments.length;e++){var l=arguments[e];for(var t in l)Object.prototype.hasOwnProperty.call(l,t)&&(r[t]=l[t])}return r}).apply(this,arguments)}const t=r=>"[object String]"===Object.prototype.toString.call(r),n=r=>"fixed"===r.layout?"fixed":"fluid",i=r=>{let e;for(e=0;e<r.length;e++)if(!t(r[e]))return r[e];return null},u=r=>r.width/r.height,a=r=>{var e,l,t,n;return r.placeholder?null!=(e=r.placeholder)&&null!=(l=e.fallback)&&l.includes("base64")?{base64:null==(t=r.placeholder)?void 0:t.fallback}:{tracedSVG:null==(n=r.placeholder)?void 0:n.fallback}:{}},c=r=>{if(r.srcSet){var e;const l=[...r.srcSet.matchAll(/(?:([^"'\s,]+)\s*(?:\s+\d+[wx])(?:,\s*)?)/gm)],t=r.sizes.replace("px",""),n=l.filter(r=>(null==r?void 0:r[0].includes("100w"))||(null==r?void 0:r[0].includes("1x"))||(null==r?void 0:r[0].includes(`${t}w`)));return(null==n||null==(e=n[0])?void 0:e[1])||""}return""},o=r=>{var e,l,t;return null!=(e=r.images)&&e.sources&&Array.isArray(null==(l=r.images)?void 0:l.sources)?null==(t=r.images)?void 0:t.sources.reduce((r,e)=>{var l;const t=(null==e||null==(l=e.type)?void 0:l.split("/")[1])||"",n=(null==t?void 0:t.charAt(0).toUpperCase())+t.slice(1),i=`srcSet${n}`,u=`src${n}`;return n&&(!(i in r)&&null!=e&&e.srcSet&&(r[i]=e.srcSet),!(u in r)&&null!=e&&e.srcSet&&(r[u]=c(e))),r},{}):{}},s=r=>{if(r&&r.layout){const e={},t=n(r),i=u(r),c=a(r),s=o(r);return e[t]=l({},r.images.fallback,s,c,"fluid"===t?{aspectRatio:i}:{},"fixed"===t?{width:r.width,height:r.height}:{}),e}return null};function d(r){if(r){if(Array.isArray(r)){const[e,u]=(r=>{const e=i(r);if(e){const i=n(e),u=r.map(r=>{if(t(r))return r;const e=s(r);return l({},e&&e[i],null!=r&&r.media?{media:r.media}:{})});return[i,u]}return[]})(r);return e?{[e]:u}:null}return s(r)}return null}const f=t=>{const{image:n,children:i}=t,u=function(r,e){if(null==r)return{};var l,t,n={},i=Object.keys(r);for(t=0;t<i.length;t++)e.indexOf(l=i[t])>=0||(n[l]=r[l]);return n}(t,["image","children"]),a=n&&d(n);return a?index_js_default().createElement(gatsby_background_image/* default */.Z,l({},a,u),i):index_js_default().createElement("div",null,i)};
-//# sourceMappingURL=index.modern.js.map
-
-;// CONCATENATED MODULE: ./src/components/home/landing/hero.js
-const Hero=({children,image,...props})=>{const backgroundFluidImageStack=[image,'linear-gradient(rgba(0, 126, 0, 0.5), rgba(0, 0, 126, 0.5))'].reverse();return/*#__PURE__*/index_js_default().createElement(f,Object.assign({image:backgroundFluidImageStack},props),children);};Hero.propTypes={children:(prop_types_default()).node.isRequired,image:prop_types_default().shape({}).isRequired};/* harmony default export */ const hero = (Hero);
-;// CONCATENATED MODULE: ./src/components/home/landing/hero-container.js
-const HeroContainer=({...props})=>{const query=(0,gatsby_browser_entry.useStaticQuery)("563261565");const image=(0,gatsby_image_module/* getImage */.gJ)(query.hero);return/*#__PURE__*/index_js_default().createElement(hero,Object.assign({image:image},props));};/* harmony default export */ const hero_container = (HeroContainer);
-// EXTERNAL MODULE: ./src/components/link/link.js
-var link_link = __webpack_require__(4904);
-;// CONCATENATED MODULE: ./src/components/home/landing/links.js
-const routes={contact:'/#contact',opportunities:'/#opportunities',people:'/our-team',publications:'/publications',research:'/#research'};const Links=({links})=>links.length>0&&/*#__PURE__*/index_js_default().createElement("div",{className:"home__landing-links"},links.map(link=>routes[link]&&/*#__PURE__*/index_js_default().createElement(link_link/* default */.Z,{buttonStyle:true,key:link,nav:true,to:routes[link]},link)));Links.propTypes={links:prop_types_default().arrayOf((prop_types_default()).string).isRequired};/* harmony default export */ const landing_links = (Links);
-;// CONCATENATED MODULE: ./src/components/home/landing/landing.js
-const Landing=({author,description,links})=>/*#__PURE__*/index_js_default().createElement(hero_container,{className:"home__landing",Tag:"section"},/*#__PURE__*/index_js_default().createElement("div",null,/*#__PURE__*/index_js_default().createElement("h1",null,"Microbiome Metabolic Modeling Lab"),/*#__PURE__*/index_js_default().createElement("p",{className:"home__landing-description"},description),/*#__PURE__*/index_js_default().createElement(landing_links,{links:links})));Landing.propTypes={author:(prop_types_default()).string.isRequired,description:(prop_types_default()).string.isRequired,links:prop_types_default().arrayOf((prop_types_default()).string).isRequired};/* harmony default export */ const landing = (Landing);
-;// CONCATENATED MODULE: ./src/components/home/landing/landing-container.js
-const LandingContainer=()=>{const{site}=(0,gatsby_browser_entry.useStaticQuery)("2353648138");const{author,description,primaryLinks}=site.siteMetadata;return/*#__PURE__*/index_js_default().createElement(landing,{author:author,description:description,links:primaryLinks});};/* harmony default export */ const landing_container = (LandingContainer);
-;// CONCATENATED MODULE: ./src/components/home/opportunities/opportunities.js
-/* eslint-disable react/no-danger */const Opportunities=({html})=>/*#__PURE__*/index_js_default().createElement("section",{className:"opportunities",id:"opportunities"},/*#__PURE__*/index_js_default().createElement("h2",null,/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faUserFriends */.r$M}),"Opportunities"),/*#__PURE__*/index_js_default().createElement("div",{dangerouslySetInnerHTML:{__html:html}}));Opportunities.propTypes={html:(prop_types_default()).node.isRequired};/* harmony default export */ const opportunities = (Opportunities);
-;// CONCATENATED MODULE: ./src/components/home/opportunities/opportunities-container.js
-const OpportunitiesContainer=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("1371446413");return query.markdown===null||query.markdown.html===''?null:/*#__PURE__*/index_js_default().createElement(opportunities,{html:query.markdown.html});};/* harmony default export */ const opportunities_container = (OpportunitiesContainer);
-;// CONCATENATED MODULE: ./src/components/home/research/research.js
-/* eslint-disable react/no-danger */const Research=({markdown})=>/*#__PURE__*/index_js_default().createElement("section",{className:"research",id:"research"},/*#__PURE__*/index_js_default().createElement("h2",null,/*#__PURE__*/index_js_default().createElement(index_es/* FontAwesomeIcon */.G,{icon:free_solid_svg_icons/* faSearch */.wn1}),"Research"),/*#__PURE__*/index_js_default().createElement("ul",{className:"research__list"},markdown.map(research=>/*#__PURE__*/index_js_default().createElement("li",{key:research.node.frontmatter.title},research.node.frontmatter.title&&/*#__PURE__*/index_js_default().createElement("h3",null,research.node.frontmatter.title),/*#__PURE__*/index_js_default().createElement("div",null,research.node.frontmatter.image&&/*#__PURE__*/index_js_default().createElement(gatsby_image_module/* GatsbyImage */.HN,{alt:research.node.frontmatter.title,className:"research__list-image",image:research.node.frontmatter.image.childImageSharp.gatsbyImageData}),/*#__PURE__*/index_js_default().createElement("div",{dangerouslySetInnerHTML:{__html:research.node.html}}))))));Research.propTypes={markdown:prop_types_default().arrayOf(prop_types_default().shape({node:prop_types_default().shape({frontmatter:prop_types_default().shape({image:prop_types_default().shape({}),title:(prop_types_default()).string}),html:(prop_types_default()).node})})).isRequired};/* harmony default export */ const research = (Research);
-// EXTERNAL MODULE: ./src/utils/sort-markdown.js
-var sort_markdown = __webpack_require__(2341);
-;// CONCATENATED MODULE: ./src/components/home/research/research-container.js
-const ResearchContainer=()=>{const query=(0,gatsby_browser_entry.useStaticQuery)("1791518792");const markdown=(0,sort_markdown/* default */.Z)(query.markdown.edges,['order','title']);return markdown.length>0?/*#__PURE__*/index_js_default().createElement(research,{markdown:markdown}):null;};/* harmony default export */ const research_container = (ResearchContainer);
-;// CONCATENATED MODULE: ./src/components/home/gutter/gutter.js
-const GutterLeft=()=>/*#__PURE__*/index_js_default().createElement("div",{className:"gutter gutter_left"});const GutterRight=()=>/*#__PURE__*/index_js_default().createElement("div",{className:"gutter gutter_right"});
-;// CONCATENATED MODULE: ./src/components/home/home.js
-const Home=()=>/*#__PURE__*/index_js_default().createElement((index_js_default()).Fragment,null,/*#__PURE__*/index_js_default().createElement(landing_container,null),/*#__PURE__*/index_js_default().createElement("div",{className:"home__layout"},/*#__PURE__*/index_js_default().createElement(GutterLeft,null),/*#__PURE__*/index_js_default().createElement("div",{className:"home__inner"},/*#__PURE__*/index_js_default().createElement(about_container,null),/*#__PURE__*/index_js_default().createElement(research_container,null),/*#__PURE__*/index_js_default().createElement(opportunities_container,null),/*#__PURE__*/index_js_default().createElement(contact_container,null)),/*#__PURE__*/index_js_default().createElement(GutterRight,null)));/* harmony default export */ const home = (Home);
-// EXTERNAL MODULE: ./src/components/layout/layout.js + 21 modules
-var layout = __webpack_require__(5734);
-// EXTERNAL MODULE: ./src/components/seo/seo.js
-var seo = __webpack_require__(3785);
-;// CONCATENATED MODULE: ./src/pages/index.js
-const IndexPage=()=>/*#__PURE__*/index_js_default().createElement(layout/* default */.Z,null,/*#__PURE__*/index_js_default().createElement(seo/* default */.Z,{title:"Home"}),/*#__PURE__*/index_js_default().createElement(home,null));/* harmony default export */ const pages = (IndexPage);
-
-/***/ }),
-
-/***/ 2341:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Z": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-const sortMarkdown=(entries,sortFields=[])=>{if(sortFields.length===0){return entries;}const compare=(a,b)=>{if(a.node.frontmatter[sortFields[0]]<b.node.frontmatter[sortFields[0]]){return-1;}if(a.node.frontmatter[sortFields[0]]>b.node.frontmatter[sortFields[0]]){return 1;}if(sortFields.length>=2&&a.node.frontmatter[sortFields[1]]<b.node.frontmatter[sortFields[1]]){return-1;}if(sortFields.length>=2&&a.node.frontmatter[sortFields[1]]>b.node.frontmatter[sortFields[1]]){return 1;}return 0;};entries.sort(compare);return entries;};/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (sortMarkdown);
-
-/***/ }),
-
-/***/ 2047:
-/***/ ((module) => {
-
-"use strict";
-/*!
- * html-attributes
- * https://github.com/alexmingoia/html-attributes
- */
-
-
-
-/**
- * @module html-attributes
- */
-
-module.exports = {
-  "abbr": "abbr",
-  "accept": "accept",
-  "acceptCharset": "accept-charset",
-  "accessKey": "accesskey",
-  "action": "action",
-  "allowFullScreen": "allowfullscreen",
-  "allowTransparency": "allowtransparency",
-  "alt": "alt",
-  "async": "async",
-  "autoComplete": "autocomplete",
-  "autoFocus": "autofocus",
-  "autoPlay": "autoplay",
-  "cellPadding": "cellpadding",
-  "cellSpacing": "cellspacing",
-  "challenge": "challenge",
-  "charset": "charset",
-  "checked": "checked",
-  "cite": "cite",
-  "class": "class",
-  "className": "class",
-  "cols": "cols",
-  "colSpan": "colspan",
-  "command": "command",
-  "content": "content",
-  "contentEditable": "contenteditable",
-  "contextMenu": "contextmenu",
-  "controls": "controls",
-  "coords": "coords",
-  "crossOrigin": "crossorigin",
-  "data": "data",
-  "dateTime": "datetime",
-  "default": "default",
-  "defer": "defer",
-  "dir": "dir",
-  "disabled": "disabled",
-  "download": "download",
-  "draggable": "draggable",
-  "dropzone": "dropzone",
-  "encType": "enctype",
-  "for": "for",
-  "form": "form",
-  "formAction": "formaction",
-  "formEncType": "formenctype",
-  "formMethod": "formmethod",
-  "formNoValidate": "formnovalidate",
-  "formTarget": "formtarget",
-  "frameBorder": "frameBorder",
-  "headers": "headers",
-  "height": "height",
-  "hidden": "hidden",
-  "high": "high",
-  "href": "href",
-  "hrefLang": "hreflang",
-  "htmlFor": "for",
-  "httpEquiv": "http-equiv",
-  "icon": "icon",
-  "id": "id",
-  "inputMode": "inputmode",
-  "isMap": "ismap",
-  "itemId": "itemid",
-  "itemProp": "itemprop",
-  "itemRef": "itemref",
-  "itemScope": "itemscope",
-  "itemType": "itemtype",
-  "kind": "kind",
-  "label": "label",
-  "lang": "lang",
-  "list": "list",
-  "loop": "loop",
-  "manifest": "manifest",
-  "max": "max",
-  "maxLength": "maxlength",
-  "media": "media",
-  "mediaGroup": "mediagroup",
-  "method": "method",
-  "min": "min",
-  "minLength": "minlength",
-  "multiple": "multiple",
-  "muted": "muted",
-  "name": "name",
-  "noValidate": "novalidate",
-  "open": "open",
-  "optimum": "optimum",
-  "pattern": "pattern",
-  "ping": "ping",
-  "placeholder": "placeholder",
-  "poster": "poster",
-  "preload": "preload",
-  "radioGroup": "radiogroup",
-  "readOnly": "readonly",
-  "rel": "rel",
-  "required": "required",
-  "role": "role",
-  "rows": "rows",
-  "rowSpan": "rowspan",
-  "sandbox": "sandbox",
-  "scope": "scope",
-  "scoped": "scoped",
-  "scrolling": "scrolling",
-  "seamless": "seamless",
-  "selected": "selected",
-  "shape": "shape",
-  "size": "size",
-  "sizes": "sizes",
-  "sortable": "sortable",
-  "span": "span",
-  "spellCheck": "spellcheck",
-  "src": "src",
-  "srcDoc": "srcdoc",
-  "srcSet": "srcset",
-  "start": "start",
-  "step": "step",
-  "style": "style",
-  "tabIndex": "tabindex",
-  "target": "target",
-  "title": "title",
-  "translate": "translate",
-  "type": "type",
-  "typeMustMatch": "typemustmatch",
-  "useMap": "usemap",
-  "value": "value",
-  "width": "width",
-  "wmode": "wmode",
-  "wrap": "wrap"
-};
-
-
-/***/ }),
-
-/***/ 7597:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-/**
- * Created by Samuel on 6/4/2016.
- * Simple wrapper functions to produce shorter UUIDs for cookies, maybe everything?
- */
-
-const { v4: uuidv4 } = __webpack_require__(2277);
-const anyBase = __webpack_require__(964);
-
-const flickrBase58 = '123456789abcdefghijkmnopqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ';
-const cookieBase90 = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!#$%&'()*+-./:<=>?@[]^_`{|}~";
-
-const baseOptions = {
-  consistentLength: true,
-};
-
-// A default generator, instantiated only if used.
-let toFlickr;
-
-/**
- * Takes a UUID, strips the dashes, and translates.
- * @param {string} longId
- * @param {function(string)} translator
- * @param {Object} [paddingParams]
- * @returns {string}
- */
-const shortenUUID = (longId, translator, paddingParams) => {
-  const translated = translator(longId.toLowerCase().replace(/-/g, ''));
-
-  if (!paddingParams || !paddingParams.consistentLength) return translated;
-
-  return translated.padStart(
-    paddingParams.shortIdLength,
-    paddingParams.paddingChar,
-  );
-};
-
-/**
- * Translate back to hex and turn back into UUID format, with dashes
- * @param {string} shortId
- * @param {function(string)} translator
- * @returns {string}
- */
-const enlargeUUID = (shortId, translator) => {
-  const uu1 = translator(shortId).padStart(32, '0');
-
-  // Join the zero padding and the UUID and then slice it up with match
-  const m = uu1.match(/(\w{8})(\w{4})(\w{4})(\w{4})(\w{12})/);
-
-  // Accumulate the matches and join them.
-  return [m[1], m[2], m[3], m[4], m[5]].join('-');
-};
-
-// Calculate length for the shortened ID
-const getShortIdLength = (alphabetLength) => (
-  Math.ceil(Math.log(2 ** 128) / Math.log(alphabetLength)));
-
-module.exports = (() => {
-  /**
-   * @param {string} toAlphabet - Defaults to flickrBase58 if not provided
-   * @param {Object} [options]
-   *
-   * @returns {{new: (function()),
-   *  uuid: (function()),
-   *  fromUUID: (function(string)),
-   *  toUUID: (function(string)),
-   *  alphabet: (string)}}
-   */
-  const makeConvertor = (toAlphabet, options) => {
-    // Default to Flickr 58
-    const useAlphabet = toAlphabet || flickrBase58;
-
-    // Default to baseOptions
-    const selectedOptions = { ...baseOptions, ...options };
-
-    // Check alphabet for duplicate entries
-    if ([...new Set(Array.from(useAlphabet))].length !== useAlphabet.length) {
-      throw new Error('The provided Alphabet has duplicate characters resulting in unreliable results');
-    }
-
-    const shortIdLength = getShortIdLength(useAlphabet.length);
-
-    // Padding Params
-    const paddingParams = {
-      shortIdLength,
-      consistentLength: selectedOptions.consistentLength,
-      paddingChar: useAlphabet[0],
-    };
-
-    // UUIDs are in hex, so we translate to and from.
-    const fromHex = anyBase(anyBase.HEX, useAlphabet);
-    const toHex = anyBase(useAlphabet, anyBase.HEX);
-    const generate = () => shortenUUID(uuidv4(), fromHex, paddingParams);
-
-    const translator = {
-      new: generate,
-      generate,
-      uuid: uuidv4,
-      fromUUID: (uuid) => shortenUUID(uuid, fromHex, paddingParams),
-      toUUID: (shortUuid) => enlargeUUID(shortUuid, toHex),
-      alphabet: useAlphabet,
-      maxLength: shortIdLength,
-    };
-
-    Object.freeze(translator);
-
-    return translator;
-  };
-
-  // Expose the constants for other purposes.
-  makeConvertor.constants = {
-    flickrBase58,
-    cookieBase90,
-  };
-
-  // Expose the generic v4 UUID generator for convenience
-  makeConvertor.uuid = uuidv4;
-
-  // Provide a generic generator
-  makeConvertor.generate = () => {
-    if (!toFlickr) {
-      // Generate on first use;
-      toFlickr = makeConvertor(flickrBase58).generate;
-    }
-    return toFlickr();
-  };
-
-  return makeConvertor;
-})();
-
-
-/***/ }),
-
-/***/ 2580:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var extend = __webpack_require__(6760);
-var mqTypes = ['blank','all','minWidth','minHeight','maxWidth','maxHeight','print'];
-
-/**
- * @param  {Array} rules
- * @param  {String} type
- * @param  {String} prop
- *
- * @return {Boolean}
- */
-function itemsValid ( rules, type, prop ) {
-	var flag = true;
-	for ( var i = 0, rulesLength = rules.length; i < rulesLength; i++ ) {
-		if ( typeof(rules[i]) !== type || ( prop && !rules[i].hasOwnProperty(prop) ) ) {
-			flag = false;
-			break;
-		}
-	}
-	return flag;
-}
-
-/**
- * @param  {Array} rules
- * @param  {String} type
- * @param  {String} prop
- *
- * @return {Boolean}
- */
-function allValid ( rules, type, prop ) {
-	if (
-		!rules || !rules.length || typeof(rules) === 'string'
-	) {
-		return 'none';
-	}
-	if (
-		(type === 'object' && (!prop || typeof(prop) !== 'string')) ||
-		!itemsValid(rules, type, prop)
-	) {
-		return 'some';
-	}
-	return 'all';
-}
-
-/**
- * Normalize between array with strings and array with objects
- *
- * @param  {Array} rules
- * @param  {String} type
- * @param  {String} prop
- *
- * @return {Object}
- */
-function prepareRules ( rules, type, prop ) {
-	var collection = [];
-	var o = {};
-	for ( var i = 0, rulesLength = rules.length; i < rulesLength; i++ ) {
-		if ( type === 'string' ) {
-			o = extend({}, {
-				__media: rules[i]
-			});
-		} else {
-			o = extend({}, rules[i]);
-			o.__media = rules[i][prop];
-		}
-		collection.push(o);
-	}
-	return collection;
-}
-
-/**
- * @param  {Boolean} isMax
- *
- * @return {Function}
- */
-function determineSortOrder ( isMax ) {
-
-	/**
-	 * Determine sort order based on provided arguments
-	 *
-	 * @param  {Object} a
-	 * @param  {Object} b
-	 *
-	 * @return {Integer}
-	 */
-	return function ( a, b ) {
-
-		var sortValA = a.sortVal;
-		var sortValB = b.sortVal;
-		var ruleA = a.item.__media;
-		var ruleB = b.item.__media;
-		isMax = typeof(isMax) !== 'undefined' ? isMax : false;
-
-		// Consider print for sorting if sortVals are equal
-		if ( sortValA === sortValB ) {
-			if ( ruleA.match(/print/) ) {
-				// a contains print and should be sorted after b
-				return 1;
-			}
-			if ( ruleB.match(/print/) ) {
-				// b contains print and should be sorted after a
-				return -1;
-			}
-		}
-
-		// Return descending sort order for max-(width|height) media queries
-		if ( isMax ) {
-			return sortValB - sortValA;
-		}
-
-		// Return ascending sort order
-		return sortValA - sortValB;
-	};
-}
-
-/**
- * @return {Object}
- */
-function createCollection () {
-	var mqCollection = {};
-	for ( var i = 0, mqTypesLength = mqTypes.length; i < mqTypesLength; i++ ) {
-		mqCollection[mqTypes[i]] = [];
-	}
-	return mqCollection;
-}
-
-/**
- * @param {Object} collection
- * @param {Array} rules
- *
- * @return {Object}
- */
-function addRulesToCollection ( collection, rules ) {
-
-	// Sort media queries by kind, this is needed to output them in the right order
-	for ( var i = 0, rulesLength = rules.length; i < rulesLength; i++ ) {
-
-		var item = rules[i];
-		var rule = item.__media;
-		var collectionType = 'blank';
-		var valMatch = rule.match(/\d+/g);
-
-		if ( rule.match(/min-width/) ) {
-			collectionType = 'minWidth';
-		} else if ( rule.match(/min-height/) ) {
-			collectionType = 'minHeight';
-		} else if ( rule.match(/max-width/) ) {
-			collectionType = 'maxWidth';
-		} else if ( rule.match(/max-height/) ) {
-			collectionType = 'maxHeight';
-		} else if ( rule.match(/print/) ) {
-			collectionType = 'print';
-		} else if ( rule.match(/all/) ) {
-			collectionType = 'all';
-		}
-
-		collection[collectionType].push({
-			item: item,
-			sortVal: valMatch ? valMatch[0] : 0
-		});
-
-	}
-	return collection;
-}
-
-/**
- * @param  {Object} collection
- *
- * @return {Object}
- */
-function sortCollection ( collection ) {
-	var sorter;
-	for ( var collectionType in collection ) {
-		if ( collection.hasOwnProperty(collectionType) ) {
-			sorter = determineSortOrder(false);
-			if ( collectionType === 'maxWidth' || collectionType === 'maxHeight' ) {
-				sorter = determineSortOrder(true);
-			}
-			collection[collectionType].sort(sorter);
-		}
-	}
-	return collection;
-}
-
-/**
- * @param  {Object} collection
- * @param  {String} type
- * @param  {String} prop
- *
- * @return {Array}
- */
-function transformCollection ( collection, type, prop ) {
-	var transformed = [];
-	var collectionItem;
-
-	function iterateCollectionItem ( collectionItem ) {
-		var resultVal;
-		for ( var i = 0, typeLength = collectionItem.length; i < typeLength; i++ ) {
-			if ( type === 'string' ) {
-				resultVal = collectionItem[i].item.__media;
-			} else {
-				resultVal = collectionItem[i].item;
-				delete resultVal.__media;
-			}
-			transformed.push(resultVal);
-		}
-	}
-
-	for ( var i = 0, mqTypesLength = mqTypes.length; i < mqTypesLength; i++ ) {
-		iterateCollectionItem(collection[mqTypes[i]]);
-	}
-
-	return transformed;
-}
-
-/**
- * @param  {Array} rules
- * @param  {String} type
- * @param  {String} prop
- *
- * @return {Array}
- */
-function sortInit ( rules, type, prop ) {
-
-	switch ( allValid(rules, type, prop) ) {
-		case 'none':
-			return [];
-		case 'some':
-			return rules;
-	}
-
-	var collection = createCollection();
-	rules = prepareRules(rules, type, prop);
-	addRulesToCollection(collection, rules);
-	sortCollection(collection);
-	return transformCollection(collection, type, prop);
-}
-
-/**
- * @param  {Array} rules
- * @param  {String} prop
- *
- * @return {Array}
- */
-module.exports = function ( rules, prop ) {
-	if ( rules ) {
-		if ( prop ) {
-			return sortInit(rules, 'object', prop);
-		}
-		return sortInit(rules, 'string');
-	}
-	return [];
-};
-
-
-/***/ }),
-
-/***/ 5248:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var React = __webpack_require__(4189);
-
-function LogoInline (props) {
-    return React.createElement("svg",props,[React.createElement("title",{"key":0},"DNA"),React.createElement("desc",{"key":1},"logo"),React.createElement("path",{"d":"M.1 494.1c-1.1 9.5 6.3 17.8 15.9 17.8l32.3.1c8.1 0 14.9-5.9 16-13.9.7-4.9 1.8-11.1 3.4-18.1H380c1.6 6.9 2.9 13.2 3.5 18.1 1.1 8 7.9 14 16 13.9l32.3-.1c9.6 0 17.1-8.3 15.9-17.8-4.6-37.9-25.6-129-118.9-207.7-17.6 12.4-37.1 24.2-58.5 35.4 6.2 4.6 11.4 9.4 17 14.2H159.7c21.3-18.1 47-35.6 78.7-51.4C410.5 199.1 442.1 65.8 447.9 17.9 449 8.4 441.6.1 432 .1L399.6 0c-8.1 0-14.9 5.9-16 13.9-.7 4.9-1.8 11.1-3.4 18.1H67.8c-1.6-7-2.7-13.1-3.4-18.1-1.1-8-7.9-14-16-13.9L16.1.1C6.5.1-1 8.4.1 17.9 5.3 60.8 31.4 171.8 160 256 31.5 340.2 5.3 451.2.1 494.1zM224 219.6c-25.1-13.7-46.4-28.4-64.3-43.6h128.5c-17.8 15.2-39.1 30-64.2 43.6zM355.1 96c-5.8 10.4-12.8 21.1-21 32H114c-8.3-10.9-15.3-21.6-21-32h262.1zM92.9 416c5.8-10.4 12.8-21.1 21-32h219.4c8.3 10.9 15.4 21.6 21.2 32H92.9z","key":2})]);
-}
-
-LogoInline.defaultProps = {"aria-label":"DNA logo","viewBox":"0 0 448 512"};
-
-module.exports = LogoInline;
-
-LogoInline.default = LogoInline;
-
-
-/***/ }),
-
-/***/ 2277:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "NIL": () => (/* reexport */ nil),
-  "parse": () => (/* reexport */ esm_node_parse),
-  "stringify": () => (/* reexport */ esm_node_stringify),
-  "v1": () => (/* reexport */ esm_node_v1),
-  "v3": () => (/* reexport */ esm_node_v3),
-  "v4": () => (/* reexport */ esm_node_v4),
-  "v5": () => (/* reexport */ esm_node_v5),
-  "validate": () => (/* reexport */ esm_node_validate),
-  "version": () => (/* reexport */ esm_node_version)
-});
-
-// EXTERNAL MODULE: external "crypto"
-var external_crypto_ = __webpack_require__(4347);
-var external_crypto_default = /*#__PURE__*/__webpack_require__.n(external_crypto_);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/rng.js
-
-const rnds8Pool = new Uint8Array(256); // # of random values to pre-allocate
-
-let poolPtr = rnds8Pool.length;
-function rng() {
-  if (poolPtr > rnds8Pool.length - 16) {
-    external_crypto_default().randomFillSync(rnds8Pool);
-    poolPtr = 0;
-  }
-
-  return rnds8Pool.slice(poolPtr, poolPtr += 16);
-}
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/regex.js
-/* harmony default export */ const regex = (/^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/validate.js
-
-
-function validate(uuid) {
-  return typeof uuid === 'string' && regex.test(uuid);
-}
-
-/* harmony default export */ const esm_node_validate = (validate);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/stringify.js
-
-/**
- * Convert array of 16 byte values to UUID string format of the form:
- * XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
- */
-
-const byteToHex = [];
-
-for (let i = 0; i < 256; ++i) {
-  byteToHex.push((i + 0x100).toString(16).substr(1));
-}
-
-function stringify(arr, offset = 0) {
-  // Note: Be careful editing this code!  It's been tuned for performance
-  // and works in ways you may not expect. See https://github.com/uuidjs/uuid/pull/434
-  const uuid = (byteToHex[arr[offset + 0]] + byteToHex[arr[offset + 1]] + byteToHex[arr[offset + 2]] + byteToHex[arr[offset + 3]] + '-' + byteToHex[arr[offset + 4]] + byteToHex[arr[offset + 5]] + '-' + byteToHex[arr[offset + 6]] + byteToHex[arr[offset + 7]] + '-' + byteToHex[arr[offset + 8]] + byteToHex[arr[offset + 9]] + '-' + byteToHex[arr[offset + 10]] + byteToHex[arr[offset + 11]] + byteToHex[arr[offset + 12]] + byteToHex[arr[offset + 13]] + byteToHex[arr[offset + 14]] + byteToHex[arr[offset + 15]]).toLowerCase(); // Consistency check for valid UUID.  If this throws, it's likely due to one
-  // of the following:
-  // - One or more input array values don't map to a hex octet (leading to
-  // "undefined" in the uuid)
-  // - Invalid input values for the RFC `version` or `variant` fields
-
-  if (!esm_node_validate(uuid)) {
-    throw TypeError('Stringified UUID is invalid');
-  }
-
-  return uuid;
-}
-
-/* harmony default export */ const esm_node_stringify = (stringify);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v1.js
-
- // **`v1()` - Generate time-based UUID**
-//
-// Inspired by https://github.com/LiosK/UUID.js
-// and http://docs.python.org/library/uuid.html
-
-let _nodeId;
-
-let _clockseq; // Previous uuid creation time
-
-
-let _lastMSecs = 0;
-let _lastNSecs = 0; // See https://github.com/uuidjs/uuid for API details
-
-function v1(options, buf, offset) {
-  let i = buf && offset || 0;
-  const b = buf || new Array(16);
-  options = options || {};
-  let node = options.node || _nodeId;
-  let clockseq = options.clockseq !== undefined ? options.clockseq : _clockseq; // node and clockseq need to be initialized to random values if they're not
-  // specified.  We do this lazily to minimize issues related to insufficient
-  // system entropy.  See #189
-
-  if (node == null || clockseq == null) {
-    const seedBytes = options.random || (options.rng || rng)();
-
-    if (node == null) {
-      // Per 4.5, create and 48-bit node id, (47 random bits + multicast bit = 1)
-      node = _nodeId = [seedBytes[0] | 0x01, seedBytes[1], seedBytes[2], seedBytes[3], seedBytes[4], seedBytes[5]];
-    }
-
-    if (clockseq == null) {
-      // Per 4.2.2, randomize (14 bit) clockseq
-      clockseq = _clockseq = (seedBytes[6] << 8 | seedBytes[7]) & 0x3fff;
-    }
-  } // UUID timestamps are 100 nano-second units since the Gregorian epoch,
-  // (1582-10-15 00:00).  JSNumbers aren't precise enough for this, so
-  // time is handled internally as 'msecs' (integer milliseconds) and 'nsecs'
-  // (100-nanoseconds offset from msecs) since unix epoch, 1970-01-01 00:00.
-
-
-  let msecs = options.msecs !== undefined ? options.msecs : Date.now(); // Per 4.2.1.2, use count of uuid's generated during the current clock
-  // cycle to simulate higher resolution clock
-
-  let nsecs = options.nsecs !== undefined ? options.nsecs : _lastNSecs + 1; // Time since last uuid creation (in msecs)
-
-  const dt = msecs - _lastMSecs + (nsecs - _lastNSecs) / 10000; // Per 4.2.1.2, Bump clockseq on clock regression
-
-  if (dt < 0 && options.clockseq === undefined) {
-    clockseq = clockseq + 1 & 0x3fff;
-  } // Reset nsecs if clock regresses (new clockseq) or we've moved onto a new
-  // time interval
-
-
-  if ((dt < 0 || msecs > _lastMSecs) && options.nsecs === undefined) {
-    nsecs = 0;
-  } // Per 4.2.1.2 Throw error if too many uuids are requested
-
-
-  if (nsecs >= 10000) {
-    throw new Error("uuid.v1(): Can't create more than 10M uuids/sec");
-  }
-
-  _lastMSecs = msecs;
-  _lastNSecs = nsecs;
-  _clockseq = clockseq; // Per 4.1.4 - Convert from unix epoch to Gregorian epoch
-
-  msecs += 12219292800000; // `time_low`
-
-  const tl = ((msecs & 0xfffffff) * 10000 + nsecs) % 0x100000000;
-  b[i++] = tl >>> 24 & 0xff;
-  b[i++] = tl >>> 16 & 0xff;
-  b[i++] = tl >>> 8 & 0xff;
-  b[i++] = tl & 0xff; // `time_mid`
-
-  const tmh = msecs / 0x100000000 * 10000 & 0xfffffff;
-  b[i++] = tmh >>> 8 & 0xff;
-  b[i++] = tmh & 0xff; // `time_high_and_version`
-
-  b[i++] = tmh >>> 24 & 0xf | 0x10; // include version
-
-  b[i++] = tmh >>> 16 & 0xff; // `clock_seq_hi_and_reserved` (Per 4.2.2 - include variant)
-
-  b[i++] = clockseq >>> 8 | 0x80; // `clock_seq_low`
-
-  b[i++] = clockseq & 0xff; // `node`
-
-  for (let n = 0; n < 6; ++n) {
-    b[i + n] = node[n];
-  }
-
-  return buf || esm_node_stringify(b);
-}
-
-/* harmony default export */ const esm_node_v1 = (v1);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/parse.js
-
-
-function parse(uuid) {
-  if (!esm_node_validate(uuid)) {
-    throw TypeError('Invalid UUID');
-  }
-
-  let v;
-  const arr = new Uint8Array(16); // Parse ########-....-....-....-............
-
-  arr[0] = (v = parseInt(uuid.slice(0, 8), 16)) >>> 24;
-  arr[1] = v >>> 16 & 0xff;
-  arr[2] = v >>> 8 & 0xff;
-  arr[3] = v & 0xff; // Parse ........-####-....-....-............
-
-  arr[4] = (v = parseInt(uuid.slice(9, 13), 16)) >>> 8;
-  arr[5] = v & 0xff; // Parse ........-....-####-....-............
-
-  arr[6] = (v = parseInt(uuid.slice(14, 18), 16)) >>> 8;
-  arr[7] = v & 0xff; // Parse ........-....-....-####-............
-
-  arr[8] = (v = parseInt(uuid.slice(19, 23), 16)) >>> 8;
-  arr[9] = v & 0xff; // Parse ........-....-....-....-############
-  // (Use "/" to avoid 32-bit truncation when bit-shifting high-order bytes)
-
-  arr[10] = (v = parseInt(uuid.slice(24, 36), 16)) / 0x10000000000 & 0xff;
-  arr[11] = v / 0x100000000 & 0xff;
-  arr[12] = v >>> 24 & 0xff;
-  arr[13] = v >>> 16 & 0xff;
-  arr[14] = v >>> 8 & 0xff;
-  arr[15] = v & 0xff;
-  return arr;
-}
-
-/* harmony default export */ const esm_node_parse = (parse);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v35.js
-
-
-
-function stringToBytes(str) {
-  str = unescape(encodeURIComponent(str)); // UTF8 escape
-
-  const bytes = [];
-
-  for (let i = 0; i < str.length; ++i) {
-    bytes.push(str.charCodeAt(i));
-  }
-
-  return bytes;
-}
-
-const DNS = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
-const URL = '6ba7b811-9dad-11d1-80b4-00c04fd430c8';
-/* harmony default export */ function v35(name, version, hashfunc) {
-  function generateUUID(value, namespace, buf, offset) {
-    if (typeof value === 'string') {
-      value = stringToBytes(value);
-    }
-
-    if (typeof namespace === 'string') {
-      namespace = esm_node_parse(namespace);
-    }
-
-    if (namespace.length !== 16) {
-      throw TypeError('Namespace must be array-like (16 iterable integer values, 0-255)');
-    } // Compute hash of namespace and value, Per 4.3
-    // Future: Use spread syntax when supported on all platforms, e.g. `bytes =
-    // hashfunc([...namespace, ... value])`
-
-
-    let bytes = new Uint8Array(16 + value.length);
-    bytes.set(namespace);
-    bytes.set(value, namespace.length);
-    bytes = hashfunc(bytes);
-    bytes[6] = bytes[6] & 0x0f | version;
-    bytes[8] = bytes[8] & 0x3f | 0x80;
-
-    if (buf) {
-      offset = offset || 0;
-
-      for (let i = 0; i < 16; ++i) {
-        buf[offset + i] = bytes[i];
-      }
-
-      return buf;
-    }
-
-    return esm_node_stringify(bytes);
-  } // Function#name is not settable on some platforms (#270)
-
-
-  try {
-    generateUUID.name = name; // eslint-disable-next-line no-empty
-  } catch (err) {} // For CommonJS default export support
-
-
-  generateUUID.DNS = DNS;
-  generateUUID.URL = URL;
-  return generateUUID;
-}
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/md5.js
-
-
-function md5(bytes) {
-  if (Array.isArray(bytes)) {
-    bytes = Buffer.from(bytes);
-  } else if (typeof bytes === 'string') {
-    bytes = Buffer.from(bytes, 'utf8');
-  }
-
-  return external_crypto_default().createHash('md5').update(bytes).digest();
-}
-
-/* harmony default export */ const esm_node_md5 = (md5);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v3.js
-
-
-const v3 = v35('v3', 0x30, esm_node_md5);
-/* harmony default export */ const esm_node_v3 = (v3);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v4.js
-
-
-
-function v4(options, buf, offset) {
-  options = options || {};
-  const rnds = options.random || (options.rng || rng)(); // Per 4.4, set bits for version and `clock_seq_hi_and_reserved`
-
-  rnds[6] = rnds[6] & 0x0f | 0x40;
-  rnds[8] = rnds[8] & 0x3f | 0x80; // Copy bytes to buffer, if provided
-
-  if (buf) {
-    offset = offset || 0;
-
-    for (let i = 0; i < 16; ++i) {
-      buf[offset + i] = rnds[i];
-    }
-
-    return buf;
-  }
-
-  return esm_node_stringify(rnds);
-}
-
-/* harmony default export */ const esm_node_v4 = (v4);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/sha1.js
-
-
-function sha1(bytes) {
-  if (Array.isArray(bytes)) {
-    bytes = Buffer.from(bytes);
-  } else if (typeof bytes === 'string') {
-    bytes = Buffer.from(bytes, 'utf8');
-  }
-
-  return external_crypto_default().createHash('sha1').update(bytes).digest();
-}
-
-/* harmony default export */ const esm_node_sha1 = (sha1);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/v5.js
-
-
-const v5 = v35('v5', 0x50, esm_node_sha1);
-/* harmony default export */ const esm_node_v5 = (v5);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/nil.js
-/* harmony default export */ const nil = ('00000000-0000-0000-0000-000000000000');
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/version.js
-
-
-function version(uuid) {
-  if (!esm_node_validate(uuid)) {
-    throw TypeError('Invalid UUID');
-  }
-
-  return parseInt(uuid.substr(14, 1), 16);
-}
-
-/* harmony default export */ const esm_node_version = (version);
-;// CONCATENATED MODULE: ./node_modules/uuid/dist/esm-node/index.js
-
-
-
-
-
-
-
-
-
-
-/***/ }),
-
-/***/ 6760:
-/***/ ((module) => {
-
-module.exports = extend
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-
-function extend() {
-    var target = {}
-
-    for (var i = 0; i < arguments.length; i++) {
-        var source = arguments[i]
-
-        for (var key in source) {
-            if (hasOwnProperty.call(source, key)) {
-                target[key] = source[key]
-            }
-        }
-    }
-
-    return target
-}
-
-
-/***/ }),
-
-/***/ 434:
-/***/ ((module) => {
-
-function _extends() {
-  module.exports = _extends = Object.assign ? Object.assign.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  }, module.exports.__esModule = true, module.exports["default"] = module.exports;
-  return _extends.apply(this, arguments);
-}
-module.exports = _extends, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 7071:
-/***/ ((module) => {
-
-function _objectWithoutPropertiesLoose(source, excluded) {
-  if (source == null) return {};
-  var target = {};
-  var sourceKeys = Object.keys(source);
-  var key, i;
-  for (i = 0; i < sourceKeys.length; i++) {
-    key = sourceKeys[i];
-    if (excluded.indexOf(key) >= 0) continue;
-    target[key] = source[key];
-  }
-  return target;
-}
-module.exports = _objectWithoutPropertiesLoose, module.exports.__esModule = true, module.exports["default"] = module.exports;
-
-/***/ }),
-
-/***/ 9417:
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/index.mjs":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/index.mjs ***!
+  \******************************************************************/
 /***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "DBF": () => (/* binding */ faMoon),
-/* harmony export */   "FL8": () => (/* binding */ faBook),
-/* harmony export */   "FVb": () => (/* binding */ faUsers),
-/* harmony export */   "enB": () => (/* binding */ faSun),
-/* harmony export */   "ntl": () => (/* binding */ faMailBulk),
-/* harmony export */   "r$M": () => (/* binding */ faUserFriends),
-/* harmony export */   "wn1": () => (/* binding */ faSearch),
-/* harmony export */   "xiG": () => (/* binding */ faBars)
+/* harmony export */   "fa0": () => (/* binding */ fa0),
+/* harmony export */   "fa1": () => (/* binding */ fa1),
+/* harmony export */   "fa2": () => (/* binding */ fa2),
+/* harmony export */   "fa3": () => (/* binding */ fa3),
+/* harmony export */   "fa4": () => (/* binding */ fa4),
+/* harmony export */   "fa5": () => (/* binding */ fa5),
+/* harmony export */   "fa6": () => (/* binding */ fa6),
+/* harmony export */   "fa7": () => (/* binding */ fa7),
+/* harmony export */   "fa8": () => (/* binding */ fa8),
+/* harmony export */   "fa9": () => (/* binding */ fa9),
+/* harmony export */   "faA": () => (/* binding */ faA),
+/* harmony export */   "faAd": () => (/* binding */ faAd),
+/* harmony export */   "faAdd": () => (/* binding */ faAdd),
+/* harmony export */   "faAddressBook": () => (/* binding */ faAddressBook),
+/* harmony export */   "faAddressCard": () => (/* binding */ faAddressCard),
+/* harmony export */   "faAdjust": () => (/* binding */ faAdjust),
+/* harmony export */   "faAirFreshener": () => (/* binding */ faAirFreshener),
+/* harmony export */   "faAlignCenter": () => (/* binding */ faAlignCenter),
+/* harmony export */   "faAlignJustify": () => (/* binding */ faAlignJustify),
+/* harmony export */   "faAlignLeft": () => (/* binding */ faAlignLeft),
+/* harmony export */   "faAlignRight": () => (/* binding */ faAlignRight),
+/* harmony export */   "faAllergies": () => (/* binding */ faAllergies),
+/* harmony export */   "faAmbulance": () => (/* binding */ faAmbulance),
+/* harmony export */   "faAmericanSignLanguageInterpreting": () => (/* binding */ faAmericanSignLanguageInterpreting),
+/* harmony export */   "faAnchor": () => (/* binding */ faAnchor),
+/* harmony export */   "faAnchorCircleCheck": () => (/* binding */ faAnchorCircleCheck),
+/* harmony export */   "faAnchorCircleExclamation": () => (/* binding */ faAnchorCircleExclamation),
+/* harmony export */   "faAnchorCircleXmark": () => (/* binding */ faAnchorCircleXmark),
+/* harmony export */   "faAnchorLock": () => (/* binding */ faAnchorLock),
+/* harmony export */   "faAngleDoubleDown": () => (/* binding */ faAngleDoubleDown),
+/* harmony export */   "faAngleDoubleLeft": () => (/* binding */ faAngleDoubleLeft),
+/* harmony export */   "faAngleDoubleRight": () => (/* binding */ faAngleDoubleRight),
+/* harmony export */   "faAngleDoubleUp": () => (/* binding */ faAngleDoubleUp),
+/* harmony export */   "faAngleDown": () => (/* binding */ faAngleDown),
+/* harmony export */   "faAngleLeft": () => (/* binding */ faAngleLeft),
+/* harmony export */   "faAngleRight": () => (/* binding */ faAngleRight),
+/* harmony export */   "faAngleUp": () => (/* binding */ faAngleUp),
+/* harmony export */   "faAnglesDown": () => (/* binding */ faAnglesDown),
+/* harmony export */   "faAnglesLeft": () => (/* binding */ faAnglesLeft),
+/* harmony export */   "faAnglesRight": () => (/* binding */ faAnglesRight),
+/* harmony export */   "faAnglesUp": () => (/* binding */ faAnglesUp),
+/* harmony export */   "faAngry": () => (/* binding */ faAngry),
+/* harmony export */   "faAnkh": () => (/* binding */ faAnkh),
+/* harmony export */   "faAppleAlt": () => (/* binding */ faAppleAlt),
+/* harmony export */   "faAppleWhole": () => (/* binding */ faAppleWhole),
+/* harmony export */   "faArchive": () => (/* binding */ faArchive),
+/* harmony export */   "faArchway": () => (/* binding */ faArchway),
+/* harmony export */   "faAreaChart": () => (/* binding */ faAreaChart),
+/* harmony export */   "faArrowAltCircleDown": () => (/* binding */ faArrowAltCircleDown),
+/* harmony export */   "faArrowAltCircleLeft": () => (/* binding */ faArrowAltCircleLeft),
+/* harmony export */   "faArrowAltCircleRight": () => (/* binding */ faArrowAltCircleRight),
+/* harmony export */   "faArrowAltCircleUp": () => (/* binding */ faArrowAltCircleUp),
+/* harmony export */   "faArrowCircleDown": () => (/* binding */ faArrowCircleDown),
+/* harmony export */   "faArrowCircleLeft": () => (/* binding */ faArrowCircleLeft),
+/* harmony export */   "faArrowCircleRight": () => (/* binding */ faArrowCircleRight),
+/* harmony export */   "faArrowCircleUp": () => (/* binding */ faArrowCircleUp),
+/* harmony export */   "faArrowDown": () => (/* binding */ faArrowDown),
+/* harmony export */   "faArrowDown19": () => (/* binding */ faArrowDown19),
+/* harmony export */   "faArrowDown91": () => (/* binding */ faArrowDown91),
+/* harmony export */   "faArrowDownAZ": () => (/* binding */ faArrowDownAZ),
+/* harmony export */   "faArrowDownLong": () => (/* binding */ faArrowDownLong),
+/* harmony export */   "faArrowDownShortWide": () => (/* binding */ faArrowDownShortWide),
+/* harmony export */   "faArrowDownUpAcrossLine": () => (/* binding */ faArrowDownUpAcrossLine),
+/* harmony export */   "faArrowDownUpLock": () => (/* binding */ faArrowDownUpLock),
+/* harmony export */   "faArrowDownWideShort": () => (/* binding */ faArrowDownWideShort),
+/* harmony export */   "faArrowDownZA": () => (/* binding */ faArrowDownZA),
+/* harmony export */   "faArrowLeft": () => (/* binding */ faArrowLeft),
+/* harmony export */   "faArrowLeftLong": () => (/* binding */ faArrowLeftLong),
+/* harmony export */   "faArrowLeftRotate": () => (/* binding */ faArrowLeftRotate),
+/* harmony export */   "faArrowPointer": () => (/* binding */ faArrowPointer),
+/* harmony export */   "faArrowRight": () => (/* binding */ faArrowRight),
+/* harmony export */   "faArrowRightArrowLeft": () => (/* binding */ faArrowRightArrowLeft),
+/* harmony export */   "faArrowRightFromBracket": () => (/* binding */ faArrowRightFromBracket),
+/* harmony export */   "faArrowRightFromFile": () => (/* binding */ faArrowRightFromFile),
+/* harmony export */   "faArrowRightLong": () => (/* binding */ faArrowRightLong),
+/* harmony export */   "faArrowRightRotate": () => (/* binding */ faArrowRightRotate),
+/* harmony export */   "faArrowRightToBracket": () => (/* binding */ faArrowRightToBracket),
+/* harmony export */   "faArrowRightToCity": () => (/* binding */ faArrowRightToCity),
+/* harmony export */   "faArrowRightToFile": () => (/* binding */ faArrowRightToFile),
+/* harmony export */   "faArrowRotateBack": () => (/* binding */ faArrowRotateBack),
+/* harmony export */   "faArrowRotateBackward": () => (/* binding */ faArrowRotateBackward),
+/* harmony export */   "faArrowRotateForward": () => (/* binding */ faArrowRotateForward),
+/* harmony export */   "faArrowRotateLeft": () => (/* binding */ faArrowRotateLeft),
+/* harmony export */   "faArrowRotateRight": () => (/* binding */ faArrowRotateRight),
+/* harmony export */   "faArrowTrendDown": () => (/* binding */ faArrowTrendDown),
+/* harmony export */   "faArrowTrendUp": () => (/* binding */ faArrowTrendUp),
+/* harmony export */   "faArrowTurnDown": () => (/* binding */ faArrowTurnDown),
+/* harmony export */   "faArrowTurnRight": () => (/* binding */ faArrowTurnRight),
+/* harmony export */   "faArrowTurnUp": () => (/* binding */ faArrowTurnUp),
+/* harmony export */   "faArrowUp": () => (/* binding */ faArrowUp),
+/* harmony export */   "faArrowUp19": () => (/* binding */ faArrowUp19),
+/* harmony export */   "faArrowUp91": () => (/* binding */ faArrowUp91),
+/* harmony export */   "faArrowUpAZ": () => (/* binding */ faArrowUpAZ),
+/* harmony export */   "faArrowUpFromBracket": () => (/* binding */ faArrowUpFromBracket),
+/* harmony export */   "faArrowUpFromGroundWater": () => (/* binding */ faArrowUpFromGroundWater),
+/* harmony export */   "faArrowUpFromWaterPump": () => (/* binding */ faArrowUpFromWaterPump),
+/* harmony export */   "faArrowUpLong": () => (/* binding */ faArrowUpLong),
+/* harmony export */   "faArrowUpRightDots": () => (/* binding */ faArrowUpRightDots),
+/* harmony export */   "faArrowUpRightFromSquare": () => (/* binding */ faArrowUpRightFromSquare),
+/* harmony export */   "faArrowUpShortWide": () => (/* binding */ faArrowUpShortWide),
+/* harmony export */   "faArrowUpWideShort": () => (/* binding */ faArrowUpWideShort),
+/* harmony export */   "faArrowUpZA": () => (/* binding */ faArrowUpZA),
+/* harmony export */   "faArrows": () => (/* binding */ faArrows),
+/* harmony export */   "faArrowsAlt": () => (/* binding */ faArrowsAlt),
+/* harmony export */   "faArrowsAltH": () => (/* binding */ faArrowsAltH),
+/* harmony export */   "faArrowsAltV": () => (/* binding */ faArrowsAltV),
+/* harmony export */   "faArrowsDownToLine": () => (/* binding */ faArrowsDownToLine),
+/* harmony export */   "faArrowsDownToPeople": () => (/* binding */ faArrowsDownToPeople),
+/* harmony export */   "faArrowsH": () => (/* binding */ faArrowsH),
+/* harmony export */   "faArrowsLeftRight": () => (/* binding */ faArrowsLeftRight),
+/* harmony export */   "faArrowsLeftRightToLine": () => (/* binding */ faArrowsLeftRightToLine),
+/* harmony export */   "faArrowsRotate": () => (/* binding */ faArrowsRotate),
+/* harmony export */   "faArrowsSpin": () => (/* binding */ faArrowsSpin),
+/* harmony export */   "faArrowsSplitUpAndLeft": () => (/* binding */ faArrowsSplitUpAndLeft),
+/* harmony export */   "faArrowsToCircle": () => (/* binding */ faArrowsToCircle),
+/* harmony export */   "faArrowsToDot": () => (/* binding */ faArrowsToDot),
+/* harmony export */   "faArrowsToEye": () => (/* binding */ faArrowsToEye),
+/* harmony export */   "faArrowsTurnRight": () => (/* binding */ faArrowsTurnRight),
+/* harmony export */   "faArrowsTurnToDots": () => (/* binding */ faArrowsTurnToDots),
+/* harmony export */   "faArrowsUpDown": () => (/* binding */ faArrowsUpDown),
+/* harmony export */   "faArrowsUpDownLeftRight": () => (/* binding */ faArrowsUpDownLeftRight),
+/* harmony export */   "faArrowsUpToLine": () => (/* binding */ faArrowsUpToLine),
+/* harmony export */   "faArrowsV": () => (/* binding */ faArrowsV),
+/* harmony export */   "faAslInterpreting": () => (/* binding */ faAslInterpreting),
+/* harmony export */   "faAssistiveListeningSystems": () => (/* binding */ faAssistiveListeningSystems),
+/* harmony export */   "faAsterisk": () => (/* binding */ faAsterisk),
+/* harmony export */   "faAt": () => (/* binding */ faAt),
+/* harmony export */   "faAtlas": () => (/* binding */ faAtlas),
+/* harmony export */   "faAtom": () => (/* binding */ faAtom),
+/* harmony export */   "faAudioDescription": () => (/* binding */ faAudioDescription),
+/* harmony export */   "faAustralSign": () => (/* binding */ faAustralSign),
+/* harmony export */   "faAutomobile": () => (/* binding */ faAutomobile),
+/* harmony export */   "faAward": () => (/* binding */ faAward),
+/* harmony export */   "faB": () => (/* binding */ faB),
+/* harmony export */   "faBaby": () => (/* binding */ faBaby),
+/* harmony export */   "faBabyCarriage": () => (/* binding */ faBabyCarriage),
+/* harmony export */   "faBackspace": () => (/* binding */ faBackspace),
+/* harmony export */   "faBackward": () => (/* binding */ faBackward),
+/* harmony export */   "faBackwardFast": () => (/* binding */ faBackwardFast),
+/* harmony export */   "faBackwardStep": () => (/* binding */ faBackwardStep),
+/* harmony export */   "faBacon": () => (/* binding */ faBacon),
+/* harmony export */   "faBacteria": () => (/* binding */ faBacteria),
+/* harmony export */   "faBacterium": () => (/* binding */ faBacterium),
+/* harmony export */   "faBagShopping": () => (/* binding */ faBagShopping),
+/* harmony export */   "faBahai": () => (/* binding */ faBahai),
+/* harmony export */   "faBahtSign": () => (/* binding */ faBahtSign),
+/* harmony export */   "faBalanceScale": () => (/* binding */ faBalanceScale),
+/* harmony export */   "faBalanceScaleLeft": () => (/* binding */ faBalanceScaleLeft),
+/* harmony export */   "faBalanceScaleRight": () => (/* binding */ faBalanceScaleRight),
+/* harmony export */   "faBan": () => (/* binding */ faBan),
+/* harmony export */   "faBanSmoking": () => (/* binding */ faBanSmoking),
+/* harmony export */   "faBandAid": () => (/* binding */ faBandAid),
+/* harmony export */   "faBandage": () => (/* binding */ faBandage),
+/* harmony export */   "faBangladeshiTakaSign": () => (/* binding */ faBangladeshiTakaSign),
+/* harmony export */   "faBank": () => (/* binding */ faBank),
+/* harmony export */   "faBarChart": () => (/* binding */ faBarChart),
+/* harmony export */   "faBarcode": () => (/* binding */ faBarcode),
+/* harmony export */   "faBars": () => (/* binding */ faBars),
+/* harmony export */   "faBarsProgress": () => (/* binding */ faBarsProgress),
+/* harmony export */   "faBarsStaggered": () => (/* binding */ faBarsStaggered),
+/* harmony export */   "faBaseball": () => (/* binding */ faBaseball),
+/* harmony export */   "faBaseballBall": () => (/* binding */ faBaseballBall),
+/* harmony export */   "faBaseballBatBall": () => (/* binding */ faBaseballBatBall),
+/* harmony export */   "faBasketShopping": () => (/* binding */ faBasketShopping),
+/* harmony export */   "faBasketball": () => (/* binding */ faBasketball),
+/* harmony export */   "faBasketballBall": () => (/* binding */ faBasketballBall),
+/* harmony export */   "faBath": () => (/* binding */ faBath),
+/* harmony export */   "faBathtub": () => (/* binding */ faBathtub),
+/* harmony export */   "faBattery": () => (/* binding */ faBattery),
+/* harmony export */   "faBattery0": () => (/* binding */ faBattery0),
+/* harmony export */   "faBattery2": () => (/* binding */ faBattery2),
+/* harmony export */   "faBattery3": () => (/* binding */ faBattery3),
+/* harmony export */   "faBattery4": () => (/* binding */ faBattery4),
+/* harmony export */   "faBattery5": () => (/* binding */ faBattery5),
+/* harmony export */   "faBatteryCar": () => (/* binding */ faBatteryCar),
+/* harmony export */   "faBatteryEmpty": () => (/* binding */ faBatteryEmpty),
+/* harmony export */   "faBatteryFull": () => (/* binding */ faBatteryFull),
+/* harmony export */   "faBatteryHalf": () => (/* binding */ faBatteryHalf),
+/* harmony export */   "faBatteryQuarter": () => (/* binding */ faBatteryQuarter),
+/* harmony export */   "faBatteryThreeQuarters": () => (/* binding */ faBatteryThreeQuarters),
+/* harmony export */   "faBed": () => (/* binding */ faBed),
+/* harmony export */   "faBedPulse": () => (/* binding */ faBedPulse),
+/* harmony export */   "faBeer": () => (/* binding */ faBeer),
+/* harmony export */   "faBeerMugEmpty": () => (/* binding */ faBeerMugEmpty),
+/* harmony export */   "faBell": () => (/* binding */ faBell),
+/* harmony export */   "faBellConcierge": () => (/* binding */ faBellConcierge),
+/* harmony export */   "faBellSlash": () => (/* binding */ faBellSlash),
+/* harmony export */   "faBezierCurve": () => (/* binding */ faBezierCurve),
+/* harmony export */   "faBible": () => (/* binding */ faBible),
+/* harmony export */   "faBicycle": () => (/* binding */ faBicycle),
+/* harmony export */   "faBiking": () => (/* binding */ faBiking),
+/* harmony export */   "faBinoculars": () => (/* binding */ faBinoculars),
+/* harmony export */   "faBiohazard": () => (/* binding */ faBiohazard),
+/* harmony export */   "faBirthdayCake": () => (/* binding */ faBirthdayCake),
+/* harmony export */   "faBitcoinSign": () => (/* binding */ faBitcoinSign),
+/* harmony export */   "faBlackboard": () => (/* binding */ faBlackboard),
+/* harmony export */   "faBlender": () => (/* binding */ faBlender),
+/* harmony export */   "faBlenderPhone": () => (/* binding */ faBlenderPhone),
+/* harmony export */   "faBlind": () => (/* binding */ faBlind),
+/* harmony export */   "faBlog": () => (/* binding */ faBlog),
+/* harmony export */   "faBold": () => (/* binding */ faBold),
+/* harmony export */   "faBolt": () => (/* binding */ faBolt),
+/* harmony export */   "faBoltLightning": () => (/* binding */ faBoltLightning),
+/* harmony export */   "faBomb": () => (/* binding */ faBomb),
+/* harmony export */   "faBone": () => (/* binding */ faBone),
+/* harmony export */   "faBong": () => (/* binding */ faBong),
+/* harmony export */   "faBook": () => (/* binding */ faBook),
+/* harmony export */   "faBookAtlas": () => (/* binding */ faBookAtlas),
+/* harmony export */   "faBookBible": () => (/* binding */ faBookBible),
+/* harmony export */   "faBookBookmark": () => (/* binding */ faBookBookmark),
+/* harmony export */   "faBookDead": () => (/* binding */ faBookDead),
+/* harmony export */   "faBookJournalWhills": () => (/* binding */ faBookJournalWhills),
+/* harmony export */   "faBookMedical": () => (/* binding */ faBookMedical),
+/* harmony export */   "faBookOpen": () => (/* binding */ faBookOpen),
+/* harmony export */   "faBookOpenReader": () => (/* binding */ faBookOpenReader),
+/* harmony export */   "faBookQuran": () => (/* binding */ faBookQuran),
+/* harmony export */   "faBookReader": () => (/* binding */ faBookReader),
+/* harmony export */   "faBookSkull": () => (/* binding */ faBookSkull),
+/* harmony export */   "faBookTanakh": () => (/* binding */ faBookTanakh),
+/* harmony export */   "faBookmark": () => (/* binding */ faBookmark),
+/* harmony export */   "faBorderAll": () => (/* binding */ faBorderAll),
+/* harmony export */   "faBorderNone": () => (/* binding */ faBorderNone),
+/* harmony export */   "faBorderStyle": () => (/* binding */ faBorderStyle),
+/* harmony export */   "faBorderTopLeft": () => (/* binding */ faBorderTopLeft),
+/* harmony export */   "faBoreHole": () => (/* binding */ faBoreHole),
+/* harmony export */   "faBottleDroplet": () => (/* binding */ faBottleDroplet),
+/* harmony export */   "faBottleWater": () => (/* binding */ faBottleWater),
+/* harmony export */   "faBowlFood": () => (/* binding */ faBowlFood),
+/* harmony export */   "faBowlRice": () => (/* binding */ faBowlRice),
+/* harmony export */   "faBowlingBall": () => (/* binding */ faBowlingBall),
+/* harmony export */   "faBox": () => (/* binding */ faBox),
+/* harmony export */   "faBoxArchive": () => (/* binding */ faBoxArchive),
+/* harmony export */   "faBoxOpen": () => (/* binding */ faBoxOpen),
+/* harmony export */   "faBoxTissue": () => (/* binding */ faBoxTissue),
+/* harmony export */   "faBoxes": () => (/* binding */ faBoxes),
+/* harmony export */   "faBoxesAlt": () => (/* binding */ faBoxesAlt),
+/* harmony export */   "faBoxesPacking": () => (/* binding */ faBoxesPacking),
+/* harmony export */   "faBoxesStacked": () => (/* binding */ faBoxesStacked),
+/* harmony export */   "faBraille": () => (/* binding */ faBraille),
+/* harmony export */   "faBrain": () => (/* binding */ faBrain),
+/* harmony export */   "faBrazilianRealSign": () => (/* binding */ faBrazilianRealSign),
+/* harmony export */   "faBreadSlice": () => (/* binding */ faBreadSlice),
+/* harmony export */   "faBridge": () => (/* binding */ faBridge),
+/* harmony export */   "faBridgeCircleCheck": () => (/* binding */ faBridgeCircleCheck),
+/* harmony export */   "faBridgeCircleExclamation": () => (/* binding */ faBridgeCircleExclamation),
+/* harmony export */   "faBridgeCircleXmark": () => (/* binding */ faBridgeCircleXmark),
+/* harmony export */   "faBridgeLock": () => (/* binding */ faBridgeLock),
+/* harmony export */   "faBridgeWater": () => (/* binding */ faBridgeWater),
+/* harmony export */   "faBriefcase": () => (/* binding */ faBriefcase),
+/* harmony export */   "faBriefcaseClock": () => (/* binding */ faBriefcaseClock),
+/* harmony export */   "faBriefcaseMedical": () => (/* binding */ faBriefcaseMedical),
+/* harmony export */   "faBroadcastTower": () => (/* binding */ faBroadcastTower),
+/* harmony export */   "faBroom": () => (/* binding */ faBroom),
+/* harmony export */   "faBroomBall": () => (/* binding */ faBroomBall),
+/* harmony export */   "faBrush": () => (/* binding */ faBrush),
+/* harmony export */   "faBucket": () => (/* binding */ faBucket),
+/* harmony export */   "faBug": () => (/* binding */ faBug),
+/* harmony export */   "faBugSlash": () => (/* binding */ faBugSlash),
+/* harmony export */   "faBugs": () => (/* binding */ faBugs),
+/* harmony export */   "faBuilding": () => (/* binding */ faBuilding),
+/* harmony export */   "faBuildingCircleArrowRight": () => (/* binding */ faBuildingCircleArrowRight),
+/* harmony export */   "faBuildingCircleCheck": () => (/* binding */ faBuildingCircleCheck),
+/* harmony export */   "faBuildingCircleExclamation": () => (/* binding */ faBuildingCircleExclamation),
+/* harmony export */   "faBuildingCircleXmark": () => (/* binding */ faBuildingCircleXmark),
+/* harmony export */   "faBuildingColumns": () => (/* binding */ faBuildingColumns),
+/* harmony export */   "faBuildingFlag": () => (/* binding */ faBuildingFlag),
+/* harmony export */   "faBuildingLock": () => (/* binding */ faBuildingLock),
+/* harmony export */   "faBuildingNgo": () => (/* binding */ faBuildingNgo),
+/* harmony export */   "faBuildingShield": () => (/* binding */ faBuildingShield),
+/* harmony export */   "faBuildingUn": () => (/* binding */ faBuildingUn),
+/* harmony export */   "faBuildingUser": () => (/* binding */ faBuildingUser),
+/* harmony export */   "faBuildingWheat": () => (/* binding */ faBuildingWheat),
+/* harmony export */   "faBullhorn": () => (/* binding */ faBullhorn),
+/* harmony export */   "faBullseye": () => (/* binding */ faBullseye),
+/* harmony export */   "faBurger": () => (/* binding */ faBurger),
+/* harmony export */   "faBurn": () => (/* binding */ faBurn),
+/* harmony export */   "faBurst": () => (/* binding */ faBurst),
+/* harmony export */   "faBus": () => (/* binding */ faBus),
+/* harmony export */   "faBusAlt": () => (/* binding */ faBusAlt),
+/* harmony export */   "faBusSimple": () => (/* binding */ faBusSimple),
+/* harmony export */   "faBusinessTime": () => (/* binding */ faBusinessTime),
+/* harmony export */   "faC": () => (/* binding */ faC),
+/* harmony export */   "faCab": () => (/* binding */ faCab),
+/* harmony export */   "faCableCar": () => (/* binding */ faCableCar),
+/* harmony export */   "faCake": () => (/* binding */ faCake),
+/* harmony export */   "faCakeCandles": () => (/* binding */ faCakeCandles),
+/* harmony export */   "faCalculator": () => (/* binding */ faCalculator),
+/* harmony export */   "faCalendar": () => (/* binding */ faCalendar),
+/* harmony export */   "faCalendarAlt": () => (/* binding */ faCalendarAlt),
+/* harmony export */   "faCalendarCheck": () => (/* binding */ faCalendarCheck),
+/* harmony export */   "faCalendarDay": () => (/* binding */ faCalendarDay),
+/* harmony export */   "faCalendarDays": () => (/* binding */ faCalendarDays),
+/* harmony export */   "faCalendarMinus": () => (/* binding */ faCalendarMinus),
+/* harmony export */   "faCalendarPlus": () => (/* binding */ faCalendarPlus),
+/* harmony export */   "faCalendarTimes": () => (/* binding */ faCalendarTimes),
+/* harmony export */   "faCalendarWeek": () => (/* binding */ faCalendarWeek),
+/* harmony export */   "faCalendarXmark": () => (/* binding */ faCalendarXmark),
+/* harmony export */   "faCamera": () => (/* binding */ faCamera),
+/* harmony export */   "faCameraAlt": () => (/* binding */ faCameraAlt),
+/* harmony export */   "faCameraRetro": () => (/* binding */ faCameraRetro),
+/* harmony export */   "faCameraRotate": () => (/* binding */ faCameraRotate),
+/* harmony export */   "faCampground": () => (/* binding */ faCampground),
+/* harmony export */   "faCancel": () => (/* binding */ faCancel),
+/* harmony export */   "faCandyCane": () => (/* binding */ faCandyCane),
+/* harmony export */   "faCannabis": () => (/* binding */ faCannabis),
+/* harmony export */   "faCapsules": () => (/* binding */ faCapsules),
+/* harmony export */   "faCar": () => (/* binding */ faCar),
+/* harmony export */   "faCarAlt": () => (/* binding */ faCarAlt),
+/* harmony export */   "faCarBattery": () => (/* binding */ faCarBattery),
+/* harmony export */   "faCarBurst": () => (/* binding */ faCarBurst),
+/* harmony export */   "faCarCrash": () => (/* binding */ faCarCrash),
+/* harmony export */   "faCarOn": () => (/* binding */ faCarOn),
+/* harmony export */   "faCarRear": () => (/* binding */ faCarRear),
+/* harmony export */   "faCarSide": () => (/* binding */ faCarSide),
+/* harmony export */   "faCarTunnel": () => (/* binding */ faCarTunnel),
+/* harmony export */   "faCaravan": () => (/* binding */ faCaravan),
+/* harmony export */   "faCaretDown": () => (/* binding */ faCaretDown),
+/* harmony export */   "faCaretLeft": () => (/* binding */ faCaretLeft),
+/* harmony export */   "faCaretRight": () => (/* binding */ faCaretRight),
+/* harmony export */   "faCaretSquareDown": () => (/* binding */ faCaretSquareDown),
+/* harmony export */   "faCaretSquareLeft": () => (/* binding */ faCaretSquareLeft),
+/* harmony export */   "faCaretSquareRight": () => (/* binding */ faCaretSquareRight),
+/* harmony export */   "faCaretSquareUp": () => (/* binding */ faCaretSquareUp),
+/* harmony export */   "faCaretUp": () => (/* binding */ faCaretUp),
+/* harmony export */   "faCarriageBaby": () => (/* binding */ faCarriageBaby),
+/* harmony export */   "faCarrot": () => (/* binding */ faCarrot),
+/* harmony export */   "faCartArrowDown": () => (/* binding */ faCartArrowDown),
+/* harmony export */   "faCartFlatbed": () => (/* binding */ faCartFlatbed),
+/* harmony export */   "faCartFlatbedSuitcase": () => (/* binding */ faCartFlatbedSuitcase),
+/* harmony export */   "faCartPlus": () => (/* binding */ faCartPlus),
+/* harmony export */   "faCartShopping": () => (/* binding */ faCartShopping),
+/* harmony export */   "faCashRegister": () => (/* binding */ faCashRegister),
+/* harmony export */   "faCat": () => (/* binding */ faCat),
+/* harmony export */   "faCediSign": () => (/* binding */ faCediSign),
+/* harmony export */   "faCentSign": () => (/* binding */ faCentSign),
+/* harmony export */   "faCertificate": () => (/* binding */ faCertificate),
+/* harmony export */   "faChain": () => (/* binding */ faChain),
+/* harmony export */   "faChainBroken": () => (/* binding */ faChainBroken),
+/* harmony export */   "faChainSlash": () => (/* binding */ faChainSlash),
+/* harmony export */   "faChair": () => (/* binding */ faChair),
+/* harmony export */   "faChalkboard": () => (/* binding */ faChalkboard),
+/* harmony export */   "faChalkboardTeacher": () => (/* binding */ faChalkboardTeacher),
+/* harmony export */   "faChalkboardUser": () => (/* binding */ faChalkboardUser),
+/* harmony export */   "faChampagneGlasses": () => (/* binding */ faChampagneGlasses),
+/* harmony export */   "faChargingStation": () => (/* binding */ faChargingStation),
+/* harmony export */   "faChartArea": () => (/* binding */ faChartArea),
+/* harmony export */   "faChartBar": () => (/* binding */ faChartBar),
+/* harmony export */   "faChartColumn": () => (/* binding */ faChartColumn),
+/* harmony export */   "faChartGantt": () => (/* binding */ faChartGantt),
+/* harmony export */   "faChartLine": () => (/* binding */ faChartLine),
+/* harmony export */   "faChartPie": () => (/* binding */ faChartPie),
+/* harmony export */   "faChartSimple": () => (/* binding */ faChartSimple),
+/* harmony export */   "faCheck": () => (/* binding */ faCheck),
+/* harmony export */   "faCheckCircle": () => (/* binding */ faCheckCircle),
+/* harmony export */   "faCheckDouble": () => (/* binding */ faCheckDouble),
+/* harmony export */   "faCheckSquare": () => (/* binding */ faCheckSquare),
+/* harmony export */   "faCheckToSlot": () => (/* binding */ faCheckToSlot),
+/* harmony export */   "faCheese": () => (/* binding */ faCheese),
+/* harmony export */   "faChess": () => (/* binding */ faChess),
+/* harmony export */   "faChessBishop": () => (/* binding */ faChessBishop),
+/* harmony export */   "faChessBoard": () => (/* binding */ faChessBoard),
+/* harmony export */   "faChessKing": () => (/* binding */ faChessKing),
+/* harmony export */   "faChessKnight": () => (/* binding */ faChessKnight),
+/* harmony export */   "faChessPawn": () => (/* binding */ faChessPawn),
+/* harmony export */   "faChessQueen": () => (/* binding */ faChessQueen),
+/* harmony export */   "faChessRook": () => (/* binding */ faChessRook),
+/* harmony export */   "faChevronCircleDown": () => (/* binding */ faChevronCircleDown),
+/* harmony export */   "faChevronCircleLeft": () => (/* binding */ faChevronCircleLeft),
+/* harmony export */   "faChevronCircleRight": () => (/* binding */ faChevronCircleRight),
+/* harmony export */   "faChevronCircleUp": () => (/* binding */ faChevronCircleUp),
+/* harmony export */   "faChevronDown": () => (/* binding */ faChevronDown),
+/* harmony export */   "faChevronLeft": () => (/* binding */ faChevronLeft),
+/* harmony export */   "faChevronRight": () => (/* binding */ faChevronRight),
+/* harmony export */   "faChevronUp": () => (/* binding */ faChevronUp),
+/* harmony export */   "faChild": () => (/* binding */ faChild),
+/* harmony export */   "faChildCombatant": () => (/* binding */ faChildCombatant),
+/* harmony export */   "faChildDress": () => (/* binding */ faChildDress),
+/* harmony export */   "faChildReaching": () => (/* binding */ faChildReaching),
+/* harmony export */   "faChildRifle": () => (/* binding */ faChildRifle),
+/* harmony export */   "faChildren": () => (/* binding */ faChildren),
+/* harmony export */   "faChurch": () => (/* binding */ faChurch),
+/* harmony export */   "faCircle": () => (/* binding */ faCircle),
+/* harmony export */   "faCircleArrowDown": () => (/* binding */ faCircleArrowDown),
+/* harmony export */   "faCircleArrowLeft": () => (/* binding */ faCircleArrowLeft),
+/* harmony export */   "faCircleArrowRight": () => (/* binding */ faCircleArrowRight),
+/* harmony export */   "faCircleArrowUp": () => (/* binding */ faCircleArrowUp),
+/* harmony export */   "faCircleCheck": () => (/* binding */ faCircleCheck),
+/* harmony export */   "faCircleChevronDown": () => (/* binding */ faCircleChevronDown),
+/* harmony export */   "faCircleChevronLeft": () => (/* binding */ faCircleChevronLeft),
+/* harmony export */   "faCircleChevronRight": () => (/* binding */ faCircleChevronRight),
+/* harmony export */   "faCircleChevronUp": () => (/* binding */ faCircleChevronUp),
+/* harmony export */   "faCircleDollarToSlot": () => (/* binding */ faCircleDollarToSlot),
+/* harmony export */   "faCircleDot": () => (/* binding */ faCircleDot),
+/* harmony export */   "faCircleDown": () => (/* binding */ faCircleDown),
+/* harmony export */   "faCircleExclamation": () => (/* binding */ faCircleExclamation),
+/* harmony export */   "faCircleH": () => (/* binding */ faCircleH),
+/* harmony export */   "faCircleHalfStroke": () => (/* binding */ faCircleHalfStroke),
+/* harmony export */   "faCircleInfo": () => (/* binding */ faCircleInfo),
+/* harmony export */   "faCircleLeft": () => (/* binding */ faCircleLeft),
+/* harmony export */   "faCircleMinus": () => (/* binding */ faCircleMinus),
+/* harmony export */   "faCircleNodes": () => (/* binding */ faCircleNodes),
+/* harmony export */   "faCircleNotch": () => (/* binding */ faCircleNotch),
+/* harmony export */   "faCirclePause": () => (/* binding */ faCirclePause),
+/* harmony export */   "faCirclePlay": () => (/* binding */ faCirclePlay),
+/* harmony export */   "faCirclePlus": () => (/* binding */ faCirclePlus),
+/* harmony export */   "faCircleQuestion": () => (/* binding */ faCircleQuestion),
+/* harmony export */   "faCircleRadiation": () => (/* binding */ faCircleRadiation),
+/* harmony export */   "faCircleRight": () => (/* binding */ faCircleRight),
+/* harmony export */   "faCircleStop": () => (/* binding */ faCircleStop),
+/* harmony export */   "faCircleUp": () => (/* binding */ faCircleUp),
+/* harmony export */   "faCircleUser": () => (/* binding */ faCircleUser),
+/* harmony export */   "faCircleXmark": () => (/* binding */ faCircleXmark),
+/* harmony export */   "faCity": () => (/* binding */ faCity),
+/* harmony export */   "faClapperboard": () => (/* binding */ faClapperboard),
+/* harmony export */   "faClinicMedical": () => (/* binding */ faClinicMedical),
+/* harmony export */   "faClipboard": () => (/* binding */ faClipboard),
+/* harmony export */   "faClipboardCheck": () => (/* binding */ faClipboardCheck),
+/* harmony export */   "faClipboardList": () => (/* binding */ faClipboardList),
+/* harmony export */   "faClipboardQuestion": () => (/* binding */ faClipboardQuestion),
+/* harmony export */   "faClipboardUser": () => (/* binding */ faClipboardUser),
+/* harmony export */   "faClock": () => (/* binding */ faClock),
+/* harmony export */   "faClockFour": () => (/* binding */ faClockFour),
+/* harmony export */   "faClockRotateLeft": () => (/* binding */ faClockRotateLeft),
+/* harmony export */   "faClone": () => (/* binding */ faClone),
+/* harmony export */   "faClose": () => (/* binding */ faClose),
+/* harmony export */   "faClosedCaptioning": () => (/* binding */ faClosedCaptioning),
+/* harmony export */   "faCloud": () => (/* binding */ faCloud),
+/* harmony export */   "faCloudArrowDown": () => (/* binding */ faCloudArrowDown),
+/* harmony export */   "faCloudArrowUp": () => (/* binding */ faCloudArrowUp),
+/* harmony export */   "faCloudBolt": () => (/* binding */ faCloudBolt),
+/* harmony export */   "faCloudDownload": () => (/* binding */ faCloudDownload),
+/* harmony export */   "faCloudDownloadAlt": () => (/* binding */ faCloudDownloadAlt),
+/* harmony export */   "faCloudMeatball": () => (/* binding */ faCloudMeatball),
+/* harmony export */   "faCloudMoon": () => (/* binding */ faCloudMoon),
+/* harmony export */   "faCloudMoonRain": () => (/* binding */ faCloudMoonRain),
+/* harmony export */   "faCloudRain": () => (/* binding */ faCloudRain),
+/* harmony export */   "faCloudShowersHeavy": () => (/* binding */ faCloudShowersHeavy),
+/* harmony export */   "faCloudShowersWater": () => (/* binding */ faCloudShowersWater),
+/* harmony export */   "faCloudSun": () => (/* binding */ faCloudSun),
+/* harmony export */   "faCloudSunRain": () => (/* binding */ faCloudSunRain),
+/* harmony export */   "faCloudUpload": () => (/* binding */ faCloudUpload),
+/* harmony export */   "faCloudUploadAlt": () => (/* binding */ faCloudUploadAlt),
+/* harmony export */   "faClover": () => (/* binding */ faClover),
+/* harmony export */   "faCny": () => (/* binding */ faCny),
+/* harmony export */   "faCocktail": () => (/* binding */ faCocktail),
+/* harmony export */   "faCode": () => (/* binding */ faCode),
+/* harmony export */   "faCodeBranch": () => (/* binding */ faCodeBranch),
+/* harmony export */   "faCodeCommit": () => (/* binding */ faCodeCommit),
+/* harmony export */   "faCodeCompare": () => (/* binding */ faCodeCompare),
+/* harmony export */   "faCodeFork": () => (/* binding */ faCodeFork),
+/* harmony export */   "faCodeMerge": () => (/* binding */ faCodeMerge),
+/* harmony export */   "faCodePullRequest": () => (/* binding */ faCodePullRequest),
+/* harmony export */   "faCoffee": () => (/* binding */ faCoffee),
+/* harmony export */   "faCog": () => (/* binding */ faCog),
+/* harmony export */   "faCogs": () => (/* binding */ faCogs),
+/* harmony export */   "faCoins": () => (/* binding */ faCoins),
+/* harmony export */   "faColonSign": () => (/* binding */ faColonSign),
+/* harmony export */   "faColumns": () => (/* binding */ faColumns),
+/* harmony export */   "faComment": () => (/* binding */ faComment),
+/* harmony export */   "faCommentAlt": () => (/* binding */ faCommentAlt),
+/* harmony export */   "faCommentDollar": () => (/* binding */ faCommentDollar),
+/* harmony export */   "faCommentDots": () => (/* binding */ faCommentDots),
+/* harmony export */   "faCommentMedical": () => (/* binding */ faCommentMedical),
+/* harmony export */   "faCommentSlash": () => (/* binding */ faCommentSlash),
+/* harmony export */   "faCommentSms": () => (/* binding */ faCommentSms),
+/* harmony export */   "faCommenting": () => (/* binding */ faCommenting),
+/* harmony export */   "faComments": () => (/* binding */ faComments),
+/* harmony export */   "faCommentsDollar": () => (/* binding */ faCommentsDollar),
+/* harmony export */   "faCompactDisc": () => (/* binding */ faCompactDisc),
+/* harmony export */   "faCompass": () => (/* binding */ faCompass),
+/* harmony export */   "faCompassDrafting": () => (/* binding */ faCompassDrafting),
+/* harmony export */   "faCompress": () => (/* binding */ faCompress),
+/* harmony export */   "faCompressAlt": () => (/* binding */ faCompressAlt),
+/* harmony export */   "faCompressArrowsAlt": () => (/* binding */ faCompressArrowsAlt),
+/* harmony export */   "faComputer": () => (/* binding */ faComputer),
+/* harmony export */   "faComputerMouse": () => (/* binding */ faComputerMouse),
+/* harmony export */   "faConciergeBell": () => (/* binding */ faConciergeBell),
+/* harmony export */   "faContactBook": () => (/* binding */ faContactBook),
+/* harmony export */   "faContactCard": () => (/* binding */ faContactCard),
+/* harmony export */   "faCookie": () => (/* binding */ faCookie),
+/* harmony export */   "faCookieBite": () => (/* binding */ faCookieBite),
+/* harmony export */   "faCopy": () => (/* binding */ faCopy),
+/* harmony export */   "faCopyright": () => (/* binding */ faCopyright),
+/* harmony export */   "faCouch": () => (/* binding */ faCouch),
+/* harmony export */   "faCow": () => (/* binding */ faCow),
+/* harmony export */   "faCreditCard": () => (/* binding */ faCreditCard),
+/* harmony export */   "faCreditCardAlt": () => (/* binding */ faCreditCardAlt),
+/* harmony export */   "faCrop": () => (/* binding */ faCrop),
+/* harmony export */   "faCropAlt": () => (/* binding */ faCropAlt),
+/* harmony export */   "faCropSimple": () => (/* binding */ faCropSimple),
+/* harmony export */   "faCross": () => (/* binding */ faCross),
+/* harmony export */   "faCrosshairs": () => (/* binding */ faCrosshairs),
+/* harmony export */   "faCrow": () => (/* binding */ faCrow),
+/* harmony export */   "faCrown": () => (/* binding */ faCrown),
+/* harmony export */   "faCrutch": () => (/* binding */ faCrutch),
+/* harmony export */   "faCruzeiroSign": () => (/* binding */ faCruzeiroSign),
+/* harmony export */   "faCube": () => (/* binding */ faCube),
+/* harmony export */   "faCubes": () => (/* binding */ faCubes),
+/* harmony export */   "faCubesStacked": () => (/* binding */ faCubesStacked),
+/* harmony export */   "faCut": () => (/* binding */ faCut),
+/* harmony export */   "faCutlery": () => (/* binding */ faCutlery),
+/* harmony export */   "faD": () => (/* binding */ faD),
+/* harmony export */   "faDashboard": () => (/* binding */ faDashboard),
+/* harmony export */   "faDatabase": () => (/* binding */ faDatabase),
+/* harmony export */   "faDeaf": () => (/* binding */ faDeaf),
+/* harmony export */   "faDeafness": () => (/* binding */ faDeafness),
+/* harmony export */   "faDedent": () => (/* binding */ faDedent),
+/* harmony export */   "faDeleteLeft": () => (/* binding */ faDeleteLeft),
+/* harmony export */   "faDemocrat": () => (/* binding */ faDemocrat),
+/* harmony export */   "faDesktop": () => (/* binding */ faDesktop),
+/* harmony export */   "faDesktopAlt": () => (/* binding */ faDesktopAlt),
+/* harmony export */   "faDharmachakra": () => (/* binding */ faDharmachakra),
+/* harmony export */   "faDiagnoses": () => (/* binding */ faDiagnoses),
+/* harmony export */   "faDiagramNext": () => (/* binding */ faDiagramNext),
+/* harmony export */   "faDiagramPredecessor": () => (/* binding */ faDiagramPredecessor),
+/* harmony export */   "faDiagramProject": () => (/* binding */ faDiagramProject),
+/* harmony export */   "faDiagramSuccessor": () => (/* binding */ faDiagramSuccessor),
+/* harmony export */   "faDiamond": () => (/* binding */ faDiamond),
+/* harmony export */   "faDiamondTurnRight": () => (/* binding */ faDiamondTurnRight),
+/* harmony export */   "faDice": () => (/* binding */ faDice),
+/* harmony export */   "faDiceD20": () => (/* binding */ faDiceD20),
+/* harmony export */   "faDiceD6": () => (/* binding */ faDiceD6),
+/* harmony export */   "faDiceFive": () => (/* binding */ faDiceFive),
+/* harmony export */   "faDiceFour": () => (/* binding */ faDiceFour),
+/* harmony export */   "faDiceOne": () => (/* binding */ faDiceOne),
+/* harmony export */   "faDiceSix": () => (/* binding */ faDiceSix),
+/* harmony export */   "faDiceThree": () => (/* binding */ faDiceThree),
+/* harmony export */   "faDiceTwo": () => (/* binding */ faDiceTwo),
+/* harmony export */   "faDigging": () => (/* binding */ faDigging),
+/* harmony export */   "faDigitalTachograph": () => (/* binding */ faDigitalTachograph),
+/* harmony export */   "faDirections": () => (/* binding */ faDirections),
+/* harmony export */   "faDisease": () => (/* binding */ faDisease),
+/* harmony export */   "faDisplay": () => (/* binding */ faDisplay),
+/* harmony export */   "faDivide": () => (/* binding */ faDivide),
+/* harmony export */   "faDizzy": () => (/* binding */ faDizzy),
+/* harmony export */   "faDna": () => (/* binding */ faDna),
+/* harmony export */   "faDog": () => (/* binding */ faDog),
+/* harmony export */   "faDollar": () => (/* binding */ faDollar),
+/* harmony export */   "faDollarSign": () => (/* binding */ faDollarSign),
+/* harmony export */   "faDolly": () => (/* binding */ faDolly),
+/* harmony export */   "faDollyBox": () => (/* binding */ faDollyBox),
+/* harmony export */   "faDollyFlatbed": () => (/* binding */ faDollyFlatbed),
+/* harmony export */   "faDonate": () => (/* binding */ faDonate),
+/* harmony export */   "faDongSign": () => (/* binding */ faDongSign),
+/* harmony export */   "faDoorClosed": () => (/* binding */ faDoorClosed),
+/* harmony export */   "faDoorOpen": () => (/* binding */ faDoorOpen),
+/* harmony export */   "faDotCircle": () => (/* binding */ faDotCircle),
+/* harmony export */   "faDove": () => (/* binding */ faDove),
+/* harmony export */   "faDownLeftAndUpRightToCenter": () => (/* binding */ faDownLeftAndUpRightToCenter),
+/* harmony export */   "faDownLong": () => (/* binding */ faDownLong),
+/* harmony export */   "faDownload": () => (/* binding */ faDownload),
+/* harmony export */   "faDraftingCompass": () => (/* binding */ faDraftingCompass),
+/* harmony export */   "faDragon": () => (/* binding */ faDragon),
+/* harmony export */   "faDrawPolygon": () => (/* binding */ faDrawPolygon),
+/* harmony export */   "faDriversLicense": () => (/* binding */ faDriversLicense),
+/* harmony export */   "faDroplet": () => (/* binding */ faDroplet),
+/* harmony export */   "faDropletSlash": () => (/* binding */ faDropletSlash),
+/* harmony export */   "faDrum": () => (/* binding */ faDrum),
+/* harmony export */   "faDrumSteelpan": () => (/* binding */ faDrumSteelpan),
+/* harmony export */   "faDrumstickBite": () => (/* binding */ faDrumstickBite),
+/* harmony export */   "faDumbbell": () => (/* binding */ faDumbbell),
+/* harmony export */   "faDumpster": () => (/* binding */ faDumpster),
+/* harmony export */   "faDumpsterFire": () => (/* binding */ faDumpsterFire),
+/* harmony export */   "faDungeon": () => (/* binding */ faDungeon),
+/* harmony export */   "faE": () => (/* binding */ faE),
+/* harmony export */   "faEarDeaf": () => (/* binding */ faEarDeaf),
+/* harmony export */   "faEarListen": () => (/* binding */ faEarListen),
+/* harmony export */   "faEarth": () => (/* binding */ faEarth),
+/* harmony export */   "faEarthAfrica": () => (/* binding */ faEarthAfrica),
+/* harmony export */   "faEarthAmerica": () => (/* binding */ faEarthAmerica),
+/* harmony export */   "faEarthAmericas": () => (/* binding */ faEarthAmericas),
+/* harmony export */   "faEarthAsia": () => (/* binding */ faEarthAsia),
+/* harmony export */   "faEarthEurope": () => (/* binding */ faEarthEurope),
+/* harmony export */   "faEarthOceania": () => (/* binding */ faEarthOceania),
+/* harmony export */   "faEdit": () => (/* binding */ faEdit),
+/* harmony export */   "faEgg": () => (/* binding */ faEgg),
+/* harmony export */   "faEject": () => (/* binding */ faEject),
+/* harmony export */   "faElevator": () => (/* binding */ faElevator),
+/* harmony export */   "faEllipsis": () => (/* binding */ faEllipsis),
+/* harmony export */   "faEllipsisH": () => (/* binding */ faEllipsisH),
+/* harmony export */   "faEllipsisV": () => (/* binding */ faEllipsisV),
+/* harmony export */   "faEllipsisVertical": () => (/* binding */ faEllipsisVertical),
+/* harmony export */   "faEnvelope": () => (/* binding */ faEnvelope),
+/* harmony export */   "faEnvelopeCircleCheck": () => (/* binding */ faEnvelopeCircleCheck),
+/* harmony export */   "faEnvelopeOpen": () => (/* binding */ faEnvelopeOpen),
+/* harmony export */   "faEnvelopeOpenText": () => (/* binding */ faEnvelopeOpenText),
+/* harmony export */   "faEnvelopeSquare": () => (/* binding */ faEnvelopeSquare),
+/* harmony export */   "faEnvelopesBulk": () => (/* binding */ faEnvelopesBulk),
+/* harmony export */   "faEquals": () => (/* binding */ faEquals),
+/* harmony export */   "faEraser": () => (/* binding */ faEraser),
+/* harmony export */   "faEthernet": () => (/* binding */ faEthernet),
+/* harmony export */   "faEur": () => (/* binding */ faEur),
+/* harmony export */   "faEuro": () => (/* binding */ faEuro),
+/* harmony export */   "faEuroSign": () => (/* binding */ faEuroSign),
+/* harmony export */   "faExchange": () => (/* binding */ faExchange),
+/* harmony export */   "faExchangeAlt": () => (/* binding */ faExchangeAlt),
+/* harmony export */   "faExclamation": () => (/* binding */ faExclamation),
+/* harmony export */   "faExclamationCircle": () => (/* binding */ faExclamationCircle),
+/* harmony export */   "faExclamationTriangle": () => (/* binding */ faExclamationTriangle),
+/* harmony export */   "faExpand": () => (/* binding */ faExpand),
+/* harmony export */   "faExpandAlt": () => (/* binding */ faExpandAlt),
+/* harmony export */   "faExpandArrowsAlt": () => (/* binding */ faExpandArrowsAlt),
+/* harmony export */   "faExplosion": () => (/* binding */ faExplosion),
+/* harmony export */   "faExternalLink": () => (/* binding */ faExternalLink),
+/* harmony export */   "faExternalLinkAlt": () => (/* binding */ faExternalLinkAlt),
+/* harmony export */   "faExternalLinkSquare": () => (/* binding */ faExternalLinkSquare),
+/* harmony export */   "faExternalLinkSquareAlt": () => (/* binding */ faExternalLinkSquareAlt),
+/* harmony export */   "faEye": () => (/* binding */ faEye),
+/* harmony export */   "faEyeDropper": () => (/* binding */ faEyeDropper),
+/* harmony export */   "faEyeDropperEmpty": () => (/* binding */ faEyeDropperEmpty),
+/* harmony export */   "faEyeLowVision": () => (/* binding */ faEyeLowVision),
+/* harmony export */   "faEyeSlash": () => (/* binding */ faEyeSlash),
+/* harmony export */   "faEyedropper": () => (/* binding */ faEyedropper),
+/* harmony export */   "faF": () => (/* binding */ faF),
+/* harmony export */   "faFaceAngry": () => (/* binding */ faFaceAngry),
+/* harmony export */   "faFaceDizzy": () => (/* binding */ faFaceDizzy),
+/* harmony export */   "faFaceFlushed": () => (/* binding */ faFaceFlushed),
+/* harmony export */   "faFaceFrown": () => (/* binding */ faFaceFrown),
+/* harmony export */   "faFaceFrownOpen": () => (/* binding */ faFaceFrownOpen),
+/* harmony export */   "faFaceGrimace": () => (/* binding */ faFaceGrimace),
+/* harmony export */   "faFaceGrin": () => (/* binding */ faFaceGrin),
+/* harmony export */   "faFaceGrinBeam": () => (/* binding */ faFaceGrinBeam),
+/* harmony export */   "faFaceGrinBeamSweat": () => (/* binding */ faFaceGrinBeamSweat),
+/* harmony export */   "faFaceGrinHearts": () => (/* binding */ faFaceGrinHearts),
+/* harmony export */   "faFaceGrinSquint": () => (/* binding */ faFaceGrinSquint),
+/* harmony export */   "faFaceGrinSquintTears": () => (/* binding */ faFaceGrinSquintTears),
+/* harmony export */   "faFaceGrinStars": () => (/* binding */ faFaceGrinStars),
+/* harmony export */   "faFaceGrinTears": () => (/* binding */ faFaceGrinTears),
+/* harmony export */   "faFaceGrinTongue": () => (/* binding */ faFaceGrinTongue),
+/* harmony export */   "faFaceGrinTongueSquint": () => (/* binding */ faFaceGrinTongueSquint),
+/* harmony export */   "faFaceGrinTongueWink": () => (/* binding */ faFaceGrinTongueWink),
+/* harmony export */   "faFaceGrinWide": () => (/* binding */ faFaceGrinWide),
+/* harmony export */   "faFaceGrinWink": () => (/* binding */ faFaceGrinWink),
+/* harmony export */   "faFaceKiss": () => (/* binding */ faFaceKiss),
+/* harmony export */   "faFaceKissBeam": () => (/* binding */ faFaceKissBeam),
+/* harmony export */   "faFaceKissWinkHeart": () => (/* binding */ faFaceKissWinkHeart),
+/* harmony export */   "faFaceLaugh": () => (/* binding */ faFaceLaugh),
+/* harmony export */   "faFaceLaughBeam": () => (/* binding */ faFaceLaughBeam),
+/* harmony export */   "faFaceLaughSquint": () => (/* binding */ faFaceLaughSquint),
+/* harmony export */   "faFaceLaughWink": () => (/* binding */ faFaceLaughWink),
+/* harmony export */   "faFaceMeh": () => (/* binding */ faFaceMeh),
+/* harmony export */   "faFaceMehBlank": () => (/* binding */ faFaceMehBlank),
+/* harmony export */   "faFaceRollingEyes": () => (/* binding */ faFaceRollingEyes),
+/* harmony export */   "faFaceSadCry": () => (/* binding */ faFaceSadCry),
+/* harmony export */   "faFaceSadTear": () => (/* binding */ faFaceSadTear),
+/* harmony export */   "faFaceSmile": () => (/* binding */ faFaceSmile),
+/* harmony export */   "faFaceSmileBeam": () => (/* binding */ faFaceSmileBeam),
+/* harmony export */   "faFaceSmileWink": () => (/* binding */ faFaceSmileWink),
+/* harmony export */   "faFaceSurprise": () => (/* binding */ faFaceSurprise),
+/* harmony export */   "faFaceTired": () => (/* binding */ faFaceTired),
+/* harmony export */   "faFan": () => (/* binding */ faFan),
+/* harmony export */   "faFastBackward": () => (/* binding */ faFastBackward),
+/* harmony export */   "faFastForward": () => (/* binding */ faFastForward),
+/* harmony export */   "faFaucet": () => (/* binding */ faFaucet),
+/* harmony export */   "faFaucetDrip": () => (/* binding */ faFaucetDrip),
+/* harmony export */   "faFax": () => (/* binding */ faFax),
+/* harmony export */   "faFeather": () => (/* binding */ faFeather),
+/* harmony export */   "faFeatherAlt": () => (/* binding */ faFeatherAlt),
+/* harmony export */   "faFeatherPointed": () => (/* binding */ faFeatherPointed),
+/* harmony export */   "faFeed": () => (/* binding */ faFeed),
+/* harmony export */   "faFemale": () => (/* binding */ faFemale),
+/* harmony export */   "faFerry": () => (/* binding */ faFerry),
+/* harmony export */   "faFighterJet": () => (/* binding */ faFighterJet),
+/* harmony export */   "faFile": () => (/* binding */ faFile),
+/* harmony export */   "faFileAlt": () => (/* binding */ faFileAlt),
+/* harmony export */   "faFileArchive": () => (/* binding */ faFileArchive),
+/* harmony export */   "faFileArrowDown": () => (/* binding */ faFileArrowDown),
+/* harmony export */   "faFileArrowUp": () => (/* binding */ faFileArrowUp),
+/* harmony export */   "faFileAudio": () => (/* binding */ faFileAudio),
+/* harmony export */   "faFileCircleCheck": () => (/* binding */ faFileCircleCheck),
+/* harmony export */   "faFileCircleExclamation": () => (/* binding */ faFileCircleExclamation),
+/* harmony export */   "faFileCircleMinus": () => (/* binding */ faFileCircleMinus),
+/* harmony export */   "faFileCirclePlus": () => (/* binding */ faFileCirclePlus),
+/* harmony export */   "faFileCircleQuestion": () => (/* binding */ faFileCircleQuestion),
+/* harmony export */   "faFileCircleXmark": () => (/* binding */ faFileCircleXmark),
+/* harmony export */   "faFileClipboard": () => (/* binding */ faFileClipboard),
+/* harmony export */   "faFileCode": () => (/* binding */ faFileCode),
+/* harmony export */   "faFileContract": () => (/* binding */ faFileContract),
+/* harmony export */   "faFileCsv": () => (/* binding */ faFileCsv),
+/* harmony export */   "faFileDownload": () => (/* binding */ faFileDownload),
+/* harmony export */   "faFileEdit": () => (/* binding */ faFileEdit),
+/* harmony export */   "faFileExcel": () => (/* binding */ faFileExcel),
+/* harmony export */   "faFileExport": () => (/* binding */ faFileExport),
+/* harmony export */   "faFileImage": () => (/* binding */ faFileImage),
+/* harmony export */   "faFileImport": () => (/* binding */ faFileImport),
+/* harmony export */   "faFileInvoice": () => (/* binding */ faFileInvoice),
+/* harmony export */   "faFileInvoiceDollar": () => (/* binding */ faFileInvoiceDollar),
+/* harmony export */   "faFileLines": () => (/* binding */ faFileLines),
+/* harmony export */   "faFileMedical": () => (/* binding */ faFileMedical),
+/* harmony export */   "faFileMedicalAlt": () => (/* binding */ faFileMedicalAlt),
+/* harmony export */   "faFilePdf": () => (/* binding */ faFilePdf),
+/* harmony export */   "faFilePen": () => (/* binding */ faFilePen),
+/* harmony export */   "faFilePowerpoint": () => (/* binding */ faFilePowerpoint),
+/* harmony export */   "faFilePrescription": () => (/* binding */ faFilePrescription),
+/* harmony export */   "faFileShield": () => (/* binding */ faFileShield),
+/* harmony export */   "faFileSignature": () => (/* binding */ faFileSignature),
+/* harmony export */   "faFileText": () => (/* binding */ faFileText),
+/* harmony export */   "faFileUpload": () => (/* binding */ faFileUpload),
+/* harmony export */   "faFileVideo": () => (/* binding */ faFileVideo),
+/* harmony export */   "faFileWaveform": () => (/* binding */ faFileWaveform),
+/* harmony export */   "faFileWord": () => (/* binding */ faFileWord),
+/* harmony export */   "faFileZipper": () => (/* binding */ faFileZipper),
+/* harmony export */   "faFill": () => (/* binding */ faFill),
+/* harmony export */   "faFillDrip": () => (/* binding */ faFillDrip),
+/* harmony export */   "faFilm": () => (/* binding */ faFilm),
+/* harmony export */   "faFilter": () => (/* binding */ faFilter),
+/* harmony export */   "faFilterCircleDollar": () => (/* binding */ faFilterCircleDollar),
+/* harmony export */   "faFilterCircleXmark": () => (/* binding */ faFilterCircleXmark),
+/* harmony export */   "faFingerprint": () => (/* binding */ faFingerprint),
+/* harmony export */   "faFire": () => (/* binding */ faFire),
+/* harmony export */   "faFireAlt": () => (/* binding */ faFireAlt),
+/* harmony export */   "faFireBurner": () => (/* binding */ faFireBurner),
+/* harmony export */   "faFireExtinguisher": () => (/* binding */ faFireExtinguisher),
+/* harmony export */   "faFireFlameCurved": () => (/* binding */ faFireFlameCurved),
+/* harmony export */   "faFireFlameSimple": () => (/* binding */ faFireFlameSimple),
+/* harmony export */   "faFirstAid": () => (/* binding */ faFirstAid),
+/* harmony export */   "faFish": () => (/* binding */ faFish),
+/* harmony export */   "faFishFins": () => (/* binding */ faFishFins),
+/* harmony export */   "faFistRaised": () => (/* binding */ faFistRaised),
+/* harmony export */   "faFlag": () => (/* binding */ faFlag),
+/* harmony export */   "faFlagCheckered": () => (/* binding */ faFlagCheckered),
+/* harmony export */   "faFlagUsa": () => (/* binding */ faFlagUsa),
+/* harmony export */   "faFlask": () => (/* binding */ faFlask),
+/* harmony export */   "faFlaskVial": () => (/* binding */ faFlaskVial),
+/* harmony export */   "faFloppyDisk": () => (/* binding */ faFloppyDisk),
+/* harmony export */   "faFlorinSign": () => (/* binding */ faFlorinSign),
+/* harmony export */   "faFlushed": () => (/* binding */ faFlushed),
+/* harmony export */   "faFolder": () => (/* binding */ faFolder),
+/* harmony export */   "faFolderBlank": () => (/* binding */ faFolderBlank),
+/* harmony export */   "faFolderClosed": () => (/* binding */ faFolderClosed),
+/* harmony export */   "faFolderMinus": () => (/* binding */ faFolderMinus),
+/* harmony export */   "faFolderOpen": () => (/* binding */ faFolderOpen),
+/* harmony export */   "faFolderPlus": () => (/* binding */ faFolderPlus),
+/* harmony export */   "faFolderTree": () => (/* binding */ faFolderTree),
+/* harmony export */   "faFont": () => (/* binding */ faFont),
+/* harmony export */   "faFontAwesome": () => (/* binding */ faFontAwesome),
+/* harmony export */   "faFontAwesomeFlag": () => (/* binding */ faFontAwesomeFlag),
+/* harmony export */   "faFontAwesomeLogoFull": () => (/* binding */ faFontAwesomeLogoFull),
+/* harmony export */   "faFootball": () => (/* binding */ faFootball),
+/* harmony export */   "faFootballBall": () => (/* binding */ faFootballBall),
+/* harmony export */   "faForward": () => (/* binding */ faForward),
+/* harmony export */   "faForwardFast": () => (/* binding */ faForwardFast),
+/* harmony export */   "faForwardStep": () => (/* binding */ faForwardStep),
+/* harmony export */   "faFrancSign": () => (/* binding */ faFrancSign),
+/* harmony export */   "faFrog": () => (/* binding */ faFrog),
+/* harmony export */   "faFrown": () => (/* binding */ faFrown),
+/* harmony export */   "faFrownOpen": () => (/* binding */ faFrownOpen),
+/* harmony export */   "faFunnelDollar": () => (/* binding */ faFunnelDollar),
+/* harmony export */   "faFutbol": () => (/* binding */ faFutbol),
+/* harmony export */   "faFutbolBall": () => (/* binding */ faFutbolBall),
+/* harmony export */   "faG": () => (/* binding */ faG),
+/* harmony export */   "faGamepad": () => (/* binding */ faGamepad),
+/* harmony export */   "faGasPump": () => (/* binding */ faGasPump),
+/* harmony export */   "faGauge": () => (/* binding */ faGauge),
+/* harmony export */   "faGaugeHigh": () => (/* binding */ faGaugeHigh),
+/* harmony export */   "faGaugeMed": () => (/* binding */ faGaugeMed),
+/* harmony export */   "faGaugeSimple": () => (/* binding */ faGaugeSimple),
+/* harmony export */   "faGaugeSimpleHigh": () => (/* binding */ faGaugeSimpleHigh),
+/* harmony export */   "faGaugeSimpleMed": () => (/* binding */ faGaugeSimpleMed),
+/* harmony export */   "faGavel": () => (/* binding */ faGavel),
+/* harmony export */   "faGbp": () => (/* binding */ faGbp),
+/* harmony export */   "faGear": () => (/* binding */ faGear),
+/* harmony export */   "faGears": () => (/* binding */ faGears),
+/* harmony export */   "faGem": () => (/* binding */ faGem),
+/* harmony export */   "faGenderless": () => (/* binding */ faGenderless),
+/* harmony export */   "faGhost": () => (/* binding */ faGhost),
+/* harmony export */   "faGift": () => (/* binding */ faGift),
+/* harmony export */   "faGifts": () => (/* binding */ faGifts),
+/* harmony export */   "faGlassCheers": () => (/* binding */ faGlassCheers),
+/* harmony export */   "faGlassMartini": () => (/* binding */ faGlassMartini),
+/* harmony export */   "faGlassMartiniAlt": () => (/* binding */ faGlassMartiniAlt),
+/* harmony export */   "faGlassWater": () => (/* binding */ faGlassWater),
+/* harmony export */   "faGlassWaterDroplet": () => (/* binding */ faGlassWaterDroplet),
+/* harmony export */   "faGlassWhiskey": () => (/* binding */ faGlassWhiskey),
+/* harmony export */   "faGlasses": () => (/* binding */ faGlasses),
+/* harmony export */   "faGlobe": () => (/* binding */ faGlobe),
+/* harmony export */   "faGlobeAfrica": () => (/* binding */ faGlobeAfrica),
+/* harmony export */   "faGlobeAmericas": () => (/* binding */ faGlobeAmericas),
+/* harmony export */   "faGlobeAsia": () => (/* binding */ faGlobeAsia),
+/* harmony export */   "faGlobeEurope": () => (/* binding */ faGlobeEurope),
+/* harmony export */   "faGlobeOceania": () => (/* binding */ faGlobeOceania),
+/* harmony export */   "faGolfBall": () => (/* binding */ faGolfBall),
+/* harmony export */   "faGolfBallTee": () => (/* binding */ faGolfBallTee),
+/* harmony export */   "faGopuram": () => (/* binding */ faGopuram),
+/* harmony export */   "faGraduationCap": () => (/* binding */ faGraduationCap),
+/* harmony export */   "faGreaterThan": () => (/* binding */ faGreaterThan),
+/* harmony export */   "faGreaterThanEqual": () => (/* binding */ faGreaterThanEqual),
+/* harmony export */   "faGrimace": () => (/* binding */ faGrimace),
+/* harmony export */   "faGrin": () => (/* binding */ faGrin),
+/* harmony export */   "faGrinAlt": () => (/* binding */ faGrinAlt),
+/* harmony export */   "faGrinBeam": () => (/* binding */ faGrinBeam),
+/* harmony export */   "faGrinBeamSweat": () => (/* binding */ faGrinBeamSweat),
+/* harmony export */   "faGrinHearts": () => (/* binding */ faGrinHearts),
+/* harmony export */   "faGrinSquint": () => (/* binding */ faGrinSquint),
+/* harmony export */   "faGrinSquintTears": () => (/* binding */ faGrinSquintTears),
+/* harmony export */   "faGrinStars": () => (/* binding */ faGrinStars),
+/* harmony export */   "faGrinTears": () => (/* binding */ faGrinTears),
+/* harmony export */   "faGrinTongue": () => (/* binding */ faGrinTongue),
+/* harmony export */   "faGrinTongueSquint": () => (/* binding */ faGrinTongueSquint),
+/* harmony export */   "faGrinTongueWink": () => (/* binding */ faGrinTongueWink),
+/* harmony export */   "faGrinWink": () => (/* binding */ faGrinWink),
+/* harmony export */   "faGrip": () => (/* binding */ faGrip),
+/* harmony export */   "faGripHorizontal": () => (/* binding */ faGripHorizontal),
+/* harmony export */   "faGripLines": () => (/* binding */ faGripLines),
+/* harmony export */   "faGripLinesVertical": () => (/* binding */ faGripLinesVertical),
+/* harmony export */   "faGripVertical": () => (/* binding */ faGripVertical),
+/* harmony export */   "faGroupArrowsRotate": () => (/* binding */ faGroupArrowsRotate),
+/* harmony export */   "faGuaraniSign": () => (/* binding */ faGuaraniSign),
+/* harmony export */   "faGuitar": () => (/* binding */ faGuitar),
+/* harmony export */   "faGun": () => (/* binding */ faGun),
+/* harmony export */   "faH": () => (/* binding */ faH),
+/* harmony export */   "faHSquare": () => (/* binding */ faHSquare),
+/* harmony export */   "faHamburger": () => (/* binding */ faHamburger),
+/* harmony export */   "faHammer": () => (/* binding */ faHammer),
+/* harmony export */   "faHamsa": () => (/* binding */ faHamsa),
+/* harmony export */   "faHand": () => (/* binding */ faHand),
+/* harmony export */   "faHandBackFist": () => (/* binding */ faHandBackFist),
+/* harmony export */   "faHandDots": () => (/* binding */ faHandDots),
+/* harmony export */   "faHandFist": () => (/* binding */ faHandFist),
+/* harmony export */   "faHandHolding": () => (/* binding */ faHandHolding),
+/* harmony export */   "faHandHoldingDollar": () => (/* binding */ faHandHoldingDollar),
+/* harmony export */   "faHandHoldingDroplet": () => (/* binding */ faHandHoldingDroplet),
+/* harmony export */   "faHandHoldingHand": () => (/* binding */ faHandHoldingHand),
+/* harmony export */   "faHandHoldingHeart": () => (/* binding */ faHandHoldingHeart),
+/* harmony export */   "faHandHoldingMedical": () => (/* binding */ faHandHoldingMedical),
+/* harmony export */   "faHandHoldingUsd": () => (/* binding */ faHandHoldingUsd),
+/* harmony export */   "faHandHoldingWater": () => (/* binding */ faHandHoldingWater),
+/* harmony export */   "faHandLizard": () => (/* binding */ faHandLizard),
+/* harmony export */   "faHandMiddleFinger": () => (/* binding */ faHandMiddleFinger),
+/* harmony export */   "faHandPaper": () => (/* binding */ faHandPaper),
+/* harmony export */   "faHandPeace": () => (/* binding */ faHandPeace),
+/* harmony export */   "faHandPointDown": () => (/* binding */ faHandPointDown),
+/* harmony export */   "faHandPointLeft": () => (/* binding */ faHandPointLeft),
+/* harmony export */   "faHandPointRight": () => (/* binding */ faHandPointRight),
+/* harmony export */   "faHandPointUp": () => (/* binding */ faHandPointUp),
+/* harmony export */   "faHandPointer": () => (/* binding */ faHandPointer),
+/* harmony export */   "faHandRock": () => (/* binding */ faHandRock),
+/* harmony export */   "faHandScissors": () => (/* binding */ faHandScissors),
+/* harmony export */   "faHandSparkles": () => (/* binding */ faHandSparkles),
+/* harmony export */   "faHandSpock": () => (/* binding */ faHandSpock),
+/* harmony export */   "faHandcuffs": () => (/* binding */ faHandcuffs),
+/* harmony export */   "faHands": () => (/* binding */ faHands),
+/* harmony export */   "faHandsAmericanSignLanguageInterpreting": () => (/* binding */ faHandsAmericanSignLanguageInterpreting),
+/* harmony export */   "faHandsAslInterpreting": () => (/* binding */ faHandsAslInterpreting),
+/* harmony export */   "faHandsBound": () => (/* binding */ faHandsBound),
+/* harmony export */   "faHandsBubbles": () => (/* binding */ faHandsBubbles),
+/* harmony export */   "faHandsClapping": () => (/* binding */ faHandsClapping),
+/* harmony export */   "faHandsHelping": () => (/* binding */ faHandsHelping),
+/* harmony export */   "faHandsHolding": () => (/* binding */ faHandsHolding),
+/* harmony export */   "faHandsHoldingChild": () => (/* binding */ faHandsHoldingChild),
+/* harmony export */   "faHandsHoldingCircle": () => (/* binding */ faHandsHoldingCircle),
+/* harmony export */   "faHandsPraying": () => (/* binding */ faHandsPraying),
+/* harmony export */   "faHandsWash": () => (/* binding */ faHandsWash),
+/* harmony export */   "faHandshake": () => (/* binding */ faHandshake),
+/* harmony export */   "faHandshakeAlt": () => (/* binding */ faHandshakeAlt),
+/* harmony export */   "faHandshakeAltSlash": () => (/* binding */ faHandshakeAltSlash),
+/* harmony export */   "faHandshakeAngle": () => (/* binding */ faHandshakeAngle),
+/* harmony export */   "faHandshakeSimple": () => (/* binding */ faHandshakeSimple),
+/* harmony export */   "faHandshakeSimpleSlash": () => (/* binding */ faHandshakeSimpleSlash),
+/* harmony export */   "faHandshakeSlash": () => (/* binding */ faHandshakeSlash),
+/* harmony export */   "faHanukiah": () => (/* binding */ faHanukiah),
+/* harmony export */   "faHardDrive": () => (/* binding */ faHardDrive),
+/* harmony export */   "faHardHat": () => (/* binding */ faHardHat),
+/* harmony export */   "faHardOfHearing": () => (/* binding */ faHardOfHearing),
+/* harmony export */   "faHashtag": () => (/* binding */ faHashtag),
+/* harmony export */   "faHatCowboy": () => (/* binding */ faHatCowboy),
+/* harmony export */   "faHatCowboySide": () => (/* binding */ faHatCowboySide),
+/* harmony export */   "faHatHard": () => (/* binding */ faHatHard),
+/* harmony export */   "faHatWizard": () => (/* binding */ faHatWizard),
+/* harmony export */   "faHaykal": () => (/* binding */ faHaykal),
+/* harmony export */   "faHdd": () => (/* binding */ faHdd),
+/* harmony export */   "faHeadSideCough": () => (/* binding */ faHeadSideCough),
+/* harmony export */   "faHeadSideCoughSlash": () => (/* binding */ faHeadSideCoughSlash),
+/* harmony export */   "faHeadSideMask": () => (/* binding */ faHeadSideMask),
+/* harmony export */   "faHeadSideVirus": () => (/* binding */ faHeadSideVirus),
+/* harmony export */   "faHeader": () => (/* binding */ faHeader),
+/* harmony export */   "faHeading": () => (/* binding */ faHeading),
+/* harmony export */   "faHeadphones": () => (/* binding */ faHeadphones),
+/* harmony export */   "faHeadphonesAlt": () => (/* binding */ faHeadphonesAlt),
+/* harmony export */   "faHeadphonesSimple": () => (/* binding */ faHeadphonesSimple),
+/* harmony export */   "faHeadset": () => (/* binding */ faHeadset),
+/* harmony export */   "faHeart": () => (/* binding */ faHeart),
+/* harmony export */   "faHeartBroken": () => (/* binding */ faHeartBroken),
+/* harmony export */   "faHeartCircleBolt": () => (/* binding */ faHeartCircleBolt),
+/* harmony export */   "faHeartCircleCheck": () => (/* binding */ faHeartCircleCheck),
+/* harmony export */   "faHeartCircleExclamation": () => (/* binding */ faHeartCircleExclamation),
+/* harmony export */   "faHeartCircleMinus": () => (/* binding */ faHeartCircleMinus),
+/* harmony export */   "faHeartCirclePlus": () => (/* binding */ faHeartCirclePlus),
+/* harmony export */   "faHeartCircleXmark": () => (/* binding */ faHeartCircleXmark),
+/* harmony export */   "faHeartCrack": () => (/* binding */ faHeartCrack),
+/* harmony export */   "faHeartMusicCameraBolt": () => (/* binding */ faHeartMusicCameraBolt),
+/* harmony export */   "faHeartPulse": () => (/* binding */ faHeartPulse),
+/* harmony export */   "faHeartbeat": () => (/* binding */ faHeartbeat),
+/* harmony export */   "faHelicopter": () => (/* binding */ faHelicopter),
+/* harmony export */   "faHelicopterSymbol": () => (/* binding */ faHelicopterSymbol),
+/* harmony export */   "faHelmetSafety": () => (/* binding */ faHelmetSafety),
+/* harmony export */   "faHelmetUn": () => (/* binding */ faHelmetUn),
+/* harmony export */   "faHighlighter": () => (/* binding */ faHighlighter),
+/* harmony export */   "faHiking": () => (/* binding */ faHiking),
+/* harmony export */   "faHillAvalanche": () => (/* binding */ faHillAvalanche),
+/* harmony export */   "faHillRockslide": () => (/* binding */ faHillRockslide),
+/* harmony export */   "faHippo": () => (/* binding */ faHippo),
+/* harmony export */   "faHistory": () => (/* binding */ faHistory),
+/* harmony export */   "faHockeyPuck": () => (/* binding */ faHockeyPuck),
+/* harmony export */   "faHollyBerry": () => (/* binding */ faHollyBerry),
+/* harmony export */   "faHome": () => (/* binding */ faHome),
+/* harmony export */   "faHomeAlt": () => (/* binding */ faHomeAlt),
+/* harmony export */   "faHomeLg": () => (/* binding */ faHomeLg),
+/* harmony export */   "faHomeLgAlt": () => (/* binding */ faHomeLgAlt),
+/* harmony export */   "faHomeUser": () => (/* binding */ faHomeUser),
+/* harmony export */   "faHorse": () => (/* binding */ faHorse),
+/* harmony export */   "faHorseHead": () => (/* binding */ faHorseHead),
+/* harmony export */   "faHospital": () => (/* binding */ faHospital),
+/* harmony export */   "faHospitalAlt": () => (/* binding */ faHospitalAlt),
+/* harmony export */   "faHospitalSymbol": () => (/* binding */ faHospitalSymbol),
+/* harmony export */   "faHospitalUser": () => (/* binding */ faHospitalUser),
+/* harmony export */   "faHospitalWide": () => (/* binding */ faHospitalWide),
+/* harmony export */   "faHotTub": () => (/* binding */ faHotTub),
+/* harmony export */   "faHotTubPerson": () => (/* binding */ faHotTubPerson),
+/* harmony export */   "faHotdog": () => (/* binding */ faHotdog),
+/* harmony export */   "faHotel": () => (/* binding */ faHotel),
+/* harmony export */   "faHourglass": () => (/* binding */ faHourglass),
+/* harmony export */   "faHourglass1": () => (/* binding */ faHourglass1),
+/* harmony export */   "faHourglass2": () => (/* binding */ faHourglass2),
+/* harmony export */   "faHourglass3": () => (/* binding */ faHourglass3),
+/* harmony export */   "faHourglassEmpty": () => (/* binding */ faHourglassEmpty),
+/* harmony export */   "faHourglassEnd": () => (/* binding */ faHourglassEnd),
+/* harmony export */   "faHourglassHalf": () => (/* binding */ faHourglassHalf),
+/* harmony export */   "faHourglassStart": () => (/* binding */ faHourglassStart),
+/* harmony export */   "faHouse": () => (/* binding */ faHouse),
+/* harmony export */   "faHouseChimney": () => (/* binding */ faHouseChimney),
+/* harmony export */   "faHouseChimneyCrack": () => (/* binding */ faHouseChimneyCrack),
+/* harmony export */   "faHouseChimneyMedical": () => (/* binding */ faHouseChimneyMedical),
+/* harmony export */   "faHouseChimneyUser": () => (/* binding */ faHouseChimneyUser),
+/* harmony export */   "faHouseChimneyWindow": () => (/* binding */ faHouseChimneyWindow),
+/* harmony export */   "faHouseCircleCheck": () => (/* binding */ faHouseCircleCheck),
+/* harmony export */   "faHouseCircleExclamation": () => (/* binding */ faHouseCircleExclamation),
+/* harmony export */   "faHouseCircleXmark": () => (/* binding */ faHouseCircleXmark),
+/* harmony export */   "faHouseCrack": () => (/* binding */ faHouseCrack),
+/* harmony export */   "faHouseDamage": () => (/* binding */ faHouseDamage),
+/* harmony export */   "faHouseFire": () => (/* binding */ faHouseFire),
+/* harmony export */   "faHouseFlag": () => (/* binding */ faHouseFlag),
+/* harmony export */   "faHouseFloodWater": () => (/* binding */ faHouseFloodWater),
+/* harmony export */   "faHouseFloodWaterCircleArrowRight": () => (/* binding */ faHouseFloodWaterCircleArrowRight),
+/* harmony export */   "faHouseLaptop": () => (/* binding */ faHouseLaptop),
+/* harmony export */   "faHouseLock": () => (/* binding */ faHouseLock),
+/* harmony export */   "faHouseMedical": () => (/* binding */ faHouseMedical),
+/* harmony export */   "faHouseMedicalCircleCheck": () => (/* binding */ faHouseMedicalCircleCheck),
+/* harmony export */   "faHouseMedicalCircleExclamation": () => (/* binding */ faHouseMedicalCircleExclamation),
+/* harmony export */   "faHouseMedicalCircleXmark": () => (/* binding */ faHouseMedicalCircleXmark),
+/* harmony export */   "faHouseMedicalFlag": () => (/* binding */ faHouseMedicalFlag),
+/* harmony export */   "faHouseSignal": () => (/* binding */ faHouseSignal),
+/* harmony export */   "faHouseTsunami": () => (/* binding */ faHouseTsunami),
+/* harmony export */   "faHouseUser": () => (/* binding */ faHouseUser),
+/* harmony export */   "faHryvnia": () => (/* binding */ faHryvnia),
+/* harmony export */   "faHryvniaSign": () => (/* binding */ faHryvniaSign),
+/* harmony export */   "faHurricane": () => (/* binding */ faHurricane),
+/* harmony export */   "faI": () => (/* binding */ faI),
+/* harmony export */   "faICursor": () => (/* binding */ faICursor),
+/* harmony export */   "faIceCream": () => (/* binding */ faIceCream),
+/* harmony export */   "faIcicles": () => (/* binding */ faIcicles),
+/* harmony export */   "faIcons": () => (/* binding */ faIcons),
+/* harmony export */   "faIdBadge": () => (/* binding */ faIdBadge),
+/* harmony export */   "faIdCard": () => (/* binding */ faIdCard),
+/* harmony export */   "faIdCardAlt": () => (/* binding */ faIdCardAlt),
+/* harmony export */   "faIdCardClip": () => (/* binding */ faIdCardClip),
+/* harmony export */   "faIgloo": () => (/* binding */ faIgloo),
+/* harmony export */   "faIls": () => (/* binding */ faIls),
+/* harmony export */   "faImage": () => (/* binding */ faImage),
+/* harmony export */   "faImagePortrait": () => (/* binding */ faImagePortrait),
+/* harmony export */   "faImages": () => (/* binding */ faImages),
+/* harmony export */   "faInbox": () => (/* binding */ faInbox),
+/* harmony export */   "faIndent": () => (/* binding */ faIndent),
+/* harmony export */   "faIndianRupee": () => (/* binding */ faIndianRupee),
+/* harmony export */   "faIndianRupeeSign": () => (/* binding */ faIndianRupeeSign),
+/* harmony export */   "faIndustry": () => (/* binding */ faIndustry),
+/* harmony export */   "faInfinity": () => (/* binding */ faInfinity),
+/* harmony export */   "faInfo": () => (/* binding */ faInfo),
+/* harmony export */   "faInfoCircle": () => (/* binding */ faInfoCircle),
+/* harmony export */   "faInr": () => (/* binding */ faInr),
+/* harmony export */   "faInstitution": () => (/* binding */ faInstitution),
+/* harmony export */   "faItalic": () => (/* binding */ faItalic),
+/* harmony export */   "faJ": () => (/* binding */ faJ),
+/* harmony export */   "faJar": () => (/* binding */ faJar),
+/* harmony export */   "faJarWheat": () => (/* binding */ faJarWheat),
+/* harmony export */   "faJedi": () => (/* binding */ faJedi),
+/* harmony export */   "faJetFighter": () => (/* binding */ faJetFighter),
+/* harmony export */   "faJetFighterUp": () => (/* binding */ faJetFighterUp),
+/* harmony export */   "faJoint": () => (/* binding */ faJoint),
+/* harmony export */   "faJournalWhills": () => (/* binding */ faJournalWhills),
+/* harmony export */   "faJpy": () => (/* binding */ faJpy),
+/* harmony export */   "faJugDetergent": () => (/* binding */ faJugDetergent),
+/* harmony export */   "faK": () => (/* binding */ faK),
+/* harmony export */   "faKaaba": () => (/* binding */ faKaaba),
+/* harmony export */   "faKey": () => (/* binding */ faKey),
+/* harmony export */   "faKeyboard": () => (/* binding */ faKeyboard),
+/* harmony export */   "faKhanda": () => (/* binding */ faKhanda),
+/* harmony export */   "faKipSign": () => (/* binding */ faKipSign),
+/* harmony export */   "faKiss": () => (/* binding */ faKiss),
+/* harmony export */   "faKissBeam": () => (/* binding */ faKissBeam),
+/* harmony export */   "faKissWinkHeart": () => (/* binding */ faKissWinkHeart),
+/* harmony export */   "faKitMedical": () => (/* binding */ faKitMedical),
+/* harmony export */   "faKitchenSet": () => (/* binding */ faKitchenSet),
+/* harmony export */   "faKiwiBird": () => (/* binding */ faKiwiBird),
+/* harmony export */   "faKrw": () => (/* binding */ faKrw),
+/* harmony export */   "faL": () => (/* binding */ faL),
+/* harmony export */   "faLadderWater": () => (/* binding */ faLadderWater),
+/* harmony export */   "faLandMineOn": () => (/* binding */ faLandMineOn),
+/* harmony export */   "faLandmark": () => (/* binding */ faLandmark),
+/* harmony export */   "faLandmarkAlt": () => (/* binding */ faLandmarkAlt),
+/* harmony export */   "faLandmarkDome": () => (/* binding */ faLandmarkDome),
+/* harmony export */   "faLandmarkFlag": () => (/* binding */ faLandmarkFlag),
+/* harmony export */   "faLanguage": () => (/* binding */ faLanguage),
+/* harmony export */   "faLaptop": () => (/* binding */ faLaptop),
+/* harmony export */   "faLaptopCode": () => (/* binding */ faLaptopCode),
+/* harmony export */   "faLaptopFile": () => (/* binding */ faLaptopFile),
+/* harmony export */   "faLaptopHouse": () => (/* binding */ faLaptopHouse),
+/* harmony export */   "faLaptopMedical": () => (/* binding */ faLaptopMedical),
+/* harmony export */   "faLariSign": () => (/* binding */ faLariSign),
+/* harmony export */   "faLaugh": () => (/* binding */ faLaugh),
+/* harmony export */   "faLaughBeam": () => (/* binding */ faLaughBeam),
+/* harmony export */   "faLaughSquint": () => (/* binding */ faLaughSquint),
+/* harmony export */   "faLaughWink": () => (/* binding */ faLaughWink),
+/* harmony export */   "faLayerGroup": () => (/* binding */ faLayerGroup),
+/* harmony export */   "faLeaf": () => (/* binding */ faLeaf),
+/* harmony export */   "faLeftLong": () => (/* binding */ faLeftLong),
+/* harmony export */   "faLeftRight": () => (/* binding */ faLeftRight),
+/* harmony export */   "faLegal": () => (/* binding */ faLegal),
+/* harmony export */   "faLemon": () => (/* binding */ faLemon),
+/* harmony export */   "faLessThan": () => (/* binding */ faLessThan),
+/* harmony export */   "faLessThanEqual": () => (/* binding */ faLessThanEqual),
+/* harmony export */   "faLevelDown": () => (/* binding */ faLevelDown),
+/* harmony export */   "faLevelDownAlt": () => (/* binding */ faLevelDownAlt),
+/* harmony export */   "faLevelUp": () => (/* binding */ faLevelUp),
+/* harmony export */   "faLevelUpAlt": () => (/* binding */ faLevelUpAlt),
+/* harmony export */   "faLifeRing": () => (/* binding */ faLifeRing),
+/* harmony export */   "faLightbulb": () => (/* binding */ faLightbulb),
+/* harmony export */   "faLineChart": () => (/* binding */ faLineChart),
+/* harmony export */   "faLinesLeaning": () => (/* binding */ faLinesLeaning),
+/* harmony export */   "faLink": () => (/* binding */ faLink),
+/* harmony export */   "faLinkSlash": () => (/* binding */ faLinkSlash),
+/* harmony export */   "faLiraSign": () => (/* binding */ faLiraSign),
+/* harmony export */   "faList": () => (/* binding */ faList),
+/* harmony export */   "faList12": () => (/* binding */ faList12),
+/* harmony export */   "faListAlt": () => (/* binding */ faListAlt),
+/* harmony export */   "faListCheck": () => (/* binding */ faListCheck),
+/* harmony export */   "faListDots": () => (/* binding */ faListDots),
+/* harmony export */   "faListNumeric": () => (/* binding */ faListNumeric),
+/* harmony export */   "faListOl": () => (/* binding */ faListOl),
+/* harmony export */   "faListSquares": () => (/* binding */ faListSquares),
+/* harmony export */   "faListUl": () => (/* binding */ faListUl),
+/* harmony export */   "faLitecoinSign": () => (/* binding */ faLitecoinSign),
+/* harmony export */   "faLocation": () => (/* binding */ faLocation),
+/* harmony export */   "faLocationArrow": () => (/* binding */ faLocationArrow),
+/* harmony export */   "faLocationCrosshairs": () => (/* binding */ faLocationCrosshairs),
+/* harmony export */   "faLocationDot": () => (/* binding */ faLocationDot),
+/* harmony export */   "faLocationPin": () => (/* binding */ faLocationPin),
+/* harmony export */   "faLocationPinLock": () => (/* binding */ faLocationPinLock),
+/* harmony export */   "faLock": () => (/* binding */ faLock),
+/* harmony export */   "faLockOpen": () => (/* binding */ faLockOpen),
+/* harmony export */   "faLocust": () => (/* binding */ faLocust),
+/* harmony export */   "faLongArrowAltDown": () => (/* binding */ faLongArrowAltDown),
+/* harmony export */   "faLongArrowAltLeft": () => (/* binding */ faLongArrowAltLeft),
+/* harmony export */   "faLongArrowAltRight": () => (/* binding */ faLongArrowAltRight),
+/* harmony export */   "faLongArrowAltUp": () => (/* binding */ faLongArrowAltUp),
+/* harmony export */   "faLongArrowDown": () => (/* binding */ faLongArrowDown),
+/* harmony export */   "faLongArrowLeft": () => (/* binding */ faLongArrowLeft),
+/* harmony export */   "faLongArrowRight": () => (/* binding */ faLongArrowRight),
+/* harmony export */   "faLongArrowUp": () => (/* binding */ faLongArrowUp),
+/* harmony export */   "faLowVision": () => (/* binding */ faLowVision),
+/* harmony export */   "faLuggageCart": () => (/* binding */ faLuggageCart),
+/* harmony export */   "faLungs": () => (/* binding */ faLungs),
+/* harmony export */   "faLungsVirus": () => (/* binding */ faLungsVirus),
+/* harmony export */   "faM": () => (/* binding */ faM),
+/* harmony export */   "faMagic": () => (/* binding */ faMagic),
+/* harmony export */   "faMagicWandSparkles": () => (/* binding */ faMagicWandSparkles),
+/* harmony export */   "faMagnet": () => (/* binding */ faMagnet),
+/* harmony export */   "faMagnifyingGlass": () => (/* binding */ faMagnifyingGlass),
+/* harmony export */   "faMagnifyingGlassArrowRight": () => (/* binding */ faMagnifyingGlassArrowRight),
+/* harmony export */   "faMagnifyingGlassChart": () => (/* binding */ faMagnifyingGlassChart),
+/* harmony export */   "faMagnifyingGlassDollar": () => (/* binding */ faMagnifyingGlassDollar),
+/* harmony export */   "faMagnifyingGlassLocation": () => (/* binding */ faMagnifyingGlassLocation),
+/* harmony export */   "faMagnifyingGlassMinus": () => (/* binding */ faMagnifyingGlassMinus),
+/* harmony export */   "faMagnifyingGlassPlus": () => (/* binding */ faMagnifyingGlassPlus),
+/* harmony export */   "faMailBulk": () => (/* binding */ faMailBulk),
+/* harmony export */   "faMailForward": () => (/* binding */ faMailForward),
+/* harmony export */   "faMailReply": () => (/* binding */ faMailReply),
+/* harmony export */   "faMailReplyAll": () => (/* binding */ faMailReplyAll),
+/* harmony export */   "faMale": () => (/* binding */ faMale),
+/* harmony export */   "faManatSign": () => (/* binding */ faManatSign),
+/* harmony export */   "faMap": () => (/* binding */ faMap),
+/* harmony export */   "faMapLocation": () => (/* binding */ faMapLocation),
+/* harmony export */   "faMapLocationDot": () => (/* binding */ faMapLocationDot),
+/* harmony export */   "faMapMarked": () => (/* binding */ faMapMarked),
+/* harmony export */   "faMapMarkedAlt": () => (/* binding */ faMapMarkedAlt),
+/* harmony export */   "faMapMarker": () => (/* binding */ faMapMarker),
+/* harmony export */   "faMapMarkerAlt": () => (/* binding */ faMapMarkerAlt),
+/* harmony export */   "faMapPin": () => (/* binding */ faMapPin),
+/* harmony export */   "faMapSigns": () => (/* binding */ faMapSigns),
+/* harmony export */   "faMarker": () => (/* binding */ faMarker),
+/* harmony export */   "faMars": () => (/* binding */ faMars),
+/* harmony export */   "faMarsAndVenus": () => (/* binding */ faMarsAndVenus),
+/* harmony export */   "faMarsAndVenusBurst": () => (/* binding */ faMarsAndVenusBurst),
+/* harmony export */   "faMarsDouble": () => (/* binding */ faMarsDouble),
+/* harmony export */   "faMarsStroke": () => (/* binding */ faMarsStroke),
+/* harmony export */   "faMarsStrokeH": () => (/* binding */ faMarsStrokeH),
+/* harmony export */   "faMarsStrokeRight": () => (/* binding */ faMarsStrokeRight),
+/* harmony export */   "faMarsStrokeUp": () => (/* binding */ faMarsStrokeUp),
+/* harmony export */   "faMarsStrokeV": () => (/* binding */ faMarsStrokeV),
+/* harmony export */   "faMartiniGlass": () => (/* binding */ faMartiniGlass),
+/* harmony export */   "faMartiniGlassCitrus": () => (/* binding */ faMartiniGlassCitrus),
+/* harmony export */   "faMartiniGlassEmpty": () => (/* binding */ faMartiniGlassEmpty),
+/* harmony export */   "faMask": () => (/* binding */ faMask),
+/* harmony export */   "faMaskFace": () => (/* binding */ faMaskFace),
+/* harmony export */   "faMaskVentilator": () => (/* binding */ faMaskVentilator),
+/* harmony export */   "faMasksTheater": () => (/* binding */ faMasksTheater),
+/* harmony export */   "faMattressPillow": () => (/* binding */ faMattressPillow),
+/* harmony export */   "faMaximize": () => (/* binding */ faMaximize),
+/* harmony export */   "faMedal": () => (/* binding */ faMedal),
+/* harmony export */   "faMedkit": () => (/* binding */ faMedkit),
+/* harmony export */   "faMeh": () => (/* binding */ faMeh),
+/* harmony export */   "faMehBlank": () => (/* binding */ faMehBlank),
+/* harmony export */   "faMehRollingEyes": () => (/* binding */ faMehRollingEyes),
+/* harmony export */   "faMemory": () => (/* binding */ faMemory),
+/* harmony export */   "faMenorah": () => (/* binding */ faMenorah),
+/* harmony export */   "faMercury": () => (/* binding */ faMercury),
+/* harmony export */   "faMessage": () => (/* binding */ faMessage),
+/* harmony export */   "faMeteor": () => (/* binding */ faMeteor),
+/* harmony export */   "faMicrochip": () => (/* binding */ faMicrochip),
+/* harmony export */   "faMicrophone": () => (/* binding */ faMicrophone),
+/* harmony export */   "faMicrophoneAlt": () => (/* binding */ faMicrophoneAlt),
+/* harmony export */   "faMicrophoneAltSlash": () => (/* binding */ faMicrophoneAltSlash),
+/* harmony export */   "faMicrophoneLines": () => (/* binding */ faMicrophoneLines),
+/* harmony export */   "faMicrophoneLinesSlash": () => (/* binding */ faMicrophoneLinesSlash),
+/* harmony export */   "faMicrophoneSlash": () => (/* binding */ faMicrophoneSlash),
+/* harmony export */   "faMicroscope": () => (/* binding */ faMicroscope),
+/* harmony export */   "faMillSign": () => (/* binding */ faMillSign),
+/* harmony export */   "faMinimize": () => (/* binding */ faMinimize),
+/* harmony export */   "faMinus": () => (/* binding */ faMinus),
+/* harmony export */   "faMinusCircle": () => (/* binding */ faMinusCircle),
+/* harmony export */   "faMinusSquare": () => (/* binding */ faMinusSquare),
+/* harmony export */   "faMitten": () => (/* binding */ faMitten),
+/* harmony export */   "faMobile": () => (/* binding */ faMobile),
+/* harmony export */   "faMobileAlt": () => (/* binding */ faMobileAlt),
+/* harmony export */   "faMobileAndroid": () => (/* binding */ faMobileAndroid),
+/* harmony export */   "faMobileAndroidAlt": () => (/* binding */ faMobileAndroidAlt),
+/* harmony export */   "faMobileButton": () => (/* binding */ faMobileButton),
+/* harmony export */   "faMobilePhone": () => (/* binding */ faMobilePhone),
+/* harmony export */   "faMobileRetro": () => (/* binding */ faMobileRetro),
+/* harmony export */   "faMobileScreen": () => (/* binding */ faMobileScreen),
+/* harmony export */   "faMobileScreenButton": () => (/* binding */ faMobileScreenButton),
+/* harmony export */   "faMoneyBill": () => (/* binding */ faMoneyBill),
+/* harmony export */   "faMoneyBill1": () => (/* binding */ faMoneyBill1),
+/* harmony export */   "faMoneyBill1Wave": () => (/* binding */ faMoneyBill1Wave),
+/* harmony export */   "faMoneyBillAlt": () => (/* binding */ faMoneyBillAlt),
+/* harmony export */   "faMoneyBillTransfer": () => (/* binding */ faMoneyBillTransfer),
+/* harmony export */   "faMoneyBillTrendUp": () => (/* binding */ faMoneyBillTrendUp),
+/* harmony export */   "faMoneyBillWave": () => (/* binding */ faMoneyBillWave),
+/* harmony export */   "faMoneyBillWaveAlt": () => (/* binding */ faMoneyBillWaveAlt),
+/* harmony export */   "faMoneyBillWheat": () => (/* binding */ faMoneyBillWheat),
+/* harmony export */   "faMoneyBills": () => (/* binding */ faMoneyBills),
+/* harmony export */   "faMoneyCheck": () => (/* binding */ faMoneyCheck),
+/* harmony export */   "faMoneyCheckAlt": () => (/* binding */ faMoneyCheckAlt),
+/* harmony export */   "faMoneyCheckDollar": () => (/* binding */ faMoneyCheckDollar),
+/* harmony export */   "faMonument": () => (/* binding */ faMonument),
+/* harmony export */   "faMoon": () => (/* binding */ faMoon),
+/* harmony export */   "faMortarBoard": () => (/* binding */ faMortarBoard),
+/* harmony export */   "faMortarPestle": () => (/* binding */ faMortarPestle),
+/* harmony export */   "faMosque": () => (/* binding */ faMosque),
+/* harmony export */   "faMosquito": () => (/* binding */ faMosquito),
+/* harmony export */   "faMosquitoNet": () => (/* binding */ faMosquitoNet),
+/* harmony export */   "faMotorcycle": () => (/* binding */ faMotorcycle),
+/* harmony export */   "faMound": () => (/* binding */ faMound),
+/* harmony export */   "faMountain": () => (/* binding */ faMountain),
+/* harmony export */   "faMountainCity": () => (/* binding */ faMountainCity),
+/* harmony export */   "faMountainSun": () => (/* binding */ faMountainSun),
+/* harmony export */   "faMouse": () => (/* binding */ faMouse),
+/* harmony export */   "faMousePointer": () => (/* binding */ faMousePointer),
+/* harmony export */   "faMugHot": () => (/* binding */ faMugHot),
+/* harmony export */   "faMugSaucer": () => (/* binding */ faMugSaucer),
+/* harmony export */   "faMultiply": () => (/* binding */ faMultiply),
+/* harmony export */   "faMuseum": () => (/* binding */ faMuseum),
+/* harmony export */   "faMusic": () => (/* binding */ faMusic),
+/* harmony export */   "faN": () => (/* binding */ faN),
+/* harmony export */   "faNairaSign": () => (/* binding */ faNairaSign),
+/* harmony export */   "faNavicon": () => (/* binding */ faNavicon),
+/* harmony export */   "faNetworkWired": () => (/* binding */ faNetworkWired),
+/* harmony export */   "faNeuter": () => (/* binding */ faNeuter),
+/* harmony export */   "faNewspaper": () => (/* binding */ faNewspaper),
+/* harmony export */   "faNotEqual": () => (/* binding */ faNotEqual),
+/* harmony export */   "faNotdef": () => (/* binding */ faNotdef),
+/* harmony export */   "faNoteSticky": () => (/* binding */ faNoteSticky),
+/* harmony export */   "faNotesMedical": () => (/* binding */ faNotesMedical),
+/* harmony export */   "faO": () => (/* binding */ faO),
+/* harmony export */   "faObjectGroup": () => (/* binding */ faObjectGroup),
+/* harmony export */   "faObjectUngroup": () => (/* binding */ faObjectUngroup),
+/* harmony export */   "faOilCan": () => (/* binding */ faOilCan),
+/* harmony export */   "faOilWell": () => (/* binding */ faOilWell),
+/* harmony export */   "faOm": () => (/* binding */ faOm),
+/* harmony export */   "faOtter": () => (/* binding */ faOtter),
+/* harmony export */   "faOutdent": () => (/* binding */ faOutdent),
+/* harmony export */   "faP": () => (/* binding */ faP),
+/* harmony export */   "faPager": () => (/* binding */ faPager),
+/* harmony export */   "faPaintBrush": () => (/* binding */ faPaintBrush),
+/* harmony export */   "faPaintRoller": () => (/* binding */ faPaintRoller),
+/* harmony export */   "faPaintbrush": () => (/* binding */ faPaintbrush),
+/* harmony export */   "faPalette": () => (/* binding */ faPalette),
+/* harmony export */   "faPallet": () => (/* binding */ faPallet),
+/* harmony export */   "faPanorama": () => (/* binding */ faPanorama),
+/* harmony export */   "faPaperPlane": () => (/* binding */ faPaperPlane),
+/* harmony export */   "faPaperclip": () => (/* binding */ faPaperclip),
+/* harmony export */   "faParachuteBox": () => (/* binding */ faParachuteBox),
+/* harmony export */   "faParagraph": () => (/* binding */ faParagraph),
+/* harmony export */   "faParking": () => (/* binding */ faParking),
+/* harmony export */   "faPassport": () => (/* binding */ faPassport),
+/* harmony export */   "faPastafarianism": () => (/* binding */ faPastafarianism),
+/* harmony export */   "faPaste": () => (/* binding */ faPaste),
+/* harmony export */   "faPause": () => (/* binding */ faPause),
+/* harmony export */   "faPauseCircle": () => (/* binding */ faPauseCircle),
+/* harmony export */   "faPaw": () => (/* binding */ faPaw),
+/* harmony export */   "faPeace": () => (/* binding */ faPeace),
+/* harmony export */   "faPen": () => (/* binding */ faPen),
+/* harmony export */   "faPenAlt": () => (/* binding */ faPenAlt),
+/* harmony export */   "faPenClip": () => (/* binding */ faPenClip),
+/* harmony export */   "faPenFancy": () => (/* binding */ faPenFancy),
+/* harmony export */   "faPenNib": () => (/* binding */ faPenNib),
+/* harmony export */   "faPenRuler": () => (/* binding */ faPenRuler),
+/* harmony export */   "faPenSquare": () => (/* binding */ faPenSquare),
+/* harmony export */   "faPenToSquare": () => (/* binding */ faPenToSquare),
+/* harmony export */   "faPencil": () => (/* binding */ faPencil),
+/* harmony export */   "faPencilAlt": () => (/* binding */ faPencilAlt),
+/* harmony export */   "faPencilRuler": () => (/* binding */ faPencilRuler),
+/* harmony export */   "faPencilSquare": () => (/* binding */ faPencilSquare),
+/* harmony export */   "faPeopleArrows": () => (/* binding */ faPeopleArrows),
+/* harmony export */   "faPeopleArrowsLeftRight": () => (/* binding */ faPeopleArrowsLeftRight),
+/* harmony export */   "faPeopleCarry": () => (/* binding */ faPeopleCarry),
+/* harmony export */   "faPeopleCarryBox": () => (/* binding */ faPeopleCarryBox),
+/* harmony export */   "faPeopleGroup": () => (/* binding */ faPeopleGroup),
+/* harmony export */   "faPeopleLine": () => (/* binding */ faPeopleLine),
+/* harmony export */   "faPeoplePulling": () => (/* binding */ faPeoplePulling),
+/* harmony export */   "faPeopleRobbery": () => (/* binding */ faPeopleRobbery),
+/* harmony export */   "faPeopleRoof": () => (/* binding */ faPeopleRoof),
+/* harmony export */   "faPepperHot": () => (/* binding */ faPepperHot),
+/* harmony export */   "faPercent": () => (/* binding */ faPercent),
+/* harmony export */   "faPercentage": () => (/* binding */ faPercentage),
+/* harmony export */   "faPerson": () => (/* binding */ faPerson),
+/* harmony export */   "faPersonArrowDownToLine": () => (/* binding */ faPersonArrowDownToLine),
+/* harmony export */   "faPersonArrowUpFromLine": () => (/* binding */ faPersonArrowUpFromLine),
+/* harmony export */   "faPersonBiking": () => (/* binding */ faPersonBiking),
+/* harmony export */   "faPersonBooth": () => (/* binding */ faPersonBooth),
+/* harmony export */   "faPersonBreastfeeding": () => (/* binding */ faPersonBreastfeeding),
+/* harmony export */   "faPersonBurst": () => (/* binding */ faPersonBurst),
+/* harmony export */   "faPersonCane": () => (/* binding */ faPersonCane),
+/* harmony export */   "faPersonChalkboard": () => (/* binding */ faPersonChalkboard),
+/* harmony export */   "faPersonCircleCheck": () => (/* binding */ faPersonCircleCheck),
+/* harmony export */   "faPersonCircleExclamation": () => (/* binding */ faPersonCircleExclamation),
+/* harmony export */   "faPersonCircleMinus": () => (/* binding */ faPersonCircleMinus),
+/* harmony export */   "faPersonCirclePlus": () => (/* binding */ faPersonCirclePlus),
+/* harmony export */   "faPersonCircleQuestion": () => (/* binding */ faPersonCircleQuestion),
+/* harmony export */   "faPersonCircleXmark": () => (/* binding */ faPersonCircleXmark),
+/* harmony export */   "faPersonDigging": () => (/* binding */ faPersonDigging),
+/* harmony export */   "faPersonDotsFromLine": () => (/* binding */ faPersonDotsFromLine),
+/* harmony export */   "faPersonDress": () => (/* binding */ faPersonDress),
+/* harmony export */   "faPersonDressBurst": () => (/* binding */ faPersonDressBurst),
+/* harmony export */   "faPersonDrowning": () => (/* binding */ faPersonDrowning),
+/* harmony export */   "faPersonFalling": () => (/* binding */ faPersonFalling),
+/* harmony export */   "faPersonFallingBurst": () => (/* binding */ faPersonFallingBurst),
+/* harmony export */   "faPersonHalfDress": () => (/* binding */ faPersonHalfDress),
+/* harmony export */   "faPersonHarassing": () => (/* binding */ faPersonHarassing),
+/* harmony export */   "faPersonHiking": () => (/* binding */ faPersonHiking),
+/* harmony export */   "faPersonMilitaryPointing": () => (/* binding */ faPersonMilitaryPointing),
+/* harmony export */   "faPersonMilitaryRifle": () => (/* binding */ faPersonMilitaryRifle),
+/* harmony export */   "faPersonMilitaryToPerson": () => (/* binding */ faPersonMilitaryToPerson),
+/* harmony export */   "faPersonPraying": () => (/* binding */ faPersonPraying),
+/* harmony export */   "faPersonPregnant": () => (/* binding */ faPersonPregnant),
+/* harmony export */   "faPersonRays": () => (/* binding */ faPersonRays),
+/* harmony export */   "faPersonRifle": () => (/* binding */ faPersonRifle),
+/* harmony export */   "faPersonRunning": () => (/* binding */ faPersonRunning),
+/* harmony export */   "faPersonShelter": () => (/* binding */ faPersonShelter),
+/* harmony export */   "faPersonSkating": () => (/* binding */ faPersonSkating),
+/* harmony export */   "faPersonSkiing": () => (/* binding */ faPersonSkiing),
+/* harmony export */   "faPersonSkiingNordic": () => (/* binding */ faPersonSkiingNordic),
+/* harmony export */   "faPersonSnowboarding": () => (/* binding */ faPersonSnowboarding),
+/* harmony export */   "faPersonSwimming": () => (/* binding */ faPersonSwimming),
+/* harmony export */   "faPersonThroughWindow": () => (/* binding */ faPersonThroughWindow),
+/* harmony export */   "faPersonWalking": () => (/* binding */ faPersonWalking),
+/* harmony export */   "faPersonWalkingArrowLoopLeft": () => (/* binding */ faPersonWalkingArrowLoopLeft),
+/* harmony export */   "faPersonWalkingArrowRight": () => (/* binding */ faPersonWalkingArrowRight),
+/* harmony export */   "faPersonWalkingDashedLineArrowRight": () => (/* binding */ faPersonWalkingDashedLineArrowRight),
+/* harmony export */   "faPersonWalkingLuggage": () => (/* binding */ faPersonWalkingLuggage),
+/* harmony export */   "faPersonWalkingWithCane": () => (/* binding */ faPersonWalkingWithCane),
+/* harmony export */   "faPesetaSign": () => (/* binding */ faPesetaSign),
+/* harmony export */   "faPesoSign": () => (/* binding */ faPesoSign),
+/* harmony export */   "faPhone": () => (/* binding */ faPhone),
+/* harmony export */   "faPhoneAlt": () => (/* binding */ faPhoneAlt),
+/* harmony export */   "faPhoneFlip": () => (/* binding */ faPhoneFlip),
+/* harmony export */   "faPhoneSlash": () => (/* binding */ faPhoneSlash),
+/* harmony export */   "faPhoneSquare": () => (/* binding */ faPhoneSquare),
+/* harmony export */   "faPhoneSquareAlt": () => (/* binding */ faPhoneSquareAlt),
+/* harmony export */   "faPhoneVolume": () => (/* binding */ faPhoneVolume),
+/* harmony export */   "faPhotoFilm": () => (/* binding */ faPhotoFilm),
+/* harmony export */   "faPhotoVideo": () => (/* binding */ faPhotoVideo),
+/* harmony export */   "faPieChart": () => (/* binding */ faPieChart),
+/* harmony export */   "faPiggyBank": () => (/* binding */ faPiggyBank),
+/* harmony export */   "faPills": () => (/* binding */ faPills),
+/* harmony export */   "faPingPongPaddleBall": () => (/* binding */ faPingPongPaddleBall),
+/* harmony export */   "faPizzaSlice": () => (/* binding */ faPizzaSlice),
+/* harmony export */   "faPlaceOfWorship": () => (/* binding */ faPlaceOfWorship),
+/* harmony export */   "faPlane": () => (/* binding */ faPlane),
+/* harmony export */   "faPlaneArrival": () => (/* binding */ faPlaneArrival),
+/* harmony export */   "faPlaneCircleCheck": () => (/* binding */ faPlaneCircleCheck),
+/* harmony export */   "faPlaneCircleExclamation": () => (/* binding */ faPlaneCircleExclamation),
+/* harmony export */   "faPlaneCircleXmark": () => (/* binding */ faPlaneCircleXmark),
+/* harmony export */   "faPlaneDeparture": () => (/* binding */ faPlaneDeparture),
+/* harmony export */   "faPlaneLock": () => (/* binding */ faPlaneLock),
+/* harmony export */   "faPlaneSlash": () => (/* binding */ faPlaneSlash),
+/* harmony export */   "faPlaneUp": () => (/* binding */ faPlaneUp),
+/* harmony export */   "faPlantWilt": () => (/* binding */ faPlantWilt),
+/* harmony export */   "faPlateWheat": () => (/* binding */ faPlateWheat),
+/* harmony export */   "faPlay": () => (/* binding */ faPlay),
+/* harmony export */   "faPlayCircle": () => (/* binding */ faPlayCircle),
+/* harmony export */   "faPlug": () => (/* binding */ faPlug),
+/* harmony export */   "faPlugCircleBolt": () => (/* binding */ faPlugCircleBolt),
+/* harmony export */   "faPlugCircleCheck": () => (/* binding */ faPlugCircleCheck),
+/* harmony export */   "faPlugCircleExclamation": () => (/* binding */ faPlugCircleExclamation),
+/* harmony export */   "faPlugCircleMinus": () => (/* binding */ faPlugCircleMinus),
+/* harmony export */   "faPlugCirclePlus": () => (/* binding */ faPlugCirclePlus),
+/* harmony export */   "faPlugCircleXmark": () => (/* binding */ faPlugCircleXmark),
+/* harmony export */   "faPlus": () => (/* binding */ faPlus),
+/* harmony export */   "faPlusCircle": () => (/* binding */ faPlusCircle),
+/* harmony export */   "faPlusMinus": () => (/* binding */ faPlusMinus),
+/* harmony export */   "faPlusSquare": () => (/* binding */ faPlusSquare),
+/* harmony export */   "faPodcast": () => (/* binding */ faPodcast),
+/* harmony export */   "faPoll": () => (/* binding */ faPoll),
+/* harmony export */   "faPollH": () => (/* binding */ faPollH),
+/* harmony export */   "faPoo": () => (/* binding */ faPoo),
+/* harmony export */   "faPooBolt": () => (/* binding */ faPooBolt),
+/* harmony export */   "faPooStorm": () => (/* binding */ faPooStorm),
+/* harmony export */   "faPoop": () => (/* binding */ faPoop),
+/* harmony export */   "faPortrait": () => (/* binding */ faPortrait),
+/* harmony export */   "faPoundSign": () => (/* binding */ faPoundSign),
+/* harmony export */   "faPowerOff": () => (/* binding */ faPowerOff),
+/* harmony export */   "faPray": () => (/* binding */ faPray),
+/* harmony export */   "faPrayingHands": () => (/* binding */ faPrayingHands),
+/* harmony export */   "faPrescription": () => (/* binding */ faPrescription),
+/* harmony export */   "faPrescriptionBottle": () => (/* binding */ faPrescriptionBottle),
+/* harmony export */   "faPrescriptionBottleAlt": () => (/* binding */ faPrescriptionBottleAlt),
+/* harmony export */   "faPrescriptionBottleMedical": () => (/* binding */ faPrescriptionBottleMedical),
+/* harmony export */   "faPrint": () => (/* binding */ faPrint),
+/* harmony export */   "faProcedures": () => (/* binding */ faProcedures),
+/* harmony export */   "faProjectDiagram": () => (/* binding */ faProjectDiagram),
+/* harmony export */   "faPumpMedical": () => (/* binding */ faPumpMedical),
+/* harmony export */   "faPumpSoap": () => (/* binding */ faPumpSoap),
+/* harmony export */   "faPuzzlePiece": () => (/* binding */ faPuzzlePiece),
+/* harmony export */   "faQ": () => (/* binding */ faQ),
+/* harmony export */   "faQrcode": () => (/* binding */ faQrcode),
+/* harmony export */   "faQuestion": () => (/* binding */ faQuestion),
+/* harmony export */   "faQuestionCircle": () => (/* binding */ faQuestionCircle),
+/* harmony export */   "faQuidditch": () => (/* binding */ faQuidditch),
+/* harmony export */   "faQuidditchBroomBall": () => (/* binding */ faQuidditchBroomBall),
+/* harmony export */   "faQuoteLeft": () => (/* binding */ faQuoteLeft),
+/* harmony export */   "faQuoteLeftAlt": () => (/* binding */ faQuoteLeftAlt),
+/* harmony export */   "faQuoteRight": () => (/* binding */ faQuoteRight),
+/* harmony export */   "faQuoteRightAlt": () => (/* binding */ faQuoteRightAlt),
+/* harmony export */   "faQuran": () => (/* binding */ faQuran),
+/* harmony export */   "faR": () => (/* binding */ faR),
+/* harmony export */   "faRadiation": () => (/* binding */ faRadiation),
+/* harmony export */   "faRadiationAlt": () => (/* binding */ faRadiationAlt),
+/* harmony export */   "faRadio": () => (/* binding */ faRadio),
+/* harmony export */   "faRainbow": () => (/* binding */ faRainbow),
+/* harmony export */   "faRandom": () => (/* binding */ faRandom),
+/* harmony export */   "faRankingStar": () => (/* binding */ faRankingStar),
+/* harmony export */   "faReceipt": () => (/* binding */ faReceipt),
+/* harmony export */   "faRecordVinyl": () => (/* binding */ faRecordVinyl),
+/* harmony export */   "faRectangleAd": () => (/* binding */ faRectangleAd),
+/* harmony export */   "faRectangleList": () => (/* binding */ faRectangleList),
+/* harmony export */   "faRectangleTimes": () => (/* binding */ faRectangleTimes),
+/* harmony export */   "faRectangleXmark": () => (/* binding */ faRectangleXmark),
+/* harmony export */   "faRecycle": () => (/* binding */ faRecycle),
+/* harmony export */   "faRedo": () => (/* binding */ faRedo),
+/* harmony export */   "faRedoAlt": () => (/* binding */ faRedoAlt),
+/* harmony export */   "faRefresh": () => (/* binding */ faRefresh),
+/* harmony export */   "faRegistered": () => (/* binding */ faRegistered),
+/* harmony export */   "faRemove": () => (/* binding */ faRemove),
+/* harmony export */   "faRemoveFormat": () => (/* binding */ faRemoveFormat),
+/* harmony export */   "faReorder": () => (/* binding */ faReorder),
+/* harmony export */   "faRepeat": () => (/* binding */ faRepeat),
+/* harmony export */   "faReply": () => (/* binding */ faReply),
+/* harmony export */   "faReplyAll": () => (/* binding */ faReplyAll),
+/* harmony export */   "faRepublican": () => (/* binding */ faRepublican),
+/* harmony export */   "faRestroom": () => (/* binding */ faRestroom),
+/* harmony export */   "faRetweet": () => (/* binding */ faRetweet),
+/* harmony export */   "faRibbon": () => (/* binding */ faRibbon),
+/* harmony export */   "faRightFromBracket": () => (/* binding */ faRightFromBracket),
+/* harmony export */   "faRightLeft": () => (/* binding */ faRightLeft),
+/* harmony export */   "faRightLong": () => (/* binding */ faRightLong),
+/* harmony export */   "faRightToBracket": () => (/* binding */ faRightToBracket),
+/* harmony export */   "faRing": () => (/* binding */ faRing),
+/* harmony export */   "faRmb": () => (/* binding */ faRmb),
+/* harmony export */   "faRoad": () => (/* binding */ faRoad),
+/* harmony export */   "faRoadBarrier": () => (/* binding */ faRoadBarrier),
+/* harmony export */   "faRoadBridge": () => (/* binding */ faRoadBridge),
+/* harmony export */   "faRoadCircleCheck": () => (/* binding */ faRoadCircleCheck),
+/* harmony export */   "faRoadCircleExclamation": () => (/* binding */ faRoadCircleExclamation),
+/* harmony export */   "faRoadCircleXmark": () => (/* binding */ faRoadCircleXmark),
+/* harmony export */   "faRoadLock": () => (/* binding */ faRoadLock),
+/* harmony export */   "faRoadSpikes": () => (/* binding */ faRoadSpikes),
+/* harmony export */   "faRobot": () => (/* binding */ faRobot),
+/* harmony export */   "faRocket": () => (/* binding */ faRocket),
+/* harmony export */   "faRodAsclepius": () => (/* binding */ faRodAsclepius),
+/* harmony export */   "faRodSnake": () => (/* binding */ faRodSnake),
+/* harmony export */   "faRotate": () => (/* binding */ faRotate),
+/* harmony export */   "faRotateBack": () => (/* binding */ faRotateBack),
+/* harmony export */   "faRotateBackward": () => (/* binding */ faRotateBackward),
+/* harmony export */   "faRotateForward": () => (/* binding */ faRotateForward),
+/* harmony export */   "faRotateLeft": () => (/* binding */ faRotateLeft),
+/* harmony export */   "faRotateRight": () => (/* binding */ faRotateRight),
+/* harmony export */   "faRouble": () => (/* binding */ faRouble),
+/* harmony export */   "faRoute": () => (/* binding */ faRoute),
+/* harmony export */   "faRss": () => (/* binding */ faRss),
+/* harmony export */   "faRssSquare": () => (/* binding */ faRssSquare),
+/* harmony export */   "faRub": () => (/* binding */ faRub),
+/* harmony export */   "faRuble": () => (/* binding */ faRuble),
+/* harmony export */   "faRubleSign": () => (/* binding */ faRubleSign),
+/* harmony export */   "faRug": () => (/* binding */ faRug),
+/* harmony export */   "faRuler": () => (/* binding */ faRuler),
+/* harmony export */   "faRulerCombined": () => (/* binding */ faRulerCombined),
+/* harmony export */   "faRulerHorizontal": () => (/* binding */ faRulerHorizontal),
+/* harmony export */   "faRulerVertical": () => (/* binding */ faRulerVertical),
+/* harmony export */   "faRunning": () => (/* binding */ faRunning),
+/* harmony export */   "faRupee": () => (/* binding */ faRupee),
+/* harmony export */   "faRupeeSign": () => (/* binding */ faRupeeSign),
+/* harmony export */   "faRupiahSign": () => (/* binding */ faRupiahSign),
+/* harmony export */   "faS": () => (/* binding */ faS),
+/* harmony export */   "faSackDollar": () => (/* binding */ faSackDollar),
+/* harmony export */   "faSackXmark": () => (/* binding */ faSackXmark),
+/* harmony export */   "faSadCry": () => (/* binding */ faSadCry),
+/* harmony export */   "faSadTear": () => (/* binding */ faSadTear),
+/* harmony export */   "faSailboat": () => (/* binding */ faSailboat),
+/* harmony export */   "faSatellite": () => (/* binding */ faSatellite),
+/* harmony export */   "faSatelliteDish": () => (/* binding */ faSatelliteDish),
+/* harmony export */   "faSave": () => (/* binding */ faSave),
+/* harmony export */   "faScaleBalanced": () => (/* binding */ faScaleBalanced),
+/* harmony export */   "faScaleUnbalanced": () => (/* binding */ faScaleUnbalanced),
+/* harmony export */   "faScaleUnbalancedFlip": () => (/* binding */ faScaleUnbalancedFlip),
+/* harmony export */   "faSchool": () => (/* binding */ faSchool),
+/* harmony export */   "faSchoolCircleCheck": () => (/* binding */ faSchoolCircleCheck),
+/* harmony export */   "faSchoolCircleExclamation": () => (/* binding */ faSchoolCircleExclamation),
+/* harmony export */   "faSchoolCircleXmark": () => (/* binding */ faSchoolCircleXmark),
+/* harmony export */   "faSchoolFlag": () => (/* binding */ faSchoolFlag),
+/* harmony export */   "faSchoolLock": () => (/* binding */ faSchoolLock),
+/* harmony export */   "faScissors": () => (/* binding */ faScissors),
+/* harmony export */   "faScrewdriver": () => (/* binding */ faScrewdriver),
+/* harmony export */   "faScrewdriverWrench": () => (/* binding */ faScrewdriverWrench),
+/* harmony export */   "faScroll": () => (/* binding */ faScroll),
+/* harmony export */   "faScrollTorah": () => (/* binding */ faScrollTorah),
+/* harmony export */   "faSdCard": () => (/* binding */ faSdCard),
+/* harmony export */   "faSearch": () => (/* binding */ faSearch),
+/* harmony export */   "faSearchDollar": () => (/* binding */ faSearchDollar),
+/* harmony export */   "faSearchLocation": () => (/* binding */ faSearchLocation),
+/* harmony export */   "faSearchMinus": () => (/* binding */ faSearchMinus),
+/* harmony export */   "faSearchPlus": () => (/* binding */ faSearchPlus),
+/* harmony export */   "faSection": () => (/* binding */ faSection),
+/* harmony export */   "faSeedling": () => (/* binding */ faSeedling),
+/* harmony export */   "faServer": () => (/* binding */ faServer),
+/* harmony export */   "faShapes": () => (/* binding */ faShapes),
+/* harmony export */   "faShare": () => (/* binding */ faShare),
+/* harmony export */   "faShareAlt": () => (/* binding */ faShareAlt),
+/* harmony export */   "faShareAltSquare": () => (/* binding */ faShareAltSquare),
+/* harmony export */   "faShareFromSquare": () => (/* binding */ faShareFromSquare),
+/* harmony export */   "faShareNodes": () => (/* binding */ faShareNodes),
+/* harmony export */   "faShareSquare": () => (/* binding */ faShareSquare),
+/* harmony export */   "faSheetPlastic": () => (/* binding */ faSheetPlastic),
+/* harmony export */   "faShekel": () => (/* binding */ faShekel),
+/* harmony export */   "faShekelSign": () => (/* binding */ faShekelSign),
+/* harmony export */   "faSheqel": () => (/* binding */ faSheqel),
+/* harmony export */   "faSheqelSign": () => (/* binding */ faSheqelSign),
+/* harmony export */   "faShield": () => (/* binding */ faShield),
+/* harmony export */   "faShieldAlt": () => (/* binding */ faShieldAlt),
+/* harmony export */   "faShieldBlank": () => (/* binding */ faShieldBlank),
+/* harmony export */   "faShieldCat": () => (/* binding */ faShieldCat),
+/* harmony export */   "faShieldDog": () => (/* binding */ faShieldDog),
+/* harmony export */   "faShieldHalved": () => (/* binding */ faShieldHalved),
+/* harmony export */   "faShieldHeart": () => (/* binding */ faShieldHeart),
+/* harmony export */   "faShieldVirus": () => (/* binding */ faShieldVirus),
+/* harmony export */   "faShip": () => (/* binding */ faShip),
+/* harmony export */   "faShippingFast": () => (/* binding */ faShippingFast),
+/* harmony export */   "faShirt": () => (/* binding */ faShirt),
+/* harmony export */   "faShoePrints": () => (/* binding */ faShoePrints),
+/* harmony export */   "faShop": () => (/* binding */ faShop),
+/* harmony export */   "faShopLock": () => (/* binding */ faShopLock),
+/* harmony export */   "faShopSlash": () => (/* binding */ faShopSlash),
+/* harmony export */   "faShoppingBag": () => (/* binding */ faShoppingBag),
+/* harmony export */   "faShoppingBasket": () => (/* binding */ faShoppingBasket),
+/* harmony export */   "faShoppingCart": () => (/* binding */ faShoppingCart),
+/* harmony export */   "faShower": () => (/* binding */ faShower),
+/* harmony export */   "faShrimp": () => (/* binding */ faShrimp),
+/* harmony export */   "faShuffle": () => (/* binding */ faShuffle),
+/* harmony export */   "faShuttleSpace": () => (/* binding */ faShuttleSpace),
+/* harmony export */   "faShuttleVan": () => (/* binding */ faShuttleVan),
+/* harmony export */   "faSign": () => (/* binding */ faSign),
+/* harmony export */   "faSignHanging": () => (/* binding */ faSignHanging),
+/* harmony export */   "faSignIn": () => (/* binding */ faSignIn),
+/* harmony export */   "faSignInAlt": () => (/* binding */ faSignInAlt),
+/* harmony export */   "faSignLanguage": () => (/* binding */ faSignLanguage),
+/* harmony export */   "faSignOut": () => (/* binding */ faSignOut),
+/* harmony export */   "faSignOutAlt": () => (/* binding */ faSignOutAlt),
+/* harmony export */   "faSignal": () => (/* binding */ faSignal),
+/* harmony export */   "faSignal5": () => (/* binding */ faSignal5),
+/* harmony export */   "faSignalPerfect": () => (/* binding */ faSignalPerfect),
+/* harmony export */   "faSignature": () => (/* binding */ faSignature),
+/* harmony export */   "faSigning": () => (/* binding */ faSigning),
+/* harmony export */   "faSignsPost": () => (/* binding */ faSignsPost),
+/* harmony export */   "faSimCard": () => (/* binding */ faSimCard),
+/* harmony export */   "faSink": () => (/* binding */ faSink),
+/* harmony export */   "faSitemap": () => (/* binding */ faSitemap),
+/* harmony export */   "faSkating": () => (/* binding */ faSkating),
+/* harmony export */   "faSkiing": () => (/* binding */ faSkiing),
+/* harmony export */   "faSkiingNordic": () => (/* binding */ faSkiingNordic),
+/* harmony export */   "faSkull": () => (/* binding */ faSkull),
+/* harmony export */   "faSkullCrossbones": () => (/* binding */ faSkullCrossbones),
+/* harmony export */   "faSlash": () => (/* binding */ faSlash),
+/* harmony export */   "faSleigh": () => (/* binding */ faSleigh),
+/* harmony export */   "faSliders": () => (/* binding */ faSliders),
+/* harmony export */   "faSlidersH": () => (/* binding */ faSlidersH),
+/* harmony export */   "faSmile": () => (/* binding */ faSmile),
+/* harmony export */   "faSmileBeam": () => (/* binding */ faSmileBeam),
+/* harmony export */   "faSmileWink": () => (/* binding */ faSmileWink),
+/* harmony export */   "faSmog": () => (/* binding */ faSmog),
+/* harmony export */   "faSmoking": () => (/* binding */ faSmoking),
+/* harmony export */   "faSmokingBan": () => (/* binding */ faSmokingBan),
+/* harmony export */   "faSms": () => (/* binding */ faSms),
+/* harmony export */   "faSnowboarding": () => (/* binding */ faSnowboarding),
+/* harmony export */   "faSnowflake": () => (/* binding */ faSnowflake),
+/* harmony export */   "faSnowman": () => (/* binding */ faSnowman),
+/* harmony export */   "faSnowplow": () => (/* binding */ faSnowplow),
+/* harmony export */   "faSoap": () => (/* binding */ faSoap),
+/* harmony export */   "faSoccerBall": () => (/* binding */ faSoccerBall),
+/* harmony export */   "faSocks": () => (/* binding */ faSocks),
+/* harmony export */   "faSolarPanel": () => (/* binding */ faSolarPanel),
+/* harmony export */   "faSort": () => (/* binding */ faSort),
+/* harmony export */   "faSortAlphaAsc": () => (/* binding */ faSortAlphaAsc),
+/* harmony export */   "faSortAlphaDesc": () => (/* binding */ faSortAlphaDesc),
+/* harmony export */   "faSortAlphaDown": () => (/* binding */ faSortAlphaDown),
+/* harmony export */   "faSortAlphaDownAlt": () => (/* binding */ faSortAlphaDownAlt),
+/* harmony export */   "faSortAlphaUp": () => (/* binding */ faSortAlphaUp),
+/* harmony export */   "faSortAlphaUpAlt": () => (/* binding */ faSortAlphaUpAlt),
+/* harmony export */   "faSortAmountAsc": () => (/* binding */ faSortAmountAsc),
+/* harmony export */   "faSortAmountDesc": () => (/* binding */ faSortAmountDesc),
+/* harmony export */   "faSortAmountDown": () => (/* binding */ faSortAmountDown),
+/* harmony export */   "faSortAmountDownAlt": () => (/* binding */ faSortAmountDownAlt),
+/* harmony export */   "faSortAmountUp": () => (/* binding */ faSortAmountUp),
+/* harmony export */   "faSortAmountUpAlt": () => (/* binding */ faSortAmountUpAlt),
+/* harmony export */   "faSortAsc": () => (/* binding */ faSortAsc),
+/* harmony export */   "faSortDesc": () => (/* binding */ faSortDesc),
+/* harmony export */   "faSortDown": () => (/* binding */ faSortDown),
+/* harmony export */   "faSortNumericAsc": () => (/* binding */ faSortNumericAsc),
+/* harmony export */   "faSortNumericDesc": () => (/* binding */ faSortNumericDesc),
+/* harmony export */   "faSortNumericDown": () => (/* binding */ faSortNumericDown),
+/* harmony export */   "faSortNumericDownAlt": () => (/* binding */ faSortNumericDownAlt),
+/* harmony export */   "faSortNumericUp": () => (/* binding */ faSortNumericUp),
+/* harmony export */   "faSortNumericUpAlt": () => (/* binding */ faSortNumericUpAlt),
+/* harmony export */   "faSortUp": () => (/* binding */ faSortUp),
+/* harmony export */   "faSpa": () => (/* binding */ faSpa),
+/* harmony export */   "faSpaceShuttle": () => (/* binding */ faSpaceShuttle),
+/* harmony export */   "faSpaghettiMonsterFlying": () => (/* binding */ faSpaghettiMonsterFlying),
+/* harmony export */   "faSpellCheck": () => (/* binding */ faSpellCheck),
+/* harmony export */   "faSpider": () => (/* binding */ faSpider),
+/* harmony export */   "faSpinner": () => (/* binding */ faSpinner),
+/* harmony export */   "faSplotch": () => (/* binding */ faSplotch),
+/* harmony export */   "faSpoon": () => (/* binding */ faSpoon),
+/* harmony export */   "faSprayCan": () => (/* binding */ faSprayCan),
+/* harmony export */   "faSprayCanSparkles": () => (/* binding */ faSprayCanSparkles),
+/* harmony export */   "faSprout": () => (/* binding */ faSprout),
+/* harmony export */   "faSquare": () => (/* binding */ faSquare),
+/* harmony export */   "faSquareArrowUpRight": () => (/* binding */ faSquareArrowUpRight),
+/* harmony export */   "faSquareCaretDown": () => (/* binding */ faSquareCaretDown),
+/* harmony export */   "faSquareCaretLeft": () => (/* binding */ faSquareCaretLeft),
+/* harmony export */   "faSquareCaretRight": () => (/* binding */ faSquareCaretRight),
+/* harmony export */   "faSquareCaretUp": () => (/* binding */ faSquareCaretUp),
+/* harmony export */   "faSquareCheck": () => (/* binding */ faSquareCheck),
+/* harmony export */   "faSquareEnvelope": () => (/* binding */ faSquareEnvelope),
+/* harmony export */   "faSquareFull": () => (/* binding */ faSquareFull),
+/* harmony export */   "faSquareH": () => (/* binding */ faSquareH),
+/* harmony export */   "faSquareMinus": () => (/* binding */ faSquareMinus),
+/* harmony export */   "faSquareNfi": () => (/* binding */ faSquareNfi),
+/* harmony export */   "faSquareParking": () => (/* binding */ faSquareParking),
+/* harmony export */   "faSquarePen": () => (/* binding */ faSquarePen),
+/* harmony export */   "faSquarePersonConfined": () => (/* binding */ faSquarePersonConfined),
+/* harmony export */   "faSquarePhone": () => (/* binding */ faSquarePhone),
+/* harmony export */   "faSquarePhoneFlip": () => (/* binding */ faSquarePhoneFlip),
+/* harmony export */   "faSquarePlus": () => (/* binding */ faSquarePlus),
+/* harmony export */   "faSquarePollHorizontal": () => (/* binding */ faSquarePollHorizontal),
+/* harmony export */   "faSquarePollVertical": () => (/* binding */ faSquarePollVertical),
+/* harmony export */   "faSquareRootAlt": () => (/* binding */ faSquareRootAlt),
+/* harmony export */   "faSquareRootVariable": () => (/* binding */ faSquareRootVariable),
+/* harmony export */   "faSquareRss": () => (/* binding */ faSquareRss),
+/* harmony export */   "faSquareShareNodes": () => (/* binding */ faSquareShareNodes),
+/* harmony export */   "faSquareUpRight": () => (/* binding */ faSquareUpRight),
+/* harmony export */   "faSquareVirus": () => (/* binding */ faSquareVirus),
+/* harmony export */   "faSquareXmark": () => (/* binding */ faSquareXmark),
+/* harmony export */   "faStaffAesculapius": () => (/* binding */ faStaffAesculapius),
+/* harmony export */   "faStaffSnake": () => (/* binding */ faStaffSnake),
+/* harmony export */   "faStairs": () => (/* binding */ faStairs),
+/* harmony export */   "faStamp": () => (/* binding */ faStamp),
+/* harmony export */   "faStapler": () => (/* binding */ faStapler),
+/* harmony export */   "faStar": () => (/* binding */ faStar),
+/* harmony export */   "faStarAndCrescent": () => (/* binding */ faStarAndCrescent),
+/* harmony export */   "faStarHalf": () => (/* binding */ faStarHalf),
+/* harmony export */   "faStarHalfAlt": () => (/* binding */ faStarHalfAlt),
+/* harmony export */   "faStarHalfStroke": () => (/* binding */ faStarHalfStroke),
+/* harmony export */   "faStarOfDavid": () => (/* binding */ faStarOfDavid),
+/* harmony export */   "faStarOfLife": () => (/* binding */ faStarOfLife),
+/* harmony export */   "faStepBackward": () => (/* binding */ faStepBackward),
+/* harmony export */   "faStepForward": () => (/* binding */ faStepForward),
+/* harmony export */   "faSterlingSign": () => (/* binding */ faSterlingSign),
+/* harmony export */   "faStethoscope": () => (/* binding */ faStethoscope),
+/* harmony export */   "faStickyNote": () => (/* binding */ faStickyNote),
+/* harmony export */   "faStop": () => (/* binding */ faStop),
+/* harmony export */   "faStopCircle": () => (/* binding */ faStopCircle),
+/* harmony export */   "faStopwatch": () => (/* binding */ faStopwatch),
+/* harmony export */   "faStopwatch20": () => (/* binding */ faStopwatch20),
+/* harmony export */   "faStore": () => (/* binding */ faStore),
+/* harmony export */   "faStoreAlt": () => (/* binding */ faStoreAlt),
+/* harmony export */   "faStoreAltSlash": () => (/* binding */ faStoreAltSlash),
+/* harmony export */   "faStoreSlash": () => (/* binding */ faStoreSlash),
+/* harmony export */   "faStream": () => (/* binding */ faStream),
+/* harmony export */   "faStreetView": () => (/* binding */ faStreetView),
+/* harmony export */   "faStrikethrough": () => (/* binding */ faStrikethrough),
+/* harmony export */   "faStroopwafel": () => (/* binding */ faStroopwafel),
+/* harmony export */   "faSubscript": () => (/* binding */ faSubscript),
+/* harmony export */   "faSubtract": () => (/* binding */ faSubtract),
+/* harmony export */   "faSubway": () => (/* binding */ faSubway),
+/* harmony export */   "faSuitcase": () => (/* binding */ faSuitcase),
+/* harmony export */   "faSuitcaseMedical": () => (/* binding */ faSuitcaseMedical),
+/* harmony export */   "faSuitcaseRolling": () => (/* binding */ faSuitcaseRolling),
+/* harmony export */   "faSun": () => (/* binding */ faSun),
+/* harmony export */   "faSunPlantWilt": () => (/* binding */ faSunPlantWilt),
+/* harmony export */   "faSuperscript": () => (/* binding */ faSuperscript),
+/* harmony export */   "faSurprise": () => (/* binding */ faSurprise),
+/* harmony export */   "faSwatchbook": () => (/* binding */ faSwatchbook),
+/* harmony export */   "faSwimmer": () => (/* binding */ faSwimmer),
+/* harmony export */   "faSwimmingPool": () => (/* binding */ faSwimmingPool),
+/* harmony export */   "faSynagogue": () => (/* binding */ faSynagogue),
+/* harmony export */   "faSync": () => (/* binding */ faSync),
+/* harmony export */   "faSyncAlt": () => (/* binding */ faSyncAlt),
+/* harmony export */   "faSyringe": () => (/* binding */ faSyringe),
+/* harmony export */   "faT": () => (/* binding */ faT),
+/* harmony export */   "faTShirt": () => (/* binding */ faTShirt),
+/* harmony export */   "faTable": () => (/* binding */ faTable),
+/* harmony export */   "faTableCells": () => (/* binding */ faTableCells),
+/* harmony export */   "faTableCellsLarge": () => (/* binding */ faTableCellsLarge),
+/* harmony export */   "faTableColumns": () => (/* binding */ faTableColumns),
+/* harmony export */   "faTableList": () => (/* binding */ faTableList),
+/* harmony export */   "faTableTennis": () => (/* binding */ faTableTennis),
+/* harmony export */   "faTableTennisPaddleBall": () => (/* binding */ faTableTennisPaddleBall),
+/* harmony export */   "faTablet": () => (/* binding */ faTablet),
+/* harmony export */   "faTabletAlt": () => (/* binding */ faTabletAlt),
+/* harmony export */   "faTabletAndroid": () => (/* binding */ faTabletAndroid),
+/* harmony export */   "faTabletButton": () => (/* binding */ faTabletButton),
+/* harmony export */   "faTabletScreenButton": () => (/* binding */ faTabletScreenButton),
+/* harmony export */   "faTablets": () => (/* binding */ faTablets),
+/* harmony export */   "faTachographDigital": () => (/* binding */ faTachographDigital),
+/* harmony export */   "faTachometer": () => (/* binding */ faTachometer),
+/* harmony export */   "faTachometerAlt": () => (/* binding */ faTachometerAlt),
+/* harmony export */   "faTachometerAltAverage": () => (/* binding */ faTachometerAltAverage),
+/* harmony export */   "faTachometerAltFast": () => (/* binding */ faTachometerAltFast),
+/* harmony export */   "faTachometerAverage": () => (/* binding */ faTachometerAverage),
+/* harmony export */   "faTachometerFast": () => (/* binding */ faTachometerFast),
+/* harmony export */   "faTag": () => (/* binding */ faTag),
+/* harmony export */   "faTags": () => (/* binding */ faTags),
+/* harmony export */   "faTanakh": () => (/* binding */ faTanakh),
+/* harmony export */   "faTape": () => (/* binding */ faTape),
+/* harmony export */   "faTarp": () => (/* binding */ faTarp),
+/* harmony export */   "faTarpDroplet": () => (/* binding */ faTarpDroplet),
+/* harmony export */   "faTasks": () => (/* binding */ faTasks),
+/* harmony export */   "faTasksAlt": () => (/* binding */ faTasksAlt),
+/* harmony export */   "faTaxi": () => (/* binding */ faTaxi),
+/* harmony export */   "faTeeth": () => (/* binding */ faTeeth),
+/* harmony export */   "faTeethOpen": () => (/* binding */ faTeethOpen),
+/* harmony export */   "faTeletype": () => (/* binding */ faTeletype),
+/* harmony export */   "faTelevision": () => (/* binding */ faTelevision),
+/* harmony export */   "faTemperature0": () => (/* binding */ faTemperature0),
+/* harmony export */   "faTemperature1": () => (/* binding */ faTemperature1),
+/* harmony export */   "faTemperature2": () => (/* binding */ faTemperature2),
+/* harmony export */   "faTemperature3": () => (/* binding */ faTemperature3),
+/* harmony export */   "faTemperature4": () => (/* binding */ faTemperature4),
+/* harmony export */   "faTemperatureArrowDown": () => (/* binding */ faTemperatureArrowDown),
+/* harmony export */   "faTemperatureArrowUp": () => (/* binding */ faTemperatureArrowUp),
+/* harmony export */   "faTemperatureDown": () => (/* binding */ faTemperatureDown),
+/* harmony export */   "faTemperatureEmpty": () => (/* binding */ faTemperatureEmpty),
+/* harmony export */   "faTemperatureFull": () => (/* binding */ faTemperatureFull),
+/* harmony export */   "faTemperatureHalf": () => (/* binding */ faTemperatureHalf),
+/* harmony export */   "faTemperatureHigh": () => (/* binding */ faTemperatureHigh),
+/* harmony export */   "faTemperatureLow": () => (/* binding */ faTemperatureLow),
+/* harmony export */   "faTemperatureQuarter": () => (/* binding */ faTemperatureQuarter),
+/* harmony export */   "faTemperatureThreeQuarters": () => (/* binding */ faTemperatureThreeQuarters),
+/* harmony export */   "faTemperatureUp": () => (/* binding */ faTemperatureUp),
+/* harmony export */   "faTenge": () => (/* binding */ faTenge),
+/* harmony export */   "faTengeSign": () => (/* binding */ faTengeSign),
+/* harmony export */   "faTent": () => (/* binding */ faTent),
+/* harmony export */   "faTentArrowDownToLine": () => (/* binding */ faTentArrowDownToLine),
+/* harmony export */   "faTentArrowLeftRight": () => (/* binding */ faTentArrowLeftRight),
+/* harmony export */   "faTentArrowTurnLeft": () => (/* binding */ faTentArrowTurnLeft),
+/* harmony export */   "faTentArrowsDown": () => (/* binding */ faTentArrowsDown),
+/* harmony export */   "faTents": () => (/* binding */ faTents),
+/* harmony export */   "faTerminal": () => (/* binding */ faTerminal),
+/* harmony export */   "faTextHeight": () => (/* binding */ faTextHeight),
+/* harmony export */   "faTextSlash": () => (/* binding */ faTextSlash),
+/* harmony export */   "faTextWidth": () => (/* binding */ faTextWidth),
+/* harmony export */   "faTh": () => (/* binding */ faTh),
+/* harmony export */   "faThLarge": () => (/* binding */ faThLarge),
+/* harmony export */   "faThList": () => (/* binding */ faThList),
+/* harmony export */   "faTheaterMasks": () => (/* binding */ faTheaterMasks),
+/* harmony export */   "faThermometer": () => (/* binding */ faThermometer),
+/* harmony export */   "faThermometer0": () => (/* binding */ faThermometer0),
+/* harmony export */   "faThermometer1": () => (/* binding */ faThermometer1),
+/* harmony export */   "faThermometer2": () => (/* binding */ faThermometer2),
+/* harmony export */   "faThermometer3": () => (/* binding */ faThermometer3),
+/* harmony export */   "faThermometer4": () => (/* binding */ faThermometer4),
+/* harmony export */   "faThermometerEmpty": () => (/* binding */ faThermometerEmpty),
+/* harmony export */   "faThermometerFull": () => (/* binding */ faThermometerFull),
+/* harmony export */   "faThermometerHalf": () => (/* binding */ faThermometerHalf),
+/* harmony export */   "faThermometerQuarter": () => (/* binding */ faThermometerQuarter),
+/* harmony export */   "faThermometerThreeQuarters": () => (/* binding */ faThermometerThreeQuarters),
+/* harmony export */   "faThumbTack": () => (/* binding */ faThumbTack),
+/* harmony export */   "faThumbsDown": () => (/* binding */ faThumbsDown),
+/* harmony export */   "faThumbsUp": () => (/* binding */ faThumbsUp),
+/* harmony export */   "faThumbtack": () => (/* binding */ faThumbtack),
+/* harmony export */   "faThunderstorm": () => (/* binding */ faThunderstorm),
+/* harmony export */   "faTicket": () => (/* binding */ faTicket),
+/* harmony export */   "faTicketAlt": () => (/* binding */ faTicketAlt),
+/* harmony export */   "faTicketSimple": () => (/* binding */ faTicketSimple),
+/* harmony export */   "faTimeline": () => (/* binding */ faTimeline),
+/* harmony export */   "faTimes": () => (/* binding */ faTimes),
+/* harmony export */   "faTimesCircle": () => (/* binding */ faTimesCircle),
+/* harmony export */   "faTimesRectangle": () => (/* binding */ faTimesRectangle),
+/* harmony export */   "faTimesSquare": () => (/* binding */ faTimesSquare),
+/* harmony export */   "faTint": () => (/* binding */ faTint),
+/* harmony export */   "faTintSlash": () => (/* binding */ faTintSlash),
+/* harmony export */   "faTired": () => (/* binding */ faTired),
+/* harmony export */   "faToggleOff": () => (/* binding */ faToggleOff),
+/* harmony export */   "faToggleOn": () => (/* binding */ faToggleOn),
+/* harmony export */   "faToilet": () => (/* binding */ faToilet),
+/* harmony export */   "faToiletPaper": () => (/* binding */ faToiletPaper),
+/* harmony export */   "faToiletPaperSlash": () => (/* binding */ faToiletPaperSlash),
+/* harmony export */   "faToiletPortable": () => (/* binding */ faToiletPortable),
+/* harmony export */   "faToiletsPortable": () => (/* binding */ faToiletsPortable),
+/* harmony export */   "faToolbox": () => (/* binding */ faToolbox),
+/* harmony export */   "faTools": () => (/* binding */ faTools),
+/* harmony export */   "faTooth": () => (/* binding */ faTooth),
+/* harmony export */   "faTorah": () => (/* binding */ faTorah),
+/* harmony export */   "faToriiGate": () => (/* binding */ faToriiGate),
+/* harmony export */   "faTornado": () => (/* binding */ faTornado),
+/* harmony export */   "faTowerBroadcast": () => (/* binding */ faTowerBroadcast),
+/* harmony export */   "faTowerCell": () => (/* binding */ faTowerCell),
+/* harmony export */   "faTowerObservation": () => (/* binding */ faTowerObservation),
+/* harmony export */   "faTractor": () => (/* binding */ faTractor),
+/* harmony export */   "faTrademark": () => (/* binding */ faTrademark),
+/* harmony export */   "faTrafficLight": () => (/* binding */ faTrafficLight),
+/* harmony export */   "faTrailer": () => (/* binding */ faTrailer),
+/* harmony export */   "faTrain": () => (/* binding */ faTrain),
+/* harmony export */   "faTrainSubway": () => (/* binding */ faTrainSubway),
+/* harmony export */   "faTrainTram": () => (/* binding */ faTrainTram),
+/* harmony export */   "faTram": () => (/* binding */ faTram),
+/* harmony export */   "faTransgender": () => (/* binding */ faTransgender),
+/* harmony export */   "faTransgenderAlt": () => (/* binding */ faTransgenderAlt),
+/* harmony export */   "faTrash": () => (/* binding */ faTrash),
+/* harmony export */   "faTrashAlt": () => (/* binding */ faTrashAlt),
+/* harmony export */   "faTrashArrowUp": () => (/* binding */ faTrashArrowUp),
+/* harmony export */   "faTrashCan": () => (/* binding */ faTrashCan),
+/* harmony export */   "faTrashCanArrowUp": () => (/* binding */ faTrashCanArrowUp),
+/* harmony export */   "faTrashRestore": () => (/* binding */ faTrashRestore),
+/* harmony export */   "faTrashRestoreAlt": () => (/* binding */ faTrashRestoreAlt),
+/* harmony export */   "faTree": () => (/* binding */ faTree),
+/* harmony export */   "faTreeCity": () => (/* binding */ faTreeCity),
+/* harmony export */   "faTriangleCircleSquare": () => (/* binding */ faTriangleCircleSquare),
+/* harmony export */   "faTriangleExclamation": () => (/* binding */ faTriangleExclamation),
+/* harmony export */   "faTrophy": () => (/* binding */ faTrophy),
+/* harmony export */   "faTrowel": () => (/* binding */ faTrowel),
+/* harmony export */   "faTrowelBricks": () => (/* binding */ faTrowelBricks),
+/* harmony export */   "faTruck": () => (/* binding */ faTruck),
+/* harmony export */   "faTruckArrowRight": () => (/* binding */ faTruckArrowRight),
+/* harmony export */   "faTruckDroplet": () => (/* binding */ faTruckDroplet),
+/* harmony export */   "faTruckFast": () => (/* binding */ faTruckFast),
+/* harmony export */   "faTruckField": () => (/* binding */ faTruckField),
+/* harmony export */   "faTruckFieldUn": () => (/* binding */ faTruckFieldUn),
+/* harmony export */   "faTruckFront": () => (/* binding */ faTruckFront),
+/* harmony export */   "faTruckLoading": () => (/* binding */ faTruckLoading),
+/* harmony export */   "faTruckMedical": () => (/* binding */ faTruckMedical),
+/* harmony export */   "faTruckMonster": () => (/* binding */ faTruckMonster),
+/* harmony export */   "faTruckMoving": () => (/* binding */ faTruckMoving),
+/* harmony export */   "faTruckPickup": () => (/* binding */ faTruckPickup),
+/* harmony export */   "faTruckPlane": () => (/* binding */ faTruckPlane),
+/* harmony export */   "faTruckRampBox": () => (/* binding */ faTruckRampBox),
+/* harmony export */   "faTry": () => (/* binding */ faTry),
+/* harmony export */   "faTshirt": () => (/* binding */ faTshirt),
+/* harmony export */   "faTty": () => (/* binding */ faTty),
+/* harmony export */   "faTurkishLira": () => (/* binding */ faTurkishLira),
+/* harmony export */   "faTurkishLiraSign": () => (/* binding */ faTurkishLiraSign),
+/* harmony export */   "faTurnDown": () => (/* binding */ faTurnDown),
+/* harmony export */   "faTurnUp": () => (/* binding */ faTurnUp),
+/* harmony export */   "faTv": () => (/* binding */ faTv),
+/* harmony export */   "faTvAlt": () => (/* binding */ faTvAlt),
+/* harmony export */   "faU": () => (/* binding */ faU),
+/* harmony export */   "faUmbrella": () => (/* binding */ faUmbrella),
+/* harmony export */   "faUmbrellaBeach": () => (/* binding */ faUmbrellaBeach),
+/* harmony export */   "faUnderline": () => (/* binding */ faUnderline),
+/* harmony export */   "faUndo": () => (/* binding */ faUndo),
+/* harmony export */   "faUndoAlt": () => (/* binding */ faUndoAlt),
+/* harmony export */   "faUniversalAccess": () => (/* binding */ faUniversalAccess),
+/* harmony export */   "faUniversity": () => (/* binding */ faUniversity),
+/* harmony export */   "faUnlink": () => (/* binding */ faUnlink),
+/* harmony export */   "faUnlock": () => (/* binding */ faUnlock),
+/* harmony export */   "faUnlockAlt": () => (/* binding */ faUnlockAlt),
+/* harmony export */   "faUnlockKeyhole": () => (/* binding */ faUnlockKeyhole),
+/* harmony export */   "faUnsorted": () => (/* binding */ faUnsorted),
+/* harmony export */   "faUpDown": () => (/* binding */ faUpDown),
+/* harmony export */   "faUpDownLeftRight": () => (/* binding */ faUpDownLeftRight),
+/* harmony export */   "faUpLong": () => (/* binding */ faUpLong),
+/* harmony export */   "faUpRightAndDownLeftFromCenter": () => (/* binding */ faUpRightAndDownLeftFromCenter),
+/* harmony export */   "faUpRightFromSquare": () => (/* binding */ faUpRightFromSquare),
+/* harmony export */   "faUpload": () => (/* binding */ faUpload),
+/* harmony export */   "faUsd": () => (/* binding */ faUsd),
+/* harmony export */   "faUser": () => (/* binding */ faUser),
+/* harmony export */   "faUserAlt": () => (/* binding */ faUserAlt),
+/* harmony export */   "faUserAltSlash": () => (/* binding */ faUserAltSlash),
+/* harmony export */   "faUserAstronaut": () => (/* binding */ faUserAstronaut),
+/* harmony export */   "faUserCheck": () => (/* binding */ faUserCheck),
+/* harmony export */   "faUserCircle": () => (/* binding */ faUserCircle),
+/* harmony export */   "faUserClock": () => (/* binding */ faUserClock),
+/* harmony export */   "faUserCog": () => (/* binding */ faUserCog),
+/* harmony export */   "faUserDoctor": () => (/* binding */ faUserDoctor),
+/* harmony export */   "faUserEdit": () => (/* binding */ faUserEdit),
+/* harmony export */   "faUserFriends": () => (/* binding */ faUserFriends),
+/* harmony export */   "faUserGear": () => (/* binding */ faUserGear),
+/* harmony export */   "faUserGraduate": () => (/* binding */ faUserGraduate),
+/* harmony export */   "faUserGroup": () => (/* binding */ faUserGroup),
+/* harmony export */   "faUserInjured": () => (/* binding */ faUserInjured),
+/* harmony export */   "faUserLarge": () => (/* binding */ faUserLarge),
+/* harmony export */   "faUserLargeSlash": () => (/* binding */ faUserLargeSlash),
+/* harmony export */   "faUserLock": () => (/* binding */ faUserLock),
+/* harmony export */   "faUserMd": () => (/* binding */ faUserMd),
+/* harmony export */   "faUserMinus": () => (/* binding */ faUserMinus),
+/* harmony export */   "faUserNinja": () => (/* binding */ faUserNinja),
+/* harmony export */   "faUserNurse": () => (/* binding */ faUserNurse),
+/* harmony export */   "faUserPen": () => (/* binding */ faUserPen),
+/* harmony export */   "faUserPlus": () => (/* binding */ faUserPlus),
+/* harmony export */   "faUserSecret": () => (/* binding */ faUserSecret),
+/* harmony export */   "faUserShield": () => (/* binding */ faUserShield),
+/* harmony export */   "faUserSlash": () => (/* binding */ faUserSlash),
+/* harmony export */   "faUserTag": () => (/* binding */ faUserTag),
+/* harmony export */   "faUserTie": () => (/* binding */ faUserTie),
+/* harmony export */   "faUserTimes": () => (/* binding */ faUserTimes),
+/* harmony export */   "faUserXmark": () => (/* binding */ faUserXmark),
+/* harmony export */   "faUsers": () => (/* binding */ faUsers),
+/* harmony export */   "faUsersBetweenLines": () => (/* binding */ faUsersBetweenLines),
+/* harmony export */   "faUsersCog": () => (/* binding */ faUsersCog),
+/* harmony export */   "faUsersGear": () => (/* binding */ faUsersGear),
+/* harmony export */   "faUsersLine": () => (/* binding */ faUsersLine),
+/* harmony export */   "faUsersRays": () => (/* binding */ faUsersRays),
+/* harmony export */   "faUsersRectangle": () => (/* binding */ faUsersRectangle),
+/* harmony export */   "faUsersSlash": () => (/* binding */ faUsersSlash),
+/* harmony export */   "faUsersViewfinder": () => (/* binding */ faUsersViewfinder),
+/* harmony export */   "faUtensilSpoon": () => (/* binding */ faUtensilSpoon),
+/* harmony export */   "faUtensils": () => (/* binding */ faUtensils),
+/* harmony export */   "faV": () => (/* binding */ faV),
+/* harmony export */   "faVanShuttle": () => (/* binding */ faVanShuttle),
+/* harmony export */   "faVault": () => (/* binding */ faVault),
+/* harmony export */   "faVcard": () => (/* binding */ faVcard),
+/* harmony export */   "faVectorSquare": () => (/* binding */ faVectorSquare),
+/* harmony export */   "faVenus": () => (/* binding */ faVenus),
+/* harmony export */   "faVenusDouble": () => (/* binding */ faVenusDouble),
+/* harmony export */   "faVenusMars": () => (/* binding */ faVenusMars),
+/* harmony export */   "faVest": () => (/* binding */ faVest),
+/* harmony export */   "faVestPatches": () => (/* binding */ faVestPatches),
+/* harmony export */   "faVial": () => (/* binding */ faVial),
+/* harmony export */   "faVialCircleCheck": () => (/* binding */ faVialCircleCheck),
+/* harmony export */   "faVialVirus": () => (/* binding */ faVialVirus),
+/* harmony export */   "faVials": () => (/* binding */ faVials),
+/* harmony export */   "faVideo": () => (/* binding */ faVideo),
+/* harmony export */   "faVideoCamera": () => (/* binding */ faVideoCamera),
+/* harmony export */   "faVideoSlash": () => (/* binding */ faVideoSlash),
+/* harmony export */   "faVihara": () => (/* binding */ faVihara),
+/* harmony export */   "faVirus": () => (/* binding */ faVirus),
+/* harmony export */   "faVirusCovid": () => (/* binding */ faVirusCovid),
+/* harmony export */   "faVirusCovidSlash": () => (/* binding */ faVirusCovidSlash),
+/* harmony export */   "faVirusSlash": () => (/* binding */ faVirusSlash),
+/* harmony export */   "faViruses": () => (/* binding */ faViruses),
+/* harmony export */   "faVoicemail": () => (/* binding */ faVoicemail),
+/* harmony export */   "faVolcano": () => (/* binding */ faVolcano),
+/* harmony export */   "faVolleyball": () => (/* binding */ faVolleyball),
+/* harmony export */   "faVolleyballBall": () => (/* binding */ faVolleyballBall),
+/* harmony export */   "faVolumeControlPhone": () => (/* binding */ faVolumeControlPhone),
+/* harmony export */   "faVolumeDown": () => (/* binding */ faVolumeDown),
+/* harmony export */   "faVolumeHigh": () => (/* binding */ faVolumeHigh),
+/* harmony export */   "faVolumeLow": () => (/* binding */ faVolumeLow),
+/* harmony export */   "faVolumeMute": () => (/* binding */ faVolumeMute),
+/* harmony export */   "faVolumeOff": () => (/* binding */ faVolumeOff),
+/* harmony export */   "faVolumeTimes": () => (/* binding */ faVolumeTimes),
+/* harmony export */   "faVolumeUp": () => (/* binding */ faVolumeUp),
+/* harmony export */   "faVolumeXmark": () => (/* binding */ faVolumeXmark),
+/* harmony export */   "faVoteYea": () => (/* binding */ faVoteYea),
+/* harmony export */   "faVrCardboard": () => (/* binding */ faVrCardboard),
+/* harmony export */   "faW": () => (/* binding */ faW),
+/* harmony export */   "faWalkieTalkie": () => (/* binding */ faWalkieTalkie),
+/* harmony export */   "faWalking": () => (/* binding */ faWalking),
+/* harmony export */   "faWallet": () => (/* binding */ faWallet),
+/* harmony export */   "faWandMagic": () => (/* binding */ faWandMagic),
+/* harmony export */   "faWandMagicSparkles": () => (/* binding */ faWandMagicSparkles),
+/* harmony export */   "faWandSparkles": () => (/* binding */ faWandSparkles),
+/* harmony export */   "faWarehouse": () => (/* binding */ faWarehouse),
+/* harmony export */   "faWarning": () => (/* binding */ faWarning),
+/* harmony export */   "faWater": () => (/* binding */ faWater),
+/* harmony export */   "faWaterLadder": () => (/* binding */ faWaterLadder),
+/* harmony export */   "faWaveSquare": () => (/* binding */ faWaveSquare),
+/* harmony export */   "faWeight": () => (/* binding */ faWeight),
+/* harmony export */   "faWeightHanging": () => (/* binding */ faWeightHanging),
+/* harmony export */   "faWeightScale": () => (/* binding */ faWeightScale),
+/* harmony export */   "faWheatAlt": () => (/* binding */ faWheatAlt),
+/* harmony export */   "faWheatAwn": () => (/* binding */ faWheatAwn),
+/* harmony export */   "faWheatAwnCircleExclamation": () => (/* binding */ faWheatAwnCircleExclamation),
+/* harmony export */   "faWheelchair": () => (/* binding */ faWheelchair),
+/* harmony export */   "faWheelchairAlt": () => (/* binding */ faWheelchairAlt),
+/* harmony export */   "faWheelchairMove": () => (/* binding */ faWheelchairMove),
+/* harmony export */   "faWhiskeyGlass": () => (/* binding */ faWhiskeyGlass),
+/* harmony export */   "faWifi": () => (/* binding */ faWifi),
+/* harmony export */   "faWifi3": () => (/* binding */ faWifi3),
+/* harmony export */   "faWifiStrong": () => (/* binding */ faWifiStrong),
+/* harmony export */   "faWind": () => (/* binding */ faWind),
+/* harmony export */   "faWindowClose": () => (/* binding */ faWindowClose),
+/* harmony export */   "faWindowMaximize": () => (/* binding */ faWindowMaximize),
+/* harmony export */   "faWindowMinimize": () => (/* binding */ faWindowMinimize),
+/* harmony export */   "faWindowRestore": () => (/* binding */ faWindowRestore),
+/* harmony export */   "faWineBottle": () => (/* binding */ faWineBottle),
+/* harmony export */   "faWineGlass": () => (/* binding */ faWineGlass),
+/* harmony export */   "faWineGlassAlt": () => (/* binding */ faWineGlassAlt),
+/* harmony export */   "faWineGlassEmpty": () => (/* binding */ faWineGlassEmpty),
+/* harmony export */   "faWon": () => (/* binding */ faWon),
+/* harmony export */   "faWonSign": () => (/* binding */ faWonSign),
+/* harmony export */   "faWorm": () => (/* binding */ faWorm),
+/* harmony export */   "faWrench": () => (/* binding */ faWrench),
+/* harmony export */   "faX": () => (/* binding */ faX),
+/* harmony export */   "faXRay": () => (/* binding */ faXRay),
+/* harmony export */   "faXmark": () => (/* binding */ faXmark),
+/* harmony export */   "faXmarkCircle": () => (/* binding */ faXmarkCircle),
+/* harmony export */   "faXmarkSquare": () => (/* binding */ faXmarkSquare),
+/* harmony export */   "faXmarksLines": () => (/* binding */ faXmarksLines),
+/* harmony export */   "faY": () => (/* binding */ faY),
+/* harmony export */   "faYen": () => (/* binding */ faYen),
+/* harmony export */   "faYenSign": () => (/* binding */ faYenSign),
+/* harmony export */   "faYinYang": () => (/* binding */ faYinYang),
+/* harmony export */   "faZ": () => (/* binding */ faZ),
+/* harmony export */   "faZap": () => (/* binding */ faZap),
+/* harmony export */   "fas": () => (/* binding */ icons),
+/* harmony export */   "prefix": () => (/* binding */ prefix)
 /* harmony export */ });
-/* unused harmony exports fas, prefix, fa0, fa1, fa2, fa3, fa4, fa5, fa6, fa7, fa8, fa9, faFillDrip, faArrowsToCircle, faCircleChevronRight, faChevronCircleRight, faAt, faTrashCan, faTrashAlt, faTextHeight, faUserXmark, faUserTimes, faStethoscope, faMessage, faCommentAlt, faInfo, faDownLeftAndUpRightToCenter, faCompressAlt, faExplosion, faFileLines, faFileAlt, faFileText, faWaveSquare, faRing, faBuildingUn, faDiceThree, faCalendarDays, faCalendarAlt, faAnchorCircleCheck, faBuildingCircleArrowRight, faVolleyball, faVolleyballBall, faArrowsUpToLine, faSortDown, faSortDesc, faCircleMinus, faMinusCircle, faDoorOpen, faRightFromBracket, faSignOutAlt, faAtom, faSoap, faIcons, faHeartMusicCameraBolt, faMicrophoneLinesSlash, faMicrophoneAltSlash, faBridgeCircleCheck, faPumpMedical, faFingerprint, faHandPointRight, faMagnifyingGlassLocation, faSearchLocation, faForwardStep, faStepForward, faFaceSmileBeam, faSmileBeam, faFlagCheckered, faFootball, faFootballBall, faSchoolCircleExclamation, faCrop, faAnglesDown, faAngleDoubleDown, faUsersRectangle, faPeopleRoof, faPeopleLine, faBeerMugEmpty, faBeer, faDiagramPredecessor, faArrowUpLong, faLongArrowUp, faFireFlameSimple, faBurn, faPerson, faMale, faLaptop, faFileCsv, faMenorah, faTruckPlane, faRecordVinyl, faFaceGrinStars, faGrinStars, faBong, faSpaghettiMonsterFlying, faPastafarianism, faArrowDownUpAcrossLine, faSpoon, faUtensilSpoon, faJarWheat, faEnvelopesBulk, faFileCircleExclamation, faCircleH, faHospitalSymbol, faPager, faAddressBook, faContactBook, faStrikethrough, faK, faLandmarkFlag, faPencil, faPencilAlt, faBackward, faCaretRight, faComments, faPaste, faFileClipboard, faCodePullRequest, faClipboardList, faTruckRampBox, faTruckLoading, faUserCheck, faVialVirus, faSheetPlastic, faBlog, faUserNinja, faPersonArrowUpFromLine, faScrollTorah, faTorah, faBroomBall, faQuidditch, faQuidditchBroomBall, faToggleOff, faBoxArchive, faArchive, faPersonDrowning, faArrowDown91, faSortNumericDesc, faSortNumericDownAlt, faFaceGrinTongueSquint, faGrinTongueSquint, faSprayCan, faTruckMonster, faW, faEarthAfrica, faGlobeAfrica, faRainbow, faCircleNotch, faTabletScreenButton, faTabletAlt, faPaw, faCloud, faTrowelBricks, faFaceFlushed, faFlushed, faHospitalUser, faTentArrowLeftRight, faGavel, faLegal, faBinoculars, faMicrophoneSlash, faBoxTissue, faMotorcycle, faBellConcierge, faConciergeBell, faPenRuler, faPencilRuler, faPeopleArrows, faPeopleArrowsLeftRight, faMarsAndVenusBurst, faSquareCaretRight, faCaretSquareRight, faScissors, faCut, faSunPlantWilt, faToiletsPortable, faHockeyPuck, faTable, faMagnifyingGlassArrowRight, faTachographDigital, faDigitalTachograph, faUsersSlash, faClover, faReply, faMailReply, faStarAndCrescent, faHouseFire, faSquareMinus, faMinusSquare, faHelicopter, faCompass, faSquareCaretDown, faCaretSquareDown, faFileCircleQuestion, faLaptopCode, faSwatchbook, faPrescriptionBottle, faNavicon, faPeopleGroup, faHourglassEnd, faHourglass3, faHeartCrack, faHeartBroken, faSquareUpRight, faExternalLinkSquareAlt, faFaceKissBeam, faKissBeam, faFilm, faRulerHorizontal, faPeopleRobbery, faLightbulb, faCaretLeft, faCircleExclamation, faExclamationCircle, faSchoolCircleXmark, faArrowRightFromBracket, faSignOut, faCircleChevronDown, faChevronCircleDown, faUnlockKeyhole, faUnlockAlt, faCloudShowersHeavy, faHeadphonesSimple, faHeadphonesAlt, faSitemap, faCircleDollarToSlot, faDonate, faMemory, faRoadSpikes, faFireBurner, faFlag, faHanukiah, faFeather, faVolumeLow, faVolumeDown, faCommentSlash, faCloudSunRain, faCompress, faWheatAwn, faWheatAlt, faAnkh, faHandsHoldingChild, faAsterisk, faSquareCheck, faCheckSquare, faPesetaSign, faHeading, faHeader, faGhost, faList, faListSquares, faSquarePhoneFlip, faPhoneSquareAlt, faCartPlus, faGamepad, faCircleDot, faDotCircle, faFaceDizzy, faDizzy, faEgg, faHouseMedicalCircleXmark, faCampground, faFolderPlus, faFutbol, faFutbolBall, faSoccerBall, faPaintbrush, faPaintBrush, faLock, faGasPump, faHotTubPerson, faHotTub, faMapLocation, faMapMarked, faHouseFloodWater, faTree, faBridgeLock, faSackDollar, faPenToSquare, faEdit, faCarSide, faShareNodes, faShareAlt, faHeartCircleMinus, faHourglassHalf, faHourglass2, faMicroscope, faSink, faBagShopping, faShoppingBag, faArrowDownZA, faSortAlphaDesc, faSortAlphaDownAlt, faMitten, faPersonRays, faEyeSlash, faFlaskVial, faHand, faHandPaper, faOm, faWorm, faHouseCircleXmark, faPlug, faChevronUp, faHandSpock, faStopwatch, faFaceKiss, faKiss, faBridgeCircleXmark, faFaceGrinTongue, faGrinTongue, faChessBishop, faFaceGrinWink, faGrinWink, faEarDeaf, faDeaf, faDeafness, faHardOfHearing, faRoadCircleCheck, faDiceFive, faSquareRss, faRssSquare, faLandMineOn, faICursor, faStamp, faStairs, faI, faHryvniaSign, faHryvnia, faPills, faFaceGrinWide, faGrinAlt, faTooth, faV, faBangladeshiTakaSign, faBicycle, faStaffSnake, faRodAsclepius, faRodSnake, faStaffAesculapius, faHeadSideCoughSlash, faTruckMedical, faAmbulance, faWheatAwnCircleExclamation, faSnowman, faMortarPestle, faRoadBarrier, faSchool, faIgloo, faJoint, faAngleRight, faHorse, faQ, faG, faNotesMedical, faTemperatureHalf, faTemperature2, faThermometer2, faThermometerHalf, faDongSign, faCapsules, faPooStorm, faPooBolt, faFaceFrownOpen, faFrownOpen, faHandPointUp, faMoneyBill, faBookmark, faAlignJustify, faUmbrellaBeach, faHelmetUn, faBullseye, faBacon, faHandPointDown, faArrowUpFromBracket, faFolder, faFolderBlank, faFileWaveform, faFileMedicalAlt, faRadiation, faChartSimple, faMarsStroke, faVial, faGauge, faDashboard, faGaugeMed, faTachometerAltAverage, faWandMagicSparkles, faMagicWandSparkles, faE, faPenClip, faPenAlt, faBridgeCircleExclamation, faUser, faSchoolCircleCheck, faDumpster, faVanShuttle, faShuttleVan, faBuildingUser, faSquareCaretLeft, faCaretSquareLeft, faHighlighter, faKey, faBullhorn, faGlobe, faSynagogue, faPersonHalfDress, faRoadBridge, faLocationArrow, faC, faTabletButton, faBuildingLock, faPizzaSlice, faMoneyBillWave, faChartArea, faAreaChart, faHouseFlag, faPersonCircleMinus, faBan, faCancel, faCameraRotate, faSprayCanSparkles, faAirFreshener, faStar, faRepeat, faCross, faBox, faVenusMars, faArrowPointer, faMousePointer, faMaximize, faExpandArrowsAlt, faChargingStation, faShapes, faTriangleCircleSquare, faShuffle, faRandom, faPersonRunning, faRunning, faMobileRetro, faGripLinesVertical, faSpider, faHandsBound, faFileInvoiceDollar, faPlaneCircleExclamation, faXRay, faSpellCheck, faSlash, faComputerMouse, faMouse, faArrowRightToBracket, faSignIn, faShopSlash, faStoreAltSlash, faServer, faVirusCovidSlash, faShopLock, faHourglassStart, faHourglass1, faBlenderPhone, faBuildingWheat, faPersonBreastfeeding, faRightToBracket, faSignInAlt, faVenus, faPassport, faHeartPulse, faHeartbeat, faPeopleCarryBox, faPeopleCarry, faTemperatureHigh, faMicrochip, faCrown, faWeightHanging, faXmarksLines, faFilePrescription, faWeightScale, faWeight, faUserGroup, faArrowUpAZ, faSortAlphaUp, faChessKnight, faFaceLaughSquint, faLaughSquint, faWheelchair, faCircleArrowUp, faArrowCircleUp, faToggleOn, faPersonWalking, faWalking, faL, faFire, faBedPulse, faProcedures, faShuttleSpace, faSpaceShuttle, faFaceLaugh, faLaugh, faFolderOpen, faHeartCirclePlus, faCodeFork, faCity, faMicrophoneLines, faMicrophoneAlt, faPepperHot, faUnlock, faColonSign, faHeadset, faStoreSlash, faRoadCircleXmark, faUserMinus, faMarsStrokeUp, faMarsStrokeV, faChampagneGlasses, faGlassCheers, faClipboard, faHouseCircleExclamation, faFileArrowUp, faFileUpload, faWifi, faWifi3, faWifiStrong, faBath, faBathtub, faUnderline, faUserPen, faUserEdit, faSignature, faStroopwafel, faBold, faAnchorLock, faBuildingNgo, faManatSign, faNotEqual, faBorderTopLeft, faBorderStyle, faMapLocationDot, faMapMarkedAlt, faJedi, faSquarePollVertical, faPoll, faMugHot, faCarBattery, faBatteryCar, faGift, faDiceTwo, faChessQueen, faGlasses, faChessBoard, faBuildingCircleCheck, faPersonChalkboard, faMarsStrokeRight, faMarsStrokeH, faHandBackFist, faHandRock, faSquareCaretUp, faCaretSquareUp, faCloudShowersWater, faChartBar, faBarChart, faHandsBubbles, faHandsWash, faLessThanEqual, faTrain, faEyeLowVision, faLowVision, faCrow, faSailboat, faWindowRestore, faSquarePlus, faPlusSquare, faToriiGate, faFrog, faBucket, faImage, faMicrophone, faCow, faCaretUp, faScrewdriver, faFolderClosed, faHouseTsunami, faSquareNfi, faArrowUpFromGroundWater, faMartiniGlass, faGlassMartiniAlt, faRotateLeft, faRotateBack, faRotateBackward, faUndoAlt, faTableColumns, faColumns, faLemon, faHeadSideMask, faHandshake, faGem, faDolly, faDollyBox, faSmoking, faMinimize, faCompressArrowsAlt, faMonument, faSnowplow, faAnglesRight, faAngleDoubleRight, faCannabis, faCirclePlay, faPlayCircle, faTablets, faEthernet, faEuroSign, faEur, faEuro, faChair, faCircleCheck, faCheckCircle, faCircleStop, faStopCircle, faCompassDrafting, faDraftingCompass, faPlateWheat, faIcicles, faPersonShelter, faNeuter, faIdBadge, faMarker, faFaceLaughBeam, faLaughBeam, faHelicopterSymbol, faUniversalAccess, faCircleChevronUp, faChevronCircleUp, faLariSign, faVolcano, faPersonWalkingDashedLineArrowRight, faSterlingSign, faGbp, faPoundSign, faViruses, faSquarePersonConfined, faUserTie, faArrowDownLong, faLongArrowDown, faTentArrowDownToLine, faCertificate, faReplyAll, faMailReplyAll, faSuitcase, faPersonSkating, faSkating, faFilterCircleDollar, faFunnelDollar, faCameraRetro, faCircleArrowDown, faArrowCircleDown, faFileImport, faArrowRightToFile, faSquareArrowUpRight, faExternalLinkSquare, faBoxOpen, faScroll, faSpa, faLocationPinLock, faPause, faHillAvalanche, faTemperatureEmpty, faTemperature0, faThermometer0, faThermometerEmpty, faBomb, faRegistered, faAddressCard, faContactCard, faVcard, faScaleUnbalancedFlip, faBalanceScaleRight, faSubscript, faDiamondTurnRight, faDirections, faBurst, faHouseLaptop, faLaptopHouse, faFaceTired, faTired, faMoneyBills, faSmog, faCrutch, faFontAwesome, faFontAwesomeFlag, faFontAwesomeLogoFull, faCloudArrowUp, faCloudUpload, faCloudUploadAlt, faPalette, faArrowsTurnRight, faVest, faFerry, faArrowsDownToPeople, faSeedling, faSprout, faLeftRight, faArrowsAltH, faBoxesPacking, faCircleArrowLeft, faArrowCircleLeft, faGroupArrowsRotate, faBowlFood, faCandyCane, faArrowDownWideShort, faSortAmountAsc, faSortAmountDown, faCloudBolt, faThunderstorm, faTextSlash, faRemoveFormat, faFaceSmileWink, faSmileWink, faFileWord, faFilePowerpoint, faArrowsLeftRight, faArrowsH, faHouseLock, faCloudArrowDown, faCloudDownload, faCloudDownloadAlt, faChildren, faChalkboard, faBlackboard, faUserLargeSlash, faUserAltSlash, faEnvelopeOpen, faHandshakeSimpleSlash, faHandshakeAltSlash, faMattressPillow, faGuaraniSign, faArrowsRotate, faRefresh, faSync, faFireExtinguisher, faCruzeiroSign, faGreaterThanEqual, faShieldHalved, faShieldAlt, faBookAtlas, faAtlas, faVirus, faEnvelopeCircleCheck, faLayerGroup, faArrowsToDot, faArchway, faHeartCircleCheck, faHouseChimneyCrack, faHouseDamage, faFileZipper, faFileArchive, faSquare, faMartiniGlassEmpty, faGlassMartini, faCouch, faCediSign, faItalic, faChurch, faCommentsDollar, faDemocrat, faZ, faPersonSkiing, faSkiing, faRoadLock, faA, faTemperatureArrowDown, faTemperatureDown, faFeatherPointed, faFeatherAlt, faP, faSnowflake, faNewspaper, faRectangleAd, faAd, faCircleArrowRight, faArrowCircleRight, faFilterCircleXmark, faLocust, faSort, faUnsorted, faListOl, faList12, faListNumeric, faPersonDressBurst, faMoneyCheckDollar, faMoneyCheckAlt, faVectorSquare, faBreadSlice, faLanguage, faFaceKissWinkHeart, faKissWinkHeart, faFilter, faQuestion, faFileSignature, faUpDownLeftRight, faArrowsAlt, faHouseChimneyUser, faHandHoldingHeart, faPuzzlePiece, faMoneyCheck, faStarHalfStroke, faStarHalfAlt, faCode, faWhiskeyGlass, faGlassWhiskey, faBuildingCircleExclamation, faMagnifyingGlassChart, faArrowUpRightFromSquare, faExternalLink, faCubesStacked, faWonSign, faKrw, faWon, faVirusCovid, faAustralSign, faF, faLeaf, faRoad, faTaxi, faCab, faPersonCirclePlus, faChartPie, faPieChart, faBoltLightning, faSackXmark, faFileExcel, faFileContract, faFishFins, faBuildingFlag, faFaceGrinBeam, faGrinBeam, faObjectUngroup, faPoop, faLocationPin, faMapMarker, faKaaba, faToiletPaper, faHelmetSafety, faHardHat, faHatHard, faEject, faCircleRight, faArrowAltCircleRight, faPlaneCircleCheck, faFaceRollingEyes, faMehRollingEyes, faObjectGroup, faChartLine, faLineChart, faMaskVentilator, faArrowRight, faSignsPost, faMapSigns, faCashRegister, faPersonCircleQuestion, faH, faTarp, faScrewdriverWrench, faTools, faArrowsToEye, faPlugCircleBolt, faHeart, faMarsAndVenus, faHouseUser, faHomeUser, faDumpsterFire, faHouseCrack, faMartiniGlassCitrus, faCocktail, faFaceSurprise, faSurprise, faBottleWater, faCirclePause, faPauseCircle, faToiletPaperSlash, faAppleWhole, faAppleAlt, faKitchenSet, faR, faTemperatureQuarter, faTemperature1, faThermometer1, faThermometerQuarter, faCube, faBitcoinSign, faShieldDog, faSolarPanel, faLockOpen, faElevator, faMoneyBillTransfer, faMoneyBillTrendUp, faHouseFloodWaterCircleArrowRight, faSquarePollHorizontal, faPollH, faCircle, faBackwardFast, faFastBackward, faRecycle, faUserAstronaut, faPlaneSlash, faTrademark, faBasketball, faBasketballBall, faSatelliteDish, faCircleUp, faArrowAltCircleUp, faMobileScreenButton, faMobileAlt, faVolumeHigh, faVolumeUp, faUsersRays, faWallet, faClipboardCheck, faFileAudio, faBurger, faHamburger, faWrench, faBugs, faRupeeSign, faRupee, faFileImage, faCircleQuestion, faQuestionCircle, faPlaneDeparture, faHandshakeSlash, faBookBookmark, faCodeBranch, faHatCowboy, faBridge, faPhoneFlip, faPhoneAlt, faTruckFront, faCat, faAnchorCircleExclamation, faTruckField, faRoute, faClipboardQuestion, faPanorama, faCommentMedical, faTeethOpen, faFileCircleMinus, faTags, faWineGlass, faForwardFast, faFastForward, faFaceMehBlank, faMehBlank, faSquareParking, faParking, faHouseSignal, faBarsProgress, faTasksAlt, faFaucetDrip, faCartFlatbed, faDollyFlatbed, faBanSmoking, faSmokingBan, faTerminal, faMobileButton, faHouseMedicalFlag, faBasketShopping, faShoppingBasket, faTape, faBusSimple, faBusAlt, faEye, faFaceSadCry, faSadCry, faAudioDescription, faPersonMilitaryToPerson, faFileShield, faUserSlash, faPen, faTowerObservation, faFileCode, faSignal, faSignal5, faSignalPerfect, faBus, faHeartCircleXmark, faHouseChimney, faHomeLg, faWindowMaximize, faFaceFrown, faFrown, faPrescription, faShop, faStoreAlt, faFloppyDisk, faSave, faVihara, faScaleUnbalanced, faBalanceScaleLeft, faSortUp, faSortAsc, faCommentDots, faCommenting, faPlantWilt, faDiamond, faFaceGrinSquint, faGrinSquint, faHandHoldingDollar, faHandHoldingUsd, faBacterium, faHandPointer, faDrumSteelpan, faHandScissors, faHandsPraying, faPrayingHands, faArrowRotateRight, faArrowRightRotate, faArrowRotateForward, faRedo, faBiohazard, faLocationCrosshairs, faLocation, faMarsDouble, faChildDress, faUsersBetweenLines, faLungsVirus, faFaceGrinTears, faGrinTears, faPhone, faCalendarXmark, faCalendarTimes, faChildReaching, faHeadSideVirus, faUserGear, faUserCog, faArrowUp19, faSortNumericUp, faDoorClosed, faShieldVirus, faDiceSix, faMosquitoNet, faBridgeWater, faPersonBooth, faTextWidth, faHatWizard, faPenFancy, faPersonDigging, faDigging, faTrash, faGaugeSimple, faGaugeSimpleMed, faTachometerAverage, faBookMedical, faPoo, faQuoteRight, faQuoteRightAlt, faShirt, faTShirt, faTshirt, faCubes, faDivide, faTengeSign, faTenge, faHeadphones, faHandsHolding, faHandsClapping, faRepublican, faArrowLeft, faPersonCircleXmark, faRuler, faAlignLeft, faDiceD6, faRestroom, faJ, faUsersViewfinder, faFileVideo, faUpRightFromSquare, faExternalLinkAlt, faTableCells, faTh, faFilePdf, faBookBible, faBible, faO, faSuitcaseMedical, faMedkit, faUserSecret, faOtter, faPersonDress, faFemale, faCommentDollar, faBusinessTime, faBriefcaseClock, faTableCellsLarge, faThLarge, faBookTanakh, faTanakh, faPhoneVolume, faVolumeControlPhone, faHatCowboySide, faClipboardUser, faChild, faLiraSign, faSatellite, faPlaneLock, faTag, faComment, faCakeCandles, faBirthdayCake, faCake, faEnvelope, faAnglesUp, faAngleDoubleUp, faPaperclip, faArrowRightToCity, faRibbon, faLungs, faArrowUp91, faSortNumericUpAlt, faLitecoinSign, faBorderNone, faCircleNodes, faParachuteBox, faIndent, faTruckFieldUn, faHourglass, faHourglassEmpty, faMountain, faUserDoctor, faUserMd, faCircleInfo, faInfoCircle, faCloudMeatball, faCamera, faCameraAlt, faSquareVirus, faMeteor, faCarOn, faSleigh, faArrowDown19, faSortNumericAsc, faSortNumericDown, faHandHoldingDroplet, faHandHoldingWater, faWater, faCalendarCheck, faBraille, faPrescriptionBottleMedical, faPrescriptionBottleAlt, faLandmark, faTruck, faCrosshairs, faPersonCane, faTent, faVestPatches, faCheckDouble, faArrowDownAZ, faSortAlphaAsc, faSortAlphaDown, faMoneyBillWheat, faCookie, faArrowRotateLeft, faArrowLeftRotate, faArrowRotateBack, faArrowRotateBackward, faUndo, faHardDrive, faHdd, faFaceGrinSquintTears, faGrinSquintTears, faDumbbell, faRectangleList, faListAlt, faTarpDroplet, faHouseMedicalCircleCheck, faPersonSkiingNordic, faSkiingNordic, faCalendarPlus, faPlaneArrival, faCircleLeft, faArrowAltCircleLeft, faTrainSubway, faSubway, faChartGantt, faIndianRupeeSign, faIndianRupee, faInr, faCropSimple, faCropAlt, faMoneyBill1, faMoneyBillAlt, faLeftLong, faLongArrowAltLeft, faDna, faVirusSlash, faMinus, faSubtract, faChess, faArrowLeftLong, faLongArrowLeft, faPlugCircleCheck, faStreetView, faFrancSign, faVolumeOff, faHandsAslInterpreting, faAmericanSignLanguageInterpreting, faAslInterpreting, faHandsAmericanSignLanguageInterpreting, faGear, faCog, faDropletSlash, faTintSlash, faMosque, faMosquito, faStarOfDavid, faPersonMilitaryRifle, faCartShopping, faShoppingCart, faVials, faPlugCirclePlus, faPlaceOfWorship, faGripVertical, faArrowTurnUp, faLevelUp, faU, faSquareRootVariable, faSquareRootAlt, faClock, faClockFour, faBackwardStep, faStepBackward, faPallet, faFaucet, faBaseballBatBall, faS, faTimeline, faKeyboard, faCaretDown, faHouseChimneyMedical, faClinicMedical, faTemperatureThreeQuarters, faTemperature3, faThermometer3, faThermometerThreeQuarters, faMobileScreen, faMobileAndroidAlt, faPlaneUp, faPiggyBank, faBatteryHalf, faBattery3, faMountainCity, faCoins, faKhanda, faSliders, faSlidersH, faFolderTree, faNetworkWired, faMapPin, faHamsa, faCentSign, faFlask, faPersonPregnant, faWandSparkles, faEllipsisVertical, faEllipsisV, faTicket, faPowerOff, faRightLong, faLongArrowAltRight, faFlagUsa, faLaptopFile, faTty, faTeletype, faDiagramNext, faPersonRifle, faHouseMedicalCircleExclamation, faClosedCaptioning, faPersonHiking, faHiking, faVenusDouble, faImages, faCalculator, faPeoplePulling, faN, faCableCar, faTram, faCloudRain, faBuildingCircleXmark, faShip, faArrowsDownToLine, faDownload, faFaceGrin, faGrin, faDeleteLeft, faBackspace, faEyeDropper, faEyeDropperEmpty, faEyedropper, faFileCircleCheck, faForward, faMobile, faMobileAndroid, faMobilePhone, faFaceMeh, faMeh, faAlignCenter, faBookSkull, faBookDead, faIdCard, faDriversLicense, faOutdent, faDedent, faHeartCircleExclamation, faHouse, faHome, faHomeAlt, faHomeLgAlt, faCalendarWeek, faLaptopMedical, faB, faFileMedical, faDiceOne, faKiwiBird, faArrowRightArrowLeft, faExchange, faRotateRight, faRedoAlt, faRotateForward, faUtensils, faCutlery, faArrowUpWideShort, faSortAmountUp, faMillSign, faBowlRice, faSkull, faTowerBroadcast, faBroadcastTower, faTruckPickup, faUpLong, faLongArrowAltUp, faStop, faCodeMerge, faUpload, faHurricane, faMound, faToiletPortable, faCompactDisc, faFileArrowDown, faFileDownload, faCaravan, faShieldCat, faBolt, faZap, faGlassWater, faOilWell, faVault, faMars, faToilet, faPlaneCircleXmark, faYenSign, faCny, faJpy, faRmb, faYen, faRubleSign, faRouble, faRub, faRuble, faGuitar, faFaceLaughWink, faLaughWink, faHorseHead, faBoreHole, faIndustry, faCircleDown, faArrowAltCircleDown, faArrowsTurnToDots, faFlorinSign, faArrowDownShortWide, faSortAmountDesc, faSortAmountDownAlt, faLessThan, faAngleDown, faCarTunnel, faHeadSideCough, faGripLines, faThumbsDown, faUserLock, faArrowRightLong, faLongArrowRight, faAnchorCircleXmark, faEllipsis, faEllipsisH, faChessPawn, faKitMedical, faFirstAid, faPersonThroughWindow, faToolbox, faHandsHoldingCircle, faBug, faCreditCard, faCreditCardAlt, faCar, faAutomobile, faHandHoldingHand, faBookOpenReader, faBookReader, faMountainSun, faArrowsLeftRightToLine, faDiceD20, faTruckDroplet, faFileCircleXmark, faTemperatureArrowUp, faTemperatureUp, faMedal, faBed, faSquareH, faHSquare, faPodcast, faTemperatureFull, faTemperature4, faThermometer4, faThermometerFull, faBell, faSuperscript, faPlugCircleXmark, faStarOfLife, faPhoneSlash, faPaintRoller, faHandshakeAngle, faHandsHelping, faLocationDot, faMapMarkerAlt, faFile, faGreaterThan, faPersonSwimming, faSwimmer, faArrowDown, faDroplet, faTint, faEraser, faEarthAmericas, faEarth, faEarthAmerica, faGlobeAmericas, faPersonBurst, faDove, faBatteryEmpty, faBattery0, faSocks, faInbox, faSection, faGaugeHigh, faTachometerAlt, faTachometerAltFast, faEnvelopeOpenText, faHospital, faHospitalAlt, faHospitalWide, faWineBottle, faChessRook, faBarsStaggered, faReorder, faStream, faDharmachakra, faHotdog, faPersonWalkingWithCane, faBlind, faDrum, faIceCream, faHeartCircleBolt, faFax, faParagraph, faCheckToSlot, faVoteYea, faStarHalf, faBoxesStacked, faBoxes, faBoxesAlt, faLink, faChain, faEarListen, faAssistiveListeningSystems, faTreeCity, faPlay, faFont, faRupiahSign, faMagnifyingGlass, faTableTennisPaddleBall, faPingPongPaddleBall, faTableTennis, faPersonDotsFromLine, faDiagnoses, faTrashCanArrowUp, faTrashRestoreAlt, faNairaSign, faCartArrowDown, faWalkieTalkie, faFilePen, faFileEdit, faReceipt, faSquarePen, faPenSquare, faPencilSquare, faSuitcaseRolling, faPersonCircleExclamation, faChevronDown, faBatteryFull, faBattery, faBattery5, faSkullCrossbones, faCodeCompare, faListUl, faListDots, faSchoolLock, faTowerCell, faDownLong, faLongArrowAltDown, faRankingStar, faChessKing, faPersonHarassing, faBrazilianRealSign, faLandmarkDome, faLandmarkAlt, faArrowUp, faTv, faTelevision, faTvAlt, faShrimp, faListCheck, faTasks, faJugDetergent, faCircleUser, faUserCircle, faUserShield, faWind, faCarBurst, faCarCrash, faY, faPersonSnowboarding, faSnowboarding, faTruckFast, faShippingFast, faFish, faUserGraduate, faCircleHalfStroke, faAdjust, faClapperboard, faCircleRadiation, faRadiationAlt, faBaseball, faBaseballBall, faJetFighterUp, faDiagramProject, faProjectDiagram, faCopy, faVolumeXmark, faVolumeMute, faVolumeTimes, faHandSparkles, faGrip, faGripHorizontal, faShareFromSquare, faShareSquare, faChildCombatant, faChildRifle, faGun, faSquarePhone, faPhoneSquare, faPlus, faAdd, faExpand, faComputer, faXmark, faClose, faMultiply, faRemove, faTimes, faArrowsUpDownLeftRight, faArrows, faChalkboardUser, faChalkboardTeacher, faPesoSign, faBuildingShield, faBaby, faUsersLine, faQuoteLeft, faQuoteLeftAlt, faTractor, faTrashArrowUp, faTrashRestore, faArrowDownUpLock, faLinesLeaning, faRulerCombined, faCopyright, faEquals, faBlender, faTeeth, faShekelSign, faIls, faShekel, faSheqel, faSheqelSign, faMap, faRocket, faPhotoFilm, faPhotoVideo, faFolderMinus, faStore, faArrowTrendUp, faPlugCircleMinus, faSignHanging, faSign, faBezierCurve, faBellSlash, faTablet, faTabletAndroid, faSchoolFlag, faFill, faAngleUp, faDrumstickBite, faHollyBerry, faChevronLeft, faBacteria, faHandLizard, faNotdef, faDisease, faBriefcaseMedical, faGenderless, faChevronRight, faRetweet, faCarRear, faCarAlt, faPumpSoap, faVideoSlash, faBatteryQuarter, faBattery2, faRadio, faBabyCarriage, faCarriageBaby, faTrafficLight, faThermometer, faVrCardboard, faHandMiddleFinger, faPercent, faPercentage, faTruckMoving, faGlassWaterDroplet, faDisplay, faFaceSmile, faSmile, faThumbtack, faThumbTack, faTrophy, faPersonPraying, faPray, faHammer, faHandPeace, faRotate, faSyncAlt, faSpinner, faRobot, faPeace, faGears, faCogs, faWarehouse, faArrowUpRightDots, faSplotch, faFaceGrinHearts, faGrinHearts, faDiceFour, faSimCard, faTransgender, faTransgenderAlt, faMercury, faArrowTurnDown, faLevelDown, faPersonFallingBurst, faAward, faTicketSimple, faTicketAlt, faBuilding, faAnglesLeft, faAngleDoubleLeft, faQrcode, faClockRotateLeft, faHistory, faFaceGrinBeamSweat, faGrinBeamSweat, faFileExport, faArrowRightFromFile, faShield, faShieldBlank, faArrowUpShortWide, faSortAmountUpAlt, faHouseMedical, faGolfBallTee, faGolfBall, faCircleChevronLeft, faChevronCircleLeft, faHouseChimneyWindow, faPenNib, faTentArrowTurnLeft, faTents, faWandMagic, faMagic, faDog, faCarrot, faWineGlassEmpty, faWineGlassAlt, faCheese, faYinYang, faMusic, faCodeCommit, faTemperatureLow, faPersonBiking, faBiking, faBroom, faShieldHeart, faGopuram, faEarthOceania, faGlobeOceania, faSquareXmark, faTimesSquare, faXmarkSquare, faHashtag, faUpRightAndDownLeftFromCenter, faExpandAlt, faOilCan, faT, faHippo, faChartColumn, faInfinity, faVialCircleCheck, faPersonArrowDownToLine, faVoicemail, faFan, faPersonWalkingLuggage, faUpDown, faArrowsAltV, faCloudMoonRain, faCalendar, faTrailer, faBahai, faHaykal, faSdCard, faDragon, faShoePrints, faCirclePlus, faPlusCircle, faFaceGrinTongueWink, faGrinTongueWink, faHandHolding, faPlugCircleExclamation, faLinkSlash, faChainBroken, faChainSlash, faUnlink, faClone, faPersonWalkingArrowLoopLeft, faArrowUpZA, faSortAlphaUpAlt, faFireFlameCurved, faFireAlt, faTornado, faFileCirclePlus, faBookQuran, faQuran, faAnchor, faBorderAll, faFaceAngry, faAngry, faCookieBite, faArrowTrendDown, faRss, faFeed, faDrawPolygon, faScaleBalanced, faBalanceScale, faGaugeSimpleHigh, faTachometer, faTachometerFast, faShower, faDesktop, faDesktopAlt, faM, faTableList, faThList, faCommentSms, faSms, faUserPlus, faCheck, faBatteryThreeQuarters, faBattery4, faHouseCircleCheck, faAngleLeft, faDiagramSuccessor, faTruckArrowRight, faArrowsSplitUpAndLeft, faHandFist, faFistRaised, faCloudMoon, faBriefcase, faPersonFalling, faImagePortrait, faPortrait, faUserTag, faRug, faEarthEurope, faGlobeEurope, faCartFlatbedSuitcase, faLuggageCart, faRectangleXmark, faRectangleTimes, faTimesRectangle, faWindowClose, faBahtSign, faBookOpen, faBookJournalWhills, faJournalWhills, faHandcuffs, faTriangleExclamation, faExclamationTriangle, faWarning, faDatabase, faShare, faArrowTurnRight, faMailForward, faBottleDroplet, faMaskFace, faHillRockslide, faRightLeft, faExchangeAlt, faPaperPlane, faRoadCircleExclamation, faDungeon, faAlignRight, faMoneyBill1Wave, faMoneyBillWaveAlt, faLifeRing, faHands, faSignLanguage, faSigning, faCalendarDay, faWaterLadder, faLadderWater, faSwimmingPool, faArrowsUpDown, faArrowsV, faFaceGrimace, faGrimace, faWheelchairMove, faWheelchairAlt, faTurnDown, faLevelDownAlt, faPersonWalkingArrowRight, faSquareEnvelope, faEnvelopeSquare, faDice, faBowlingBall, faBrain, faBandage, faBandAid, faCalendarMinus, faCircleXmark, faTimesCircle, faXmarkCircle, faGifts, faHotel, faEarthAsia, faGlobeAsia, faIdCardClip, faIdCardAlt, faMagnifyingGlassPlus, faSearchPlus, faThumbsUp, faUserClock, faHandDots, faAllergies, faFileInvoice, faWindowMinimize, faMugSaucer, faCoffee, faBrush, faMask, faMagnifyingGlassMinus, faSearchMinus, faRulerVertical, faUserLarge, faUserAlt, faTrainTram, faUserNurse, faSyringe, faCloudSun, faStopwatch20, faSquareFull, faMagnet, faJar, faNoteSticky, faStickyNote, faBugSlash, faArrowUpFromWaterPump, faBone, faUserInjured, faFaceSadTear, faSadTear, faPlane, faTentArrowsDown, faExclamation, faArrowsSpin, faPrint, faTurkishLiraSign, faTry, faTurkishLira, faDollarSign, faDollar, faUsd, faX, faMagnifyingGlassDollar, faSearchDollar, faUsersGear, faUsersCog, faPersonMilitaryPointing, faBuildingColumns, faBank, faInstitution, faMuseum, faUniversity, faUmbrella, faTrowel, faD, faStapler, faMasksTheater, faTheaterMasks, faKipSign, faHandPointLeft, faHandshakeSimple, faHandshakeAlt, faJetFighter, faFighterJet, faSquareShareNodes, faShareAltSquare, faBarcode, faPlusMinus, faVideo, faVideoCamera, faGraduationCap, faMortarBoard, faHandHoldingMedical, faPersonCircleCheck, faTurnUp, faLevelUpAlt */
 var prefix = "fas";
 var fa0 = {
   prefix: 'fas',
@@ -14606,6 +20512,116 @@ var icons = {
 
 
 
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1025990139.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1025990139.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"markdown":{"html":"<p>Computational Biology, Systems Biology, Genome-Scale Metabolic Modeling, Microbiome, Machine Learning.</p>\\n<p>Dr. Bernstein is an Assistant Professor in Electrical and Biomedical Engineering with a secondary appointment in Microbiology and Molecular Genetics. He earned his BS in Mechanical Engineering from the University of Vermont and PhD in Biomedical Engineering from Boston University. Prior to joining UVM, he was a postdoctoral researcher at the University of California, Berkeley. His research in the field of systems biology combines bioinformatics, computational modeling, and machine learning to gain quantitative understanding of microbial ecosystems. His work is at the forefront of genome-scale metabolic modeling where he has published in leading journals and presented at international conferences. Applications of his work focus on understanding the role of microbial organisms in environmental and human health.</p>","frontmatter":{"image":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAA7zAAAO8wEcU5k6AAAErklEQVR42hWOWVOaZwCFv1/Sy97nqjPtdHrRNJm0EpdojIAoikRwQxBREBTBBUGNiBpUcDTEKMZg1RiJKG4IKIgKBEHgAwmQmMjmEqfq+3acOXPmuTnPHIRGr+E2tc2a3avomTV5vXcOd5PAkgC2JHCeQUcCeM+B7wKgVzAK4Bd41+FbGLiCR2cAKauiU6nlEtmQxuQ3RG+2Y9B8CkzfoPEEWk/hXgzsfYP2U+iIQ1fqTuROQWccHCaAOw4QRj2HyWQ1NLYMTum07nN9CK4ew7UQXDsG68HbzSAwHIOtIDR9huYwsEah9Qu0hKEtAve/QIQn7GgStot6XgrFPW83D9cicNkHllGoD8KNY6jzwSU3XDq8y4oHrvuhEYWmALSE7vYIiUysplf3KcZFLwZW9tGjy7t7rrNbvT00tbCtsx6v+a/XA1DvBXoPWD2Ca0dw3QsNQbgdAUj2M2wFo47JqqtlMlTzG9bo1WHyvyXtyqikb6JXbphbNG9aDr7+sMeg7SuwRIHpMzSE4HoArAchUkQmlzyntEoHBeIe+aTW/PVKa7ItqzSo1hgxHkQtTt+KeWfP401BXwwE4/A4BdHEHXu+XSMZGZiS4gIWt4kj6OhSasbX3GLJwM704me9xac1oCvG8JbtwLTrCl76QxeB8AUaOXP64oHo5ZbBiuDyi6pZvCo6s7yawRaKG9skHCZ3tF1WnUseZQt5+WXcoirta7XuMLXiv1n1X6/6fijnN0cXtlSLmwieSKZUMiRyFaOunt3cMjg5pxCI1S1SMaXe9ub9/AvlGLfDNjFzEL60J+CnBHCloGbd0tErlSmVCJFSgSMQuK0SWi1LIO6SvVLPjE1bFW+NfWN6qdIyMrnRPeTZsH5KAEcMHCahNXwx/HZB0NXN5HCQrCc5+cSiylpOQTGRXFrM4vJEEulIc7u8hsfBEDuJNUP1vB2Lw3UBHae3rgR0xm9NaEz2Sl1GZyG5T7OweFwxpeIZDosj4Or5QragXdLaOSuTr/WPmkYmNIPDW56IMwEdMWA/BUY08d5ofzE8TqtrRPJyMc9J+HaZktUsIpKIJcUFsneL/YpJJrG0r7G1h80f6er5cHTiTEJXDBrRxOSScUA1LejsZfNFSEEJ+UnmQ2oltaaxlVRZyZQOcG3fG/rfsPMK//7lAfbPdHlbZ7s1Mh6+/hiIdw4M8sWdon5FbaOgji9CyFTq/b9+w+OfVkkkHIuPsn2CmbY/G1pqovOpGYSydDyvd7zMEC7fOuE6ks06U3O3tIJZhy95Tq6sRdIwD7Of5jDU/woiNxX7SdyCO029+3h8G98gr8grJ+RQ7le1ERadFebvRctBuuO8y5+Sv1/mdXTT2AIkPe0ReVTDDN2UbEZwi94c9W729P4DoeqnX5/8k19b0zr8M6Y0rf8DdtGL13qIWpTpvW6xBas4PFI5DcGW02jmKEGH4j96s6esj1WmjPEdzEvd78LX92p671GE97tm8mddOI29UOvBzbpy5pwkHVrK78jNwyPFEkXm1F7mmKFgwfOoZz5TZc6esOa8sTweMTx8+TFrZDX3nQO7cJSlsWfPOHLn3H9I59MnrTTFTGEh6X/IFiCuj8dJFAAAAABJRU5ErkJggg=="},"images":{"fallback":{"src":"/static/b3439c85868919652f4c53b138c095c1/f99e8/dbernstein.png","srcSet":"/static/b3439c85868919652f4c53b138c095c1/2bc09/dbernstein.png 88w,\\n/static/b3439c85868919652f4c53b138c095c1/a527b/dbernstein.png 175w,\\n/static/b3439c85868919652f4c53b138c095c1/f99e8/dbernstein.png 350w,\\n/static/b3439c85868919652f4c53b138c095c1/7932e/dbernstein.png 700w","sizes":"(min-width: 350px) 350px, 100vw"},"sources":[{"srcSet":"/static/b3439c85868919652f4c53b138c095c1/ca93e/dbernstein.webp 88w,\\n/static/b3439c85868919652f4c53b138c095c1/746e2/dbernstein.webp 175w,\\n/static/b3439c85868919652f4c53b138c095c1/b0882/dbernstein.webp 350w,\\n/static/b3439c85868919652f4c53b138c095c1/2cafc/dbernstein.webp 700w","type":"image/webp","sizes":"(min-width: 350px) 350px, 100vw"}]},"width":350,"height":350}}},"title":"About David Bernstein"}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1271460761.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1271460761.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"siteUrl":"https://m-3-lab.github.io"}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1371446413.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1371446413.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"markdown":{"html":"<p>There are openings at several levels in the laboratory.</p>\\n<h3>Postdoctoral</h3>\\n<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor\\nincididunt ut labore et dolore magna aliqua. Odio aenean sed adipiscing diam donec\\nadipiscing.</p>\\n<h3>Graduate students</h3>\\n<p>Adipiscing enim eu turpis egestas pretium aenean pharetra. Pretium\\nlectus quam id leo in vitae turpis massa sed. Sed viverra ipsum nunc aliquet\\nbibendum enim facilisis.</p>\\n<h3>Research associates</h3>\\n<p>Velit scelerisque in dictum non. In metus vulputate eu\\nscelerisque. Ipsum dolor sit amet consectetur adipiscing elit duis. Nec ullamcorper\\nsit amet risus nullam eget felis eget. Congue mauris rhoncus aenean vel elit\\nscelerisque.</p>"}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1440116640.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1440116640.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":"David Bernstein","footerLinks":[{"link":"https://github.com/m-3-lab","text":"GitHub"},{"link":"https://www.uvm.edu/cems/ebe/profile/david-bernstein","text":"University of Vermont"},{"link":"https://www.linkedin.com/in/james-knight-174996156","text":"LinkedIn"}]}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/1791518792.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/1791518792.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"markdown":{"edges":[{"node":{"html":"<p>Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Volutpat est velit egestas dui id ornare arcu odio. Urna id volutpat lacus laoreet non curabitur gravida. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Malesuada fames ac turpis egestas sed tempus urna et pharetra. Dignissim diam quis enim lobortis scelerisque fermentum dui faucibus in. Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Sem fringilla ut morbi tincidunt augue interdum. Iaculis at erat pellentesque adipiscing commodo elit. Duis ut diam quam nulla porttitor.</p>","frontmatter":{"image":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAADn0lEQVR42m1SS09bRxQ+c86ZufcaGxvb2AZjxwGHhw3m4WDAyJgaCOYVMOIVEpe4JH5BSGmLlFYkKYtKVaRUrVS1i0aqlE12kapWldoqqrpsVl3251Rjq1LbdPTNLO7cb77vfOeAQH4TSESMSpFhECskZiSFJJEksSKWJJkVAQh6EwKRpDBNbmlRUhFKajIb5ObJUvH/k7W2RKnQstgwmSRptQazIStZsmHIf5ABAYSGEMogqUiQYImmqf8X+B8gy3/ZRtBLACAiEmHDoD6lxEYt1MhCb9BsAmQiKUlJTdYQSKyBOjCbTZqWNEwWhELfEgjRkNDPgy6Aqfnhb/8CBGgZRu1fNh0BESIKt8veFfSxVIAIdrtltHkd6ZVAb5++JfS2+51uHxIyExKEQv5ri7OdoQ4iXdje/uaPv/2UTCX1ex6PE92dttyOraMLADKZ6de/fvrd83JhLqUUCQELs6NPnz5OLua1uICeVHb14itn/KomxxMxwx9257ZMdwAAbhV3//zj61cvK0elFdNkAJi62vvw4bt98f6m+eDA8Onj87buAV1pIBRSU3nne9+o1BYAbBVmPz/a/2g1U9mc8HidiFC+s/fixbfbxRs6JKTW0WxH/qYZiVskwNMRgOiw2HhAI2sAsLuePU9cvudQn20nC+ujHpf1xZMPnz37cmPrusvtFIiyb1KmtvhSwmaZ0Ob1iECE9y54bAUANrfnazcWSnOJT2qzC9keh53qd9ffyk30D4SdrlYA5N4M9WeFN6yUBJaSOrp555EYmJUAi0vp/Gp6ejp2VpsZH2pHgOJ+/uOL0ysxXTOyop4JjibRHyFJoMfe6+d0gdxdlhRLy5PFg6W9zemd66N+l02nsJk7f3TPG/BpMjFGxjiWJd8lJgKDiW12XHjHiMQBIDkSLRdmSvnx/p72xqjCcj7786uXw6NDulXS4Oi4GswZVotCAEMSWQ7cODNiUwxgY3nL47jtaXUSAetWXctN/v76l+W1RU22tVJshq6kQKBozinYXWLtRMRnAKDdMst9XafRYMCUzcZmM2M/fP+8UNBxCpsThpcglAi0twX8ThgZHw7FBgd2y4m9w1DP5VDQNz0Yzca6u8MBf9AXDHcmxxM3i4XJ9Fh3uLN3cCgyX+idmJlPTyzMTUL19OSgWqmeHN9/cFb74P1SrXJQrxarlbfLd8snR+X7x4fH9cPj+u1apVSrlOqVw1r5zlH1sF49qJb/AgjwlM1YhEYKAAAAAElFTkSuQmCC"},"images":{"fallback":{"src":"/static/718c1e2cc6548dcb0bd120d7fe33f308/db7f9/robot-army.png","srcSet":"/static/718c1e2cc6548dcb0bd120d7fe33f308/816dd/robot-army.png 75w,\\n/static/718c1e2cc6548dcb0bd120d7fe33f308/bbbfd/robot-army.png 150w,\\n/static/718c1e2cc6548dcb0bd120d7fe33f308/db7f9/robot-army.png 300w,\\n/static/718c1e2cc6548dcb0bd120d7fe33f308/77449/robot-army.png 600w","sizes":"(min-width: 300px) 300px, 100vw"},"sources":[{"srcSet":"/static/718c1e2cc6548dcb0bd120d7fe33f308/90bb6/robot-army.webp 75w,\\n/static/718c1e2cc6548dcb0bd120d7fe33f308/37974/robot-army.webp 150w,\\n/static/718c1e2cc6548dcb0bd120d7fe33f308/2f554/robot-army.webp 300w,\\n/static/718c1e2cc6548dcb0bd120d7fe33f308/5d853/robot-army.webp 600w","type":"image/webp","sizes":"(min-width: 300px) 300px, 100vw"}]},"width":300,"height":300}}},"title":"Self-aware robot armies","order":3}}},{"node":{"html":"<p>Sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec. Eget felis eget nunc lobortis. Consequat nisl vel pretium lectus quam id leo in. Cras sed felis eget velit aliquet sagittis id consectetur purus. Auctor urna nunc id cursus. Scelerisque eu ultrices vitae auctor eu augue ut lectus. Scelerisque eu ultrices vitae auctor eu. Orci eu lobortis elementum nibh. Id leo in vitae turpis massa sed elementum tempus. Vestibulum morbi blandit cursus risus at ultrices.</p>","frontmatter":{"image":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEoElEQVR42hXLWU8aCQAA4HncpyZNd5s0XRGQMjBcyg2C1BvwwIvWipSryinHwAAiiIBokSJUUQ4ZKLdU0Vqbrl3TNOk+bLL7pzb7vX+ArwTZs6DlCOssYDyVXg8KuUtsa57kqPT66gR3Bedp4AI1WqDCQD5A1hzGkcN5ymS4DCKoGDAf4/TJXkPqofX0N2cBG2xCsZtB/zkDruOD5yxvox9pQZHuwM7FIPyBacphnRVC4Jzkb4HBjgiwnuCcRQJcemLP9bhLVGuWsFEkOGt4U+mRtfz7Wh5rLD5FmgR3DdooMjzNgdA1FL955q9hA20KYD+FvEXSVkOAoCx/lWYrkpxnuOxnZf0Ovvpz7/tfaPd7bP962oJS3WXhwRdV/Mvz2C0lfi2OdNkAUuBulqmx66GDW2msK4jfjcXyovtG7u+rm387N3dH2atYGA2rXSjZ22Hv304FrwSOxsNQF0p8lQPRC9FWmxy85PjbTH+NFf08GTgaRJP29UW+dhg0j/aZJFjD+DNr6qkp1+Mq4T01qreOgeu/7H5iAZutAVeN4qmxvU36ZoeOXDDtqYFy2ulQjapHaBtyxvoozbfMhNMEW6433OEG2gPhT/TQNdHdeAwE2kxvnewsEx0VirWI91ZBX4mRRRbmhbRJHnmMQx6iEY4D6oNLbrRL9TepVvTR+umv7hoIo08Be4EaPH+ANB8gLYK7jA3UMa5jsB3V6Sb5PGrfBI8ioeN+VlLlb3JvHQy3ROY8xnIKOs8Ypiwe0L3rmfM80r57HP0i9Tfo+swT9ymkeyEcZdHG2OCskCIZIJjnpYGU0IZiNiv89SQxcf8kdMGxHvEAfQxatEO6fbyrDjmKoGaPuBLBjE9DLJAwyiJNCcgyAXVWMaiOEHX74NoBw/yW5jyWrKXpcJ4BaCLcN1GW5RDURPrU21TlBmXFTQy5rYtitqQflPMpsyJoBzHpoyPaJG9li6Le4asj4tUYSx1jAHMWgdRAk2tJK5t0XYSoidJfWPrnJcznDKKIjh3l9E0IiCJqH1dMGl7tnzExte4J/c7cqzBHt88Dlu2ymVWebKmfP0FfQThKmLtknJWxny0vv9Rb3S81OtFzsZBOWjGJtDG5cVctU4imVVxVVKyJcwDzwWTwZHX72GbyenyxBBzZ2Xl7ohBQYedWofkzW77Xv3EJacRo6jDXKZ1Ui754WOPRqMOT2qgQUEVHVP5BY3jWFF3ay1Tz1R9HxU9zArrdgmRKd/nad8MaPEgjJjOdVvef5uXP0sXt0WXR9l6lDgiAORt/XitUasVLWsVeBs2WvkYSDQmTblyH36P3mbNvy2oXj8lMn3SrH3+UW3eFxlW62I4cbyc/WoE5G2tWJzZuKCy7M+FkaHu3DIffDQ2LFpWGQAx1+o8WlHrZ1EI8VT+r/YHW7k7rtXT1OFQwIcUxYESPl2oo2l2eLolTOkYMXu2GLzyjVIxPyKRT069U8680C28cqr1MNndeSdczobx188zgzM1J18n/5yEladzY8zpBexmmLnu5ttAqnDCrXGLXodSbkb+91IZQxVZBE++qfK0p0+GwYV+iQSa0Cc5/XcvlmyzP5VYAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/6e02e63fb822c125815d2497f4f12a6d/db7f9/wooden-robot.png","srcSet":"/static/6e02e63fb822c125815d2497f4f12a6d/816dd/wooden-robot.png 75w,\\n/static/6e02e63fb822c125815d2497f4f12a6d/bbbfd/wooden-robot.png 150w,\\n/static/6e02e63fb822c125815d2497f4f12a6d/db7f9/wooden-robot.png 300w,\\n/static/6e02e63fb822c125815d2497f4f12a6d/77449/wooden-robot.png 600w","sizes":"(min-width: 300px) 300px, 100vw"},"sources":[{"srcSet":"/static/6e02e63fb822c125815d2497f4f12a6d/90bb6/wooden-robot.webp 75w,\\n/static/6e02e63fb822c125815d2497f4f12a6d/37974/wooden-robot.webp 150w,\\n/static/6e02e63fb822c125815d2497f4f12a6d/2f554/wooden-robot.webp 300w,\\n/static/6e02e63fb822c125815d2497f4f12a6d/5d853/wooden-robot.webp 600w","type":"image/webp","sizes":"(min-width: 300px) 300px, 100vw"}]},"width":300,"height":300}}},"title":"Robots","order":1}}},{"node":{"html":"<p>Leo a diam sollicitudin tempor. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Risus nullam eget felis eget nunc. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Nunc vel risus commodo viverra maecenas accumsan. Auctor elit sed vulputate mi sit amet mauris commodo. Odio ut enim blandit volutpat maecenas volutpat blandit aliquam. Ornare aenean euismod elementum nisi quis eleifend quam adipiscing. Ac auctor augue mauris augue neque gravida in fermentum. Pharetra convallis posuere morbi leo urna. Velit scelerisque in dictum non consectetur a erat. Laoreet non curabitur gravida arcu ac tortor dignissim. Sit amet mattis vulputate enim. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Lorem ipsum dolor sit amet consectetur adipiscing elit. Et tortor at risus viverra adipiscing at. Fusce id velit ut tortor pretium. Laoreet sit amet cursus sit. Amet consectetur adipiscing elit pellentesque. Eget egestas purus viverra accumsan.</p>","frontmatter":{"image":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAIAAAAC64paAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEkElEQVR42jWM209aBwCHz+NeVmux2FmbdOnEw7lxOAc4HO7gmVgERbkjKHIT5SCHwx3FSwGx2opWabX23qY2db1kXfdUsy1blizZ3ppmD1v2ryxmWfJ7+PJLvg8QQuh5CO2GkW74FM6L0a7/JxBj58ToWRA5I4I7+uFzICo4/ZEuMXJOjHSKUeACjAkhtAtCuv6rQIgQQgQgeqqJ0Q4Q7gCRi6i0B8M7+uFOEO08NeFOEOkAEUCsJPsVxBWZ9DKB9+KSXgl2SSL5AsWEp1FJD4zLVWrvsJnSaD4XQQIQFYCoEEYvIFg3KgEQmiTVMlwtwzQyQkeJ5LJeDO+GUEE/euYrqFOEdEPYRRi7hEq6xKhQjPbA2Jc4LpIT/QoS6CMIgiIlCoJUyaSU8mwffLYPFoKYEERxuUJJUz0QplXRfYT0ihSHZVKSkiEKElaQOEUCYkJCU4RcIVXShFxJ9OPSXggjKZlGo4l5PR63S0IpBrW0z2J0mfUTFoPTrKM1cpwiKIoEbEMDw4MGo0FjMKiYAZXeSIswzGGzyE1WjdkViufLHMeolAHr11cHtFZGZ9DTGCUDSSlESoHbxWSdjWTDE4mAO+i2e5wjuEJen4uxoUjMG9hbrOQ4TqvVX2VMsEqFqCiIVkC0ElRSIKUEft9f+9BaftssP17i94qpO+V00GEPux2z5Zo+nI9lKhU+q1BrfSM2p3t0yM7YnVenA57QhGfS7wE+Pt7843Dt/WbpeC37bmPhzXppORmiVLohf+gzg1cwxmZySUKttDJmPuFNxf3LXGwjN8clAr6pUWBx3p9P+rMz7mxiPD/rno+54lNOkKBGLMxFnDK5PcoR9QUcJXByeJTR2QZ0oybTGIMO0n0mBVCIBxIhLx8P8BFPetqxk59ZSoR6IYmRpmV6JrV4LZOds1iZy4gkFwluF1i3y56O+le5qdCkE3jXLB0u8M9rhRe1wg1+7tu1wosVXkTIjEbjYrkqH4/W1jaPWtdVtDIV9B5UuN0i9+Ne87hReruxDLQL88bBIc+4/Zs6/9Ot6q1c4rhRYoM+v922mMnHQrGD5rX9m5uOEVtpyv10ifvz6M5frx89WClsZ+JAxOtupKLRCe/clO9VLXO/lDwszU+6xhijfmF1fSjdKK80H21tFCLBjGf8lzvN729UWzn2ZHupXWCBYshznY0sp2ZcjvFGKvqgklqMBXUmRq1WaTxRgIkZooX1+lo9FbcNDByW01wocH8h9Wa9+Gw5B6i1OsuwtZVlH1X59+v53Tx7vzK/X5i7l51+XpkJO8dWo4EtLhL2OlCZOjnhu5mOtrJJr9ubiUcAbso3G/CUosEHVf5ZlQ2PWfbzidvc5JNC+OTmwr3SbCLobZfTLT6xxcUzAdfJRu7nvVXGbIZVOuDX3WuvG8X9CveqUdzJz6WD7kzAUZl21WK+Fp84WsmcbFX/fnnwz8u7n57usJFQnY2+redO2uupSAj4sFNrl9Mftqufnm59PDpoL+SrM9PHK5kNdnqXj90rpZ6U2e+aud/uXn+4xJMGxmobvV3Jf3px+EO7+S93z5mMxFrKvgAAAABJRU5ErkJggg=="},"images":{"fallback":{"src":"/static/1b74a2003f60a1b09d4265aa40b64934/db7f9/time-travel.png","srcSet":"/static/1b74a2003f60a1b09d4265aa40b64934/816dd/time-travel.png 75w,\\n/static/1b74a2003f60a1b09d4265aa40b64934/bbbfd/time-travel.png 150w,\\n/static/1b74a2003f60a1b09d4265aa40b64934/db7f9/time-travel.png 300w,\\n/static/1b74a2003f60a1b09d4265aa40b64934/77449/time-travel.png 600w","sizes":"(min-width: 300px) 300px, 100vw"},"sources":[{"srcSet":"/static/1b74a2003f60a1b09d4265aa40b64934/90bb6/time-travel.webp 75w,\\n/static/1b74a2003f60a1b09d4265aa40b64934/37974/time-travel.webp 150w,\\n/static/1b74a2003f60a1b09d4265aa40b64934/2f554/time-travel.webp 300w,\\n/static/1b74a2003f60a1b09d4265aa40b64934/5d853/time-travel.webp 600w","type":"image/webp","sizes":"(min-width: 300px) 300px, 100vw"}]},"width":300,"height":300}}},"title":"Time Travel","order":2}}}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/2353648138.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/2353648138.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"author":"David Bernstein","description":"Modeling and Analysis of the Human Gut Microbiome","primaryLinks":["Research","Opportunities"]}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/3980000209.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/3980000209.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"markdown":{"html":"<p>David Bernstein, Assistant Professor, Department of Electrical and Biomedical Engineering <br>\\n<a href=\\"mailto:david.bernstein@uvm.edu\\">David.Bernstein@uvm.edu</a></p>\\n<p>The University of Vermont<br>\\nBurlington, VT<br>\\nLaboratory Located at Votey [Insert Room Number Here]\\nOffice of Dr. Bernstein Located at Votey 309B(?)\\ntel: (xxx) xxxx-xxxx</p>"}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/4123507481.json":
+/*!***********************************************!*\
+  !*** ./public/page-data/sq/d/4123507481.json ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"site":{"siteMetadata":{"defaultDescription":"Modeling and Analysis of the Human Gut Microbiome","defaultTitle":"Microbiome Metabolic Modeling Lab","siteUrl":"https://m-3-lab.github.io"}}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/536276349.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/536276349.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"people":{"edges":[{"node":{"frontmatter":{"title":""}}},{"node":{"frontmatter":{"title":""}}},{"node":{"frontmatter":{"title":"Graduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Principal Investigator"}}},{"node":{"frontmatter":{"title":"Undergraduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Graduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Graduate Research Assistant"}}},{"node":{"frontmatter":{"title":"Undergraduate Research Assistant"}}}]},"publications":{"list":[{"title":"Addressing uncertainty in genome-scale metabolic model reconstruction and analysis."},{"title":"Enhancing Microbiome Research through Genome-Scale Metabolic Modeling."},{"title":"Construction and Modeling of a Coculture Microplate for Real-Time Measurement of Microbial Interactions."},{"title":"Evaluating E. coli genome-scale metabolic model accuracy with high-throughput mutant fitness data."}]}}}');
+
+/***/ }),
+
+/***/ "./public/page-data/sq/d/563261565.json":
+/*!**********************************************!*\
+  !*** ./public/page-data/sq/d/563261565.json ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = JSON.parse('{"data":{"hero":{"childImageSharp":{"gatsbyImageData":{"layout":"constrained","placeholder":{"fallback":"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAIAAAC9o5sfAAAACXBIWXMAAA7EAAAOxAGVKw4bAAACMElEQVR42gElAtr9AAggLAgnNQktPQoxQQs3SQw+Uw5GXg9MZg5Qag5Zdg5UcA1BVg1FXA5Tbw5RbA5NZww9UQsyQwo2SQguPgAJMD8MOk0OP1QQS2ISVnESY4EUeZsWfaAYepoTcI8ZV3EkaYQWXXgSbIwPXXsPX34PUWwOQ1kNP1QKMkMADT9TDj9TDi09EmB+F36hLZy9Qa/MRbHOM6nILpGtG2iGH3OQF3mYGoqsF4KmFIGkD3OWD2iJDFd0CT5UAA5IYA5SbgtXdB1/nyWXuU200GC1zl+501Wbt0mZtTqOrEWSrEyetzGevSiYtzixz0Cy0SefwCWdvySbvQAQX30bdpVJq8g1j6wnkLE/qMVpwNp1wdleo71dqsVuutJdqMGC5fxjxN5fxN51zuaG0uhdw907rcpBvdoAFYGlJ5a2U7jVJXWQHHeVNaXFRaC8j9nuR4mhPI+rRpy4P4ikOI+rQbzZN6TCP6XBU7rVMpa0HIepGHWUABBnhxFkgQ1fexd/oRh7nRZzkxh5lyyXtSN5kyF7mCWKqiGMrRFighJffByUthmIqhR8nxBoiQ9YdQ1KYwAIKzsIMUMKMkQJMEIMSWIMT2oPVG4PaIYWh6odkbMXfqARcpQSaooRc5YTdZgScZQOXHoOS2MOSWENQVcABx8rBiQwByQwByg2CTlNCUBVCDVIC1JsDV58DV9/DVx6DVRwDl9/DlNuDlBrDlFrDUVcDD9TCzhLCjJD233JbU4MPoEAAAAASUVORK5CYII="},"images":{"fallback":{"src":"/static/4a7ee4763f94cc42011d9cb607ffbddd/65e33/hero.png","srcSet":"/static/4a7ee4763f94cc42011d9cb607ffbddd/5fbad/hero.png 200w,\\n/static/4a7ee4763f94cc42011d9cb607ffbddd/4cbf5/hero.png 400w,\\n/static/4a7ee4763f94cc42011d9cb607ffbddd/65e33/hero.png 800w","sizes":"(min-width: 800px) 800px, 100vw"},"sources":[{"srcSet":"/static/4a7ee4763f94cc42011d9cb607ffbddd/13a9a/hero.webp 200w,\\n/static/4a7ee4763f94cc42011d9cb607ffbddd/8ab79/hero.webp 400w,\\n/static/4a7ee4763f94cc42011d9cb607ffbddd/90767/hero.webp 800w","type":"image/webp","sizes":"(min-width: 800px) 800px, 100vw"}]},"width":1920,"height":828}}}}}');
 
 /***/ })
 
