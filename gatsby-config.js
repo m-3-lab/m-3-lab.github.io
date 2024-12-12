@@ -1,5 +1,5 @@
 module.exports = {
-   //pathPrefix: '/m-3-test',
+   //pathPrefix: '/m-3-lab',
   siteMetadata: {
     author: 'David Bernstein',
     description: 'Modeling and Analysis of the Human Gut Microbiome',

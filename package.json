@@ -1,5 +1,5 @@
 {
-  "name": "m-3-test",
+  "name": "m-3-lab",
   "private": false,
   "description": "A starter template for scientists",
   "version": "0.1.0",
@@ -66,9 +66,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RSiegel03/m-3-test"
+    "url": "https://github.com/m-3-lab/m-3-lab.github.io"
   },
   "bugs": {
-    "url": "https://github.com/RSiegel03/m-3-test"
+    "url": "https://github.com/m-3-lab/m-3-lab.github.io"
   }
 }
