@@ -1,7 +1,6 @@
 const React = require(`react`)
 const path = require(`path`)
 const {
-  renderToString,
   renderToStaticMarkup,
   renderToPipeableStream,
 } = require(`react-dom/server`)
@@ -224,14 +223,6 @@ export default async function staticPage({
     const { componentChunkName, slicesMap } = pageData
     const pageComponent = await asyncRequires.components[componentChunkName]()
 
-    headHandlerForSSR({
-      pageComponent,
-      setHeadComponents,
-      staticQueryContext,
-      pageData,
-      pagePath,
-    })
-
     class RouteHandler extends React.Component {
       render() {
         const props = {
@@ -377,6 +368,18 @@ export default async function staticPage({
       pathPrefix: __PATH_PREFIX__,
     })
 
+    // we want to run Head after onRenderBody, so Html and Body attributes
+    // from Head wins over global ones from onRenderBody
+    headHandlerForSSR({
+      pageComponent,
+      setHeadComponents,
+      setHtmlAttributes,
+      setBodyAttributes,
+      staticQueryContext,
+      pageData,
+      pagePath,
+    })
+
     reversedScripts.forEach(script => {
       // Add preload/prefetch <link>s magic comments
       if (script.shouldGenerateLink) {
@@ -418,7 +421,9 @@ export default async function staticPage({
     })
 
     // Add page metadata for the current page
-    const windowPageData = `/*<![CDATA[*/window.pagePath="${pagePath}";${
+    const windowPageData = `/*<![CDATA[*/window.pagePath=${JSON.stringify(
+      pagePath
+    )};${
       process.env.GATSBY_SLICES
         ? ``
         : `window.___webpackCompilationHash="${webpackCompilationHash}";`

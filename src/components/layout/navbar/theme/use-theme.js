@@ -28,14 +28,14 @@ const useTheme = () => {
 
     window.addEventListener('storage', updateMode);
     return window.removeEventListener('storage', updateMode);
-  });
+  }, [darkMode]);
 
   useEffect(() => {
     const bodyMode = document.body.className.includes('dark-mode');
     if (bodyMode !== darkMode) {
       toggleState(bodyMode);
     }
-  }, []);
+  }, [darkMode]);
 
   return {
     darkMode,
