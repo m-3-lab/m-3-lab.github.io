@@ -4,6 +4,7 @@ const getPublications = require('./scripts/publications/index');
 
 exports.createSchemaCustomization = ({ actions, schema }) => {
   const { createTypes } = actions;
+
   const typeDefs = [
     schema.buildObjectType({
       name: 'FooterLink',
@@ -14,12 +15,36 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       interfaces: ['Node'],
     }),
     schema.buildObjectType({
+      name: 'CurrentPosition',
+      fields: {
+        description: 'String',
+        linkText: 'String',
+        linkUrl: 'String',
+      },
+      interfaces: ['Node'],
+    }),
+    schema.buildObjectType({
       name: 'Frontmatter',
       fields: {
         email: 'String',
-        name: 'String',
+        name: {
+          type: 'String!',
+          resolve: (source) => source.name || 'No name provided',
+        },
         order: 'Int',
         title: 'String',
+        graduationYear: {
+          type: 'Int',
+          resolve: (source) => source.graduationYear || null,
+        },
+        publications: {
+          type: 'String',
+          resolve: (source) => source.publications || 'N/A',
+        },
+        currentPosition: {
+          type: '[CurrentPosition]',
+          resolve: (source) => source.currentPosition || [],
+        },
       },
       interfaces: ['Node'],
     }),
@@ -62,7 +87,7 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
         },
         publications: {
           type: '[Int]',
-          resolve: (source) => source.primaryLinks || [],
+          resolve: (source) => source.publications || [],
         },
         primaryLinks: {
           type: '[String]',
@@ -79,8 +104,10 @@ exports.createSchemaCustomization = ({ actions, schema }) => {
       interfaces: ['Node'],
     }),
   ];
+
   createTypes(typeDefs);
 };
+
 
 exports.onCreateBabelConfig = ({ actions }) => {
   actions.setBabelPlugin({

@@ -6,12 +6,12 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
+  padding-bottom: 2rem;
   border-bottom: 2px solid #dee2e6;
   text-align: left;
   
   /* Typography consistent with scientific/academic themes */
-  font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: var(--font-primary);
 }
 
 .alumni-header h1 {
@@ -20,6 +20,7 @@
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.5rem;
+  text-align: left;
 }
 
 .alumni-header p {
@@ -29,27 +30,24 @@
 }
 
 
-
 .alumni-table {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  width: 75%;
-  border-collapse: separate;
+  width: 100%;
+  max-width: none;
+  table-layout: fixed;
+  margin: 0;
   border-spacing: 0;
-  margin-bottom: 2rem;
-  
-  /* Typography often used in scientific/academic themes */
-  font-family: var(--font-secondary);
-  font-size: 0.95rem;
-  color: #333;
 }
 
 .alumni-table thead {
   background-color: var(--color-primary);
-  border-bottom: 10px solid #dee60f;
+  border-bottom: 1px var(--color-primary);
 }
 
 .alumni-table th {
-  padding: 0.75rem;
+  padding: 1rem;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
@@ -128,7 +126,7 @@
 }
 
 /* Responsive typography adjustment */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 1200px) {
   .alumni-table {
     font-size: 0.85rem;
   }
