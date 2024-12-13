@@ -5,4 +5,4 @@ name: David Bernstein, PhD
 order: 1
 title: Principal Investigator
 ---
-[Insert David's Description Here]
+Please Wait while we gather more info for our site

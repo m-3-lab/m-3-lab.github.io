@@ -2,7 +2,8 @@ module.exports = {
    //pathPrefix: '/m-3-lab',
   siteMetadata: {
     author: 'David Bernstein',
-    description: 'Modeling and Analysis of the Human Gut Microbiome',
+    // description: 'Modeling and Analysis of the Human Gut Microbiome', // uncomment when officially posted
+    description: 'Check Back Once We Have More Information!', // comment out when under maintenance
     siteUrl: 'https://m-3-lab.github.io/',
     title: 'Microbiome Metabolic Modeling Lab',
     // List of link buttons to include on the landing image. Delete this field

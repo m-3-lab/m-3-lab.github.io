@@ -1,12 +1,9 @@
 ---
-name: John Doe
-graduationYear: 2020
-publications: "Doe et al., AI Journal, 2019"
+name: No Alum Yet
+graduationYear: 0000
+publications: N/A
 currentPosition:
-  - description: "Assistant Professor at "
-    linkText: "University of Vermont"
+  - description: "N/A "
+    linkText: "N/A"
     linkUrl: "https://www.uvm.edu/cems/ebe/profile/david-bernstein"
-  - description: "View "
-    linkText: "Github"
-    linkUrl: "https://github.com/RSiegel03"
 ---

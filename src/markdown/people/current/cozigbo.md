@@ -5,4 +5,4 @@ name: Chiamaka Ozigbo
 order: 5
 title: Undergraduate Research Assistant
 ---
-[Insert Chiamaka's Description Here]
+Please Wait while we gather more info for our site

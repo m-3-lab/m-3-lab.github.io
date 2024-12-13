@@ -1,8 +1,7 @@
 ---
 email: blumine@wnw.edu
-image: ../../../images/people/jlacy.png
 name: Jacob Lacy
-order: 2
+order: 3
 title: Graduate Research Assistant
 ---
-[Insert Jacob's Description Here]
+Please Wait while we gather more info for our site
