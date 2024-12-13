@@ -5,7 +5,7 @@
 }
 .people header {
   align-items: center;
-  display: flex;
+  display: flex; 
   margin-bottom: 1.5rem;
 }
 .people header h1 {

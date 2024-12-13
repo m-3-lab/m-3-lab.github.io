@@ -44,43 +44,44 @@ const AlumniTable = ({ alumni }) => {
           {/* <p>A comprehensive list of our distinguished graduates</p> Uncomment when we have alumni*/}
           <p>No alumni yet, check back later</p> {/* Remove Once we have alumni*/}
         </header>
-      </section>
+      
 
-      <table className="alumni-table">
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Graduation Year</th>
-            <th scope="col">Publications</th>
-            <th scope="col">Current Position</th>
-          </tr>
-        </thead>
-        <tbody>
-          {alumni.length > 0 ? (
-            alumni.map((alumnus, index) => {
-              const {
-                name = 'No Name Provided',
-                graduationYear = 'N/A',
-                publications = 'N/A',
-                currentPosition = [],
-              } = alumnus || {};
-
-              return (
-                <tr key={index}>
-                  <td>{safeValue(name, 'No Name Provided')}</td>
-                  <td>{safeValue(graduationYear, 'N/A')}</td>
-                  <td>{safeValue(publications, 'N/A')}</td>
-                  <td>{renderCurrentPositionLinks(currentPosition)}</td>
-                </tr>
-              );
-            })
-          ) : (
+        <table className="alumni-table">
+          <thead>
             <tr>
-              <td colSpan="4">No Alumni Data Available</td>
+              <th scope="col">Name</th>
+              <th scope="col">Graduation Year</th>
+              <th scope="col">Publications</th>
+              <th scope="col">Current Position</th>
             </tr>
-          )}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {alumni.length > 0 ? (
+              alumni.map((alumnus, index) => {
+                const {
+                  name = 'No Name Provided',
+                  graduationYear = 'N/A',
+                  publications = 'N/A',
+                  currentPosition = [],
+                } = alumnus || {};
+
+                return (
+                  <tr key={index}>
+                    <td>{safeValue(name, 'No Name Provided')}</td>
+                    <td>{safeValue(graduationYear, 'N/A')}</td>
+                    <td>{safeValue(publications, 'N/A')}</td>
+                    <td>{renderCurrentPositionLinks(currentPosition)}</td>
+                  </tr>
+                );
+              })
+            ) : (
+              <tr>
+                <td colSpan="4">No Alumni Data Available</td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+        </section>
     </div>
   );
 };
