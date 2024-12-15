@@ -29,6 +29,10 @@ const PeopleContainer = () => {
                 name
                 title
                 order
+                links {
+                  linkUrl
+                  linkText
+                }
               }
             }
           }
@@ -47,7 +51,7 @@ const PeopleContainer = () => {
                   description
                   linkText
                   linkUrl
-               }
+                }
               }
             }
           }

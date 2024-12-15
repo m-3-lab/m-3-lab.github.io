@@ -9,7 +9,7 @@ const Hero = ({
 }) => {
   const backgroundFluidImageStack = [
     image,
-    'linear-gradient(rgba(0, 126, 0, 0.5), rgba(0, 0, 126, 0.5))',
+    'linear-gradient(rgba(42, 107, 86, 0.7), rgba(238, 255, 250, 0.01))',
   ].reverse();
 
   return (

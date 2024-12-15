@@ -8,20 +8,20 @@ html {
 }
 body,
 body.light-mode {
-  --color-background: #fff;
+  --color-background: #eefffa;
   --color-font: #333;
   --color-font-contrast: #110202;
   --color-font-dark: #333;
   --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);
-  --color-link: #346acc;
-  --color-link-visited: #551a8b;
-  --color-primary: #3d8183;
+  --color-link: #2a6b56;
+  --color-link-visited: #103e2f;
+  --color-primary: #2a6b56;
   background-color: var(--color-background);
   color: var(--color-font);
 }
 body.dark-mode {
-  --color-background: #252429;
+  --color-background: #2e2c34;
   --color-font: #f2f2f2;
   --color-font-contrast: #110202;
   --color-font-dark: #333;
@@ -29,7 +29,7 @@ body.dark-mode {
   --color-input-focus: rgba(59, 153, 252, .7);
   --color-link: #5b95ff;
   --color-link-visited: #9675ff;
-  --color-primary: #ff7A8A;
+  --color-primary: #45d860;
   background-color: var(--color-background);
   color: var(--color-font);
 }

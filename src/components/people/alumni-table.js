@@ -39,7 +39,8 @@ const AlumniTable = ({ alumni }) => {
       <section>
         <header>
           <h1>
-            <FontAwesomeIcon icon={faUsers} /> Alumni Directory
+          Alumni Directory  
+          <FontAwesomeIcon icon={faUsers}  />
           </h1>
           {/* <p>A comprehensive list of our distinguished graduates</p> Uncomment when we have alumni*/}
           <p>No alumni yet, check back later</p> {/* Remove Once we have alumni*/}

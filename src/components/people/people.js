@@ -9,7 +9,7 @@ import Link from '../link/link';
 import Portrait from './portrait';
 
 import './people.css';
-
+ 
 const People = ({
   markdown,
 }) => (
@@ -48,6 +48,24 @@ const People = ({
                     </Link>
                   )
                 }
+                {
+                  person.node.frontmatter.links && person.node.frontmatter.links.length > 0
+                  && (
+                    <ul className="person__list-links">
+                      {person.node.frontmatter.links.map((link, index) => (
+                        <li key={index}>
+                          <a 
+                            href={link.linkUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                          >
+                            {link.linkText}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )
+                }
                 <div dangerouslySetInnerHTML={{ __html: person.node.html }} />
               </div>
             </li>
@@ -67,6 +85,12 @@ People.propTypes = {
           image: PropTypes.shape({}),
           name: PropTypes.string,
           title: PropTypes.string,
+          links: PropTypes.arrayOf(
+            PropTypes.shape({
+              linkUrl: PropTypes.string,
+              linkText: PropTypes.string,
+            })
+          ),
         }),
         html: PropTypes.node,
       }),

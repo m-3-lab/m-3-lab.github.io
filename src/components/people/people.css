@@ -1,10 +1,13 @@
+/* Style Page*/
 .people {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
+
+/* Style Header*/
 .people header {
-  align-items: center;
+  align-items: left;
   display: flex; 
   margin-bottom: 1.5rem;
 }
@@ -15,12 +18,14 @@
   color: var(--color-primary);
   margin-left: 1rem;
 }
+
+
+/* Style People content*/
 .people section {
-  margin: 2rem 0;
-  max-width: 960px;
+  margin: 1.5rem 0;
+  max-width: 1000px;
   width: calc(100vw - 3rem);
 }
-
 .people__list {
   list-style: none;
   margin-left: 0;
@@ -32,23 +37,36 @@
 }
 .people__list li h2,
 .people__list li h3 {
-  margin-bottom: 1rem;
+  margin-bottom: .5rem;
 }
+
+
+/* Style Emails */
 .person__list-email {
-  display: inline-block;
-  margin-bottom: 0.5rem;
+  color: var(--color-primary) !important; /* Ensure the primary color is applied */
+  font-weight: normal; /* Remove boldness, or set as desired */
+  text-decoration: underline; /* Remove underline from email links */
+  transition: color 0.3s ease; /* Smooth transition on hover */
 }
+/* Style Emails on hover*/
+.person__list-email:hover {
+  color: var(--color-primary-dark); /* Change the color to a darker shade on hover */
+}
+
+
+/* Style Images*/
 .people__list-image {
   align-items: center;
   border: 2px solid var(--color-primary);
   border-radius: 0.3rem;
   display: flex;
   justify-content: center;
-  height: 300px;
+  height: 400px;
   margin-right: 1.5rem;
   min-width: 300px;
   width: 300px;
 }
+/* Style SVG*/
 .people__list-image svg {
   fill: var(--color-primary);
   height: 65%;
@@ -56,6 +74,32 @@
   width: 65%;
 }
 
+
+/* Style Links */
+.person__list-links {
+  display: flex; /* Align children horizontally */
+  gap: 5rem; /* Space between each link */
+  padding: 0;
+  margin: .5rem .5rem .5rem 0; 
+}
+/* Styling for each individual link */
+.person__list-links li {
+  list-style: none; /* Remove bullets */
+  margin: 0; /* Remove default margin */
+}
+/* Styling for the links */
+.person__list-links a {
+  color: var(--color-primary); /* Match the site's primary color */
+  font-weight: none; /* Make links stand out */
+  text-decoration: underline; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+/* Styling links on Hover*/
+.person__list-links a:hover {
+  color: var(--color-primary-dark); /* Darker shade on hover */
+}
+
+/* Style for Mobile Devices*/
 @media (max-width: 750px) {
   .people__list li {
     align-items: center;

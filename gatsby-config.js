@@ -28,7 +28,7 @@ module.exports = {
     footerLinks: [
       { text: 'GitHub', link: 'https://github.com/m-3-lab' },
       { text: 'University of Vermont', link: 'https://www.uvm.edu/cems/ebe/profile/david-bernstein' },
-      { text: 'LinkedIn', link: 'https://www.linkedin.com/in/james-knight-174996156' },
+      { text: 'LinkedIn', link: 'https://www.linkedin.com/in/david-b-bernstein/' },
     ],
   },
   plugins: [
@@ -45,8 +45,8 @@ module.exports = {
         name: 'gatsby-starter-scientist',
         short_name: 'scientist',
         start_url: '/',
-        background_color: '#3d8183',
-        theme_color: '#3d8183',
+        background_color: '#0c563e',
+        theme_color: '#0c563e',
         display: 'standalone',
         icon: 'src/images/favicon.png',
       },

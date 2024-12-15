@@ -10,21 +10,22 @@
   /* Typography consistent with scientific/academic themes */
   font-family: var(--font-primary);
 }
-
 .alumni-header section {
   margin: 2rem;
   margin-left: 24rem;
   max-width: none;
   align-items: center;
 }
-
 .alumni-header h1 {
   margin-bottom: 0;
 }
-
 .alumni-header p {
   color: var(--color-font); 
   margin-top: 0.5rem;
+}
+.alumni-header header svg {
+  color: var(--color-primary);
+  margin-left: 1rem;
 }
 
 
