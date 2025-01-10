@@ -8,13 +8,13 @@ html {
 }
 body,
 body.light-mode {
-  --color-background: #eefffa;
+  --color-background: #f2fcf9;
   --color-font: #333;
   --color-font-contrast: #110202;
   --color-font-dark: #333;
   --color-font-light: #f2f2f2;
   --color-input-focus: rgba(59, 153, 252, .7);
-  --color-link: #2a6b56;
+  --color-link: #38a381;
   --color-link-visited: #103e2f;
   --color-primary: #2a6b56;
   background-color: var(--color-background);

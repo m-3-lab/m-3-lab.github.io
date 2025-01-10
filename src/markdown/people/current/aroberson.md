@@ -1,5 +1,5 @@
 ---
-email: blumine@wnw.edu
+email: Alexis.Roberson@uvm.edu
 image: ../../../images/people/aroberson.png
 name: Alexis Roberson
 order: 3

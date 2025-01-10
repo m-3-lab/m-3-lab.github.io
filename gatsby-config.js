@@ -18,7 +18,6 @@ module.exports = {
     publications: [
       34904863,
       33602294,
-      37888487,
       36802169
     ],
     // An array of links to display in the page footer. Include as many as you like

@@ -1,5 +1,5 @@
 ---
-email: blumine@wnw.edu
+email: Jacob.Lacy@uvm.edu
 name: Jacob Lacy
 order: 3
 title: Graduate Research Assistant

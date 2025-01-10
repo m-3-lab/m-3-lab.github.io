@@ -1,7 +1,6 @@
 ---
-email: Chiamaka.Ozigbo@uvm.edu
-image: ../../../images/people/cozigbo.png
-name: Chiamaka Ozigbo
+email: Kristof.Rohaly-Medved@uvm.edu
+name: Kristof Rohaly-Medved
 order: 5
 title: Undergraduate Research Assistant
 ---
