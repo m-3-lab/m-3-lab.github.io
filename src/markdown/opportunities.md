@@ -1,4 +1,4 @@
-There are openings at several levels in the laboratory.
+There are openings at several levels in the laboratory. Please contact Dr. David Bernstein if you are interested!
 
 ### Postdoctoral
 
@@ -8,6 +8,6 @@ Please Wait while we gather more info for our site
 
 Please Wait while we gather more info for our site
 
-### Research associates
+### Undergraduate Research Associates
 
-Please Wait while we gather more info for our site
+Currently we have 3 UGRAs, reach 
