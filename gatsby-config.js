@@ -19,7 +19,9 @@ module.exports = {
       34904863,
       33602294,
       36802169,
-      37888487
+      37888487,
+      31194675,
+      34635859
     ],
     // An array of links to display in the page footer. Include as many as you like
     // (not just the ones here). If either the link or text is missing,
