@@ -16,7 +16,7 @@ body.light-mode {
   --color-input-focus: rgba(59, 153, 252, .7);
   --color-link: #38a381;
   --color-link-visited: #103e2f;
-  --color-primary: #2a6b56;
+  --color-primary: #287a6b;
   background-color: var(--color-background);
   color: var(--color-font);
 }
@@ -29,7 +29,7 @@ body.dark-mode {
   --color-input-focus: rgba(59, 153, 252, .7);
   --color-link: #5b95ff;
   --color-link-visited: #9675ff;
-  --color-primary: #45d860;
+  --color-primary: #287a6b;
   background-color: var(--color-background);
   color: var(--color-font);
 }

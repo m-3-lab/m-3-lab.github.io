@@ -7,7 +7,7 @@ import './people.css';
 const AlumniTable = ({ alumni }) => {
   const renderCurrentPositionLinks = (currentPosition) => {
     if (!currentPosition || currentPosition.length === 0) {
-      return <span>No Current Position Information Available</span>;
+      return <span></span>;
     }
 
     return currentPosition.map((position, index) => {
@@ -42,27 +42,26 @@ const AlumniTable = ({ alumni }) => {
           Alumni Directory  
           <FontAwesomeIcon icon={faUsers}  />
           </h1>
-          {/* <p>A comprehensive list of our distinguished graduates</p> Uncomment when we have alumni*/}
-          <p>No alumni yet, check back later</p> {/* Remove Once we have alumni*/}
+          <p> </p>
         </header>
-      
+
 
         <table className="alumni-table">
           <thead>
             <tr>
               <th scope="col">Name</th>
               <th scope="col">Graduation Year</th>
-              <th scope="col">Publications</th>
-              <th scope="col">Current Position</th>
+              <th scope="col">Lab Role</th>
+              <th scope="col">Immediate Next or (Current) Position</th>
             </tr>
           </thead>
           <tbody>
             {alumni.length > 0 ? (
               alumni.map((alumnus, index) => {
                 const {
-                  name = 'No Name Provided',
-                  graduationYear = 'N/A',
-                  publications = 'N/A',
+                  name = [],
+                  graduationYear = [],
+                  labRole = [],
                   currentPosition = [],
                 } = alumnus || {};
 
@@ -70,7 +69,7 @@ const AlumniTable = ({ alumni }) => {
                   <tr key={index}>
                     <td>{safeValue(name, 'No Name Provided')}</td>
                     <td>{safeValue(graduationYear, 'N/A')}</td>
-                    <td>{safeValue(publications, 'N/A')}</td>
+                    <td>{safeValue(labRole, 'N/A')}</td>
                     <td>{renderCurrentPositionLinks(currentPosition)}</td>
                   </tr>
                 );

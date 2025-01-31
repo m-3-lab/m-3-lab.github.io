@@ -46,7 +46,7 @@ const PeopleContainer = () => {
               frontmatter {
                 name
                 graduationYear
-                publications
+                labRole
                 currentPosition {
                   description
                   linkText
