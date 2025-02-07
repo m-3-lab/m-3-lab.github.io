@@ -3,7 +3,7 @@ David Bernstein, Assistant Professor, Department of Electrical and Biomedical En
 
 The University of Vermont\
 Burlington, VT\
-Laboratory Located in Votey\
-Office of Dr. Bernstein Located at Votey 309B\
+Laboratory Located in Votey 367\
+Office of Dr. Bernstein Located at Votey 309B
 
 
