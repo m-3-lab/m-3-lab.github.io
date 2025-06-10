@@ -1,10 +1,9 @@
 ---
-name: "Marie Ananou"
-graduationYear: "2024"
-labRole: "Undergraduate Research Assistant."
+name: Marie Ananou
+graduationYear: '2024'
+labRole: Undergraduate Research Assistant
 currentPosition: 
-  - description: "Paris 2024 - Comité d'organisation des Jeux Olympiques et Paralympiques de 2024"
-  - description: (test)
+  - description: Paris 2024 - Comité d'organisation des Jeux Olympiques et Paralympiques de 2024
 ---
 <!--
   Example of a valid alumni markdown entry:
@@ -14,9 +13,10 @@ currentPosition:
   graduationYear: 2020
   publications: "Published a groundbreaking study"
   currentPosition:
-    - description: "Research Scientist at XYZ Labs"
+    - description: Research Scientist at XYZ Labs
       linkText: "XYZ Labs"
       linkUrl: "https://xyzlabs.com"
+    - description: (current position)
   ---
 
   Please replace this template with the actual alumni data.

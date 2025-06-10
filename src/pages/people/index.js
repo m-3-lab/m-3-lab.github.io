@@ -7,7 +7,7 @@ import AlumniTable from '../../components/people/alumni-table';
 
 const IndexPage = ({ data }) => (
   <Layout>
-    <SEO title="Our Team" />
+    <SEO title="Team" />
     <PeopleContainer data={data} />
   </Layout>
 );

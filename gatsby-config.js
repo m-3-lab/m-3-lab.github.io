@@ -2,17 +2,18 @@ module.exports = {
    //pathPrefix: '/m-3-lab',
   siteMetadata: {
     author: 'David Bernstein',
-    // description: 'Modeling and Analysis of the Human Gut Microbiome', // uncomment when officially posted
-    description: 'Check Back Once We Have More Information!', // comment out when under maintenance
+    //  description: 'Developing predictive computational models of microbial metabolism', // uncomment when officially posted
+      description: '', // comment out when under maintenance
     siteUrl: 'https://m-3-lab.github.io/',
-    title: 'Microbiome Metabolic Modeling Lab',
+    title: 'Microbiome Metabolic Modeling',
     // List of link buttons to include on the landing image. Delete this field
     // and/or all entires if you do not want these links.
     // options: 'contact', 'opportunities', 'people', 'publications', 'research'
-    primaryLinks: [
-      'Research',
-      'Opportunities',
-    ],
+    // primaryLinks: [
+    //  'Research',
+    //  'Opportunities',
+    // ],
+    
     // List of PubMed IDs to include on the publication page. Delete this field
     // and/or all entires if you do not want the publication page.
     publications: [

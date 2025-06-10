@@ -77,8 +77,6 @@ Do not change any of the other fields in this file.
 
 This document holds a lot of metadata for the site, including URL information, title and descriptions, author, and more.
 
-The author variable can be changed, but for the M-3 Lab, should remain as our Wonderful PI David!
-
 The description is then what follows the website title, which is stored in the variable "title", and changes the name of the site in the browser tab. 
 
 THe path URL should also be changed to match the M-3 Lab repo 

@@ -30,8 +30,11 @@ const AlumniTable = ({ alumni }) => {
     });
   };
 
+
   const safeValue = (value, fallback) => {
-    return typeof value === 'string' && value.trim() ? value : fallback;
+    if (typeof value === 'number') return value;
+    if (typeof value === 'string' && value.trim()) return value;
+    return fallback;
   };
 
   return (
