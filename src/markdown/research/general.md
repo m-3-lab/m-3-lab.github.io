@@ -1,6 +1,6 @@
 ---
 title: General Computational Model Development and Validation
-image: ../../images/research/robot-army.png
+image: ../../images/research/general.png
 order: 1
 ---
-Please Wait while we gather more info for our site
+We develop computational tools for the simulation of microbial community metabolism. 
