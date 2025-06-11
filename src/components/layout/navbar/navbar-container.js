@@ -13,7 +13,7 @@ const NavbarContainer = ({
   const [menuState, toggleMenu] = useState(getMenuState());
   const navRef = useRef();
   const links = useLinks();
-
+/*
   const closeMenu = () => {
     if (menuState.isOpen) {
       toggleMenu(getMenuState(menuState, navRef));
@@ -24,6 +24,27 @@ const NavbarContainer = ({
 
   const handleClick = () => {
     toggleMenu(getMenuState(menuState, navRef));
+  };
+*/
+
+  const closeMenu = () => {
+    if (menuState.isOpen) {
+      toggleMenu({
+        isOpen: false,
+        transform: `translateX(-${navRef.current.getBoundingClientRect().width}px)`,
+      });
+    }
+  };
+
+  const handleClick = () => {
+    if (!menuState.isOpen) {
+      toggleMenu({
+        isOpen: true,
+        transform: 'translateX(0)',
+      });
+    } else {
+      closeMenu();
+    }
   };
 
   return (

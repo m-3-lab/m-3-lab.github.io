@@ -1,13 +1,13 @@
 const getMenuState = (currentState, ref) => {
-  if (!currentState || currentState.isOpen) {
+  if (!currentState || !currentState.isOpen) {
     return {
-      isOpen: false,
+      isOpen: true,
       transform: 'translateX(0)',
     };
   }
   const { width } = ref.current.getBoundingClientRect();
   return {
-    isOpen: true,
+    isOpen: false,
     transform: `translateX(-${width}px)`,
   };
 };
