@@ -5,7 +5,7 @@ name: Ryan Siegel
 order: 5
 title: Undergraduate Student - Biomedical Engineering
 links:
-  - linkUrl: "https://example.com"
+  - linkUrl: "https://rsiegel.netlify.app/"
     linkText: "Personal Website"
   - linkUrl: "https://github.com/RSiegel03"
     linkText: "GitHub Profile"
