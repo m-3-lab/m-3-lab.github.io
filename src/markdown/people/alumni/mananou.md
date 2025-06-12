@@ -1,7 +1,7 @@
 ---
 name: Marie Ananou
 graduationYear: '2024'
-labRole: Undergraduate Research Assistant
+labRole: Undergraduate Student - Biomedical Engineering
 currentPosition: 
   - description: Paris 2024 - Comité d'organisation des Jeux Olympiques et Paralympiques de 2024
 ---

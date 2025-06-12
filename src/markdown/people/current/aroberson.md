@@ -3,7 +3,7 @@ email: Alexis.Roberson@uvm.edu
 image: ../../../images/people/aroberson.png
 name: Alexis Roberson
 order: 3
-title: Graduate Research Assistant
+title: PhD Student - Cellular, Molecular, and Biomedical Sciences
 links:
   - linkUrl: "https://www.linkedin.com/in/alexis-roberson-1b8877142/"
     linkText: "Linkedin Profile"

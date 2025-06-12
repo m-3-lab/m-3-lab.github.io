@@ -3,7 +3,7 @@ email: Jacob.Lacy@uvm.edu
 name: Jacob Lacy
 image: ../../../images/people/jlacy.png
 order: 3
-title: Graduate Research Assistant
+title: PhD Student - Biomedical Engineering
 links:
   - linkUrl: "https://www.csusb.edu/inside/article/569626/student-pursue-career-biomedical-engineering-goal-becoming-researcher"
     linkText: "Learn more about Jacob's Journey"

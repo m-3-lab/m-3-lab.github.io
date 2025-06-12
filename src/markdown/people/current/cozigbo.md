@@ -3,7 +3,7 @@ email: Chiamaka.Ozigbo@uvm.edu
 image: ../../../images/people/cozigbo.png
 name: Chiamaka Ozigbo
 order: 5
-title: Undergraduate Research Assistant
+title: Undergraduate Student - Biomedical Engineering
 links:
   - linkUrl: "https://www.linkedin.com/in/chiamaka-ozigbo-8b194620b/"
     linkText: "LinkedIn"

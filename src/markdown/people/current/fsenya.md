@@ -3,7 +3,7 @@ email: Frederick.Senya@uvm.edu
 image: ../../../images/people/fsenya.png
 name: Frederick Senya
 order: 3
-title: Graduate Research Assistant
+title: PhD Student - Mathematical Sciences
 links:
   - linkUrl: "https://senyafred.github.io/"
     linkText: "Personal Website"

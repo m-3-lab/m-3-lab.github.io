@@ -3,7 +3,7 @@ email: Ryan.Siegel@uvm.edu
 image: ../../../images/people/rsiegel.png
 name: Ryan Siegel
 order: 5
-title: Undergraduate Research Assistant
+title: Undergraduate Student - Biomedical Engineering
 links:
   - linkUrl: "https://example.com"
     linkText: "Personal Website"
